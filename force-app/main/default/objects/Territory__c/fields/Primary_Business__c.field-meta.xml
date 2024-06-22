@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BPS</fullName>
+                <default>false</default>
+                <label>BPS</label>
+            </value>
+            <value>
+                <fullName>CYN Oil</fullName>
+                <default>false</default>
+                <label>CYN</label>
+            </value>
+            <value>
+                <fullName>CYN Environmental</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CYN Environmental</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services</fullName>
+                <default>false</default>
+                <label>Daylighting Services</label>
+            </value>
+            <value>
+                <fullName>DFW</fullName>
+                <default>false</default>
+                <label>DFW</label>
+            </value>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>H2O</fullName>
+                <default>false</default>
+                <label>H2O</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services</fullName>
+                <default>false</default>
+                <label>Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Murphys Oil</fullName>
+                <default>false</default>
+                <label>Murphys Oil</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Performance Plus Products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Performance Plus Products</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>RS Used Oil</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RS Used Oil</label>
+            </value>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Seismic</fullName>
+                <default>false</default>
+                <label>Seismic</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen</fullName>
+                <default>false</default>
+                <label>SK ENV</label>
+            </value>
+            <value>
+                <fullName>Synergy</fullName>
+                <default>false</default>
+                <label>Synergy</label>
+            </value>
+            <value>
+                <fullName>Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>SK KPP</label>
+            </value>
+            <value>
+                <fullName>Surface Rentals</fullName>
+                <default>false</default>
+                <label>Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Thermo Fluids</fullName>
+                <default>false</default>
+                <label>Thermo Fluids</label>
+            </value>
+			<value>
+                <fullName>Thompson</fullName>
+                <default>false</default>
+                <label>Thompson</label>
+            </value>
+			<value>
+                <fullName>Noble Oil</fullName>
+                <default>false</default>
+                <label>Noble Oil</label>
+            </value>
+            <value>
+                <fullName>HEPACO</fullName>
+                <default>false</default>
+                <label>HEPACO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Class__c</fullName>
+    <externalId>false</externalId>
+    <label>New Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultural Production</fullName>
+                <default>false</default>
+                <label>Agricultural Production</label>
+            </value>
+            <value>
+                <fullName>Agricultural Svcs</fullName>
+                <default>false</default>
+                <label>Agricultural Svcs</label>
+            </value>
+            <value>
+                <fullName>Airlines</fullName>
+                <default>false</default>
+                <label>Airlines</label>
+            </value>
+            <value>
+                <fullName>Airports &amp; Aviation Svcs</fullName>
+                <default>false</default>
+                <label>Airports &amp; Aviation Svcs</label>
+            </value>
+            <value>
+                <fullName>Asphalt, Terminal</fullName>
+                <default>false</default>
+                <label>Asphalt, Terminal</label>
+            </value>
+            <value>
+                <fullName>Auto Maintenance</fullName>
+                <default>false</default>
+                <label>Auto Maintenance</label>
+            </value>
+            <value>
+                <fullName>Auto Retail</fullName>
+                <default>false</default>
+                <label>Auto Retail</label>
+            </value>
+            <value>
+                <fullName>Banks, Financial Institutions &amp; Bus Svcs</fullName>
+                <default>false</default>
+                <label>Banks, Financial Institutions &amp; Bus Svcs</label>
+            </value>
+            <value>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+                <label>Biotechnology</label>
+            </value>
+            <value>
+                <fullName>Brokers - Waste &amp; Environmental Svcs</fullName>
+                <default>false</default>
+                <label>Brokers - Waste &amp; Environmental Svcs</label>
+            </value>
+            <value>
+                <fullName>Building Materials (excl Lumber Mills)</fullName>
+                <default>false</default>
+                <label>Building Materials (excl Lumber Mills)</label>
+            </value>
+            <value>
+                <fullName>Chemical - Distributor</fullName>
+                <default>false</default>
+                <label>Chemical - Distributor</label>
+            </value>
+            <value>
+                <fullName>Chemical Manufacturing</fullName>
+                <default>false</default>
+                <label>Chemical Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Colleges &amp; Universities</fullName>
+                <default>false</default>
+                <label>Colleges &amp; Universities</label>
+            </value>
+            <value>
+                <fullName>Construction, Gen Contractors &amp; Builders</fullName>
+                <default>false</default>
+                <label>Construction, Gen Contractors &amp; Builders</label>
+            </value>
+            <value>
+                <fullName>Corporate Real Estate</fullName>
+                <default>false</default>
+                <label>Corporate Real Estate</label>
+            </value>
+            <value>
+                <fullName>Cruise Lines</fullName>
+                <default>false</default>
+                <label>Cruise Lines</label>
+            </value>
+            <value>
+                <fullName>Dealerships - Auto</fullName>
+                <default>false</default>
+                <label>Dealerships - Auto</label>
+            </value>
+            <value>
+                <fullName>Dealerships - Recreational &amp; Machinery</fullName>
+                <default>false</default>
+                <label>Dealerships - Recreational &amp; Machinery</label>
+            </value>
+            <value>
+                <fullName>Drill Rig Owners</fullName>
+                <default>false</default>
+                <label>Drill Rig Owners</label>
+            </value>
+            <value>
+                <fullName>Dry Cleaners</fullName>
+                <default>false</default>
+                <label>Dry Cleaners</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Management</fullName>
+                <default>false</default>
+                <label>Emergency Response Management</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Civil/Heavy Construction</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Civil/Heavy Construction</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Drilling</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Drilling</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Enviro Remediation</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Enviro Remediation</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Oilsands</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Oilsands</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Seismic &amp; Production</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Seismic &amp; Production</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Utilities</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Utilities</label>
+            </value>
+            <value>
+                <fullName>Exploration - Drilling</fullName>
+                <default>false</default>
+                <label>Exploration - Drilling</label>
+            </value>
+            <value>
+                <fullName>Exploration - Seismic</fullName>
+                <default>false</default>
+                <label>Exploration - Seismic</label>
+            </value>
+            <value>
+                <fullName>Fabricated Metals</fullName>
+                <default>false</default>
+                <label>Fabricated Metals</label>
+            </value>
+            <value>
+                <fullName>Fleet - Rental &amp; Leasing</fullName>
+                <default>false</default>
+                <label>Fleet - Rental &amp; Leasing</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Grocery Stores</fullName>
+                <default>false</default>
+                <label>Food &amp; Grocery Stores</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Kindred Products</fullName>
+                <default>false</default>
+                <label>Food &amp; Kindred Products</label>
+            </value>
+            <value>
+                <fullName>Gasoline, Oil &amp; Petroleum Distributors</fullName>
+                <default>false</default>
+                <label>Gasoline, Oil &amp; Petroleum Distributors</label>
+            </value>
+            <value>
+                <fullName>Government - Federal Departments/Agencies</fullName>
+                <default>false</default>
+                <label>Government - Federal Departments/Agencies</label>
+            </value>
+            <value>
+                <fullName>Government - Federal - Military</fullName>
+                <default>false</default>
+                <label>Government - Federal - Military</label>
+            </value>
+            <value>
+                <fullName>Government - Municipality/Local</fullName>
+                <default>false</default>
+                <label>Government - Municipality/Local</label>
+            </value>
+            <value>
+                <fullName>Government - State/Provincial</fullName>
+                <default>false</default>
+                <label>Government - State/Provincial</label>
+            </value>
+            <value>
+                <fullName>Healthcare Facilities, Clinics &amp; Offices</fullName>
+                <default>false</default>
+                <label>Healthcare Facilities, Clinics &amp; Offices</label>
+            </value>
+            <value>
+                <fullName>Hospitals</fullName>
+                <default>false</default>
+                <label>Hospitals</label>
+            </value>
+            <value>
+                <fullName>Hotels, Camps, Parks, Clubs &amp; Pers Svcs</fullName>
+                <default>false</default>
+                <label>Hotels, Camps, Parks, Clubs &amp; Pers Svcs</label>
+            </value>
+            <value>
+                <fullName>Individuals &amp; Homeowners</fullName>
+                <default>false</default>
+                <label>Individuals &amp; Homeowners</label>
+            </value>
+            <value>
+                <fullName>Insurance Companies</fullName>
+                <default>false</default>
+                <label>Insurance Companies</label>
+            </value>
+            <value>
+                <fullName>Laboratories - Medical</fullName>
+                <default>false</default>
+                <label>Laboratories - Medical</label>
+            </value>
+            <value>
+                <fullName>Laboratories - Non-Medical</fullName>
+                <default>false</default>
+                <label>Laboratories - Non-Medical</label>
+            </value>
+            <value>
+                <fullName>Lease Operators</fullName>
+                <default>false</default>
+                <label>Lease Operators</label>
+            </value>
+            <value>
+                <fullName>Liquid/Petroleum, Pipeline</fullName>
+                <default>false</default>
+                <label>Liquid/Petroleum, Pipeline</label>
+            </value>
+            <value>
+                <fullName>Liquid/Petroleum, Terminal</fullName>
+                <default>false</default>
+                <label>Liquid/Petroleum, Terminal</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Blender</fullName>
+                <default>false</default>
+                <label>Lube Oil Blender</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Distributor</fullName>
+                <default>false</default>
+                <label>Lube Oil Distributor</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Marketer</fullName>
+                <default>false</default>
+                <label>Lube Oil Marketer</label>
+            </value>
+            <value>
+                <fullName>Lumber &amp; Wood Products</fullName>
+                <default>false</default>
+                <label>Lumber &amp; Wood Products</label>
+            </value>
+            <value>
+                <fullName>Lumber Mills</fullName>
+                <default>false</default>
+                <label>Lumber Mills</label>
+            </value>
+            <value>
+                <fullName>Marine Services</fullName>
+                <default>false</default>
+                <label>Marine Services</label>
+            </value>
+            <value>
+                <fullName>Mechanical &amp; Equipment Service</fullName>
+                <default>false</default>
+                <label>Mechanical &amp; Equipment Service</label>
+            </value>
+            <value>
+                <fullName>Media, TV, Radio &amp; Newspaper</fullName>
+                <default>false</default>
+                <label>Media, TV, Radio &amp; Newspaper</label>
+            </value>
+            <value>
+                <fullName>Mfg - Asphalt</fullName>
+                <default>false</default>
+                <label>Mfg - Asphalt</label>
+            </value>
+            <value>
+                <fullName>Mfg - Electrical Equipment &amp; Computers</fullName>
+                <default>false</default>
+                <label>Mfg - Electrical Equipment &amp; Computers</label>
+            </value>
+            <value>
+                <fullName>Mfg - Furn, Millwork, Cbnts &amp; Fxtrs</fullName>
+                <default>false</default>
+                <label>Mfg - Furn, Millwork, Cbnts &amp; Fxtrs</label>
+            </value>
+            <value>
+                <fullName>Mfg - Machine (incl Medical)</fullName>
+                <default>false</default>
+                <label>Mfg - Machine (incl Medical)</label>
+            </value>
+            <value>
+                <fullName>Mfg - Miscellaneous</fullName>
+                <default>false</default>
+                <label>Mfg - Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Mfg - Non-Metal (Plastic, Rubber, Glass)</fullName>
+                <default>false</default>
+                <label>Mfg - Non-Metal (Plastic, Rubber, Glass)</label>
+            </value>
+            <value>
+                <fullName>Mfg - Paper Products &amp; Pckgng Materials</fullName>
+                <default>false</default>
+                <label>Mfg - Paper Products &amp; Pckgng Materials</label>
+            </value>
+            <value>
+                <fullName>Mfg - Shoe, Leather, Textiles &amp; Apparel</fullName>
+                <default>false</default>
+                <label>Mfg - Shoe, Leather, Textiles &amp; Apparel</label>
+            </value>
+            <value>
+                <fullName>Mfg - Transportation Equip</fullName>
+                <default>false</default>
+                <label>Mfg - Transportation Equip</label>
+            </value>
+            <value>
+                <fullName>Mining &amp; Minerals</fullName>
+                <default>false</default>
+                <label>Mining &amp; Minerals</label>
+            </value>
+            <value>
+                <fullName>Natural Gas, Pipeline</fullName>
+                <default>false</default>
+                <label>Natural Gas, Pipeline</label>
+            </value>
+            <value>
+                <fullName>Natural Gas, Processing</fullName>
+                <default>false</default>
+                <label>Natural Gas, Processing</label>
+            </value>
+            <value>
+                <fullName>Non-Classifiable Establishments</fullName>
+                <default>false</default>
+                <label>Non-Classifiable Establishments</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas Producers</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas Producers</label>
+            </value>
+            <value>
+                <fullName>Oil Dealers - Heating Oil</fullName>
+                <default>false</default>
+                <label>Oil Dealers - Heating Oil</label>
+            </value>
+            <value>
+                <fullName>Oilsands Mines/SAGD Facilities</fullName>
+                <default>false</default>
+                <label>Oilsands Mines/SAGD Facilities</label>
+            </value>
+            <value>
+                <fullName>Package Delivery</fullName>
+                <default>false</default>
+                <label>Package Delivery</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+                <label>Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Primary Metal Manufacturing</fullName>
+                <default>false</default>
+                <label>Primary Metal Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Printing</fullName>
+                <default>false</default>
+                <label>Printing</label>
+            </value>
+            <value>
+                <fullName>Pulp &amp; Paper Mills</fullName>
+                <default>false</default>
+                <label>Pulp &amp; Paper Mills</label>
+            </value>
+            <value>
+                <fullName>Quick Lubes</fullName>
+                <default>false</default>
+                <label>Quick Lubes</label>
+            </value>
+            <value>
+                <fullName>Railroads</fullName>
+                <default>false</default>
+                <label>Railroads</label>
+            </value>
+            <value>
+                <fullName>Real Estate &amp; Developers</fullName>
+                <default>false</default>
+                <label>Real Estate &amp; Developers</label>
+            </value>
+            <value>
+                <fullName>Recycling - Metal, Paper &amp; Plastic</fullName>
+                <default>false</default>
+                <label>Recycling - Metal, Paper &amp; Plastic</label>
+            </value>
+            <value>
+                <fullName>Refineries</fullName>
+                <default>false</default>
+                <label>Refineries</label>
+            </value>
+            <value>
+                <fullName>Retail Trade</fullName>
+                <default>false</default>
+                <label>Retail Trade</label>
+            </value>
+            <value>
+                <fullName>Schools - Secondary</fullName>
+                <default>false</default>
+                <label>Schools - Secondary</label>
+            </value>
+            <value>
+                <fullName>Ship Builders</fullName>
+                <default>false</default>
+                <label>Ship Builders</label>
+            </value>
+            <value>
+                <fullName>Steel Mills</fullName>
+                <default>false</default>
+                <label>Steel Mills</label>
+            </value>
+            <value>
+                <fullName>Taxi, Bus &amp; Other Local Transportation</fullName>
+                <default>false</default>
+                <label>Taxi, Bus &amp; Other Local Transportation</label>
+            </value>
+            <value>
+                <fullName>Trucking &amp; Trans Co (excl Pckg Delivery)</fullName>
+                <default>false</default>
+                <label>Trucking &amp; Trans Co (excl Pckg Delivery)</label>
+            </value>
+            <value>
+                <fullName>Utility - Electrical distribution</fullName>
+                <default>false</default>
+                <label>Utility - Electrical distribution</label>
+            </value>
+            <value>
+                <fullName>Utility - Nat Gas &amp; Propane Distribution</fullName>
+                <default>false</default>
+                <label>Utility - Nat Gas &amp; Propane Distribution</label>
+            </value>
+            <value>
+                <fullName>Utility - Power Generators</fullName>
+                <default>false</default>
+                <label>Utility - Power Generators</label>
+            </value>
+            <value>
+                <fullName>Utility - Sanitary Services</fullName>
+                <default>false</default>
+                <label>Utility - Sanitary Services</label>
+            </value>
+            <value>
+                <fullName>Utility - Telecommunications/Cable</fullName>
+                <default>false</default>
+                <label>Utility - Telecommunications/Cable</label>
+            </value>
+            <value>
+                <fullName>Warehousing &amp; Related Svcs</fullName>
+                <default>false</default>
+                <label>Warehousing &amp; Related Svcs</label>
+            </value>
+            <value>
+                <fullName>Wholesale Trade</fullName>
+                <default>false</default>
+                <label>Wholesale Trade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

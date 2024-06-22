@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fax_Format</fullName>
+    <active>true</active>
+    <description>Require valid 10-digit phone number format</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),
+	NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT(OR(ISBLANK(Fax),
+REGEX(Fax,&quot;[0-9,(,), ,-]*&quot;))))</errorConditionFormula>
+    <errorDisplayField>Fax</errorDisplayField>
+    <errorMessage>Please enter a valid 10-digit fax number or leave blank.</errorMessage>
+</ValidationRule>

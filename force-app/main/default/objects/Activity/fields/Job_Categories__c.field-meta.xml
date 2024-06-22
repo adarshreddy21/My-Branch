@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Categories__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+	<description>This field is related to HR and used to select the Job Category those are Linked to Location</description>
+    <externalId>false</externalId>
+    <label>Job Categories</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Job Category should be Linked to Location while creating Task.</errorMessage>
+        <filterItems>
+            <field>Organization_Job_Code__c.Location__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Location__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Organization_Job_Code__c</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>JobCategory</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition__c</fullName>
+    <description>The disposition values for Inside sales GCC helpline task</description>
+    <externalId>false</externalId>
+    <label>Disposition</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accounts Receivable</fullName>
+                <default>false</default>
+                <label>Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Part Number</fullName>
+                <default>false</default>
+                <label>Part Number</label>
+            </value>
+            <value>
+                <fullName>Power Page</fullName>
+                <default>false</default>
+                <label>Power Page</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Q2C</fullName>
+                <default>false</default>
+                <label>Q2C</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

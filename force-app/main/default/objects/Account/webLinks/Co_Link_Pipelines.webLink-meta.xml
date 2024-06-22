@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Co_Link_Pipelines</fullName>
+    <availability>online</availability>
+    <description>Co-Link report for a Customer pipelines</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Co-Link Pipelines</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cleanharbors.my.salesforce.com/00O0a000004mSpk?pv0={!Account.Id}&amp;pv1={!Account.Id}</url>
+</WebLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Rule</fullName>
+    <active>true</active>
+    <description>Only allows one Escalation Level to be checked at a time.</description>
+    <errorConditionFormula>(IF ( Level_1_Escalation__c, 1, 0) + IF ( Level_2_Escalation__c, 1, 0) + IF ( Level_3_Escalation__c, 1, 0)) &gt; 1</errorConditionFormula>
+    <errorMessage>Only one escalation level is allowed.</errorMessage>
+</ValidationRule>

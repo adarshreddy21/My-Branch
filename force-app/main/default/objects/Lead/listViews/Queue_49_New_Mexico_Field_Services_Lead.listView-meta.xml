@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_49_New_Mexico_Field_Services_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 49 - New Mexico Field Services</label>
+    <queue>Queue_49_New_Mexico_Field_Services</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

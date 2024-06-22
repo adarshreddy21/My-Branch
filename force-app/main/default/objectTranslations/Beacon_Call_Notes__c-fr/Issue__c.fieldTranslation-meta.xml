@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Issue__c</name>
+    <picklistValues>
+        <masterLabel>CHES Price Increase Action</masterLabel>
+        <translation>Hausse d’un prix CHES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor Pricing Action</masterLabel>
+        <translation>Établissement du prix d’un concurrent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Performance</masterLabel>
+        <translation>Performance sur le terrain</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice/Manifest/Document Issue</masterLabel>
+        <translation>Problème de facture, manifeste ou document</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manifest/Paperwork Error</masterLabel>
+        <translation>Erreur de manifeste ou d’écriture</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing/Late Manifest Return</masterLabel>
+        <translation>Manifeste non retourné ou en retard</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing/Lost Drum</masterLabel>
+        <translation>Baril manquant ou perdu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onsite Health &amp; Safety Violation</masterLabel>
+        <translation>Violation d’une règle de santé-sécurité sur le terrain</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Autre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem Invoice</masterLabel>
+        <translation>Problème de facture</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduling/Service</masterLabel>
+        <translation>Planification du service</translation>
+    </picklistValues>
+</CustomFieldTranslation>

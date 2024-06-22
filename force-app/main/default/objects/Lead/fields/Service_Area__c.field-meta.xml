@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services</fullName>
+                <default>false</default>
+                <label>Daylighting Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

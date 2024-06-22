@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Dunbrst__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &apos;Customer Location&apos;, Parent.Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Broker Location&apos;, Parent.Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Distributor Location&apos;, Parent.Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Pricing Chain&apos;, Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Distributor&apos;, Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Broker&apos;, Parent.dunbrdst__c, 
+IF(RecordType.Name = &apos;Customer&apos;, Parent.dunbrdst__c, dunbrdst__c )))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Corp Account Dunbrdst</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TPM_Quote_Request_To_Business</fullName>
+        <description>Update to TPM_Quote_Request_To_Busines</description>
+        <field>TPM_Quote_Request_To_Business__c</field>
+        <formula>if(text(Product2.Operating_Segment__c)=&quot;Field Services&quot;,&quot;Field Services&quot;,if(text(Product2.Reporting_Segment__c)=&quot;Technical Services&quot;,&quot;Technical Services&quot;,&quot;&quot;))</formula>
+        <name>TPM_Quote_Request_To_Business</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Branch_Address</fullName>
+        <description>Update Branch Address for FS HarborQuote template</description>
+        <field>Branch_Address__c</field>
+        <formula>&quot;Clean Harbors Environmental Services, Inc.&quot; &amp; BR() &amp; 
+Branch__r.ShippingStreet &amp; BR() &amp; 
+Branch__r.ShippingCity&amp;&quot;,&quot;&amp;Branch__r.ShippingState &amp; Branch__r.ShippingPostalCode &amp; BR() &amp; 
+&quot;www.cleanharbors.com&quot;</formula>
+        <name>Update Branch Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Branch_Code</fullName>
+        <field>Branch__c</field>
+        <formula>Branch__r.Branch_Code__c</formula>
+        <name>Update Branch Code</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opp_Line_Item_description</fullName>
+        <description>Update Opp Line Item description</description>
+        <field>Description</field>
+        <formula>Product2.Description</formula>
+        <name>Update Opp Line Item description</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Deal_LOB</fullName>
+        <field>Deal_LOB__c</field>
+        <formula>Product2.Name</formula>
+        <name>Update Opportunity Deal LOB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Opp Line Item description</fullName>
+        <actions>
+            <name>Update_Opp_Line_Item_description</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CP Harbor Quote,FS Harbor Quote</value>
+        </criteriaItems>
+        <description>Update Opp Line Item description</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Opportunity LOB</fullName>
+        <actions>
+            <name>TPM_Quote_Request_To_Business</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Branch_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Branch_Code</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Opportunity_Deal_LOB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update the opportunity LOB</description>
+        <formula>NOT(ISNULL(OpportunityId))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

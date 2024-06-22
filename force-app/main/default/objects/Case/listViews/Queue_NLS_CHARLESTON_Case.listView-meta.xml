@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_NLS_CHARLESTON_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: NLS-CHARLESTON</label>
+    <queue>Queue_NLS_CHARLESTON</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

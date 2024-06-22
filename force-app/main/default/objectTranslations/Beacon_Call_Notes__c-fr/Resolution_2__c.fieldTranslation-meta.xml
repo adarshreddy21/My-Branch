@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Résolution 2</label>
+    <name>Resolution_2__c</name>
+    <picklistValues>
+        <masterLabel>Competitor</masterLabel>
+        <translation>Concurrent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor - Price</masterLabel>
+        <translation>Concurrent - Prix</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due to Capacity</masterLabel>
+        <translation>Dû à la capacité</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fallout</masterLabel>
+        <translation>Échappé</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Interest</masterLabel>
+        <translation>Intérêt futur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job CANCELED</masterLabel>
+        <translation>Travaux ANNULÉS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location</masterLabel>
+        <translation>Emplacement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Activity</masterLabel>
+        <translation>Aucune activité</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restrictions</masterLabel>
+        <translation>Restrictions</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Headline_Text_Limit</fullName>
+    <active>true</active>
+    <description>Account headline text is not greater that 60 Characters.</description>
+    <errorConditionFormula>LEN( Account_Headline__c )  &gt; 60</errorConditionFormula>  
+    <errorDisplayField>Account_Headline__c</errorDisplayField>
+    <errorMessage>Entered text should not exceed 60 Characters</errorMessage>
+</ValidationRule>

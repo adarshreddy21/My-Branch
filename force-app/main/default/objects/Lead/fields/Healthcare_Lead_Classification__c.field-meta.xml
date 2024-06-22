@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Healthcare_Lead_Classification__c</fullName>
+    <description>This field is used to identify the customer classification for Heathcare.  Request from reps so filtering can be done on the lead.</description>
+    <externalId>false</externalId>
+    <label>Healthcare Lead Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accupuncture</fullName>
+                <default>false</default>
+                <label>Accupuncture</label>
+            </value>
+            <value>
+                <fullName>Allergists</fullName>
+                <default>false</default>
+                <label>Allergists</label>
+            </value>
+            <value>
+                <fullName>Alzheimers&apos;/Senior Citizens</fullName>
+                <default>false</default>
+                <label>Alzheimers&apos;/Senior Citizens</label>
+            </value>
+            <value>
+                <fullName>Ambulance Companies</fullName>
+                <default>false</default>
+                <label>Ambulance Companies</label>
+            </value>
+            <value>
+                <fullName>Ambulatory</fullName>
+                <default>false</default>
+                <label>Ambulatory</label>
+            </value>
+            <value>
+                <fullName>Biotech Firms</fullName>
+                <default>false</default>
+                <label>Biotech Firms</label>
+            </value>
+            <value>
+                <fullName>Blood Banks</fullName>
+                <default>false</default>
+                <label>Blood Banks</label>
+            </value>
+            <value>
+                <fullName>Chriopractor</fullName>
+                <default>false</default>
+                <label>Chriopractor</label>
+            </value>
+            <value>
+                <fullName>Convalescent Homes</fullName>
+                <default>false</default>
+                <label>Convalescent Homes</label>
+            </value>
+            <value>
+                <fullName>Crime Scene</fullName>
+                <default>false</default>
+                <label>Crime Scene</label>
+            </value>
+            <value>
+                <fullName>Dental Labs</fullName>
+                <default>false</default>
+                <label>Dental Labs</label>
+            </value>
+            <value>
+                <fullName>Dentist</fullName>
+                <default>false</default>
+                <label>Dentist</label>
+            </value>
+            <value>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+                <label>Dermatology</label>
+            </value>
+            <value>
+                <fullName>Dialysis</fullName>
+                <default>false</default>
+                <label>Dialysis</label>
+            </value>
+            <value>
+                <fullName>Doctors with Misc. Specialties</fullName>
+                <default>false</default>
+                <label>Doctors with Misc. Specialties</label>
+            </value>
+            <value>
+                <fullName>Ear Nose and Throat - ENT</fullName>
+                <default>false</default>
+                <label>Ear Nose and Throat - ENT</label>
+            </value>
+            <value>
+                <fullName>Educational Services</fullName>
+                <default>false</default>
+                <label>Educational Services</label>
+            </value>
+            <value>
+                <fullName>Family Practice</fullName>
+                <default>false</default>
+                <label>Family Practice</label>
+            </value>
+            <value>
+                <fullName>Fire Stations</fullName>
+                <default>false</default>
+                <label>Fire Stations</label>
+            </value>
+            <value>
+                <fullName>Funeral Homes</fullName>
+                <default>false</default>
+                <label>Funeral Homes</label>
+            </value>
+            <value>
+                <fullName>Government Entity</fullName>
+                <default>false</default>
+                <label>Government Entity</label>
+            </value>
+            <value>
+                <fullName>Health Clinics</fullName>
+                <default>false</default>
+                <label>Health Clinics</label>
+            </value>
+            <value>
+                <fullName>Health Departments &amp; Services</fullName>
+                <default>false</default>
+                <label>Health Departments &amp; Services</label>
+            </value>
+            <value>
+                <fullName>Home Health Care</fullName>
+                <default>false</default>
+                <label>Home Health Care</label>
+            </value>
+            <value>
+                <fullName>Hospices</fullName>
+                <default>false</default>
+                <label>Hospices</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hotels</fullName>
+                <default>false</default>
+                <label>Hotels</label>
+            </value>
+            <value>
+                <fullName>Independent Living</fullName>
+                <default>false</default>
+                <label>Independent Living</label>
+            </value>
+            <value>
+                <fullName>Labs - Medical</fullName>
+                <default>false</default>
+                <label>Labs - Medical</label>
+            </value>
+            <value>
+                <fullName>Labs - Research</fullName>
+                <default>false</default>
+                <label>Labs - Research</label>
+            </value>
+            <value>
+                <fullName>Manufacturers with Infirmaries</fullName>
+                <default>false</default>
+                <label>Manufacturers with Infirmaries</label>
+            </value>
+            <value>
+                <fullName>Medical Buildings</fullName>
+                <default>false</default>
+                <label>Medical Buildings</label>
+            </value>
+            <value>
+                <fullName>Medical Examiner</fullName>
+                <default>false</default>
+                <label>Medical Examiner</label>
+            </value>
+            <value>
+                <fullName>Mental Health Facilities</fullName>
+                <default>false</default>
+                <label>Mental Health Facilities</label>
+            </value>
+            <value>
+                <fullName>Misc Doctors and Pathology</fullName>
+                <default>false</default>
+                <label>Misc Doctors and Pathology</label>
+            </value>
+            <value>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+                <label>Nursing Homes</label>
+            </value>
+            <value>
+                <fullName>Nursing School</fullName>
+                <default>false</default>
+                <label>Nursing School</label>
+            </value>
+            <value>
+                <fullName>OBGYN</fullName>
+                <default>false</default>
+                <label>OBGYN</label>
+            </value>
+            <value>
+                <fullName>Oncology - Cancer Center</fullName>
+                <default>false</default>
+                <label>Oncology - Cancer Center</label>
+            </value>
+            <value>
+                <fullName>Oral Surgeons</fullName>
+                <default>false</default>
+                <label>Oral Surgeons</label>
+            </value>
+            <value>
+                <fullName>Osteopathic</fullName>
+                <default>false</default>
+                <label>Osteopathic</label>
+            </value>
+            <value>
+                <fullName>Outpatient Facilities/Surgery</fullName>
+                <default>false</default>
+                <label>Outpatient Facilities/Surgery</label>
+            </value>
+            <value>
+                <fullName>Parks and Recreation</fullName>
+                <default>false</default>
+                <label>Parks and Recreation</label>
+            </value>
+            <value>
+                <fullName>Periodontists</fullName>
+                <default>false</default>
+                <label>Periodontists</label>
+            </value>
+            <value>
+                <fullName>Pharmacies</fullName>
+                <default>false</default>
+                <label>Pharmacies</label>
+            </value>
+            <value>
+                <fullName>Physical Therapy</fullName>
+                <default>false</default>
+                <label>Physical Therapy</label>
+            </value>
+            <value>
+                <fullName>Physician Office</fullName>
+                <default>false</default>
+                <label>Physician Office</label>
+            </value>
+            <value>
+                <fullName>Plastic Surgeons</fullName>
+                <default>false</default>
+                <label>Plastic Surgeons</label>
+            </value>
+            <value>
+                <fullName>Podiatrists</fullName>
+                <default>false</default>
+                <label>Podiatrists</label>
+            </value>
+            <value>
+                <fullName>Police Stations</fullName>
+                <default>false</default>
+                <label>Police Stations</label>
+            </value>
+            <value>
+                <fullName>Prisons and Jails</fullName>
+                <default>false</default>
+                <label>Prisons and Jails</label>
+            </value>
+            <value>
+                <fullName>School Districts and Colleges</fullName>
+                <default>false</default>
+                <label>School Districts and Colleges</label>
+            </value>
+            <value>
+                <fullName>School Infirmaries</fullName>
+                <default>false</default>
+                <label>School Infirmaries</label>
+            </value>
+            <value>
+                <fullName>Surgery Centers</fullName>
+                <default>false</default>
+                <label>Surgery Centers</label>
+            </value>
+            <value>
+                <fullName>Tattoo Parlors</fullName>
+                <default>false</default>
+                <label>Tattoo Parlors</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>Urgent Care</fullName>
+                <default>false</default>
+                <label>Urgent Care</label>
+            </value>
+            <value>
+                <fullName>Urologists</fullName>
+                <default>false</default>
+                <label>Urologists</label>
+            </value>
+            <value>
+                <fullName>VA Hospital</fullName>
+                <default>false</default>
+                <label>VA Hospital</label>
+            </value>
+            <value>
+                <fullName>Veterinarian</fullName>
+                <default>false</default>
+                <label>Veterinarian</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

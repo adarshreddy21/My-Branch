@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Reviewer_changes</fullName>
+    <active>true</active>
+    <description>Restrict all but MDM and admin profiles from making updates to reviewer field on cmd cases</description>
+    <errorConditionFormula>and( 
+$Profile.Name &lt;&gt; &apos;Integration&apos; 
+,$Profile.Name &lt;&gt; &apos;System Administrator&apos; 
+,$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;
+,$Profile.Name &lt;&gt; &apos;Sale Operations&apos; 
+,$Profile.Name &lt;&gt; &apos;Master Data Management&apos; 
+,or(RecordType.Name = &apos;Customer Master - Unexpire Account&apos; 
+,RecordType.Name = &apos;Customer Master - Change ShipTo/Gen To Customer&apos;
+,AND(NOT(ISNEW()),RecordType.Name = &apos;Account Update Validations&apos;)
+,RecordType.Name = &apos;New Customer Request&apos;) 
+,or(
+AND(ISNEW(), NOT(ISBLANK(MDM_Approver__c )))
+,ISCHANGED( MDM_Approver__c ) )
+)</errorConditionFormula>
+    <errorDisplayField>MDM_Approver__c</errorDisplayField>
+    <errorMessage>Only Customer Master Team can update this field.</errorMessage>
+</ValidationRule>

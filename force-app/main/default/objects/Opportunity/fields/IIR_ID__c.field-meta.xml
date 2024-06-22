@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IIR_ID__c</fullName>
+    <description>Industrial Info Resources ID</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Code provided by Industrial Info Resources subscription. Used for Turnaarounds</inlineHelpText>
+    <label>Turnaround Industrial Info Resources ID</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

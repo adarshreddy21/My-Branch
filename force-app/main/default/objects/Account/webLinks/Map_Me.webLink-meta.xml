@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Map_Me</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Map Me</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/sma__mapanything?recordId={!Territory_Master__c.Id}&amp;baseObjectId=a0Kj000000MEYlvEAH&amp;tooltipField=Name&amp;tooltipField2=Region__c&amp;tooltipField3=Area__c&amp;tooltipField4=Territory_code__c&amp;tooltipField5=Territory_Owner_Name__c&amp;tooltipField6=Territory_Owner_Sales_Manager__c&amp;tooltipField7=ZIP_Master__c&amp;tooltipField8=Branch_Account__c&amp;color=%2366FF00</url>
+</WebLink>

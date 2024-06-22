@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Activity_Pull_Cancel</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &quot;Integration&quot;,
+$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;,
+ISPICKVAL(Call_Type__c, &quot;Pull/Cancel Service&quot;),
+or(
+ISPICKVAL(Service_to_be_cancelled__c, &quot;&quot;),
+ISPICKVAL(Reason_for_cancellation__c,  &quot;&quot;))
+)</errorConditionFormula>
+    <errorMessage>Please select Service to be cancelled an Reason for cancellation</errorMessage>
+</ValidationRule>

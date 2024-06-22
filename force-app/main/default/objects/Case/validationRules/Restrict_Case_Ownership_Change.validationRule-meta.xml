@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Case_Ownership_Change</fullName>
+    <active>true</active>
+    <description>When case record type is Customer_PO_Case/ Non_Standard_Billing_Closed_Order/ Collector_PO_Case / Non_Standard_Billing_WIN  then Case Owner can be change by the Case_Ownership_Change_Access Permission Set User’s Only.</description>
+    <errorConditionFormula>AND(
+OR(
+RecordType.DeveloperName = &apos;Customer_PO_Case&apos;,
+AND(RecordType.DeveloperName = &apos;Collector_PO_Case&apos;, AND(NOT(ISPICKVAL(Type, &apos;Legal&apos;)),NOT(ISPICKVAL(Type, &apos;EBILL&apos;)))),
+AND(RecordType.DeveloperName = &apos;Non_Standard_Billing_Closed_Order&apos;, ISPICKVAL(Type, &apos;E-Billing Customer PO&apos;)),
+AND(RecordType.DeveloperName = &apos;Non_Standard_Billing_WIN&apos;, ISPICKVAL(Type, &apos;E-Billing Customer PO&apos;))),
+ischanged(OwnerId),
+NOT($Permission.Case_Ownership_Change_Access))</errorConditionFormula>
+    <errorMessage>You may not change ownership of this record. Contact the PO Management Team for support at customerprocurement@cleanharbors.com.</errorMessage>
+</ValidationRule>

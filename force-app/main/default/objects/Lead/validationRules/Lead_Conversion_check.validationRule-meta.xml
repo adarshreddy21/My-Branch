@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Conversion_check</fullName>
+    <active>true</active>
+    <description>Checks if epa id and gen status are null.</description>
+    <errorConditionFormula>and(
+IsConverted = true, 
+isblank( Existing_Account__c ),
+OR(isblank( EPA_ID__c ), 
+isblank(text(Generator_Status__c) 
+)))</errorConditionFormula>
+    <errorDisplayField>EPA_ID__c</errorDisplayField>
+    <errorMessage>Please enter EPA ID and Generator Status. If do not know EPA ID enter &quot;Pending&quot;</errorMessage>
+</ValidationRule>

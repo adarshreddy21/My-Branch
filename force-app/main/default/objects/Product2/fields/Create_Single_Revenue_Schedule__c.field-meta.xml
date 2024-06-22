@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Single_Revenue_Schedule__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates that only a single revenue schedule record should be created for these products when added to an Opportunity.</description>
+    <externalId>false</externalId>
+    <label>Create Single Revenue Schedule</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

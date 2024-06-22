@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Daylighting Services</fullName>
+        <default>false</default>
+        <label>Daylighting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Emerald Services</fullName>
+        <default>false</default>
+        <label>Emerald Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Services</fullName>
+        <default>false</default>
+        <label>Field Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Services</fullName>
+        <default>false</default>
+        <label>Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Services</fullName>
+        <default>false</default>
+        <label>Industrial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging</fullName>
+        <default>false</default>
+        <label>Lodging</label>
+    </customValue>
+    <customValue>
+        <fullName>Murphys Oil</fullName>
+        <default>false</default>
+        <label>Murphys Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services</fullName>
+        <default>false</default>
+        <label>Technical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Thermo Fluids</fullName>
+        <default>false</default>
+        <label>Thermo Fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>H2O</fullName>
+        <default>false</default>
+        <label>H2O</label>
+    </customValue>
+    <customValue>
+        <fullName>BPS</fullName>
+        <default>false</default>
+        <label>BPS</label>
+    </customValue>
+    <customValue>
+        <fullName>CYN</fullName>
+        <default>false</default>
+        <label>CYN</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>SK KPP</fullName>
+        <default>false</default>
+        <label>SK KPP</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Rentals</fullName>
+        <default>false</default>
+        <label>Surface Rentals</label>
+    </customValue>
+    <customValue>
+        <fullName>Seismic</fullName>
+        <default>false</default>
+        <label>Seismic</label>
+    </customValue>
+    <customValue>
+        <fullName>SK ENV</fullName>
+        <default>false</default>
+        <label>SK ENV</label>
+    </customValue>
+    <customValue>
+        <fullName>OER</fullName>
+        <default>false</default>
+        <label>OER</label>
+    </customValue>
+    <customValue>
+        <fullName>HPC Industrial</fullName>
+        <default>false</default>
+        <label>HPC Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>PSC</fullName>
+        <default>false</default>
+        <label>PSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Synergy</fullName>
+        <default>false</default>
+        <label>Synergy</label>
+    </customValue>
+    <customValue>
+        <fullName>DFW</fullName>
+        <default>false</default>
+        <label>DFW</label>
+    </customValue>
+    <customValue>
+        <fullName>Thompson</fullName>
+        <default>false</default>
+        <label>Thompson</label>
+    </customValue>
+	<customValue>
+        <fullName>Noble Oil</fullName>
+        <default>false</default>
+        <label>Noble Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>HEPACO</fullName>
+        <default>false</default>
+        <label>HEPACO</label>
+    </customValue>
+    <masterLabel>Primary Service Provider</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

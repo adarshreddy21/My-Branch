@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solvent__c</fullName>
+    <externalId>false</externalId>
+    <label>Solvent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>150 Mineral Spirits</fullName>
+                <default>false</default>
+                <label>150 Mineral Spirits</label>
+            </value>
+            <value>
+                <fullName>QSOLV 220</fullName>
+                <default>false</default>
+                <label>QSOLV 220</label>
+            </value>
+            <value>
+                <fullName>QSOLV 300</fullName>
+                <default>false</default>
+                <label>QSOLV 300</label>
+            </value>
+            <value>
+                <fullName>HD Laquer Thinner</fullName>
+                <default>false</default>
+                <label>HD Laquer Thinner</label>
+            </value>
+            <value>
+                <fullName>Clear Choice Thinner</fullName>
+                <default>false</default>
+                <label>Clear Choice Thinner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

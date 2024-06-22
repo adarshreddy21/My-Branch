@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Corp_Accounts_include_for_EPI</fullName>
+    <columns>Primary_Business__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Owner_Name__c</columns>
+    <columns>KAM_Manager__c</columns>
+    <columns>KAM_Support__c</columns>
+    <columns>Street__c</columns>
+    <columns>City__c</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>Reporting_Currency__c</columns>
+    <columns>iSell__OSKeyID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Corporate,Account.Chain</value>
+    </filters>
+    <filters>
+        <field>Include_for_EPI_Oil_Gallons__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All Corp Accounts (include for EPI)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

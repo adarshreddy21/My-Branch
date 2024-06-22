@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Les champs suivants sont nécessaires pour valider l’identifiant de l’EPA en plus de son champ d’identifiant.  -Adresse civique de la société  -État de la société  -Pays de la société  -Statut du producteur  -Principal fournisseur de service&quot;</help>
+    <label>Identifiant EPA</label>
+    <name>CS_EPA_ID__c</name>
+</CustomFieldTranslation>

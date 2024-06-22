@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Rank__c</name>
+    <picklistValues>
+        <masterLabel>CH A Large &gt;200K</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH C Assigned &gt;30K</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH E Small &lt;30K</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D &lt;30,000</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

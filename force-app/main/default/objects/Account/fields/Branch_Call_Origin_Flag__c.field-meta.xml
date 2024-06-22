@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Call_Origin_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag for branches to be used in the call origin in case mgmt</description>
+    <externalId>false</externalId>
+    <label>Branch Call Origin Flag</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

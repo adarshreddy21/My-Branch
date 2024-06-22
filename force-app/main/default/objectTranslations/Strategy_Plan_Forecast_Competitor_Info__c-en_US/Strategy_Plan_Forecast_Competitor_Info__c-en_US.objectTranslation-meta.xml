@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Strategy Plan Forecast &amp; Competitor Info</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Strategy Plan Forecast &amp; Competitor Info</value>
+    </caseValues>
+    <layouts>
+        <layout>Strategic Plan Competitor</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Strategy Plan Forecast Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Competitor_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Strategy_Plan_Forecast</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

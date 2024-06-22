@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBill_Flag_UPDATE</fullName>
+    <active>true</active>
+    <description>eBill Flag field cannot be updated when there is a WinId populated.</description>
+    <errorConditionFormula>AND( 
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;), 
+NOT(ISBLANK( WIN_ID__c )), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+ISCHANGED( Email_Invoices__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Email_Invoices__c</errorDisplayField>
+    <errorMessage>Cannot change field once it has a WIN ID.  You can request a change via the Custom links section below.  Choose the &quot;Workflow Request: Email/Ebill Request Form&quot; link</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plug_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Line of Business being with growth Plug</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Line of Business being with growth Plug</inlineHelpText>
+    <label>Plug Product</label>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Budget Plug Area Allocation</relationshipLabel>
+    <relationshipName>Budget_Plug_Area_Allocation</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

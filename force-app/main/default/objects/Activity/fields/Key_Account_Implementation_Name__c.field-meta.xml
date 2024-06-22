@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Implementation_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Key Account Implementation Name</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ADN (The Network)</fullName>
+                <default>false</default>
+                <label>ADN (The Network)</label>
+            </value>
+            <value>
+                <fullName>BlueLine Rental 020117</fullName>
+                <default>false</default>
+                <label>BlueLine Rental 020117</label>
+            </value>
+            <value>
+                <fullName>Cascades 080218</fullName>
+                <default>false</default>
+                <label>Cascades 080218</label>
+            </value>
+            <value>
+                <fullName>Coach USA 012918</fullName>
+                <default>false</default>
+                <label>Coach USA 012918</label>
+            </value>
+            <value>
+                <fullName>Mobility Works 100417</fullName>
+                <default>false</default>
+                <label>Mobility Works 100417</label>
+            </value>
+            <value>
+                <fullName>Niagara Bottling 110617</fullName>
+                <default>false</default>
+                <label>Niagara Bottling 110617</label>
+            </value>
+            <value>
+                <fullName>Sunbelt Rentals Can 021418</fullName>
+                <default>false</default>
+                <label>Sunbelt Rentals Can 021418</label>
+            </value>
+            <value>
+                <fullName>Titan Machinery 032618</fullName>
+                <default>false</default>
+                <label>Titan Machinery 032618</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

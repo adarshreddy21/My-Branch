@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beacon_Web</fullName>
+    <availability>online</availability>
+    <description>Open Beacon web from pc or laptop (non-mobile)</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Beacon Web (Internet Explorer and desktop only)</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://beaconappweb1.cleanharbors.com/oep_windows/powerpage/application_main.asp?profileid=1&amp;profilename=OPE.user&amp;ucfsafemode=0</url>
+</WebLink>

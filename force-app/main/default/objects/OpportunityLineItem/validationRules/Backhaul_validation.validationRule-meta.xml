@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backhaul_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISNEW(), Product2.Name =&apos;Transportation&apos;, ISBLANK( TEXT( Backhaul_Lane__c) ))</errorConditionFormula>
+	<errorDisplayField>Backhaul_Lane__c</errorDisplayField> 
+    <errorMessage>Backhaul Lane is required for Transportation</errorMessage>
+</ValidationRule>

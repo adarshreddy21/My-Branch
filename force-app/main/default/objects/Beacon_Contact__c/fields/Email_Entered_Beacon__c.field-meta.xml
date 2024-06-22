@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Entered_Beacon__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank(Email__c), &apos;Blank&apos;,
+if (CONTAINS(Lower(Email__c),&quot;refurb&quot;), &apos;Entered&apos;,
+if (CONTAINS(Lower(Email__c),&quot;refuel&quot;), &apos;Entered&apos;,
+if (CONTAINS(Lower(Email__c),&quot;cleansweeprefuse&quot;), &apos;Entered&apos;,
+if (CONTAINS(Lower(Email__c),&quot;southtahoerefuse&quot;), &apos;Entered&apos;,
+if (CONTAINS(Lower(Email__c),&quot;cesrefuse&quot;), &apos;Entered&apos;,
+if (CONTAINS(Lower(Email__c),&quot;non@gmail.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;noemail&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;noemailavailable&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@email.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@gamil.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@given.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@mengauto.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@none.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@pelayo.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@yahoo.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;none@ch.com&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;noreply&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;notavailable&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;notemail&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;notgiven&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;notprovided&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;novalidemail&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;refu&quot;), &apos;Refused&apos;,
+if ( CONTAINS(Lower(Email__c),&quot;pending&quot;), &apos;Pending&apos;,
+&apos;Entered&apos; 
+))))))))
+))))))))))
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Entered Beacon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

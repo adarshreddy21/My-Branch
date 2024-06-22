@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>CEO_of_Clean_Harbors</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>PO_Case_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(AND(RecordType.Name  = &quot;Non Standard Billing WIN&quot;,
+  ISPICKVAL(Type, &quot;E-Billing Customer PO&quot;)||ISPICKVAL(Type, &quot;PO-UNDRFND&quot;)||ISPICKVAL(Type, &quot;WRONGPO&quot;)||ISPICKVAL(Type, &quot;NOPO&quot;)),AND(RecordType.Name = &quot;Non Standard Billing Closed Order&quot;,ISPICKVAL(Type, &quot;E-Billing Customer PO&quot;)||ISPICKVAL(Type, &quot;PO-UNDRFND&quot;)||ISPICKVAL(Type, &quot;WRONGPO&quot;)||ISPICKVAL(Type, &quot;NOPO&quot;)))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Step 1</label>
+        <name>Step_1</name>
+    </approvalStep>
+    <description>NSB/COWB Case Approval</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>Non Standard Billing WIN,Non Standard Billing Closed Order</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Status_to_Closed</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>PO_Case_Reject_Action</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PO_Case_Rejected</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>NSB/COWB Case Approval Process</label>
+    <processOrder>9</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

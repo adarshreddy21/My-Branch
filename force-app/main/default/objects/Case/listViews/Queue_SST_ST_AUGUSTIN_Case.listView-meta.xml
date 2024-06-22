@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_SST_ST_AUGUSTIN_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: SST-ST AUGUSTIN</label>
+    <queue>Queue_SST_ST_AUGUSTIN</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

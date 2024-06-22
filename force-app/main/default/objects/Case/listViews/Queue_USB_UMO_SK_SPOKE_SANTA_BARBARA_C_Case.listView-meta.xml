@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_USB_UMO_SK_SPOKE_SANTA_BARBARA_C_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: USB-UMO SK SPOKE SANTA BARBARA, C</label>
+    <queue>Queue_USB_UMO_SK_SPOKE_SANTA_BARBARA_C</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

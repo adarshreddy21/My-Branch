@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_EPO_PASCO_SATELLITE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: EPO-PASCO (SATELLITE)</label>
+    <queue>Queue_EPO_PASCO_SATELLITE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

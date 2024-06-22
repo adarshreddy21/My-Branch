@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Chatter_Message_to_Current_23</name>
+        <label>Send Chatter Message to Current 23</label>
+        <locationX>264</locationX>
+        <locationY>998</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Clear_Formatted_Owner_IDs</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>ChatterTextTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>CurAccountID.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Chatter_Message_to_Whoever_is_Left</name>
+        <label>Send Chatter Message to Whoever is Left</label>
+        <locationX>176</locationX>
+        <locationY>1574</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>ThankYouSent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>ChatterTextTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>CurAccountID.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <name>Clear_Formatted_Owner_IDs</name>
+        <label>Clear Formatted Owner IDs</label>
+        <locationX>264</locationX>
+        <locationY>1106</locationY>
+        <assignmentItems>
+            <assignToReference>ChatterFormattedOwnerIDs</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Clear_User_Count</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Clear_User_Count</name>
+        <label>Clear User Count</label>
+        <locationX>264</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>CurrentUserCounter</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Dupe_Check_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Count_Users_In_Current_Chatter_Send</name>
+        <label>Count Users In Current Chatter Send</label>
+        <locationX>396</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>CurrentUserCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Current_Count_23</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Reformat_Each_ID</name>
+        <label>Reformat Each ID</label>
+        <locationX>396</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>ChatterFormattedOwnerIDs</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ChatterUserIDFormatting</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Count_Users_In_Current_Chatter_Send</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Unique_Users_Only</name>
+        <label>Unique Users Only</label>
+        <locationX>396</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>UniqueOwnerIDs</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Dupe_Check_Loop.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Reformat_Each_ID</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Current_Count_23</name>
+        <label>Is Current Count 23?</label>
+        <locationX>396</locationX>
+        <locationY>890</locationY>
+        <defaultConnector>
+            <targetReference>Dupe_Check_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not 23</defaultConnectorLabel>
+        <rules>
+            <name>Current_Count_is_23</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CurrentUserCounter</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>23.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Chatter_Message_to_Current_23</targetReference>
+            </connector>
+            <label>Current Count is 23</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_User_Unique_To_Variable</name>
+        <label>Is User Unique To Variable</label>
+        <locationX>550</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Dupe_Check_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>OwnerID is Not Unique</defaultConnectorLabel>
+        <rules>
+            <name>OwnerID_is_Unique</name>
+            <conditionLogic>NOT 1</conditionLogic>
+            <conditions>
+                <leftValueReference>UniqueOwnerIDs</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Dupe_Check_Loop.Owner.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Unique_Users_Only</targetReference>
+            </connector>
+            <label>OwnerID is Unique</label>
+        </rules>
+    </decisions>
+    <description>Add CAM / CASR Tags to each post. Limit 23 tags per post.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ChatterUserIDFormatting</name>
+        <dataType>String</dataType>
+        <expression>&quot;@[&quot;+{!Dupe_Check_Loop.OwnerId}+&quot;] &quot;</expression>
+    </formulas>
+    <interviewLabel>Test Send Chatter to Active Umbrella Account Owners {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CAMP: Send Chatter to Active Umbrella Account Owners</label>
+    <loops>
+        <name>Dupe_Check_Loop</name>
+        <label>Dupe Check Loop</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <collectionReference>Get_Owner_IDs_from_Active_Umbrella_Accounts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Is_User_Unique_To_Variable</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Chatter_Message_to_Whoever_is_Left</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Owner_IDs_from_Active_Umbrella_Accounts</name>
+        <label>Get Owner IDs from Active Umbrella Accounts</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Dupe_Check_Loop</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND NOT 3</filterLogic>
+        <filters>
+            <field>Key_Account_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CurAccountID.Name</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Owner_Name__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Inactive</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>ThankYouSent</name>
+        <label>ThankYouSent</label>
+        <locationX>176</locationX>
+        <locationY>1682</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ThankYouDisplayText</name>
+            <fieldText>&lt;p&gt;Thank you! Your message has been sent to all active account owners under this corporate umbrella. You can read your post by navigating to the &quot;Chatter&quot; tab on this account.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>TypeOutYourMessage</name>
+        <label>TypeOutYourMessage</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Get_Owner_IDs_from_Active_Umbrella_Accounts</targetReference>
+        </connector>
+        <fields>
+            <name>KeyInDisplayText</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PJDP?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;clean harbors home page logo.PNG&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Write your chatter message and let the CAMP counselors at the CRM Team cover the rest.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We know that finding all the right people to contact at your account, region or nation-wide, can be frustrating and time consuming. Once your done with your message, click the button below. We will automatically use your text as a chatter message, link it to this corp/key account, and tag all the active primary account owners under the umbrella.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Note: Even though the message is auto generated, it will still come from you and users will be instructed on how to reply to you through chatter.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Chatter_Message</name>
+            <fieldText>Chatter Message</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>TypeOutYourMessage</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>ChatterTextTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The following is a message from the Corporate Account Team of {!CurAccountID.Name} (CAM: @[{!CurAccountID.OwnerId}], CASR: @[{!CurAccountID.KAM_Support__c}]).
+
+{!Chatter_Message}
+
+{!ChatterFormattedOwnerIDs}
+
+This message is generated by the CAMP system, at the sender&apos;s request. To reply to the sender directly, &quot;@&quot; the user&apos;s name in your reply and they will be notified.</text>
+    </textTemplates>
+    <variables>
+        <name>ChatterFormattedOwnerIDs</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CurAccountID</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>CurrentUserCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>UniqueOwnerIDs</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

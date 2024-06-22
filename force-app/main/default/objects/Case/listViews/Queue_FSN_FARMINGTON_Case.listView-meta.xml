@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_FSN_FARMINGTON_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: FSN-FARMINGTON</label>
+    <queue>Queue_FSN_FARMINGTON</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

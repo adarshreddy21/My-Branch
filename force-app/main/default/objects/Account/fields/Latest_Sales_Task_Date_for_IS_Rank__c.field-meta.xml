@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Sales_Task_Date_for_IS_Rank__c</fullName>
+    <description>Latest Sales Task Date on IS accounts for rank calculation</description>
+    <externalId>false</externalId>
+    <label>Latest Sales Task Date for IS Rank</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,56 @@
+<apex:page standardController="Opportunity" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="opp" id="table">
+<apex:column headerValue="Name">
+<apex:inputField value="{!opp.name}"/>
+</apex:column>
+<apex:column headerValue="Business Type">
+<apex:inputField value="{!opp.Business_Type__c}"/>
+</apex:column>
+<apex:column headerValue="Close Date">
+<apex:inputField value="{!opp.closeDate}"/>
+</apex:column>
+<apex:column headerValue="Job Start Date">
+<apex:inputField value="{!opp.Job_Start_Date__c}"/>
+</apex:column>
+<apex:column headerValue="Stage">
+<apex:inputField value="{!opp.stageName}"/>
+</apex:column>
+<apex:column headerValue="Lost Category">
+<apex:inputField value="{!opp.Lost_Category__c}"/>
+</apex:column>
+<apex:column headerValue="Lost Reason">
+<apex:inputField value="{!opp.Lost_Reason__c}"/>
+</apex:column>
+<apex:column headerValue="Opportunity Tag" >
+<apex:inputField value="{!opp.Opportunity_tag__c}"/>
+</apex:column>
+<apex:column headerValue="Lost to Competitor">
+<apex:inputField value="{!opp.Primary_Competitor__c}"/>
+</apex:column>
+<apex:column headerValue="Price % Lost by">
+<apex:inputField value="{!opp.Price_lost_by__c}"/>
+</apex:column>
+<apex:column headerValue="InSite">
+<apex:inputField value="{!opp.InSite__c}"/>
+</apex:column>
+<apex:column headerValue="RSS">
+<apex:inputField value="{!opp.RSS__c}"/>
+</apex:column>
+<apex:column headerValue="Owner">
+<apex:inputField value="{!opp.OwnerID}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

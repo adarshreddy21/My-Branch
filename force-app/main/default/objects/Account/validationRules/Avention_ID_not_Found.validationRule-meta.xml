@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avention_ID_not_Found</fullName>
+    <active>true</active>
+    <description>Can&apos;t have an Avention ID and Avention ID not Found flagged</description>
+    <errorConditionFormula>and( not(isblank(iSell__OSKeyID__c)), AVID_Not_found__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>AVID_Not_found__c</errorDisplayField>
+    <errorMessage>Hmm, something just isn&apos;t&apos; right.  Why are you flagging &quot;Avention ID not Found&quot; when you have  tied this to an Avention?  Please uncheck the &apos;Avention ID not Found&apos; box and re-save.</errorMessage>
+</ValidationRule>

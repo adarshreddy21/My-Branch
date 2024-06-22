@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Location_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(Line_of_business__c,&quot;Charge for Oil Revenue&quot;),NOT(ISBLANK(Location_Oil_Gallons_Collected__c))),(Location_Oil_Gallons_Collected__c),Amount__c + Location_Oil_Gallons_Collected__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Location Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

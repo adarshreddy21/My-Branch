@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_of_WIN_IDs__c</fullName>
+    <description>List of WIN IDs to be updated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a list of WIN IDs to be updated (separated by commas)</inlineHelpText>
+    <label>List of WIN IDs</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Specialist_Territory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>TSE Territory</label>
+    <referenceTo>Territory__c</referenceTo>
+    <relationshipLabel>TSE Requests (Proposed Specialist Territory)</relationshipLabel>
+    <relationshipName>Technical_Sales_Expert_Cases1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

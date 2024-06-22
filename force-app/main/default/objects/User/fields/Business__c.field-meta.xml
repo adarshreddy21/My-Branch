@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business__c</fullName>
+    <description>Graphical image of Business</description>
+    <externalId>false</externalId>
+    <formula>if(
+text(Sales_Person_Type__c) = &quot;Master Data Management&quot;, 
+IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002ee5X&quot;, &quot;MDM&quot;)
+,
+if(
+ Profile.Name = &quot;Call Agent&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcL&quot;, &quot;SK&quot;)
+
+,
+if(
+ Profile.Name = &quot;Sales Operations&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002ee5D&quot;, &quot;Sales Ops&quot;)
+
+,CASE(text(Primary_Business__c)
+, &quot;Field Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edbm&quot;, &quot;FS&quot;)
+, &quot;Technical Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcV&quot;, &quot;TS&quot;)
+, &quot;Industrial Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edbw&quot;, &quot;IS&quot;)
+, &quot;Performance Plus Products&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcG&quot;, &quot;PPP&quot;)
+, &quot;Lodging&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edc6&quot;, &quot;Lodging&quot;)
+, &quot;Oil &amp; Gas&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcB&quot;, &quot;OG&quot;)
+, &quot;Safety-Kleen&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcL&quot;, &quot;SK&quot;)
+, &quot;Thermo Fluids&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edcQ&quot;, &quot;TFI&quot;)
+, &quot;Emerald Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edbh&quot;, &quot;EM&quot;)
+, &quot;Healthcare Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edbr&quot;, &quot;HS&quot;)
+, &quot;Daylighting and Production Services&quot;, IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002edbc&quot;, &quot;Daylighting&quot;)
+
+,text(Primary_Business__c))
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Business</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

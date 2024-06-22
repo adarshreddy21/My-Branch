@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Unchecked_Inventory_Attached</fullName>
+    <active>true</active>
+    <description>Inventory attached restarts the turnaround clock, so only David Bidwell and Craig Morley can unchecked</description>
+    <errorConditionFormula>AND(
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+$User.Person_Name__c &lt;&gt; &apos;David H Bidwell&apos;,
+$User.Person_Name__c &lt;&gt; &apos;Craig Morley&apos;,
+$User.Person_Name__c &lt;&gt; &apos;Todd Reidinger&apos;,
+
+PRIORVALUE(Inventory_Attached__c )= True,
+Inventory_Attached__c = False
+)</errorConditionFormula>
+    <errorDisplayField>Inventory_Attached__c</errorDisplayField>
+    <errorMessage>You are not allowed to Uncheck Inventory Attached, Please Contact David Bidwell or Craig Morley.</errorMessage>
+</ValidationRule>

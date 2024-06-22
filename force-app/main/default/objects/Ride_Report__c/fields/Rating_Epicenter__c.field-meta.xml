@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_Epicenter__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( Scorecard_Performance__c &lt;=2.49 ,&apos;Needs Improvement&apos;,
+If(Scorecard_Performance__c &gt;2.49 &amp;&amp; Scorecard_Performance__c &lt;=3.50,&apos;Meets Expectations&apos;,
+If(Scorecard_Performance__c&gt;3.50 &amp;&amp; Scorecard_Performance__c &lt;=5.00,&apos;Exceeds Expectations&apos;, null )))</formula>
+    <label>Rating - Scorecard Performance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Services_Specialist</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>CORE.USERS.TITLE</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>Sales_Branch__c</columns>
+    <columns>MANAGER</columns>
+    <columns>Sales_Person_Type__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Sales_VP__c</columns>
+    <columns>Sales_SVP__c</columns>
+    <columns>Sales_EVP__c</columns>
+    <columns>CORE.PROFILE.USERTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Business__c</field>
+        <operation>contains</operation>
+        <value>Field Services</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.TITLE</field>
+        <operation>contains</operation>
+        <value>Field Service Specialist</value>
+    </filters>
+    <label>Field Services Specialist</label>
+    <language>en_US</language>
+</ListView>

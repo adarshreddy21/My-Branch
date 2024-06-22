@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_work_note_for_Red_and_Blue_call_note</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( 
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;), 
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+or( 
+ISPICKVAL( Color__c ,&apos;Blue - Problem&apos;),
+ISPICKVAL( Color__c ,&apos;Red - Lost Business&apos;)),
+isblank( Work_Note__c )
+)</errorConditionFormula>
+    <errorDisplayField>Work_Note__c</errorDisplayField>
+    <errorMessage>Please enter Work Note, this will create a new Worknote.</errorMessage>
+</ValidationRule>

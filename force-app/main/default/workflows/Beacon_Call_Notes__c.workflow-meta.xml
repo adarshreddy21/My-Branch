@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Blue_Call_Note_Email_Alert</fullName>
+        <description>Blue Call Note Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Beacon_Blue_Call_Note_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Blue_Call_Note_Notification</fullName>
+        <description>Blue Call Note Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Beacon_Blue_Call_Note_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Red_Call_Note_Notifications</fullName>
+        <description>Red Call Note Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Beacon_Red_Call_Note_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Sent_email_to_Account_owner_Beacon_call_note</fullName>
+        <description>Sent email to Account owner Beacon call note</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>kermet.john@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Beacon_Call_Note_Notification</template>
+    </alerts>
+    <rules>
+        <fullName>Beacon Call Note Notification</fullName>
+        <actions>
+            <name>Sent_email_to_Account_owner_Beacon_call_note</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Let Account owner know when a beacon call note has been created/modified in Beacon</description>
+        <formula>and(  CreatedById &lt;&gt; Call_Note_Account__r.OwnerId ,  $Profile.Name &lt;&gt; &quot;Integration&quot;,$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;, or( text(Color__c) = &quot;Black - Closed Acct&quot;, text(Color__c) = &quot;Blue - Problem&quot;, text(Color__c) = &quot;Green - Status Quo&quot;, text(Color__c) = &quot;Orange - Resolution&quot;, text(Color__c) = &quot;Red - Lost Business&quot;, text(Color__c) = &quot;White - Unknown Potential&quot;, text(Color__c) = &quot;Yellow - Change&quot;, text(Color__c) = &quot;Purple - Senior Review&quot;, text(Color__c) = &quot;Gold - Account Review&quot;, text(Color__c) = &quot;Silver - Corp Account&quot; ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Beacon Red Call Note Notification</fullName>
+        <actions>
+            <name>Red_Call_Note_Notifications</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Let Account owner know when a beacon call note has been created/modified in Beacon</description>
+        <formula>and(  CreatedById &lt;&gt; Call_Note_Account__r.OwnerId ,  $Profile.Name &lt;&gt; &quot;Integration&quot;,$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;, text(Color__c) = &quot;Red - Lost Business&quot;  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Blue Call Note Notification</fullName>
+        <actions>
+            <name>Blue_Call_Note_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Let Account owner know when a beacon call note has been created/modified in Beacon</description>
+        <formula>and(  CreatedById &lt;&gt; Call_Note_Account__r.OwnerId ,  $Profile.Name &lt;&gt; &quot;Integration&quot;,$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;, or( text(Color__c) = &quot;Blue - Problem&quot;  ))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

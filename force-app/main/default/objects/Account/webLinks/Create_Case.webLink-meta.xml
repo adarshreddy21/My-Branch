@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Case</fullName>
+    <availability>online</availability>
+    <description>Open case to request account change</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Request Owner/TSE Change</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cleanharbors.my.salesforce.com/setup/ui/recordtypeselect.jsp?ent=Case&amp;retURL=%2F{!Account.Id}&amp;save_new_url=%2F500%2Fe%3FretURL%3D%252F{!Account.Id}%26def_account_id%3D{!Account.Id}</url>
+</WebLink>

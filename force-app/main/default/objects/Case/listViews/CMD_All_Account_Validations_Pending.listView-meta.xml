@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMD_All_Account_Validations_Pending</fullName>
+    <booleanFilter>(1 or 3 or 4)AND 2</booleanFilter>
+    <columns>MDM_Approver__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Case_Owner_Primary_Business__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Account_Update_Validations</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Pending Approval</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.New_Customer_Request,Case.Customer_Master_Unexpire_Account</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Customer_Master_Change_ShipTo_Gen_To_Customer</value>
+    </filters>
+    <label>CMD - All Account Validations Pending</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

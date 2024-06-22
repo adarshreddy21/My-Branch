@@ -1,0 +1,56 @@
+<apex:page standardController="Strategic_Account_Plan__c">
+    <apex:form >      
+        <apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection columns="4" >
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Objectives" style="float:left;font-weight:700"></apex:outputLabel>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Goal" style="float:centre;font-weight:700"></apex:outputLabel>  
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Current Status" style="float:left;font-weight:700"></apex:outputLabel>
+                </apex:pageblocksectionitem>
+                 <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Complete" style="float:left;font-weight:700"></apex:outputLabel>
+                </apex:pageblocksectionitem>  
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_1__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_1__c}"/>
+                </apex:pageblocksectionitem>  
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective1__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Complete_Quantitative_Objective_1__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_2__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_2__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >   
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective2__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Complete_Quantitative_Objective_2__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_3__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_3__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective3__c}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputField value="{!Strategic_Account_Plan__c.Complete_Quantitative_Objective_3__c}"/>
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denial_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Denial Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invalid Main Contact eMail Address</fullName>
+                <default>false</default>
+                <label>Invalid Main Contact eMail Address</label>
+            </value>
+            <value>
+                <fullName>Invalid Main Contact Information</fullName>
+                <default>false</default>
+                <label>Invalid Main Contact Information</label>
+            </value>
+            <value>
+                <fullName>Invalid Street Address</fullName>
+                <default>false</default>
+                <label>Invalid Street Address</label>
+            </value>
+            <value>
+                <fullName>Avention Company Not Found</fullName>
+                <default>false</default>
+                <label>Avention Company Not Found</label>
+            </value>
+            <value>
+                <fullName>Duplicate Account</fullName>
+                <default>false</default>
+                <label>Duplicate Account</label>
+            </value>
+            <value>
+                <fullName>Call note Required</fullName>
+                <default>false</default>
+                <label>Call note Required</label>
+            </value>
+            <value>
+                <fullName>Corp addr change to PO Box not allowed</fullName>
+                <default>false</default>
+                <label>Corp addr change to PO Box not allowed</label>
+            </value>
+            <value>
+                <fullName>Cannot Expire - active colinks</fullName>
+                <default>false</default>
+                <label>Cannot Expire - active colinks</label>
+            </value>
+            <value>
+                <fullName>Cannot Expire - active Orders/Services</fullName>
+                <default>false</default>
+                <label>Cannot Expire - active Orders/Services</label>
+            </value>
+            <value>
+                <fullName>Invalid Alt Billing address</fullName>
+                <default>false</default>
+                <label>Invalid Alt Billing address</label>
+            </value>
+            <value>
+                <fullName>Invalid EPA ID</fullName>
+                <default>false</default>
+                <label>Invalid EPA ID</label>
+            </value>
+            <value>
+                <fullName>Invalid Vertical / Class</fullName>
+                <default>false</default>
+                <label>Invalid Vertical / Class</label>
+            </value>
+            <value>
+                <fullName>Invalid Address</fullName>
+                <default>false</default>
+                <label>Invalid Address</label>
+            </value>
+            <value>
+                <fullName>Pricing chain - updated by Pricing team</fullName>
+                <default>false</default>
+                <label>Pricing chain - updated by Pricing team</label>
+            </value>
+            <value>
+                <fullName>Require additional information</fullName>
+                <default>false</default>
+                <label>Require additional information</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Cannot Expire – open SF opportunities</fullName>
+                <default>false</default>
+                <label>Cannot Expire – open SF opportunities</label>
+            </value>
+            <value>
+                <fullName>Name change - requires add&apos;l information</fullName>
+                <default>false</default>
+                <label>Name change - requires add&apos;l information</label>
+            </value>
+            <value>
+                <fullName>No Response From Requester</fullName>
+                <default>false</default>
+                <label>No Response From Requester</label>
+            </value>
+            <value>
+                <fullName>Customer -&gt; ShipTo/GEN Relationship Required</fullName>
+                <default>false</default>
+                <label>Customer -&gt; ShipTo/GEN Relationship Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

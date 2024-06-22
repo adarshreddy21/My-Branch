@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Team_Driver_Opportunities_Open</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Opp_Strength__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Creator_Username__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Creator_Username__c</field>
+        <operation>greaterThan</operation>
+    </filters>
+    <label>My Team Driver Opportunities Open</label>
+</ListView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BR_Resolution__c</fullName>
+    <externalId>false</externalId>
+    <label>BR Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Save</fullName>
+                <default>false</default>
+                <label>Save</label>
+            </value>
+            <value>
+                <fullName>loss</fullName>
+                <default>false</default>
+                <label>loss</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <valueName>Save</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <valueName>loss</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

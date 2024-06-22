@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Event_Firing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is to disable event firing on case when the case comment is added and which leads to update in the case status</description>
+    <externalId>false</externalId>
+    <label>Disable Event Firing</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

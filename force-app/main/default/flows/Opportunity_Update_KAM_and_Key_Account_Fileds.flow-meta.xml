@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>KeyAccount</name>
+        <dataType>String</dataType>
+        <expression>IF(({!$Record.Account.RecordType.Name = &apos;Corporate&apos;}), {!$Record.AccountId},
+IF(ISBLANK({!$Record.Account.ParentId}),NULL,
+IF(OR(({!$Record.Account.RecordType.Name = &apos;Customer&apos;}) ,
+({!$Record.Account.RecordType.Name = &apos;Customer Chain&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Distributor&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Broker&apos;})),{!$Record.Account.ParentId},
+IF(ISBLANK({!$Record.Account.Parent.ParentId}),NULL,
+IF(OR(({!$Record.Account.RecordType.Name = &apos;Customer Location&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Distributor Location&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Broker Location&apos;})),{!$Record.Account.Parent.ParentId}
+,NULL)))))</expression>
+    </formulas>
+    <formulas>
+        <name>KeyAccountManager</name>
+        <dataType>String</dataType>
+        <expression>IF(({!$Record.Account.RecordType.Name = &apos;Corporate&apos;}), {!$Record.Account.OwnerId},
+IF(ISBLANK({!$Record.Account.ParentId}),NULL,
+IF(OR(({!$Record.Account.RecordType.Name = &apos;Customer&apos;}) ,
+({!$Record.Account.RecordType.Name = &apos;Customer Chain&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Distributor&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Broker&apos;})),{!$Record.Account.Parent.OwnerId},
+IF(ISBLANK({!$Record.Account.Parent.ParentId}), NULL,
+IF(OR(({!$Record.Account.RecordType.Name = &apos;Customer Location&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Distributor Location&apos;}),
+({!$Record.Account.RecordType.Name = &apos;Broker Location&apos;})),{!$Record.Account.Parent.Parent.OwnerId}
+,NULL)))))</expression>
+    </formulas>
+    <interviewLabel>Update KAM Manager and Ke {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Update KAM and Key Account Fileds</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Corp_Account_and_Corp_Account_Manager</name>
+        <label>Update Corp Account and Corp Account Manager</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Key_Account_Manager__c</field>
+            <value>
+                <elementReference>KeyAccountManager</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Key_Account__c</field>
+            <value>
+                <elementReference>KeyAccount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Corp_Account_and_Corp_Account_Manager</targetReference>
+        </connector>
+        <filterFormula>AND(OR(ISBLANK({!$Record.Account.ParentId}),ISBLANK({!$Record.Account.Parent.ParentId})),OR({!$Record.Account.RecordType.Name} = &apos;Corporate&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Customer&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Customer Chain&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Distributor&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Broker&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Customer Location&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Distributor Location&apos;,
+{!$Record.Account.RecordType.Name} = &apos;Broker Location&apos;))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

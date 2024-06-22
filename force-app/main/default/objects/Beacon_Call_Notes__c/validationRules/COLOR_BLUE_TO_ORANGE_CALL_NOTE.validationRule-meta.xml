@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COLOR_BLUE_TO_ORANGE_CALL_NOTE</fullName>
+    <active>true</active>
+    <description>Can only change blue to Orange.</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(PRIORVALUE(  Color__c ), &quot;Blue&quot;), 
+NOT(ISPICKVAL( Color__c , &quot;Orange&quot;)), 
+NOT(  $Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+ISCHANGED( Color__c ) )</errorConditionFormula>
+    <errorDisplayField>Color__c</errorDisplayField>
+    <errorMessage>Cannot change Blue call note to any other color but Orange</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Virgin_Chemical_Sales</fullName>
+    <active>true</active>
+    <description>Only allow Branch A1 on Virgin Chemical Sales LOBs</description>
+    <errorConditionFormula>and(and(Branch__r.Branch_Code__c &lt;&gt; &quot;UB&quot;, Branch__r.Branch_Code__c &lt;&gt; &quot;A1&quot;),  Product2.Name = &quot;Virgin Chemical Sales&quot;)</errorConditionFormula>
+    <errorDisplayField>Branch__c</errorDisplayField>
+    <errorMessage>Virgin Chemical Sales LOB can only be serviced by Branch A1</errorMessage>
+</ValidationRule>

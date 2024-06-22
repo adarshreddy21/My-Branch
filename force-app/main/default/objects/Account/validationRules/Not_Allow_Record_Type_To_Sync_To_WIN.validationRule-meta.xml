@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Allow_Record_Type_To_Sync_To_WIN</fullName>
+    <active>true</active>
+    <description>Do Not Allow Account Record Types to Sync to WIN</description>
+    <errorConditionFormula>AND((Win_Validate_New__c = TRUE),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+OR(
+RecordType.Name = &quot;HR Recruiting Partners&quot;,
+RecordType.Name = &quot;Key Account&quot;,
+RecordType.Name = &quot;Branch&quot;,
+RecordType.Name = &quot;Growth Budget&quot;,
+RecordType.Name = &quot;Prospect&quot;))</errorConditionFormula>
+    <errorMessage>&quot;You cannot request to sync this account record type to WIN.&quot;</errorMessage>
+</ValidationRule>

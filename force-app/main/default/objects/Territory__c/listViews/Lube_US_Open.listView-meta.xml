@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lube_US_Open</fullName>
+    <columns>Primary_Business__c</columns>
+    <columns>Primary_Branch_Code__c</columns>
+    <columns>Open_Territory__c</columns>
+    <columns>Region__c</columns>
+    <columns>Area__c</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Primary_Branch__c</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Manager_Name__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Sales_EVP__c</columns>
+    <columns>Operations_VP__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Territory_code__c</field>
+        <operation>contains</operation>
+        <value>200</value>
+    </filters>
+    <filters>
+        <field>Open_Territory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Lube (US) - Open</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>Sales_Admin</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Report_Customer_Open_AR_Desktop_Only</fullName>
+    <availability>online</availability>
+    <description>Open Accounts Receivable - Invoice Detail Report</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Report: Customer Open AR (Desktop Only)</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://reports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fBeacon%2fAdmin+Reports%2fCustomer+Open+AR+Beacon+Export&amp;rs:Command=Render&amp;Prompt0={!Account.WIN_ID__c}</url>
+</WebLink>

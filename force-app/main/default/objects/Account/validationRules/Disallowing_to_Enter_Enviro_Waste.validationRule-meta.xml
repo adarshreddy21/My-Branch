@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Enter_Enviro_Waste</fullName>
+    <active>true</active> 
+    <description>Enviro waste is no more a valid PSP. Please use Murphy&apos;s oil instead</description>
+    <errorConditionFormula>OR(AND(IsNew(),TEXT(Primary_Business__c) = &apos;Enviro Waste&apos;), 
+AND(ISCHANGED(Primary_Business__c),PRIORVALUE(Primary_Business__c) &lt;&gt; &apos;Enviro Waste&apos;,TEXT(Primary_Business__c) = &apos;Enviro Waste&apos;))</errorConditionFormula>
+    <errorMessage>Enviro waste is no more a valid PSP. Please use Murphy&apos;s oil instead</errorMessage>
+</ValidationRule>

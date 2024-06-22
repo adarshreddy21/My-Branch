@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRM_Analyst__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>CRM Analyst</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>User.Username</field>
+            <operation>equals</operation>
+            <value>pituck.clayton@cleanharbors.com.chfull</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Username</field>
+            <operation>equals</operation>
+            <value>susan.robinson@safety-kleen.com.chprod.chfull</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Username</field>
+            <operation>equals</operation>
+            <value>mazzilli.michael.hr@cleanharbors.com.chfull</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Sales_Ops_Requests1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

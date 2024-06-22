@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_is_expired</fullName>
+    <active>true</active>
+    <description>prevent save if the account is expired or inactive</description>
+    <errorConditionFormula>OR(Account.Expired__c = true, ISPICKVAL(Account.Status__c, &apos;Inactive&apos; ))</errorConditionFormula>
+    <errorMessage>Cannot create opportunity on an expired or inactive account</errorMessage>
+</ValidationRule>

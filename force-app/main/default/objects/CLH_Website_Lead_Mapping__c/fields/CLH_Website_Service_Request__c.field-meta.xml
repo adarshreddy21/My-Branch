@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CLH_Website_Service_Request__c</fullName>
+    <description>Value passed by CLH Website to the Lead object&apos;s CLH Website Service Requested field</description>
+    <externalId>false</externalId>
+    <label>CLH Website Service Request</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

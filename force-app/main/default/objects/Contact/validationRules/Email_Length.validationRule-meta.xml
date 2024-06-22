@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Length</fullName>
+    <active>true</active>
+    <description>Email length should not exceed the 60 Character limit.</description>
+    <errorConditionFormula>LEN(Email)&gt;60</errorConditionFormula>
+    <errorMessage>Email length must be less than 60 Characters.</errorMessage>
+</ValidationRule> 

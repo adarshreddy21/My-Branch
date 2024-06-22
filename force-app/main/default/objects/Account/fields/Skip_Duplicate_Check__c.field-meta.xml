@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skip_Duplicate_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DO NOT DELETE THIS FIELD. This field is used to skip the duplicate check on Account created from New Location Flow. For skipping duplicate check for Integration flow, the Duplicate Rule takes care by looking at the profile as Integration and skips it.</description>
+    <externalId>false</externalId>
+    <label>Skip Duplicate Check</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

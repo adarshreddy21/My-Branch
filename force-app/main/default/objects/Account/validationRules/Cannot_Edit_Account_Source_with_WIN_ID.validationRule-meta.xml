@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Account_Source_with_WIN_ID</fullName>
+    <active>true</active>
+    <description>Cannot edit Account Source when win id is populated.</description>
+    <errorConditionFormula>and(
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Master Data Management&apos;,
+ischanged(AccountSource),
+NOT(ISPICKVAL(PRIORVALUE(AccountSource),&quot;&quot;)), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+not(isblank(WIN_ID__c)))</errorConditionFormula>
+    <errorDisplayField>AccountSource</errorDisplayField>
+    <errorMessage>Cannot change Account Source when WIN Id is populated.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Snapins_Contact_PrechatQuickAction_08h4Q0000004C9c_1614930345652</description>
+    <label>Snapins_Contact_PrechatQuickAction_08h4Q0000004C9c_1614930345652</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsTopToBottom</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Contact</targetObject>
+    <targetRecordType>Contact.Master_Contact</targetRecordType>
+    <type>Create</type>
+</QuickAction>

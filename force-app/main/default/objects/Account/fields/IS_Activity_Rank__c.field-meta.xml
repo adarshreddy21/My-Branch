@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Activity_Rank__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+ISBLANK( Latest_Sales_Event_Date_for_IS_Rank__c ),
+NOT(ISBLANK( Latest_Sales_Task_Date_for_IS_Rank__c )),
+Latest_Sales_Task_Date_for_IS_Rank__c &lt; TODAY() - 90
+), 
+6,
+
+IF(
+AND(
+ISBLANK(Latest_Sales_Task_Date_for_IS_Rank__c ),
+NOT(ISBLANK(Latest_Sales_Event_Date_for_IS_Rank__c )),
+Latest_Sales_Event_Date_for_IS_Rank__c &lt; TODAY() - 90
+), 
+6,
+IF(
+AND(
+ISBLANK(Latest_Sales_Task_Date_for_IS_Rank__c ),
+ISBLANK(Latest_Sales_Event_Date_for_IS_Rank__c )
+), 
+6,
+IF(
+AND(
+NOT(ISBLANK(Latest_Sales_Task_Date_for_IS_Rank__c )),
+NOT(ISBLANK(Latest_Sales_Event_Date_for_IS_Rank__c )),
+Latest_Sales_Event_Date_for_IS_Rank__c &lt; TODAY() - 90,
+Latest_Sales_Task_Date_for_IS_Rank__c &lt; TODAY() - 90
+), 
+6,
+null
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IS Activity Rank</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

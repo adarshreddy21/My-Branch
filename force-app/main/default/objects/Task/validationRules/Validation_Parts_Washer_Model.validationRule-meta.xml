@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Parts_Washer_Model</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &quot;Integration&quot;,
+$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;,
+ OR(ISPICKVAL(Call_Type__c , &quot;Equipment Repair-EAC&quot;),
+ISPICKVAL(Call_Type__c , &quot;Equipment Repair-COMs&quot;)),
+isblank(Parts_Washer_Model__c))</errorConditionFormula>
+    <errorDisplayField>Parts_Washer_Model__c</errorDisplayField>
+    <errorMessage>Please enter Parts Washer Model</errorMessage>
+</ValidationRule>

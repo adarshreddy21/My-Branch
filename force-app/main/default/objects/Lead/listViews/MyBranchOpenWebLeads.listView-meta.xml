@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyBranchOpenWebLeads</fullName>
+    <booleanFilter>(1 AND 2 AND 3) AND (4 OR  (5 and 6))</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>Lead_Address__c</columns>
+    <columns>Lead_Branch__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Created_Date_with_Time__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Qualified,Unqualified</value>
+    </filters>
+    <filters>
+        <field>My_Branch_Lead__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Lead_Branch__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>CLH_Website_Service_Requested__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Primary_Business__c</field>
+        <operation>equals</operation>
+        <value>Safety-Kleen</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Web</value>
+    </filters>
+    <label>My Branch Open Web Leads</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

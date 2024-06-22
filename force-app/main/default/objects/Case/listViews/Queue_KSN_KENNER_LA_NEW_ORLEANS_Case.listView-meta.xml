@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_KSN_KENNER_LA_NEW_ORLEANS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: KSN-KENNER, LA (NEW ORLEANS)</label>
+    <queue>Queue_KSN_KENNER_LA_NEW_ORLEANS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

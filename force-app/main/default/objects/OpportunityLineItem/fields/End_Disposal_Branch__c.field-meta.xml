@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Disposal_Branch__c</fullName>
+    <description>End Disposal Branch</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter final disposal location</inlineHelpText>
+    <label>End Disposal Location</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>End_Disposal_Method__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AG - Aragonite, UT Facility</fullName>
+                <default>false</default>
+                <label>AG - Aragonite, UT Facility</label>
+            </value>
+            <value>
+                <fullName>AL - Altair, TX Facility</fullName>
+                <default>false</default>
+                <label>AL - Altair, TX Facility</label>
+            </value>
+            <value>
+                <fullName>BA - Baltimore, MD Facility</fullName>
+                <default>false</default>
+                <label>BA - Baltimore, MD Facility</label>
+            </value>
+            <value>
+                <fullName>BL - Buttonwillow, CA Facility</fullName>
+                <default>false</default>
+                <label>BL - Buttonwillow, CA Facility</label>
+            </value>
+            <value>
+                <fullName>BN - Baton Rouge, LA Facility</fullName>
+                <default>false</default>
+                <label>BN - Baton Rouge, LA Facility</label>
+            </value>
+            <value>
+                <fullName>BR - Braintree, MA Facility</fullName>
+                <default>false</default>
+                <label>BR - Braintree, MA Facility</label>
+            </value>
+            <value>
+                <fullName>CF - Colfax, LA Facility</fullName>
+                <default>false</default>
+                <label>CF - Colfax, LA Facility</label>
+            </value>
+            <value>
+                <fullName>CG - Chattanooga, TN Facility</fullName>
+                <default>false</default>
+                <label>CG - Chattanooga, TN Facility</label>
+            </value>
+            <value>
+                <fullName>CL - Cleveland, OH Facility</fullName>
+                <default>false</default>
+                <label>CL - Cleveland, OH Facility</label>
+            </value>
+            <value>
+                <fullName>DE - Deer Park, TX Facility</fullName>
+                <default>false</default>
+                <label>DE - Deer Park, TX Facility</label>
+            </value>
+            <value>
+                <fullName>DL - Delta, BC Facility</fullName>
+                <default>false</default>
+                <label>DL - Delta, BC Facility</label>
+            </value>
+            <value>
+                <fullName>DR - Deer Trail, CO Facility</fullName>
+                <default>false</default>
+                <label>DR - Deer Trail, CO Facility</label>
+            </value>
+            <value>
+                <fullName>DU - Clean Harbors San Leon, TX</fullName>
+                <default>false</default>
+                <label>DU - Clean Harbors San Leon, TX</label>
+            </value>
+            <value>
+                <fullName>EL - El Dorado, AR Facility</fullName>
+                <default>false</default>
+                <label>EL - El Dorado, AR Facility</label>
+            </value>
+            <value>
+                <fullName>ETW - EMR - Tacoma - RCRA Facility</fullName>
+                <default>false</default>
+                <label>ETW - EMR - Tacoma - RCRA Facility</label>
+            </value>
+            <value>
+                <fullName>FY - Devon Deepwell, Devon AB</fullName>
+                <default>false</default>
+                <label>FY - Devon Deepwell, Devon AB</label>
+            </value>
+            <value>
+                <fullName>GM - Grassy Mountain, UT Facility</fullName>
+                <default>false</default>
+                <label>GM - Grassy Mountain, UT Facility</label>
+            </value>
+            <value>
+                <fullName>KP - Kimball, NE Facility</fullName>
+                <default>false</default>
+                <label>KP - Kimball, NE Facility</label>
+            </value>
+            <value>
+                <fullName>LB - Lambton, ON Facility</fullName>
+                <default>false</default>
+                <label>LB - Lambton, ON Facility</label>
+            </value>
+            <value>
+                <fullName>LG - Lone Mountain, OK Facility</fullName>
+                <default>false</default>
+                <label>LG - Lone Mountain, OK Facility</label>
+            </value>
+            <value>
+                <fullName>LT - La Porte, TX Facility</fullName>
+                <default>false</default>
+                <label>LT - La Porte, TX Facility</label>
+            </value>
+            <value>
+                <fullName>RY - Ryley, AB Facility</fullName>
+                <default>false</default>
+                <label>RY - Ryley, AB Facility</label>
+            </value>
+            <value>
+                <fullName>SJ - San Jose, CA Facility</fullName>
+                <default>false</default>
+                <label>SJ - San Jose, CA Facility</label>
+            </value>
+            <value>
+                <fullName>SMR - Smithfield, KY - RC</fullName>
+                <default>false</default>
+                <label>SMR - Smithfield, KY - RC</label>
+            </value>
+			<value>
+                <fullName>SPE - Seaport Facility</fullName>
+                <default>false</default>
+                <label>SPE - Seaport Facility</label>
+            </value>
+            <value>
+                <fullName>SU - Corunna, ON Facility (Sarnia)</fullName>
+                <default>false</default>
+                <label>SU - Corunna, ON Facility (Sarnia)</label>
+            </value>
+            <value>
+                <fullName>SW - Sawyer, ND Facility</fullName>
+                <default>false</default>
+                <label>SW - Sawyer, ND Facility</label>
+            </value>
+            <value>
+                <fullName>WC - Bristol, CT Facility</fullName>
+                <default>false</default>
+                <label>WC - Bristol, CT Facility</label>
+            </value>
+            <value>
+                <fullName>WT - White Castle, LA Facility</fullName>
+                <default>false</default>
+                <label>WT - White Castle, LA Facility</label>
+            </value>
+            <value>
+                <fullName>Cadence</fullName>
+                <default>false</default>
+                <label>Cadence</label>
+            </value>
+            <value>
+                <fullName>Corpus Christi</fullName>
+                <default>false</default>
+                <label>Corpus Christi</label>
+            </value>
+            <value>
+                <fullName>Covanta</fullName>
+                <default>false</default>
+                <label>Covanta</label>
+            </value>
+            <value>
+                <fullName>Crowley Container</fullName>
+                <default>false</default>
+                <label>Crowley Container</label>
+            </value>
+            <value>
+                <fullName>Lonestar Ecology</fullName>
+                <default>false</default>
+                <label>Lonestar Ecology</label>
+            </value>
+            <value>
+                <fullName>Rad Disposal</fullName>
+                <default>false</default>
+                <label>Rad Disposal</label>
+            </value>
+            <value>
+                <fullName>Republic Services</fullName>
+                <default>false</default>
+                <label>Republic Services</label>
+            </value>
+            <value>
+                <fullName>Seabreeze</fullName>
+                <default>false</default>
+                <label>Seabreeze</label>
+            </value>
+            <value>
+                <fullName>SET Environmental</fullName>
+                <default>false</default>
+                <label>SET Environmental</label>
+            </value>
+            <value>
+                <fullName>Systech</fullName>
+                <default>false</default>
+                <label>Systech</label>
+            </value>
+            <value>
+                <fullName>Texas Molecular</fullName>
+                <default>false</default>
+                <label>Texas Molecular</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+            <value>
+                <fullName>LIN - Linden</fullName>
+                <default>false</default>
+                <label>LIN - Linden</label>
+            </value>
+            <value>
+                <fullName>SC - Chicago</fullName>
+                <default>false</default>
+                <label>SC - Chicago</label>
+            </value>
+            <value>
+                <fullName>SH - Hebron</fullName>
+                <default>false</default>
+                <label>SH - Hebron</label>
+            </value>
+            <value>
+                <fullName>LER - Lexington</fullName>
+                <default>false</default>
+                <label>LER - Lexington</label>
+            </value>
+            <value>
+                <fullName>El-Dorado</fullName>
+                <default>false</default>
+                <label>El-Dorado</label>
+            </value>
+            <value>
+                <fullName>Dolton</fullName>
+                <default>false</default>
+                <label>Dolton</label>
+            </value>
+            <value>
+                <fullName>Denton</fullName>
+                <default>false</default>
+                <label>Denton</label>
+            </value>
+            <value>
+                <fullName>Tacoma</fullName>
+                <default>false</default>
+                <label>Tacoma</label>
+            </value>
+            <value>
+                <fullName>Third Party</fullName>
+                <default>false</default>
+                <label>Third Party</label>
+            </value>
+            <value>
+                <fullName>ESW - Emerald Seattle Facility</fullName>
+                <default>false</default>
+                <label>ESW - Emerald Seattle Facility</label>
+            </value>
+            <value>
+                <fullName>GL - Guelph, ON Oil Facility</fullName>
+                <default>false</default>
+                <label>GL - Guelph, ON Oil Facility</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <valueName>AG - Aragonite, UT Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <valueName>DE - Deer Park, TX Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <valueName>DU - Clean Harbors San Leon, TX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <valueName>EL - El Dorado, AR Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <valueName>KP - Kimball, NE Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incineration</controllingFieldValue>
+            <valueName>SU - Corunna, ON Facility (Sarnia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>BA - Baltimore, MD Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <valueName>BR - Braintree, MA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <valueName>ETW - EMR - Tacoma - RCRA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <valueName>LT - La Porte, TX Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>SJ - San Jose, CA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuels Blending</controllingFieldValue>
+            <valueName>SMR - Smithfield, KY - RC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>AL - Altair, TX Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>BL - Buttonwillow, CA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>CG - Chattanooga, TN Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>DR - Deer Trail, CO Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>GM - Grassy Mountain, UT Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>LB - Lambton, ON Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>LG - Lone Mountain, OK Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>RY - Ryley, AB Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landfill</controllingFieldValue>
+            <valueName>SW - Sawyer, ND Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>BN - Baton Rouge, LA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>CL - Cleveland, OH Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>DL - Delta, BC Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>WC - Bristol, CT Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>WT - White Castle, LA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>ESW - Emerald Seattle Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Water</controllingFieldValue>
+            <valueName>GL - Guelph, ON Oil Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Explosives Management</controllingFieldValue>
+            <valueName>CF - Colfax, LA Facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Cadence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Corpus Christi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Covanta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Crowley Container</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Lonestar Ecology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Rad Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Republic Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Seabreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>SET Environmental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Systech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Texas Molecular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Third Party</controllingFieldValue>
+            <valueName>Waste Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deepwell</controllingFieldValue>
+            <valueName>FY - Devon Deepwell, Devon AB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>LIN - Linden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>SC - Chicago</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>SH - Hebron</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>LER - Lexington</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>El-Dorado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>Dolton</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>Denton</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>Tacoma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solvent Recycling</controllingFieldValue>
+            <controllingFieldValue>Tolling</controllingFieldValue>
+            <controllingFieldValue>Recycled Solvent Sales</controllingFieldValue>
+            <valueName>Third Party</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

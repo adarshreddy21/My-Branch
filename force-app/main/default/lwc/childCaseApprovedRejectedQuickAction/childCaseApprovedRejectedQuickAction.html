@@ -1,0 +1,47 @@
+<template>
+    <template if:true={areApproveRejectVisible}>
+    <lightning-quick-action-panel header="Manage Child Cases">
+       
+    
+    <lightning-card variant="Narrow" title={getCaseApprovalHeadlineCount} icon-name="standard:case"
+        class="slds-card slds-theme_shade">
+       
+
+        <div>
+            <lightning-datatable class="related-list slds-table slds-table_cell-buffer slds-table_bordered"
+                columns={columns} data={caseRecordsData} show-row-number-column key-field="Id"
+                resize-column-disabled="false">
+            </lightning-datatable>
+        </div>
+
+       
+
+
+    </lightning-card>
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    
+    <div slot="footer">
+        <lightning-button label="Approve" slot="actions" onclick={handleApproveRecord}></lightning-button>
+        <lightning-button label="Reject" slot="actions" onclick={handleRejectRecord}></lightning-button>
+    </div>
+</lightning-quick-action-panel>
+<template if:true={recordId}>
+    <p class="noteclass slds-align_absolute-center">* Only records awaiting for approval are shown above.</p>
+</template>
+</template>
+<template if:false={areApproveRejectVisible}>
+    <lightning-card variant="Narrow" 
+        class="slds-card slds-theme_shade">
+    <p class="noteclass slds-align_absolute-center">{noAccessMessage}</p>
+    </lightning-card>
+</template>
+<template if:true={getNoRecordsToDisplay}>
+    <lightning-card variant="Narrow" title={getCaseApprovalHeadlineCount} icon-name="standard:case"
+        class="slds-card slds-theme_shade">
+    <p class="noteclass slds-align_absolute-center">No records to display.</p>
+    </lightning-card>
+</template>
+
+</template>

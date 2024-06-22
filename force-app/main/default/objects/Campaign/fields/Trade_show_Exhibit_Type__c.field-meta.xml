@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_show_Exhibit_Type__c</fullName>
+    <description>Size / type of exhibit at a tradeshow</description>
+    <externalId>false</externalId>
+    <label>Trade Show Exhibit Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Exhibit 10x10</fullName>
+                <default>false</default>
+                <label>Exhibit 10x10</label>
+            </value>
+            <value>
+                <fullName>Exhibit 10x20</fullName>
+                <default>false</default>
+                <label>Exhibit 10x20</label>
+            </value>
+            <value>
+                <fullName>Exhibit 20x20</fullName>
+                <default>false</default>
+                <label>Exhibit 20x20</label>
+            </value>
+            <value>
+                <fullName>Exhibit outdoor</fullName>
+                <default>false</default>
+                <label>Exhibit outdoor</label>
+            </value>
+            <value>
+                <fullName>Reverse Expo</fullName>
+                <default>false</default>
+                <label>Reverse Expo</label>
+            </value>
+            <value>
+                <fullName>Walk</fullName>
+                <default>false</default>
+                <label>Walk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

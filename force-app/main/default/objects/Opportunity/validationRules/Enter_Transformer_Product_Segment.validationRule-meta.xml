@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Transformer_Product_Segment</fullName>
+    <active>true</active>
+    <description>When Transformer profile force entry</description>
+    <errorConditionFormula>AND( 
+$Profile.Name = &quot;Transformer Services&quot;,
+ISBLANK(text( Transformer_Product_Segment__c )) 
+)</errorConditionFormula>
+    <errorDisplayField>Transformer_Product_Segment__c</errorDisplayField>
+    <errorMessage>Please enter Transformer Product Segment</errorMessage>
+</ValidationRule>

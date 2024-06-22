@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SERA_on_file__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Shows if a customer has SERA account agreement on file. (used for reporting)</description>
+    <externalId>false</externalId>
+    <label>ER coverage on file</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

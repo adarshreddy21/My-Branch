@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_allow_assignment_to_Exec</fullName>
+    <active>true</active>
+    <description>do allow assignment to Kevin Hayden</description>
+    <errorConditionFormula>and(ISCHANGED(OwnerId)
+,    Owner:User.User_ID_18__c == &apos;005j0000000iu8mAAA&apos;)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Case cannot be assigned to this person. Please review.</errorMessage>
+</ValidationRule>

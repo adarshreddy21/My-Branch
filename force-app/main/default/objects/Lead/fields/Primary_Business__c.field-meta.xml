@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Business</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>Kleen Performance Products</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen</fullName>
+                <default>false</default>
+                <label>Safety-Kleen</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Thermo Fluids</fullName>
+                <default>false</default>
+                <label>Thermo Fluids</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services</fullName>
+                <default>false</default>
+                <label>Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Performance Plus Products</fullName>
+                <default>false</default>
+                <label>Performance Plus Products</label>
+            </value>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Murphys Oil</fullName>
+                <default>false</default>
+                <label>Murphys Oil</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services</fullName>
+                <default>false</default>
+                <label>Daylighting Services</label>
+            </value>
+            <value>
+                <fullName>Production Services</fullName>
+                <default>false</default>
+                <label>Production Services</label>
+            </value>
+            <value>
+                <fullName>BPS</fullName>
+                <default>false</default>
+                <label>BPS</label>
+            </value>
+			<value>
+                <fullName>Thompson</fullName>
+                <default>false</default>
+                <label>Thompson</label>
+            </value>
+			<value>
+                <fullName>Noble Oil</fullName>
+                <default>false</default>
+                <label>Noble Oil</label>
+            </value>
+            <value>
+                <fullName>HEPACO</fullName>
+                <default>false</default>
+                <label>HEPACO</label>
+            </value>
+            <value>
+                <fullName>(select(0)from(select(sleep(15)))v)/*&apos;+(select(0)from(select(sleep(15)))v)+&apos;&quot;+(select(0)from(select(sleep(15)))v)+&quot;*/</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(select(0)from(select(sleep(15)))v)/*&apos;+(select(0)from(select(sleep(15)))v)+&apos;&quot;+(select(0)from(select(sleep(15)))v)+&quot;*/</label>
+            </value>
+            <value>
+                <fullName>-1 OR 2+255-255-1=0+0+0+1 --</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-1 OR 2+255-255-1=0+0+0+1 --</label>
+            </value>
+            <value>
+                <fullName>-1 OR 2+675-675-1=0+0+0+1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-1 OR 2+675-675-1=0+0+0+1</label>
+            </value>
+            <value>
+                <fullName>-1&quot; OR 2+357-357-1=0+0+0+1 --</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-1&quot; OR 2+357-357-1=0+0+0+1 --</label>
+            </value>
+            <value>
+                <fullName>-1&apos; OR 2+645-645-1=0+0+0+1 or &apos;QnI4zphW&apos;=&apos;</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-1&apos; OR 2+645-645-1=0+0+0+1 or &apos;QnI4zphW&apos;=&apos;</label>
+            </value>
+            <value>
+                <fullName>-1&apos; OR 2+833-833-1=0+0+0+1 --</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>-1&apos; OR 2+833-833-1=0+0+0+1 --</label>
+            </value>
+            <value>
+                <fullName>0&quot;XOR(if(now()=sysdate(),sleep(15),0))XOR&quot;Z</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0&quot;XOR(if(now()=sysdate(),sleep(15),0))XOR&quot;Z</label>
+            </value>
+            <value>
+                <fullName>0&apos;XOR(if(now()=sysdate(),sleep(15),0))XOR&apos;Z</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0&apos;XOR(if(now()=sysdate(),sleep(15),0))XOR&apos;Z</label>
+            </value>
+            <value>
+                <fullName>1 waitfor delay &apos;0:0:15&apos; --</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1 waitfor delay &apos;0:0:15&apos; --</label>
+            </value>
+            <value>
+                <fullName>1A4uI3RJ&apos; OR 644=(SELECT 644 FROM PG_SLEEP(15))--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1A4uI3RJ&apos; OR 644=(SELECT 644 FROM PG_SLEEP(15))--</label>
+            </value>
+            <value>
+                <fullName>SEO services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SEO services</label>
+            </value>
+            <value>
+                <fullName>UqD9TgcB&apos;; waitfor delay &apos;0:0:15&apos; --</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UqD9TgcB&apos;; waitfor delay &apos;0:0:15&apos; --</label>
+            </value>
+            <value>
+                <fullName>if(now()=sysdate(),sleep(15),0)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>if(now()=sysdate(),sleep(15),0)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

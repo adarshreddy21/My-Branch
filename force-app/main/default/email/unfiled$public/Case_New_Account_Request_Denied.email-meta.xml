@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New Account request rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case: New Account Request Denied</name>
+    <style>none</style>
+    <subject>Case Rejected: {!Case.CaseNumber} {!Case.RecordType}...{!Case.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
+ 

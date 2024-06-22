@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cross_Sell_Opportunity_Business_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Cross Sell Opportunity Business Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daylighting</fullName>
+                <default>false</default>
+                <label>Daylighting</label>
+            </value>
+            <value>
+                <fullName>Field Service</fullName>
+                <default>false</default>
+                <label>Field Service</label>
+            </value>
+            <value>
+                <fullName>Industrial Service</fullName>
+                <default>false</default>
+                <label>Industrial Service</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Technical Service</fullName>
+                <default>false</default>
+                <label>Technical Service</label>
+            </value>
+            <value>
+                <fullName>CP Harbor Quote</fullName>
+                <default>false</default>
+                <label>CP Harbor Quote</label>
+            </value>
+            <value>
+                <fullName>FS Harbor Quote</fullName>
+                <default>false</default>
+                <label>FS Harbor Quote</label>
+            </value>
+            <value>
+                <fullName>Cannot Quote</fullName>
+                <default>false</default>
+                <label>Cannot Quote</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

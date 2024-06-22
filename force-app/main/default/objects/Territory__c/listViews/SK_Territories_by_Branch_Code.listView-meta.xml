@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Territories_by_Branch_Code</fullName>
+    <columns>NAME</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Manager_Name__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Open_Territory__c</columns>
+    <columns>Active_Territory__c</columns>
+    <columns>Region__c</columns>
+    <columns>Primary_Branch__c</columns>
+    <columns>Area__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>temp_Territory_Alignment_Oversite__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Business__c</field>
+        <operation>equals</operation>
+        <value>Safety-Kleen</value>
+    </filters>
+    <filters>
+        <field>Primary_Branch__c</field>
+        <operation>contains</operation>
+        <value>CSY</value>
+    </filters>
+    <label>SK Territories by Branch Code</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>DSM_and_AM</group>
+    </sharedTo>
+</ListView>

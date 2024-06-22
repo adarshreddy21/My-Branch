@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cross_Sell_TPM_No_Quote_Request</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Address__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Job_Start_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Opportunity_Business_Segment__c</columns>
+    <columns>TPM_Quote_Request__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Cross_Sell__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TPM_Quote_Request__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Cross Sell - No Quote Request</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>FS_Quote_Support</group>
+        <group>TPM_Opportunity</group>
+        <group>TS_Quote_Support</group>
+    </sharedTo>
+</ListView>

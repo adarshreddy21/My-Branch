@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Code_Titles__c</fullName>
+    <externalId>false</externalId>
+    <formula>Job_Code_Mapping__r.Job_Code__c  + &apos; - &apos; + Job_Code_Mapping__r.Job_Title__c</formula>
+    <label>Job Code &amp; Titles</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

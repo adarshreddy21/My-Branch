@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>308</locationX>
+        <locationY>276</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Owner:User.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <description>This flow is created for sending email notification to ISAM users when Task is due.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>URLLINK</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_470}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_470}))</expression>
+    </formulas>
+    <interviewLabel>Event Email Notification to ISAM {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Event Email Notification to ISAM</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <filterFormula>AND(NOT(ISBLANK({!$Record.Owner:User.Id})), 
+OR(AND((ISPICKVAL({!$Record.Owner:User.Sales_Person_Type__c}, &apos;ISAM&apos;)),{!$Record.Owner:User.Profile.Name} = &apos;Inside Sales Agent&apos;),
+AND(ISPICKVAL({!$Record.Owner:User.Sales_Person_Type__c},&apos;ISAM&apos;), {!$Record.Owner:User.Profile.Name} = &apos;Inside Sales Team&apos;)))</filterFormula>
+        <object>Event</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Trigger_the_email_on_task_due_date</name>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Trigger the email on task due date</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>ActivityDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;em&gt;﻿A Salesforce Task to Contact &quot;{!$Record.Contact_Name__c}&quot; is due on {!$Record.ActivityDate}. Please use link below to contact the customer.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Task Link: {!URLLINK}/{!$Record.Id}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Task Update</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Contains_MAIN__c</fullName>
+    <externalId>false</externalId>
+    <formula>INCLUDES(Contact_Type__c, &quot;MAIN&quot;)</formula>
+    <label>Type Contains MAIN?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

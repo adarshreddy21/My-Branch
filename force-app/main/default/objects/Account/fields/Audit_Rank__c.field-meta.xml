@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Rank__c</fullName>
+    <externalId>false</externalId>
+    <label>Audit Rank</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CH A Large &gt;200K</fullName>
+                <default>false</default>
+                <label>CH A Large &gt;200K</label>
+            </value>
+            <value>
+                <fullName>SK B Bronze</fullName>
+                <default>false</default>
+                <label>SK B Bronze</label>
+            </value>
+            <value>
+                <fullName>CH C Assigned &gt;30K</fullName>
+                <default>false</default>
+                <label>CH C Assigned &gt;30K</label>
+            </value>
+            <value>
+                <fullName>D &lt;30,000</fullName>
+                <default>false</default>
+                <label>D &lt;30,000</label>
+            </value>
+            <value>
+                <fullName>CH E Small &lt;30K</fullName>
+                <default>false</default>
+                <label>CH E Small &lt;30K</label>
+            </value>
+            <value>
+                <fullName>SK PE Platinum Elite</fullName>
+                <default>false</default>
+                <label>SK PE Platinum Elite</label>
+            </value>
+            <value>
+                <fullName>SK PR Platinum Revenue</fullName>
+                <default>false</default>
+                <label>SK PR Platinum Revenue</label>
+            </value>
+            <value>
+                <fullName>SK PO Platinum Oil</fullName>
+                <default>false</default>
+                <label>SK PO Platinum Oil</label>
+            </value>
+            <value>
+                <fullName>SK S Silver</fullName>
+                <default>false</default>
+                <label>SK S Silver</label>
+            </value>
+            <value>
+                <fullName>SK U Undefined</fullName>
+                <default>false</default>
+                <label>SK U Undefined</label>
+            </value>
+            <value>
+                <fullName>SK GE Gold Elite</fullName>
+                <default>false</default>
+                <label>SK GE Gold Elite</label>
+            </value>
+            <value>
+                <fullName>SK GH Gold High Penetration</fullName>
+                <default>false</default>
+                <label>SK GH Gold High Penetration</label>
+            </value>
+            <value>
+                <fullName>SK GL Gold Low Penetration</fullName>
+                <default>false</default>
+                <label>SK GL Gold Low Penetration</label>
+            </value>
+            <value>
+                <fullName>SK O Other</fullName>
+                <default>false</default>
+                <label>SK O Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

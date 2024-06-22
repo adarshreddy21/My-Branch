@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_GSN_GRAND_ISLAND_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: GSN-GRAND ISLAND</label>
+    <queue>Queue_GSN_GRAND_ISLAND</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

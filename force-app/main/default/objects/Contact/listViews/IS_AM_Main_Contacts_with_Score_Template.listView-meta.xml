@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_AM_Main_Contacts_with_Score_Template</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>Account.IS_Account_Rank__c</columns>
+    <columns>Account.Reason_of_Priority__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>Do_Not_Contact__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account_Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.Account_Owner_Name__c</field>
+        <operation>contains</operation>
+        <value>Kadam</value>
+    </filters>
+    <filters>
+        <field>Contact_Type__c</field>
+        <operation>equals</operation>
+        <value>MAIN</value>
+    </filters>
+    <filters>
+        <field>Expired__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>IS AM Main Contacts with Score Template</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>SK_INS_SD_Call_Center_Inbound_Sales</roleAndSubordinates>
+    </sharedTo>
+</ListView>

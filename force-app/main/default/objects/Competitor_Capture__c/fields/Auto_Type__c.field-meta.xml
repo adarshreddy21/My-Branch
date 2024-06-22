@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Type__c</fullName>
+    <description>Type of lube application</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of lube application</inlineHelpText>
+    <label>Auto Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Anti-Freeze</fullName>
+                <default>false</default>
+                <label>Anti-Freeze</label>
+            </value>
+            <value>
+                <fullName>Base Oil – Group II</fullName>
+                <default>false</default>
+                <label>Base Oil – Group II</label>
+            </value>
+            <value>
+                <fullName>Base Oil – Group II+</fullName>
+                <default>false</default>
+                <label>Base Oil – Group II+</label>
+            </value>
+            <value>
+                <fullName>Base Oil – Group III</fullName>
+                <default>false</default>
+                <label>Base Oil – Group III</label>
+            </value>
+            <value>
+                <fullName>Fleet / Industrial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fleet / Industrial</label>
+            </value>
+            <value>
+                <fullName>Gear Oils</fullName>
+                <default>false</default>
+                <label>Gear Oils</label>
+            </value>
+            <value>
+                <fullName>Grease</fullName>
+                <default>false</default>
+                <label>Grease</label>
+            </value>
+            <value>
+                <fullName>Heavy Duty Oil</fullName>
+                <default>false</default>
+                <label>Heavy Duty Oil</label>
+            </value>
+            <value>
+                <fullName>Industrial Fluid</fullName>
+                <default>false</default>
+                <label>Industrial Fluid</label>
+            </value>
+            <value>
+                <fullName>Passenger Car Engine Oil (PCEO)</fullName>
+                <default>false</default>
+                <label>Passenger Car Engine Oil (PCEO)</label>
+            </value>
+            <value>
+                <fullName>Transmission Oil</fullName>
+                <default>false</default>
+                <label>Transmission Oil</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

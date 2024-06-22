@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Campaign_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Campaign_Name__c</columns>
+    <columns>Campaign_Start_Date__c</columns>
+    <columns>Campaign_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Business_Sponsor__c</columns>
+    <columns>CRM_Analyst__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Rejected</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Sales_Ops_Requests__c.New_Campaign_Requests</value>
+    </filters>
+    <label>Rejected Campaign Requests</label>
+</ListView>

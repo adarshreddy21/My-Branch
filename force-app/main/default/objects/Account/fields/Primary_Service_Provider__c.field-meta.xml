@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Service_Provider__c</fullName>
+    <description>Displays the old Primary Service providers</description>
+    <externalId>false</externalId>
+    <label>Primary Service Provider Old</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clean Harbors</fullName>
+                <default>true</default>
+                <label>Clean Harbors</label>
+            </value>
+            <value>
+                <fullName>CYN</fullName>
+                <default>false</default>
+                <label>CYN</label>
+            </value>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>RS Used Oil</fullName>
+                <default>false</default>
+                <label>RS Used Oil</label>
+            </value>
+            <value>
+                <fullName>Safety Kleen</fullName>
+                <default>false</default>
+                <label>Safety Kleen</label>
+            </value>
+            <value>
+                <fullName>SK BPS</fullName>
+                <default>false</default>
+                <label>SK BPS</label>
+            </value>
+            <value>
+                <fullName>Thermo Fluids</fullName>
+                <default>false</default>
+                <label>Thermo Fluids</label>
+            </value>
+			<value>
+                <fullName>Thompson</fullName>
+                <default>false</default>
+                <label>Thompson</label>
+            </value> 
+            <value>
+                <fullName>HPC</fullName>
+                <default>false</default>
+                <label>HPC</label>
+            </value>
+            <value>
+                <fullName>Noble Oil</fullName>
+                <default>false</default>
+                <label>Noble Oil</label>
+            </value>
+            <value>
+                <fullName>HEPACO</fullName>
+                <default>false</default>
+                <label>HEPACO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

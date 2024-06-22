@@ -1,0 +1,136 @@
+<apex:page standardController="Account" sidebar="false" showHeader="true" standardStylesheets="true">
+  
+    
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="Account" subtitle="{!Account.Name}" />
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    <apex:form >
+     <script>
+function openPopup(page,param){
+    window.open(page,'_blank', 'toolbar=yes, scrollbars=yes, resizable=yes, top=500, left=700, width=700, height=400')
+}
+</script>
+        <apex:pageBlock >
+            <style>
+                body .bPageBlock .pbBody .red .pbSubheader{
+                background-color:#0096FA;
+                }
+                body .bPageBlock .pbBody .grey .pbSubheader{
+                background-color:#c0c0c0;
+                }
+                body .bPageBlock .pbBody .grey .pbSubheader h3{
+                color:#000;
+                }
+            </style>
+           
+
+            <apex:outputPanel styleClass="red" layout="block" >
+                <apex:pageBlockSection title="Primary Details" collapsible="false">
+                </apex:pageBlockSection>
+                <table width="100%" border="0">
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="Invoiced Orders" onclick="window.open('https://pbireports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fInvoice+History&rs:Command=Render@rc:parameters=False&rc:Toolbar=True&WINID='+encodeURIComponent('{!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%">  <apex:commandbutton value="Open Orders" onclick="window.open('https://pbireports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fOpen+Sales+Orders&rs%3aCommand=Render&custmr_co_cd={!Account.WIN_ID__c}')"/>  </td>
+                        <td width="20%"> <apex:commandbutton value="Co-Links" onclick="window.open('https://cleanharbors--chfull.sandbox.lightning.force.com/lightning/r/Report/00Oj0000000MTYw/view?fv0={!Account.Id}&fv1={!Account.Id}')"/> </td> 
+                        <td width="20%"> <apex:commandbutton value="Co-Link Pipelines" onclick="window.open('https://cleanharbors--chfull.sandbox.lightning.force.com/00O0a000004mSpk?pv0={!Account.Id}&pv1={!Account.Id}')" /> </td>
+                    </tr>
+                    
+                    <tr>
+                       <td> <apex:commandbutton value="Create Sales Order" onclick="window.open('https://winwebtest.cleanharbors.com/ordermgmt/start_sales_order.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>  
+                       <td width="20%"> <apex:commandbutton value="Inventory" onclick="window.open('https://winwebtest.cleanharbors.com/InventoryManagement/CustomerInventory.aspx?g={!Account.WIN_ID__c}')"/> </td>   
+                       <td width="20%"> <apex:commandbutton value="Drum Trans" onclick="window.open('https://winwebtest.cleanharbors.com/quote/quoteviewdrumtranspage.aspx?from_app=BEACON&co_cd={!Account.WIN_ID__c}')"/></td>
+                       <td width="20%" > <apex:commandbutton value="Revenue" onclick="window.open('https://cleanharbors--chfull.sandbox.lightning.force.com/00O0a000004uxeb?pv0={!Account.WIN_ID__c}')" rendered="{!Account.recordType.Name != 'Customer'}"/> </td>
+                    </tr>
+                    
+                    <tr>
+                         <td width="20%">  <apex:commandbutton value="Profiles & Instructions" onclick="window.open('https://reports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fProfile+Summary+SF&rs:Command=Render&rc:parameters=False&rc:Toolbar=True&winid={!Account.WIN_ID__c}')"/> </td>
+                         <td> <apex:commandbutton value="Create New Profile" onclick="window.open('https://winwebtest.cleanharbors.com/webprofile/defaultwebprofile.aspx?MSDmode=search&autoload=y&genrtr={!Account.WIN_ID__c}')"/> </td>
+                           <td width="20%">  <apex:commandbutton value="Profile Summary" onclick="var link='https://reports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx? %2fWINWEB%2fProfile%2fProfile+Summary+PDF&rs:Command=Render&rc:parameters=False&rc:Toolbar=True&genrtr='+encodeURIComponent('{!Account.WIN_ID__c}');window.open(link)"/> </td>
+                         
+                         
+                    </tr>
+                    
+                </table>
+                  
+  <apex:pageBlockSection title="Pricing" collapsible="false">
+                </apex:pageBlockSection>
+                <table width="100%" border="0">
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="WIN Quote" onclick="window.open('https://winwebtest.cleanharbors.com/Quote/QuoteCreate.aspx?CoType=Cust/Gen&co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Product Quote" onclick="window.open('https://auroraweb.cleanharbors.com/Q2C/CustomerSearch.aspx?AppType=PRODQ&BillToCode={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Product Quote Workflow" onclick="window.open('https://auroraweb.cleanharbors.com/Teamworks/Default.aspx?AppType=PRODQ')"/> </td>
+                        <td width="20%">  <apex:commandbutton value="Contracts/Pricing" onclick="window.open('https://winwebtest.cleanharbors.com/contract/contract_detail.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%">  <apex:commandbutton value="Chain Contracts/Pricing" onclick="window.open('https://winwebtest.cleanharbors.com/contract/contract_detail.aspx?co_cd={!Account.Chain_Code__c}')"/> </td>
+                    </tr>
+        </table>         
+                
+                <apex:pageBlockSection collapsible="False" columns="2" title="Company Info" >               
+                    
+                    <apex:outputField value="{!Account.WIN_ID__c}"/>
+                    <apex:outputField value="{!Account.Ownerid}"/>
+                    <apex:outputField value="{!Account.Name}"/>
+                    <apex:outputField value="{!Account.Key_Account_Name__c}"/>
+                    <apex:outputField value="{!Account.Account_Address__c}"/>
+                    <apex:outputField value="{!Account.Key_Account_Owner__c}"/>                
+                    <apex:outputField value="{!Account.Type}"/>              
+                    <apex:outputField value="{!Account.Chain__c}"/>   
+                    <apex:outputField value="{!Account.Status__c}"/> 
+                    <apex:outputField value="{!Account.CS_EPA_ID__c}"/>  
+                    
+                </apex:pageBlockSection> 
+                
+                <apex:pageBlockSection collapsible="False" columns="3" title="Invoice Info" >
+                </apex:pageBlockSection>
+                <table width="100%" border="0">   
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="Credit" onclick="window.open('https://winwebtest.cleanharbors.com/MSDWinCompany/CreditCollections.aspx?customernumber={!Account.WIN_ID__c}')" /> </td>
+                        <td width="20%"> <apex:commandbutton value="Billing Requirements" onclick="window.open('https://winwebtest.cleanharbors.com/billing/finance_billing.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Tax Requirements" onclick="window.open('/apex/Tax_requirements?companycode={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="PO Requirements" onclick="window.open('https://winwebtest.cleanharbors.com/POMgmt/POMgmt/POMgmt/Rules/{!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Custom Requirements" onclick="window.open('https://winwebtest.cleanharbors.com//Plugins/ConfigTool.aspx?readonly=y&cust={!Account.WIN_ID__c}')"/> </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="WIN Invoice Credit Request" onclick="window.open('https://winwebtest.cleanharbors.com/workflow/CreditRequest_wf.aspx')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Downstream fees and Trans" onclick="window.open('https://winwebtest.cleanharbors.com/invoicing/wst_fee_exclsns.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Request Credit Approval" onclick="window.open('https://winwebtest.cleanharbors.com/formsworkflow/creditapproval_wf.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Payment Search" onclick="window.open('https://winwebtest.cleanharbors.com/company/Payment_Search.aspx')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Request E-Bill/Email Invoice" onclick="window.open('https://winwebtest.cleanharbors.com/formsworkflow/CustomerEbillEmailRequest_wf.aspx?co_cd={!Account.WIN_ID__c}')"/>   </td> 
+                    </tr>
+                    <tr>
+                     <td width="20%"> <apex:commandbutton value="CMSR Entry Form" onclick="window.open('https://winwebtest.cleanharbors.com/CMSRTracking/CMSREntry')"/> </td>     
+                     </tr>
+                </table>
+                
+                <apex:pageBlockSection collapsible="False" columns="3" title="Additional Info" >
+                </apex:pageBlockSection>   
+                <table width="100%" border = "0">
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="Generator Profile" onclick="window.open('https://winwebtest.cleanharbors.com/CompanyEdit/EditGeneratorProfile.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Generator Registration" onclick="window.open('https://winwebtest.cleanharbors.com/CompanyEdit/EditGenreg.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Material Supplies" onclick="window.open('https://winwebtest.cleanharbors.com/MaterialsSupply/EditMaterialsSupply.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Instructions" onclick="window.open('https://winwebtest.cleanharbors.com/ordermgmt/company_instructions.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Restrictions" onclick="window.open('https://winwebtest.cleanharbors.com/RoutingManagement/wsvwrest.aspx?from_app=Beacon&genrtr={!Account.WIN_ID__c}')"/> </td>
+                    </tr>
+                    <tr>
+                        <td width="20%"> <apex:commandbutton value="Recovery Fees" onclick="window.open('https://winwebtest.cleanharbors.com/recoveryfees/companyrecfeemaster.aspx?co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Milkrun Zone" onclick="window.open('https://winwebtest.cleanharbors.com/ordermgmt/OMMLKSVW.aspx?from_frame=Beacon&MlkrnTertoryCd={!Account.Milkrun_Zone__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Drum Pickup/Schedule Requirements" onclick="window.open('https://winwebtest.cleanharbors.com/CompanyEdit/EditPickupSchedule.aspx?from_app=beacon&co_cd={!Account.WIN_ID__c}')"/> </td>
+                        <td width="20%"> <apex:commandbutton value="Bulk Pickup/Schedule Requirements" onclick="window.open('https://winwebtest.cleanharbors.com/CompanyEdit/EditBulkPickupSchedule.aspx?from_app=beacon&co_cd={!Account.WIN_ID__c}')"/> </td>
+
+                    </tr>
+                </table>
+            </apex:outputPanel>
+            
+            
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevailing_Wage__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>track opportunities that involve prevailing wage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to track opportunities that involve prevailing wage</inlineHelpText>
+    <label>Prevailing Wage</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

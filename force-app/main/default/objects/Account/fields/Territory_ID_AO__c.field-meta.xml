@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_ID_AO__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Territory ID of the Account Owner.  Based off the Territory Field on the User record.</description>
+    <externalId>false</externalId>
+    <label>Account Owner Territory ID</label>
+    <referenceTo>Territory__c</referenceTo>
+    <relationshipLabel>Accounts (Territory ID Account Owner)</relationshipLabel>
+    <relationshipName>Accounts7</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type> 
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Time_Part_Time__c</fullName>
+    <externalId>false</externalId>
+    <label>Full Time/Part Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+                <label>Full Time</label>
+            </value>
+            <value>
+                <fullName>Part Time</fullName>
+                <default>false</default>
+                <label>Part Time</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>DOW</fullName>
+                <default>false</default>
+                <label>DOW</label>
+            </value>
+            <value>
+                <fullName>P66</fullName>
+                <default>false</default>
+                <label>P66</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

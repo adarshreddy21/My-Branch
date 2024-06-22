@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Sales_Alignment_override__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked the customers of the account owners aligned to this branch will be assigned to the area based off the customer&apos;s zip code rather than the branch&apos;s zip code.</description>
+    <externalId>false</externalId>
+    <label>Branch Sales Alignment override</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

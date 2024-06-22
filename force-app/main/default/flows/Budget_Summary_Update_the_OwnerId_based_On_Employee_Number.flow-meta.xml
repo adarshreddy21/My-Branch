@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <name>Check_the_If_the_User_size_is_not_null</name>
+        <label>Check the If the User size is not null</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_the_User_Size_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_user_records.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_OwneId_of_Budget_Summary_record</targetReference>
+            </connector>
+            <label>If the User Size is not null</label>
+        </rules>
+    </decisions>
+    <description>This flow will update the ownerid based on employee number and this will triggered when the record is created.</description>
+    <environments>Default</environments>
+    <interviewLabel>Budget Summary - Update the OwnerId based On Employee Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Budget Summary - Update the OwnerId based On Employee Number</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_the_user_records</name>
+        <label>Get the user records</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_the_If_the_User_size_is_not_null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>EmployeeNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Employee_Number__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_the_OwneId_of_Budget_Summary_record</name>
+        <label>Update the OwneId of Budget Summary record</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_the_user_records.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_the_user_records</targetReference>
+        </connector>
+        <filterFormula>OR(ISNEW(), ISCHANGED({!$Record.Employee_Number__c}))</filterFormula>
+        <object>Budget_Summary__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Errormessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The new owner doesn&apos;t have read permission to Budget summary object.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ProcessType</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;BudgetSummaryInsertion&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>IntegrationProcessVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Integration_Process__c</objectType>
+    </variables>
+</Flow>

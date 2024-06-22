@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Admin_Int_Sales_Ops_being_TSE</fullName>
+    <active>true</active>
+    <description>This Validation is to Restrict Admin, Integration, and Sales Ops from being TSE while creating New TSE - Add case.</description>
+    <errorConditionFormula>AND( ISNEW(),
+RecordType.DeveloperName = &apos;TSE_Add_Case&apos;,
+OR(
+ Proposed_Specialist__r.ProfileId = &apos;00ej0000000vlsU&apos;,
+Proposed_Specialist__r.ProfileId = &apos;00ej0000001Mfgi&apos;,
+Proposed_Specialist__r.ProfileId = &apos;00ej0000001AfEf&apos;
+)
+
+
+)</errorConditionFormula>
+    <errorMessage>&quot;Sales Operations&quot; &quot;Integration&quot; and &quot;System Administrator” cannot be assigned as Technical Sales Experts (TSEs).</errorMessage>
+</ValidationRule>

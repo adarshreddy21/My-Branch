@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Loader_Identifier__c</fullName>
+    <description>Will be used when loading MSD opportunities during the transition from MSD to Salesforce</description>
+    <externalId>false</externalId>
+    <label>Data Loader Identifier</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

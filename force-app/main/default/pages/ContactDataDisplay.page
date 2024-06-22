@@ -1,0 +1,399 @@
+<apex:page id="thePage" standardController="Account" extensions="ContactRelatedListController"  sidebar="true"  showHeader="false" 
+applyHtmlTag="true" applyBodyTag="true" action="{!getEmailAddressAPI}" standardStylesheets="true">   
+       <head>
+        <apex:stylesheet value="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"/>
+        <apex:includeScript value="https://code.jquery.com/jquery-3.5.1.js"/>
+        <apex:includeScript value="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"/>
+        <apex:includeScript value="/support/console/50.0/integration.js"/>
+        <style>
+            .bkYellow{
+                background-color:yellow; 
+            }
+            #additional_contacts_table_header{
+                background-color:rgb(242,243,243);
+            }
+            
+            #additional_contacts_table tr, #additional_contacts_table td{
+                border-bottom-color:rgb(227,222,184) !important; 
+                border-bottom-style:solid !important;
+                border-bottom-width:1px !important;
+            }
+            .pbSubsection{
+                overflow-x: auto;
+            }
+        </style>
+        <script>
+        $(document).ready(function() {                     
+            initDataTable();
+        } );
+        function initDataTable(){
+            $('#additional_contacts_table').DataTable(
+                {
+                    scrollX: true,
+                    columnDefs: [
+                        { width: '10%', targets: 3 }
+                    ],
+                    fixedColumns: true
+                }
+            ); 
+        }
+        </script>
+    </head>
+    
+   <body class="slds-scope" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">        
+           
+        <apex:form id="theForm">  
+
+            <apex:pageblock id="ContactList"> 
+               <apex:pageMessages id="showmsg"></apex:pageMessages>
+                   
+              <div style="margin-left: 30%;">
+                  <apex:commandLink value="New Contact" onclick="newContact(); return false;" target="_parent" styleClass="btn" style="text-decoration:none;padding:4px;"/>
+                  <apex:commandButton style="margin-left: 10px;" value="Contact Verfied" action="{!verifyContact}"
+                    rendered="{!hideContactVerified}" />             
+                    </div> 
+              <div>
+              <apex:outputPanel rendered="{!showMessage}">
+                  <div style="margin-top: 10px">
+                      <!--<apex:outputText rendered="{! (!hasMainContact || !hasAPContact || !hasPOContact) }">
+                          <h2 style="background-color:Yellow; width: 100%; text-align:center;">
+                                {!$Label.CC_ALERT_NO_MAIN_WARNING}
+                          </h2>
+                      </apex:outputText> -->
+                      
+                      <apex:outputText rendered="{! showMessage && (hasMainContact && daysSinceMainContVerified > 120) || (isAPRequire && hasAPContact && daysSinceAPContVerified > 120) || (isPORequire && hasPOContact && daysSincePOContVerified > 120) }">
+                           <h2 style="background-color:Yellow; width: 100%; text-align:center;">
+                                {!$Label.CC_ALERT_MAIN_VERIFICATION}
+                           </h2>
+                      </apex:outputText>                  
+                  </div>
+              </apex:outputPanel>
+              </div>
+               <br/> 
+                <h2 style="background-color:Yellow; width: 100%; text-align:center;">
+                    Missing Contact Type : {!missingConTypesString} 
+                </h2>
+                
+                <apex:commandLink style="margin-left:10px;" value="Show Contact Type Definitions" rendered="{!(hasConTypeDef && !showContactTypeDef)}" action="{!showHideConTypeDef}"/>
+                <apex:commandLink style="margin-left:10px;" value="Hide Contact Type Definitions" rendered="{!(hasConTypeDef && showContactTypeDef)}" action="{!showHideConTypeDef}"/>
+                    
+                <apex:pageBlockSection title="Contact Type Definitions" collapsible="true" columns="1" rendered="{!showContactTypeDef}">
+                    <apex:pageBlockTable value="{!conTypeDefList}"  var="ctd" rendered="{!hasConTypeDef}">
+                        <apex:column headerValue="Contact Department" value="{!ctd.contactType}"/>
+                        <apex:column headerValue="Contact Description" value="{!ctd.description}"/>
+                        <apex:column headerValue="Definition" value="{!ctd.definition}"/>
+                    </apex:pageBlockTable>                
+                </apex:pageBlockSection>
+                
+                <apex:actionRegion > 
+                <apex:pageBlockSection id="primaryContactSection" title="Primary Contacts" collapsible="true" columns="1" > 
+                    
+                    <apex:pageBlockTable id="primaryContactTable" value="{!contactsWrap}"  var="cont" rendered="{!hasContacts}">
+                        
+                        <apex:column HeaderValue="Action" width="50">                        
+                            <apex:commandButton action="{!cancel}" id="cancelButton" value="Cancel"/>
+                        </apex:column> 
+                        
+                        <apex:column width="30" > 
+                            <apex:commandButton id="saveButton" value="Save" reRender="ContactList">                            
+                                <apex:actionSupport event="onclick" rerender="ContactList" action="{!save}" >
+                                    <apex:param name="isUpdated" value="true" assignTo="{!cont.isUpdated}"/>
+                                </apex:actionSupport>
+                            </apex:commandButton>
+                            
+                        </apex:column> 
+                        
+                        <apex:column width="30" > 
+                            <div  data-cont="{!cont.conType}" onclick="redirectToContact(this)">   
+                            <apex:commandLink value="New" target="_parent" styleClass="btn" style="text-decoration:none;" onclick="redirectToContact(this); return false;"   rendered="{!cont.con == null}">
+                                    <apex:actionSupport event="onclick" rerender="ContactList"  >
+                                        <apex:param name="newConType" value="{!cont.conType}" assignTo="{!newContactTypeValue}"/>
+                                    </apex:actionSupport>
+                            </apex:commandLink>
+                            </div>
+                        </apex:column>
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.Contact_Type__c.Label}" width="100px">
+                            <apex:outputText value="{!cont.conType}"/>
+                        </apex:column>
+                        
+                         <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="Contact Definition" width="1000px">
+                            <apex:outputText value="{!cont.conDef}"/>
+                        </apex:column>
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="Contact Name" width="500px">                             
+                            <apex:outputPanel rendered="{!cont.con != null}">
+                            	<apex:commandLink value="{!cont.con.Name}" onClick="openExistingContactInConsole('{!cont.con.id}'); return false;"/>
+                            </apex:outputPanel>
+                            <apex:selectList value="{!cont.selectedContactId}" multiselect="false" size="1" rendered="{!cont.con == null}">
+                                <apex:selectOptions value="{!cont.contactOptions}"></apex:selectOptions>
+                            </apex:selectList>
+                        </apex:column>                                          
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.Title.Label}" width="200px">
+                            <apex:outputField value="{!cont.con.Title}"/>
+                        </apex:column>
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.Phone.Label}" width="200px" style="{!if(cont.con.Phone==null,"background-color:yellow","")}">
+                            <apex:outputField value="{!cont.con.Phone}"/>
+                        </apex:column>
+                        
+                       <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.MobilePhone.Label}" width="200px" style="{!if(cont.con.MobilePhone==null,"background-color:Yellow","")}">
+                            <apex:outputField value="{!cont.con.MobilePhone}"/>
+                        </apex:column> 
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.Email.Label}" width="200px" style="{!if(cont.con.Email==null,"background-color:Yellow","")}">
+                            <apex:outputField value="{!cont.con.Email}"/>
+                        </apex:column>
+
+                         <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.CS_Ecomm__c.Label}" width="200px">
+                            <apex:outputField value="{!cont.con.CS_Ecomm__c}"/>
+                        </apex:column>
+
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.CS_Emailed_Invoices__c.Label}" width="200px">
+                            <apex:outputField value="{!cont.con.CS_Emailed_Invoices__c}"/>
+                        </apex:column>
+
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.Expired__c.Label}" width="100px">
+                            <apex:outputField value="{!cont.con.Expired__c}"/>
+                        </apex:column>
+
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.email_indcr__c.Label}" width="100px">
+                            <apex:outputField value="{!cont.con.email_indcr__c}"/>
+                        </apex:column>
+
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.Contact.Fields.text_indcr__c.Label}" width="100px">
+                            <apex:outputField value="{!cont.con.text_indcr__c}"/>
+                        </apex:column>
+
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" headerValue="{!$ObjectType.account.Fields.Main_Contact_Verified_Date__c.Label}" width="100px">
+                            <apex:outputField value="{!cont.con.Account.Main_Contact_Verified_Date__c}"/>
+                        </apex:column>
+                        
+                        <apex:column styleClass="{!IF(cont.con == null,'bkYellow','')}" value="{!cont.con.LastModifiedDate}" width="200px"/>
+                        
+                        <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                        
+                    </apex:pageBlockTable> 
+                    
+                    <apex:pageBlockSectionItem rendered="{! !hasContacts}">
+                        No records
+                    </apex:pageBlockSectionItem>
+    
+               </apex:pageBlockSection>
+              
+                <br/>
+                    
+                    <apex:pageBlockSection title="Additional Contacts" collapsible="true" columns="1" rendered="{!hasContactsO}">
+                        <apex:pageBlockSectionItem rendered="{! !hasContactsO}">
+                            No records
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    
+                    <apex:outputPanel rendered="{!hasContactsO}">
+                        
+                        <table id="additional_contacts_table" class="hover" style="width:100%">
+                            <thead id="additional_contacts_table_header">
+                                <tr>
+                                    <th>Action</th>
+                                    <th></th>
+                                    <th>{!$ObjectType.Contact.Fields.Contact_Type__c.Label}</th>
+                                    <th>Contact Definition</th>
+                                    <th>Contact Name</th>
+                                    <th>{!$ObjectType.Contact.Fields.Title.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.Phone.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.MobilePhone.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.Email.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.CS_Ecomm__c.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.CS_Emailed_Invoices__c.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.Expired__c.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.email_indcr__c.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.text_indcr__c.Label}</th>
+                                    <th>{!$ObjectType.Contact.Fields.LastModifiedDate.Label}</th>
+                                </tr>
+                            </thead>
+                            <tbody>   
+                                <apex:repeat value="{!contactsOWrap}"  var="cont">
+                                    <tr>
+                                        <td><apex:commandButton action="{!cancel}" id="cancelButton" value="Cancel"/></td>
+                                        <td>
+                                            <apex:commandButton action="{!save}" id="saveButton" value="Save" reRender="ContactList">
+                                                <apex:actionSupport event="onclick" rerender="ContactList" action="{!save}" oncomplete="initDataTable()">
+                                                    <apex:param name="isUpdated" value="true" assignTo="{!cont.isUpdated}"/>
+                                                </apex:actionSupport>
+                                            </apex:commandButton>
+                                        </td>
+                                        <td><apex:outputText value="{!cont.conType}"/></td>
+                                        <td><apex:outputText value="{!cont.conDef}"/></td>
+                                        <td>
+                                            <apex:outputPanel rendered="{!cont.con != null}">
+                            	                <apex:commandLink value="{!cont.con.Name}" onClick="openExistingContactInConsole('{!cont.con.id}'); return false;"/>
+                                            </apex:outputPanel>
+                                            <apex:selectList value="{!cont.selectedContactId}" multiselect="false" size="1" rendered="{!cont.con == null}">
+                                                <apex:selectOptions value="{!cont.contactOptions}"></apex:selectOptions>
+                                            </apex:selectList>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.Title}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.Phone}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.MobilePhone}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.Email}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.CS_Ecomm__c}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.CS_Emailed_Invoices__c}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.Expired__c}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.email_indcr__c}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        <td>
+                                            <apex:outputField value="{!cont.con.text_indcr__c}">
+                                                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick"
+                                                                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                            </apex:outputField>
+                                        </td>
+                                        
+                                          <td>
+                                            <apex:outputField value="{!cont.con.LastModifiedDate}"/>
+                                            
+                                        </td>
+                                      
+                                    </tr>
+                                </apex:repeat>
+                            </tbody>
+                        </table>
+                        
+                    </apex:outputPanel>
+ 
+                 </apex:actionRegion>
+                
+                  <apex:pageBlockSection collapsible="true" title="Invoicing Email Address" columns="2">
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel >Invoicing Email Address</apex:outputLabel>
+                        <apex:outputText >{!emailAddressFromAPI}</apex:outputText>
+                         
+                     </apex:pageBlockSectionItem> 
+                     <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Update Invoicing Email Address</apex:outputLabel> 
+                        <apex:outputLink value="https://winwebtest.cleanharbors.com/billing/finance_billing.aspx?co_cd={!accounts.WIN_ID__c}" id="theLink"> Invoice Delivery Requirements</apex:outputLink>
+                     </apex:pageBlockSectionItem>
+                    
+                 </apex:pageBlockSection> 
+            </apex:pageblock>
+        </apex:form>  
+    </body>
+    
+    <script>
+        function redirectToContact(event){
+               console.log('re ', window.location.ancestorOrigins[0]);
+               console.log('tagName ', event.tagName);
+               let tagName = event.tagName;
+               let accountId = '{!accounts.id}';
+               let currentURL = window.location.ancestorOrigins[0];
+               let isMobile = '{!$User.UITheme}';
+               var recordUrl = '/lightning/o/Contact/new?navigationLocation=DETAIL&defaultFieldValues=AccountId='+accountId+',Contact_Type__c='+event.dataset.cont;
+
+               if(isMobile == 'Theme4t'){
+                   sforce.one.createRecord("Contact",null,{ 
+                        AccountId : accountId,
+                       Contact_Type__c: event.dataset.cont
+                   });
+               }else if(tagName == "DIV" && currentURL.includes('lightning')){
+                    console.log('event.dataset.cont ',event.dataset.cont);
+                    window.location.reload();
+                    if (sforce.console.isInConsole() && sforce.console) {
+                    	openContactInConsole(currentURL + recordUrl);
+                    } 
+                    else {
+						window.open(currentURL + recordUrl);                    
+                    }                      
+               }
+           }
+    
+        function newContact(){
+            let accountId = '{!accounts.id}';
+            let currentURL = window.location.origin;
+            let isMobile = '{!$User.UITheme}';
+            var recordUrl = '/lightning/o/Contact/new?count=1&defaultFieldValues=AccountId='+accountId;
+
+            if(isMobile == 'Theme4t'){
+                sforce.one.createRecord("Contact",null,{ 
+                    AccountId : accountId
+                });
+            }else{
+                if (sforce.console.isInConsole() && sforce.console) {
+                    openContactInConsole(currentURL + recordUrl);
+                } 
+                else {
+                    window.open(currentURL + recordUrl);
+                }              
+            }
+        }
+
+        function openContactInConsole(recordUrl) {
+            sforce.console.getEnclosingPrimaryTabId(function(result) {
+                var primaryTabId = result.id;
+                sforce.console.openSubtab(primaryTabId , recordUrl, false, 
+                    'Contact', false);
+            });
+        }
+    
+    	function openExistingContactInConsole(contactId) {
+            let recordUrl = '/lightning/r/Contact/' + contactId + '/view';
+			let isMobile = '{!$User.UITheme}';
+			 if(isMobile == 'Theme4t'){
+			  sforce.one.navigateToURL('/'+contactId); 
+            }
+          	else if(sforce.console.isInConsole() && sforce.console) {
+                sforce.console.getEnclosingPrimaryTabId(function(result){
+                    if(result.success){
+                    	var primaryTabId = result.id;
+                    	sforce.console.openSubtab(primaryTabId, recordUrl , true);
+                	}
+               		else{
+                		window.open(recordUrl);
+            		}            	         
+            	});
+            }
+            else{
+                	window.open(recordUrl);
+            	}
+        }    	
+    </script>
+</apex:page>

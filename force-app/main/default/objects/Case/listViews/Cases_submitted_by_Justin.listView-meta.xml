@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_submitted_by_Justin</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Proposed_Owner__c</field>
+        <operation>equals</operation>
+        <value>Justin Masse</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed - Completed,Closed - Rejected,Closed - Cancelled</value>
+    </filters>
+    <label>Cases submitted by Justin</label>
+    <sharedTo>
+        <group>Sales_Operations</group>
+    </sharedTo>
+</ListView>

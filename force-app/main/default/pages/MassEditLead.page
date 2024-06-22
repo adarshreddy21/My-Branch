@@ -1,0 +1,44 @@
+<apex:page standardController="Lead" recordSetVar="unused"  sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="L" id="table">
+<apex:column headerValue="Lead Owner">
+<apex:inputField value="{!L.OwnerID}"/>
+</apex:column>
+<apex:column headerValue="Name">
+<apex:inputField value="{!L.Name}"/>
+</apex:column>
+<apex:column headerValue="Title">
+<apex:inputField value="{!L.Title}"/>
+</apex:column>
+<apex:column headerValue="Email">
+<apex:inputField value="{!L.Email}"/>
+</apex:column>
+<apex:column headerValue="Phone">
+<apex:inputField value="{!L.Phone}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!L.Status}"/>
+</apex:column>
+<apex:column headerValue="WIN ID reference">
+<apex:inputField value="{!L.WIN_ID_reference__c}"/>
+</apex:column> 
+<apex:column headerValue="Company">
+<apex:inputField value="{!L.Company}"/>
+</apex:column>
+<apex:column headerValue="Unqualified Reason">
+<apex:inputField value="{!L.Unqualified_Reason__c}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,58 @@
+<apex:page sidebar="false" showHeader="false">
+    <style>
+   
+            html:after {
+    content : "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(https://redlegagenda.files.wordpress.com/2016/08/olympic-logo.jpg ); 
+    background-repeat: no-repeat !important;
+    background-size:  auto !important;
+     background-position: top Center!important;
+
+    width: 100%;
+    height: 100%;
+    opacity : 0.7;
+    z-index: -1;
+}
+        
+</style>
+    <div style="width:100%,height:100%;"  align="Center">
+    <center><apex:form >
+        <table width="80%" border="0">
+            <tr>
+                <td width="30%"><img src="{!$Resource.SalesOlympic}" width="60%"/></td>
+                <td width="30%"></td>
+                <td width="30%"><img src="{!$Resource.SalesforceLogo}" width="60%"/></td>
+            </tr>
+            <tr>
+<td><br/><br/><br/><br/><br/></td>
+            </tr>
+        
+            <tr>
+<td><br/><br/><br/><br/><br/></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="/01Z0c000001OW9E"><apex:image id="Leaderboard" value="{!$Resource.AMLeaderboard}" width="60%"/></a></td>        
+                <td style="vertical-align:bottom;text-align:center;"><a href="/0150c000002zIqx"><apex:image id="theImage" value="{!$Resource.LatestUpdate}" width="70%"/></a></td>
+                <td align="center"><a href="/01Z0c000001OW9J"><apex:image id="SLeaderboard" value="{!$Resource.SpecialistLeaderboard}" width="60%"/></a></td>
+            </tr>
+            
+<tr>
+<td><br/></td>
+            </tr>
+            
+             <tr>
+                 <td valign="top" align="center"> <apex:outputLink value="https://cleanharbors.my.salesforce.com/01Z0c000001OW36"> RealTime Details AM/TM</apex:outputlink></td>
+                 <td style="text-align: center"> <apex:outputLink style="background:LightGreen;width:200px; height:50px;" value="https://cleanharbors--c.na60.content.force.com/servlet/servlet.FileDownload?file=0150c000002zKdb"> CONTEST RULES CAN BE FOUND HERE </apex:outputlink></td>
+                <td valign="top" align="center"> <apex:outputLink value="https://cleanharbors.my.salesforce.com/01Z0c000001OW9d">RealTime Details Specialist</apex:outputlink></td>
+            </tr>
+          
+            
+        </table>
+    </apex:form>
+        </center>
+    </div>
+</apex:page>

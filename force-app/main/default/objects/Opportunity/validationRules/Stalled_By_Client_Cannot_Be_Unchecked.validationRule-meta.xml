@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stalled_By_Client_Cannot_Be_Unchecked</fullName>
+    <active>true</active>
+    <description>This checkbox shows Deal Stall in Present or Past. Once checked, Stalled By Client Cannot Be Unchecked.</description>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+PRIORVALUE(Stalled_By_Client__c)= True,
+Stalled_By_Client__c = False
+)</errorConditionFormula>
+    <errorDisplayField>Stalled_By_Client__c</errorDisplayField>
+    <errorMessage>This checkbox shows Deal Stall in Present or Past. Once checked, Stalled By Client Cannot Be Unchecked.</errorMessage>
+</ValidationRule>

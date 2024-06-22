@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Edit_on_Corporate_Accounts_Name</fullName>
+    <active>true</active>
+    <description>Restricts non-admin users from editing Corporate Account Names field on specific record types..</description>
+    <errorConditionFormula>AND( 
+ISCHANGED(OwnerId),  
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;), 
+NOT($Profile.Name = &quot;IT Super User&quot;), 
+NOT($Permission.Skip_Validations_for_Super_users_cp),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+OR(RecordType.Name = &quot;Corporate&quot;, 
+RecordType.Name = &quot;Corporate - Retired&quot;) 
+)</errorConditionFormula>
+    <errorMessage>Corporate Account Names are editable by Sys Admin, IT Super User, Integration, and Salesforce API Only System Integrations profiles are excluded from this restriction.</errorMessage>
+</ValidationRule>

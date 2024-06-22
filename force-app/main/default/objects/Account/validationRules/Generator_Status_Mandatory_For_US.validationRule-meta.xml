@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generator_Status_Mandatory_For_US</fullName>
+    <active>true</active>
+    <description>Generator Status is mandatory for  US accounts.</description>
+    <errorConditionFormula>AND(ShippingCountry =&apos;US&apos;, ISblank(Text( Generator_Status__c )),OR(
+RecordType.DeveloperName =&apos;Customer&apos;,
+RecordType.DeveloperName = &apos;Customer_Location&apos;,
+RecordType.DeveloperName = &apos;Broker&apos;,
+RecordType.DeveloperName = &apos;Broker_Location&apos;,
+RecordType.DeveloperName = &apos;Distributor&apos;,
+RecordType.DeveloperName = &apos;Distributor_Location&apos;,
+RecordType.DeveloperName = &apos;Chain&apos;,
+RecordType.DeveloperName = &apos;Customer_Chain&apos;),
+NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT(ISCHANGED(Active_ER_Contract__c)))</errorConditionFormula>
+    <errorDisplayField>Generator_Status__c</errorDisplayField>
+    <errorMessage>Please select the Generator status.</errorMessage>
+</ValidationRule>  

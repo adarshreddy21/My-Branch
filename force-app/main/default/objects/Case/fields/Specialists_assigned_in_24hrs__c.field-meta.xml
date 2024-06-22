@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialists_assigned_in_24hrs__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(( CreatedDate - TPM_Specialist_Add_Date__c ) &lt; 24, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Specialists assigned in 24hrs?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

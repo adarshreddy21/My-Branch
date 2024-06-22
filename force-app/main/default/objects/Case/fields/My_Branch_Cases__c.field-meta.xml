@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Branch_Cases__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  
+or(
+ Branch_Account__r.Branch_Code__c  =  $User.Sales_Branch__c
+, Branch_Account__r.Branch_Code__c =  $User.Secondary_Sales_Branch__c 
+, $Profile.Name = &apos;Integration&apos;
+, $Profile.Name = &apos;Salesforce API Only System Integrations&apos;
+, $Profile.Name = &apos;Sales Operations&apos;
+) , True, False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>My Branch Cases</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

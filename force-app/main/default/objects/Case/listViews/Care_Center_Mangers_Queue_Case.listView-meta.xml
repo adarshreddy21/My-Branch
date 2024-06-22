@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Center_Mangers_Queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Escalation__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Type_of_Call__c</columns>
+    <columns>Call_Reason__c</columns>
+    <columns>Primary_Type_of_Service__c</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Queue</filterScope>
+    <label>Care Center Managers Queue</label>
+    <language>en_US</language>
+    <queue>Care_Center_Mangers_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

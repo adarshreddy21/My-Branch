@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corp_PO_Management_Support__c</fullName>
+    <description>This formula field is to populate PO_Management_Support__c value with PO Management Support if account has corporate parent and the in corporate parent account PO Management Support field is not null</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(RecordType.Name = &apos;Customer&apos;,RecordType.Name = &apos;Broker&apos;) &amp;&amp; Parent.Id != null &amp;&amp;  Parent.PO_Management_Support__c !=null , Parent.PO_Management_Support__r.FirstName + &apos; &apos;+Parent.PO_Management_Support__r.LastName,
+IF(OR(RecordType.Name = &apos;Customer Location&apos;,RecordType.Name = &apos;Broker Location&apos;) 
+&amp;&amp; Parent.Parent.Id != null &amp;&amp;  Parent.Parent.PO_Management_Support__c !=null, 
+Parent.Parent.PO_Management_Support__r.FirstName + &apos; &apos;+Parent.Parent.PO_Management_Support__r.LastName,null))</formula>
+    <label>Corp PO Management Support</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

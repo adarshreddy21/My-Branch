@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approve_with_Corrections__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CMD group checks this box when they need to approve the case with minor corrections on account.</description>
+    <externalId>false</externalId>
+    <label>Approve with Corrections</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

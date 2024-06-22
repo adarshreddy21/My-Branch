@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bulk Products and Services</fullName>
+        <default>false</default>
+        <label>Bulk Products and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Daylighting Services</fullName>
+        <default>false</default>
+        <label>Daylighting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Services</fullName>
+        <default>false</default>
+        <label>Field Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Services</fullName>
+        <default>false</default>
+        <label>Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Services</fullName>
+        <default>false</default>
+        <label>Industrial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging Services</fullName>
+        <default>false</default>
+        <label>Lodging Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety-Kleen Environmental</fullName>
+        <default>false</default>
+        <label>Safety-Kleen Environmental</label>
+    </customValue>
+    <customValue>
+        <fullName>Kleen Performance Products</fullName>
+        <default>false</default>
+        <label>Kleen Performance Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services</fullName>
+        <default>false</default>
+        <label>Technical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Cleaning</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chemical Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Recycling</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging Manufacturing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lodging Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Directional Boring</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Directional Boring</label>
+    </customValue>
+    <customValue>
+        <fullName>Airborne Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Airborne Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Rentals</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Surface Rentals</label>
+    </customValue>
+    <customValue>
+        <fullName>Tank Cleaning and Separations</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tank Cleaning and Separations</label>
+    </customValue>
+    <customValue>
+        <fullName>TS - Transportation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TS - Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>TS CleanPack &amp; Household Hazardous waste US</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TS CleanPack &amp; Household Hazardous waste US</label>
+    </customValue>
+    <customValue>
+        <fullName>Used Motor Oil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Used Motor Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Oil (Lube)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blended Oil (Lube)</label>
+    </customValue>
+    <customValue>
+        <fullName>SK Branch Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SK Branch Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Parts Washing Service Solvent</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parts Washing Service Solvent</label>
+    </customValue>
+    <customValue>
+        <fullName>Antifreeze Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Antifreeze Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Filter Recycling</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oil Filter Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>Oily Water and Antifreeze Serv</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oily Water and Antifreeze Serv</label>
+    </customValue>
+    <customValue>
+        <fullName>Containerized Waste Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Containerized Waste Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Product Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Allied Product Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Parts Washing Service Aqueous</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parts Washing Service Aqueous</label>
+    </customValue>
+    <customValue>
+        <fullName>Vac Services - Separators</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vac Services - Separators</label>
+    </customValue>
+    <customValue>
+        <fullName>Terminal Sales (RFO)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Terminal Sales (RFO)</label>
+    </customValue>
+    <customValue>
+        <fullName>KPP - Base Oil Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KPP - Base Oil Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>KPP - Contract Blending</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KPP - Contract Blending</label>
+    </customValue>
+    <customValue>
+        <fullName>KPP - Specialty Refinery Products</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KPP - Specialty Refinery Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Windshield Washer Fluid Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Windshield Washer Fluid Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploration Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Exploration Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials Processing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Materials Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Pigging/Decoking</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialty Pigging/Decoking</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Projects and Remediation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Waste Projects and Remediation</label>
+    </customValue>
+    <customValue>
+        <fullName>Filtration and Treatment Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Filtration and Treatment Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services Canada</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Technical Services Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>High Hazardous Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Hazardous Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lodging</label>
+    </customValue>
+    <customValue>
+        <fullName>Emerald Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Emerald Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Performance Plus Products</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Performance Plus Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services US</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Technical Services US</label>
+    </customValue>
+    <customValue>
+        <fullName>Thermo Fluids</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thermo Fluids</label>
+    </customValue>
+    <description>Business grouping for TSE request.</description>
+    <masterLabel>Specialist Business</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chain_SubType__c</fullName>
+    <description>Branch is the Regionally managed customers
+Corporate are the Key Account customers
+Target is a potential Key Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Branch is the Regionally managed customers
+Corporate are the Key Account customers
+Target is a potential Key Account</inlineHelpText>
+    <label>Chain SubType</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Branch</fullName>
+                <default>false</default>
+                <label>Branch</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <label>Target</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

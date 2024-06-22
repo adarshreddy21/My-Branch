@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_of_Campaign_Member__c</fullName>
+    <description>End Date of Campaign Member for campaign based reporting for contacts and leads</description>
+    <externalId>false</externalId>
+    <label>End Date of Campaign Member</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

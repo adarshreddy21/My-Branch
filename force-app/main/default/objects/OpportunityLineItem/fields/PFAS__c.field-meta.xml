@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PFAS__c</fullName>
+    <description>List of PFAS types</description>
+    <externalId>false</externalId>
+    <label>PFAS</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted> 
+            <value>
+                <fullName>Sampling</fullName>
+                <default>false</default>
+                <label>Sampling</label>
+            </value>
+            <value>
+                <fullName>Analysis</fullName>
+                <default>false</default>
+                <label>Analysis</label>
+            </value>
+            <value>
+                <fullName>Drinking Water Solutions</fullName>
+                <default>false</default>
+                <label>Drinking Water Solutions</label>
+            </value>
+            <value>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+                <label>Solutions</label>
+            </value>
+            <value>
+                <fullName>Industrial Water Solutions</fullName>
+                <default>false</default>
+                <label>Industrial Water Solutions</label>
+            </value>
+            <value>
+                <fullName>Soil Remediation</fullName>
+                <default>false</default>
+                <label>Soil Remediation</label>
+            </value>
+            <value>
+                <fullName>AFF Management</fullName>
+                <default>false</default>
+                <label>AFF Management</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Disposal</fullName>
+                <default>false</default>
+                <label>Disposal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

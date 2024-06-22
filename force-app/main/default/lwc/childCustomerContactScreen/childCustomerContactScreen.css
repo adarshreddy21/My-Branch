@@ -1,0 +1,32 @@
+.Section{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.headersizemedium{
+    font-size: 1.25rem;
+}
+.center {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .padding-bottom {
+    padding-bottom: 15px;
+  }
+  .padding-top {
+    padding-top: 20px;
+  }
+  .padding-left{
+    padding-left: 25px;
+  }  
+  .paddingsmall {
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .bold-text {
+    font-weight: bold;
+  }
+  .information-text{
+    color: red;
+  }

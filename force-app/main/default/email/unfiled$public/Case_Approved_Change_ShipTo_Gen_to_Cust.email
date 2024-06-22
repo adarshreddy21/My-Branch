@@ -1,0 +1,41 @@
+Hello, {!Case.CaseNumber} has been approved, and {!Account.WIN_ID__c} has been promoted from a Gen account to a customer account.
+
+In order to make this a successful transition, please ensure the below steps are completed in a timely fashion:
+
+-	Access to generic profiles is lost and will need to be reestablished on the 
+         Customer (Profile Type “G”)
+
+-	CH & SK Contract pricing links break and will need to be reestablished on the 
+         new Customer. 
+
+-	PO Information resides at the Customer level and will need to be 
+         reestablished on the new Customer. 
+
+-	WIN ID automatically goes on Credit Hold therefore credit terms, credit 
+         hold/release, credit limits must be reapplied to the new Customer. Submit 
+         Credit Approval Request Form FN4.9CAR to the Credit Department. 
+
+-	Quotes break and will need to be reestablished on the new Customer. 
+
+-	Alternate Billing Addresses and contacts must be reestablished on the new 
+         Customer. 
+
+-	Alternate Pay To Addresses must be reestablished on the new Customer. 
+
+-	Billing flags must be reestablished on the new Customer. 
+
+-	Billing instructions must be reestablished on the new Customer. 
+
+-	Billing requirements must be reestablished on the new Customer. 
+
+-	Invoice downstream trans and fee must be reestablished on the new 
+        Customer. 
+
+-	eCommerce billing must be reestablished on the Customer. Contact Outlook 
+         DL “ecommerce@cleanharbors.com” with any questions.
+ 
+-	Recovery fee rates must be reestablished on the new Customer. Contact 
+        Outlook DL “RecoveryFee@cleanharbors.com”
+
+Best,
+CMD Team

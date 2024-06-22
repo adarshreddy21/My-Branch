@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Per_Gallon__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (Product_Gallons__c &gt; 0 , (TotalPrice / Product_Gallons__c), 0)</formula>
+    <label>Price Per Gallon</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

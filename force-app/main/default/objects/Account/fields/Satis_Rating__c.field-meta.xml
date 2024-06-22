@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Satis_Rating__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Satisfaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+                <label>Very Satisfied</label>
+            </value>
+            <value>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+                <label>Satisfied</label>
+            </value>
+            <value>
+                <fullName>Unsatisfied</fullName>
+                <default>false</default>
+                <label>Unsatisfied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

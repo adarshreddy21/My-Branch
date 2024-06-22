@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UCW_BR_BPS_Casper_WY_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>UCW - BR BPS Casper WY</label>
+    <queue>UCW_BR_BPS_Casper_WY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

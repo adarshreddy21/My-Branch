@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inside_Sales_Account_Owner_Template</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Contact_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account.Status__c</columns>
+    <columns>Account.Primary_Aurora_Branch_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Account.Class__c</columns>
+    <columns>Account.Industry_Segment__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.Account_Owner_Name__c</field>
+        <operation>equals</operation>
+        <value>Shashank Nagorao Jadhav</value>
+    </filters>
+    <label>Inside Sales Account Owner (Template)</label>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Note_Filter__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Created this field to avoid displaying Zero Current Balance amount fields on Account related list - INC1640266</description>
+    <externalId>false</externalId>
+    <label>Collection Note Filter</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Collection Notes (Account)</relationshipLabel>
+    <relationshipName>Call_Notes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

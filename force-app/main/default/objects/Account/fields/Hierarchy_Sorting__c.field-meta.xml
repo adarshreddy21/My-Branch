@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hierarchy_Sorting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( OR (RecordTypeId = &apos;012j0000001DaVS&apos;,RecordTypeId = &apos;0124Q000001Fz8G&apos;), &quot;000000000001&quot;,
+
+IF ( AND (OR(RecordTypeId = &apos;012j0000001DaVT&apos;,RecordTypeId = &apos;012j0000001DaVO&apos;), ISPICKVAL(Cycle__c, &apos;Prospect&apos;)), &quot;XXXXXXProspect&quot;&amp;Id,
+
+IF ( OR(RecordTypeId = &apos;012j0000001DaVT&apos;,RecordTypeId = &apos;012j0000001DaVO&apos;),  WIN_ID__c,
+
+IF ( AND (OR(RecordTypeId = &apos;012j0000001DaVU&apos;,RecordTypeId = &apos;012j0000001DaVP&apos;), ISPICKVAL(Cycle__c, &apos;Prospect&apos;)), Parent.WIN_ID__c&amp;&quot; - XXXXXXProspect&quot;&amp;Id,
+
+IF ( OR (RecordTypeId = &apos;012j0000001DaVU&apos;,RecordTypeId = &apos;012j0000001DaVP&apos;),  Parent.WIN_ID__c&amp;&quot; - &quot;&amp;WIN_ID__c,
+
+IF ( AND (RecordTypeId = &apos;012j0000001DaVQ&apos;,  ISPICKVAL(Type, &apos;Pricing Chain&apos;)), &quot;XXXXXXXPricingChain&quot;,
+
+IF ( AND (RecordTypeId = &apos;012j0000001DaVQ&apos;,  ISPICKVAL(Type, &apos;Reporting Chain&apos;)), &quot;XXXXXXXReportingChain&quot;,
+
+
+&quot;XXXXXXXXX&quot;)))))))</formula>
+    <label>Hierarchy Sorting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

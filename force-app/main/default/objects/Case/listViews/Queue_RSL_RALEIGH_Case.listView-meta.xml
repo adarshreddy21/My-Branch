@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_RSL_RALEIGH_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: RSL-RALEIGH</label>
+    <queue>Queue_RSL_RALEIGH</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

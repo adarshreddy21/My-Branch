@@ -1,0 +1,2 @@
+Hello {!Ownership_Change_Request__c.CreatedBy}, 
+Your Account Owner Change Request has been approved. It will be made effective on {!Ownership_Change_Request__c.Effective_Date__c}. 

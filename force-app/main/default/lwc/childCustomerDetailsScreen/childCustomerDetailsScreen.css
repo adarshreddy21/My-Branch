@@ -1,0 +1,32 @@
+.headersizemedium{
+  font-size: 1.25rem;
+}
+.center {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.paddingtop {
+  padding-top: 20px;
+}
+.paddingsmall {
+  padding: 3px;
+}
+.samecorppadding {
+  text-align: left;
+  margin-top: 18px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+
+}
+.error-message{
+  font-size: 1.0rem;
+  color:red;
+  text-align: center;
+}
+
+.information-text{
+  color: red;}
+
+.padding-right{
+  padding-right: 10px;
+}

@@ -1,0 +1,10 @@
+<template>
+    <template lwc:if={isSurfaceBranchListEmpty}>
+    <lightning-card variant="Narrow" title="Branch Queue Members" icon-name="utility:people">
+        <lightning-icon icon-name="utility:info" alternative-text="Any updates to membership should be requested via a Service Now ticket." size="x-small"
+            title="Any updates to membership should be requested via a Service Now ticket." slot="actions"></lightning-icon>
+        <lightning-datatable key-field="Id" data={surfaceBranchList} columns={columns} hide-checkbox-column> 
+        </lightning-datatable>
+    </lightning-card>
+    </template>
+</template>

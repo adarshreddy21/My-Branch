@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Access_To_Update_OS_PSP_AND_PSP_OLD</name> 
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access_To_Update_OS_PSP_AND_PSP_OLD</label>
+</PermissionSet>

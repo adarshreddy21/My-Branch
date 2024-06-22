@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Access_to_E_billers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Access to E-billers</label>
+        <sharedTo>
+            <group>Ebillers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Non Standard Billing WIN,Invoice Delivery,Collector Case,Non Standard Billing Closed Order</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Parts_Washer_Case_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Parts Washer Case Access</label>
+        <sharedTo>
+            <group>Parts_Washer_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Parts Washer Pull Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>SK_All_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allow users to see all cases</description>
+        <label>SK All Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_EVP_Environmental</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_EVP_Environmental</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

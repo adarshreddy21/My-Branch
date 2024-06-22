@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Activity_Mark_Complete</fullName>
+        <field>Mark_Complete__c</field>
+        <literalValue>1</literalValue>
+        <name>Activity Mark Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Due_Date</fullName>
+        <field>ReminderDateTime</field>
+        <formula>DATETIMEVALUE(NOW())</formula>
+        <name>Update Due Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Subject</fullName>
+        <field>Subject</field>
+        <formula>&apos;  &apos; &amp; TEXT( TODAY() ) &amp; &apos;: &apos; &amp; TEXT(Call_Type__c)</formula>
+        <name>Update Subject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Task_Status_to_Close</fullName>
+        <field>Status</field>
+        <literalValue>Completed</literalValue>
+        <name>Update Task Status to Close</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ciscocjs__Contact_Type_Mapping</fullName>
+        <field>ciscocjs__Contact_Type__c</field>
+        <name>Contact Type Mapping</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Call Center Task Subject</fullName>
+        <actions>
+            <name>Activity_Mark_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Due_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Subject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Task_Status_to_Close</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Call Center Activity</value>
+        </criteriaItems>
+        <description>Update the subject with call type</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>ciscocjs__Contact Type Mapping</fullName>
+        <actions>
+            <name>ciscocjs__Contact_Type_Mapping</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Type</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

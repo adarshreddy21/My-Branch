@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_Minimum_is_Required_for_Bulk_Jobs</fullName>
+    <active>true</active>
+    <description>Bulk minimum is required for Bulk jobs</description>
+    <errorConditionFormula>and(
+Pricing_Type_of_Request__c = &quot;Bulk Rate&quot;,
+isblank( Bulk_or_Additional_Drum_Minimums__c ))</errorConditionFormula>
+    <errorDisplayField>Bulk_or_Additional_Drum_Minimums__c</errorDisplayField>
+    <errorMessage>Bulk Minimum is required. Please enter minimum for the bulk request</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+Hello {!Tax_Document__c.Account_Owner_Name__c},
+
+The exemption certificate for {!Tax_Document__c.Account_WIN_ID__c} in the state of {!Tax_Document__c.State__c} is expiring on {!Tax_Document__c.Expiration_Date__c}. Could you please reach out to your customer contact and request a current copy of their state of {!Tax_Document__c.State__c} certificate?
+
+Once obtained, please upload a copy of the certificate into the Tax Documents section of the customer’s account in Salesforce.
+
+Thank you,
+
+Tax Department
+
+If you have any questions, please send an email to Tax@cleanharbors.com. 

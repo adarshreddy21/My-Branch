@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Override_2021__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Territory_Override_flag for 2021</description>
+    <externalId>false</externalId>
+    <label>Territory Override 2021</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

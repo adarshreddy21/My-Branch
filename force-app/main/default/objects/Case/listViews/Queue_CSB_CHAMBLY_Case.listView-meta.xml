@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_CSB_CHAMBLY_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: CSB-CHAMBLY</label>
+    <queue>Queue_CSB_CHAMBLY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

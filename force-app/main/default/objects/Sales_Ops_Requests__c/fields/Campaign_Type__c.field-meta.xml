@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporate Account Implementation</fullName>
+                <default>false</default>
+                <label>Corporate Account Implementation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>New Business Prospecting</fullName>
+                <default>false</default>
+                <label>New Business Prospecting</label>
+            </value>
+            <value>
+                <fullName>Flip All Accounts (New Hire / Termination)</fullName>
+                <default>false</default>
+                <label>Flip All Accounts (New Hire / Termination)</label>
+            </value>
+            <value>
+                <fullName>Multiple Account Change</fullName>
+                <default>false</default>
+                <label>Multiple Account Change</label>
+            </value>
+            <value>
+                <fullName>Postal Code Re-Assignment</fullName>
+                <default>false</default>
+                <label>Postal Code Re-Assignment</label>
+            </value>
+            <value>
+                <fullName>Territory Re-Alignment</fullName>
+                <default>false</default>
+                <label>Territory Re-Alignment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

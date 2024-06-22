@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_SGS_SAGINAW_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: SGS-SAGINAW</label>
+    <queue>Queue_SGS_SAGINAW</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Cross_Sell_Scheduling</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Customer_Corporate_Address__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>TPM_Opportunity__c</columns>
+    <columns>Cross_Sell_Opportunity_Business_Segment__c</columns>
+    <columns>TPM_Specialist__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Cross_Sell_Scheduling</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,In Progress</value>
+    </filters>
+    <label>All Open Cross Sell Scheduling</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>FS_Quote_Support</group>
+        <group>TPM_Opportunity</group>
+        <group>TS_Quote_Support</group>
+    </sharedTo>
+</ListView>

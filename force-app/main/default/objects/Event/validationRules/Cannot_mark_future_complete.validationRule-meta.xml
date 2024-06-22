@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_mark_future_complete</fullName>
+    <active>true</active>
+    <description>cannot mark event complete if the event is in the futture</description>
+    <errorConditionFormula>AND(DATEVALUE(ActivityDateTime) &gt;  Today(),  Mark_Complete__c = TRUE)</errorConditionFormula>
+    <errorMessage>Can&apos;t mark the meeting complete if it hasn&apos;t happened yet</errorMessage>
+</ValidationRule>
+

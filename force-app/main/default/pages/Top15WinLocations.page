@@ -1,0 +1,100 @@
+<apex:page standardController="Strategic_Account_Plan__c">
+ 
+    <style>
+        table {
+        border-collapse: collapse;
+        }
+        
+        table, td, th {
+        border: 1px solid black;
+        }
+    </style>
+    
+    
+    <apex:form >
+        
+        <table style="width:50%;">
+            <tr style="background-color:lightgray;">
+                <th>Location</th>
+                <th>Win Id</th> 
+                <th>Capacity</th>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_1__c) && isBlank(Strategic_Account_Plan__c.WinId_1__c) && isBlank(Strategic_Account_Plan__c.Capacity_1__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_1__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_1__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_1__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_2__c) && isBlank(Strategic_Account_Plan__c.WinId_2__c) && isBlank(Strategic_Account_Plan__c.Capacity_2__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_2__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_2__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_2__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_3__c) && isBlank(Strategic_Account_Plan__c.WinId_3__c) && isBlank(Strategic_Account_Plan__c.Capacity_3__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_3__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_3__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_3__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_4__c) && isBlank(Strategic_Account_Plan__c.WinId_4__c) && isBlank(Strategic_Account_Plan__c.Capacity_4__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_4__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_4__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_4__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_5__c) && isBlank(Strategic_Account_Plan__c.WinId_5__c) && isBlank(Strategic_Account_Plan__c.Capacity_5__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_5__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_5__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_5__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_6__c) && isBlank(Strategic_Account_Plan__c.WinId_6__c) && isBlank(Strategic_Account_Plan__c.Capacity_6__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_6__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_6__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_6__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_7__c) && isBlank(Strategic_Account_Plan__c.WinId_7__c) && isBlank(Strategic_Account_Plan__c.Capacity_7__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_7__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_7__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_7__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_8__c) && isBlank(Strategic_Account_Plan__c.WinId_8__c) && isBlank(Strategic_Account_Plan__c.Capacity_8__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_8__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_8__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_8__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_9__c) && isBlank(Strategic_Account_Plan__c.WinId_9__c) && isBlank(Strategic_Account_Plan__c.Capacity_9__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_9__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_9__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_9__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_10__c) && isBlank(Strategic_Account_Plan__c.WinId_10__c) && isBlank(Strategic_Account_Plan__c.Capacity_10__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_10__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_10__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_10__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_11__c) && isBlank(Strategic_Account_Plan__c.WinId_11__c) && isBlank(Strategic_Account_Plan__c.Capacity_11__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_11__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_11__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_11__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_12__c) && isBlank(Strategic_Account_Plan__c.WinId_12__c) && isBlank(Strategic_Account_Plan__c.Capacity_12__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_12__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_12__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_12__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_13__c) && isBlank(Strategic_Account_Plan__c.WinId_13__c) && isBlank(Strategic_Account_Plan__c.Capacity_13__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_13__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_13__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_13__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_14__c) && isBlank(Strategic_Account_Plan__c.WinId_14__c) && isBlank(Strategic_Account_Plan__c.Capacity_14__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_14__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_14__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_14__c}"/></td>
+            </tr>
+            <tr style="display: {!IF(isBlank(Strategic_Account_Plan__c.Location_15__c) && isBlank(Strategic_Account_Plan__c.WinId_15__c) && isBlank(Strategic_Account_Plan__c.Capacity_15__c), 'none', 'table-row')};">
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Location_15__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.WinId_15__c}"/></td>
+                <td><apex:outputField label="" value="{!Strategic_Account_Plan__c.Capacity_15__c}"/></td>
+            </tr>
+        </table>
+        
+    </apex:form>
+</apex:page>

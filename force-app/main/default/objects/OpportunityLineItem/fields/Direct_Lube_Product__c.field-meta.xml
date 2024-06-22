@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lube_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Direct Lube Product</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Heavy Duty</fullName>
+                <default>false</default>
+                <label>Heavy Duty</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Grease</fullName>
+                <default>false</default>
+                <label>Grease</label>
+            </value>
+            <value>
+                <fullName>Hydraulic</fullName>
+                <default>false</default>
+                <label>Hydraulic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

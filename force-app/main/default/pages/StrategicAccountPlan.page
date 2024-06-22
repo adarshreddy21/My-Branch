@@ -1,0 +1,445 @@
+<apex:page standardController="Strategic_Account_Plan__c" extensions="StrategicAccountPlanController" sidebar="false" showHeader="true">
+     <!-- Javascript function to check all rows in the table -->
+    <script>
+    function checkContact(cb)
+    {
+         var inputElem = document.getElementsByTagName("input");
+        for(var i=0;i<inputElem.length;i++)
+        {
+            if(inputElem[i].id.indexOf("ContactCheck")!=-1)
+                inputElem[i].checked = cb.checked;
+        }
+    }
+    
+    function checkOpp(cb)
+    {
+        var inputElem = document.getElementsByTagName("input");
+        for(var i=0;i<inputElem.length;i++)
+        {
+            if(inputElem[i].id.indexOf("OpportunityCheck")!=-1)
+                inputElem[i].checked = cb.checked;
+        }
+    }
+    
+     function checkSN(cb)
+    {
+        var inputElem = document.getElementsByTagName("input");
+        for(var i=0;i<inputElem.length;i++)
+        {
+            if(inputElem[i].id.indexOf("SNCheck")!=-1)
+                inputElem[i].checked = cb.checked;
+        }
+    }
+    
+    </script>
+    <!-- End of Javascript function -->
+    
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="{!AccountName.Name} Strategic Plan"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+     <style type = "text/css">
+        .colHeadr {text-align:center;}
+    </style>
+    <apex:form id="frmId"> 
+        <apex:pageBlock id="mainblock">
+            <apex:pageMessages />
+            <apex:pageBlockSection collapsible="False" columns="1" title="Strategic Account Plan Information" > 
+                <apex:inputField value="{!Strategic_Account_Plan__c.Name}"/>
+                <apex:inputField value="{!Strategic_Account_Plan__c.Account__c}"/>
+                <apex:inputField value="{!Strategic_Account_Plan__c.Account_Summary__c}" style="width:500px"/>  
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="2" title="Strategic Vision" >                
+                <apex:inputField value="{!Strategic_Account_Plan__c.Customer_s_Strategic_Vision__c}" style="width:500px;height:100px"/>                             
+                <apex:inputField value="{!Strategic_Account_Plan__c.CleanHarbors_Strategic_Vision__c}" style="width:500px;height:100px"/>                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Environmental Matters" >                
+                <apex:inputField label="" value="{!Strategic_Account_Plan__c.Environmental_Matters__c}" style="width:50%;height:100px"/>                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="4" title="Objectives" id="obj">
+                <apex:pageblocksectionitem id="Pgitem">
+                    <apex:outputLabel value="Qualitative Objectives" style="float:left"></apex:outputLabel> 
+                    <apex:outputLabel value="Status" style="float:left" id="sta"></apex:outputLabel> 
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Quantitative Objectives" style="float:left"></apex:outputLabel> 
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Goal (%)" style="float:left"></apex:outputLabel> 
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Current Status (%)" style="float:left"></apex:outputLabel>  
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Qualitative_Objective_1__c}" style="width:400px;height:100px" label="1"/>
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Status_Qualitative_Objective_1__c}" style="width:150px" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_1__c}" style="width:400px;height:100px" label="1"/>   
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_1__c}" style="width:100px" label=""/> 
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective1__c}" style="width:100px" label=""/>  
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Qualitative_Objective_2__c}" style="width:400px;height:100px" label="2"/>
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Status_Qualitative_Objective_2__c}" style="width:150px" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_2__c}" style="width:400px;height:100px" label="2"/>   
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_2__c}" style="width:100px" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective2__c}" style="width:100px;float:left" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Qualitative_Objective_3__c}" style="width:400px;height:100px" label="3"/>                                                                             
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Status_Qualitative_Objective_3__c}" style="width:150px" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Quantitative_Objective_3__c}" style="width:400px;height:100px" label="3"/>   
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Goal_Quantitative_Objective_3__c}" style="width:100px" label=""/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:inputField value="{!Strategic_Account_Plan__c.Current_Status_Quantitative_Objective3__c}" style="width:100px;float:left" label=""/>
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Key Contacts" id="ContactBlock"> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="none">
+                        <div align="center" draggable="false" >                            
+                            <apex:commandLink value="Add Contact" action="{!AddRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                                 <apex:param value="Contact" assignTo="{!objectType}"/>
+                            </apex:commandLink>&nbsp; &nbsp;
+                            <apex:commandLink value="Remove Contact" action="{!processRemovedRecords}" styleClass="btn" style="text-decoration:none;padding:4px" reRender="ContactBlock">
+                                 <apex:param value="Contact" assignTo="{!objectType}"/>
+                            </apex:commandLink>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="ContactBlockItem">
+                    <apex:pageblocktable value="{!AllSelectedContacts}" var="ct" style="width:100%" cellPadding="1" border="10" id="ContactTable">                                       
+                        <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="checkContact(this)"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!ct.selected}" id="ContactCheck"/>
+                    </apex:column>
+                        <apex:column headerValue="Name" headerClass="colHeadr">
+                            <apex:outputField value="{!ct.obj['Name']}" style="width:500px"/>
+                        </apex:column>
+                        <apex:column headerValue="Title" headerClass="colHeadr">
+                            <apex:outputField value="{!ct.obj['Title']}" style="width:150px"/>
+                        </apex:column>  
+                        <apex:column headerValue="Contact Type" headerClass="colHeadr">
+                            <apex:outputField value="{!ct.obj['Contact_Type__c']}" style="width:500px"/>
+                        </apex:column>
+                        <apex:column headerValue="Buying Role" headerClass="colHeadr">
+                            <apex:inputField value="{!ct.obj['Buying_Role__c']}" style="text-align:left;width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Relationship Strength" headerClass="colHeadr">
+                            <apex:inputField value="{!ct.obj['Relationship_Strength__c']}" style="width:150px"/>
+                        </apex:column>  
+                        <apex:column headerValue="Frequency" headerClass="colHeadr">
+                            <apex:inputField value="{!ct.obj['Frequency__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Relationship Development Plan" headerClass="colHeadr">
+                            <apex:inputField value="{!ct.obj['Relationship_Development_Plan__c']}" style="width:350px"/>
+                        </apex:column>
+                    </apex:pageblocktable>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="2" title="Internal Support">
+                <apex:inputField label="Internal Supporter" value="{!Strategic_Account_Plan__c.Internal_Supporter_User_1__c}"/>
+                <apex:inputField label="Role" value="{!Strategic_Account_Plan__c.Internal_Supporter_Role_1__c}"/>
+                <apex:inputField label="Internal Supporter" value="{!Strategic_Account_Plan__c.Internal_Supporter_User_2__c}"/>
+                <apex:inputField label="Role" value="{!Strategic_Account_Plan__c.Internal_Supporter_Role_2__c}"/>
+                <apex:inputField label="Internal Supporter" value="{!Strategic_Account_Plan__c.Internal_Supporter_User_3__c}"/>
+                <apex:inputField label="Role" value="{!Strategic_Account_Plan__c.Internal_Supporter_Role_3__c}"/>
+                <apex:inputField label="Internal Supporter" value="{!Strategic_Account_Plan__c.Internal_Supporter_User_4__c}"/>
+                <apex:inputField label="Role" value="{!Strategic_Account_Plan__c.Internal_Supporter_Role_4__c}"/>
+                <apex:inputField label="Internal Supporter" value="{!Strategic_Account_Plan__c.Internal_Supporter_User_5__c}"/>
+                <apex:inputField label="Role" value="{!Strategic_Account_Plan__c.Internal_Supporter_Role_5__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="2" title="Competitive SWOT Anaysis" >                
+                <apex:inputField value="{!Strategic_Account_Plan__c.Strengths__c}" style="width:500px"/>
+                <apex:inputField value="{!Strategic_Account_Plan__c.Weaknesses__c}" style="width:500px"/>
+                <apex:inputField value="{!Strategic_Account_Plan__c.Opportunities__c}" style="width:500px"/>
+                <apex:inputField value="{!Strategic_Account_Plan__c.Threats__c}" style="width:500px"/>                
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection columns="2" title="Revenue Trend & YTD Revenue Against Budget">
+                   <apex:inputField label="" value="{!Strategic_Account_Plan__c.YOY_Revenue_Report__c}"/>       
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection columns="1" title="White Space" id="frstblock" >
+                
+                <apex:pageblocksectionitem >
+                    <apex:pageblocktable value="{!forcastplan}" var="newforcst" cellPadding="1" border="10">
+                        <apex:column headerValue="LOB" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.Line_of_Business__c}"/> 
+                        </apex:column>  
+                        <apex:column headerValue="FY Current Spend" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.FY_Current_Spend__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Current / New LOB" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.Current_New_LOB__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="FY White Space" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.FY_White_Space__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Forecast: Current Year" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.Current_Year_Forecast__c}"/>
+                        </apex:column> 
+                        <apex:column headerValue="Forecast: Current Year + 1" headerClass="colHeadr">
+                            <apex:inputField value="{!newforcst.Current_Year_plus_1_Forecast__c}"/>
+                        </apex:column>    
+                    </apex:pageblocktable>
+                </apex:pageblocksectionitem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="none">
+                        <div align="center" draggable="false" >                            
+                            <apex:commandButton value="Add Row" action="{!AddRowforcastplan}" reRender="frstblock">
+                                <apex:param value="Forecast" assignTo="{!forecastCmptr}" name="ForecastType"/>
+                            </apex:commandButton>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Competitive Pressures" id="comptvblock">
+                
+                <apex:pageblocksectionitem >
+                    <apex:pageblocktable value="{!cmptrPlan}" var="comptr" cellPadding="1" border="10">
+                        <apex:column headerValue="LOB" headerClass="colHeadr">
+                            <apex:inputField value="{!comptr.Line_of_Business__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Competitor" headerClass="colHeadr">
+                            <apex:inputField value="{!comptr.Competitor__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Competitor % of Wallet" headerClass="colHeadr">
+                           <apex:inputField value="{!comptr.Competitor_percentage_of_Wallet__c}"/>
+                        </apex:column>
+                        <apex:column headerValue="Strength / Weaknesses" headerClass="colHeadr">
+                            <apex:inputField value="{!comptr.Strength_Weaknesses__c}" style="width:500px"/> 
+                        </apex:column>  
+                    </apex:pageblocktable>
+                </apex:pageblocksectionitem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="none">
+                        <div align="center" draggable="false" >                            
+                            <apex:commandButton value="Add Row" action="{!AddRowforcastplan}" reRender="comptvblock">
+                                <apex:param value="Competitor" assignTo="{!forecastCmptr}" name="CompetitorType"/>
+                            </apex:commandButton>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockSection columns="3" title="Top 15 Win Locations"> 
+                 <apex:outputLabel value="Location" style="float:left; margin-left: 70px; font-weight:700"/>
+                 <apex:outputLabel value="Win Id" style="float:left;margin-left: 70px; font-weight:700"></apex:outputLabel> 
+                 <apex:outputLabel value="Capacity" style="float:left;margin-left: 70px; font-weight:700"></apex:outputLabel> 
+                <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_1__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_1__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_1__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_2__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_2__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_2__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_3__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_3__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_3__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_4__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_4__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_4__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_5__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_5__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_5__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_6__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_6__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_6__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_7__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_7__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_7__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_8__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_8__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_8__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_9__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_9__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_9__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_10__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_10__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_10__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_11__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_11__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_11__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_12__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_12__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_12__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_13__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_13__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_13__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_14__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_14__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_14__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Location_15__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.WinId_15__c}" style="width:200px"/>
+                 <apex:inputField label="" value="{!Strategic_Account_Plan__c.Capacity_15__c}" style="width:200px"/>
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockSection columns="1" title="Customer Contracts" >                
+                <apex:inputField value="{!Strategic_Account_Plan__c.Customer_Contract_1__c}" style="width:50%;height:100px"/>
+                 <apex:inputField value="{!Strategic_Account_Plan__c.Customer_Contract_2__c}" style="width:50%;height:100px"/>
+                 <apex:inputField value="{!Strategic_Account_Plan__c.Customer_Contract_3__c}" style="width:50%;height:100px"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="2" title="Historical Revenue Trend" >                
+                <apex:inputField label="" value="{!Strategic_Account_Plan__c.Historical_Revenue_Trend__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Sales Reports" id="reportblock" > 
+            </apex:pageBlockSection>
+            <table width="100%" border="0">
+                <tr>
+                    <td width="20%"> <apex:commandbutton value="YTD Closed Won Opportunities" onclick="window.open('https://cleanharbors.my.salesforce.com/00O4Q000009ZGZC?pv0={!Strategic_Account_Plan__c.Account__c}&pv1={!Strategic_Account_Plan__c.Account__c}')" reRender="reportblock"/> </td>
+                    <td width="20%"> <apex:commandbutton value="Open Pipeline" onclick="window.open('https://cleanharbors.my.salesforce.com/00O4Q000009ZGbI?pv0={!Strategic_Account_Plan__c.Account__c}&pv1={!Strategic_Account_Plan__c.Account__c}')" reRender="reportblock"/> </td>
+                    <td width="20%"> <apex:commandbutton value="YTD Closed Lost Opportunities" onclick="window.open('https://cleanharbors.my.salesforce.com/00O4Q000009ZGbD?pv0={!Strategic_Account_Plan__c.Account__c}&pv1={!Strategic_Account_Plan__c.Account__c}')" reRender="reportblock"/> </td>
+                </tr>
+            </table>
+            
+            <apex:pageBlockSection columns="1" title="Top 20 Opportunities" id="OppBlock" >  
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="none">
+                        <div align="center" draggable="false" >
+                            <apex:commandLink value="Add Opportinity" action="{!AddRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                                 <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                            </apex:commandLink>&nbsp; &nbsp;
+                            <apex:commandLink value="Remove Opportunity" action="{!processRemovedRecords}" styleClass="btn" style="text-decoration:none;padding:4px" reRender="OppBlock">
+                                 <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                            </apex:commandLink>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageblocksectionitem >
+                    <apex:pageblocktable value="{!AllSelectedOpportunity}" var="oppvar" style="width:100%" cellPadding="1" border="10">
+                         <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="checkOpp(this)" id="Opportunity"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!oppvar.selected}" id="OpportunityCheck"/>
+                    </apex:column> 
+                        <apex:column headerValue="Opportunity Name" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Name']}" style="width:250px"/>
+                        </apex:column>   
+                        <apex:column headerValue="Owner" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['owner']['name']}" style="width:500px"/>
+                        </apex:column>
+                        <apex:column headerValue="Account" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Account']['name']}" style="width:500px"/>
+                        </apex:column>
+                        <apex:column headerValue="Amount" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Amount']}" style="width:200px"/>
+                        </apex:column>                
+                        <apex:column headerValue="Close Date" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['CloseDate']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Job Start Date" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Job_Start_Date__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Stage" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['StageName']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="LOB" headerClass="colHeadr">
+                            <apex:repeat value="{!oppvar.obj['OpportunityLineItems']}" var="oppLine" >
+                                <apex:outputField value="{!oppLine.Product2.Name}" style="width:100px"/><br/>
+                            </apex:repeat>
+                        </apex:column>
+                        <apex:column headerValue="Description" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Description']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Next Action" headerClass="colHeadr">
+                            <apex:outputField value="{!oppvar.obj['Next_Action__c']}" style="width:100px"/>
+                        </apex:column>
+                    </apex:pageblocktable>                
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Sales Manager Summary Notes" id="SNBlock" >  
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel layout="none">
+                        <div align="center" draggable="false" >
+                            <apex:commandLink value="Add Summary Notes" action="{!AddRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                                 <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                            </apex:commandLink>&nbsp; &nbsp;
+                            <apex:commandLink value="Remove Summary Notes" action="{!processRemovedRecords}" styleClass="btn" style="text-decoration:none;padding:4px" reRender="SNBlock">
+                                 <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                            </apex:commandLink>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageblocksectionitem >
+                    <apex:pageblocktable value="{!AllSelectedSummaryNotes}" var="SN" style="width:100%" cellPadding="1" border="10">
+                         <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="checkSN(this)"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!SN.selected}" id="SNCheck"/>
+                    </apex:column>
+                        <apex:column headerValue="Name" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Name']}" style="width:250px"/>
+                        </apex:column>   
+                        <apex:column headerValue="Account" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Account__c']}" style="width:500px"/>
+                        </apex:column> 
+                        <apex:column headerValue="Opportunity" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Opportunity__c']}" style="width:200px"/>
+                        </apex:column>                
+                        <apex:column headerValue="Type" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Type__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Budget" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Budget__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Forecast" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Forecast__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Variance" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Variance__c']}" style="width:100px"/>
+                        </apex:column>
+                        <apex:column headerValue="Note" headerClass="colHeadr">
+                            <apex:outputField value="{!SN.obj['Note__c']}" style="width:100px"/>
+                        </apex:column>
+                    </apex:pageblocktable>                
+                </apex:pageblocksectionitem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! CustomSave}" value="Save" style="float:centre"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}" style="float:centre"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>   
+</apex:page>

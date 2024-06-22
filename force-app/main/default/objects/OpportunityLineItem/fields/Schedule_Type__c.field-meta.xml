@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Schedule Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Divide Amount into multiple installments</fullName>
+                <default>true</default>
+                <label>Divide Amount into multiple installments</label>
+            </value>
+            <value>
+                <fullName>Repeat Amount for each installment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Repeat Amount for each installment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

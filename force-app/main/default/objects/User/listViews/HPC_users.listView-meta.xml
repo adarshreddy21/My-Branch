@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HPC_users</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.USERNAME</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>CORE.USERS.SAML_SUBJECT</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.EMAIL</field>
+        <operation>contains</operation>
+        <value>hydrochempsc.com</value>
+    </filters>
+    <label>HPC users</label>
+    <language>en_US</language>
+</ListView>

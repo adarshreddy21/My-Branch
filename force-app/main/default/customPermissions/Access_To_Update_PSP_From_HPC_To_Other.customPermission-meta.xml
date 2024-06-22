@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Custom Permission is linked to Permission Set called &apos;Access_To_Update_PSP_From_HPC_To_Other&apos;.</description>
+    <isLicensed>false</isLicensed>
+    <label>Access_To_Update_PSP_From_HPC_To_Other</label>
+</CustomPermission>

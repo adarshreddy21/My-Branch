@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corp_Key_Account_Buying_Decision_NotNull</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT($Profile.Name = &apos;System Administrator&apos;),
+    NOT(ISBLANK(Account__r.Key_Buying_Decision__c)),
+    Account__r.Key_Buying_Decision__c = &apos;Central Buying&apos;,
+    NOT(Account__r.RecordType.Name=&apos;Corporate&apos;))</errorConditionFormula>
+    <errorMessage>Central Buying Accounts cannot be re-assigned</errorMessage>
+</ValidationRule>

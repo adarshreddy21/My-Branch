@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPP_Order</fullName>
+    <active>true</active>
+    <label>KPP Order</label>
+    <picklistValues>
+        <picklist>KPP_Budget_Group__c</picklist>
+        <values>
+            <fullName>Eco Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Eco Power Bulk and Packaged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ship_Quarter__c</picklist>
+        <values>
+            <fullName>1Q</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2Q</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3Q</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4Q</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

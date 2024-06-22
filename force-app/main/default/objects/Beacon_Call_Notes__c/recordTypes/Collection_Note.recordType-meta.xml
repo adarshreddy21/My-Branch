@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Note</fullName>
+    <active>true</active>
+    <description>Record type contains all data from collections flow in from Beacon</description>
+    <label>Collection Note</label>
+    <picklistValues>
+        <picklist>Account_Class__c</picklist>
+        <values>
+            <fullName>Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Color__c</picklist>
+        <values>
+            <fullName>Black - Closed Acct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue - Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green - Status Quo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orange - Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red - Lost Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow - Change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Method__c</picklist>
+        <values>
+            <fullName>E-Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Face to Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue__c</picklist>
+        <values>
+            <fullName>CHES Price Increase Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor Pricing Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice%2FManifest%2FDocument Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manifest%2FPaperwork Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FLate Manifest Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FLost Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onsite Health %26 Safety Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling%2FService</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Keyword__c</picklist>
+        <values>
+            <fullName>1st Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bounced Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CESQG Participant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHES cust to whom we owe %24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COD Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash Volume Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contra Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit%2FRebill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cust%2E Needs Certs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demand Letter Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispute-PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE Discount ShortPay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical CHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical CSD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercont Leasing Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murphy%27s Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No PO Obtained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not to exceed PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPA-90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPU-FUND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Accounts Receivable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overpayment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Correct Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Line Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Underfunded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid SK%2CRefund CHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid to Rhodia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved COD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Cert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Credit%2FRebill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Cust%2FVendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved NTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved OPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved OPU fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved PO Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved PO Line Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved PO add line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved PO exceeds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Payplan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Price Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Retainage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Service Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Shortpay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved Underfund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved no PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved wrong PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retainage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Pd To CHES In Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Paid item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris 3rd Party Cert of Destruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Cert Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Chargeback%2FDeduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Credit and Rebill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Cust Vend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Dispute Combined Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Dispute Lawyer Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Dispute PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Dispute Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Dispute Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Item Requiring Recon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teris Shortpay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unresolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Capital Adj</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worksheet Unsigned%2FUnapproved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong PO Obtained</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Next_Action__c</picklist>
+        <values>
+            <fullName>Call Eng%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Other Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact CH Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-sent Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Payment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution_1__c</picklist>
+        <values>
+            <fullName>Fall Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Bid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution_2__c</picklist>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor - Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due to Capacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fallout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job CANCELED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restrictions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Services_Discussed__c</picklist>
+        <values>
+            <fullName>Airborne Imaging Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalyst Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CleanPack Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Container Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directional Boring Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downhole Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Camps and Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtration and Treatment Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household Hazardous Waste Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line Locating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance Repair Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Processing Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mulching Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navigation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Coatings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinery Oil and Waste Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Branch Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale of Material and Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale of Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shot Hole Drilling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solvent Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Pigging Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26D Bulk Incineration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%26D Drum Disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminal Sales %28RFO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformer Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used Oil Collection %28SK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Chemical Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Projects</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Call A%2FP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Eng%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Other Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirm Inv%2E Recpt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact CH Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Re-sent Debit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-sent Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent Debit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent E-Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify w%2F Agency</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>CHOICE Support - OPEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSOM Proactive Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review - Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

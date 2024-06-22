@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Proposal_Date</fullName>
+    <active>true</active>
+    <description>If the attachment type  is invoice or proposal then require a date</description>
+    <errorConditionFormula>and(text(Attachment_Type__c) &lt;&gt; &apos;None&apos;, isblank( Invoice_or_Proposal_date__c))</errorConditionFormula>
+    <errorDisplayField>Invoice_or_Proposal_date__c</errorDisplayField>
+    <errorMessage>Please enter the last time the customer received an invoice or proposal from the competitor.</errorMessage>
+</ValidationRule>

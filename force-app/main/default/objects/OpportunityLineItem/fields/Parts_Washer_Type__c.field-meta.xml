@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Washer_Type__c</fullName>
+    <description>List of parts washer types</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select when entering a parts washer product</inlineHelpText>
+    <label>Parts Washer Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COM</fullName>
+                <default>false</default>
+                <label>COM</label>
+            </value>
+            <value>
+                <fullName>EAC</fullName>
+                <default>false</default>
+                <label>EAC</label>
+            </value>
+            <value>
+                <fullName>Equipment Sales</fullName>
+                <default>false</default>
+                <label>Equipment Sales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

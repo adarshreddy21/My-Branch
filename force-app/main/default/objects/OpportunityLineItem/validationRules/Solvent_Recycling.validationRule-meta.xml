@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solvent_Recycling</fullName>
+    <active>true</active>
+    <description>Solvent Recycling LOB can only be serviced by the following branches: A1, SH, SH1, SC, SC1, SLT, DOR, NJS, LIN, XGS, LER, TXS, DNR, SKY, SMR, NST, CRR, ETS, ETW</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+Product2.Name = &quot;Solvent Recycling&quot;,
+and(
+Branch__r.Branch_Code__c &lt;&gt; &quot;A1&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SH&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SH1&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SC&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SC1&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SLT&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;DOR&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;NJS&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;LIN&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;XGS&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;LER&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;TXS&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;DNR&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SKY&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;SMR&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;NST&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;CRR&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;ETS&quot;,
+Branch__r.Branch_Code__c &lt;&gt; &quot;ETW&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Branch__c</errorDisplayField>
+    <errorMessage>Solvent Recycling LOB can only be serviced by the following branches: A1, SH, SH1, SC, SC1, SLT, DOR, NJS, LIN, XGS, LER, TXS, DNR, SKY, SMR, NST, CRR, ETS, ETW</errorMessage>
+</ValidationRule>

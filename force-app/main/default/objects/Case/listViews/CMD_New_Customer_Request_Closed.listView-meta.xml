@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMD_New_Customer_Request_Closed</fullName>
+    <columns>MDM_Approver__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Current_Account_Win_ID__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Denial_Reason__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>Urgency__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.New_Customer_Request</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>contains</operation>
+        <value>Close,Approved</value>
+    </filters>
+    <label>CMD - New Customer Request Closed</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

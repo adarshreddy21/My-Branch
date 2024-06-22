@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delete_Schedules_And_Edit_Price</fullName>
+    <availability>online</availability>
+    <description>Deletes existing revenue schedules and navigates to the edit pricing page.</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Delete Schedules And Edit Price</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+var oliId = &apos;{!OpportunityLineItem.Id}&apos; ;
+
+var unitprice_result = sforce.connection.query(&quot;SELECT UnitPrice from OpportunityLineItem where id = &apos;&quot;+oliId+&quot;&apos;&quot;);
+var schedules = sforce.connection.query(&quot;SELECT Id from OpportunityLineItemSchedule where OpportunityLineItemID =&apos;&quot;+oliId+&quot;&apos;&quot;);
+
+ 
+if (oliId== null) { 
+  alert(&quot;Please select an opportunity product&quot;); 
+} 
+else { 
+
+    var errors = []; 
+    var unitprice;
+
+    var records = schedules.getArray(&quot;records&quot;);
+    var records_sp = unitprice_result.getArray(&quot;records&quot;);
+    if(records.length==0) {
+    parent.window.location=&apos;/&apos;+oliId+&apos;/e?retURL=%2F&apos;+oliId;   
+    }
+    else {
+        var data = Array();
+        for(var i=0;i&lt; records.length; i++){
+        data.push (records[i].Id);
+        }
+       if(records_sp.length &gt; 0) 
+         unitprice = records_sp[0].UnitPrice;
+       
+        var result = sforce.connection.deleteIds(data); 
+        if (result &amp;&amp; result.length){ 
+            var numFailed = 0; 
+            var numSucceeded = 0; 
+            for (var i = 0; i &lt; result.length; i++){ 
+                var res = result[i]; 
+                if (res &amp;&amp; res.success == &apos;true&apos;){ 
+                    numSucceeded++; 
+                } 
+                else { 
+                    var es = res.getArray(&quot;errors&quot;); 
+                    if (es.length &gt; 0) { 
+                        errors.push(es[0].message); 
+                    } 
+                    numFailed++; 
+                }    
+            } 
+            if (numFailed &gt; 0){ 
+                alert(&quot;Failed: &quot; + numFailed + &quot;\nSucceeded: &quot; + numSucceeded + &quot; \n Due to: &quot; + errors.join(&quot;\n&quot;)); 
+            } 
+            else { 
+                //alert(&quot;Number of records deleted: &quot; + numSucceeded);
+                parent.window.location=&apos;/&apos;+oliId+&apos;/e?retURL=%2F&apos;+oliId+&apos;&amp;UnitPrice=&apos;+unitprice;  
+            } 
+        }         
+    }
+}</url>
+</WebLink>

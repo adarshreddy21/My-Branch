@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Request_Status__c</fullName>
+    <description>Shows status of TPM or Central Quote request</description>
+    <externalId>false</externalId>
+    <formula>if(   TPM_Quote_Request__c   = False ,
+IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002IX8F&quot;, &quot;Quote Not Requested&quot;)
+,if(TPM_Quote_Completed__c = False, &quot;Quote Requested&quot;, &quot;Quote Request Complete&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Status of quote request (not submitted, quote requested, or quote request complete)</inlineHelpText>
+    <label>Quote Request Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

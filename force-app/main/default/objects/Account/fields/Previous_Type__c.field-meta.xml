@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Previous Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ShipTo/Gen</fullName>
+                <default>false</default>
+                <label>ShipTo/Gen</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Brok/Gen</fullName>
+                <default>false</default>
+                <label>Brok/Gen</label>
+            </value>
+            <value>
+                <fullName>TRAN</fullName>
+                <default>false</default>
+                <label>TRAN</label>
+            </value>
+            <value>
+                <fullName>RAIL</fullName>
+                <default>false</default>
+                <label>RAIL</label>
+            </value>
+            <value>
+                <fullName>Rig</fullName>
+                <default>false</default>
+                <label>Rig</label>
+            </value>
+            <value>
+                <fullName>Pricing Chain</fullName>
+                <default>false</default>
+                <label>Pricing Chain</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Dist/Gen</fullName>
+                <default>false</default>
+                <label>Dist/Gen</label>
+            </value>
+            <value>
+                <fullName>Parent Reporting Chain</fullName>
+                <default>false</default>
+                <label>Parent Reporting Chain</label>
+            </value>
+            <value>
+                <fullName>Reporting Chain</fullName>
+                <default>false</default>
+                <label>Reporting Chain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

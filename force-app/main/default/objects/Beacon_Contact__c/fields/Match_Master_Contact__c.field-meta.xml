@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Master_Contact__c</fullName>
+    <description>Does first name, last name, email address match Beacon and Master contact</description>
+    <externalId>false</externalId>
+    <formula>and(
+ Lower(First_Name__c) =  Lower(Contact__r.FirstName)
+,Lower(Last_Name__c) =  Lower(Contact__r.LastName)
+,Lower(Email__c) =  Lower(Contact__r.Email)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Match Master Contact</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

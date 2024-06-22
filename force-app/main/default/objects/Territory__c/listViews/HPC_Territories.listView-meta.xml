@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HPC_Territories</fullName>
+    <columns>NAME</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>Area__c</columns>
+    <columns>Primary_Business__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Territory_ID_18__c</columns>
+    <columns>Active_Territory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Territory_code__c</field>
+        <operation>startsWith</operation>
+        <value>HPC</value>
+    </filters>
+    <label>HPC Territories</label>
+    <language>en_US</language>
+</ListView>

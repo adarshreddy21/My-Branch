@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <description>Beacon Department Field</description>
+    <externalId>false</externalId>
+    <label>Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Department_Code__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Cert of Disposal</fullName>
+                <default>false</default>
+                <label>Cert of Disposal</label>
+            </value>
+            <value>
+                <fullName>Collections Contact</fullName>
+                <default>false</default>
+                <label>Collections Contact</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Corp Contact</fullName>
+                <default>false</default>
+                <label>Corp Contact</label>
+            </value>
+            <value>
+                <fullName>Cust Service</fullName>
+                <default>false</default>
+                <label>Cust Service</label>
+            </value>
+            <value>
+                <fullName>Emergency Response</fullName>
+                <default>false</default>
+                <label>Emergency Response</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Health/Safety</fullName>
+                <default>false</default>
+                <label>Health/Safety</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Invoicing Contact</fullName>
+                <default>false</default>
+                <label>Invoicing Contact</label>
+            </value>
+            <value>
+                <fullName>Main Contact</fullName>
+                <default>false</default>
+                <label>Main Contact</label>
+            </value>
+            <value>
+                <fullName>Manifest Copy</fullName>
+                <default>false</default>
+                <label>Manifest Copy</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Remediation</fullName>
+                <default>false</default>
+                <label>Remediation</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Scheduling</fullName>
+                <default>false</default>
+                <label>Scheduling</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
+            </value>
+            <value>
+                <fullName>Tracking</fullName>
+                <default>false</default>
+                <label>Tracking</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>HEAL</controllingFieldValue>
+            <valueName>Health/Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIS</controllingFieldValue>
+            <valueName>Industrial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MAIN</controllingFieldValue>
+            <valueName>Main Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MANI</controllingFieldValue>
+            <valueName>Manifest Copy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PURC</controllingFieldValue>
+            <valueName>Purchasing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REM</controllingFieldValue>
+            <valueName>Remediation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SALE</controllingFieldValue>
+            <valueName>Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SHIP</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TECH</controllingFieldValue>
+            <valueName>Technical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACCT</controllingFieldValue>
+            <valueName>Invoicing Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AP</controllingFieldValue>
+            <valueName>Collections Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CERT</controllingFieldValue>
+            <valueName>Cert of Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMP</controllingFieldValue>
+            <valueName>Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORP</controllingFieldValue>
+            <valueName>Corp Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CUST</controllingFieldValue>
+            <valueName>Cust Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENG</controllingFieldValue>
+            <valueName>Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENV</controllingFieldValue>
+            <valueName>Environmental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ER</controllingFieldValue>
+            <valueName>Emergency Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRAK</controllingFieldValue>
+            <valueName>Tracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EXP</controllingFieldValue>
+            <valueName>Expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCHD</controllingFieldValue>
+            <valueName>Scheduling</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

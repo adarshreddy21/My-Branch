@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Core_BU__c</fullName>
+    <description>Branch Core business unit used in cross-sell metrics</description>
+    <externalId>false</externalId>
+    <label>Branch Core BU</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daylighting</fullName>
+                <default>false</default>
+                <label>Daylighting</label>
+            </value>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>Kleen Performance Products</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Not eligible</fullName>
+                <default>false</default>
+                <label>Not eligible</label>
+            </value>
+            <value>
+                <fullName>O&amp;G - Production Services</fullName>
+                <default>false</default>
+                <label>O&amp;G - Production Services</label>
+            </value>
+            <value>
+                <fullName>O&amp;G - Seismic</fullName>
+                <default>false</default>
+                <label>O&amp;G - Seismic</label>
+            </value>
+            <value>
+                <fullName>O&amp;G - Surface Rentals</fullName>
+                <default>false</default>
+                <label>O&amp;G - Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen Branch Services</fullName>
+                <default>false</default>
+                <label>Safety-Kleen Branch Services</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>UMO</fullName>
+                <default>false</default>
+                <label>UMO</label>
+            </value>
+            <value>
+                <fullName>RS Used Oil</fullName>
+                <default>false</default>
+                <label>RS Used Oil</label>
+            </value>
+            <value>
+                <fullName>CYN</fullName>
+                <default>false</default>
+                <label>CYN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

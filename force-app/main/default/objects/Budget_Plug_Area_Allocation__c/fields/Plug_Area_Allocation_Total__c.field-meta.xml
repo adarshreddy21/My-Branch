@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plug_Area_Allocation_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>Plug_Area_01__c 
++ Plug_Area_02__c 
++ Plug_Area_03__c 
++ Plug_Area_04__c 
++ Plug_Area_05__c 
++ Plug_Area_06__c 
++ Plug_Area_07__c 
++ Plug_Area_08__c 
++ Plug_Area_09__c 
++ Plug_Area_10__c 
++ Plug_Area_11__c 
++ Plug_Area_12__c 
++ Plug_Area_13__c 
++ Plug_Area_14__c 
++ Plug_Area_15__c 
++ Plug_Area_16__c 
++ Plug_Area_17__c 
++ Plug_Area_18__c 
++ Plug_Area_19__c 
++ Plug_Area_20__c 
++ Plug_Area_21__c 
++ Plug_Area_22__c 
++ Plug_Area_23__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plug Area Allocation Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

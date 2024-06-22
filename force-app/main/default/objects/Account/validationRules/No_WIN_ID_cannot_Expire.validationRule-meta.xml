@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_WIN_ID_cannot_Expire</fullName>
+    <active>true</active>
+    <description>No_WIN_ID_can&apos;t_Expire.  Contact sales ops or MDM to delete</description>
+    <errorConditionFormula>and(
+isblank(WIN_ID__c), 
+Expired__c = True, 
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;)
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t expire an account if it doesn&apos;t have a WIN ID.  If you are trying to delete the account from Salesforce please contact ​@[Sales Ops] ​ or @[Master Data Management]  and ask them to delete the account.</errorMessage>
+</ValidationRule>

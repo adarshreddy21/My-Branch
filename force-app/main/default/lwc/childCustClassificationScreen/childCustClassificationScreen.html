@@ -1,0 +1,117 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox
+            name="accountSource"
+            label="Account Source"
+            value={accountSourceValue}
+            placeholder="--None--"
+            options={accountSourceOptions}
+            onchange={handleAccountSourceChange} required></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox
+                name="SICCodeDescription"
+                label="SIC Code Description"
+                value={sicCodeDescriptionValue}
+                placeholder="--None--"
+                options={sicCodeDescriptionOptions}
+                onchange={handleSICCodeDescriptionChange}
+                disabled={readSICCodeDescriptionOnlyBool} required>
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox
+            name="Vertical"
+            label="Vertical"
+            value={verticalValue}
+            placeholder="--None--"
+            options={verticalOptions}
+            onchange={handleVerticalChange} required></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox
+            name="TaxExemption"
+            label="Tax Exemption"
+            value={taxExemptionValue}
+            placeholder="--None--"
+            options={taxExemptionOptions}
+            onchange={handletaxExemptionChange} required></lightning-combobox>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2 paddingsmall" >
+            <lightning-combobox
+                name="Class"
+                label="Class"
+                value={classValue}
+                placeholder="--None--"
+                options={classOptions}
+                onchange={handleClassChange}
+                disabled={readClassOnlyBool} required></lightning-combobox>
+        </div>  
+
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <template if:true={showFileUpload}>
+               <!--
+                Logic for file upload
+               -->
+               <lightning-file-upload
+                    label="Attach Tax Document"
+                    name="taxDocUploader"
+                    accept={acceptedFormats}
+                    onuploadfinished={handleUploadFinished}
+                    disabled={disableUpload}>
+               </lightning-file-upload>
+               <a>{uploadedFileName}</a>
+            <template if:true={showDelete}>
+               <lightning-button-icon icon-name="utility:delete" alternative-text="Delete" class="slds-m-left_xx-small" onclick={handleDeleteTaxDocClick} title="Delete"></lightning-button-icon>
+            </template>
+            </template>
+
+            </div>
+        
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox
+            name="rank"
+            label="Rank"
+            value={rankValue}
+            placeholder="--None--"
+            options={rankOptions}
+            onchange={handleRankChange} required></lightning-combobox>
+        </div>
+      
+    <template lwc:if={showskoSalesSegment}>
+        <div class="slds-col slds-size_1-of-2 paddingsmall" >
+            <lightning-combobox
+                if:true={isSKOSalesFieldEnabled}
+                name="skoSalesSegment"
+                label="SKO Sales Segment"
+                value={skoSalesSegmentValue}
+                placeholder="--None--"
+                options={skoSalesSegmentOptions}
+                onchange={handleSKOSalesChange}
+                disabled={readSKOSalesSegmentOnlyBool}>
+            </lightning-combobox>
+        </div>
+    </template>
+
+    <template lwc:if={showBrokerGroupSegment}>
+        <div class="slds-col slds-size_1-of-2 paddingsmall" >
+            <lightning-combobox
+                if:true={isBrokerGroupEnabled}
+                name="brokerGroupSegment"
+                label="Broker Group"
+                value={brokerGroupValue}
+                placeholder="--None--"
+                options={brokerGroupOptions}
+                onchange={handleBrokerGroupChange}
+                disabled={readBrokerGroupOnlyBool}>
+            </lightning-combobox>
+        </div>
+    </template>
+    
+    </div>
+</template>

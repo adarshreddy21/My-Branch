@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_MOS_ST_CHARLES_MO_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: MOS-ST. CHARLES, MO</label>
+    <queue>Queue_MOS_ST_CHARLES_MO</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

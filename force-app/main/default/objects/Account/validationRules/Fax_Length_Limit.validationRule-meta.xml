@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fax_Length_Limit</fullName>
+    <active>true</active>
+    <description>Limit FaxLength to 14 characters</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),
+	NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+	NOT(ISCHANGED(Active_ER_Contract__c)),
+    NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+(LEN(Fax)&gt;14))</errorConditionFormula>
+    <errorDisplayField>Fax</errorDisplayField>
+    <errorMessage>Fax number too long.</errorMessage>
+</ValidationRule>

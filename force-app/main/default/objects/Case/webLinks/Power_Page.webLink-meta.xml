@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Power_Page</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Power Page</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&apos;/soap/ajax/39.0/connection.js&apos;)}
+{!requireScript(&quot;/soap/ajax/39.0/apex.js&quot;)};
+{!requireScript(&quot;/support/console/39.0/integration.js&quot;)};
+
+try{
+var width = screen.width;
+var height = screen.height;
+var openWindowPrimary = function(result) {
+if (result.success){
+var query = &apos;SELECT WIN_ID__c FROM Account WHERE Id=\&apos;&apos;+result.id+&apos;\&apos; LIMIT 1&apos;;
+var acc = sforce.connection.query(query);
+if (acc.records){
+if (acc.records.WIN_ID__c!=null){
+window.open(&apos;https://winwebtest.cleanharbors.com/PowerPage?GenCode=&apos; + acc.records.WIN_ID__c,&apos;powerPage&apos;,&apos;resizable=yes, width=&apos;+width+&apos;, height=&apos;+height);
+}
+else {
+alert(&apos;A Win ID is required to complete the requested Action.&apos;);
+}
+}
+else {
+alert(&apos;The requested Action is not applicable unless current tab contains an Account.&apos;);
+}
+}
+else {
+alert(&apos;A Primary tab must be open to complete the requested Action.&apos;);
+}
+}
+
+var openWindowSub = function(result) {
+if (result.success){
+var query = &apos;SELECT WIN_ID__c FROM Account WHERE Id=\&apos;&apos;+result.id+&apos;\&apos; LIMIT 1&apos;;
+var acc = sforce.connection.query(query);
+if (acc.records &amp;&amp; acc.records.WIN_ID__c!=null){
+window.open(&apos;https://winwebtest.cleanharbors.com/PowerPage?GenCode=&apos; + acc.records.WIN_ID__c,&apos;powerPage&apos;,&apos;resizable=yes, width=&apos;+width+&apos;, height=&apos;+height);
+}
+else {
+sforce.console.getFocusedPrimaryTabObjectId(openWindowPrimary);
+}
+}
+else {
+sforce.console.getFocusedPrimaryTabObjectId(openWindowPrimary);
+}
+}
+sforce.console.getFocusedSubtabObjectId(openWindowSub);
+}
+catch(err){
+alert(&apos;This action is available only from the Agent Console.&apos;);
+}</url>
+</WebLink>

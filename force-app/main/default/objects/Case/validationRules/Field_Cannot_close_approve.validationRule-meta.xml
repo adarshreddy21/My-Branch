@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Cannot_close_approve</fullName>
+    <active>true</active>
+    <description>Field cannot close approve</description>
+    <errorConditionFormula>and(
+NOT($RecordType.DeveloperName =&apos;Field_Change_Request&apos;),
+$Profile.Name &lt;&gt; &apos;Integration&apos;
+,$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;
+,$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+,$Profile.Name &lt;&gt; &apos;Sale Operations&apos;
+, text(Status) = &quot;Approved&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only Sales Operations can close - approve cases.  This will happen when the case goes through the Approval process.  Go back to the case and Submit for Approval.</errorMessage>
+</ValidationRule>

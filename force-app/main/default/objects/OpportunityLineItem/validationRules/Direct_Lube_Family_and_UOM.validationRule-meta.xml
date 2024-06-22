@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lube_Family_and_UOM</fullName>
+    <active>true</active>
+    <description>Must enter a Direct LubeFamily and UOM</description>
+    <errorConditionFormula>and(
+not(isblank(text( Direct_Lube_Product__c  )))
+,or(
+isblank(text( Direct_Lube_Family__c))
+,isblank(text( Direct_Lube_UOM__c))
+)
+)</errorConditionFormula>
+    <errorDisplayField>Direct_Lube_Family__c</errorDisplayField>
+    <errorMessage>Must enter a Direct Lube Family and UOM when entering a Direct Lube Oil Product</errorMessage>
+</ValidationRule>

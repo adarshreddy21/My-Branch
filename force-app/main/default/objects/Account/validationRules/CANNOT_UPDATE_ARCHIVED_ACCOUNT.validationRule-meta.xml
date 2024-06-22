@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CANNOT_UPDATE_ARCHIVED_ACCOUNT</fullName>
+    <active>true</active>
+    <description>Users with the Oil &amp; Gas profile(s) should not have the ability to update an account set to Archive in the Status field</description>
+    <errorConditionFormula>OR(
+ AND(
+ ISPICKVAL(PRIORVALUE(Status__c),&quot;Archive&quot;),
+ NOT($Profile.Name = &quot;Integration&quot;),
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+ NOT($Profile.Name = &quot;Master Data Management&quot;),
+ NOT($Profile.Name = &quot;Sales Operations&quot;),
+ NOT(ISCHANGED(Active_ER_Contract__c)),
+ not(ISCHANGED(Last_Visit_Date__c))
+ ),
+
+ AND(
+ (TEXT(Status__c)=&quot;Archive&quot;),
+ NOT($Profile.Name = &quot;Integration&quot;),
+ NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+ NOT($Profile.Name = &quot;System Administrator&quot;),
+ NOT($Profile.Name = &quot;Master Data Management&quot;),
+ NOT($Profile.Name = &quot;Sales Operations&quot;),	
+ NOT(ISCHANGED(Active_ER_Contract__c)),
+ ISCHANGED(Status__c)
+ ),
+  AND(
+ ISPICKVAL(PRIORVALUE(Status__c),&quot;Archive&quot;),
+ OR(
+  ($Profile.Name = &quot;Master Data Management&quot;),
+  ($Profile.Name = &quot;Sales Operations&quot;)
+  ),
+  NOT(ISCHANGED(Active_ER_Contract__c)),
+  (DATEVALUE(Expired_Date__c)&gt; DATEVALUE(&quot;2019-10-09&quot;))
+  )
+)</errorConditionFormula>
+    <errorMessage>Cannot update an account with Status as &quot;Archive&quot;</errorMessage>
+</ValidationRule>

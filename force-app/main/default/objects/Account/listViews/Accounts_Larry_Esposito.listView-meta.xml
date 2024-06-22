@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_Larry_Esposito</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Alias__c</field>
+        <operation>contains</operation>
+        <value>ESPOS</value>
+    </filters>
+    <label>Accounts - Larry Esposito</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>KPP_EVP</roleAndSubordinates>
+        <roleAndSubordinates>KPP_and_PPP_Oversight</roleAndSubordinates>
+    </sharedTo>
+</ListView>

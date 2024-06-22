@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Archived_Account_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  
+    NOT($Profile.Name = &apos;System Administrator&apos;),Account__r.Expired__c)</errorConditionFormula>
+    <errorMessage>Archived Accounts Cannot be Re-Assigned. Please Create a New Account.</errorMessage>
+</ValidationRule>

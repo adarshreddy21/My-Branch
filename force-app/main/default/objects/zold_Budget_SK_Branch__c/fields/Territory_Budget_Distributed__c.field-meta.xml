@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Budget_Distributed__c</fullName>
+    <externalId>false</externalId>
+    <label>Territory Budget Distributed</label>
+    <summarizedField>zold_Budget_SK_Territory__c.Percent_of_Budget__c</summarizedField>
+    <summaryForeignKey>zold_Budget_SK_Territory__c.Branch_and_LOB__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

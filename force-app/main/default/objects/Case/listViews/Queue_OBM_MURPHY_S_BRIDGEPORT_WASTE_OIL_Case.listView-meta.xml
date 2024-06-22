@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_OBM_MURPHY_S_BRIDGEPORT_WASTE_OIL_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: OBM-MURPHY&apos;S BRIDGEPORT WASTE OIL</label>
+    <queue>Queue_OBM_MURPHY_S_BRIDGEPORT_WASTE_OIL</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

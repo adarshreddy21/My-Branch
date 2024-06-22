@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Month(DATEVALUE(CreatedDate)) =1, DATE(YEAR(DATEVALUE(CreatedDate)) , 04 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =2, DATE(YEAR(DATEVALUE(CreatedDate)) , 04 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =3, if((DAY(DATEVALUE(CreatedDate))&gt;= 25),DATE(YEAR(DATEVALUE(CreatedDate)) , 07 , 01),DATE(YEAR(DATEVALUE(CreatedDate)) , 04 , 01)),
+IF(Month(DATEVALUE(CreatedDate)) =4, DATE(YEAR(DATEVALUE(CreatedDate)) , 07 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =5, DATE(YEAR(DATEVALUE(CreatedDate)) , 07 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =6, if((DAY(DATEVALUE(CreatedDate))&gt;= 24),DATE(YEAR(DATEVALUE(CreatedDate)) , 10 , 01),DATE(YEAR(DATEVALUE(CreatedDate)) , 07 , 01)),
+IF(Month(DATEVALUE(CreatedDate)) =7, DATE(YEAR(DATEVALUE(CreatedDate)) , 10 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =8, DATE(YEAR(DATEVALUE(CreatedDate)) , 10 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =9, if((DAY(DATEVALUE(CreatedDate))&gt;= 24),DATE(YEAR(DATEVALUE(CreatedDate))+1 , 01 , 01),DATE(YEAR(DATEVALUE(CreatedDate)) , 10 , 01)),
+IF(Month(DATEVALUE(CreatedDate)) =10, DATE(YEAR(DATEVALUE(CreatedDate))+1 , 01 , 01),
+IF(Month(DATEVALUE(CreatedDate)) =11, DATE(YEAR(DATEVALUE(CreatedDate))+1 , 01 , 01),
+IF(DAY(DATEVALUE(CreatedDate))&gt;= 25,DATE(YEAR(DATEVALUE(CreatedDate))+1 , 04 , 01),DATE(YEAR(DATEVALUE(CreatedDate))+1 , 01 , 01)))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Effective Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

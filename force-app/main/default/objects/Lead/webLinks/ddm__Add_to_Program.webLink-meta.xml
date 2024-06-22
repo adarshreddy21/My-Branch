@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ddm__Add_to_Program</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Add to Automation Program</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>root = typeof root == &quot;undefined&quot; ? &quot;{!$Setup.ddm__Marketing_Automation_Settings__c.ddm__ConnectorUrl__c}&quot; : root;
+var script = document.createElement(&quot;script&quot;);
+script.type = &quot;text/javascript&quot;;
+script.onload = loadScripts;
+script.src = &quot;{!$Setup.ddm__Marketing_Automation_Settings__c.ddm__ConnectorUrl__c}v2/Scripts/EmailMarketing_237.js&quot;;
+document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);
+
+function loadScripts() {
+    LoadSalesforceScripts(scriptsLoaded);
+}
+
+function scriptsLoaded() {
+    var connectionJsUrl = GetUrlRoot(document.location.href) + &apos;soap/ajax/26.0/connection.js&apos;;
+    loadScriptAndExecute(connectionJsUrl, executeAddToProgram);
+}
+
+function executeAddToProgram() {
+    var suppressions = sforce.connection.query(&quot;Select Id from ddm__dmsfc_EmailSupressedContact__c where Name = &apos;{!Lead.Email}&apos;&quot;);
+    var model = {
+        SessionId: &quot;{!HTMLENCODE($Api.Session_ID)}&quot;,
+        PartnerUrl: &quot;{!HTMLENCODE($Api.Partner_Server_URL_140)}&quot;,
+        SfOrganisationId: &quot;{!HTMLENCODE($Organization.Id)}&quot;,
+        FirstName: &quot;{!HTMLENCODE(Lead.FirstName)}&quot;,
+        LastName: &quot;{!HTMLENCODE(Lead.LastName)}&quot;,
+        ContactEmail: &quot;{!HTMLENCODE(Lead.Email)}&quot;,
+        Type: &quot;Lead&quot;,
+        EntityId: &quot;{!Lead.Id}&quot;,
+        HasOptedOutOfEmail: &quot;{!Lead.HasOptedOutOfEmail}&quot; === &quot;1&quot;,
+        IsSuppressed: suppressions.size &gt; 0
+    };
+
+    AddToProgram(model);
+}</url>
+</WebLink>

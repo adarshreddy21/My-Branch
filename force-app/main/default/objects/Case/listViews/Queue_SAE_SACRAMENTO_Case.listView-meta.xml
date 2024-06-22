@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_SAE_SACRAMENTO_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: SAE-SACRAMENTO</label>
+    <queue>Queue_SAE_SACRAMENTO</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

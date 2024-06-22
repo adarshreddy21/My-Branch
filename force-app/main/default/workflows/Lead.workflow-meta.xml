@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_New_Lead_Notification_from_Web_or_Call_agent</fullName>
+        <description>Email New Lead Notification from Web or Call agent</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Leads_Assignment_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Inactive_Lead_Owner</fullName>
+        <description>Inactive Lead Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Lead_Manager_ID__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Leads_Inactive_Lead_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_of_assigned_lead</fullName>
+        <description>Send Email of assigned lead</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>gaokar.reeta1@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Leads_Assignment_Change</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Send_to_CLH_Customer_Service_Queue</fullName>
+        <description>Send to CLH Customer Service Queue</description>
+        <field>OwnerId</field>
+        <lookupValue>CLH_Customer_Service_Leads</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to CLH Customer Service Queue</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_MDM_Queue</fullName>
+        <description>Send to MDM Queue</description>
+        <field>OwnerId</field>
+        <lookupValue>MDM_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to MDM Queue</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_SK_Unassigned_queue</fullName>
+        <description>Send lead to SK Unassigned queue</description>
+        <field>OwnerId</field>
+        <lookupValue>SK_Website_Unassigned_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to SK Unassigned queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_SK_Unassigned_queue1</fullName>
+        <description>Send to SK Unassigned queue</description>
+        <field>OwnerId</field>
+        <lookupValue>IS_SK_Web_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to SK Unassigned queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_SK_Unassigned_queue2</fullName>
+        <description>Send to SK Unassigned queue</description>
+        <field>OwnerId</field>
+        <lookupValue>SK_Website_Unassigned_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to SK Unassigned queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_SK_Website_Unassigned_queue</fullName>
+        <description>Send to SK Website Unassigned queue</description>
+        <field>OwnerId</field>
+        <lookupValue>SK_Website_Unassigned_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to SK Website Unassigned queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Clean_Harbors_Website_Service_Req</fullName>
+        <description>Update Clean Harbors Website Service requested when its blank.</description>
+        <field>CLH_Website_Service_Requested__c</field>
+        <formula>text(Service_Type__c)</formula>
+        <name>Update Clean Harbors Website Service Req</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Ischanged_Checkbox</fullName>
+        <field>Is_Changed__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Ischanged Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Title_to_NA</fullName>
+        <field>Title</field>
+        <formula>if(isblank(Title),&quot;unknown&quot;,Title)</formula>
+        <name>Update Title to NA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_MDM_queue</fullName>
+        <description>Update to MDM queue</description>
+        <field>OwnerId</field>
+        <lookupValue>MDM_Lead_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update to MDM queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CLH Website is Small Drum</fullName>
+        <actions>
+            <name>Send_to_CLH_Customer_Service_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CLH_Website_Service_Requested__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CLH_Website_Lead_is_Small_Drum__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Route to Customer Service if small drum</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CLH Website non-sales Lead</fullName>
+        <actions>
+            <name>Send_to_MDM_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CLH_Website_Service_Requested__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CLH_Website_Lead_is_not_Sales_Related__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastModifiedById</field>
+            <operation>notEqual</operation>
+            <value>Christine M Wood</value>
+        </criteriaItems>
+        <description>Route to Christine Wood if non-sales lead</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Status Changed</fullName>
+        <actions>
+            <name>Update_Ischanged_Checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>if Lead Status is Changed Check box true</description>
+        <formula>ISCHANGED(Status)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Title Unknown</fullName>
+        <actions>
+            <name>Update_Title_to_NA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Title</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Update Lead Title to Unknown if blank</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead assign to SK Unassigned Queue</fullName>
+        <actions>
+            <name>Send_to_SK_Unassigned_queue1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>005j000000DjQDLAA3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Primary_Business__c</field>
+            <operation>equals</operation>
+            <value>Safety-Kleen</value>
+        </criteriaItems>
+        <description>Assign Leads to SK Unassigned queue if left in Lead Admin</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead changes owner notification</fullName>
+        <actions>
+            <name>Send_Email_of_assigned_lead</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify new lead owner of lead</description>
+        <formula>and(isblank(Data_Loader_Identifier__c), OwnerId &lt;&gt; LastModifiedById, ischanged(OwnerId))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead has Inactive Owner</fullName>
+        <actions>
+            <name>Inactive_Lead_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify manager the lead has an inactive lead owner.</description>
+        <formula>and(
+ Lead_Manager_ID__c &lt;&gt; &apos;005j000000DLAa8AAH&apos;,
+Lead_Manager_ID__c &lt;&gt; &apos;005j000000CT0lyAAD&apos;
+, not(isblank(Lead_Manager_ID__c))
+, isblank(Lead_Queue_ID__c)
+, Owner:User.IsActive = False
+
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead send to MDM Lead queue</fullName>
+        <actions>
+            <name>Update_to_MDM_queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Inactive-Christine M Wood</value>
+        </criteriaItems>
+        <description>if Christine M Wood then send to lead queue</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Clean Harbors Website Service Req</fullName>
+        <actions>
+            <name>Update_Clean_Harbors_Website_Service_Req</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Clean Harbors Marketing Lead</value>
+        </criteriaItems>
+        <description>Update Clean Harbors Website Service Req for Clean Harbors Marketing Lead</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor Capture</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitor Capture</value>
+    </caseValues>
+    <layouts>
+        <layout>Competitor Capture Lube Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lube Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pricing Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor Capture Page Layout RFOO</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pricing Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor Capture Page Layout UMO</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pricing Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Competitor_Capture_Lube</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Competitor_Capture_RFO</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Competitor_Capture_UMO</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Attachment_Pricing_Validated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Brand_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Last_Proposal_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Negative_Values</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Negative_Values_For_Oil_Filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Negative_Values_For_Stop_Fee</name>
+    </validationRules>
+</CustomObjectTranslation>

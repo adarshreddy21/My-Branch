@@ -1,0 +1,46 @@
+<apex:page standardController="Account" extensions="AccountReceivableListController" showHeader="false">
+    <apex:form >
+        <apex:pageBlock id="accReceivbleList">
+        
+        <br/> 
+        <apex:pageBlockTable value="{!accRecList}" var="accRec" rendered="{!NOT(ISNULL(accRecList))}">                 
+            
+            <apex:column headerValue="Name"><apex:outputLink value="/{!accRec.id}" target="_blank">{!accRec.Name}</apex:outputLink> </apex:column>               
+            <apex:column value="{!accRec.Credit_Limit__c }"/> 
+            <apex:column >
+                <apex:facet name="header">A/R<br/>Current<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_Current__c}"></apex:outputField>
+            </apex:column> 
+            <apex:column >
+                <apex:facet name="header">A/R<br/>1-30<br/>Days</apex:facet>
+                <apex:outputField value="{!accRec.AR_1_30__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>31-60<br/>Days</apex:facet>
+                <apex:outputField value="{!accRec.AR_31_60__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>61-90<br/>Days<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_61_90__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>91-180<br/>Days<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_91_180__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>181-365<br/>Days<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_181_365__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>Over 365<br/>Days<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_Over_365__c}"></apex:outputField>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">A/R<br/>Total<br/>Due<br/></apex:facet>
+                <apex:outputField value="{!accRec.AR_Total__c}"></apex:outputField>
+            </apex:column>      
+        </apex:pageBlockTable>            
+        <apex:outputLabel value="No records to display" rendered="{!(ISNULL(accRecList))}" styleClass="noRowsHeader"></apex:outputLabel> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

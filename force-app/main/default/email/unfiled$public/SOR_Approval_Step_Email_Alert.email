@@ -1,0 +1,1 @@
+Bulk Owner Change {!ApprovalRequest.Internal_URL}  has been submitted by  {!Sales_Ops_Requests__c.CreatedBy} for your review. Please review the request and indicate your decision.

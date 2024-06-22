@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Strategic_Account_Plan_Approved</fullName>
+        <description>Strategic Account Plan Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Strategic_Account_Plan_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Strategic_Account_Plan_Denied</fullName>
+        <description>Strategic Account Plan Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Strategic_Account_Plan_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Strategic_Account_Plan_Submitted</fullName>
+        <description>Strategic Account Plan Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Strategic_Account_Plan_Submitted</template>
+    </alerts>
+</Workflow>

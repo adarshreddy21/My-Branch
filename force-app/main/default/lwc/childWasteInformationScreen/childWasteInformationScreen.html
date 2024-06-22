@@ -1,0 +1,42 @@
+<template>  
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="text" 
+                label="EPA ID" 
+                value={epaIdValue} 
+                onchange={handleEPAIDChange}
+                disabled={isDisabledEPAID}
+                maxlength="15" required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall" >            
+            <lightning-combobox
+            name="Generator Status"
+            label="Generator Status"
+            value={genStatusValue}
+            onchange={handleGenStatusChange}
+            options={genStatusOptions}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="text" 
+                label="State EPA ID" 
+                value={stateEpaIdValue}
+                onchange={handleStateEPAIDChange}
+                maxlength="255"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="text" 
+                label="GenReg Id" 
+                value={genRegIdValue}
+                onchange={handleGenRegIdChange}
+                disabled={isDisabledGenRegId}
+                maxlength="20"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 paddingsmall linksection">
+            <div>Use this Link to Identify Locations EPA ID</div> 
+            <div><lightning-formatted-url label="Link to RCRA Website" value="https://rcrapublic.epa.gov/rcrainfoweb/action/modules/hd/handlerindex"></lightning-formatted-url></div>
+        </div>
+     </div>
+     <div  if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+</template>

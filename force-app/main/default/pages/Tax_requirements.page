@@ -1,0 +1,45 @@
+<apex:page controller="Taxcontroller" action="{!getData}"  showHeader="false" sidebar="false">
+<apex:param name="Companycode" value="{!$CurrentPage.parameters.Companycode}" />
+<apex:pageBlock >
+ <apex:pageBlockSection id="TaxBlock" columns="1">
+                <apex:repeat value="{!wrapper.Details}" var="Detail">
+                    <apex:pageBlockSection >
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Cert #" for="CertificateNum" />
+                            <apex:outputText value="{!Detail.CertificateNum}" id="Cert" />
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Reason" for="Long_Code" />
+                            <apex:outputText value="{!Detail.Long_Code}" id="Reason" />
+                        </apex:pageBlockSectionItem>
+                         <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Status" for="Status" />
+                            <apex:outputText value="{!Detail.Status}" id="Status" />
+                        </apex:pageBlockSectionItem>
+                         <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Use" for="CertUse" />
+                            <apex:outputText value="{!Detail.CertUse}" id="Use" />
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Country/State" for="Region" />
+                            <apex:outputText value="{!Detail.Region}" id="Region" />
+                        </apex:pageBlockSectionItem>
+                         <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Valid From" for="FromDate" />
+                            <apex:outputText value="{!Detail.FromDate}" id="FromDate" />
+                        </apex:pageBlockSectionItem>
+                         <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Expiration Date" for="ToDate" />
+                            <apex:outputText value="{!Detail.ToDate}" id="ToDate" />
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Authority" for="authority" />
+                            <apex:outputText value="{!Detail.authority}" id="authority" />
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    </apex:repeat>
+            </apex:pageBlockSection>
+             <apex:pageMessages rendered="true" />
+        </apex:pageBlock> 
+       
+</apex:page>

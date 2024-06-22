@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows user to edit lead mapping for the CLH Website</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.CLH_Website_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.CLH_Website_Lead_Recipient_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.CLH_Website_Lead_Recipient_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.CLH_Website_Send_Lead_to_Territory_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.CLH_Website_Service_Request__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CLH_Website_Lead_Mapping__c.Primary_Business__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CLH Website Lead Mapping</label>
+    <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CLH_Website_Lead_Mapping__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>CLH_Website_Lead_Mapping__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

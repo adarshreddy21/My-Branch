@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_OU_South_FL_Field_Services_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : OU - South FL Field Services</label>
+    <queue>Queue_OU_South_FL_Field_Services</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

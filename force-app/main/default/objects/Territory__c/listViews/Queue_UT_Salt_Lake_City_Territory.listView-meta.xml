@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_UT_Salt_Lake_City_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : UT - Salt Lake City</label>
+    <queue>Queue_UT_Salt_Lake_City</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

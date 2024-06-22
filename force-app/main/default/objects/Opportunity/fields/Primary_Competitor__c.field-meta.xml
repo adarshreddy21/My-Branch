@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Competitor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Primary Competitor</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR (2 AND (3 OR 4) AND 5) AND (6 OR 7 OR 8 OR 9)</booleanFilter>  
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>UMO Competitor</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.StageName</field>
+            <operation>equals</operation>
+            <value>8 - Closed Lost</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Lost_Reason__c</field>
+            <operation>equals</operation>
+            <value>Competitor (Better price)</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Lost_Reason__c</field>
+            <operation>equals</operation>
+            <value>Competitor (Transportation)</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>CLH Competitor</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Clean Harbors Opportunity</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CP Harbor Quote</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Harbor Quote</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Healthcare Opportunity</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

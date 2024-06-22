@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to case owner when TSE Add case is rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TSE comment - Add case Rejected</name>
+    <style>none</style>
+    <subject>TSE - Add case for {!Case.Current_Account_Win_ID__c} has been rejected</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

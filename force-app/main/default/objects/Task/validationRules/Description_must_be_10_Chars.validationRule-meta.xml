@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_must_be_10_Chars</fullName>
+    <active>true</active>
+    <description>This validation is for HR Recruiting Partners</description>
+    <errorConditionFormula>AND (
+RecordType.Name = &apos;HR Recruiting Partners&apos;,
+LEN( Description )&lt;10
+)</errorConditionFormula>
+    <errorMessage>Description cannot be less than 10 characters.</errorMessage> 
+</ValidationRule>

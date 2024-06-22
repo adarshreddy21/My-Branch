@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Type_Waste_Water__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates Branch is a Waste Water Treatment facility</description>
+    <externalId>false</externalId>
+    <label>Branch Type Waste Water</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Pricing_Validated</fullName>
+    <active>true</active>
+    <description>Can not be validated by an account manager sales person type</description>
+    <errorConditionFormula>and(ischanged( Attachment_Pricing_Validated__c ),
+text(LastModifiedBy.Sales_Person_Type__c)&lt;&gt;&apos;Customer Service&apos;,
+ $User.User_ID_18__c &lt;&gt; &apos;005j000000EbsfFAAR&apos;,
+text(LastModifiedBy.Sales_Person_Type__c)&lt;&gt;&apos;Key Account Manager&apos;,
+text(LastModifiedBy.Sales_Person_Type__c)&lt;&gt;&apos;Sales Manager&apos;,
+text(LastModifiedBy.Sales_Person_Type__c)&lt;&gt;&apos;Technical Sales Manager&apos;,
+text(LastModifiedBy.Sales_Person_Type__c)&lt;&gt;&apos;Inside Sales&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Attachment_Pricing_Validated__c</errorDisplayField>
+    <errorMessage>Account managers cannot validate Attachment Pricing. Please contact Jason Rowe for details.</errorMessage>
+</ValidationRule>

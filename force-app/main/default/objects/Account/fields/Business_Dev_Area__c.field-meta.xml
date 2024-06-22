@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Dev_Area__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Area of Region for busines development purposes</description>
+    <externalId>false</externalId>
+    <label>Business Dev Area</label>
+    <referenceTo>Sales_Market_Areas__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

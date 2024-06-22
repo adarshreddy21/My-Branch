@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GENREG_IS_REQUIRED_FOR_CA</fullName>
+    <active>true</active>
+    <errorConditionFormula>
+AND( 
+OR(AND(NOT(ISNEW()), LeadID__c != null),LeadID__c=null),
+ISBLANK (GENREG__c),
+NOT(ISChanged(Toggle_Me_to_Bypass_Validation__c)), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+OR(
+ShippingCountry = &quot;CA&quot;), 
+AND(OR( 
+$RecordType.Name = &quot;Customer&quot;, 
+$RecordType.Name = &quot;Customer Location&quot;, 
+$RecordType.Name = &quot;Distributor&quot;, 
+$RecordType.Name = &quot;Distributor Location&quot;, 
+$RecordType.Name = &quot;Broker&quot;, 
+$RecordType.Name = &quot;Broker Location&quot;,
+RecordType.DeveloperName = &apos;Chain&apos;,
+RecordType.DeveloperName = &apos;Customer_Chain&apos;)))</errorConditionFormula>
+    <errorDisplayField>GENREG__c</errorDisplayField>
+    <errorMessage>GenReg ID is required for Canadian accounts</errorMessage>
+</ValidationRule>

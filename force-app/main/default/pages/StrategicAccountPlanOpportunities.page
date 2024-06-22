@@ -1,0 +1,194 @@
+<apex:page standardController="Strategic_Account_Plan__c" extensions="StrategicAccountPlanController">
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="Strategic Account Plan Opportunities"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+    <apex:form >
+        
+        <script>
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };
+        </script>
+        
+        <div class = "row">
+            <div class="column" style="float:left; position:absolute;">
+                <apex:inputText label="Account Name" title="Account Name" value="{!SearchbyField}" rendered="{!AccountName.RecordType.name == 'Corporate'}"/> 
+            </div>
+            <div class="column" style="float:left; margin-left: 200px">
+                <apex:commandButton value="Search Account Name" action="{!getSearchByFilter}" rendered="{!AccountName.RecordType.name == 'Corporate'}" reRender="pb">
+                    <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                </apex:commandButton>
+            </div>
+            <div class="column" style="float:right; position:relative">
+                <apex:panelGrid >
+                    <apex:commandLink value="{!alphaAll} | " action="{!getalphaSearch}" style="font-size:15px" rendered="{!AccountName.RecordType.name == 'Corporate'}" reRender="pb">
+                        <apex:param name="alpha" value="{!alphaAll}" assignTo="{!alphaSearch}"/>
+                        <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                    </apex:commandLink>
+                </apex:panelGrid>
+                
+            </div>
+        </div>
+        <apex:actionFunction name="aSelectItem" action="{!doSelectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction>
+        <!-- handle deselected item -->
+        <apex:actionFunction name="aDeselectItem" action="{!doDeselectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction> 
+        <apex:actionFunction name="isSelectAllItem" action="{!isSelectedAll}"  rerender="pb">
+            <apex:param name="isSelectedALL" value="" assignTo="{!selectedAllProperties}"/>
+        </apex:actionFunction>
+        <apex:pageblock id="pb">
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1" title="Related Opportunities">
+                
+                <!-- Commandbutton -->
+                <apex:outputPanel >
+                    <div style="position:relative;left:400px;">
+                        <apex:commandLink value="Add Opportunity" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                            <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                        </apex:commandLink>
+                        <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+                    </div>
+                </apex:outputPanel>
+                <!-- End of Commandbutton -->    
+                
+                <apex:pageblocktable value="{!AllObject}" var="oppvar" style="width:100%" cellPadding="1" border="10" id="table1">
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox value="{!selectedAllProperties}" onclick="selectAllCheckboxes(this)"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!oppvar.selected}" styleClass="cbStyleClass" onclick="doCheckboxChange(this,'{!oppvar.obj.Id}')"/>
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Opportunity Name{!IF(sortExpression=='name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="name" name="name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['Name']}" style="width:250px"/>
+                    </apex:column>   
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Owner{!IF(sortExpression=='Owner.Name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Owner.Name" name="Owner" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['owner']['name']}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Account{!IF(sortExpression=='Account.Name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Account.Name" name="Account" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['Account']['name']}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Amount{!IF(sortExpression=='Amount',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Amount" name="Amount" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['Amount']}" style="width:200px"/>
+                    </apex:column>                
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Close Date{!IF(sortExpression=='CloseDate',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="CloseDate" name="CloseDate" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['CloseDate']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Job Start Date{!IF(sortExpression=='Job_Start_Date__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Job_Start_Date__c" name="Job_Start_Date__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['Job_Start_Date__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Stage{!IF(sortExpression=='StageName',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="StageName" name="StageName" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['StageName']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="LOB">
+                        <apex:repeat value="{!oppvar.obj['OpportunityLineItems']}" var="oppLine" >
+                            <apex:outputField value="{!oppLine.Product2.Name}" style="width:100px"/><br/>
+                        </apex:repeat>
+                    </apex:column>
+                    <apex:column headerValue="Description">
+                        <apex:outputField value="{!oppvar.obj['Description']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Next Action{!IF(sortExpression=='Next_Action__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Next_Action__c" name="Next_Action__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!oppvar.obj['Next_Action__c']}" style="width:100px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <br/> 
+            <!--PAGINATION outputPanel-->
+            <apex:outputPanel styleClass="center">
+                <apex:commandButton status="st" reRender="pb" value="|< First" action="{!first}" disabled="{!!hasPrevious}" title="First Page"/>
+                <apex:commandButton status="st" reRender="pb" value="Previous" action="{!previous}" disabled="{!!hasPrevious}" title="Previous Page"/>
+                <apex:outputText > &nbsp;Page {!pageNumber} of {!totalPageNumber}&nbsp;</apex:outputText>&nbsp;
+                <apex:commandButton status="st" reRender="pb" value="Next" action="{!next}" disabled="{!!hasNext}" title="Next Page"/>
+                <apex:commandButton status="st" reRender="pb" value="Last>|" action="{!last}" disabled="{!!hasNext}" title="Last Page"/>
+                
+                <apex:outputPanel style="color:#008000;font-weight:bold">
+                    <apex:actionStatus id="st" startText="Fetching..." stopText=""/>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <!-- Commandbutton to proceed to next screen -->
+            <div style="position:relative;left:400px;">
+                <apex:commandLink value="Add Opportunity" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                    <apex:param value="Opportunity" assignTo="{!objectType}"/>
+                </apex:commandLink>
+                <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+            </div>
+            <!-- End of Commandbutton -->            
+        </apex:pageblock>
+    </apex:form>
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        
+        //function to handle checkbox selection
+        function doCheckboxChange(cb,itemId)
+    {
+        if(cb.checked==true){
+            aSelectItem(itemId);
+        }
+        else{
+            aDeselectItem(itemId);
+        }        
+    }
+    
+    function selectAllCheckboxes(obj){
+        $(".cbStyleClass").each(function(index, item){
+            item.checked = obj.checked;
+        });
+        isSelectAllItem(obj.checked);
+    }    
+    </script>
+</apex:page>

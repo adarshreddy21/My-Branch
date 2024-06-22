@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lodging_Lead_Type__c</fullName>
+    <description>Indicates type of Lodging Lead</description>
+    <externalId>false</externalId>
+    <label>Lodging Lead Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed Lodging</fullName>
+                <default>false</default>
+                <label>Fixed Lodging</label>
+            </value>
+            <value>
+                <fullName>Portable Camps</fullName>
+                <default>false</default>
+                <label>Portable Camps</label>
+            </value>
+            <value>
+                <fullName>Drill Camp</fullName>
+                <default>false</default>
+                <label>Drill Camp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

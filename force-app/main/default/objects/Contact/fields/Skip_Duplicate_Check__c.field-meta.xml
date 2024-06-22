@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skip_Duplicate_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DO NOT DELETE THIS FIELD. This field is used to skip the duplicate check on Master Contacts those will be created in the Integration Flow during Beacon Contact creation. The duplicate check from SFDC UI will always occur as the flag is set to FALSE. This will be set during the integration flow as TRUE to skip the dupe check. This field is checked in the Duplicate Rule to fire it from the UI.</description>
+    <externalId>false</externalId>
+    <label>Skip Duplicate Check</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

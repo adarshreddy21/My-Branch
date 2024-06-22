@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CREDIT_TERMS_UPDATE</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;System Administrator&quot;), 
+NOT ($Profile.Name = &quot;Master Data Management&quot;), 
+NOT(ISBLANK( WIN_ID__c )), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+ISCHANGED(Credit_Terms__c )
+)</errorConditionFormula>
+    <errorDisplayField>Credit_Terms__c</errorDisplayField>
+    <errorMessage>Credit Terms cannot be updated for accounts with WIN ID</errorMessage>
+</ValidationRule>

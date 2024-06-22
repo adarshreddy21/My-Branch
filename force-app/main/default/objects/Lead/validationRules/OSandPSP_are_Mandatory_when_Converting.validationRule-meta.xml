@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSandPSP_are_Mandatory_when_Converting</fullName>
+    <active>true</active>
+    <description>OS and PSP are mandatory when converting the Lead</description>
+    <errorConditionFormula>AND(IsConverted = True,
+OR(ISBLANK(Text(Operating_Segment__c)),
+ISBLANK(Text(Primary_Service_Provider__c))))</errorConditionFormula>
+    <errorMessage>Operating Segment and Primary Service Provider are mandatory when converting Lead.</errorMessage>
+</ValidationRule>

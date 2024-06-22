@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Duplicate Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Different Customer Budgets</fullName>
+                <default>false</default>
+                <label>Different Customer Budgets</label>
+            </value>
+            <value>
+                <fullName>Movement of Related Data</fullName>
+                <default>false</default>
+                <label>Movement of Related Data</label>
+            </value>
+            <value>
+                <fullName>Unique Invoice Delivery Methods</fullName>
+                <default>false</default>
+                <label>Unique Invoice Delivery Methods</label>
+            </value>
+            <value>
+                <fullName>Acquisitions Limitation</fullName>
+                <default>false</default>
+                <label>Acquisitions Limitation</label>
+            </value>
+            <value>
+                <fullName>Unique Customer Part Numbers</fullName>
+                <default>false</default>
+                <label>Unique Customer Part Numbers</label>
+            </value>
+            <value>
+                <fullName>Contractor Relationships</fullName>
+                <default>false</default>
+                <label>Contractor Relationships</label>
+            </value>
+            <value>
+                <fullName>Pricing Contract Limitations</fullName>
+                <default>false</default>
+                <label>Pricing Contract Limitations</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

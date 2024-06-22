@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Dual_Corp_Account_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &apos;Customer Location&apos;,Parent.Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Parent.Dual_Corp_Account_Owner__r.LastName, 
+IF(RecordType.Name = &apos;Broker Location&apos;,Parent.Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Parent.Dual_Corp_Account_Owner__r.LastName, 
+IF(RecordType.Name = &apos;Customer&apos;,Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Dual_Corp_Account_Owner__r.LastName,
+IF(RecordType.Name = &apos;Customer Chain&apos;,Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Dual_Corp_Account_Owner__r.LastName, 
+IF(RecordType.Name = &apos;Broker&apos;,Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Dual_Corp_Account_Owner__r.LastName, 
+IF(RecordType.Name = &apos;Chain&apos;,Parent.Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Parent.Dual_Corp_Account_Owner__r.LastName, 
+IF(RecordType.Name = &apos;Corporate&apos;,Dual_Corp_Account_Owner__r.FirstName + &quot; &quot; + Dual_Corp_Account_Owner__r.LastName, &apos;&apos;)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dual Corp Account Owner</label>
+    <required>false</required> 
+    <trackHistory>false</trackHistory> 
+    <type>Text</type>
+    <unique>false</unique> 
+</CustomField>

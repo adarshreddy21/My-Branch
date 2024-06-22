@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaiign_Business_1__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Segment</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SKO</fullName>
+                <default>false</default>
+                <label>SKO</label>
+            </value>
+            <value>
+                <fullName>BPS</fullName>
+                <default>false</default>
+                <label>BPS</label>
+            </value>
+            <value>
+                <fullName>SKE</fullName>
+                <default>false</default>
+                <label>SKE</label>
+            </value>
+            <value>
+                <fullName>CHES</fullName>
+                <default>false</default>
+                <label>CHES</label>
+            </value>
+            <value>
+                <fullName>IS</fullName>
+                <default>false</default>
+                <label>IS</label>
+            </value>
+            <value>
+                <fullName>Inside Sales</fullName>
+                <default>false</default>
+                <label>Inside Sales</label>
+            </value>
+            <value>
+                <fullName>Facilities/Brokers</fullName>
+                <default>false</default>
+                <label>Facilities/Brokers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

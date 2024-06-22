@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_KCI_Kansas_City_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : KCI - Kansas City</label>
+    <queue>Queue_KCI_Kansas_City</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

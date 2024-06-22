@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_Change</fullName>
+    <active>true</active>
+    <description>Owner Change request</description>
+    <label>Owner Change</label>
+    <picklistValues>
+        <picklist>New_Operating_Segment__c</picklist>
+        <values>
+            <fullName>CHES Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHES Oil and Gas</fullName>
+            <default>false</default>
+        </values>  
+        <values>
+            <fullName>Clean Harbors ENV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK ENV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK KPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Primary_Service_Provider__c</picklist>
+        <values>
+            <fullName>BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murphys Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK KPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermo Fluids</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Thompson</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Noble Oil</fullName>
+            <default>false</default>
+        </values>	
+        <values>
+            <fullName>HEPACO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Change__c</picklist>
+        <values>
+            <fullName>Customer Request %2F Customer Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field and Inside Sales Transition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business %2F Upcoming Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Business Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Alignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmanaged Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved-Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values> 
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

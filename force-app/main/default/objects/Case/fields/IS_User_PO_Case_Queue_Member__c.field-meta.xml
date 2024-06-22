@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_User_PO_Case_Queue_Member__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field is being used to check the user is a member of the Queue</description>
+    <externalId>false</externalId>
+    <label>IS User PO Case Queue Member</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

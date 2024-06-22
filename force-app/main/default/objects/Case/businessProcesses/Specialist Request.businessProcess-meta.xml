@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialist Request</fullName>
+    <description>New, updates and removals of Specialists from Accounts</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Awaiting Manager Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Cancelled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Completed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Rejected</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Manager Approved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

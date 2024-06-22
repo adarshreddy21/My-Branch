@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_can_not_be_SK_branch</fullName>
+    <active>true</active>
+    <description>When booking a Field Service Opportunity you cannot book it to an SK Branch.</description>
+    <errorConditionFormula>and( 
+OR(
+Opportunity.RecordType.Name = &apos;TPM_Opportunity&apos;,
+
+AND(
+Opportunity.RecordType.Name =&apos;Safety_Kleen_BPS_Opportunity&apos;,
+Opportunity.Cross_Sell__c = True
+)
+),
+
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+Branch__r.Branch_Code__c &lt;&gt; &apos;SPP&apos;, Branch__r.branch_descr_amt3__c = &apos;BRS_SV&apos;,  or(text(PricebookEntry.Product2.Primary_Business__c) = &apos;Field Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Industrial Services&apos;))</errorConditionFormula>
+    <errorDisplayField>Branch__c</errorDisplayField>
+    <errorMessage>When booking a Field Service (TPM) opportunity you have to identify the service branch.  This would not be a Safety-Kleen branch performing this work.</errorMessage>
+</ValidationRule>

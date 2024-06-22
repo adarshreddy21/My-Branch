@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments__c</fullName>
+    <description>Additional comments; If Brand is *Other than Required here; If Competitor is  *OTHER than Required here</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Additional comments; If Brand is *Other than Required here; If Competitor is  *OTHER than Required here</inlineHelpText>
+    <label>Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

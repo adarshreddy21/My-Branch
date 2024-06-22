@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Growth Budget</fullName>
+                <default>false</default>
+                <label>Growth Budget</label>
+            </value>
+            <value>
+                <fullName>KAM Budget</fullName>
+                <default>false</default>
+                <label>KAM Budget</label>
+            </value>
+            <value>
+                <fullName>Customer Budget</fullName>
+                <default>false</default>
+                <label>Customer Budget</label>
+            </value>
+            <value>
+                <fullName>Revenue</fullName>
+                <default>false</default>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <fullName>KAM Revenue</fullName>
+                <default>false</default>
+                <label>KAM Revenue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TS_FS_Rollout__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates BMs and Branch Admins in the roll out queue</description>
+    <externalId>false</externalId>
+    <label>TS FS Rollout</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

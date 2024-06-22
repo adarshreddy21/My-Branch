@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Expiration_Date</fullName>
+        <description>Add 30 days to created date</description>
+        <field>ExpirationDate</field>
+        <formula>CreatedDate + 30</formula>
+        <name>Update Expiration Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Expiration Date</fullName>
+        <actions>
+            <name>Update_Expiration_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CP Harbor Quote,FS Harbor Quote</value>
+        </criteriaItems>
+        <description>Update Expiration Date on Quote</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

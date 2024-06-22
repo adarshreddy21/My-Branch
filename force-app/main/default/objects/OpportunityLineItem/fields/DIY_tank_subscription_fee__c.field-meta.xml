@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DIY_tank_subscription_fee__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DIY tank subscription fee</description>
+    <externalId>false</externalId>
+    <label>DIY tank subscription fee</label>
+    <type>Checkbox</type>
+</CustomField>

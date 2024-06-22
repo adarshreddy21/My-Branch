@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2020_Total_Location_Amount__c</fullName>
+    <description>only to be used for reporting April 2019 thru March 2020</description>
+    <externalId>false</externalId>
+    <label>2020 Total Location Amount</label>
+    <summarizedField>Financials__c.Total_Location_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Financials__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Revenue</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Financials__c.Month__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/1/2019</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Financials__c.Month__c</field>
+        <operation>lessOrEqual</operation>
+        <value>3/31/2020</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Financials__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

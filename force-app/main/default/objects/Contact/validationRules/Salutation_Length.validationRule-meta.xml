@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salutation_Length</fullName>
+    <active>true</active>
+    <description>Salutation length should not be more than 4 char.</description>
+    <errorConditionFormula>LEN(TEXT(Salutation))&gt;4</errorConditionFormula>
+    <errorMessage>Salutation length should not exceed the 4 characters.</errorMessage>
+</ValidationRule>

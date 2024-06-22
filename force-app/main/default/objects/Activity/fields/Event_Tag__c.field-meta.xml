@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Tag__c</fullName>
+    <description>Used to tag certain events for reporting purposes</description>
+    <externalId>false</externalId>
+    <label>Event Tag</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>2018 Landfill Growth Campaign</fullName>
+                <default>false</default>
+                <label>2018 Landfill Growth Campaign</label>
+            </value>
+            <value>
+                <fullName>AR River Flood 2019</fullName>
+                <default>false</default>
+                <label>AR River Flood 2019</label>
+            </value>
+            <value>
+                <fullName>Blended Oil East Cross Sell</fullName>
+                <default>false</default>
+                <label>Blended Oil East Cross Sell</label>
+            </value>
+            <value>
+                <fullName>Central US Flood 2017</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Central US Flood 2017</label>
+            </value>
+            <value>
+                <fullName>E&amp;C Firms Blitz ON/MB 2018</fullName>
+                <default>false</default>
+                <label>E&amp;C Firms Blitz ON/MB 2018</label>
+            </value>
+            <value>
+                <fullName>E Canada Cross Sell</fullName>
+                <default>false</default>
+                <label>E Canada Cross Sell</label>
+            </value>
+            <value>
+                <fullName>E Canada Dewatering 2019</fullName>
+                <default>false</default>
+                <label>E Canada Dewatering 2019</label>
+            </value>
+            <value>
+                <fullName>E-Manifesting</fullName>
+                <default>false</default>
+                <label>E-Manifesting</label>
+            </value>
+            <value>
+                <fullName>H20 Integration Activity</fullName>
+                <default>false</default>
+                <label>H20 Integration Activity</label>
+            </value>
+            <value>
+                <fullName>Hurricane Dorian 2019</fullName>
+                <default>false</default>
+                <label>Hurricane Dorian 2019</label>
+            </value>
+            <value>
+                <fullName>Hurricane Florence 2018</fullName>
+                <default>false</default>
+                <label>Hurricane Florence 2018</label>
+            </value>
+            <value>
+                <fullName>Hurricane Harvey</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hurricane Harvey</label>
+            </value>
+            <value>
+                <fullName>Hurricane Ida 2021</fullName>
+                <default>false</default>
+                <label>Hurricane Ida 2021</label>
+            </value>
+            <value>
+                <fullName>Hurricane Irma 2017</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hurricane Irma 2017</label>
+            </value>
+            <value>
+                <fullName>Hurricane Maria 2017</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hurricane Maria 2017</label>
+            </value>
+            <value>
+                <fullName>Hurricane Matthew 2016</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hurricane Matthew 2016</label>
+            </value>
+            <value>
+                <fullName>Hurricane Michael 2018</fullName>
+                <default>false</default>
+                <label>Hurricane Michael 2018</label>
+            </value>
+            <value>
+                <fullName>Lambton Landfill Opps</fullName>
+                <default>false</default>
+                <label>Lambton Landfill Opps</label>
+            </value>
+            <value>
+                <fullName>Louisiana Flood 2016</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Louisiana Flood 2016</label>
+            </value>
+            <value>
+                <fullName>Lube Retention</fullName>
+                <default>false</default>
+                <label>Lube Retention</label>
+            </value>
+            <value>
+                <fullName>Mississauga Drum Opps</fullName>
+                <default>false</default>
+                <label>Mississauga Drum Opps</label>
+            </value>
+            <value>
+                <fullName>PFAS</fullName>
+                <default>false</default>
+                <label>PFAS</label>
+            </value>
+            <value>
+                <fullName>West Region 2019 New Business Targets</fullName>
+                <default>false</default>
+                <label>West Region 2019 New Business Targets</label>
+            </value>
+            <value>
+                <fullName>West Virginia Sales Blitz January 2017</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Virginia Sales Blitz January 2017</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

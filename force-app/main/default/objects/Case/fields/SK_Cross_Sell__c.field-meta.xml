@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Cross_Sell__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flagged from trigger when case is created through SK Cross Sell logic</description>
+    <externalId>false</externalId>
+    <label>SK Cross Sell</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lodging_Lead_Location__c</fullName>
+    <description>The Lodge or camp location</description>
+    <externalId>false</externalId>
+    <label>Lodging Lead Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Lodging_Lead_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Joslyn Creek</fullName>
+                <default>false</default>
+                <label>Joslyn Creek</label>
+            </value>
+            <value>
+                <fullName>Oilsands</fullName>
+                <default>false</default>
+                <label>Oilsands</label>
+            </value>
+            <value>
+                <fullName>Ruth Lake</fullName>
+                <default>false</default>
+                <label>Ruth Lake</label>
+            </value>
+            <value>
+                <fullName>Sierra Select</fullName>
+                <default>false</default>
+                <label>Sierra Select</label>
+            </value>
+            <value>
+                <fullName>Tamarack</fullName>
+                <default>false</default>
+                <label>Tamarack</label>
+            </value>
+            <value>
+                <fullName>Altares</fullName>
+                <default>false</default>
+                <label>Altares</label>
+            </value>
+            <value>
+                <fullName>Bonnyville</fullName>
+                <default>false</default>
+                <label>Bonnyville</label>
+            </value>
+            <value>
+                <fullName>Coleville</fullName>
+                <default>false</default>
+                <label>Coleville</label>
+            </value>
+            <value>
+                <fullName>Julienne</fullName>
+                <default>false</default>
+                <label>Julienne</label>
+            </value>
+            <value>
+                <fullName>Leismer</fullName>
+                <default>false</default>
+                <label>Leismer</label>
+            </value>
+            <value>
+                <fullName>*New Location</fullName>
+                <default>false</default>
+                <label>*New Location</label>
+            </value>
+            <value>
+                <fullName>Coleville Lodge</fullName>
+                <default>false</default>
+                <label>Coleville Lodge</label>
+            </value>
+            <value>
+                <fullName>Orla</fullName>
+                <default>false</default>
+                <label>Orla</label>
+            </value>
+            <value>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+                <label>Alberta</label>
+            </value>
+            <value>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+                <label>British Columbia</label>
+            </value>
+            <value>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+                <label>Saskatchewan</label>
+            </value>
+            <value>
+                <fullName>US</fullName>
+                <default>false</default>
+                <label>US</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Joslyn Creek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Oilsands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Ruth Lake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Sierra Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Tamarack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Coleville Lodge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed Lodging</controllingFieldValue>
+            <valueName>Orla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>Altares</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>Bonnyville</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>Coleville</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>Julienne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>Leismer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portable Camps</controllingFieldValue>
+            <valueName>*New Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drill Camp</controllingFieldValue>
+            <valueName>Alberta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drill Camp</controllingFieldValue>
+            <valueName>British Columbia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drill Camp</controllingFieldValue>
+            <valueName>Saskatchewan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drill Camp</controllingFieldValue>
+            <valueName>US</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

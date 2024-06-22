@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Activity</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Call_Center_Task</compactLayoutAssignment>
+    <description>Call center - Log a call activity</description>
+    <label>Call Center Activity</label>
+    <picklistValues>
+        <picklist>CS_Call_Reason__c</picklist>
+		<values>
+            <fullName>AR Issue</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Left Voicemail</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>No Contact</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Bad Number</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Assistance not needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAN Lube Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Data Change</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Document Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETA request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Account Issue %E2%80%93 Not Resolved %28additional case required assigned to Ecommerce Queue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Account Issue %E2%80%93 Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Log in Issue %E2%80%93 Not Resolved %28additional case required assigned to Ecommerce Queue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Log in Issue - Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Repair</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Internal Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice or Credit Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Processed</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Previous Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Error %28additional case required assigned to Ecommerce Queue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Return %28additional case required assigned to Ecommerce Queue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Rep%2FDriver complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schedule Change</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Service Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service%2FSchedule Escalation</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Solicitation%2FSales Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upcoming Service%2FScheduling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CS_Line_of_Business__c</picklist>
+        <values>
+            <fullName>Allied Product Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containerized Waste Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Bulk Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washing Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used Motor Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vac Services - Separators</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Origin__c</picklist>
+        <values>
+            <fullName>Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIY Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOC Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Toll Free</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Type__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR Dispute%2FCredit Hold-Not Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Line Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Service %28Existing Customer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add Service %28New Customer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Portal Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>DBA Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBA Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBA Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBA Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Call/Wrong Num/Dead Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Repair-COMs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Repair-EAC</fullName>
+            <default>false</default>
+        </values>
+		 <values>	
+            <fullName>HWP</fullName>	
+            <default>false</default>	
+        </values>
+        <values>
+            <fullName>Murphys Town Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Invoice%2FBalance Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Comment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pull%2FCancel Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovery Fee%2F e-Manifest Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovery Fee%2F e-Manifest Fee-Not Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales-Add Service %28Existing Customer%29 No OPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Request-OFR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service-ETA Inquiry</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Internal Support</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Order Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Verified__c</picklist>
+        <values>
+            <fullName>AP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MANI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition__c</picklist>
+        <values>
+            <fullName>Accounts Receivable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Escalation__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Classifcation__c</picklist>
+        <values>
+            <fullName>Base business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Selling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly Business Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Leadership Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Account Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Meeting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Tag__c</picklist>
+        <values>
+            <fullName>2018 Landfill Growth Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR River Flood 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil East Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Canada Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Canada Dewatering 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%26C Firms Blitz ON%2FMB 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H20 Integration Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hurricane Dorian 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hurricane Florence 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hurricane Michael 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lambton Landfill Opps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Retention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississauga Drum Opps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Region 2019 New Business Targets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Type__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Face to Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Discussion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual %28WebEx%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Key_Account_Implementation_Name__c</picklist>
+        <values>
+            <fullName>ADN %28The Network%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BlueLine Rental 020117</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cascades 080218</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coach USA 012918</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobility Works 100417</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niagara Bottling 110617</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunbelt Rentals Can 021418</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titan Machinery 032618</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parts_Washer_Troubleshooting__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Type_of_Service__c</picklist>
+		<values>
+            <fullName>AR Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allied Product</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Balance Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containerized Waste</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA ID</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Invoice Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Sales</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Manifest issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name%2FOwnership Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Filter Bin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Filter Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oily Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washer</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Payment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Term</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Shipping documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used Antifreeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWF%2FAF Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Return_Reason__c</picklist>
+        <values>
+            <fullName>Better price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bought by mistake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didn%E2%80%99t approve purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inaccurate website description</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item arrived too late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item defective or doesn%E2%80%99t work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing or broken parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product and shipping box both damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received more than ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong item sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_to_be_cancelled__c</picklist>
+        <values>
+            <fullName>Allied Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Task_Resolution__c</picklist>
+        <values>
+            <fullName>No change got appropriate manager approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulled tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Put on new contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raised price%2C raised volume and%2For extended term to get green contract status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raised price%2C raised volume and%2For extended term to get yellow contract status AND got DM approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ciscocjs__Contact_Type__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

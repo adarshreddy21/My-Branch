@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVID_Not_found__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag indicates a user looked for an Avention Company but could not find it.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you looked for an Avention Company and could not find it check this box.</inlineHelpText>
+    <label>Company Not found</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

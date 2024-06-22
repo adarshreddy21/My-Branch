@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Accounts_with_no_AVID</fullName>
+    <columns>Primary_Business__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Owner_Name__c</columns>
+    <columns>Street__c</columns>
+    <columns>City__c</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>Key_Account_Name__c</columns>
+    <columns>KAM_Support__c</columns>
+    <columns>iSell__OSKeyID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Corporate</value>
+    </filters>
+    <label>Key Accounts with no AVID</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

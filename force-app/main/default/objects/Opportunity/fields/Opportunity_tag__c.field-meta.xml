@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_tag__c</fullName>
+    <description>This field is for tracking designated disasters.  Not required for most opportunities.</description>
+    <externalId>false</externalId>
+    <label>Opportunity tag</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>2018 Landfill Growth Campaign</fullName>
+                <default>false</default>
+                <label>2018 Landfill Growth Campaign</label>
+            </value>
+            <value>
+                <fullName>2022 BPS LOST LUBE - CALIFORNIA</fullName> 
+                <default>false</default>
+                <label>2022 BPS LOST LUBE - CALIFORNIA</label>
+            </value>
+            <value>
+                <fullName>2022 LOST UMO - CALIFORNIA</fullName>
+                <default>false</default>
+                <label>2022 LOST UMO - CALIFORNIA</label>
+            </value>
+            <value>
+                <fullName>ACT ENVIRO e-Manifest prospect</fullName>
+                <default>false</default>
+                <label>ACT ENVIRO e-Manifest prospect</label>
+            </value>
+            <value>
+                <fullName>AQ Pro</fullName>
+                <default>false</default>
+                <label>AQ Pro</label>
+            </value>
+            <value>
+                <fullName>AQ Pro Plus</fullName>
+                <default>false</default>
+                <label>AQ Pro Plus</label>
+            </value>
+            <value>
+                <fullName>AR River Flood 2019</fullName>
+                <default>false</default>
+                <label>AR River Flood 2019</label>
+            </value>
+            <value>
+                <fullName>BCT Sale Blitz</fullName>
+                <default>false</default>
+                <label>BCT Sale Blitz</label>
+            </value>
+            <value>
+                <fullName>Blended Oil East Cross Sell</fullName>
+                <default>false</default>
+                <label>Blended Oil East Cross Sell</label>
+            </value>
+            <value>
+                <fullName>BuyBoard</fullName>
+                <default>false</default>
+                <label>BuyBoard</label>
+            </value>
+            <value>
+                <fullName>CAM High Value Target</fullName>
+                <default>false</default>
+                <label>CAM High Value Target</label>
+            </value>
+            <value>
+                <fullName>Canada HVT’s</fullName>
+                <default>false</default>
+                <label>Canada HVT’s</label>
+            </value>
+            <value>
+                <fullName>DEF (Diesel Exhaust Fluid)</fullName>
+                <default>false</default>
+                <label>DEF (Diesel Exhaust Fluid)</label>
+            </value>
+            <value>
+                <fullName>Drill Camps</fullName>
+                <default>false</default>
+                <label>Drill Camps</label>
+            </value>
+            <value>
+                <fullName>E&amp;C Firms Blitz ON/MB 2018</fullName>
+                <default>false</default>
+                <label>E&amp;C Firms Blitz ON/MB 2018</label>
+            </value>
+            <value>
+                <fullName>Earth Day 2023</fullName>
+                <default>false</default>
+                <label>Earth Day 2023</label>
+            </value>
+            <value>
+                <fullName>East HVT’s</fullName>
+                <default>false</default>
+                <label>East HVT’s</label>
+            </value>
+            <value>
+                <fullName>E Canada Cross Sell</fullName>
+                <default>false</default>
+                <label>E Canada Cross Sell</label>
+            </value>
+            <value>
+                <fullName>E Canada Dewatering</fullName>
+                <default>false</default>
+                <label>E Canada Dewatering 2019</label>
+            </value>
+            <value>
+                <fullName>Elgin Bridge</fullName>
+                <default>false</default>
+                <label>Elgin Bridge</label>
+            </value>
+            <value>
+                <fullName>eManifest Campaign</fullName>
+                <default>false</default>
+                <label>eManifest Campaign</label>
+            </value>
+            <value>
+                <fullName>Fixed Lodging</fullName>
+                <default>false</default>
+                <label>Fixed Lodging</label>
+            </value>
+            <value>
+                <fullName>FluidKleens</fullName>
+                <default>false</default>
+                <label>FluidKleens</label>
+            </value>
+            <value>
+                <fullName>FS Cross Sell 2023</fullName>
+                <default>false</default>
+                <label>FS Cross Sell 2023</label>
+            </value>
+            <value>
+                <fullName>FS Solid Waste Auditing</fullName>
+                <default>false</default>
+                <label>FS Solid Waste Auditing</label>
+            </value>
+            <value>
+                <fullName>GovWin</fullName>
+                <default>false</default>
+                <label>GovWin</label>
+            </value>
+            <value>
+                <fullName>Gulf Cross-Sell Blitz</fullName>
+                <default>false</default>
+                <label>Gulf Cross-Sell Blitz</label>
+            </value>
+            <value>
+                <fullName>Gulf HVT’s</fullName>
+                <default>false</default>
+                <label>Gulf HVT’s</label>
+            </value>
+            <value>
+                <fullName>H20 Integration Activity</fullName>
+                <default>false</default>
+                <label>H20 Integration Activity</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services Growth - BDR Team</fullName>
+                <default>false</default>
+                <label>Healthcare Services Growth - BDR Team</label>
+            </value>
+            <value>
+                <fullName>HP-25 PW</fullName>
+                <default>false</default>
+                <label>HP-25 PW</label>
+            </value>
+            <value>
+                <fullName>Hurricane Dorian 2019</fullName>
+                <default>false</default>
+                <label>Hurricane Dorian 2019</label>
+            </value>
+            <value>
+                <fullName>Hurricane Florence 2018</fullName>
+                <default>false</default>
+                <label>Hurricane Florence 2018</label>
+            </value>
+            <value>
+                <fullName>Hurricane Ian 2022</fullName>
+                <default>false</default>
+                <label>Hurricane Ian 2022</label>
+            </value>
+            <value>
+                <fullName>Hurricane Ida</fullName>
+                <default>false</default>
+                <label>Hurricane Ida 2021</label>
+            </value>
+            <value>
+                <fullName>Hurricane Michael 2018</fullName>
+                <default>false</default>
+                <label>Hurricane Michael 2018</label>
+            </value>
+            <value>
+                <fullName>Inside Sales PW Blitz Day 2023 Q2</fullName>
+                <default>false</default>
+                <label>Inside Sales PW Blitz Day 2023 Q2</label>
+            </value>
+            <value>
+                <fullName>InSite District Manager Customer Visit</fullName>
+                <default>false</default>
+                <label>InSite District Manager Customer Visit</label>
+            </value>
+            <value>
+                <fullName>IS Profile Support</fullName>
+                <default>false</default>
+                <label>IS Profile Support</label>
+            </value>
+            <value>
+                <fullName>Lambton Landfill Opps</fullName>
+                <default>false</default>
+                <label>Lambton Landfill Opps</label>
+            </value>
+            <value>
+                <fullName>Lodge Maint</fullName>
+                <default>false</default>
+                <label>Lodge Maint</label>
+            </value>
+            <value>
+                <fullName>Lone Mountain</fullName>
+                <default>false</default>
+                <label>Lone Mountain</label>
+            </value>
+            <value>
+                <fullName>Midwest HVT’s</fullName>
+                <default>false</default>
+                <label>Midwest HVT’s</label>
+            </value>
+            <value>
+                <fullName>Mississauga Drum Opps</fullName>
+                <default>false</default>
+                <label>Mississauga Drum Opps</label>
+            </value>
+            <value>
+                <fullName>Non - NPL Opportunity</fullName>
+                <default>false</default>
+                <label>Non - NPL Opportunity</label>
+            </value>
+            <value>
+                <fullName>NPL Opportunity</fullName>
+                <default>false</default>
+                <label>NPL Opportunity</label>
+            </value>
+            <value>
+                <fullName>Oroville Dam</fullName>
+                <default>false</default>
+                <label>Oroville Dam</label>
+            </value>
+            <value>
+                <fullName>PFAS Opportunity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PFAS Opportunity</label>
+            </value>
+            <value>
+                <fullName>PNW Competitor Target</fullName>
+                <default>false</default>
+                <label>PNW Competitor Target</label>
+            </value>
+            <value>
+                <fullName>Portable Camps</fullName>
+                <default>false</default>
+                <label>Portable Camps</label>
+            </value>
+            <value>
+                <fullName>PW Bounty</fullName>
+                <default>false</default>
+                <label>PW Bounty</label>
+            </value>
+            <value>
+                <fullName>Q4 IS Callback</fullName>
+                <default>false</default>
+                <label>Q4 IS Callback</label>
+            </value>
+            <value>
+                <fullName>SKE PW Equipment Sale</fullName>
+                <default>false</default>
+                <label>SKE PW Equipment Sale</label>
+            </value>
+            <value>
+                <fullName>SK Inbound Sales Opp</fullName>
+                <default>false</default>
+                <label>SK Inbound Sales Opp</label>
+            </value>
+            <value>
+                <fullName>SK Top 25 Back to Business 2020</fullName>
+                <default>false</default>
+                <label>SK Top 25 Back to Business 2020</label>
+            </value>
+            <value>
+                <fullName>Southwest E-Manifest 2020</fullName>
+                <default>false</default>
+                <label>Southwest E-Manifest 2020</label>
+            </value>
+            <value>
+                <fullName>Team Canada Cross Sell</fullName>
+                <default>false</default>
+                <label>Team Canada Cross Sell</label>
+            </value>
+            <value>
+                <fullName>Treated Wood Waste California</fullName>
+                <default>false</default>
+                <label>Treated Wood Waste California</label>
+            </value>
+            <value>
+                <fullName>Turnaround</fullName>
+                <default>false</default>
+                <label>Turnaround</label>
+            </value>
+            <value>
+                <fullName>Wastewater</fullName>
+                <default>false</default>
+                <label>Wastewater</label>
+            </value>
+            <value>
+                <fullName>West Coast Fuel Target</fullName>
+                <default>false</default>
+                <label>West Coast Fuel Target</label>
+            </value>
+            <value>
+                <fullName>West HVT’s</fullName>
+                <default>false</default>
+                <label>West HVT’s</label>
+            </value>
+            <value>
+                <fullName>West Region 2019 New Business Targets</fullName>
+                <default>false</default>
+                <label>West Region 2019 New Business Targets</label>
+            </value>
+            <value>
+                <fullName>West Region Cross-Sell</fullName>
+                <default>false</default>
+                <label>West Region Cross-Sell</label>
+            </value>
+            <value>
+                <fullName>West Region Cross Sell 2020</fullName>
+                <default>false</default>
+                <label>West Region Cross Sell 2020</label>
+            </value>
+            <value>
+                <fullName>West Region New Account Target</fullName>
+                <default>false</default>
+                <label>West Region New Account Target</label>
+            </value>
+            <value>
+                <fullName>West Vertical Focus Group</fullName>
+                <default>false</default>
+                <label>West Vertical Focus Group</label>
+            </value>
+			<value>
+                <fullName>CAM - Whitespace</fullName>
+                <default>false</default>
+                <label>CAM - Whitespace</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

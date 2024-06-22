@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verified_Main_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is the main contact verified</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box when you&apos;ve verified the Main Contact on the account .  It needs the name, phone and email address.</inlineHelpText>
+    <label>Verified Main Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

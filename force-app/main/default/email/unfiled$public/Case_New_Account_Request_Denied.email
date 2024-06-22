@@ -1,0 +1,12 @@
+Thank you for your request. It has been rejected for the following reason:
+
+Denial Reason: {!Case.Denial_Reason__c}
+Comments: {!Case.Comments__c}
+Rejected User : {!Case.LastModifiedBy}
+CMD Group : ValidationRequests@cleanharbors.com
+
+Click on the link to access the case directly: {!Case.Link} 
+
+If you have any question please mention @Customer Master Team from the Account Record.
+
+Thank you. 

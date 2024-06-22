@@ -1,0 +1,28 @@
+*** This is an automated message, please do not reply. Replies will not be received. ***
+
+Who To Contact for:
+Account validation or master data issues: cmdteam@cleanharbors.com
+EPA ID questions: ComplianceEPAIDIssue@cleanharbors.com
+Salesforce functionality: Search/post @Help in Cleanharbors.my.Salesforce.com
+
+Dear {!Account.LastModifiedBy}
+
+You are receiving this email because you tried to validate {!Account.Name} and got the following error:
+
+{!Account.WIN_Compliance_Errors__c}
+
+“If your error message indicates ‘READ TIMED OUT’, the server is busy.  Please wait 2-3 minutes and try again.”
+
+Please correct the error above and re-validate the account.
+
+Account URL: https://cleanharbors.my.salesforce.com/{!Account.Id}
+
+Corporate State: {!Account.ShippingState}
+Corporate Zip: {!Account.ShippingPostalCode}
+Corporate Country: {!Account.ShippingCountry}
+
+EPA ID: {!Account.CS_EPA_ID__c}
+Generator Status: {!Account.Generator_Status__c}
+
+Thanks,
+Salesforce Admin team

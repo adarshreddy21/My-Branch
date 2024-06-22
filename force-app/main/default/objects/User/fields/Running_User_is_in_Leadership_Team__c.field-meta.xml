@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Running_User_is_in_Leadership_Team__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR (
+Case_Approver__c =  $User.Id,
+ManagerId = $User.Id,
+Sales_Director__c = $User.Id,
+Sales_EVP__c = $User.Id,
+Sales_SVP__c = $User.Id,
+Sales_VP__c = $User.Id,
+Sales_Manager__c = $User.Id)</formula>
+    <label>Running User is in Leadership Team</label>
+    <type>Checkbox</type>
+</CustomField>

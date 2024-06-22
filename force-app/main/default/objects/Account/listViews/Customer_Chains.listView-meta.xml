@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Chains</fullName>
+    <columns>Account_Owner_Name__c</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Street__c</columns>
+    <columns>City__c</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>Key_Account_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer_Chain</value>
+    </filters>
+    <filters>
+        <field>Expired__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>ALL Customer Chains</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Change_PSP_Value_for_HPC</fullName>
+    <active>true</active>
+    <description>Users on &apos;Access_To_Update_PSP_From_HPC_To_Other&apos; Permission Set will be able to Update
+PSP from HPC to Other Value but not vice versa.</description>
+    <errorConditionFormula>OR(AND(
+NOT($Permission.Access_To_Update_PSP_From_HPC_To_Other ),
+NOT(ISBLANK( WIN_ID__c )),
+ISCHANGED(Primary_Business__c),
+ISPICKVAL(PRIORVALUE(Primary_Business__c), &quot;HPC Industrial&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISPICKVAL(Primary_Business__c, &quot;HPC Industrial&quot;))),
+AND(NOT(ISBLANK( WIN_ID__c )),
+ISCHANGED(Primary_Business__c),
+NOT(ISPICKVAL(PRIORVALUE(Primary_Business__c), &quot;HPC Industrial&quot;)),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+ISPICKVAL(Primary_Business__c, &quot;HPC Industrial&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Primary_Business__c</errorDisplayField>
+    <errorMessage>User does not have permission to change PSP value after Win id got created</errorMessage>
+</ValidationRule>

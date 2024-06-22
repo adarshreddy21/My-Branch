@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Operating_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Branch Operating Business</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Airborne Imaging</fullName>
+                <default>false</default>
+                <label>Airborne Imaging</label>
+            </value>
+            <value>
+                <fullName>Camps &amp; Catering</fullName>
+                <default>false</default>
+                <label>Camps &amp; Catering</label>
+            </value>
+            <value>
+                <fullName>Carbon Technology</fullName>
+                <default>false</default>
+                <label>Carbon Technology</label>
+            </value>
+            <value>
+                <fullName>Catalyst</fullName>
+                <default>false</default>
+                <label>Catalyst</label>
+            </value>
+            <value>
+                <fullName>Chemical Cleaning</fullName>
+                <default>false</default>
+                <label>Chemical Cleaning</label>
+            </value>
+            <value>
+                <fullName>Chemical Sales</fullName>
+                <default>false</default>
+                <label>Chemical Sales</label>
+            </value>
+            <value>
+                <fullName>CHI Oil Collection</fullName>
+                <default>false</default>
+                <label>CHI Oil Collection</label>
+            </value>
+            <value>
+                <fullName>Daylighting</fullName>
+                <default>false</default>
+                <label>Daylighting</label>
+            </value>
+            <value>
+                <fullName>Decoking</fullName>
+                <default>false</default>
+                <label>Decoking</label>
+            </value>
+            <value>
+                <fullName>Directional Boring</fullName>
+                <default>false</default>
+                <label>Directional Boring</label>
+            </value>
+            <value>
+                <fullName>Drilling</fullName>
+                <default>false</default>
+                <label>Drilling</label>
+            </value>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>High Pressure</fullName>
+                <default>false</default>
+                <label>High Pressure</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>JL Filtration</fullName>
+                <default>false</default>
+                <label>JL Filtration</label>
+            </value>
+            <value>
+                <fullName>Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>Kleen Performance Products</label>
+            </value>
+            <value>
+                <fullName>Locating</fullName>
+                <default>false</default>
+                <label>Locating</label>
+            </value>
+            <value>
+                <fullName>Lodge Operations</fullName>
+                <default>false</default>
+                <label>Lodge Operations</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Materials Processing</fullName>
+                <default>false</default>
+                <label>Materials Processing</label>
+            </value>
+            <value>
+                <fullName>Mulching</fullName>
+                <default>false</default>
+                <label>Mulching</label>
+            </value>
+            <value>
+                <fullName>NavTech</fullName>
+                <default>false</default>
+                <label>NavTech</label>
+            </value>
+            <value>
+                <fullName>North American Remediation</fullName>
+                <default>false</default>
+                <label>North American Remediation</label>
+            </value>
+            <value>
+                <fullName>Oil Sands Ops</fullName>
+                <default>false</default>
+                <label>Oil Sands Ops</label>
+            </value>
+            <value>
+                <fullName>Pipeline Coating</fullName>
+                <default>false</default>
+                <label>Pipeline Coating</label>
+            </value>
+            <value>
+                <fullName>Production Services</fullName>
+                <default>false</default>
+                <label>Production Services</label>
+            </value>
+            <value>
+                <fullName>Right of Way Services</fullName>
+                <default>false</default>
+                <label>Right of Way Services</label>
+            </value>
+            <value>
+                <fullName>RS Used Oil</fullName>
+                <default>false</default>
+                <label>RS Used Oil</label>
+            </value>
+            <value>
+                <fullName>Schrader</fullName>
+                <default>false</default>
+                <label>Schrader</label>
+            </value>
+            <value>
+                <fullName>SK Environmental Services</fullName>
+                <default>false</default>
+                <label>SK Environmental Services</label>
+            </value>
+            <value>
+                <fullName>Surface Rentals</fullName>
+                <default>false</default>
+                <label>Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>Survey</fullName>
+                <default>false</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Techsonics</fullName>
+                <default>false</default>
+                <label>Techsonics</label>
+            </value>
+            <value>
+                <fullName>Transformer Collections</fullName>
+                <default>false</default>
+                <label>Transformer Collections</label>
+            </value>
+            <value>
+                <fullName>Waste Projects</fullName>
+                <default>false</default>
+                <label>Waste Projects</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

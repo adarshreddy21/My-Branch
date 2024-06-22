@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXPIRED_ACCOUNT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+    (
+    TEXT(Status__c)=&quot;Archive&quot;,
+    NOT($Profile.Name = &quot;Integration&quot;),
+    NOT(ISCHANGED(Active_ER_Contract__c)),
+    NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+	  NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+    OR(
+     ($Profile.Name = &quot;System Administrator&quot;),
+     ($Profile.Name = &quot;Master Data Management&quot;),
+     ($Profile.Name = &quot;Sales Operations&quot;)
+     ),
+    OR( ISBLANK(Expired_Date__c), 
+       ISBLANK(TEXT(Lost_Reason__c))
+      )
+    )</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>If Archive status is selected, Lost reason and Expire date are required.</errorMessage>
+</ValidationRule>

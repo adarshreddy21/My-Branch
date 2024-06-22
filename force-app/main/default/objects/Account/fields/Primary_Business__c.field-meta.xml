@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Business__c</fullName>
+    <description>Primary business based off account owner</description>
+    <externalId>false</externalId>
+    <label>Primary Service Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Service_Provider_New__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daylighting Services</fullName>
+                <default>false</default>
+                <label>Daylighting Services</label>
+            </value>
+            <value>
+                <fullName>Emerald Services</fullName>
+                <default>false</default>
+                <label>Emerald Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services</fullName>
+                <default>false</default>
+                <label>Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Murphys Oil</fullName>
+                <default>false</default>
+                <label>Murphys Oil</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Thermo Fluids</fullName>
+                <default>false</default>
+                <label>Thermo Fluids</label>
+            </value>
+            <value>
+                <fullName>H2O</fullName>
+                <default>false</default>
+                <label>H2O</label>
+            </value>
+            <value>
+                <fullName>BPS</fullName>
+                <default>false</default>
+                <label>BPS</label>
+            </value>
+            <value>
+                <fullName>CYN</fullName>
+                <default>false</default>
+                <label>CYN</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>SK KPP</fullName>
+                <default>false</default>
+                <label>SK KPP</label>
+            </value>
+            <value>
+                <fullName>Surface Rentals</fullName>
+                <default>false</default>
+                <label>Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>Seismic</fullName>
+                <default>false</default>
+                <label>Seismic</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen</fullName>
+                <default>false</default>
+                <label>SK ENV</label>
+            </value>
+            <value>
+                <fullName>OER</fullName>
+                <default>false</default>
+                <label>OER</label>
+            </value>
+            <value>
+                <fullName>HPC Industrial</fullName>
+                <default>false</default>
+                <label>HPC Industrial</label>
+            </value>
+            <value>
+                <fullName>PSC</fullName>
+                <default>false</default>
+                <label>PSC</label>
+            </value>
+            <value>
+                <fullName>Synergy</fullName>
+                <default>false</default>
+                <label>Synergy</label>
+            </value>
+            <value>
+                <fullName>DFW</fullName>
+                <default>false</default>
+                <label>DFW</label>
+            </value>
+			<value>
+                <fullName>Thompson</fullName>
+                <default>false</default>
+                <label>Thompson</label>
+            </value>
+			<value>
+                <fullName>Noble Oil</fullName>
+                <default>false</default>
+                <label>Noble Oil</label>
+            </value>
+            <value>
+                <fullName>HEPACO</fullName>
+                <default>false</default>
+                <label>HEPACO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SK ENV</controllingFieldValue>
+            <valueName>Safety-Kleen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>Emerald Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>Murphys Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>Thermo Fluids</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>BPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>CYN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>OER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>Synergy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>DFW</valueName>
+        </valueSettings>
+		<valueSettings>
+            <controllingFieldValue>SK BPS</controllingFieldValue>
+            <valueName>Noble Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>SK KPP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>Field Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>Healthcare Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>Technical Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>H2O</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>PSC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Clean Harbors ENV</controllingFieldValue>
+            <valueName>HEPACO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Oil and Gas</controllingFieldValue>
+            <valueName>Lodging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Oil and Gas</controllingFieldValue>
+            <valueName>Oil &amp; Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Oil and Gas</controllingFieldValue>
+            <valueName>Surface Rentals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Industrial</controllingFieldValue>
+            <valueName>Daylighting Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Industrial</controllingFieldValue>
+            <valueName>Industrial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHES Industrial</controllingFieldValue>
+            <valueName>HPC Industrial</valueName>
+        </valueSettings>
+		<valueSettings>
+            <controllingFieldValue>CHES Industrial</controllingFieldValue>
+            <valueName>Thompson</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

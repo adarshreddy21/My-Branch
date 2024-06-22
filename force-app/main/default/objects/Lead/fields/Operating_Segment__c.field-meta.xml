@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Segment__c</fullName>
+    <description>This field used to select Operating_Segment</description>
+    <externalId>false</externalId>
+    <label>Operating Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Operating_Segment</valueSetName>
+    </valueSet>
+</CustomField>

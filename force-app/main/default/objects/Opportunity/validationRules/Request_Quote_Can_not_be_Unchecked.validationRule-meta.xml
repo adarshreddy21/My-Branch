@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Quote_Can_not_be_Unchecked</fullName>
+    <active>true</active>
+    <description>Request Quote cannot be unchecked once checked</description>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+PRIORVALUE(TPM_Quote_Request__c)= True,
+TPM_Quote_Request__c = False,
+
+OR(
+RecordType.DeveloperName = &apos;Safety_Kleen_BPS_Opportunity&apos;,
+RecordType.DeveloperName = &apos;TPM_Opportunity&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>Request Quote cannot be unchecked as Quote has been already requested for this opportunity. Please contact quote support or System Admin for Quote Withdrawal.</errorMessage>
+</ValidationRule>

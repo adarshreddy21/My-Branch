@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_P49_LINDEN_BULK_LUBE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: P49- LINDEN - BULK LUBE</label>
+    <queue>Queue_P49_LINDEN_BULK_LUBE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

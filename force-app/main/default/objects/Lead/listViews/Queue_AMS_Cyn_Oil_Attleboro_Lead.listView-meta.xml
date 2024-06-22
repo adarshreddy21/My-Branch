@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_AMS_Cyn_Oil_Attleboro_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: AMS - Cyn Oil Attleboro</label>
+    <queue>Queue_AMS_Cyn_Oil_Attleboro</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

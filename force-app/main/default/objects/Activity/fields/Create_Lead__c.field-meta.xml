@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+ISPICKVAL(Call_Type__c, &quot;Add Service (New Customer)&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Create Lead</label>
+    <type>Checkbox</type>
+</CustomField>

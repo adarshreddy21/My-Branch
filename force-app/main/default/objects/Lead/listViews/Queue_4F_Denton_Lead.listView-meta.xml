@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_4F_Denton_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 4F - Denton</label>
+    <queue>Queue_4F_Denton</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

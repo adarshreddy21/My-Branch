@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Mot-clé</label>
+    <name>Keyword__c</name>
+    <picklistValues>
+        <masterLabel>1st Letter</masterLabel>
+        <translation>1re lettre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2nd Letter</masterLabel>
+        <translation>2e lettre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Letter</masterLabel>
+        <translation>3e lettre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit</masterLabel>
+        <translation>Audit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation>Faillite</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bounced Check</masterLabel>
+        <translation>Chèque sans provision</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CESQG Participant</masterLabel>
+        <translation>Participant à CESQG</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHES cust to whom we owe $</masterLabel>
+        <translation>Client CHES à qui nous devons de l’argent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COD Payment</masterLabel>
+        <translation>COD Paiement à la livraison</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cash Volume Discount</masterLabel>
+        <translation>Ristourne sur volume</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collection</masterLabel>
+        <translation>Perception</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contra Account</masterLabel>
+        <translation>Compte de contrepartie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit/Rebill</masterLabel>
+        <translation>Créditer/refacturer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust. Needs Certs.</masterLabel>
+        <translation>Client besoin cert.</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Letter Sent</masterLabel>
+        <translation>Lettre de demande envoyée</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispute-PO</masterLabel>
+        <translation>Litige – Bon de commande</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Payment</masterLabel>
+        <translation>Paiement en double</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exceeds PO</masterLabel>
+        <translation>Dépasse le bon de commande</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Discount ShortPay</masterLabel>
+        <translation>Paiement partiel de l’escompte GE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Historical CHES</masterLabel>
+        <translation>Historique CHES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Historical CSD</masterLabel>
+        <translation>Historique CSD</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation>Assurance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Claim</masterLabel>
+        <translation>Réclamation d’assurance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercont Leasing Fee</masterLabel>
+        <translation>Frais de crédit-bail intercontinentaux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Required</masterLabel>
+        <translation>Facture requise</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Invoice</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Murphy&apos;s Oil</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No PO Obtained</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not to exceed PO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPA-90</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPU-FUND</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Accounts Receivable</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overpayment</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Correct Line</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Expired</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Line Add</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Underfunded</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid SK,Refund CHES</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid When Paid</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid to Rhodia</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment Plan</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Dispute</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Bankruptcy</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved COD</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Cert</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Collection</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Credit/Rebill</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Cust/Vendor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Legal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved NTE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved OPA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved OPU fund</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved PO Expired</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved PO Line Correction</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved PO add line</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved PO exceeds</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Payplan</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Price Dispute</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Retainage</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Service Dispute</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Shortpay</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved Underfund</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved no PO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved wrong PO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retainage</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Pd To CHES In Error</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK yellow</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Dispute</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Paid item</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris 3rd Party Cert of Destruction</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Bankruptcy</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Cert Required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Chargeback/Deduction</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Credit and Rebill</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Cust Vend</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Dispute Combined Invoice</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Dispute Lawyer Letter</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Dispute PO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Dispute Pricing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Dispute Service</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Item Requiring Recon</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Legal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teris Shortpay</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unresolved</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working Capital Adj</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worksheet Unsigned/Unapproved</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong PO Obtained</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

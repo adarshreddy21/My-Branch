@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_Cannot_be_Updated</fullName>
+    <active>true</active>
+    <description>If record has a WIN ID then branch cannot be updated.</description>
+    <errorConditionFormula>AND(
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Sales Operations&quot;),
+NOT($Profile.Name = &quot;Master Data Management&quot;),
+NOT ($Profile.Name = &quot;System Administrator&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Permission.Skip_Validations_for_Super_Users_cp),
+NOT(ISBLANK( WIN_ID__c )), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+ISPICKVAL(Cycle__c, &quot;Committed&quot;), 
+OR( 
+ISCHANGED(Primary_Branch_Alternate__c)))</errorConditionFormula>
+    <errorDisplayField>Primary_Branch_Alternate__c</errorDisplayField>
+    <errorMessage>If record has a WIN ID then branch cannot be updated. Submit a SN Ticket to Salesforce Issues for assistance.</errorMessage>
+</ValidationRule>

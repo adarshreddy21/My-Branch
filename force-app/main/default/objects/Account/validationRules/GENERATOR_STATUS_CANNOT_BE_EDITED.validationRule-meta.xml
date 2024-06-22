@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GENERATOR_STATUS_CANNOT_BE_EDITED</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+NOT ($Profile.Name = &quot;Integration&quot;), 
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT( $Permission.Skip_Validations_for_Super_users_cp ),
+NOT(ISBLANK( WIN_ID__c )), 
+ISPICKVAL(Cycle__c, &quot;Committed&quot;), 
+NOT(TEXT(AccountSource)=&quot;Ecommerce&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+OR( 
+ISCHANGED(Generator_Status__c)))</errorConditionFormula>
+    <errorDisplayField>Generator_Status__c</errorDisplayField>
+    <errorMessage>Generator Status can only be edited in WIN-Generator Profile. Go to Account Details-&gt;Generator Profile. For status downgrades submit a Service Now ticket using  category/subcategory: WIN-Aurora(FocalPoint), CWT-Compliance or WIN-Compliance, EPA ID Number.</errorMessage>
+</ValidationRule>

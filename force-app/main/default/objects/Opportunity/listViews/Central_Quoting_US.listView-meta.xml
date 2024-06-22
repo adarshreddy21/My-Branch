@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Quoting_US</fullName>
+    <booleanFilter>1 AND 2 AND ((3 OR 6) OR 7) AND 4 AND 5 AND  8</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Cross_Sell_Quote_Request_Status__c</columns>
+    <columns>OPPORTUNITY.CURRENCY_ISO_CODE</columns>
+    <columns>TPM_Quote_Request_To_Person__c</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>TPM_Quote_Request_To_Business__c</columns>
+    <columns>TPM_Quote_Requested_Date__c</columns>
+    <columns>TPM_Quote_Requested_By__c</columns>
+	<columns>CHES_Region__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPM_Quote_Request__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TPM_Quote_Completed_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>TPM_Quote_Request_To_Business__c</field>
+        <operation>equals</operation>
+        <value>Technical Services</value>
+    </filters>
+    <filters>
+        <field>Cross_Sell_Quote_Request_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Stalled By Client,Quote Withdrawn</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>7 - Closed Won,8 - Closed Lost</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Business_Segment__c</field>
+        <operation>equals</operation>
+        <value>Technical Service</value>
+    </filters>
+    <filters>
+        <field>Deal_LOB__c</field>
+        <operation>equals</operation>
+        <value>Cleanpack,Drum,High Hazardous Services,Bulk,Household Hazardous Waste,Direct Ship,Transportation</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CURRENCY_ISO_CODE</field>
+        <operation>notEqual</operation>
+        <value>CAD</value>
+    </filters>
+    <label>Central Quoting(US)</label>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Owner_SK11_SALES_SK</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT($Profile.Name = &apos;System Administrator&apos;),
+    Account__r.Account_Owner_Name__c = &quot;SK11 SALES SK&quot;)</errorConditionFormula>
+    <errorMessage>Stewardship Accounts cannot be re-assigned</errorMessage>
+</ValidationRule>

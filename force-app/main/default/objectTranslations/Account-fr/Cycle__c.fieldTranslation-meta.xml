@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Cycle</label>
+    <name>Cycle__c</name>
+    <picklistValues>
+        <masterLabel>Archive</masterLabel>
+        <translation>Archive</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Committed</masterLabel>
+        <translation>Engagé</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect</masterLabel>
+        <translation>Client éventuel</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuickAction_RT_Formula__c</fullName>
+    <description>This field is used in show or Hide the quick action.</description>
+    <externalId>false</externalId>
+    <formula>OR(CONTAINS($RecordType.Name, &quot;Broker&quot;) ,CONTAINS($RecordType.Name, &quot;Customer&quot;) ,$RecordType.Name = &apos;Chain&apos;,CONTAINS($RecordType.Name, &quot;Distributor&quot;),$RecordType.Name = &apos;RFOO&apos;,$RecordType.Name = &apos;UMO Competitor&apos;, $RecordType.Name = &apos;Key Account&apos;, $RecordType.Name = &apos;Customer Chain&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>QuickAction RT Formula</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_change_Parent_in_child</fullName>
+    <active>true</active>
+    <description>Disallowing to Change Parent name in child records if parent id is Key and  other than Sales opps and Sys admin and Integration user</description>
+    <errorConditionFormula>AND(($Profile.Name &lt;&gt; &quot;System Administrator&quot;),
+ISCHANGED(ParentId),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT($Permission.Skip_Validations_for_Super_Users_cp),
+PRIORVALUE(Parent_Account_Type__c ) = &quot;Key Account&quot;)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>You may not update Parent relationship on this customer when parent is Key Account without approval. Please see Sales Operations to make this update.</errorMessage>
+</ValidationRule> 

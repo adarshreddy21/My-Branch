@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Primary_type_of_service2</fullName>
+    <active>true</active>
+    <description>Require Primary type of service for type of call equipment repair</description>
+    <errorConditionFormula>and( 
+$Profile.Name &lt;&gt; &apos;Integration&apos;, 
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+text( Type_of_Call__c ) = &apos;Equipment Repair&apos;, 
+isblank(text( Primary_Type_of_Service__c )) 
+)</errorConditionFormula>
+    <errorDisplayField>Primary_Type_of_Service__c</errorDisplayField>
+    <errorMessage>Please select a Primary Type of Service</errorMessage>
+</ValidationRule>

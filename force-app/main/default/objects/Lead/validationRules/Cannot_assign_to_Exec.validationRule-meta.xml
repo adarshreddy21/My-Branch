@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_assign_to_Exec</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(ISCHANGED(OwnerId)
+,   Owner:User.User_ID_18__c == &apos;005j0000000iu8mAAA&apos;)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>You cannot assign the lead to this person. Please check zip or branch coverage for ownership.</errorMessage>
+</ValidationRule>

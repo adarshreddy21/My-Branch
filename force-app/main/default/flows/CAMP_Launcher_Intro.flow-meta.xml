@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>CAMP: Launcher Intro {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CAMP: Launcher Intro</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Static_Launcher_Info</name>
+        <label>Static Launcher Info</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>LauncherIntroScreen</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;{!$User.FirstName}, lets go CAMPing together!&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Have more than one corp/key account, but want to see data one account at a time? Interested in the comings and goings of our Enterprise Accounts?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;No problem! C.A.M.P. is your revamped Corp/Key Account Management Platform. It starts at your home page, but continues throughout all of your accounts.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This screen will show you all of the Corp/Key accounts that you represent in the first list (&quot;My Corporate Accounts&quot;), followed by all of Clean Harbor&apos;s Enterprise Corporate Accounts (&quot;All Enterprise Corporate Accounts.&quot;). Click one of the account hyperlinks for a more consolidated, account centric view of our relationship at that account.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Static_Launcher_Info</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

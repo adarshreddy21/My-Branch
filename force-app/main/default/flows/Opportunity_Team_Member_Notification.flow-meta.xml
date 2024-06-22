@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;{![OpportunityTeamMember].CreatedBy.Person_Name__c} added you as a team member({![OpportunityTeamMember].TeamMemberRole}).\n\nOpportunity {![OpportunityTeamMember].Opportunity.Name} \nOpportunity: https://cleanharbors.my.salesforce.com/{![OpportunityTeamMember].Opportunity.Opportunity_ID_18__c}\nAccount:      {![OpportunityTeamMember].Opportunity.Account.Name}\nStage:           {![OpportunityTeamMember].Opportunity.StageName}\nClose Date:  {![OpportunityTeamMember].Opportunity.CloseDate}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Post Chatter Notification</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>{!myVariable_current.CreatedBy.Person_Name__c} added you as a team member({!myVariable_current.TeamMemberRole}).
+
+Opportunity {!myVariable_current.Opportunity.Name} 
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Opportunity.Opportunity_ID_18__c}
+Account:      {!myVariable_current.Opportunity.Account.Name}
+Stage:           {!myVariable_current.Opportunity.StageName}
+Close Date:  {!myVariable_current.Opportunity.CloseDate}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.User.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Not an Account or Corp Account Owner</label>
+        </rules>
+    </decisions>
+    <description>Opportunity Team Member Notification</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+text([OpportunityTeamMember].TeamMemberRole) &lt;&gt; &quot;Account Owner&quot;, text([OpportunityTeamMember].TeamMemberRole) &lt;&gt; &quot;Key Account Manager&quot;
+) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+text({!myVariable_current.TeamMemberRole}) &lt;&gt; &quot;Account Owner&quot;, text({!myVariable_current.TeamMemberRole}) &lt;&gt; &quot;Key Account Manager&quot;
+)</expression>
+    </formulas>
+    <interviewLabel>Opportunity_Team_Member_Notification-12_InterviewLabel</interviewLabel>
+    <label>Opportunity Team Member Notification</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>OpportunityTeamMember</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onCreateOnly</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>OpportunityTeamMember</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>OpportunityTeamMember</objectType>
+    </variables>
+</Flow>

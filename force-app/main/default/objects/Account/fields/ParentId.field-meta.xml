@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParentId</fullName>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Please do not use an expired account.</errorMessage>
+        <filterItems>
+            <field>$Source.Expired__c</field>
+            <operation>notEqual</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Corporate - Retired</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Hierarchy</type>
+</CustomField>

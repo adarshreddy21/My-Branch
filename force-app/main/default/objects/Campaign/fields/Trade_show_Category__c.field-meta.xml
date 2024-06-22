@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_show_Category__c</fullName>
+    <description>Used for Budget reporting purposes by marketing team</description>
+    <externalId>false</externalId>
+    <label>Trade Show Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>Daylighting and Hydro Excavation</fullName>
+                <default>false</default>
+                <label>Daylighting and Hydro Excavation</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Emergency Response</fullName>
+                <default>false</default>
+                <label>Emergency Response</label>
+            </value>
+            <value>
+                <fullName>Engineering &amp; Consulting</fullName>
+                <default>false</default>
+                <label>Engineering &amp; Consulting</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>HHW</fullName>
+                <default>false</default>
+                <label>HHW</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>Kleen Performance Products</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Mining &amp; Metals</fullName>
+                <default>false</default>
+                <label>Mining &amp; Metals</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical/BIO</fullName>
+                <default>false</default>
+                <label>Pharmaceutical/BIO</label>
+            </value>
+            <value>
+                <fullName>Pipelines &amp; Terminals</fullName>
+                <default>false</default>
+                <label>Pipelines &amp; Terminals</label>
+            </value>
+            <value>
+                <fullName>Refinery</fullName>
+                <default>false</default>
+                <label>Refinery</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen</fullName>
+                <default>false</default>
+                <label>Safety-Kleen</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

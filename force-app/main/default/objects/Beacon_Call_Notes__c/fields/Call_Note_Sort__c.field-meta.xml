@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Note_Sort__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.DeveloperName =&quot;Call_Note&quot;,&quot;B_&quot;,&quot;A_&quot;)&amp;RecordType.DeveloperName &amp;&quot;_&quot;&amp;TEXT( MONTH( datevalue(LastModifiedDate) )  ) &amp; &quot;/&quot; &amp; TEXT( DAY( datevalue(LastModifiedDate) ) )  &amp; &quot;/&quot; &amp; TEXT( YEAR( datevalue(LastModifiedDate) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Note Sort</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SERA_start_date__c</fullName>
+    <description>Start date of the SERA (emergency response) agreement starts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field represents the start of an active agreement that covers Emergency Response Services.</inlineHelpText>
+    <label>ER coverage start date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>RecordType</field>
+        <field>Comments__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Case_Owner_Sales_Ops_Case_Review_Que</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Case_Owner_Sales_Ops_review_queue</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Sales Rep Request</description>
+        <label>Sales Rep Approval</label>
+        <name>Sales_Rep_Approval</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Case_Status_Awaiting_Director_approval</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Sales_Ops_Case_Review_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Sales Manager Approval</label>
+        <name>Sales_Manager_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Case_Status_Manager_approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Sales_Director_ID__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Sales Ops Queue for review</description>
+        <label>Sales Ops Queue for review</label>
+        <name>Sales_Ops_Queue_for_review</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Current_Owner_Case_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>and(Current_Owner_Case_Approver__c &lt;&gt;  Proposed_Owner_Case_Approver__c
+,RecordType.DeveloperName &lt;&gt; &apos;Specialist_Add_to_Account&apos;
+,RecordType.DeveloperName &lt;&gt; &apos;Specialist_Change&apos;
+,RecordType.DeveloperName &lt;&gt; &apos;Acct_Mgmt_Multiple_Account_Changes2&apos;
+,RecordType.DeveloperName &lt;&gt; &apos;Acct_Mgmt_Postal_code_re_assignment2&apos;
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Sales Director approved</label>
+        <name>Sales_Director_approved</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Current_Owner_Case_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>0=1</formula>
+        </entryCriteria>
+        <label>Sales Director approved PB</label>
+        <name>Sales_Director_approved_PB</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Submitted by AM and requires approval by Sales Manager and Director</description>
+    <emailTemplate>unfiled$public/Case_Request_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>and(NOT(RecordType.DeveloperName =&apos;TSE_Add_Case&apos;),
+ or(
+  text(Owner:User.Sales_Person_Type__c) = &apos;Account Manager&apos;
+  ,text(Owner:User.Sales_Person_Type__c) = &apos;Senior Account Manager&apos;
+  ,text(Owner:User.Sales_Person_Type__c) = &apos;Sales Representative&apos;
+ )
+, 
+or(
+text(Owner:User.Primary_Business__c) = &apos;Safety-Kleen&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Emerald Services&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Peformance Plus Products&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Thermo Fluids&apos;
+,text(Owner:User.Primary_Business__c) = &apos;CYN Environmental&apos;
+,text(Owner:User.Primary_Business__c) = &apos;CYN Oil&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Murphys Oil&apos;
+,text(Owner:User.Primary_Business__c) = &apos;BPS&apos;
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Case_Owner_Sales_Ops_Case_Review_Que</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Case_Status_Manager_approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Case_Not_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Case_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Case_Status_Awaiting_Manager_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Flag_Is_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Request_Approval</name>
+            <type>Alert</type>
+        </action>
+    </initialSubmissionActions>
+    <label>SK Account Manager Request final</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Case_Approver__c</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>14</processOrder>
+    <recallActions>
+        <action>
+            <name>Update_Status_to_New</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

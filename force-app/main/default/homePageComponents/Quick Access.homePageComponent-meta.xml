@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Sales_Budget_App</links>
+    <links>AR_Aging_Sales_Dashboard</links>
+    <links>AccountRecordSearch</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Attached__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Cross Sell Inventory Attached</description>
+    <externalId>false</externalId>
+    <label>Inventory Attached</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

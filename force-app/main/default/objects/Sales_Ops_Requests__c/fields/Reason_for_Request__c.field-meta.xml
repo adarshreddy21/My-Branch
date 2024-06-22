@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Campaign_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Termination</fullName>
+                <default>false</default>
+                <label>Termination</label>
+            </value>
+            <value>
+                <fullName>Back-Fill</fullName>
+                <default>false</default>
+                <label>Back-Fill</label>
+            </value>
+            <value>
+                <fullName>Promotion/Replacement</fullName>
+                <default>false</default>
+                <label>Promotion/Replacement</label>
+            </value>
+            <value>
+                <fullName>Open Territory</fullName>
+                <default>false</default>
+                <label>Open Territory</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Account Clean-Up</fullName>
+                <default>false</default>
+                <label>Account Clean-Up</label>
+            </value>
+            <value>
+                <fullName>Book Rebalance</fullName>
+                <default>false</default>
+                <label>Book Rebalance</label>
+            </value>
+            <value>
+                <fullName>Territory Alignment</fullName>
+                <default>false</default>
+                <label>Territory Alignment</label>
+            </value>
+            <value>
+                <fullName>Brand Re-Assignment</fullName>
+                <default>false</default>
+                <label>Brand Re-Assignment</label>
+            </value>
+            <value>
+                <fullName>AM/SR Cross-Over</fullName>
+                <default>false</default>
+                <label>AM/SR Cross-Over</label>
+            </value>
+            <value>
+                <fullName>Territory Consolidation</fullName>
+                <default>false</default>
+                <label>Territory Consolidation</label>
+            </value>
+            <value>
+                <fullName>Territory Addition</fullName>
+                <default>false</default>
+                <label>Territory Addition</label>
+            </value>
+            <value>
+                <fullName>Territory Shuffle</fullName>
+                <default>false</default>
+                <label>Territory Shuffle</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Flip All Accounts (New Hire / Termination)</controllingFieldValue>
+            <valueName>Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flip All Accounts (New Hire / Termination)</controllingFieldValue>
+            <valueName>Back-Fill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flip All Accounts (New Hire / Termination)</controllingFieldValue>
+            <valueName>Promotion/Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flip All Accounts (New Hire / Termination)</controllingFieldValue>
+            <valueName>Open Territory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multiple Account Change</controllingFieldValue>
+            <controllingFieldValue>Postal Code Re-Assignment</controllingFieldValue>
+            <valueName>Customer Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multiple Account Change</controllingFieldValue>
+            <valueName>Account Clean-Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multiple Account Change</controllingFieldValue>
+            <valueName>Book Rebalance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Postal Code Re-Assignment</controllingFieldValue>
+            <valueName>Territory Alignment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Postal Code Re-Assignment</controllingFieldValue>
+            <valueName>Brand Re-Assignment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Postal Code Re-Assignment</controllingFieldValue>
+            <valueName>AM/SR Cross-Over</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Territory Re-Alignment</controllingFieldValue>
+            <valueName>Territory Consolidation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Territory Re-Alignment</controllingFieldValue>
+            <valueName>Territory Addition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Territory Re-Alignment</controllingFieldValue>
+            <valueName>Territory Shuffle</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <description>More detail on the LOB that can be sold</description>
+    <externalId>false</externalId>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Allied Products - Antifreeze</fullName>
+                <default>false</default>
+                <label>Allied Products - Antifreeze</label>
+            </value>
+            <value>
+                <fullName>Allied Products Except AF &amp; WWF</fullName>
+                <default>false</default>
+                <label>Allied Products - Except AF &amp; WWF</label>
+            </value>
+            <value>
+                <fullName>Allied Products - Windshield Washer Fluid</fullName>
+                <default>false</default>
+                <label>Allied Products - Windshield Washer Fluid</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste Services</fullName>
+                <default>false</default>
+                <label>Containerized Waste Services</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Services</fullName>
+                <default>false</default>
+                <label>Emergency Response Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Oily Water and Antifreeze Services</fullName>
+                <default>false</default>
+                <label>Oily Water and Antifreeze Services</label>
+            </value>
+            <value>
+                <fullName>Parts Washer Services Solvent</fullName>
+                <default>false</default>
+                <label>Parts Washer Services Solvent</label>
+            </value>
+            <value>
+                <fullName>Parts Washing Service Aqueous</fullName>
+                <default>false</default>
+                <label>Parts Washing Service Aqueous</label>
+            </value>
+            <value>
+                <fullName>Performance Plus Blended Lubricants</fullName>
+                <default>false</default>
+                <label>Performance Plus Blended Lubricants</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Used Motor Oil</fullName>
+                <default>false</default>
+                <label>Used Motor Oil</label>
+            </value>
+            <value>
+                <fullName>Vac Services</fullName>
+                <default>false</default>
+                <label>Vac Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

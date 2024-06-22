@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_UFN_UMO_SK_SPOKE_FRESNO_CA_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: UFN-UMO SK SPOKE FRESNO, CA</label>
+    <queue>Queue_UFN_UMO_SK_SPOKE_FRESNO_CA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

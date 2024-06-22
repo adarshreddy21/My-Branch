@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Vertical__c</fullName>
+    <externalId>false</externalId>
+    <label>New Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Base Oil, Blender, Packager, or Marketer</fullName>
+                <default>false</default>
+                <label>Base Oil, Blender, Packager, or Marketer</label>
+            </value>
+            <value>
+                <fullName>Brokers</fullName>
+                <default>false</default>
+                <label>Brokers</label>
+            </value>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>Chemical - Distributor</fullName>
+                <default>false</default>
+                <label>Chemical - Distributor</label>
+            </value>
+            <value>
+                <fullName>Construction - Building Related Trades</fullName>
+                <default>false</default>
+                <label>Construction - Building Related Trades</label>
+            </value>
+            <value>
+                <fullName>Corp RE</fullName>
+                <default>false</default>
+                <label>Corp RE</label>
+            </value>
+            <value>
+                <fullName>Drill Rig Owner</fullName>
+                <default>false</default>
+                <label>Drill Rig Owner</label>
+            </value>
+            <value>
+                <fullName>Education Services</fullName>
+                <default>false</default>
+                <label>Education Services</label>
+            </value>
+            <value>
+                <fullName>Electronics Manufacturing</fullName>
+                <default>false</default>
+                <label>Electronics Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Management Company</fullName>
+                <default>false</default>
+                <label>Emergency Response Management Company</label>
+            </value>
+            <value>
+                <fullName>Engineering, Consulting - Drilling</fullName>
+                <default>false</default>
+                <label>Engineering, Consulting - Drilling</label>
+            </value>
+            <value>
+                <fullName>Engineering, Consulting - Oilsands</fullName>
+                <default>false</default>
+                <label>Engineering, Consulting - Oilsands</label>
+            </value>
+            <value>
+                <fullName>Eng &amp; Consult - Seismic &amp; Production</fullName>
+                <default>false</default>
+                <label>Eng &amp; Consult - Seismic &amp; Production</label>
+            </value>
+            <value>
+                <fullName>Engineering and Consulting - Utilities</fullName>
+                <default>false</default>
+                <label>Engineering and Consulting - Utilities</label>
+            </value>
+            <value>
+                <fullName>Engineering &amp; Consulting - Environmental</fullName>
+                <default>false</default>
+                <label>Engineering &amp; Consulting - Environmental</label>
+            </value>
+            <value>
+                <fullName>Engineering &amp; Consulting - Heavy Construction</fullName>
+                <default>false</default>
+                <label>Engineering &amp; Consulting - Heavy Construction</label>
+            </value>
+            <value>
+                <fullName>Exploration - Drilling</fullName>
+                <default>false</default>
+                <label>Exploration - Drilling</label>
+            </value>
+            <value>
+                <fullName>Exploration - Seismic</fullName>
+                <default>false</default>
+                <label>Exploration - Seismic</label>
+            </value>
+            <value>
+                <fullName>Fabricated Metal Products</fullName>
+                <default>false</default>
+                <label>Fabricated Metal Products</label>
+            </value>
+            <value>
+                <fullName>Furniture Manufacturing</fullName>
+                <default>false</default>
+                <label>Furniture Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Government - Federal</fullName>
+                <default>false</default>
+                <label>Government - Federal</label>
+            </value>
+            <value>
+                <fullName>Government - State/Provincial</fullName>
+                <default>false</default>
+                <label>Government - State/Provincial</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services</fullName>
+                <default>false</default>
+                <label>Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Lease Operator</fullName>
+                <default>false</default>
+                <label>Lease Operator</label>
+            </value>
+            <value>
+                <fullName>Machinery Manufacturing</fullName>
+                <default>false</default>
+                <label>Machinery Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Mining &amp; Primary Metals</fullName>
+                <default>false</default>
+                <label>Mining &amp; Primary Metals</label>
+            </value>
+            <value>
+                <fullName>Natural Gas Processing &amp; Pipelines</fullName>
+                <default>false</default>
+                <label>Natural Gas Processing &amp; Pipelines</label>
+            </value>
+            <value>
+                <fullName>Oil Dealers - Heating Oil</fullName>
+                <default>false</default>
+                <label>Oil Dealers - Heating Oil</label>
+            </value>
+            <value>
+                <fullName>Oilsands Mines/SAGD Facilities</fullName>
+                <default>false</default>
+                <label>Oilsands Mines/SAGD Facilities</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Paper/Lumber&amp;Wood</fullName>
+                <default>false</default>
+                <label>Paper/Lumber&amp;Wood</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical &amp; Biotechnology</fullName>
+                <default>false</default>
+                <label>Pharmaceutical &amp; Biotechnology</label>
+            </value>
+            <value>
+                <fullName>Refineries</fullName>
+                <default>false</default>
+                <label>Refineries</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Terminals &amp; Pipelines</fullName>
+                <default>false</default>
+                <label>Terminals &amp; Pipelines</label>
+            </value>
+            <value>
+                <fullName>Transportation Equipment Manufacturing</fullName>
+                <default>false</default>
+                <label>Transportation Equipment Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Transportation Services</fullName>
+                <default>false</default>
+                <label>Transportation Services</label>
+            </value>
+            <value>
+                <fullName>Utility - Electrical distribution</fullName>
+                <default>false</default>
+                <label>Utility - Electrical distribution</label>
+            </value>
+            <value>
+                <fullName>Utility - Natural Gas, Propane distribution</fullName>
+                <default>false</default>
+                <label>Utility - Natural Gas, Propane distribution</label>
+            </value>
+            <value>
+                <fullName>Utility - Power Generators</fullName>
+                <default>false</default>
+                <label>Utility - Power Generators</label>
+            </value>
+            <value>
+                <fullName>Utility - Sanitary Services</fullName>
+                <default>false</default>
+                <label>Utility - Sanitary Services</label>
+            </value>
+            <value>
+                <fullName>Utility - Telecommunications/Cable</fullName>
+                <default>false</default>
+                <label>Utility - Telecommunications/Cable</label>
+            </value>
+            <value>
+                <fullName>Government - Town, Municipality and County</fullName>
+                <default>false</default>
+                <label>Government - Town, Municipality and County</label>
+            </value>
+            <value>
+                <fullName>Marine Services</fullName>
+                <default>false</default>
+                <label>Marine Services</label>
+            </value>
+            <value>
+                <fullName>Non-Metal Mfg. &amp; Fabr. (plastic,rubber,glass,etc.)</fullName>
+                <default>false</default>
+                <label>Non-Metal Mfg. &amp; Fabr. (plastic,rubber,glass,etc.)</label>
+            </value>
+            <value>
+                <fullName>Oil, Gas Production</fullName>
+                <default>false</default>
+                <label>Oil, Gas Production</label>
+            </value>
+            <value>
+                <fullName>Ship Building</fullName>
+                <default>false</default>
+                <label>Ship Building</label>
+            </value>
+            <value>
+                <fullName>Steel Mill</fullName>
+                <default>false</default>
+                <label>Steel Mill</label>
+            </value>
+            <value>
+                <fullName>Government - Town, Municipality &amp; County</fullName>
+                <default>false</default>
+                <label>Government - Town, Municipality &amp; County</label>
+            </value>
+            <value>
+                <fullName>Mfg - Non-Metal</fullName>
+                <default>false</default>
+                <label>Mfg - Non-Metal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

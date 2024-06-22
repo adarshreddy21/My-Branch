@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Strategic Account Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Strategic Account Plans</value>
+    </caseValues>
+    <layouts>
+        <layout>Corporate Account Strategic Plan Layout</layout>
+        <sections>
+            <label></label>
+            <section>Competitive SWOT Analysis</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Contracts</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Environmental Matters</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Historical Revenue Trend</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Internal Support</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualitative Objectives</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quantitative Objectives</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue Trend &amp; YTD Revenue Against Budget</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Strategic Vision</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Top 15 Win Locations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>White Space &amp; Competitor Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Account Strategic Plan Layout</layout>
+        <sections>
+            <label></label>
+            <section>Competitive SWOT Analysis</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Contracts</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Environmental Matters</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Historical Revenue Trend</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Internal Support</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualitative Objectives</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quantitative Objectives</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue Trend &amp; YTD Revenue Against Budget</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Strategic Vision</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Top 15 Win Locations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>White Space &amp; Competitor Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Corporate_Strategic_Account_Plan</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer_Strategic_Account_Plan</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>All_Activities</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Edit_Strategic_Account_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Open_Pipeline</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YTD_Closed_Lost_Opportunities</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YTD_Closed_Won_Opportunities</name>
+    </webLinks>
+</CustomObjectTranslation>

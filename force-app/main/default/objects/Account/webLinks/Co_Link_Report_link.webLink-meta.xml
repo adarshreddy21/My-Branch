@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Co_Link_Report_link</fullName>
+    <availability>online</availability>
+    <description>Link to co-link report</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Report: Co-Links</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cleanharbors.my.salesforce.com/00Oj0000004M0pP?pv0={!Account.Id}&amp;pv1={!Account.Id}</url>
+</WebLink>

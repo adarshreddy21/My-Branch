@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Hold_From_Central_Quoting</fullName>
+    <active>true</active>
+    <description>This field is only editable when the Opportunity Business Segment equals &quot;Technical Service&quot;</description>
+    <errorConditionFormula>AND(OR(AND(ISNEW(),Hold_from_Central_Quoting__c = TRUE),ISCHANGED(Hold_from_Central_Quoting__c)),NOT(ISPICKVAL(Opportunity_Business_Segment__c, &apos;Technical Service&apos;)))</errorConditionFormula>
+    <errorDisplayField>Hold_from_Central_Quoting__c</errorDisplayField>
+    <errorMessage>Only Technical Services LOBs are supported by the CQ team</errorMessage>
+</ValidationRule>

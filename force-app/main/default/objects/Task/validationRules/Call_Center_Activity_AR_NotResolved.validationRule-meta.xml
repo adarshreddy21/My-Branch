@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Activity_AR_NotResolved</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+or(
+ISPICKVAL(Call_Type__c, &apos;AR Dispute/Credit Hold-Not Resolved&apos;),
+ISPICKVAL(Call_Type__c, &apos;AR&apos;)),
+ISBLANK(Invoice_Number__c))</errorConditionFormula>
+    <errorDisplayField>Invoice_Number__c</errorDisplayField>
+    <errorMessage>Please enter the Invoice Number.</errorMessage>
+</ValidationRule>

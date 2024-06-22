@@ -1,0 +1,26 @@
+<template>
+    <div class="question-container">
+        <div class="question">Does {accountData.recordTypeName} require transport of regulated waste?</div>
+        <div>
+            <lightning-radio-group
+                type="horizontal"
+                name="requireTransportofWaste"
+                options={transportofWasteRequireOptions}
+                value={selectedTransportOfWasteRequireValue}
+                onchange={handleQuestionOne}>
+            </lightning-radio-group>
+        </div>
+        <template if:true={showQuestionTwo}>
+            <div class="question">Do you know the {accountData.recordTypeName}'s EPA ID or GenReg ID?</div>
+            <div onchange={handleQuestionTwo}>
+                <lightning-radio-group
+                    type="horizontal"
+                    name="requireEpaGenregId"
+                    options={epaGenregIdRequireOptions}
+                    value={selectedEpaGenregIdRequireValue}
+                    onchange={handleQuestionTwo}>
+                </lightning-radio-group>
+            </div>
+        </template>       
+    </div>
+</template>

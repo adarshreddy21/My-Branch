@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Risk Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corp Account</fullName>
+                <default>false</default>
+                <label>Corp Account</label>
+            </value>
+            <value>
+                <fullName>Regional Account</fullName>
+                <default>false</default>
+                <label>Regional Account</label>
+            </value>
+            <value>
+                <fullName>Branch Account</fullName>
+                <default>false</default>
+                <label>Branch Account</label>
+            </value>
+            <value>
+                <fullName>Sensitive Account</fullName>
+                <default>false</default>
+                <label>Sensitive Account</label>
+            </value>
+            <value>
+                <fullName>Oil</fullName>
+                <default>false</default>
+                <label>Oil</label>
+            </value>
+            <value>
+                <fullName>3PC Account</fullName>
+                <default>false</default>
+                <label>3PC Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

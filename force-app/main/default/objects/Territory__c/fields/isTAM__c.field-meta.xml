@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isTAM__c</fullName>
+    <description>Indicates if the Territory Code is a TAM or a SAM</description>
+    <externalId>false</externalId>
+    <formula>or(
+and(
+text(Primary_Business__c) &lt;&gt; &apos;Safety-Kleen&apos;
+,Or(CONTAINS(Territory_Name__c, &apos;TAM&apos;),CONTAINS(Territory_Name__c, &apos;SAM&apos;))
+)
+, and(
+     CONTAINS(Territory_code__c, &apos;TAM&apos;)
+     ,text(Primary_Business__c) = &apos;Safety-Kleen&apos;
+     )  
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>isTAM</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

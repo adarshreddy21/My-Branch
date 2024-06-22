@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Sales_Branch</fullName>
+    <columns>Primary_Business__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.USERNAME</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>Territory__c</columns>
+    <columns>MANAGER</columns>
+    <columns>Sales_Area__c</columns>
+    <columns>Sales_Branch__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Branch__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>notContain</operation>
+        <value>chatter,revenue,executive,market,placeholder,integration,call,customer</value>
+    </filters>
+    <filters>
+        <field>Sales_Person_Type__c</field>
+        <operation>notContain</operation>
+        <value>Support</value>
+    </filters>
+    <label>MISSING - Sales Branch</label>
+    <language>en_US</language>
+</ListView>

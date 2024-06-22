@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Change__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please indicate the reason this account needs to change ownership.</inlineHelpText>
+    <label>Reason for Change</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Request / Customer Relationship</fullName>
+                <default>false</default>
+                <label>Customer Request / Customer Relationship</label>
+            </value>
+            <value>
+                <fullName>Primary Business Change</fullName>
+                <default>false</default>
+                <label>Primary Business Change</label>
+            </value>
+            <value>
+                <fullName>Field and Inside Sales Transition</fullName>
+                <default>false</default>
+                <label>Field and Inside Sales Transition</label>
+            </value>
+            <value>
+                <fullName>Unmanaged Account</fullName>
+                <default>false</default>
+                <label>Unmanaged Account</label>
+            </value>
+            <value>
+                <fullName>New Business / Upcoming Work</fullName>
+                <default>false</default>
+                <label>New Business / Upcoming Work</label>
+            </value>
+            <value>
+                <fullName>Territory Alignment</fullName>
+                <default>false</default>
+                <label>Territory Alignment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
+ 

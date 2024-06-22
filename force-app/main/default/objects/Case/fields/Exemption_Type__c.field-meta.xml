@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exemption_Type__c</fullName>
+    <description>Exception Reason for AQMD Approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>There will be a $250 charge to evaluate Exceptions</inlineHelpText>
+    <label>Exemption Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aerospace Manufacturing/Assembly</fullName>
+                <default>false</default>
+                <label>Aerospace Manufacturing/Assembly</label>
+            </value>
+            <value>
+                <fullName>Janitorial Cleaning</fullName>
+                <default>false</default>
+                <label>Janitorial Cleaning</label>
+            </value>
+            <value>
+                <fullName>Medical/Pharmaceutical</fullName>
+                <default>false</default>
+                <label>Medical/Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+                <label>Medical Devices</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Research/Laboratory</fullName>
+                <default>false</default>
+                <label>Research/Laboratory</label>
+            </value>
+            <value>
+                <fullName>Resin/Coating/Ink Manufacturing</fullName>
+                <default>false</default>
+                <label>Resin/Coating/Ink Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Manufacturing</fullName>
+                <default>false</default>
+                <label>Semiconductor Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Stripping Coatings/Ink/Adhesives</fullName>
+                <default>false</default>
+                <label>Stripping Coatings/Ink/Adhesives</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

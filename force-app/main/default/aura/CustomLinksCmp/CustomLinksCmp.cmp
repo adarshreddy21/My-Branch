@@ -1,0 +1,23 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="header" type="String" access="public"/>
+    <aura:attribute name="links" type="List" access="public"/>
+    
+    <lightning:card>
+        <aura:set attribute="title">
+            <h2 class="slds-card__header-title slds-text-title_bold">
+                {!v.header}
+            </h2>
+        </aura:set>
+        <p class="slds-p-horizontal_small slds-m-left--small">
+            <ul>
+                <aura:iteration items="{!v.links}" var="item">
+                    <li>
+                        <a onclick="{!c.handleLinkClick}" data-name="{!item.linkName}">
+                            {!item.linkName}
+                        </a>
+                    </li>
+                </aura:iteration>
+            </ul>
+        </p>
+    </lightning:card>
+</aura:component>

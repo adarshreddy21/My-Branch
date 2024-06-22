@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_W02_FAIRLESS_HILLS_WWF_AF_SVC_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: W02- FAIRLESS HILLS - WWF-AF SVC</label>
+    <queue>Queue_W02_FAIRLESS_HILLS_WWF_AF_SVC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

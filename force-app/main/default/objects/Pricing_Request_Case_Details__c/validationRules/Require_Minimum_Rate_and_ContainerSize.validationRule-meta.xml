@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Minimum_Rate_and_ContainerSize</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+Pricing_Type_of_Request__c = &apos;Drum Rates&apos;,
+OR(
+Text( Unit_of_Measure__c ) = &apos;GAL&apos;,
+Text( Unit_of_Measure__c ) = &apos;LBS&apos;,
+Text( Unit_of_Measure__c ) = &apos;Ton&apos;,
+Text( Unit_of_Measure__c ) = &apos;LG&apos;,
+Text( Unit_of_Measure__c ) = &apos;L&apos;,
+Text( Unit_of_Measure__c ) = &apos;CY&apos;),
+or( ISBLANK(  Minimum_Drum_Rate__c ),
+ISBLANK(Text( Container_Size__c ))))</errorConditionFormula>
+    <errorDisplayField>Container_Size__c</errorDisplayField>
+    <errorMessage>Please select a container size</errorMessage>
+</ValidationRule>

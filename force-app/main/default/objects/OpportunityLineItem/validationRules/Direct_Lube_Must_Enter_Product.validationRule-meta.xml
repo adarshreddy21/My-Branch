@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lube_Must_Enter_Product</fullName>
+    <active>true</active>
+    <description>Must enter a Direct product</description>
+    <errorConditionFormula>and(
+NOT ($Profile.Name = &quot;Integration&quot;)
+,NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;)
+,NOT ($Profile.Name = &quot;Sales Operations&quot;)
+,NOT ($Profile.Name = &quot;System Administrator&quot;)
+,isblank(text( Direct_Lube_Product__c  ))
+,or
+(Product2.LOB_Code__c = 89
+,Product2.LOB_Code__c = 64
+)
+, or
+(Opportunity.Opportunity_Owner_Primary_Business__c = &apos;Safety-Kleen&apos;
+, Opportunity.Opportunity_Owner_Primary_Business__c = &apos;Performance Plus Products&apos;
+, Opportunity.Opportunity_Owner_Primary_Business__c = &apos;Emerald Services&apos;
+, Opportunity.Opportunity_Owner_Primary_Business__c = &apos;Thermo Fluids&apos;
+)
+,or
+( text(LastModifiedBy.Primary_Business__c)  = &apos;Safety-Kleen&apos;
+, text(LastModifiedBy.Primary_Business__c) = &apos;Performance Plus Products&apos;
+, text(LastModifiedBy.Primary_Business__c) = &apos;Emerald Services&apos;
+, text(LastModifiedBy.Primary_Business__c) = &apos;Thermo Fluids&apos;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Direct_Lube_Product__c</errorDisplayField>
+    <errorMessage>Must enter a Direct Lube Family and UOM when entering a Direct Lube Oil Product</errorMessage>
+</ValidationRule>

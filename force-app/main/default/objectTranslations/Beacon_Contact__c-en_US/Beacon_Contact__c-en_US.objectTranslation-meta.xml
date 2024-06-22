@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Beacon Contacts</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Beacon Contacts</value>
+    </caseValues>
+    <layouts>
+        <layout>Beacon Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Beacon_Contact</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Beacon_Contact_MobilePhone_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Beacon_Contact_Phone_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CC_EMAILED_INVOICE_CHECKBOX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ECOMM_CHECKBOX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MANIFEST_ADDRESS_REQUIREMENT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VALID_EMAIL</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Ecomm_View</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>zzEcomm_View</name>
+    </webLinks>
+</CustomObjectTranslation>

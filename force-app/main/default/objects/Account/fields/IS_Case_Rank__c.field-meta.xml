@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Case_Rank__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(IS_Case_Rank_Backend__c == 10, 10,
+IF(
+
+OR(
+IS_Case_Rank_Backend__c == 0,
+
+AND(
+IS_Case_Rank_Backend__c == 7,
+OR(
+IS_Rank_Case_Closed_Date__c &lt;= TODAY() - 10,
+(Latest_Sales_Event_Date_for_IS_Rank__c - IS_Rank_Case_Closed_Date__c) &gt;= 0,
+(Latest_Sales_Task_Date_for_IS_Rank__c - IS_Rank_Case_Closed_Date__c) &gt;= 0
+
+)
+)
+), null, 7))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IS Case Rank</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

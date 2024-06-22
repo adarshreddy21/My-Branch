@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Child Case</fullName>
+    <description>This is used for Field Change Request Record type</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Approved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Awaiting Manager Approval</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Closed - Rejected</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed- winbacksync</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

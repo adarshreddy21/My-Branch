@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_And_Billing_Street_validation</fullName>
+    <active>true</active>
+    <description>Corporate Street and billing Street cannot more that 60 Character.</description>
+    <errorConditionFormula>And(
+   AND(NOT(ISPICKVAL( Status__c , &apos;Inactive&apos;)),  
+   Inactivate_Reactivate_In_Progress__c = False),
+   NOT(ISCHANGED(Active_ER_Contract__c)),
+   NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+OR( 
+   NOT(ISBLANK(BillingStreet)),
+   NOT(ISBLANK(ShippingStreet))),
+   OR(
+   LEN(BillingStreet) &gt; 60, Len(ShippingStreet) &gt; 60)
+   )</errorConditionFormula>
+    <errorMessage>Corporate and Billing Street field cannot have more than 60 characters.</errorMessage>
+</ValidationRule>

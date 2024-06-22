@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Of_Draft_Records__c</fullName>
+    <externalId>false</externalId>
+    <label># Of Draft Records</label>
+    <summaryFilterItems>
+        <field>Data_Upload_Line_Item__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Draft</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Data_Upload_Line_Item__c.Data_Upload__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

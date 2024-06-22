@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EPA_Id_Should_Not_Be_Null</fullName>
+    <active>true</active>
+    <description>EPA id should not be null</description>
+    <errorConditionFormula>AND(ShippingCountry =&apos;US&apos;, ISBLANK(CS_EPA_ID__c),
+NOT(RecordType.DeveloperName = &apos;Branch&apos;),
+NOT(RecordType.DeveloperName = &apos;Corporate&apos;),
+NOT(RecordType.DeveloperName = &apos;CLH_Competitor&apos;),
+NOT(RecordType.DeveloperName = &apos;Facility&apos;),
+NOT(RecordType.DeveloperName = &apos;Growth_Budget&apos;),
+NOT(RecordType.DeveloperName = &apos;RFOO&apos;),
+NOT(RecordType.DeveloperName = &apos;HR_Talent_Pools&apos;),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)))</errorConditionFormula>
+    <errorMessage>Please enter a valid input for EPA ID. Use PENDING until corrected.</errorMessage>
+</ValidationRule>

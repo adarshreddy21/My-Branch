@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Line_of_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Line of Business</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Allied Product Sales</fullName>
+                <default>false</default>
+                <label>Allied Product Sales</label>
+            </value>
+            <value>
+                <fullName>Case Resolution</fullName>
+                <default>false</default>
+                <label>Case Resolution</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste Services</fullName>
+                <default>false</default>
+                <label>Containerized Waste Services</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Customer Documentation</fullName>
+                <default>false</default>
+                <label>Customer Documentation</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Bulk Sales</fullName>
+                <default>false</default>
+                <label>Lube Oil Bulk Sales</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Package Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lube Oil Package Sales</label>
+            </value>
+            <value>
+                <fullName>Parts Washing Service</fullName>
+                <default>false</default>
+                <label>Parts Washing Service</label>
+            </value>
+            <value>
+                <fullName>PO</fullName>
+                <default>false</default>
+                <label>PO</label>
+            </value>
+            <value>
+                <fullName>Received Error Code</fullName>
+                <default>false</default>
+                <label>Received Error Code</label>
+            </value>
+            <value>
+                <fullName>TPM</fullName>
+                <default>false</default>
+                <label>TPM</label>
+            </value>
+            <value>
+                <fullName>Used Motor Oil</fullName>
+                <default>false</default>
+                <label>Used Motor Oil</label>
+            </value>
+            <value>
+                <fullName>Vac Services - Separators</fullName>
+                <default>false</default>
+                <label>Vac Services - Separators</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_WO_Worcester_MA_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : WO - Worcester, MA</label>
+    <queue>Queue_WO_Worcester_MA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

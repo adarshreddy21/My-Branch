@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Biennial Waste Data</fullName>
+        <default>false</default>
+        <label>Biennial Waste Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Call</fullName>
+        <default>false</default>
+        <label>Cold Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CYEIMPORT</fullName>
+        <default>false</default>
+        <label>CYEIMPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CYOIMPORT</fullName>
+        <default>false</default>
+        <label>CYOIMPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Avention</fullName>
+        <default>false</default>
+        <label>D&amp;B Hoovers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Definitive</fullName>
+        <default>false</default>
+        <label>Definitive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DFW</fullName>
+        <default>false</default>
+        <label>DFW</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ecommerce</fullName>
+        <default>false</default>
+        <label>Ecommerce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EWIMPORT</fullName>
+        <default>false</default>
+        <label>EWIMPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GVT</fullName>
+        <default>false</default>
+        <label>GVT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>H2IMPORT</fullName>
+        <default>false</default>
+        <label>H2IMPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HPC</fullName>
+        <default>false</default>
+        <label>HPC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industrial Info Resources (IIR)</fullName>
+        <default>false</default>
+        <label>Industrial Info Resources (IIR)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lodging Inside Sales</fullName>
+        <default>false</default>
+        <label>Lodging Inside Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lost Customers</fullName>
+        <default>false</default>
+        <label>Lost Customers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LSIMPORT</fullName>
+        <default>false</default>
+        <label>LSIMPORT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MIDSTATE</fullName>
+        <default>false</default>
+        <label>MIDSTATE</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PFAS</fullName>
+        <default>false</default>
+        <label>PFAS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Synergy</fullName>
+        <default>false</default>
+        <label>Synergy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Veolia</fullName>
+        <default>false</default>
+        <label>Veolia</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VESEPTIC</fullName>
+        <default>false</default>
+        <label>VESEPTIC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Buy Board</fullName>
+        <default>false</default>
+        <label>Buy Board</label>
+    </standardValue>
+</StandardValueSet>

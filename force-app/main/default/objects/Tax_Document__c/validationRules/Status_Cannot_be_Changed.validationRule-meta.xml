@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Cannot_be_Changed</fullName>
+    <active>true</active>
+    <description>This validation restricts the edits on Status field.</description>
+    <errorConditionFormula>AND(ISCHANGED(Status__c),NOT( $Permission.Skip_Validations_for_Super_users_cp ))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You are not allowed to change the status.</errorMessage>
+</ValidationRule> 

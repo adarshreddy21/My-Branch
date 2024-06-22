@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_TAA_BOISE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: TAA-BOISE</label>
+    <queue>Queue_TAA_BOISE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

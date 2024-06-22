@@ -1,0 +1,18 @@
+<template>
+    <div class="icon-container">
+		<template for:each={accountRecordTypes} for:item="recordType">
+			<div key={recordType.id} class="icon" title={recordType.description} data-description={recordType.description}  onclick={handleAccountRecordTypeClick}>
+				<a onclick={handleAccountRecordTypeClickIcon} data-value={recordType.id} href="javascript:void(0)">
+				
+				<lightning-avatar 
+					variant="circle"
+					size="large"
+					fallback-icon-name={recordType.iconName}
+					alternative-text={recordType.description}
+					class="slds-m-right_small"></lightning-avatar>
+				</a>
+				<div class="icon-label">{recordType.name}</div>
+			</div>	
+		</template>
+	</div>
+</template>

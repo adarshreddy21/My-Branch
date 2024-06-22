@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EPA_Service_Call__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags when Epa service call is made</description>
+    <externalId>false</externalId>
+    <label>EPA Service Call</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

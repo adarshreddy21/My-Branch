@@ -1,0 +1,18 @@
+.Section{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.paddingsmall {
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.linksection{
+  font-style: Italic;
+  font-size: medium;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

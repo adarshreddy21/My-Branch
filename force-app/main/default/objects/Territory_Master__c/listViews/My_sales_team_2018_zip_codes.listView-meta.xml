@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_sales_team_2018_zip_codes</fullName>
+    <columns>ZIP_Code__c</columns>
+    <columns>Territory_code__c</columns>
+    <columns>Territory_ID_2020__c</columns>
+    <columns>Territory_Owner_Name__c</columns>
+    <columns>Territory_Owner_Sales_Manager__c</columns>
+    <columns>Territory_Branch_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>My_Sales_Team_Zips_2018__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My sales team 2018 zip codes</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Area__c</fullName>
+    <description>List of sales areas for reporting</description>
+    <externalId>false</externalId>
+    <label>Sales Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Business__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>DP-Daylighting</fullName>
+                <default>false</default>
+                <label>D&amp;P-Daylighting</label>
+            </value>
+            <value>
+                <fullName>DP-Production Services</fullName>
+                <default>false</default>
+                <label>D&amp;P-Production Services</label>
+            </value>
+            <value>
+                <fullName>EM-Emerald Services</fullName>
+                <default>false</default>
+                <label>EM-Emerald Services</label>
+            </value>
+            <value>
+                <fullName>FS-Field Services</fullName>
+                <default>false</default>
+                <label>FS-Field Services</label>
+            </value>
+            <value>
+                <fullName>FS-High Tech Services Decon</fullName>
+                <default>false</default>
+                <label>FS-High Tech Services Decon</label>
+            </value>
+            <value>
+                <fullName>FS-Terminals &amp; Pipelines</fullName>
+                <default>false</default>
+                <label>FS-Terminals &amp; Pipelines</label>
+            </value>
+            <value>
+                <fullName>FS-Transportation</fullName>
+                <default>false</default>
+                <label>FS-Transportation</label>
+            </value>
+            <value>
+                <fullName>FS-US Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>FS-US Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>IS-Canadian Industrial</fullName>
+                <default>false</default>
+                <label>IS-Canadian Industrial</label>
+            </value>
+            <value>
+                <fullName>IS-Catalyst Services</fullName>
+                <default>false</default>
+                <label>IS-Catalyst Services</label>
+            </value>
+            <value>
+                <fullName>IS-JL Filtration</fullName>
+                <default>false</default>
+                <label>IS-JL Filtration</label>
+            </value>
+            <value>
+                <fullName>IS-Material Processing</fullName>
+                <default>false</default>
+                <label>IS-Material Processing</label>
+            </value>
+            <value>
+                <fullName>IS-Pigging &amp; Chemical Cleaning</fullName>
+                <default>false</default>
+                <label>IS-Pigging &amp; Chemical Cleaning</label>
+            </value>
+            <value>
+                <fullName>IS-Refinery</fullName>
+                <default>false</default>
+                <label>IS-Refinery</label>
+            </value>
+            <value>
+                <fullName>IS-US Industrial Services</fullName>
+                <default>false</default>
+                <label>IS-US Industrial Services</label>
+            </value>
+            <value>
+                <fullName>KPP-Distributor</fullName>
+                <default>false</default>
+                <label>KPP-Distributor</label>
+            </value>
+            <value>
+                <fullName>KPP-Kleen Performance Products</fullName>
+                <default>false</default>
+                <label>KPP-Kleen Performance Products</label>
+            </value>
+            <value>
+                <fullName>KPP-Lube</fullName>
+                <default>false</default>
+                <label>KPP-Lube</label>
+            </value>
+            <value>
+                <fullName>KPP-RFO</fullName>
+                <default>false</default>
+                <label>KPP-RFO</label>
+            </value>
+            <value>
+                <fullName>OG-Airborne Imaging</fullName>
+                <default>false</default>
+                <label>OG-Airborne Imaging</label>
+            </value>
+            <value>
+                <fullName>OG-Directional Boring</fullName>
+                <default>false</default>
+                <label>OG-Directional Boring</label>
+            </value>
+            <value>
+                <fullName>OG-Drilling</fullName>
+                <default>false</default>
+                <label>OG-Drilling</label>
+            </value>
+            <value>
+                <fullName>OG-Line Clearing</fullName>
+                <default>false</default>
+                <label>OG-Line Clearing</label>
+            </value>
+            <value>
+                <fullName>OG-Locating</fullName>
+                <default>false</default>
+                <label>OG-Locating</label>
+            </value>
+            <value>
+                <fullName>OG-Lodging Manufacturing</fullName>
+                <default>false</default>
+                <label>OG-Lodging Manufacturing</label>
+            </value>
+            <value>
+                <fullName>OG-Lodging Services</fullName>
+                <default>false</default>
+                <label>OG-Lodging Services</label>
+            </value>
+            <value>
+                <fullName>OG-Seismic Services</fullName>
+                <default>false</default>
+                <label>OG-Seismic Services</label>
+            </value>
+            <value>
+                <fullName>OG-Surface Rentals</fullName>
+                <default>false</default>
+                <label>OG-Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>OG-US Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>OG-US Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>PPP-Blended Lubricants &amp; Distributor</fullName>
+                <default>false</default>
+                <label>PPP-Blended Lubricants &amp; Distributor</label>
+            </value>
+            <value>
+                <fullName>PPP-Direct Lube</fullName>
+                <default>false</default>
+                <label>PPP-Direct Lube</label>
+            </value>
+            <value>
+                <fullName>PPP-Retail Fleet</fullName>
+                <default>false</default>
+                <label>PPP-Retail Fleet</label>
+            </value>
+            <value>
+                <fullName>RS Used Oil</fullName>
+                <default>false</default>
+                <label>RS Used Oil</label>
+            </value>
+            <value>
+                <fullName>SK-Government</fullName>
+                <default>false</default>
+                <label>SK-Government</label>
+            </value>
+            <value>
+                <fullName>SK-RFO</fullName>
+                <default>false</default>
+                <label>SK-RFO</label>
+            </value>
+            <value>
+                <fullName>SK-Safety Kleen Environmental</fullName>
+                <default>false</default>
+                <label>SK-Safety Kleen Environmental</label>
+            </value>
+            <value>
+                <fullName>SK-UMO</fullName>
+                <default>false</default>
+                <label>SK-UMO</label>
+            </value>
+            <value>
+                <fullName>SLSOPS-Master Data Management</fullName>
+                <default>false</default>
+                <label>SLSOPS-Master Data Management</label>
+            </value>
+            <value>
+                <fullName>SLSOPS-National Accounts</fullName>
+                <default>false</default>
+                <label>SLSOPS-National Accounts</label>
+            </value>
+            <value>
+                <fullName>SLSOPS-Regional Sales Management</fullName>
+                <default>false</default>
+                <label>SLSOPS-Regional Sales Management</label>
+            </value>
+            <value>
+                <fullName>SLSOPS-Sales Ops</fullName>
+                <default>false</default>
+                <label>SLSOPS-Sales Ops</label>
+            </value>
+            <value>
+                <fullName>TS-Broker</fullName>
+                <default>false</default>
+                <label>TS-Broker</label>
+            </value>
+            <value>
+                <fullName>TS-Chemical</fullName>
+                <default>false</default>
+                <label>TS-Chemical</label>
+            </value>
+            <value>
+                <fullName>TS-Chemical Sales</fullName>
+                <default>false</default>
+                <label>TS-Chemical Sales</label>
+            </value>
+            <value>
+                <fullName>TS-E&amp;C</fullName>
+                <default>false</default>
+                <label>TS-E&amp;C</label>
+            </value>
+            <value>
+                <fullName>TS-Healthcare Services</fullName>
+                <default>false</default>
+                <label>TS-Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>TS-InSite Services</fullName>
+                <default>false</default>
+                <label>TS-InSite Services</label>
+            </value>
+            <value>
+                <fullName>TS-Manufacturing</fullName>
+                <default>false</default>
+                <label>TS-Manufacturing</label>
+            </value>
+            <value>
+                <fullName>TS-Pharmaceutical</fullName>
+                <default>false</default>
+                <label>TS-Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>TS-Recycling Services</fullName>
+                <default>false</default>
+                <label>TS-Recycling Services</label>
+            </value>
+            <value>
+                <fullName>TS-Remediation</fullName>
+                <default>false</default>
+                <label>TS-Remediation</label>
+            </value>
+            <value>
+                <fullName>TS-Retail</fullName>
+                <default>false</default>
+                <label>TS-Retail</label>
+            </value>
+            <value>
+                <fullName>TS-Retail Services</fullName>
+                <default>false</default>
+                <label>TS-Retail Services</label>
+            </value>
+            <value>
+                <fullName>TS-RSOM</fullName>
+                <default>false</default>
+                <label>TS-RSOM</label>
+            </value>
+            <value>
+                <fullName>TS-Technical Services</fullName>
+                <default>false</default>
+                <label>TS-Technical Services</label>
+            </value>
+            <value>
+                <fullName>TS-Transformer Services</fullName>
+                <default>false</default>
+                <label>TS-Transformer Services</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Emerald Services</controllingFieldValue>
+            <valueName>EM-Emerald Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS Used Oil</controllingFieldValue>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>RS Used Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare Services</controllingFieldValue>
+            <valueName>TS-Healthcare Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Murphys Oil</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen</controllingFieldValue>
+            <controllingFieldValue>Thermo Fluids</controllingFieldValue>
+            <valueName>SK-UMO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Performance Plus Products</controllingFieldValue>
+            <valueName>PPP-Blended Lubricants &amp; Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Performance Plus Products</controllingFieldValue>
+            <valueName>PPP-Direct Lube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Performance Plus Products</controllingFieldValue>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>PPP-Retail Fleet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>DP-Daylighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Production Services</controllingFieldValue>
+            <valueName>DP-Production Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>FS-Field Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>FS-High Tech Services Decon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>FS-Terminals &amp; Pipelines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>FS-Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>FS-US Oil &amp; Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-Canadian Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-Catalyst Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-Material Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-Pigging &amp; Chemical Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-Refinery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS-US Industrial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>KPP-Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>KPP-Kleen Performance Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>KPP-Lube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>KPP-RFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lodging</controllingFieldValue>
+            <valueName>OG-Lodging Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lodging</controllingFieldValue>
+            <valueName>OG-Lodging Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Airborne Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Directional Boring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Drilling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Line Clearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Locating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Seismic Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-Surface Rentals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>OG-US Oil &amp; Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <controllingFieldValue>Sales Operations</controllingFieldValue>
+            <valueName>SLSOPS-Sales Ops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety-Kleen</controllingFieldValue>
+            <valueName>SK-Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety-Kleen</controllingFieldValue>
+            <valueName>SK-RFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety-Kleen</controllingFieldValue>
+            <valueName>SK-Safety Kleen Environmental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Broker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Chemical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Chemical Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-E&amp;C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-InSite Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Pharmaceutical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Recycling Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Remediation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Retail Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-RSOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Technical Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>TS-Transformer Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Operations</controllingFieldValue>
+            <valueName>SLSOPS-Master Data Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Operations</controllingFieldValue>
+            <valueName>SLSOPS-National Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Operations</controllingFieldValue>
+            <valueName>SLSOPS-Regional Sales Management</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

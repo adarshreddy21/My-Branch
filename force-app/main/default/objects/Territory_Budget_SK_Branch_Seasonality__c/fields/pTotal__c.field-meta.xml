@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pTotal__c</fullName>
+    <externalId>false</externalId>
+    <formula>round((p01_January__c 
++ p02_February__c 
++ p03_March__c 
++ p04_April__c 
++ p05_May__c 
++ p06_June__c 
++ p07_July__c 
++ p08_August__c 
++ p09_September__c 
++ p10_October__c 
++ p11_November__c 
++ p12_December__c),1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>pTotal</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

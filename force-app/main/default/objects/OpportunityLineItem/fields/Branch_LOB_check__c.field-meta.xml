@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_LOB_check__c</fullName>
+    <description>Check to see if the branch should service the LOB entered</description>
+    <externalId>false</externalId>
+    <formula>if (and( Branch__r.branch_descr_amt4__c  = &apos;North American Remediation&apos;,   Product_Name__c = &apos;Filtration &amp;Treatment Services&apos;), False,
+or( 
+and(text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Technical Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Technical Services&apos;), 
+and(text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Healthcare Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Healthcare Services&apos;), 
+and( 
+and(text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Field Services&apos;, text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Daylighting and Production Services&apos;, text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Industrial Services&apos;), 
+or(text(PricebookEntry.Product2.Primary_Business__c) = &apos;Field Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Daylighting and Production Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Industrial Services&apos;) 
+), 
+and( 
+and(text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Industrial Services&apos;, text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Daylighting and Production Services&apos;, text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Lodging Services&apos;, text(Branch__r.Primary_Business__c) &lt;&gt; &apos;Oil &amp; Gas&apos;), 
+or(text(PricebookEntry.Product2.Primary_Business__c) = &apos;Industrial Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Daylighting and Production Services&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Lodging&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Oil &amp; Gas&apos;) 
+), 
+and( 
+and(Branch__r.branch_descr_amt2__c &lt;&gt; &apos;SK Environmental Services&apos;, Branch__r.branch_descr_amt2__c &lt;&gt; &apos;Kleen Performance Products&apos;), 
+or(text(PricebookEntry.Product2.Primary_Business__c) = &apos;Safety-Kleen&apos;, text(PricebookEntry.Product2.Primary_Business__c) = &apos;Kleen Performance Products&apos;) 
+) 
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Branch LOB check</label>
+    <type>Checkbox</type>
+</CustomField>

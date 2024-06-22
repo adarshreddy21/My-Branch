@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to Expire the contact</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking expired will expire the entire contact. If you want to remove a type please use the contact type field</inlineHelpText>
+    <label>Expired</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

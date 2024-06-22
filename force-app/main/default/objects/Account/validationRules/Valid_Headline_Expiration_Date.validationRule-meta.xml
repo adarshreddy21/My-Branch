@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Headline_Expiration_Date</fullName>
+    <active>true</active>
+    <description>This validation rule restrict user to enter the date beyond 25 years.</description>
+    <errorConditionFormula>AND(
+ OR(ISNEW(), ISCHANGED(Headline_Expiration__c)),
+ Headline_Expiration__c &gt; DATE(YEAR(TODAY()) + 25, MONTH(TODAY()), DAY(TODAY()))
+)</errorConditionFormula>
+    <errorDisplayField>Headline_Expiration__c</errorDisplayField>
+    <errorMessage>You have entered an invalid Headline Expiration date. The Headline Expiration date should not be beyond 25 years into the future.</errorMessage>
+</ValidationRule>

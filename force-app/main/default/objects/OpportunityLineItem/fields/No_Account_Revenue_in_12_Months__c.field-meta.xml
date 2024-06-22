@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Account_Revenue_in_12_Months__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the account entered on the opportunity had revenue since the first day of the prior year.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the account entered on the opportunity had revenue since the first day of the prior year.</inlineHelpText>
+    <label>New Account Opportunity</label>
+    <type>Checkbox</type>
+</CustomField>

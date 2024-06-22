@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selling_Restritions__c</fullName>
+    <defaultValue>&quot;No Selling Locally&quot;</defaultValue>
+    <description>Conditions on selling</description>
+    <externalId>false</externalId>
+    <label>Selling Restritions</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Approved_to_Sell__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Must use MSA, National Price Card, or Zone Pricing</fullName>
+                <default>false</default>
+                <label>Must use MSA, National Price Card, or Zone Pricing</label>
+            </value>
+            <value>
+                <fullName>Locally Negotiated Pricing with KAM Approval</fullName>
+                <default>false</default>
+                <label>Locally Negotiated Pricing with KAM Approval</label>
+            </value>
+            <value>
+                <fullName>Locally negotiated. No restrictions. No CAM approval required</fullName>
+                <default>false</default>
+                <label>Locally negotiated. No restrictions. No CAM approval required</label>
+            </value>
+            <value>
+                <fullName>No Selling Locally</fullName>
+                <default>false</default>
+                <label>No Selling Locally</label>
+            </value>
+            <value>
+                <fullName>No proactive selling but approved to provide if requested by customer</fullName>
+                <default>false</default>
+                <label>No proactive selling but approved to provide if requested by customer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <valueName>No Selling Locally</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Must use MSA, National Price Card, or Zone Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Locally Negotiated Pricing with KAM Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Locally negotiated. No restrictions. No CAM approval required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>No proactive selling but approved to provide if requested by customer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

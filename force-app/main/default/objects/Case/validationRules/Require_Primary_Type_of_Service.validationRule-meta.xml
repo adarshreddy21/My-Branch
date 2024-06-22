@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Primary_Type_of_Service</fullName>
+    <active>true</active>
+    <description>Requires Primary Type of Service if Type of Call is Sales, Service or Pull/Cancel.</description>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &quot;Integration&quot;,
+$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+or(ISPICKVAL(Type_of_Call__c, &quot;Sales&quot;),
+ISPICKVAL(Type_of_Call__c, &quot;Service&quot;)),
+ISPICKVAL(Primary_Type_of_Service__c, &quot;&quot;))</errorConditionFormula>
+    <errorMessage>Primary Type of Service is required if Type of Call is Sales or Service.</errorMessage>
+</ValidationRule>

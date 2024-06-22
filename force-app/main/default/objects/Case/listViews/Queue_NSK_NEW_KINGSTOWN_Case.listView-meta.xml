@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_NSK_NEW_KINGSTOWN_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: NSK-NEW KINGSTOWN</label>
+    <queue>Queue_NSK_NEW_KINGSTOWN</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

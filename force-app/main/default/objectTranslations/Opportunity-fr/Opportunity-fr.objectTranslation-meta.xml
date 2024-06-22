@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CP HarborQuote Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Corporate Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Central Quoting (TS)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Central Quoting</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Clean Harbors Standard Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Corporate Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FS HarborQuote Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Corporate Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Harbor Quote Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Corporate Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Healthcare Opportunity Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>KKP Opportunity Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lodging Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SK National Account Opportunity Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Safety Kleen / BPS Opportunity Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cross Sell Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SK Driver Information from IOS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Safety Kleen Branch Services Opportunity Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TPM Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>TPM Central Quoting</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>TPM Quote Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transformer Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waste Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Key Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Add_Allied_Product</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Central_Quote_TS</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Direct_Lube2</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_KPP_Lube</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Lube_Oil_old</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_New_Service</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Parts_Washer</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Service</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Ajouter un service de produit</label>
+        <name>Add_Service_Product</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_TPM</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Add_Waste</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Central_Quoting_TS</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label>Occasion d’affaires Clean Harbors</label>
+        <name>Clean_Harbors_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FS_Harbor_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Harbor_Quote_CP</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Healthcare_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>KPP_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Lodging_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SK_National_Accounts_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Safety_Kleen_BPS_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Safety_Kleen_Opportunity_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>TPM_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Transformer_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Account_is_expired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cant_Request_Quote_for_Non_Cross_Sell</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cant_Unchecked_Inventory_Attached</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cant_Unchecked_Ready_to_Schedule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Close_date_cannot_be_in_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Do_not_allow_assignment_to_Exec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Veuillez indiquer le concurrent</errorMessage>
+        <name>Enter_Lost_Competitor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Enter_Lost_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Enter_Lost_reason_Competitor_Price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Enter_Transformer_Product_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Job_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Pour que l’occasion d’affaires reçoive le statut de « Classé gagné », un produit doit être associé à l’occasion d’affaires.</errorMessage>
+        <name>OPPORTUNITY_WITH_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Request_Quote_Can_not_be_Unchecked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Stalled_By_Client_Cannot_Be_Unchecked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TPM_Quote_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TPM_Request_needs_Business</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TPM_Requests_Needs_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TPM_Requests_needs_Customer_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Transformer_Product_Segment_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Turnaround_Type</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Branch_Account_Report</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Focal_Point_Q2C</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Sales_Inspection_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Quotes</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WiN_Web_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Washer_Troubleshooting__c</fullName>
+    <externalId>false</externalId>
+    <label>Parts Washer Troubleshooting</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

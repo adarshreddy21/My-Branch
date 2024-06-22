@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_MSX_MISSOURI_CITY_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Current_Account_Win_ID__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Primary_Type_of_Service__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Resolved</value>
+    </filters>
+    <filters>
+        <field>Primary_Type_of_Service__c</field>
+        <operation>equals</operation>
+        <value>UMO</value>
+    </filters>
+    <label>Queue: MSX-MISSOURI CITY</label>
+    <language>en_US</language>
+    <queue>Queue_MSX_MISSOURI_CITY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

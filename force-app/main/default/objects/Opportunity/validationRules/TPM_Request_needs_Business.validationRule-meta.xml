@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Request_needs_Business</fullName>
+    <active>true</active>
+    <description>TPM Request needs FS or TS Business selected</description>
+    <errorConditionFormula>and(
+OR(RecordType.DeveloperName = &apos;Central_Quoting_TS&apos;,RecordType.DeveloperName = &apos;Central_Quoting_FS&apos;),
+isblank( TPM_Quote_Request_To_Business__c ), TPM_Quote_Request__c = True
+)</errorConditionFormula>
+    <errorDisplayField>TPM_Quote_Request_To_Business__c</errorDisplayField>
+    <errorMessage>Please enter add a Technical or Field product onto your opportunity before you click the &quot;Submit TPM Quote&quot; request button.</errorMessage>
+</ValidationRule>

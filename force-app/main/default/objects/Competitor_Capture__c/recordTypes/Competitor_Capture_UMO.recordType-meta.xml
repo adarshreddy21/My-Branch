@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Capture_UMO</fullName>
+    <active>true</active>
+    <description>Capture competitor pricing that deals with Used Motor Oil.</description>
+    <label>Competitor Capture UMO</label>
+    <picklistValues>
+        <picklist>Attachment_Type__c</picklist>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Auto_Type__c</picklist>
+        <values>
+            <fullName>Passenger Car Engine Oil %28PCEO%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor_Brand__c</picklist>
+        <values>
+            <fullName>*OTHER - Brand Not Listed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipment_Options__c</picklist>
+        <values>
+            <fullName>Equipment Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease to Own</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oil_Filter_Price__c</picklist>
+        <values>
+            <fullName>Bin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oil_Type__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pay_or_Charge__c</picklist>
+        <values>
+            <fullName>CFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Description__c</picklist>
+        <values>
+            <fullName>0W-20 Full Synthetic dexos1 SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W30 CJ-4%2FSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15W40 CJ-4%2FSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Full Synthetic dexos1 SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Multi-Vehicle %28Low Viscosity%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Packaging__c</picklist>
+        <values>
+            <fullName>Bulk</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Storage_Type_Size__c</picklist>
+        <values>
+            <fullName>275 Gallon Bulk Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 Gallon Bulk Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote 102 %28Canadian%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote 330 %28US%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Storage_Type__c</picklist>
+        <values>
+            <fullName>Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank %26 Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote %26 Pump</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>Gallons</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Liters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,173 @@
+<apex:page standardController="Strategic_Account_Plan__c" extensions="StrategicAccountPlanController">
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="Strategic Account Plan Contacts"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+    <apex:form >
+        
+        <script>
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };
+        </script>
+        
+        <apex:actionFunction name="aSelectItem" action="{!doSelectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction>
+        <!-- handle deselected item -->
+        <apex:actionFunction name="aDeselectItem" action="{!doDeselectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction> 
+        <apex:actionFunction name="isSelectAllItem" action="{!isSelectedAll}"  rerender="pb">
+            <apex:param name="isSelectedALL" value="" assignTo="{!selectedAllProperties}"/>
+        </apex:actionFunction>
+        
+        <!-- For alphabetic search-->
+        <div class = "row">
+            <div class="column" style="float:left; position:absolute;">
+                <apex:inputText label="Last Name" title="Last Name" value="{!SearchbyField}"/> 
+            </div>
+            <div class="column" style="float:left; margin-left: 200px">
+                <apex:commandButton value="Search Last Name" action="{!getSearchByFilter}" reRender="pb">
+                    <apex:param value="Contact" assignTo="{!objectType}"/>
+                </apex:commandButton>
+            </div>
+            <div class="column" style="float:right; position:relative">
+                <apex:panelGrid > 
+                    <apex:repeat value="{!alphabet}" var="alph">
+                        <apex:commandLink value="{!alph} | " action="{!getalphaSearch}" reRender="pb">
+                            <apex:param name="alpha" value="{!alph}" assignTo="{!alphaSearch}"/>
+                            <apex:param value="Contact" assignTo="{!objectType}"/>
+                        </apex:commandLink>
+                    </apex:repeat>
+                </apex:panelGrid>
+                
+            </div>
+        </div> 
+        
+        <apex:pageblock id="pb">
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1" title="Related Contacts" id="conId">
+                
+                <apex:outputPanel >
+                    <div style="position:relative;left:400px;">
+                        <apex:commandLink value="Add Contacts" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                            <apex:param value="Contact" assignTo="{!objectType}"/>
+                        </apex:commandLink>
+                        <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+                    </div>
+                </apex:outputPanel>
+                
+                <apex:pageblocktable value="{!AllObject}" var="ct" style="width:100%" cellPadding="1" border="10" id="table1">
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox value="{!selectedAllProperties}" onclick="selectAllCheckboxes(this)"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!ct.selected}" styleClass="cbStyleClass" onclick="doCheckboxChange(this,'{!ct.obj.Id}')"/>
+                    </apex:column>  
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Name{!IF(sortExpression=='name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="name" name="name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!ct.obj['Name']}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Account Name{!IF(sortExpression=='Account.Name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Account.Name" name="Account.Name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!ct.obj['Account']['Name']}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Title{!IF(sortExpression=='Title',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Title" name="Title" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!ct.obj['Title']}" style="width:250px"/>
+                    </apex:column>
+                    <apex:column headerValue="Contact Type">
+                        <apex:outputField value="{!ct.obj['Contact_Type__c']}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Buying Role">
+                        <apex:outputField value="{!ct.obj['Buying_Role__c']}" style="width:30px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Relationship Strength{!IF(sortExpression=='Relationship_Strength__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Relationship_Strength__c" name="Relationship_Strength__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!ct.obj['Relationship_Strength__c']}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Frequency{!IF(sortExpression=='Frequency__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Frequency__c" name="Frequency__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!ct.obj['Frequency__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Relationship Development Plan">
+                        <apex:outputField value="{!ct.obj['Relationship_Development_Plan__c']}" style="width:800px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <br/> 
+            <!--PAGINATION outputPanel-->
+            <apex:outputPanel styleClass="center">
+                <apex:commandButton status="st" reRender="pb" value="|< First" action="{!first}" disabled="{!!hasPrevious}" title="First Page"/>
+                <apex:commandButton status="st" reRender="pb" value="Previous" action="{!previous}" disabled="{!!hasPrevious}" title="Previous Page"/>
+                <apex:outputText > &nbsp;Page {!pageNumber} of {!totalPageNumber}&nbsp;</apex:outputText>&nbsp;
+                <apex:commandButton status="st" reRender="pb" value="Next" action="{!next}" disabled="{!!hasNext}" title="Next Page"  />
+                <apex:commandButton status="st" reRender="pb" value="Last>|" action="{!last}" disabled="{!!hasNext}" title="Last Page"/>
+                
+                <apex:outputPanel style="color:#008000;font-weight:bold">
+                    <apex:actionStatus id="st" startText="Fetching..." stopText=""/>
+                </apex:outputPanel>
+            </apex:outputPanel> 
+            
+            <div style="position:relative;left:400px;">
+                <apex:commandLink value="Add Contacts" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                    <apex:param value="Contact" assignTo="{!objectType}"/>
+                </apex:commandLink>
+                <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+            </div>
+            <!-- End of Commandbutton -->
+        </apex:pageblock>
+    </apex:form>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        
+        //function to handle checkbox selection
+        function doCheckboxChange(cb,itemId)
+    {
+        if(cb.checked==true){
+            aSelectItem(itemId);
+        }
+        else{
+            aDeselectItem(itemId);
+        }        
+    }
+    
+    function selectAllCheckboxes(obj){
+        $(".cbStyleClass").each(function(index, item){
+            item.checked = obj.checked;
+        });
+        isSelectAllItem(obj.checked);
+    }    
+    </script>
+</apex:page>

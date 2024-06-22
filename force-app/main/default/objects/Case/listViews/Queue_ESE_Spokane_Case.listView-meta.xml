@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_ESE_Spokane_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: ESE-Spokane</label>
+    <queue>Queue_ESE_Spokane</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

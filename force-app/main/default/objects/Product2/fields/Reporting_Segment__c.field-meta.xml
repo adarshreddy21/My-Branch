@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Reporting Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Company Wide</fullName>
+                <default>false</default>
+                <label>Company Wide</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Lodging Services</fullName>
+                <default>false</default>
+                <label>Lodging Services</label>
+            </value>
+            <value>
+                <fullName>Oil and Gas Field Services</fullName>
+                <default>false</default>
+                <label>Oil and Gas Field Services</label>
+            </value>
+			<value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen</fullName>
+                <default>false</default>
+                <label>Safety-Kleen</label>
+            </value>
+            <value>
+                <fullName>Tech Services</fullName>
+                <default>false</default>
+                <label>Tech Services</label>
+            </value>
+            <value>
+                <fullName>Bulk Products and Services</fullName>
+                <default>false</default>
+                <label>Bulk Products and Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

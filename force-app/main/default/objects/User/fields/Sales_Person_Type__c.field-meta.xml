@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Person_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Person Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Account Development Manager</fullName>
+                <default>false</default>
+                <label>Account Development Manager</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Account Manager</fullName>
+                <default>false</default>
+                <label>Account Manager</label>
+            </value>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <label>Asset Management</label>
+            </value>
+            <value>
+                <fullName>Branch Administration</fullName>
+                <default>false</default>
+                <label>Branch Administration</label>
+            </value>
+            <value>
+                <fullName>Branch District Manager</fullName>
+                <default>false</default>
+                <label>Branch District Manager</label>
+            </value>
+            <value>
+                <fullName>Branch Manager</fullName>
+                <default>false</default>
+                <label>Branch Manager</label>
+            </value>
+            <value>
+                <fullName>Branch Operations</fullName>
+                <default>false</default>
+                <label>Branch Operations</label>
+            </value>
+            <value>
+                <fullName>Branch Project Manager</fullName>
+                <default>false</default>
+                <label>Branch Project Manager</label>
+            </value>
+            <value>
+                <fullName>Call Center Agent</fullName>
+                <default>false</default>
+                <label>Call Center Agent</label>
+            </value>
+            <value>
+                <fullName>Central Profile</fullName>
+                <default>false</default>
+                <label>Central Profile</label>
+            </value>
+            <value>
+                <fullName>Chemist</fullName>
+                <default>false</default>
+                <label>Chemist</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Corporate Billing</fullName>
+                <default>false</default>
+                <label>Corporate Billing</label>
+            </value>
+            <value>
+                <fullName>Corporate Collections</fullName>
+                <default>false</default>
+                <label>Corporate Collections</label>
+            </value>
+            <value>
+                <fullName>Corporate Finance</fullName>
+                <default>false</default>
+                <label>Corporate Finance</label>
+            </value>
+            <value>
+                <fullName>Corporate Pricing</fullName>
+                <default>false</default>
+                <label>Corporate Pricing</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Dispatcher</fullName>
+                <default>false</default>
+                <label>Dispatcher</label>
+            </value>
+            <value>
+                <fullName>Health and Safety</fullName>
+                <default>false</default>
+                <label>Health and Safety</label>
+            </value>
+            <value>
+                <fullName>InSite Operations</fullName>
+                <default>false</default>
+                <label>InSite Operations</label>
+            </value>
+            <value>
+                <fullName>InSite Program Manager</fullName>
+                <default>false</default>
+                <label>InSite Program Manager</label>
+            </value>
+            <value>
+                <fullName>InSite Project Manager</fullName>
+                <default>false</default>
+                <label>InSite Project Manager</label>
+            </value>
+            <value>
+                <fullName>ISAM</fullName>
+                <default>false</default>
+                <label>ISAM</label>
+            </value>
+            <value>
+                <fullName>Key Account Manager</fullName>
+                <default>false</default>
+                <label>Key Account Manager</label>
+            </value>
+            <value>
+                <fullName>Key Account Support</fullName>
+                <default>false</default>
+                <label>Key Account Support</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Master Data Management</fullName>
+                <default>false</default>
+                <label>Master Data Management</label>
+            </value>
+            <value>
+                <fullName>Non Sales Executive</fullName>
+                <default>false</default>
+                <label>Non Sales Executive</label>
+            </value>
+            <value>
+                <fullName>Non Sales Integration User</fullName>
+                <default>false</default>
+                <label>Non Sales Integration User</label>
+            </value>
+            <value>
+                <fullName>Non Sales IT Support</fullName>
+                <default>false</default>
+                <label>Non Sales IT Support</label>
+            </value>
+            <value>
+                <fullName>Profiler</fullName>
+                <default>false</default>
+                <label>Profiler</label>
+            </value>
+            <value>
+                <fullName>Prospector</fullName>
+                <default>false</default>
+                <label>Prospector</label>
+            </value>
+            <value>
+                <fullName>Regional Sales Manager</fullName>
+                <default>false</default>
+                <label>Regional Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Director</fullName>
+                <default>false</default>
+                <label>Sales Director</label>
+            </value>
+            <value>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+                <label>Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Placeholder</fullName>
+                <default>false</default>
+                <label>Sales Placeholder</label>
+            </value>
+            <value>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+                <label>Sales Representative</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Senior Account Manager</fullName>
+                <default>false</default>
+                <label>Senior Account Manager</label>
+            </value>
+            <value>
+                <fullName>Specialist</fullName>
+                <default>false</default>
+                <label>Specialist</label>
+            </value>
+            <value>
+                <fullName>Technical Sales Expert</fullName>
+                <default>false</default>
+                <label>Technical Sales Expert</label>
+            </value>
+            <value>
+                <fullName>Technical Sales Manager</fullName>
+                <default>false</default>
+                <label>Technical Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

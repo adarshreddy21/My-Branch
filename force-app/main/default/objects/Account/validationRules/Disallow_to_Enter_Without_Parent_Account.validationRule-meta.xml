@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_Enter_Without_Parent_Account</fullName>
+    <active>true</active>
+    <description>Location accounts cannot be created without a parent account</description>
+    <errorConditionFormula>AND(
+   ISBLANK(ParentId),
+   NOT(ISCHANGED(Active_ER_Contract__c)),
+   NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+   OR(
+      RecordType.DeveloperName = &quot;Customer_Location&quot;,
+      RecordType.DeveloperName = &quot;Broker_Location&quot;,
+      RecordType.DeveloperName = &quot;Distributor_Location&quot;
+   )
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>ShipTo/Gen accounts must have a parent account</errorMessage>
+</ValidationRule>

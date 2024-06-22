@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q3_Rate_Ease_of_Business__c</fullName>
+    <description>How would you rate the ease of doing business with Clean Harbors?</description>
+    <externalId>false</externalId>
+    <label>Q3 Rate Ease of Business</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Extremely Easy</fullName>
+                <default>false</default>
+                <label>Extremely Easy</label>
+            </value>
+            <value>
+                <fullName>Somewhat Easy</fullName>
+                <default>false</default>
+                <label>Somewhat Easy</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Somewhat Not Easy</fullName>
+                <default>false</default>
+                <label>Somewhat Not Easy</label>
+            </value>
+            <value>
+                <fullName>Not Easy At All</fullName>
+                <default>false</default>
+                <label>Not Easy At All</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

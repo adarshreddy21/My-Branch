@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_CS_Springfield_MA_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : CS - Springfield, MA</label>
+    <queue>Queue_CS_Springfield_MA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

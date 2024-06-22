@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Service__c</fullName>
+    <externalId>false</externalId>
+    <label>Secondary Type of Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Type_of_Call__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UMO</fullName>
+                <default>false</default>
+                <label>UMO</label>
+            </value>
+            <value>
+                <fullName>Parts Washer</fullName>
+                <default>false</default>
+                <label>Parts Washer</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste</fullName>
+                <default>false</default>
+                <label>Containerized Waste</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Drum</fullName>
+                <default>false</default>
+                <label>Oil Filter Drum</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Bin</fullName>
+                <default>false</default>
+                <label>Oil Filter Bin</label>
+            </value>
+            <value>
+                <fullName>WWF/AF Product</fullName>
+                <default>false</default>
+                <label>WWF/AF Product</label>
+            </value>
+            <value>
+                <fullName>Allied Product</fullName>
+                <default>false</default>
+                <label>Allied Product</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Sales</fullName>
+                <default>false</default>
+                <label>Lube Oil Sales</label>
+            </value>
+            <value>
+                <fullName>VAC</fullName>
+                <default>false</default>
+                <label>VAC</label>
+            </value>
+            <value>
+                <fullName>Used Antifreeze</fullName>
+                <default>false</default>
+                <label>Used Antifreeze</label>
+            </value>
+            <value>
+                <fullName>Oily Water</fullName>
+                <default>false</default>
+                <label>Oily Water</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>UMO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Parts Washer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Containerized Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Oil Filter Drum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Oil Filter Bin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>WWF/AF Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Allied Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Lube Oil Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>VAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Used Antifreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Oily Water</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

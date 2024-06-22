@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lube_or_KPP_by_not_Both</fullName>
+    <active>true</active>
+    <description>Direct Lube or KPP by not Both</description>
+    <errorConditionFormula>and(
+not(isblank( Direct_Lube_Details__c ))
+,not(isblank(  KPP_Oil_Details__c  ))
+)</errorConditionFormula>
+    <errorMessage>Please enter either Direct Lube or KPP Oil details but not Both.  SK Environmental sales people should enter Direct Lube.  KPP sales people should enter KPP details.</errorMessage>
+</ValidationRule>

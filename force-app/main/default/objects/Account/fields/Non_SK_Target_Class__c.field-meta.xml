@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_SK_Target_Class__c</fullName>
+    <externalId>false</externalId>
+    <formula>Or (
+text(Class__c) = &quot;Agricultural Production&quot;, 
+text(Class__c) = &quot;Agricultural Svcs&quot;, 
+text(Class__c) = &quot;Airlines&quot;, 
+text(Class__c) = &quot;Airports &amp; Aviation Svcs&quot;, 
+text(Class__c) = &quot;Auto Maintenance&quot;, 
+text(Class__c) = &quot;Auto Retail&quot;, 
+text(Class__c) = &quot;Banks, Financial Institutions &amp; Bus Svcs&quot;, 
+text(Class__c) = &quot;Building Materials (excl Lumber Mills)&quot;, 
+text(Class__c) = &quot;Colleges &amp; Universities&quot;, 
+text(Class__c) = &quot;Construction, Gen Contractors &amp; Builders&quot;, 
+text(Class__c) = &quot;Dry Cleaners&quot;, 
+text(Class__c) = &quot;Emergency Response Management&quot;, 
+text(Class__c) = &quot;Fleet - Rental &amp; Leasing&quot;, 
+text(Class__c) = &quot;Food &amp; Grocery Stores&quot;, 
+text(Class__c) = &quot;Gasoline, Oil &amp; Petroleum Distributors&quot;, 
+text(Class__c) = &quot;Government - Federal - Military&quot;, 
+text(Class__c) = &quot;Government - Federal Departments/Agencies&quot;, 
+text(Class__c) = &quot;Government - Municipality/Local&quot;, 
+text(Class__c) = &quot;Government - State/Provincial&quot;, 
+text(Class__c) = &quot;Hotels, Camps, Parks, Clubs &amp; Pers Svcs&quot;, 
+text(Class__c) = &quot;Individuals &amp; Homeowners&quot;, 
+text(Class__c) = &quot;Insurance Companies&quot;, 
+text(Class__c) = &quot;Marine Services&quot;, 
+text(Class__c) = &quot;Media, TV, Radio &amp; Newspaper&quot;, 
+text(Class__c) = &quot;Non-Classifiable Establishments&quot;, 
+text(Class__c) = &quot;Package Delivery&quot;, 
+text(Class__c) = &quot;Quick Lubes&quot;, 
+text(Class__c) = &quot;Real Estate &amp; Developers&quot;, 
+text(Class__c) = &quot;Retail Trade&quot;, 
+text(Class__c) = &quot;Schools - Secondary&quot;, 
+text(Class__c) = &quot;Taxi, Bus &amp; Other Local Transportation&quot;, 
+text(Class__c) = &quot;Undefined&quot;, 
+text(Class__c) = &quot;Warehousing &amp; Related Svcs&quot;, 
+text(Class__c) = &quot;Government – Federal, Defense and Other&quot;, 
+text(Class__c) = &quot;Government - Town, Municipality &amp; County&quot;, 
+text(Class__c) = &quot;Wholesale Trade&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Non SK Target Class</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

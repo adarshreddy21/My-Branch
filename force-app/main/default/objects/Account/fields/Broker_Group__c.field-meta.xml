@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Broker Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent Only Broker</fullName>
+                <default>false</default>
+                <label>Agent Only Broker</label>
+            </value>
+            <value>
+                <fullName>Asset Owning Broker</fullName>
+                <default>false</default>
+                <label>Asset Owning Broker</label>
+            </value>
+            <value>
+                <fullName>Field Service Only Broker</fullName>
+                <default>false</default>
+                <label>Field Service Only Broker</label>
+            </value>
+            <value>
+                <fullName>Transfer Permit Only Broker</fullName>
+                <default>false</default>
+                <label>Transfer Permit Only Broker</label>
+            </value>
+            <value>
+                <fullName>Transfer Permit Only</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transfer Permit Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

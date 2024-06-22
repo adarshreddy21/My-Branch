@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_accounts_are_not_parent_of_Key</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(
+	RecordType.DeveloperName = &quot;Key_Account&quot;,
+    NOT(ISCHANGED(Active_ER_Contract__c)),
+	NOT(ISBLANK(ParentId))),
+    AND(RecordType.DeveloperName = &quot;Corporate&quot;,
+    NOT(ISCHANGED(Active_ER_Contract__c)),
+	NOT(ISBLANK(ParentId))
+))</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Corporate accounts are not parent as Key Accounts</errorMessage>
+</ValidationRule>

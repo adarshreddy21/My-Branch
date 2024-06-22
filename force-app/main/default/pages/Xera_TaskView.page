@@ -1,0 +1,23 @@
+<apex:page id="thePage" standardController="Task" sidebar="false">
+    <apex:sectionHeader title="{!HTMLENCODE($Label.Xera_Task)}" subtitle="{!Task.Subject}" />
+    <apex:form id="form1">
+        <apex:pageBlock id="theBlock" mode="detail">
+            <apex:pageBlockSection id="detailSec" title="{!HTMLENCODE($Label.Xera_Task_Information)}" columns="2">
+                <apex:outputField value="{!Task.OwnerId}" />
+                <apex:outputField value="{!Task.Status}" />
+                <apex:outputField value="{!Task.Subject}" />
+                <apex:outputField value="{!Task.WhatId}" />
+                <apex:outputField value="{!Task.ActivityDate}" />
+                <apex:outputField value="{!Task.Priority}" />
+                <apex:outputField value="{!Task.CallObject}" />
+            </apex:pageBlockSection>
+        
+            <apex:pageBlockButtons >
+                <apex:commandButton value="{!HTMLENCODE($Label.Xera_Play_Call_Recording)}" title="{!HTMLENCODE($Label.Xera_Play_Call_Recording)}" onClick="window.open('/apex/Xera_AudioPlayer?callId={!Task.CallObject}','player','menubar=0, resizable=0,dependent=0,status=0,width=450,height=130');"/>
+                <apex:commandButton action="{!edit}" value="{!HTMLENCODE($Label.Xera_Edit)}" title="{!HTMLENCODE($Label.Xera_Edit)}"/>
+                <apex:commandButton action="{!delete}" value="{!HTMLENCODE($Label.Xera_Delete)}" title="{!HTMLENCODE($Label.Xera_Delete)}"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GOLD_CALL_NOTES</fullName>
+    <active>true</active>
+    <description>Only certain roles can create Gold Call Notes.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Color__c, &quot;Gold&quot;),
+NOT(  $Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+OR (
+
+$UserRole.Name = &quot;Placeholder&quot;,
+$UserRole.Name = &quot;Oil and Gas Sales Manager&quot;,
+$UserRole.Name = &quot;Oil and Gas Business and Development&quot;
+))</errorConditionFormula>
+    <errorDisplayField>Color__c</errorDisplayField>
+    <errorMessage>Only certain roles can create Gold Call Notes.</errorMessage>
+</ValidationRule>

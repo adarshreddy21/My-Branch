@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Line_of_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Line of Business</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airborne Imaging</fullName>
+                <default>false</default>
+                <label>Airborne Imaging</label>
+            </value>
+            <value>
+                <fullName>Allied Product Sales</fullName>
+                <default>false</default>
+                <label>Allied Product Sales</label>
+            </value>
+            <value>
+                <fullName>Antifreeze Sales</fullName>
+                <default>false</default>
+                <label>Antifreeze Sales</label>
+            </value>
+            <value>
+                <fullName>Base Oil Sales</fullName>
+                <default>false</default>
+                <label>Base Oil Sales</label>
+            </value>
+            <value>
+                <fullName>Blended Oil Sales</fullName>
+                <default>false</default>
+                <label>Blended Oil Sales</label>
+            </value>
+            <value>
+                <fullName>Blended Oil Sales – Direct</fullName>
+                <default>false</default>
+                <label>Blended Oil Sales – Direct</label>
+            </value>
+            <value>
+                <fullName>Bulk Services</fullName>
+                <default>false</default>
+                <label>Bulk Services</label>
+            </value>
+            <value>
+                <fullName>Catalyst Services</fullName>
+                <default>false</default>
+                <label>Catalyst Services</label>
+            </value>
+            <value>
+                <fullName>Catalysts Treatment</fullName>
+                <default>false</default>
+                <label>Catalysts Treatment</label>
+            </value>
+            <value>
+                <fullName>Charge for Oil Revenue</fullName>
+                <default>false</default>
+                <label>Charge for Oil Revenue</label>
+            </value>
+            <value>
+                <fullName>Chemical Cleaning</fullName>
+                <default>false</default>
+                <label>Chemical Cleaning</label>
+            </value>
+            <value>
+                <fullName>CleanPack</fullName>
+                <default>false</default>
+                <label>CleanPack</label>
+            </value>
+            <value>
+                <fullName>Container Services</fullName>
+                <default>false</default>
+                <label>Container Services</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste Services</fullName>
+                <default>false</default>
+                <label>Containerized Waste Services</label>
+            </value>
+            <value>
+                <fullName>Contract Blending &amp; Packaging</fullName>
+                <default>false</default>
+                <label>Contract Blending &amp; Packaging</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services</fullName>
+                <default>false</default>
+                <label>Daylighting Services</label>
+            </value>
+            <value>
+                <fullName>Direct Ship</fullName>
+                <default>false</default>
+                <label>Direct Ship</label>
+            </value>
+            <value>
+                <fullName>Directional Boring</fullName>
+                <default>false</default>
+                <label>Directional Boring</label>
+            </value>
+            <value>
+                <fullName>Downhole Services</fullName>
+                <default>false</default>
+                <label>Downhole Services</label>
+            </value>
+            <value>
+                <fullName>Drill Camps and Catering</fullName>
+                <default>false</default>
+                <label>Drill Camps and Catering</label>
+            </value>
+            <value>
+                <fullName>Drill Support Services</fullName>
+                <default>false</default>
+                <label>Drill Support Services</label>
+            </value>
+            <value>
+                <fullName>Drum Services</fullName>
+                <default>false</default>
+                <label>Drum Services</label>
+            </value>
+            <value>
+                <fullName>Emergency Response Services</fullName>
+                <default>false</default>
+                <label>Emergency Response Services</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Filtration &amp;Treatment Services</fullName>
+                <default>false</default>
+                <label>Filtration &amp;Treatment Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare - RMW</fullName>
+                <default>false</default>
+                <label>Healthcare - RMW</label>
+            </value>
+            <value>
+                <fullName>Healthcare Mailback</fullName>
+                <default>false</default>
+                <label>Healthcare Mailback</label>
+            </value>
+            <value>
+                <fullName>High Hazardous Services</fullName>
+                <default>false</default>
+                <label>High Hazardous Services</label>
+            </value>
+            <value>
+                <fullName>Household Hazardous Waste</fullName>
+                <default>false</default>
+                <label>Household Hazardous Waste</label>
+            </value>
+            <value>
+                <fullName>Industrial Cleaning</fullName>
+                <default>false</default>
+                <label>Industrial Cleaning</label>
+            </value>
+            <value>
+                <fullName>Inplant Container Moves</fullName>
+                <default>false</default>
+                <label>Inplant Container Moves</label>
+            </value>
+            <value>
+                <fullName>InSite Material Processing</fullName>
+                <default>false</default>
+                <label>InSite Material Processing</label>
+            </value>
+            <value>
+                <fullName>Internal Only</fullName>
+                <default>false</default>
+                <label>Internal Only</label>
+            </value>
+            <value>
+                <fullName>Land Development</fullName>
+                <default>false</default>
+                <label>Land Development</label>
+            </value>
+            <value>
+                <fullName>Line Locating</fullName>
+                <default>false</default>
+                <label>Line Locating</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Lodging Manufacturing</fullName>
+                <default>false</default>
+                <label>Lodging Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Maintenance Repair Order</fullName>
+                <default>false</default>
+                <label>Maintenance Repair Order</label>
+            </value>
+            <value>
+                <fullName>Major Event</fullName>
+                <default>false</default>
+                <label>Major Event</label>
+            </value>
+            <value>
+                <fullName>Mulching Services</fullName>
+                <default>false</default>
+                <label>Mulching Services</label>
+            </value>
+            <value>
+                <fullName>Navigation Services</fullName>
+                <default>false</default>
+                <label>Navigation Services</label>
+            </value>
+            <value>
+                <fullName>Oil Field Transport</fullName>
+                <default>false</default>
+                <label>Oil Field Transport</label>
+            </value>
+            <value>
+                <fullName>Oil Field Transport / Production Services</fullName>
+                <default>false</default>
+                <label>Oil Field Transport / Production Services</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Recycling</fullName>
+                <default>false</default>
+                <label>Oil Filter Recycling</label>
+            </value>
+            <value>
+                <fullName>Oily Water and Antifreeze Serv</fullName>
+                <default>false</default>
+                <label>Oily Water and Antifreeze Serv</label>
+            </value>
+            <value>
+                <fullName>Parts Washing Service Aqueous</fullName>
+                <default>false</default>
+                <label>Parts Washing Service Aqueous</label>
+            </value>
+            <value>
+                <fullName>Parts Washing Service Solvent</fullName>
+                <default>false</default>
+                <label>Parts Washing Service Solvent</label>
+            </value>
+            <value>
+                <fullName>Pipeline Coatings</fullName>
+                <default>false</default>
+                <label>Pipeline Coatings</label>
+            </value>
+            <value>
+                <fullName>Production Services</fullName>
+                <default>false</default>
+                <label>Production Services</label>
+            </value>
+            <value>
+                <fullName>Refinery Fuel Services</fullName>
+                <default>false</default>
+                <label>Refinery Fuel Services</label>
+            </value>
+            <value>
+                <fullName>Refinery Oil &amp;Waste Processing</fullName>
+                <default>false</default>
+                <label>Refinery Oil &amp;Waste Processing</label>
+            </value>
+            <value>
+                <fullName>Remediation</fullName>
+                <default>false</default>
+                <label>Remediation</label>
+            </value>
+            <value>
+                <fullName>Retail Services</fullName>
+                <default>false</default>
+                <label>Retail Services</label>
+            </value>
+            <value>
+                <fullName>Sale of Material and Supplies</fullName>
+                <default>false</default>
+                <label>Sale of Material and Supplies</label>
+            </value>
+            <value>
+                <fullName>Shot Hole Drilling Services</fullName>
+                <default>false</default>
+                <label>Shot Hole Drilling Services</label>
+            </value>
+            <value>
+                <fullName>SK Branch Services</fullName>
+                <default>false</default>
+                <label>SK Branch Services</label>
+            </value>
+            <value>
+                <fullName>Solvent Recycling</fullName>
+                <default>false</default>
+                <label>Solvent Recycling</label>
+            </value>
+            <value>
+                <fullName>Specialty Pigging/Decoking</fullName>
+                <default>false</default>
+                <label>Specialty Pigging/Decoking</label>
+            </value>
+            <value>
+                <fullName>Specialty Refinery Products</fullName>
+                <default>false</default>
+                <label>Specialty Refinery Products</label>
+            </value>
+            <value>
+                <fullName>Surface Rentals</fullName>
+                <default>false</default>
+                <label>Surface Rentals</label>
+            </value>
+            <value>
+                <fullName>Surveying</fullName>
+                <default>false</default>
+                <label>Surveying</label>
+            </value>
+            <value>
+                <fullName>Tank Cleaning and Separations</fullName>
+                <default>false</default>
+                <label>Tank Cleaning and Separations</label>
+            </value>
+            <value>
+                <fullName>Terminal Sales (RFO)</fullName>
+                <default>false</default>
+                <label>Terminal Sales (RFO)</label>
+            </value>
+            <value>
+                <fullName>TPM - FS</fullName>
+                <default>false</default>
+                <label>TPM - FS</label>
+            </value>
+            <value>
+                <fullName>TPM - TS</fullName>
+                <default>false</default>
+                <label>TPM - TS</label>
+            </value>
+            <value>
+                <fullName>Transformer Services</fullName>
+                <default>false</default>
+                <label>Transformer Services</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Vac Services - Separators</fullName>
+                <default>false</default>
+                <label>Vac Services - Separators</label>
+            </value>
+            <value>
+                <fullName>Virgin Chemical Sales</fullName>
+                <default>false</default>
+                <label>Virgin Chemical Sales</label>
+            </value>
+            <value>
+                <fullName>Waste Projects</fullName>
+                <default>false</default>
+                <label>Waste Projects</label>
+            </value>
+            <value>
+                <fullName>Windshield Washer Fluid</fullName>
+                <default>false</default>
+                <label>Windshield Washer Fluid</label>
+            </value>
+            <value>
+                <fullName>UMO-Used Motor Oil</fullName>
+                <default>false</default>
+                <label>UMO-Used Motor Oil</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

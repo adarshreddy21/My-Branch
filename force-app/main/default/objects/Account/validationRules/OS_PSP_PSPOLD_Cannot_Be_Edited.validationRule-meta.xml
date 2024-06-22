@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OS_PSP_PSPOLD_Cannot_Be_Edited</fullName>
+    <active>true</active>
+    <description>If user is having Access_To_Update_OS_PSP_AND_PSP_OLD set assigned then this validation rule will not fire.</description>
+    <errorConditionFormula>AND(
+	NOT(AND(Inactivate_Reactivate_In_Progress__c = false,ISCHANGED(Inactivate_Reactivate_In_Progress__c))),
+	NOT($Permission.Access_To_Update_OS_PSP_AND_PSP_OLD),
+	OR(ischanged( Primary_Service_Provider_New__c ),ischanged( Primary_Business__c )),
+	not(isblank(WIN_ID__c))
+)</errorConditionFormula>
+    <errorMessage>Operating Segment and Primary Service Provider cannot be updated once a WIN ID is assigned. Please use the OCR process to request an OS or PSP change.</errorMessage>
+</ValidationRule>

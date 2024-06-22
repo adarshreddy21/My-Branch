@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Couleur</label>
+    <name>Color__c</name>
+    <picklistValues>
+        <masterLabel>Black - Closed Acct</masterLabel>
+        <translation>Noir</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue - Problem</masterLabel>
+        <translation>Bleu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Green - Status Quo</masterLabel>
+        <translation>Vert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange - Resolution</masterLabel>
+        <translation>Orange</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red - Lost Business</masterLabel>
+        <translation>Rouge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yellow - Change</masterLabel>
+        <translation>Jaune</translation>
+    </picklistValues>
+</CustomFieldTranslation>

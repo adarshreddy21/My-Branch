@@ -1,0 +1,13 @@
+<apex:page standardController="Account">    
+    <apex:pageBlock >
+        <apex:form >
+            <div style="width:30%">
+                <apex:pageBlockSection columns="3" showHeader="false">             
+                    <apex:commandbutton value="Corp Account Revenue " onclick="window.open('http://pbireports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fCorp+Account+Revenue&rs:Command=Render&corp_acct={!Account.dunbrdst__c}')" rendered="{!(Account.recordType.Name == 'Corporate')}"/> 
+                    <apex:commandbutton value="Corporate Account revenue YOY" onclick="window.open('http://pbireports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fCorp+Account+Revenue+YOY+rollup&rs:Command=Render&corp_acct={!Account.dunbrdst__c}')" rendered="{!(Account.recordType.Name == 'Corporate')}" />                                                                                                                                                                     
+                    <apex:commandbutton value="Corp Acct Summary by Gen and LOB Details" onclick="window.open('http://pbireports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fCorp+Acct+Summary+by+Gen+and+LOB+details&rs:Command=Render&corp_acct={!Account.dunbrdst__c}')" rendered="{!(Account.recordType.Name == 'Corporate')}" />
+                </apex:pageBlockSection>   
+            </div>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

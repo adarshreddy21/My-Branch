@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zold_My_Sales_Team_Zip_Codes__c</fullName>
+    <description>User filtering is the sales manager</description>
+    <externalId>false</externalId>
+    <formula>IF( Territory_ID__r.Sales_Manager__c = $User.Id , True, False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>zold_My Sales Team Zip Codes</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

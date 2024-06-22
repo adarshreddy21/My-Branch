@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSE_Technical_Services__c</fullName>
+    <description>TSE Technical Services</description>
+    <externalId>false</externalId>
+    <label>TSE Technical Services</label>
+    <summarizedField>Technical_Sales_Expert__c.Effective_dt__c</summarizedField>
+    <summaryFilterItems>
+        <field>Technical_Sales_Expert__c.Primary_Business__c</field>
+        <operation>equals</operation>
+        <value>Technical Services</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Technical_Sales_Expert__c.Account__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

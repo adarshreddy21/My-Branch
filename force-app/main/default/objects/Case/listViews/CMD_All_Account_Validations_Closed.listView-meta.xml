@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CMD_All_Account_Validations_Closed</fullName>
+    <booleanFilter>(1 or 3 or 4) AND 2</booleanFilter>
+    <columns>MDM_Approver__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Current_Account_Win_ID__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Denial_Reason__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <columns>Request_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>,Case.Account_Update_Validations,Case.New_Customer_Request</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>contains</operation>
+        <value>Close,Approved</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>,Case.Customer_Master_Unexpire_Account</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Customer_Master_Change_ShipTo_Gen_To_Customer</value>
+    </filters>
+    <label>CMD - All Account Validations Closed</label>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

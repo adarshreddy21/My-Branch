@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TM_FLAG__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag which determines if TM should be executed in the custom code or not thus setting the Territory and the Account Owner field on the Account record. Should be Checked if TM is required.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Flag which determines if TM should be executed in the custom code or not</inlineHelpText>
+    <label>TM_FLAG</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

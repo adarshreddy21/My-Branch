@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CLH_Website_Lead_is_not_Sales_Related__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check the box if the lead came in from the Clean Harbors website and it is not Sales Related.  It will get routed to a central team.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check the box if the lead came in from the Clean Harbors website and it is not Sales Related</inlineHelpText>
+    <label>CLH Website Lead is not Sales Related</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

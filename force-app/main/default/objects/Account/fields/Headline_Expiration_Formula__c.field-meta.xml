@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Headline_Expiration_Formula__c</fullName>
+    <description>This field is used to hide Account headline banner on account flexy page.</description>
+    <externalId>false</externalId>
+    <formula>OR(Headline_Expiration__c &lt;= Today(), ISBLANK(Account_Headline__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Headline Expiration Formula</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

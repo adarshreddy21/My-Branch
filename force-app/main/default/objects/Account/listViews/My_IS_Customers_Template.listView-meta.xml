@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_IS_Customers_Template</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10)</booleanFilter>
+    <columns>WIN_ID__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Street__c</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>City__c</columns>
+    <columns>Key_Account_Name__c</columns>
+    <columns>Class__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer</value>
+    </filters>
+    <filters>
+        <field>Expired__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>WIN_ID__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>Agricultural Production,Agricultural Svcs,Airports &amp; Aviation Svcs</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>Auto Maintenance,Building Materials (excl Lumber Mills)</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>Colleges &amp; Universities,&quot;Construction, Gen Contractors &amp; Builders&quot;</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>Cruise Lines,&quot;Hotels, Camps, Parks, Clubs &amp; Pers Svcs&quot;</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>Lumber Mills,Marine Services,Mechanical &amp; Equipment Service</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>,Mfg - Asphalt,Mfg - Electrical Equipment &amp; Computers</value>
+    </filters>
+    <filters>
+        <field>Class__c</field>
+        <operation>equals</operation>
+        <value>&quot;Mfg - Furn, Millwork, Cbnts &amp; Fxtrs&quot;,Mfg - Machine (incl Medical)</value>
+    </filters>
+    <label>Template: My IS Customers</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

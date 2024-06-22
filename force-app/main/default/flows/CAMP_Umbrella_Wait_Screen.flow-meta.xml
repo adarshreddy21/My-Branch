@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>CAMP: Umbrella Wait Screen {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CAMP: Umbrella Wait Screen</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Static_Wait_Screen</name>
+        <label>Static Wait Screen</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>UmbrellaLoadMessage</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Take cover {!$User.FirstName}, it’s raining data!&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Your CAMP counselors at the Clean Harbors CRM team are making sure all the right records are nice and dry under this corporate umbrella.&lt;/p&gt;&lt;p&gt;This process may take a second, but after loading these list views should provide you insight into all the accounts associated with this Corp / Key account.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Static_Wait_Screen</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

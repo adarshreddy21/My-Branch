@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Capture_RFO</fullName>
+    <active>true</active>
+    <label>Competitor Capture RFO</label>
+    <picklistValues>
+        <picklist>Attachment_Type__c</picklist>
+        <values>
+            <fullName>Government Bid Tabulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice %26 Product Data Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Data Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal %26 Product Data Sheet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Auto_Type__c</picklist>
+        <values>
+            <fullName>Anti-Freeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil %E2%80%93 Group II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil %E2%80%93 Group II%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil %E2%80%93 Group III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gear Oils</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Duty Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Fluid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passenger Car Engine Oil %28PCEO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission Oil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel__c</picklist>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor_Brand__c</picklist>
+        <values>
+            <fullName>*OTHER - Brand Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77 Lubricants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 Circle International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amalie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amsoil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ardeca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEX International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bel Ray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brad Penn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calumet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cam2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Castrol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chevron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citgo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conoco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENEOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eco-Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excel Paralubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factory Motor Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Of Brands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ford Motorcraft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gulf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Havoline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heritage-Crystal Cleen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holly Frontier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Houghton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idemitsu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kendall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kost USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liqui Moly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Martin Lubricants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meyerban</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mystik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexlube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omni Specialty Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peak Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pennzoil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petro Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petro-Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phillips 66</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinnacle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quaker State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Royal Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schaeffer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smitty%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 1 Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Global Petroleum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valvoline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertex Penthol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warren Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whitmore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wolfs Head</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Equipment_Options__c</picklist>
+        <values>
+            <fullName>Equipment Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease to Own</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oil_Filter_Price__c</picklist>
+        <values>
+            <fullName>Bin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oil_Type__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pay_or_Charge__c</picklist>
+        <values>
+            <fullName>CFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Description__c</picklist>
+        <values>
+            <fullName>0W-20 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0W-20 Full Synthetic SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0W-20 Full Synthetic dexos1 SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0W-20 Full Synthetic dexos1 SN%2FGF-5 GEN 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0W-20 High Mileage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0W-40 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%2F120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 High Mileage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 Synthetic Blend High Mileage SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-30 Synthetic Blend SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-40 Synthetic Blend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-50 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W-60 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W30 CJ-4%2FSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10W30 CK-4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15W-40 Natural Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15W40 CJ-4%2FSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15W40 CK-4%2FSN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200%2F240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20W-50 Synthetic Blend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 cSt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Full Synthetic SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Full Synthetic dexos 1 SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Full Synthetic dexos1 SN%2FGF-5 GEN 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 High Mileage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-20 Synthetic Blend SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Full Synthetic SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Full Synthetic dexos1 SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Full Synthetic dexos1 SN%2FGF-5 GEN 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 High Mileage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Synthetic Blend High Mileage SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Synthetic Blend SN%2FGF-5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-30 Synthetic Blend SP%2FGF-6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W-40 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5W40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 cSt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70%2F80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75W-140 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75W-90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75W-90 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 cSt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80W-140 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80W-90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85W-140</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85W-140 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Dex%2FMerc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Heavy Duty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Multi-Vehicle %28Full Synthetic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Multi-Vehicle %28Low Viscosity%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATF Type F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 100 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 150 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 22 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 22 LT Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 220 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 32 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 32 LT Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 46 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 46 LT Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW 68 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Purpose Lithium Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brake Fluid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Red Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EP 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EP 150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EP 220</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EP 320</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EP Gear Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD 50 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD 50W Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD Fully Formulated Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD HOAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD Moly Supreme Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD Nitrited%2FMolybdated OAT %28NOAT%2FNMOAT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD OAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD TO-4 10W</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD TO-4 30W</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD TO-4 50W</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heavy Chain Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hi Temp Lithium Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 220 Way Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 68 Way Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD Conventional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD HOAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD OAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light Chain Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Chain Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 624 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 625 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 626 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 627 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 628 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 629 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 630 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 632 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 634 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 636 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobil SCH 639 Full Synthetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Steering Fluid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Oil 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAE 10W SHD CF%2FSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tractor 303</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultra Calcium Sulfonate Grease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Universal Tractor Fluid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zinc-Free AW46 Hydraulic Oil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Packaging__c</picklist>
+        <values>
+            <fullName>Bulk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Storage_Type_Size__c</picklist>
+        <values>
+            <fullName>110 Gallon Cube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275 Gallon Bulk Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 Gallon Bulk Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>501 %2B Gallons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 Gallon Cube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote 102 %28Canadian%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote 330 %28US%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Storage_Type__c</picklist>
+        <values>
+            <fullName>10x1 Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12X1 Quart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 Gallon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2X2%2E5G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35 Gallon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4x1G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4x5 Quart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Gallon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 Gallon Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6x1 Quart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bag in Box 5G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bag in Box 6G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Owned Tanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank %26 Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tote %26 Pump</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>Bulk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

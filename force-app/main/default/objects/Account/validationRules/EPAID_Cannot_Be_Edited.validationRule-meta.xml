@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata"> 
+    <fullName>EPAID_Cannot_Be_Edited</fullName>
+    <active>true</active>
+    <description>Users cannot update EPAID field is WINID has been generated for the Account</description> 
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;System Administrator&quot;),
+NOT($Permission.Skip_Validations_for_Super_users_cp),
+NOT(ISBLANK(WIN_ID__c)),
+OR(
+     ISCHANGED(State_EPA_ID__c),
+AND(
+     ISCHANGED(CS_EPA_ID__c),
+     PRIORVALUE(CS_EPA_ID__c) &lt;&gt; CS_EPA_ID__c,
+     NOT(ISCHANGED(ShippingCountry))
+)
+),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c))
+)</errorConditionFormula>
+    <errorMessage>Please use the Update EPA ID at the top right of the account page. A guided EPA ID update will help to validate the entry.</errorMessage>
+</ValidationRule>

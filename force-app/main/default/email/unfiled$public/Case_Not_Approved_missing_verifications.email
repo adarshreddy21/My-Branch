@@ -1,0 +1,13 @@
+The following case has been rejected:
+
+Case Link:  {!Case.Link}
+
+Rejected By : {!Case.LastModifiedBy}
+
+CMD Group : ValidationRequests@cleanharbors.com
+
+Verified Customer Billing Address = {!Case.Verified_Customer_Billing_Checkbox__c}
+
+Verified Main Contact = {!Case.Verified_Main_Contact_Checkbox__c}
+
+*Please see case comments for details. 

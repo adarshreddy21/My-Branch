@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPG_Case_Cannot_Be_Closed</fullName>
+    <active>true</active>
+    <description>This Validation rule restrict the users to change the status to Closed, Closed-Approved and Closed-Deadfiled.</description>
+    <errorConditionFormula>AND(NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)),
+$RecordType.Name = &quot;CPG Request&quot;,
+ISCHANGED(Status),OR((Text(Status )= &quot;Closed&quot;),
+Text(Status) = &quot;Closed - Approved&quot;,
+Text(Status) = &quot;Closed - Deadfiled&quot;,
+Text(Status) = &quot;Closed - Not Active&quot;))</errorConditionFormula>
+    <errorMessage>You are not allowed to change the status to Closed or Closed - Approved or Closed - Deadfiled.</errorMessage>
+</ValidationRule>

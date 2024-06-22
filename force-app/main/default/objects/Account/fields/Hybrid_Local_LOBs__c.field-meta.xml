@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hybrid_Local_LOBs__c</fullName>
+    <externalId>false</externalId>
+    <label>Hybrid Local LOBs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Buying_Decision__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Allied</fullName>
+                <default>false</default>
+                <label>Allied</label>
+            </value>
+            <value>
+                <fullName>Antifreeze</fullName>
+                <default>false</default>
+                <label>Antifreeze</label>
+            </value>
+            <value>
+                <fullName>Blended Oil Sales – Direct</fullName>
+                <default>false</default>
+                <label>Blended Oil Sales – Direct</label>
+            </value>
+            <value>
+                <fullName>CleanPack</fullName>
+                <default>false</default>
+                <label>CleanPack</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste</fullName>
+                <default>false</default>
+                <label>Containerized Waste</label>
+            </value>
+            <value>
+                <fullName>Emergency Response</fullName>
+                <default>false</default>
+                <label>Emergency Response</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Recycling</fullName>
+                <default>false</default>
+                <label>Oil Filter Recycling</label>
+            </value>
+            <value>
+                <fullName>Oily Water</fullName>
+                <default>false</default>
+                <label>Oily Water</label>
+            </value>
+            <value>
+                <fullName>Parts Washer</fullName>
+                <default>false</default>
+                <label>Parts Washer</label>
+            </value>
+            <value>
+                <fullName>UMO</fullName>
+                <default>false</default>
+                <label>UMO</label>
+            </value>
+            <value>
+                <fullName>Vac Services</fullName>
+                <default>false</default>
+                <label>Vac Services</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Allied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Antifreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Blended Oil Sales – Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>CleanPack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Containerized Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Emergency Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Field Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Oil Filter Recycling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Oily Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Parts Washer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>UMO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hybrid</controllingFieldValue>
+            <valueName>Vac Services</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

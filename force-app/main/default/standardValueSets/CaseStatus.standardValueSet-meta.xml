@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Manager Approval</fullName>
+        <default>false</default>
+        <label>Awaiting Manager Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Details</fullName>
+        <default>false</default>
+        <label>Waiting for Details</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Researching</fullName>
+        <default>false</default>
+        <label>Researching</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Approved</fullName>
+        <default>false</default>
+        <label>Not Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>WIN System Updated</fullName>
+        <default>false</default>
+        <label>WIN System Updated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Completed</fullName>
+        <default>false</default>
+        <label>Closed - Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Rejected</fullName>
+        <default>false</default>
+        <label>Closed - Rejected</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Cancelled</fullName>
+        <default>false</default>
+        <label>Closed - Cancelled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Manager Approved</fullName>
+        <default>false</default>
+        <label>Manager Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Received</fullName>
+        <default>false</default>
+        <label>Received</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Complete</fullName>
+        <default>false</default>
+        <label>Sales Complete</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Action Required</fullName>
+        <default>false</default>
+        <label>Action Required</label> 
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unable to Complete</fullName>
+        <default>false</default>
+        <label>Unable to Complete</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Approved</fullName>
+        <default>false</default>
+        <label>Closed - Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Deadfiled</fullName>
+        <default>false</default>
+        <label>Closed - Deadfiled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Inactivated</fullName>
+        <default>false</default>
+        <label>Closed Inactivated</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Archived</fullName>
+        <default>false</default>
+        <label>Closed Archived</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Manager Rejected</fullName> 
+        <default>false</default>
+        <label>Manager Rejected</label>
+        <closed>false</closed>
+    </standardValue> 
+    <standardValue>
+        <fullName>Sales Ops Review</fullName>
+        <default>false</default>
+        <label>Sales Ops Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete - Partially Approved</fullName>
+        <default>false</default>
+        <label>Complete - Partially Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete - Partially Rejected</fullName>
+        <default>false</default>
+        <label>Complete - Partially Rejected</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete - Rejected</fullName>
+        <default>false</default>
+        <label>Complete - Rejected</label>
+        <closed>true</closed>
+    </standardValue>
+	<standardValue>
+        <fullName>Complete - Approved</fullName>
+        <default>false</default>
+        <label>Complete - Approved</label>
+        <closed>true</closed>
+    </standardValue>
+	<standardValue>
+        <fullName>Closed- winbacksync</fullName> 
+        <default>false</default>
+        <label>Closed- winbacksync</label>
+        <closed>true</closed>
+    </standardValue>	
+</StandardValueSet> 
+ 

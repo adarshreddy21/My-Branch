@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_OH_Cleveland_OH_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>TPM_Specialist__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>TPM_Opportunity__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,In Progress</value>
+    </filters>
+    <label>Queue : OH - Cleveland, OH</label>
+    <language>en_US</language>
+    <queue>Queue_OH_Cleveland_OH</queue>
+    <sharedTo>
+        <roleAndSubordinates>CHES_AM_US_OH</roleAndSubordinates>
+        <roleAndSubordinates>CHES_BM_US_OH</roleAndSubordinates>
+    </sharedTo>
+</ListView>

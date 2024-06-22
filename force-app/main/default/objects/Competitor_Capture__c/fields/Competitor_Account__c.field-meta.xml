@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Competitor associated with entry. If Competitor not in SF - create new competitor OR use ** OTHER MISC COMPETITOR ** &amp; list competitor &amp; address in comments section</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Competitor associated with entry. If Competitor not in SF - create new competitor OR use ** OTHER MISC COMPETITOR ** &amp; list competitor &amp; address in comments section</inlineHelpText>
+    <label>Competitor Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Competitor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Competitor Capture (Competitor Account)</relationshipLabel>
+    <relationshipName>Competitor_Capture1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

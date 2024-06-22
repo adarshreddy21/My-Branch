@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alternate_Address_Expired</fullName>
+    <active>true</active>
+    <description>Alternate Address cannot be blank.</description>
+    <errorConditionFormula>and(
+not(isblank(WIN_ID__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;System Administrator&quot;),
+NOT ($Profile.Name = &quot;Master Data Management&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+not(isblank(PRIORVALUE(Manifest_Address1__c ))),
+NOT(ISCHANGED(Active_ER_Contract__c)), 
+isblank( Manifest_Address1__c ),
+not(isblank(PRIORVALUE( Manifest_Post_Code__c ))),
+isblank(Manifest_Post_Code__c),
+Manifest_Expired__c = false)</errorConditionFormula>
+    <errorMessage>If trying to expire the Alternate Billing Address, please check the &apos;Billing Expired&apos; box.</errorMessage>
+</ValidationRule>

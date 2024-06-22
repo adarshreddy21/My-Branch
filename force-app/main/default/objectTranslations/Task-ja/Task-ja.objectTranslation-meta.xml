@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Call Center Activity</layout>
+        <sections>
+            <label></label>
+            <section>Call Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Related Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Note Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resolution Codes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collection Note Layout</layout>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resolution Codes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Service Tasks</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Validation Task Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IS GCC Helpline Task Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Key Account Implementation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Task Layout</layout>
+        <sections>
+            <label></label>
+            <section>Call Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Clone</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Defer</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>EditDescription</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdatePriority</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdateStatus</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Activity</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Call_Center_Activity</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Cisco_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer_Service_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer_Validation_Task</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>IS_GCC_Helpline_Task</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_AR_Disptes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_AR_NotResolved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Pull_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Validations_Invoice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Validations_PO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Validations_Primary</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Validations_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Call_Center_Activity_Validations_Service</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Description_must_be_75_Chars</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validation_Parts_Washer_Model</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>ciscocjs__Play_Recording</name>
+    </webLinks>
+</CustomObjectTranslation>

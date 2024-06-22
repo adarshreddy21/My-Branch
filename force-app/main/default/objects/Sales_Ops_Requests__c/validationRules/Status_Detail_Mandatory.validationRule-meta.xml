@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Detail_Mandatory</fullName>
+    <active>true</active>
+    <description>Status Detail is mandatory when status equal to Approved and Closed.</description>
+    <errorConditionFormula>And(OR(ISPICKVAL(Status__c,&apos;Approved&apos;),
+ISPICKVAL(Status__c,&apos;Closed&apos;)),
+isblank(text(Status_Detail__c)))</errorConditionFormula>
+    <errorDisplayField>Status_Detail__c</errorDisplayField>
+    <errorMessage>Please select the Status Detail.</errorMessage>
+</ValidationRule>

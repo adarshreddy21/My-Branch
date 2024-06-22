@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_must_be_75_Chars</fullName>
+    <active>true</active>
+    <description>Description field must be at least 75 characters</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+and (NOT ( Task_Type__c= &apos;Call_Center_Activity&apos;),
+((LEN( Description  )&lt;75)
+)))</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>Description must be at least 75 characters</errorMessage>
+</ValidationRule>

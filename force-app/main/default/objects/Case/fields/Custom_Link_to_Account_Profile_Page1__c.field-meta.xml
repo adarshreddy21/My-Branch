@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Link_to_Account_Profile_Page1__c</fullName>
+    <description>Live Link to the WIN Screen.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    CONTAINS($Api.Partner_Server_URL_390, &quot;chdev&quot;),
+    HYPERLINK(&apos;https://winwebdev.cleanharbors.com/webprofile/defaultwebprofile.aspx&apos;, &apos;Custom Link to Account Profile Page&apos;, &apos;_blank&apos;),
+    IF(
+        CONTAINS($Api.Partner_Server_URL_390, &quot;chfull&quot;),
+        HYPERLINK(&apos;https://winwebtest.cleanharbors.com/webprofile/defaultwebprofile.aspx&apos;, &apos;Custom Link to Account Profile Page&apos;, &apos;_blank&apos;),
+        HYPERLINK(&apos;https://winweb.cleanharbors.com/webprofile/defaultwebprofile.aspx&apos;, &apos;Custom Link to Account Profile Page&apos;, &apos;_blank&apos;)
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom Link to Account Profile Page</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Cannot_be_Assigned_for_Non_EOC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Text(PRIORVALUE(Priority) )&lt;&gt; &apos;Critical&apos; ,
+Text(Priority) = &apos;Critical&apos;,
+EOC_Case__c = false
+)</errorConditionFormula>
+    <errorMessage>A new case priority not marked as EOC, is not allowed to be marked Critical.</errorMessage>
+</ValidationRule>

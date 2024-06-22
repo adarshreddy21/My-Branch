@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Classe de compte</label>
+    <name>Account_Class__c</name>
+    <picklistValues>
+        <masterLabel>Base</masterLabel>
+        <translation>Base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross Sell</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect</masterLabel>
+        <translation>Client éventuel</translation>
+    </picklistValues>
+</CustomFieldTranslation>

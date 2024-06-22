@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_UGS_GRAND_JUNCTION_BPS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: UGS - GRAND JUNCTION-BPS</label>
+    <queue>Queue_UGS_GRAND_JUNCTION_BPS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+.THIS {
+}
+.THIS .recordLockedMsg{
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.THIS .lock-btn svg{
+    fill: #F8C33B;
+}
+.THIS .lock-btn{
+	margin-bottom: 6px;
+}

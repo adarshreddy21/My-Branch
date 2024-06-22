@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MGR_LVL_2_DESCR__c</fullName>
+    <externalId>false</externalId>
+    <label>MGR LVL 2 DESCR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>#N/A</fullName>
+                <default>false</default>
+                <label>#N/A</label>
+            </value>
+            <value>
+                <fullName>Asset Mgmt &amp; Supply Chain</fullName>
+                <default>false</default>
+                <label>Asset Mgmt &amp; Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Corp Dev &amp; Real Estate</fullName>
+                <default>false</default>
+                <label>Corp Dev &amp; Real Estate</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Corp Sales &amp; Corp Marketing</fullName>
+                <default>false</default>
+                <label>Corp Sales &amp; Corp Marketing</label>
+            </value>
+            <value>
+                <fullName>Dene Nation Industrial Service</fullName>
+                <default>false</default>
+                <label>Dene Nation Industrial Service</label>
+            </value>
+            <value>
+                <fullName>Discontinued Facilities</fullName>
+                <default>false</default>
+                <label>Discontinued Facilities</label>
+            </value>
+            <value>
+                <fullName>Distribution Centers</fullName>
+                <default>false</default>
+                <label>Distribution Centers</label>
+            </value>
+            <value>
+                <fullName>Environ Svcs Sales and Service</fullName>
+                <default>false</default>
+                <label>Environ Svcs Sales and Service</label>
+            </value>
+            <value>
+                <fullName>Facilities and Facility Sales</fullName>
+                <default>false</default>
+                <label>Facilities and Facility Sales</label>
+            </value>
+            <value>
+                <fullName>Indust Svcs Sales and Service</fullName>
+                <default>false</default>
+                <label>Indust Svcs Sales and Service</label>
+            </value>
+            <value>
+                <fullName>National Trans</fullName>
+                <default>false</default>
+                <label>National Trans</label>
+            </value>
+            <value>
+                <fullName>Pricing &amp; Proposals</fullName>
+                <default>false</default>
+                <label>Pricing &amp; Proposals</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen Oil</fullName>
+                <default>false</default>
+                <label>Safety-Kleen Oil</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen Supply</fullName>
+                <default>false</default>
+                <label>Safety-Kleen Supply</label>
+            </value>
+            <value>
+                <fullName>SK Bulk Products &amp; Services</fullName>
+                <default>false</default>
+                <label>SK Bulk Products &amp; Services</label>
+            </value>
+            <value>
+                <fullName>Trans Compliance</fullName>
+                <default>false</default>
+                <label>Trans Compliance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

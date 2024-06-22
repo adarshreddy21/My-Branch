@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_NY_Albany_NY_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : NY - Albany, NY</label>
+    <queue>Queue_NY_Albany_NY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

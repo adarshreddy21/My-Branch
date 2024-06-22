@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_MTU_San_Antonio_TFI_MS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: MTU - San Antonio-TFI-MS</label>
+    <queue>Queue_MTU_San_Antonio_TFI_MS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

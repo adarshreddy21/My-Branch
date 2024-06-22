@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCC_or_Profile_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>or(
+and(
+isblank( Profile__c)
+,isblank (Waste_Class_Code__c )
+)
+,and(
+not(isblank( Profile__c))
+,not(isblank (Waste_Class_Code__c ))
+)
+)</errorConditionFormula>
+    <errorMessage>Must enter either WCC or Profile, not both.</errorMessage>
+</ValidationRule>

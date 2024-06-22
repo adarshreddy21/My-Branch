@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Organization Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>College</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>College</label>
+            </value>
+            <value>
+                <fullName>College or University</fullName>
+                <default>false</default>
+                <label>College or University</label>
+            </value>
+            <value>
+                <fullName>Diversity Organization</fullName>
+                <default>false</default>
+                <label>Diversity Organization</label>
+            </value>
+            <value>
+                <fullName>Driver School</fullName>
+                <default>false</default>
+                <label>Driver School</label>
+            </value>
+            <value>
+                <fullName>Military Agency</fullName>
+                <default>false</default>
+                <label>Military Agency</label>
+            </value>
+            <value>
+                <fullName>Military Base</fullName>
+                <default>false</default>
+                <label>Military Base</label>
+            </value>
+            <value>
+                <fullName>National Organization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>National Organization</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Skilled Trades Technical/Professional</fullName>
+                <default>false</default>
+                <label>Skilled Trades Technical/Professional</label>
+            </value>
+            <value>
+                <fullName>State Workforce Agency</fullName>
+                <default>false</default>
+                <label>State Workforce Agency</label>
+            </value>
+            <value>
+                <fullName>Technical High School</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Technical High School</label>
+            </value>
+            <value>
+                <fullName>Trade High School</fullName>
+                <default>false</default>
+                <label>Trade High School</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Website</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

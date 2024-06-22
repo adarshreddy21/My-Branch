@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_passed_validation_and_sent_to_MDM_team</fullName>
+        <description>Account passed validation and sent to MDM team</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Account_Sent_for_Validation</template>
+    </alerts>
+    <alerts> 
+        <fullName>Beacon_Pre_validation_error_alert</fullName>
+        <description>Beacon Pre-validation error alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>gaokar.reeta1@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Account_Validation_Error</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Account_has_been_updated_after_validation</fullName>
+        <description>Email Account has been updated after validation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Validation_last_requested_by__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Account_Update_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Populate_SF</fullName>
+        <field>LastUpdate_CRM__c</field>
+        <formula>&quot;SF&quot;</formula>
+        <name>Populate SF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_WIN_ID_created_date</fullName>
+        <description>Update WIN ID created date</description>
+        <field>WIN_ID_created_date__c</field>
+        <formula>today()</formula>
+        <name>Update WIN ID created date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account Update Post Validation Notification</fullName>
+        <actions>
+            <name>Email_Account_has_been_updated_after_validation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify the user that account has been updated after a validation request.</description>
+        <formula>if(and(not(ISBLANK(WIN_ID__c)), LastModifiedBy.ProfileId &lt;&gt; &apos;00ej0000001AfEfAAK&apos;, datevalue(Validation_last_requested_date__c)&gt;TODAY()-3, LastModifiedById &lt;&gt; Validation_last_requested_by__c ),True,False)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Validation Error</fullName>
+        <actions>
+            <name>Beacon_Pre_validation_error_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Send user the Beacon pre-submission validation error if received when validating the Account.</description>
+        <formula>if(not(isblank(WIN_Compliance_Errors__c)),true,false)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Account Validation Success</fullName>
+        <actions>
+            <name>Account_passed_validation_and_sent_to_MDM_team</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+		<booleanFilter>(1 OR 3 ) AND (2 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Account.WIN_Validated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>notEqual</operation>
+            <value>Integration</value>
+        </criteriaItems>
+		<criteriaItems>
+            <field>Account.Win_Validate_New__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+		</criteriaItems>	
+		<criteriaItems>	
+            <field>User.ProfileId</field>	
+            <operation>notEqual</operation>	
+            <value>Salesforce API Only System Integrations</value>	
+        </criteriaItems>
+        <description>When account has successfully past validation send a notification to the user</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last System to Update the Account</fullName>
+        <actions>
+            <name>Populate_SF</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Displays where last update of account was made. eg Beacon/SF</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Account Validation Success</fullName>
+        <actions>
+            <name>Account_passed_validation_and_sent_to_MDM_team</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+	    <booleanFilter>1 AND 3 AND 4 AND (2 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>Account.New_Customer_validated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>notEqual</operation>
+            <value>Integration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.WIN_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Broker,Customer,Distributor</value>
+        </criteriaItems>
+		<criteriaItems>	
+            <field>User.ProfileId</field>	
+            <operation>notEqual</operation>	
+            <value>Salesforce API Only System Integrations</value>	
+        </criteriaItems>
+        <description>When account has successfully past validation send a notification to the user</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

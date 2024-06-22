@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>KPP_Budget_Group__c</name>
+    <picklistValues>
+        <masterLabel>Eco Power</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Eco Power Bulk and Packaged</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

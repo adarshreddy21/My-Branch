@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_Save_without_Type</fullName>
+    <active>true</active>
+    <description>Type is mandatory</description>
+    <errorConditionFormula>AND(NOT( ISPICKVAL(Status__c,&apos;Inactive&apos;)), ISBLANK(Text(Type)), Win_Validate_New__c = true)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Please select the Type</errorMessage>
+</ValidationRule> 

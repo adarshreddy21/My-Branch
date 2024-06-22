@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_tse</fullName>
+    <columns>NAME</columns>
+    <columns>Primary_Business__c</columns>
+    <columns>Account__c</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>Product__c</columns>
+    <columns>Technical_Sales_Expert_lookup__c</columns>
+    <columns>Effective_dt__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/28/2018 12:00 AM</value>
+    </filters>
+    <label>test tse</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Report_Sales_Order_History_Gen</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>true</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>true</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Report: Sales Order History (desktop only)</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://reports.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fOpen+Orders&amp;rc:Toolbar=False&amp;rs:Command=Render&amp;WINID={!Account.WIN_ID__c}</url>
+    <width>1200</width>
+</WebLink>

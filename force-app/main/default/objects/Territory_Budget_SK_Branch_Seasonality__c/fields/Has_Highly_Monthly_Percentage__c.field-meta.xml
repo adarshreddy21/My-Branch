@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Highly_Monthly_Percentage__c</fullName>
+    <externalId>false</externalId>
+    <formula>or(
+ p01_January__c &gt; 1/6
+,  p02_February__c &gt; 1/6
+,  p03_March__c &gt; 1/6
+,  p04_April__c &gt; 1/6
+,  p05_May__c &gt; 1/6
+,  p06_June__c &gt; 1/6
+,  p07_July__c  &gt; 1/6
+,  p08_August__c &gt; 1/6
+,  p09_September__c &gt; 1/6
+,  p10_October__c &gt; 1/6
+,  p11_November__c  &gt; 1/6
+,  p12_December__c &gt; 1/6
+,  p01_January__c &lt; 0
+,  p02_February__c &lt; 0
+,  p03_March__c &lt; 0
+,  p04_April__c &lt; 0
+,  p05_May__c &lt; 0
+,  p06_June__c &lt; 0
+,  p07_July__c &lt; 0
+,  p08_August__c &lt; 0
+,  p09_September__c &lt; 0
+,  p10_October__c &lt; 0
+,  p11_November__c &lt; 0
+,  p12_December__c &lt; 0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has Highly Monthly Percentage</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

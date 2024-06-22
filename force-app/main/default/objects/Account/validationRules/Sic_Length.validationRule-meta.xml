@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sic_Length</fullName>
+    <active>true</active>
+    <description>If SIC code is not blank then length should be less than or equal to 4 else NULL</description>
+    <errorConditionFormula>AND(
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+IF(not(ISBLANK(Sic)),Len(Sic) &lt;&gt; 4, NULL))</errorConditionFormula>
+    <errorDisplayField>Sic</errorDisplayField>
+    <errorMessage>If you choose to enter a value, it must be a valid SIC four-digit number. Enter the number only, no text.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Sales_Expert__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>TSE (Waste Projects - Remediation)</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>TSE (Waste Projects - Remediation) on Opportunity Product must be Sales Person / Technical Specialist Type</errorMessage>
+        <filterItems>
+            <field>User.Sales_Person_Type__c</field>
+            <operation>equals</operation>
+            <value>Technical Sales Expert, Technical Sales Manager, Sales Representative, Specialist</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunity_Product</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

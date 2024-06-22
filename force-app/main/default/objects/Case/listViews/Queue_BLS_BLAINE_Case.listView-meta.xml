@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_BLS_BLAINE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: BLS-BLAINE/CSO-CLOQUET</label>
+    <queue>Queue_BLS_BLAINE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

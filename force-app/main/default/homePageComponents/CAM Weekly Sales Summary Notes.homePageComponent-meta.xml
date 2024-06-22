@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Create_View_Edit_CAM_Weekly_Sales_Summary_Notes</links>
+    <links>View_My_Team_s_CAM_Weekly_Sales_Summary_Notes</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

@@ -1,0 +1,59 @@
+<apex:page standardController="Territory__c" recordSetVar="unused"  sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="L" id="table">
+<apex:column headerValue="Territory Code">
+<apex:inputField value="{!L.Name}"/>
+</apex:column>
+<apex:column headerValue="Territory Name">
+<apex:inputField value="{!L.Territory_Name__c}"/>
+</apex:column>
+<apex:column headerValue="Primary Branch">
+<apex:inputField value="{!L.Primary_Branch__c}"/>
+</apex:column>
+<apex:column headerValue="Region">
+<apex:inputField value="{!L.Region__c}"/>
+</apex:column>
+<apex:column headerValue="Area">
+<apex:inputField value="{!L.Area__c}"/>
+</apex:column>
+<apex:column headerValue="Open Territory">
+<apex:inputField value="{!L.Open_Territory__c}"/>
+</apex:column>
+<apex:column headerValue="Active Territory">
+<apex:inputField value="{!L.Active_Territory__c}"/>
+</apex:column>
+<apex:column headerValue="Territory Owner">
+<apex:inputField value="{!L.Territory_OwnerID__c}"/>
+</apex:column>
+<apex:column headerValue="Sales Manager">
+<apex:inputField value="{!L.Sales_Manager__c}"/>
+</apex:column>
+<apex:column headerValue="Sales Director">
+<apex:inputField value="{!L.Sales_Director__c}"/>
+</apex:column>
+<apex:column headerValue="Sales VP">
+<apex:inputField value="{!L.Sales_VP__c}"/>
+</apex:column>
+<apex:column headerValue="Sales SVP/EVP">
+<apex:inputField value="{!L.Sales_EVP__c}"/>
+</apex:column>
+<apex:column headerValue="Operations VP">
+<apex:inputField value="{!L.Operations_VP__c}"/>
+</apex:column>
+<apex:column headerValue="Primary Business">
+<apex:inputField value="{!L.Primary_Business__c}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

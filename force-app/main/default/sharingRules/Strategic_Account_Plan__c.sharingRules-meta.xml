@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_CASR_Team_plan_with_CHES_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record owned by CASR Team shared with CHES CAM</description>
+        <label>Share CASR Team plan with CHES CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CASR_Team_plan_with_SK_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share plan owned by CASR Team with SK CAM Team</description>
+        <label>Share CASR Team plan with SK CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CASR_plan_with_CASR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record sharing between CASR and CASR Team</description>
+        <label>Share CASR plan with CASR Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CHES_CAM_Team_plan_with_CASR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record sharing between CHES CAM and CASR Team</description>
+        <label>Share CHES CAM Team plan with CASR Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CHES_CAM_Team_plan_with_SK_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares Strategic Account Plan owned by CHES CAM Team with SK CAM team</description>
+        <label>Share CHES CAM Team plan with SK CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CHES_CAM_plan_with_CHES_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record sharing between CHES CAM and CHES CAM Team</description>
+        <label>Share CHES CAM plan with CHES CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_SK_CAM_Team_plan_with_CASR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record sharing between SK CAM Team and CASR Team</description>
+        <label>Share SK CAM Team plan with CASR Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_KAS_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_SK_CAM_Team_plan_with_CHES_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares Strategic Account Plan owned by SK CAM Team with CHES CAM team</description>
+        <label>Share SK CAM Team plan with CHES CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>CHES_CAM_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_SK_CAM_plan_with_SK_CAM_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Strategic Account Plan record sharing between SK CAM and SK CAM  Team</description>
+        <label>Share SK CAM plan with SK CAM Team</label>
+        <sharedTo>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SK_BPS_SVP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

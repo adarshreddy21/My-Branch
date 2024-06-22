@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_CH_Sales_Cases</fullName>
+    <columns>CASES.STATUS</columns>
+    <columns>Effective_Date__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Case_Owner_Primary_Business__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Sales_Manager_Approved__c</columns>
+    <columns>Sales_Manager_ID__c</columns>
+    <columns>Sales_Director_Approved__c</columns>
+    <columns>Sales_Director_ID__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>,Closed - Completed,Closed - Rejected,Closed - Cancelled,WIN System Updated</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>notEqual</operation>
+        <value>Billing,Service,AQMD</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_Primary_Business__c</field>
+        <operation>notEqual</operation>
+        <value>Emerald Services,Performance Plus Products,Safety-Kleen,Thermo Fluids</value>
+    </filters>
+    <label>Open CH Sales Cases</label>
+    <language>en_US</language>
+</ListView>

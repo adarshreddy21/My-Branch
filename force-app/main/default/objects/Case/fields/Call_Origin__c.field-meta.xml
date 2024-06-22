@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Origin__c</fullName>
+    <description>Visible on phone by 800 number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Visible on phone by 800 number</inlineHelpText>
+    <label>Call Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Amarillo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amarillo</label>
+            </value>
+            <value>
+                <fullName>Auburn</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auburn</label>
+            </value>
+            <value>
+                <fullName>Avon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Avon</label>
+            </value>
+            <value>
+                <fullName>Baltimore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Baltimore</label>
+            </value>
+            <value>
+                <fullName>Barre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Barre</label>
+            </value>
+            <value>
+                <fullName>Baton Rouge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Baton Rouge</label>
+            </value>
+            <value>
+                <fullName>Bismarck</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bismarck</label>
+            </value>
+            <value>
+                <fullName>Blaine</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blaine</label>
+            </value>
+            <value>
+                <fullName>Boynton Beach</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Boynton Beach</label>
+            </value>
+            <value>
+                <fullName>Branch</fullName>
+                <default>false</default>
+                <label>Branch</label>
+            </value>
+            <value>
+                <fullName>Cape Girardeau</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cape Girardeau</label>
+            </value>
+            <value>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Champaign</label>
+            </value>
+            <value>
+                <fullName>Chandler</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chandler</label>
+            </value>
+            <value>
+                <fullName>Chat</fullName>
+                <default>false</default>
+                <label>Chat</label>
+            </value>
+            <value>
+                <fullName>Chat Email</fullName>
+                <default>false</default>
+                <label>Chat Email</label>
+            </value>
+            <value>
+                <fullName>Chattanooga</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chattanooga</label>
+            </value>
+            <value>
+                <fullName>Clackamas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clackamas</label>
+            </value>
+            <value>
+                <fullName>Closed Branch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed Branch</label>
+            </value>
+            <value>
+                <fullName>Cohoes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cohoes</label>
+            </value>
+            <value>
+                <fullName>Columbia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Columbia</label>
+            </value>
+            <value>
+                <fullName>Corpus Christi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Corpus Christi</label>
+            </value>
+            <value>
+                <fullName>Customer Portal</fullName>
+                <default>false</default>
+                <label>Customer Portal</label>
+            </value>
+            <value>
+                <fullName>Davenport</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Davenport</label>
+            </value>
+            <value>
+                <fullName>Des Moines</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Des Moines</label>
+            </value>
+            <value>
+                <fullName>DIY Line</fullName>
+                <default>false</default>
+                <label>DIY Line</label>
+            </value>
+            <value>
+                <fullName>Dolomite</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dolomite</label>
+            </value>
+            <value>
+                <fullName>Dolton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dolton</label>
+            </value>
+            <value>
+                <fullName>Eagan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Eagan</label>
+            </value>
+            <value>
+                <fullName>Ecommerce</fullName>
+                <default>false</default>
+                <label>Ecommerce</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Chat</fullName>
+                <default>false</default>
+                <label>Ecommerce Chat</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Email</fullName>
+                <default>false</default>
+                <label>Ecommerce Email</label>
+            </value>
+            <value>
+                <fullName>El Paso</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>El Paso</label>
+            </value>
+            <value>
+                <fullName>EOC Line</fullName>
+                <default>false</default>
+                <label>EOC Line</label>
+            </value>
+            <value>
+                <fullName>Evansville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Evansville</label>
+            </value>
+            <value>
+                <fullName>Fairless Hills</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fairless Hills</label>
+            </value>
+            <value>
+                <fullName>Fargo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fargo</label>
+            </value>
+            <value>
+                <fullName>Fort Worth</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fort Worth</label>
+            </value>
+            <value>
+                <fullName>Fresno</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fresno</label>
+            </value>
+            <value>
+                <fullName>Garden City</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Garden City</label>
+            </value>
+            <value>
+                <fullName>Grand Isle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Grand Isle</label>
+            </value>
+            <value>
+                <fullName>Greenwood</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Greenwood</label>
+            </value>
+            <value>
+                <fullName>Greer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Greer</label>
+            </value>
+            <value>
+                <fullName>Huntsville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Huntsville</label>
+            </value>
+            <value>
+                <fullName>Independence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Independence</label>
+            </value>
+            <value>
+                <fullName>Irving</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Irving</label>
+            </value>
+            <value>
+                <fullName>Jackson</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jackson</label>
+            </value>
+            <value>
+                <fullName>Kenner (New Orleans)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kenner</label>
+            </value>
+            <value>
+                <fullName>Knoxville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Knoxville</label>
+            </value>
+            <value>
+                <fullName>Lackawanna</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lackawanna</label>
+            </value>
+            <value>
+                <fullName>Lexington, KY.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lexington, KY.</label>
+            </value>
+            <value>
+                <fullName>Lexington, SC.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lexington, SC.</label>
+            </value>
+            <value>
+                <fullName>Little Rock</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Little Rock</label>
+            </value>
+            <value>
+                <fullName>Longview</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Longview</label>
+            </value>
+            <value>
+                <fullName>Louisville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Louisville</label>
+            </value>
+            <value>
+                <fullName>Macon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Macon</label>
+            </value>
+            <value>
+                <fullName>Manassas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manassas</label>
+            </value>
+            <value>
+                <fullName>Marlborough</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marlborough</label>
+            </value>
+            <value>
+                <fullName>McAllen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>McAllen / Laredo</label>
+            </value>
+            <value>
+                <fullName>Medley</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medley</label>
+            </value>
+            <value>
+                <fullName>Midland / Abilene</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Midland / Abilene</label>
+            </value>
+            <value>
+                <fullName>Millington</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Millington</label>
+            </value>
+            <value>
+                <fullName>Missouri City</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Missouri City</label>
+            </value>
+            <value>
+                <fullName>Morrow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Morrow</label>
+            </value>
+            <value>
+                <fullName>Nashville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nashville</label>
+            </value>
+            <value>
+                <fullName>N_Charleston</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>N Charleston</label>
+            </value>
+            <value>
+                <fullName>New Kingstown</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New Kingstown</label>
+            </value>
+            <value>
+                <fullName>Norcross</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Norcross</label>
+            </value>
+            <value>
+                <fullName>Oklahoma City</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oklahoma City</label>
+            </value>
+            <value>
+                <fullName>Omaha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Omaha</label>
+            </value>
+            <value>
+                <fullName>Orange Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Orange Park</label>
+            </value>
+            <value>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+                <label>Outbound</label>
+            </value>
+            <value>
+                <fullName>Pineville</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pineville</label>
+            </value>
+            <value>
+                <fullName>Piney Flats</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Piney Flats</label>
+            </value>
+            <value>
+                <fullName>Poca</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Poca</label>
+            </value>
+            <value>
+                <fullName>Public Toll Free</fullName>
+                <default>false</default>
+                <label>Public Toll Free</label>
+            </value>
+            <value>
+                <fullName>Richardson Public</fullName>
+                <default>false</default>
+                <label>Richardson Public</label>
+            </value>
+            <value>
+                <fullName>Sacramento</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sacramento</label>
+            </value>
+            <value>
+                <fullName>Salisbury</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Salisbury</label>
+            </value>
+            <value>
+                <fullName>San Antonio</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Antonio</label>
+            </value>
+            <value>
+                <fullName>Sanford</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sanford</label>
+            </value>
+            <value>
+                <fullName>Sioux Falls</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sioux Falls</label>
+            </value>
+            <value>
+                <fullName>Springfield, MO.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Springfield, MO.</label>
+            </value>
+            <value>
+                <fullName>Syracuse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Syracuse</label>
+            </value>
+            <value>
+                <fullName>Tallahassee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tallahassee</label>
+            </value>
+            <value>
+                <fullName>Tampa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tampa</label>
+            </value>
+            <value>
+                <fullName>Tulsa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tulsa</label>
+            </value>
+            <value>
+                <fullName>Vincetown</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vincetown</label>
+            </value>
+            <value>
+                <fullName>Waco</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waco</label>
+            </value>
+            <value>
+                <fullName>West Chester</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>West Chester</label>
+            </value>
+            <value>
+                <fullName>Whistler</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Whistler</label>
+            </value>
+            <value>
+                <fullName>Wichita</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wichita</label>
+            </value>
+            <value>
+                <fullName>Wilkes Barre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wilkes Barre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

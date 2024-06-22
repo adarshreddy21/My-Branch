@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allied_Product_Type</fullName>
+    <active>true</active>
+    <description>Require Allied Product type for allied product opportunities</description>
+    <errorConditionFormula>AND(
+Product2.LOB_Code__c = 14,
+NOT(DATEVALUE(CreatedDate) &lt; DATEVALUE(&quot;2017-08-05&quot;)),
+isblank(text(Allied_Product_Type__c )),
+
+OR
+( 
+text(LastModifiedBy.Primary_Business__c) = &apos;Safety-Kleen&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;Murphys Oil&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;Emerald Services&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;Performance Plus Products&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;RS Used Oil&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;Thermo Fluids&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;CYN Environmental&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;CYN Oil&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;H2O&apos;,
+text(LastModifiedBy.Primary_Business__c) = &apos;BPS&apos;
+)
+
+)</errorConditionFormula>
+    <errorDisplayField>Allied_Product_Type__c</errorDisplayField>
+    <errorMessage>Please enter an Allied Product Type</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Requests_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Pricing_Region__c</columns>
+    <columns>Pricing_Type_of_Request__c</columns>
+    <columns>Pricing_Frequency__c</columns>
+    <columns>Pricing_Has_Restrictions__c</columns>
+    <columns>Pricing_Request_Count__c</columns>
+    <columns>Pricing_Transportation__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Case_Submitted_by__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Price_Request_TS</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Pending Approval</value>
+    </filters>
+    <label>Queue: Price Requests Pending</label>
+    <language>en_US</language>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

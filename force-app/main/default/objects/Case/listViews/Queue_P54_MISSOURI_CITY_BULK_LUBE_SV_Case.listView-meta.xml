@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_P54_MISSOURI_CITY_BULK_LUBE_SV_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: P54- MISSOURI CITY - BULK LUBE SV</label>
+    <queue>Queue_P54_MISSOURI_CITY_BULK_LUBE_SV</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

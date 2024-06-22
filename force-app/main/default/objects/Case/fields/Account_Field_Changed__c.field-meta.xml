@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Field_Changed__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Field Changed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business_Type__c</fullName>
+                <default>false</default>
+                <label>Business Type</label>
+            </value>
+            <value>
+                <fullName>CS_EPA_ID__c</fullName>
+                <default>false</default>
+                <label>EPA ID</label>
+            </value>
+            <value>
+                <fullName>State_EPA_ID__c</fullName>
+                <default>false</default>
+                <label>State EPA ID</label>
+            </value>
+            <value>
+                <fullName>GENREG__c</fullName>
+                <default>false</default>
+                <label>GenReg Id</label>
+            </value>
+            <value>
+                <fullName>Industry_Segment__c</fullName>
+                <default>false</default>
+                <label>Vertical</label>
+            </value>
+            <value>
+                <fullName>Class__c</fullName>
+                <default>false</default>
+                <label>Class</label>
+            </value>
+            <value>
+                <fullName>Chain__c</fullName>
+                <default>false</default>
+                <label>Chain Code Name</label>
+            </value>
+            <value>
+                <fullName>Name</fullName>
+                <default>false</default>
+                <label>Account Name</label>
+            </value>
+            <value>
+                <fullName>Sic</fullName>
+                <default>false</default>
+                <label>SIC Code</label>
+            </value>
+            <value>
+                <fullName>Shipping Address</fullName>
+                <default>false</default>
+                <label>Shipping Address</label>
+            </value>
+            <value>
+                <fullName>Billing Address</fullName>
+                <default>false</default>
+                <label>Billing Address</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_Map_Non_HPC_Accounts</fullName>
+    <active>true</active>
+    <description>HPC child account cannot be mapped to parent non HPC account</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(ParentId)),
+NOT(ISPICKVAL(Parent.Primary_Business__c, &quot;HPC Industrial&quot;)),
+ISPICKVAL(Primary_Business__c , &quot;HPC Industrial&quot;),
+RecordType.DeveloperName = &quot;Customer_Location&quot;,
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT(ISCHANGED(Active_ER_Contract__c))
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>HPC child account cannot be mapped to parent non HPC account</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_FY_Current_Spend__c</fullName>
+    <externalId>false</externalId>
+    <label>Total FY Current Spend</label>
+    <summarizedField>Strategy_Plan_Forecast_Competitor_Info__c.FY_Current_Spend__c</summarizedField>
+    <summaryForeignKey>Strategy_Plan_Forecast_Competitor_Info__c.Strategic_Account_Plan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

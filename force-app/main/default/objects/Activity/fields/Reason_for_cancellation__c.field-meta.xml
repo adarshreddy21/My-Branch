@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_cancellation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Required when Call type is Pull/Cancel</inlineHelpText>
+    <label>Reason for cancellation</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Better Competitor Price</fullName>
+                <default>false</default>
+                <label>Better Competitor Price</label>
+            </value>
+            <value>
+                <fullName>Change in Ownership</fullName>
+                <default>false</default>
+                <label>Change in Ownership</label>
+            </value>
+            <value>
+                <fullName>Customer Cost Reduction</fullName>
+                <default>false</default>
+                <label>Customer Cost Reduction</label>
+            </value>
+            <value>
+                <fullName>Delinquent Account</fullName>
+                <default>false</default>
+                <label>Delinquent Account</label>
+            </value>
+            <value>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+                <label>Out of Business</label>
+            </value>
+            <value>
+                <fullName>Poor Service</fullName>
+                <default>false</default>
+                <label>Poor Service</label>
+            </value>
+            <value>
+                <fullName>Reduce Cleaning Needs</fullName>
+                <default>false</default>
+                <label>Reduce Cleaning Needs</label>
+            </value>
+            <value>
+                <fullName>Repeat Call</fullName>
+                <default>false</default>
+                <label>Repeat Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

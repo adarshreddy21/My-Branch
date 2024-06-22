@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CannotChangeParentAndChildCaseStatus</fullName>
+    <active>true</active>
+    <description>This validation rule restricts the edits of Status field on Parent and Child Cases.</description>
+    <errorConditionFormula>AND(NOT(ISNEW()),
+NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)),
+OR($RecordType.DeveloperName = &quot;Account_Update_Validations&quot;,$RecordType.DeveloperName =&apos;Field_Change_Request&apos;),
+NOT(ISCHANGED(Is_Submitted_for_Approval__c)),
+ISCHANGED(Status))</errorConditionFormula>
+    <errorMessage>You are not allowed to change the status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProposedSpecialistCantBeAnAccountOwner</fullName>
+    <active>true</active>
+    <description>This validation fires when Proposed specialist user is same as the Associated Account owner.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName =&apos;TSE_Add_Case&apos;,
+Proposed_Specialist__r.Id = Account.OwnerId)</errorConditionFormula>
+    <errorMessage>The Requestor cannot be the same as the Account Owner.</errorMessage>
+</ValidationRule>

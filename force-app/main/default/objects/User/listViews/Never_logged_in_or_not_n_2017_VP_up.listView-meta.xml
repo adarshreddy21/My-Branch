@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Never_logged_in_or_not_n_2017_VP_up</fullName>
+    <booleanFilter>(1 or 2) AND 3  and 4 and 5 and 6 and 7</booleanFilter>
+    <columns>Primary_Business__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>Sales_Person_Type__c</columns>
+    <columns>CORE.USERS.TITLE</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>MANAGER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.LAST_LOGIN</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_LOGIN</field>
+        <operation>lessThan</operation>
+        <value>1/1/2017 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>notContain</operation>
+        <value>chatter</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Sales_Person_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Sales Placeholder</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>lessThan</operation>
+        <value>1/1/2017 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.TITLE</field>
+        <operation>contains</operation>
+        <value>EVP,SVP,Cheif,VP,President</value>
+    </filters>
+    <label>Never logged in or not n 2017 (VP up)</label>
+    <language>en_US</language>
+</ListView>

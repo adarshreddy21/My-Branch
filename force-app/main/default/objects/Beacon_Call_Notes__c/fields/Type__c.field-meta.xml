@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>List of Beacon Types</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CHOICE Support - OPEN</fullName>
+                <default>false</default>
+                <label>CHOICE Support - OPEN</label>
+            </value>
+            <value>
+                <fullName>Initial Contact</fullName>
+                <default>false</default>
+                <label>Initial Contact</label>
+            </value>
+            <value>
+                <fullName>Note</fullName>
+                <default>false</default>
+                <label>Note</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Review</fullName>
+                <default>false</default>
+                <label>Review</label>
+            </value>
+            <value>
+                <fullName>Review - Pricing</fullName>
+                <default>false</default>
+                <label>Review - Pricing</label>
+            </value>
+            <value>
+                <fullName>RSOM Proactive Call</fullName>
+                <default>false</default>
+                <label>RSOM Proactive Call</label>
+            </value>
+            <value>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+                <label>Telemarketing</label>
+            </value>
+            <value>
+                <fullName>Update</fullName>
+                <default>true</default>
+                <label>Update</label>
+            </value>
+            <value>
+                <fullName>Visit</fullName>
+                <default>false</default>
+                <label>Visit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

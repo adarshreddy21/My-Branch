@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Service_Provider_New__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SK ENV</fullName>
+                <default>false</default>
+                <label>SK ENV</label>
+            </value>
+            <value>
+                <fullName>SK BPS</fullName>
+                <default>false</default>
+                <label>SK BPS</label>
+            </value>
+            <value>
+                <fullName>SK KPP</fullName>
+                <default>false</default>
+                <label>SK KPP</label>
+            </value>
+            <value>
+                <fullName>Clean Harbors ENV</fullName>
+                <default>false</default>
+                <label>Clean Harbors ENV</label>
+            </value>
+            <value>
+                <fullName>CHES Oil and Gas</fullName>
+                <default>false</default>
+                <label>CHES Oil and Gas</label>
+            </value>
+            <value>
+                <fullName>CHES Industrial</fullName>
+                <default>false</default>
+                <label>CHES Industrial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

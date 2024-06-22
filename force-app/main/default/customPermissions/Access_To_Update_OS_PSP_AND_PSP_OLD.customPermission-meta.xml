@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is created for giving the edit access for OS, PSP, and PSP Old</description>
+    <isLicensed>false</isLicensed>
+    <label>Access_To_Update_OS_PSP_AND_PSP_OLD</label> 
+</CustomPermission>

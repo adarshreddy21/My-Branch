@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Created_Through_New_Account_Setup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag indicates if this account has been created through New Account Setup Approach</description>
+    <externalId>false</externalId>
+    <label>Is Created Through New Account Setup</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

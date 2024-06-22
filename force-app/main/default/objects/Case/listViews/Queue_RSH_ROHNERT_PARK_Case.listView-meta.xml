@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_RSH_ROHNERT_PARK_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: RSH-ROHNERT PARK</label>
+    <queue>Queue_RSH_ROHNERT_PARK</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insert_by_equals_owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>Owner.FederationIdentifier =  Insert_By__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insert by equals owner</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

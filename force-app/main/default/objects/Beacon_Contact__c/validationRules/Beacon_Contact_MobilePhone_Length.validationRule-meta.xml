@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beacon_Contact_MobilePhone_Length</fullName>
+    <active>true</active>
+    <description>Phone length</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;), 
+    NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;Sales Operations&quot;, 
+not(isblank(Mobile__c)),
+or((LEN(Mobile__c)&gt;14), 
+(LEN(Mobile__c)&lt;10)
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Mobile__c</errorDisplayField>
+    <errorMessage>Mobile number length is not valid.</errorMessage>
+</ValidationRule>

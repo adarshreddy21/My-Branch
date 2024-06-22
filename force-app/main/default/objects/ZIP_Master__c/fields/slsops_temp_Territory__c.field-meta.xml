@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>slsops_temp_Territory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>field used to map territories for territory master, used and then discarded</description>
+    <externalId>false</externalId>
+    <label>slsops temp Territory</label>
+    <referenceTo>Territory__c</referenceTo>
+    <relationshipLabel>ZIP Master</relationshipLabel>
+    <relationshipName>ZIP_Master</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

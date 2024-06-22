@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_ESV_EVANSVILLE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: ESV-EVANSVILLE</label>
+    <queue>Queue_ESV_EVANSVILLE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

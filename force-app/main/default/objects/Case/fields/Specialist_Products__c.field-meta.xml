@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialist_Products__c</fullName>
+    <externalId>false</externalId>
+    <label>Specialist Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Specialist_Business__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Line_of_Business</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Airborne Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Directional Boring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Downhole Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Drill Support Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Line Locating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Mulching Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Navigation Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Shot Hole Drilling Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Surface Rentals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas</controllingFieldValue>
+            <valueName>Surveying</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>Emergency Response Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Services</controllingFieldValue>
+            <valueName>Field Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Chemical Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Epic Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Finfoam Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>High Volume Hydroblasting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Industrial Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Inplant Container Moves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>InSite Material Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Pipeline Coatings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Production Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Specialty Pigging/Decoking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Tank Cleaning and Separations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Industrial Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>LDAR Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Labor Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Specialty Mechanical Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Vacuum Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Abrasive Blasting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Hydroblasting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Ultrasonic Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Unmanned Aerial Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Vapor Control Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Well Site Remediation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Automotive Labor Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>IS Vacuum Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Oil Field Well Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Industrial Turnaround Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Material Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Pressure Hydrotesting Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Pigging Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>High Vol Hydroblasting &gt;1K HP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Non Hazardous Deepwell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Oil Field Turnaround/Tank Cl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Oil Field Vac and Fluid Supp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>Daylighting Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Allied Product Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Antifreeze Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Blended Oil Sales - Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Containerized Waste Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Oil Filter Recycling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Oily Water and Antifreeze Serv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Parts Washing Service Aqueous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Parts Washing Service Solvent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Used Motor Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Vac Services - Separators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk Products and Services</controllingFieldValue>
+            <controllingFieldValue>Safety-Kleen Environmental</controllingFieldValue>
+            <valueName>Windshield Washer Fluid Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Bulk Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Catalysts Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>CleanPack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Direct Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Drum Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Filtration &amp;Treatment Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>High Hazardous Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Household Hazardous Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Remediation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Waste Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>Blended Oil Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>Base Oil Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>Contract Blending &amp; Packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>Specialty Refinery Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kleen Performance Products</controllingFieldValue>
+            <valueName>Performance Plus Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare Services</controllingFieldValue>
+            <valueName>Healthcare Mailback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare Services</controllingFieldValue>
+            <valueName>Healthcare - RMW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lodging Services</controllingFieldValue>
+            <valueName>Drill Camps and Catering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lodging Services</controllingFieldValue>
+            <valueName>Lodging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lodging Services</controllingFieldValue>
+            <valueName>Lodging Manufacturing</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

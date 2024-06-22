@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Description__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Auto_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0W-20 Full Synthetic</fullName>
+                <default>false</default>
+                <label>0W-20 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>0W-20 Full Synthetic dexos1 SN/GF-5</fullName>
+                <default>false</default>
+                <label>0W-20 Full Synthetic dexos1 SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>0W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</fullName>
+                <default>false</default>
+                <label>0W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</label>
+            </value>
+            <value>
+                <fullName>0W-20 High Mileage</fullName>
+                <default>false</default>
+                <label>0W-20 High Mileage</label>
+            </value>
+            <value>
+                <fullName>0W-40 Full Synthetic</fullName>
+                <default>false</default>
+                <label>0W-40 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>100/120</fullName>
+                <default>false</default>
+                <label>100/120</label>
+            </value>
+            <value>
+                <fullName>10W30 CJ-4/SN</fullName>
+                <default>false</default>
+                <label>10W30 CJ-4/SN</label>
+            </value>
+            <value>
+                <fullName>10W30 CK-4</fullName>
+                <default>false</default>
+                <label>10W30 CK-4</label>
+            </value>
+            <value>
+                <fullName>10W-30 Conventional</fullName>
+                <default>false</default>
+                <label>10W-30 Conventional</label>
+            </value>
+            <value>
+                <fullName>10W-30 High Mileage</fullName>
+                <default>false</default>
+                <label>10W-30 High Mileage</label>
+            </value>
+            <value>
+                <fullName>10W-30 Synthetic Blend SN/GF-5</fullName>
+                <default>false</default>
+                <label>10W-30 Synthetic Blend SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>10W-40 Synthetic Blend</fullName>
+                <default>false</default>
+                <label>10W-40 Synthetic Blend</label>
+            </value>
+            <value>
+                <fullName>10W-50 Full Synthetic</fullName>
+                <default>false</default>
+                <label>10W-50 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>10W-60 Full Synthetic</fullName>
+                <default>false</default>
+                <label>10W-60 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>15W40 CJ-4/SN</fullName>
+                <default>false</default>
+                <label>15W40 CJ-4/SN</label>
+            </value>
+            <value>
+                <fullName>15W40 CK-4/SN</fullName>
+                <default>false</default>
+                <label>15W40 CK-4/SN</label>
+            </value>
+            <value>
+                <fullName>15W-40 Natural Gas</fullName>
+                <default>false</default>
+                <label>15W-40 Natural Gas</label>
+            </value>
+            <value>
+                <fullName>200/240</fullName>
+                <default>false</default>
+                <label>200/240</label>
+            </value>
+            <value>
+                <fullName>20W-50 Synthetic Blend</fullName>
+                <default>false</default>
+                <label>20W-50 Synthetic Blend</label>
+            </value>
+            <value>
+                <fullName>32 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>32 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>46 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>46 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>4 cSt</fullName>
+                <default>false</default>
+                <label>4 cSt</label>
+            </value>
+            <value>
+                <fullName>5W-20 Conventional</fullName>
+                <default>false</default>
+                <label>5W-20 Conventional</label>
+            </value>
+            <value>
+                <fullName>5W-20 Full Synthetic</fullName>
+                <default>false</default>
+                <label>5W-20 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>5W-20 Full Synthetic dexos 1 SN/GF-5</fullName>
+                <default>false</default>
+                <label>5W-20 Full Synthetic dexos 1 SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>5W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</fullName>
+                <default>false</default>
+                <label>5W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</label>
+            </value>
+            <value>
+                <fullName>5W-20 High Mileage</fullName>
+                <default>false</default>
+                <label>5W-20 High Mileage</label>
+            </value>
+            <value>
+                <fullName>5W-20 Synthetic Blend SN/GF-5</fullName>
+                <default>false</default>
+                <label>5W-20 Synthetic Blend SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>5W-30 Conventional</fullName>
+                <default>false</default>
+                <label>5W-30 Conventional</label>
+            </value>
+            <value>
+                <fullName>5W-30 Full Synthetic</fullName>
+                <default>false</default>
+                <label>5W-30 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>5W-30 Full Synthetic dexos1 SN/GF-5</fullName>
+                <default>false</default>
+                <label>5W-30 Full Synthetic dexos1 SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>5W-30 Full Synthetic dexos1 SN/GF-5 GEN 2</fullName>
+                <default>false</default>
+                <label>5W-30 Full Synthetic dexos1 SN/GF-5 GEN 2</label>
+            </value>
+            <value>
+                <fullName>5W-30 High Mileage</fullName>
+                <default>false</default>
+                <label>5W-30 High Mileage</label>
+            </value>
+            <value>
+                <fullName>5W-30 Synthetic Blend SN/GF-5</fullName>
+                <default>false</default>
+                <label>5W-30 Synthetic Blend SN/GF-5</label>
+            </value>
+            <value>
+                <fullName>5W40</fullName>
+                <default>false</default>
+                <label>5W40</label>
+            </value>
+            <value>
+                <fullName>5W-40 Full Synthetic</fullName>
+                <default>false</default>
+                <label>5W-40 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>68 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>68 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>6 cSt</fullName>
+                <default>false</default>
+                <label>6 cSt</label>
+            </value>
+            <value>
+                <fullName>70/80</fullName>
+                <default>false</default>
+                <label>70/80</label>
+            </value>
+            <value>
+                <fullName>75W-140 Full Synthetic</fullName>
+                <default>false</default>
+                <label>75W-140 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>75W-90</fullName>
+                <default>false</default>
+                <label>75W-90</label>
+            </value>
+            <value>
+                <fullName>75W-90 Full Synthetic</fullName>
+                <default>false</default>
+                <label>75W-90 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>80W-140 Full Synthetic</fullName>
+                <default>false</default>
+                <label>80W-140 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>80W-90</fullName>
+                <default>false</default>
+                <label>80W-90</label>
+            </value>
+            <value>
+                <fullName>85W-140</fullName>
+                <default>false</default>
+                <label>85W-140</label>
+            </value>
+            <value>
+                <fullName>85W-140 Full Synthetic</fullName>
+                <default>false</default>
+                <label>85W-140 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>8 cSt</fullName>
+                <default>false</default>
+                <label>8 cSt</label>
+            </value>
+            <value>
+                <fullName>All Purpose Lithium Grease</fullName>
+                <default>false</default>
+                <label>All Purpose Lithium Grease</label>
+            </value>
+            <value>
+                <fullName>ATF Dex/Merc</fullName>
+                <default>false</default>
+                <label>ATF Dex/Merc</label>
+            </value>
+            <value>
+                <fullName>ATF Heavy Duty</fullName>
+                <default>false</default>
+                <label>ATF Heavy Duty</label>
+            </value>
+            <value>
+                <fullName>ATF Multi-Vehicle (Full Synthetic)</fullName>
+                <default>false</default>
+                <label>ATF Multi-Vehicle (Full Synthetic)</label>
+            </value>
+            <value>
+                <fullName>ATF Multi-Vehicle (Low Viscosity)</fullName>
+                <default>false</default>
+                <label>ATF Multi-Vehicle (Low Viscosity)</label>
+            </value>
+            <value>
+                <fullName>ATF Type F</fullName>
+                <default>false</default>
+                <label>ATF Type F</label>
+            </value>
+            <value>
+                <fullName>AW 100 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 100 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 150 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 150 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 220 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 220 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 22 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 22 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 22 LT Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 22 LT Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 32 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 32 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 32 LT Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 32 LT Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 46 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 46 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 46 LT Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 46 LT Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>AW 68 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>AW 68 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>Brake Fluid</fullName>
+                <default>false</default>
+                <label>Brake Fluid</label>
+            </value>
+            <value>
+                <fullName>Construction Red Grease</fullName>
+                <default>false</default>
+                <label>Construction Red Grease</label>
+            </value>
+            <value>
+                <fullName>EP 100</fullName>
+                <default>false</default>
+                <label>EP 100</label>
+            </value>
+            <value>
+                <fullName>EP 150</fullName>
+                <default>false</default>
+                <label>EP 150</label>
+            </value>
+            <value>
+                <fullName>EP 220</fullName>
+                <default>false</default>
+                <label>EP 220</label>
+            </value>
+            <value>
+                <fullName>EP 320</fullName>
+                <default>false</default>
+                <label>EP 320</label>
+            </value>
+            <value>
+                <fullName>EP Gear Oil</fullName>
+                <default>false</default>
+                <label>EP Gear Oil</label>
+            </value>
+            <value>
+                <fullName>HD 50</fullName>
+                <default>false</default>
+                <label>HD 50</label>
+            </value>
+            <value>
+                <fullName>HD 50 Full Synthetic</fullName>
+                <default>false</default>
+                <label>HD 50 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>HD 50W Full Synthetic</fullName>
+                <default>false</default>
+                <label>HD 50W Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>HD Fully Formulated Conventional</fullName>
+                <default>false</default>
+                <label>HD Fully Formulated Conventional</label>
+            </value>
+            <value>
+                <fullName>HD Moly Supreme Grease</fullName>
+                <default>false</default>
+                <label>HD Moly Supreme Grease</label>
+            </value>
+            <value>
+                <fullName>HD Nitrited/Molybdated OAT (NOAT/NMOAT)</fullName>
+                <default>false</default>
+                <label>HD Nitrited/Molybdated OAT (NOAT/NMOAT)</label>
+            </value>
+            <value>
+                <fullName>HD TO-4 10W</fullName>
+                <default>false</default>
+                <label>HD TO-4 10W</label>
+            </value>
+            <value>
+                <fullName>HD TO-4 30W</fullName>
+                <default>false</default>
+                <label>HD TO-4 30W</label>
+            </value>
+            <value>
+                <fullName>HD TO-4 50W</fullName>
+                <default>false</default>
+                <label>HD TO-4 50W</label>
+            </value>
+            <value>
+                <fullName>Heavy Chain Oil</fullName>
+                <default>false</default>
+                <label>Heavy Chain Oil</label>
+            </value>
+            <value>
+                <fullName>Hi Temp Lithium Grease</fullName>
+                <default>false</default>
+                <label>Hi Temp Lithium Grease</label>
+            </value>
+            <value>
+                <fullName>ISO 220 Way Oil</fullName>
+                <default>false</default>
+                <label>ISO 220 Way Oil</label>
+            </value>
+            <value>
+                <fullName>ISO 68 Way Oil</fullName>
+                <default>false</default>
+                <label>ISO 68 Way Oil</label>
+            </value>
+            <value>
+                <fullName>LD Conventional</fullName>
+                <default>false</default>
+                <label>LD Conventional</label>
+            </value>
+            <value>
+                <fullName>LD HOAT</fullName>
+                <default>false</default>
+                <label>LD HOAT</label>
+            </value>
+            <value>
+                <fullName>LD OAT</fullName>
+                <default>false</default>
+                <label>LD OAT</label>
+            </value>
+            <value>
+                <fullName>Light Chain Oil</fullName>
+                <default>false</default>
+                <label>Light Chain Oil</label>
+            </value>
+            <value>
+                <fullName>Medium Chain Oil</fullName>
+                <default>false</default>
+                <label>Medium Chain Oil</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 624 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 624 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 625 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 625 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 626 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 626 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 627 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 627 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 628 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 628 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 629 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 629 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 630 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 630 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 632 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 632 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 634 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 634 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 636 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 636 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Mobil SCH 639 Full Synthetic</fullName>
+                <default>false</default>
+                <label>Mobil SCH 639 Full Synthetic</label>
+            </value>
+            <value>
+                <fullName>Power Steering Fluid</fullName>
+                <default>false</default>
+                <label>Power Steering Fluid</label>
+            </value>
+            <value>
+                <fullName>Process Oil 22</fullName>
+                <default>false</default>
+                <label>Process Oil 22</label>
+            </value>
+            <value>
+                <fullName>SAE 10W SHD CF/SL</fullName>
+                <default>false</default>
+                <label>SAE 10W SHD CF/SL</label>
+            </value>
+            <value>
+                <fullName>Tractor 303</fullName>
+                <default>false</default>
+                <label>Tractor 303</label>
+            </value>
+            <value>
+                <fullName>Ultra Calcium Sulfonate Grease</fullName>
+                <default>false</default>
+                <label>Ultra Calcium Sulfonate Grease</label>
+            </value>
+            <value>
+                <fullName>Universal Tractor Fluid</fullName>
+                <default>false</default>
+                <label>Universal Tractor Fluid</label>
+            </value>
+            <value>
+                <fullName>Zinc-Free AW46 Hydraulic Oil</fullName>
+                <default>false</default>
+                <label>Zinc-Free AW46 Hydraulic Oil</label>
+            </value>
+            <value>
+                <fullName>HD HOAT</fullName>
+                <default>false</default>
+                <label>HD HOAT</label>
+            </value>
+            <value>
+                <fullName>HD OAT</fullName>
+                <default>false</default>
+                <label>HD OAT</label>
+            </value>
+            <value>
+                <fullName>5W-20 Synthetic Blend SP/GF-6</fullName>
+                <default>false</default>
+                <label>5W-20 Synthetic Blend SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>5W-30 Synthetic Blend SP/GF-6</fullName>
+                <default>false</default>
+                <label>5W-30 Synthetic Blend SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>10W-30 Synthetic Blend SP/GF-6</fullName>
+                <default>false</default>
+                <label>10W-30 Synthetic Blend SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>5W-30 Synthetic Blend High Mileage SP/GF-6</fullName>
+                <default>false</default>
+                <label>5W-30 Synthetic Blend High Mileage SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>10W-30 Synthetic Blend High Mileage SP/GF-6</fullName>
+                <default>false</default>
+                <label>10W-30 Synthetic Blend High Mileage SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>0W-20 Full Synthetic SP/GF-6</fullName>
+                <default>false</default>
+                <label>0W-20 Full Synthetic SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>5W-20 Full Synthetic SP/GF-6</fullName>
+                <default>false</default>
+                <label>5W-20 Full Synthetic SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>5W-30 Full Synthetic SP/GF-6</fullName>
+                <default>false</default>
+                <label>5W-30 Full Synthetic SP/GF-6</label>
+            </value>
+            <value>
+                <fullName>Allison TES Transmission Fluid</fullName>
+                <default>false</default>
+                <label>Allison TES Transmission Fluid</label>
+            </value>
+            <value>
+                <fullName>Eaton 386 Transmission Fluid</fullName>
+                <default>false</default>
+                <label>Eaton 386 Transmission Fluid</label>
+            </value>
+            <value>
+                <fullName>Aluminum Extreme Pressure 0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminum Extreme Pressure 0</label>
+            </value>
+            <value>
+                <fullName>Aluminum Extreme Pressure 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminum Extreme Pressure 1</label>
+            </value>
+            <value>
+                <fullName>Aluminum Extreme Pressure 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aluminum Extreme Pressure 2</label>
+            </value>
+            <value>
+                <fullName>Calcium Sulfonate 100-1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Calcium Sulfonate 100-1</label>
+            </value>
+            <value>
+                <fullName>Calcium Sulfonate 100-2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Calcium Sulfonate 100-2</label>
+            </value>
+            <value>
+                <fullName>Calcium Sulfonate 460-2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Calcium Sulfonate 460-2</label>
+            </value>
+            <value>
+                <fullName>Lithium Complex  0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithium Complex  0</label>
+            </value>
+            <value>
+                <fullName>Lithium Complex 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithium Complex 1</label>
+            </value>
+            <value>
+                <fullName>Lithium Extreme Pressure 0</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithium Extreme Pressure 0</label>
+            </value>
+            <value>
+                <fullName>Lithium Extreme Pressure 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithium Extreme Pressure 1</label>
+            </value>
+            <value>
+                <fullName>Lithium Extreme Pressure 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithium Extreme Pressure 2</label>
+            </value>
+            <value>
+                <fullName>Moly 3 Extreme Pressure 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Moly 3 Extreme Pressure 1</label>
+            </value>
+            <value>
+                <fullName>Moly 3 Extreme Pressure 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Moly 3 Extreme Pressure 2</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group III</controllingFieldValue>
+            <valueName>4 cSt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group III</controllingFieldValue>
+            <valueName>6 cSt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group III</controllingFieldValue>
+            <valueName>8 cSt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-20 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-20 Full Synthetic dexos1 SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-20 High Mileage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-40 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-30 Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-30 High Mileage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-30 Synthetic Blend SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-40 Synthetic Blend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-50 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-60 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>20W-50 Synthetic Blend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Full Synthetic dexos 1 SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Full Synthetic dexos1 SN/GF-5 GEN 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 High Mileage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Synthetic Blend SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Full Synthetic dexos1 SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Full Synthetic dexos1 SN/GF-5 GEN 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 High Mileage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Synthetic Blend SN/GF-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-40 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>Brake Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>Power Steering Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Synthetic Blend SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Synthetic Blend SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-30 Synthetic Blend SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Synthetic Blend High Mileage SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>10W-30 Synthetic Blend High Mileage SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>0W-20 Full Synthetic SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-20 Full Synthetic SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Passenger Car Engine Oil (PCEO)</controllingFieldValue>
+            <valueName>5W-30 Full Synthetic SP/GF-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>All Purpose Lithium Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>Construction Red Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>HD Moly Supreme Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>Hi Temp Lithium Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>Ultra Calcium Sulfonate Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>75W-140 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>75W-90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>75W-90 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>80W-140 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>80W-90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>85W-140</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>85W-140 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>EP 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>EP 150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>EP 220</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>EP 320</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>EP Gear Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 624 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 625 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 626 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 627 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 628 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 629 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 630 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 632 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 634 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 636 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oils</controllingFieldValue>
+            <valueName>Mobil SCH 639 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>ATF Dex/Merc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>ATF Heavy Duty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>ATF Multi-Vehicle (Full Synthetic)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>ATF Multi-Vehicle (Low Viscosity)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>ATF Type F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>HD 50W Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>HD TO-4 10W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>HD TO-4 30W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>HD TO-4 50W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>Allison TES Transmission Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transmission Oil</controllingFieldValue>
+            <valueName>Eaton 386 Transmission Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>10W30 CJ-4/SN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>10W30 CK-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>15W40 CJ-4/SN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>15W40 CK-4/SN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>15W-40 Natural Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>5W40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>HD 50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>HD 50 Full Synthetic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty Oil</controllingFieldValue>
+            <valueName>SAE 10W SHD CF/SL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>32 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>46 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>68 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 100 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 150 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 220 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 22 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 22 LT Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 32 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 32 LT Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 46 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 46 LT Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>AW 68 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Heavy Chain Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>ISO 220 Way Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>ISO 68 Way Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Light Chain Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Medium Chain Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Process Oil 22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Tractor 303</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Universal Tractor Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Fluid</controllingFieldValue>
+            <valueName>Zinc-Free AW46 Hydraulic Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>HD Fully Formulated Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>HD Nitrited/Molybdated OAT (NOAT/NMOAT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>LD Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>LD HOAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>LD OAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>HD HOAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anti-Freeze</controllingFieldValue>
+            <valueName>HD OAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group II</controllingFieldValue>
+            <controllingFieldValue>Base Oil – Group II+</controllingFieldValue>
+            <valueName>100/120</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group II</controllingFieldValue>
+            <controllingFieldValue>Base Oil – Group II+</controllingFieldValue>
+            <valueName>200/240</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil – Group II</controllingFieldValue>
+            <valueName>70/80</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

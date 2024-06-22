@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is to identify leads on existing accounts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to enter an account you know already exists.  It will use the existing account information to update the Business Type, Rank, and company name fields.</inlineHelpText>
+    <label>Existing Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Branch, Chain, Competitor, Corporate, Growth Budget</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads</relationshipLabel>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Job_site_evaluation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates the job requires an onsite evaluation that will be charged</description>
+    <externalId>false</externalId>
+    <label>TPM Job site evaluation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_ERS_PW_Repair_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: ERS - PW Repair</label>
+    <queue>Queue_ERS_PW_Repair</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

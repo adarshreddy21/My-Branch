@@ -1,0 +1,18 @@
+<apex:page standardController="Event"
+     action="{!
+        IF(
+            ( $Profile.Name != 'System Administrator' && $Profile.Name != 'Sales Operations' && $Profile.Name != 'Master Data Management' && $Profile.Name != 'Integration' && $Profile.Name != 'Salesforce API Only System Integrations'),   
+           NULL,
+           URLFOR(
+                $Action.Event.Delete,
+                Event.Id,
+                [retURL='/007'],
+                TRUE
+                 )
+                 )}" >
+    <apex:pageMessage severity="ERROR"
+        strength="3"
+        title="Event Delete"
+        summary="You are not allowed to Delete Event records.">
+    </apex:pageMessage>
+</apex:page>

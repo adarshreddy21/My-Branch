@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is read only and populated by lead conversion as reference only.  The Branch is specified on the line of business when adding a product to the opportunity.</inlineHelpText>
+    <label>Branch</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

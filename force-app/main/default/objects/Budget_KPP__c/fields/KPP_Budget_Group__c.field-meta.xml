@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPP_Budget_Group__c</fullName>
+    <description>Eco Power &amp; Non Eco Power Bulk and Packaged</description>
+    <externalId>false</externalId>
+    <label>KPP Budget Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Eco Power</fullName>
+                <default>false</default>
+                <label>Eco Power</label>
+            </value>
+            <value>
+                <fullName>Non Eco Power Bulk and Packaged</fullName>
+                <default>false</default>
+                <label>Non Eco Power Bulk and Packaged</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

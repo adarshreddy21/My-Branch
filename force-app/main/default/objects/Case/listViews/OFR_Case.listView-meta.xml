@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFR_Case</fullName>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Current_Account_Win_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_Corporate_Address__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Queue</filterScope>
+    <label>OFR</label>
+    <language>en_US</language>
+    <queue>OFR</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

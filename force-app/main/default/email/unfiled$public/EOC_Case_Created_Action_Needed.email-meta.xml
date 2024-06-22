@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send Email to CMD Team that EOC case is created.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>EOC Case Created Action Needed</name>
+    <style>none</style>
+    <subject>Critical Action Needed: EOC Request Case Creation</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

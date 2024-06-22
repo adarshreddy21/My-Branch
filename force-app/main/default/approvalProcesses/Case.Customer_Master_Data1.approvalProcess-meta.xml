@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>SalesOps_SalesSupport_AreaVP</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Account</field>
+        <field>Account_Type__c</field>
+        <field>Owner</field>
+        <field>RecordType</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Case_Status_Closed_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>MDM_Case_Queue</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>1 or 2</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordType</field>
+                <operation>equals</operation>
+                <value>New Customer Request</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordType</field>
+                <operation>equals</operation>
+                <value>Field Change Request</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>RejectRecord</ifCriteriaNotMet>
+        <label>MDM Approval</label>
+        <name>MDM_Approval</name>
+    </approvalStep>
+    <description>Approval process for Customer Master data cases</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>New Customer Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>Field Change Request</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Case_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_the_IS_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Case_Staus_Closed_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Inactivate_Account_Case_Request_Denied</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_the_IS_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Case_Status_Pending_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Flag_Is_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Customer Master Data 1</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>5</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

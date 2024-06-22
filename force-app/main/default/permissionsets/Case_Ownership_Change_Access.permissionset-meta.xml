@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Case_Ownership_Change_Access</name>
+    </customPermissions>
+    <description>This is created for giving the access to Customer PO Case Ownership change to specified users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Case_Ownership_Change_ Access</label>
+</PermissionSet>    

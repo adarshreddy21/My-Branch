@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Area_Top_25_KPP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates top 205 is a KPP Account</description>
+    <externalId>false</externalId>
+    <label>2017 Market Area Top 25 KPP</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

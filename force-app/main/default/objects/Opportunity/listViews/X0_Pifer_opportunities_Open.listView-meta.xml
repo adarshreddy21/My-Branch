@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X0_Pifer_opportunities_Open</fullName>
+    <booleanFilter>(1 OR 2) AND (3 OR 4)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Total_Product_Gallons__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Days_Until_Close__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Next_Action__c</columns>
+    <columns>Pipeline_Amount__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Push_Counter__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>OPPORTUNITY.CLOSED</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>contains</operation>
+        <value>Pifer</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>contains</operation>
+        <value>Pifer</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>7 - Closed Won,8 - Closed Lost</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>0 - Pifer opportunities - Open</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

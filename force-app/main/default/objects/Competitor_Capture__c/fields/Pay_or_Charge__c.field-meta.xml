@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pay_or_Charge__c</fullName>
+    <description>If customer is Pay, Charge or No Charge for UMO</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If customer is Pay, Charge or No Charge for UMO</inlineHelpText>
+    <label>Price Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PFO</fullName>
+                <default>false</default>
+                <label>PFO</label>
+            </value>
+            <value>
+                <fullName>CFO</fullName>
+                <default>false</default>
+                <label>CFO</label>
+            </value>
+            <value>
+                <fullName>No Charge</fullName>
+                <default>false</default>
+                <label>No Charge</label>
+            </value>
+            <value>
+                <fullName>Charge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Charge</label>
+            </value>
+            <value>
+                <fullName>Pay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

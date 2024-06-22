@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_CSS_COLUMBIA_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: CSS-COLUMBIA</label>
+    <queue>Queue_CSS_COLUMBIA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

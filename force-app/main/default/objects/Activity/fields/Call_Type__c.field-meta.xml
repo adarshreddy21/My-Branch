@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service-ETA Inquiry</fullName>
+                <default>false</default>
+                <label>Service-ETA Inquiry</label>
+            </value>
+            <value>
+                <fullName>Service Request</fullName>
+                <default>false</default>
+                <label>Service Request</label>
+            </value>
+            <value>
+                <fullName>Service Request-OFR</fullName>
+                <default>false</default>
+                <label>Service Request-OFR</label>
+            </value>
+            <value>
+                <fullName>Add PO</fullName>
+                <default>false</default>
+                <label>Add/Change PO</label>
+            </value>
+            <value>
+                <fullName>Add Line Item</fullName>
+                <default>false</default>
+                <label>Add Svc/Prod to Exist Order</label>
+            </value>
+            <value>
+                <fullName>AR Dispute/Credit Hold-Not Resolved</fullName>
+                <default>false</default>
+                <label>AR Dispute/Credit Hold-Not Resolved</label>
+            </value>
+            <value>
+                <fullName>AR</fullName>
+                <default>false</default>
+                <label>AR Dispute/Credit Hold-Resolved</label>
+            </value>
+            <value>
+                <fullName>Change Address</fullName>
+                <default>false</default>
+                <label>Customer Maintenance</label>
+            </value>
+            <value>
+                <fullName>Customer Portal Troubleshooting</fullName>
+                <default>false</default>
+                <label>Customer Portal Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Document Request</fullName>
+                <default>false</default>
+                <label>Document Request</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Support</fullName>
+                <default>false</default>
+                <label>Ecommerce Support</label>
+            </value>
+            <value>
+                <fullName>Equipment Repair-COMs</fullName>
+                <default>false</default>
+                <label>Equipment Repair-COMs</label>
+            </value>
+            <value>
+                <fullName>Equipment Repair-EAC</fullName>
+                <default>false</default>
+                <label>Equipment Repair-EAC</label>
+            </value>
+            <value>
+                <fullName>Pay Invoice/Balance Inquiry</fullName>
+                <default>false</default>
+                <label>Pay Invoice/Balance Inquiry</label>
+            </value>
+            <value>
+                <fullName>Public Comment</fullName>
+                <default>false</default>
+                <label>Public Comment</label>
+            </value>
+            <value>
+                <fullName>Pull/Cancel Service</fullName>
+                <default>false</default>
+                <label>Pull/Cancel Service</label>
+            </value>
+            <value>
+                <fullName>Recovery Fee/ e-Manifest Fee-Not Resolved</fullName>
+                <default>false</default>
+                <label>Recovery Fee/ e-Manifest Fee-Not Resolved</label>
+            </value>
+            <value>
+                <fullName>Recovery Fee/ e-Manifest Fee</fullName>
+                <default>false</default>
+                <label>Recovery Fee/ e-Manifest Fee-Resolved</label>
+            </value>
+            <value>
+                <fullName>Add Service (Existing Customer)</fullName>
+                <default>false</default>
+                <label>Sales-Add Service (Existing Customer)</label>
+            </value>
+            <value>
+                <fullName>Sales-Add Service (Existing Customer) No OPP</fullName>
+                <default>false</default>
+                <label>Sales-Add Service (Existing Customer) No OPP</label>
+            </value>
+            <value>
+                <fullName>Add Service (New Customer)</fullName>
+                <default>false</default>
+                <label>Sales-Add Service (New Customer)</label>
+            </value>
+            <value>
+                <fullName>Drop Call/Wrong Num/Dead Air</fullName>
+                <default>false</default>
+                <label>Drop Call/Wrong Num/Dead Air</label>
+            </value>
+            <value>
+                <fullName>Murphys Town Collection</fullName>
+                <default>false</default>
+                <label>Murphys Town Collection</label>
+            </value>
+			<value>	
+                <fullName>HWP</fullName>	
+                <default>false</default>	
+                <label>HWP</label>	
+            </value>
+			<value>	
+                <fullName>Internal Support</fullName>	
+                <default>false</default>	
+                <label>Internal Support</label>	
+            </value>
+			<value>
+                <fullName>Courtesy Callback</fullName>
+                <default>false</default>
+                <label>Courtesy Callback</label>
+            </value>
+			<value>
+                <fullName>DBA Customer</fullName>
+                <default>false</default>
+                <label>DBA Customer</label>
+            </value>
+            <value>
+                <fullName>DBA Vendor</fullName>
+                <default>false</default>
+                <label>DBA Vendor</label>
+            </value>
+            <value>
+                <fullName>DBA Driver</fullName>
+                <default>false</default>
+                <label>DBA Driver</label>
+            </value>
+            <value>
+                <fullName>DBA Government</fullName>
+                <default>false</default>
+                <label>DBA Government</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ecommerce Order</label>
+            </value>
+            <value>
+                <fullName>Corporate Account(Sales/Inactive Services/Expired Profiles)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales-SK Corporate Account(Sales/Inactive Services/Expired Profiles)</label>
+            </value>
+            <value>
+                <fullName>Suspend Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suspend Service</label>
+            </value>
+			<value>
+                <fullName>Order Maintenance</fullName>
+                <default>false</default>
+                <label>Order Maintenance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

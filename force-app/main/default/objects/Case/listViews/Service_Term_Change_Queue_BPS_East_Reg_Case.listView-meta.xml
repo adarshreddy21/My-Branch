@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Term_Change_Queue_BPS_East_Reg_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: BPS East Region</label>
+    <queue>Queue_BPS_East_Region</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

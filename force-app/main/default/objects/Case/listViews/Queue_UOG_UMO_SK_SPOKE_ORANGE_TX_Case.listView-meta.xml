@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_UOG_UMO_SK_SPOKE_ORANGE_TX_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: UOG-UMO SK SPOKE ORANGE, TX</label>
+    <queue>Queue_UOG_UMO_SK_SPOKE_ORANGE_TX</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

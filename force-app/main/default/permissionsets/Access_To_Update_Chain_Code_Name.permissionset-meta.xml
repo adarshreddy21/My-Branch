@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Access_To_Update_Chain_Code_Name</name>
+    </customPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Chain__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access To Update Chain Code Name</label>
+</PermissionSet>

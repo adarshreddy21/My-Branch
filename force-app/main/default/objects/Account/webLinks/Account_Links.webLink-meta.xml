@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Links</fullName>
+    <availability>online</availability>
+    <description>window.location = &apos;apex/AccountCustomLinks&apos;;
+window.open(&apos;apex/AccountCustomLinks&apos;,&apos;top=100,left=200,width=900,height=720&apos;);</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Account Details</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&apos;apex/AccountCustomLinks?id={!Account.Account_ID_18__c}&apos;,&apos;{!Account.Id}&apos;,&apos;top=50,left=200,width=900,height=720&apos;);</url>
+</WebLink>

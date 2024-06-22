@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Brand__c</fullName>
+    <description>Brand customer is purchasing. If not listed select * Other - Brand Not Listed &amp; include in comments</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Brand customer is purchasing. If not listed select * Other - Brand Not Listed &amp; include in comments</inlineHelpText>
+    <label>Competitor Brand</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>*OTHER - Brand Not Listed</fullName>
+                <default>false</default>
+                <label>*OTHER - Brand Not Listed</label>
+            </value>
+            <value>
+                <fullName>76</fullName>
+                <default>false</default>
+                <label>76</label>
+            </value>
+            <value>
+                <fullName>77 Lubricants</fullName>
+                <default>false</default>
+                <label>77 Lubricants</label>
+            </value>
+            <value>
+                <fullName>9 Circle International</fullName>
+                <default>false</default>
+                <label>9 Circle International</label>
+            </value>
+            <value>
+                <fullName>Amalie</fullName>
+                <default>false</default>
+                <label>Amalie</label>
+            </value>
+            <value>
+                <fullName>Amsoil</fullName>
+                <default>false</default>
+                <label>Amsoil</label>
+            </value>
+            <value>
+                <fullName>Ardeca</fullName>
+                <default>false</default>
+                <label>Ardeca</label>
+            </value>
+            <value>
+                <fullName>Avista</fullName>
+                <default>false</default>
+                <label>Avista</label>
+            </value>
+            <value>
+                <fullName>Bel Ray</fullName>
+                <default>false</default>
+                <label>Bel Ray</label>
+            </value>
+            <value>
+                <fullName>BEX International</fullName>
+                <default>false</default>
+                <label>BEX International</label>
+            </value>
+            <value>
+                <fullName>BG Products</fullName>
+                <default>false</default>
+                <label>BG Products</label>
+            </value>
+            <value>
+                <fullName>Brad Penn</fullName>
+                <default>false</default>
+                <label>Brad Penn</label>
+            </value>
+            <value>
+                <fullName>Calumet</fullName>
+                <default>false</default>
+                <label>Calumet</label>
+            </value>
+            <value>
+                <fullName>Cam2</fullName>
+                <default>false</default>
+                <label>Cam2</label>
+            </value>
+            <value>
+                <fullName>Castrol</fullName>
+                <default>false</default>
+                <label>Castrol</label>
+            </value>
+            <value>
+                <fullName>Chevron</fullName>
+                <default>false</default>
+                <label>Chevron</label>
+            </value>
+            <value>
+                <fullName>Chicago Petroleum</fullName>
+                <default>false</default>
+                <label>Chicago Petroleum</label>
+            </value>
+            <value>
+                <fullName>Citgo</fullName>
+                <default>false</default>
+                <label>Citgo</label>
+            </value>
+            <value>
+                <fullName>Conoco</fullName>
+                <default>false</default>
+                <label>Conoco</label>
+            </value>
+            <value>
+                <fullName>Eco-Power</fullName>
+                <default>false</default>
+                <label>Eco-Power</label>
+            </value>
+            <value>
+                <fullName>ENEOS</fullName>
+                <default>false</default>
+                <label>ENEOS</label>
+            </value>
+            <value>
+                <fullName>Excel Paralubes</fullName>
+                <default>false</default>
+                <label>Excel Paralubes</label>
+            </value>
+            <value>
+                <fullName>Factory Motor Parts</fullName>
+                <default>false</default>
+                <label>Factory Motor Parts</label>
+            </value>
+            <value>
+                <fullName>Family Of Brands</fullName>
+                <default>false</default>
+                <label>Family Of Brands</label>
+            </value>
+            <value>
+                <fullName>Ford Motorcraft</fullName>
+                <default>false</default>
+                <label>Ford Motorcraft</label>
+            </value>
+            <value>
+                <fullName>Gulf</fullName>
+                <default>false</default>
+                <label>Gulf</label>
+            </value>
+            <value>
+                <fullName>Havoline</fullName>
+                <default>false</default>
+                <label>Havoline</label>
+            </value>
+            <value>
+                <fullName>Heritage-Crystal Cleen</fullName>
+                <default>false</default>
+                <label>Heritage-Crystal Cleen</label>
+            </value>
+            <value>
+                <fullName>Holly Frontier</fullName>
+                <default>false</default>
+                <label>Holly Frontier</label>
+            </value>
+            <value>
+                <fullName>Houghton</fullName>
+                <default>false</default>
+                <label>Houghton</label>
+            </value>
+            <value>
+                <fullName>IADA</fullName>
+                <default>false</default>
+                <label>IADA</label>
+            </value>
+            <value>
+                <fullName>Idemitsu</fullName>
+                <default>false</default>
+                <label>Idemitsu</label>
+            </value>
+            <value>
+                <fullName>Kendall</fullName>
+                <default>false</default>
+                <label>Kendall</label>
+            </value>
+            <value>
+                <fullName>Kost USA</fullName>
+                <default>false</default>
+                <label>Kost USA</label>
+            </value>
+            <value>
+                <fullName>Liqui Moly</fullName>
+                <default>false</default>
+                <label>Liqui Moly</label>
+            </value>
+            <value>
+                <fullName>Martin Lubricants</fullName>
+                <default>false</default>
+                <label>Martin Lubricants</label>
+            </value>
+            <value>
+                <fullName>Meyerban</fullName>
+                <default>false</default>
+                <label>Meyerban</label>
+            </value>
+            <value>
+                <fullName>Mobil</fullName>
+                <default>false</default>
+                <label>Mobil</label>
+            </value>
+            <value>
+                <fullName>Motiva</fullName>
+                <default>false</default>
+                <label>Motiva</label>
+            </value>
+            <value>
+                <fullName>Mystik</fullName>
+                <default>false</default>
+                <label>Mystik</label>
+            </value>
+            <value>
+                <fullName>Nexlube</fullName>
+                <default>false</default>
+                <label>Nexlube</label>
+            </value>
+            <value>
+                <fullName>NPD</fullName>
+                <default>false</default>
+                <label>NPD</label>
+            </value>
+            <value>
+                <fullName>Omni Specialty Packaging</fullName>
+                <default>false</default>
+                <label>Omni Specialty Packaging</label>
+            </value>
+            <value>
+                <fullName>Peak Performance</fullName>
+                <default>false</default>
+                <label>Peak Performance</label>
+            </value>
+            <value>
+                <fullName>Pennzoil</fullName>
+                <default>false</default>
+                <label>Pennzoil</label>
+            </value>
+            <value>
+                <fullName>Performance Plus</fullName>
+                <default>false</default>
+                <label>Performance Plus</label>
+            </value>
+            <value>
+                <fullName>Petro Canada</fullName>
+                <default>false</default>
+                <label>Petro Canada</label>
+            </value>
+            <value>
+                <fullName>Petro-Canada</fullName>
+                <default>false</default>
+                <label>Petro-Canada</label>
+            </value>
+            <value>
+                <fullName>Phillips 66</fullName>
+                <default>false</default>
+                <label>Phillips 66</label>
+            </value>
+            <value>
+                <fullName>Pinnacle</fullName>
+                <default>false</default>
+                <label>Pinnacle</label>
+            </value>
+            <value>
+                <fullName>Quaker State</fullName>
+                <default>false</default>
+                <label>Quaker State</label>
+            </value>
+            <value>
+                <fullName>Royal Purple</fullName>
+                <default>false</default>
+                <label>Royal Purple</label>
+            </value>
+            <value>
+                <fullName>Schaeffer</fullName>
+                <default>false</default>
+                <label>Schaeffer</label>
+            </value>
+            <value>
+                <fullName>Service Pro</fullName>
+                <default>false</default>
+                <label>Service Pro</label>
+            </value>
+            <value>
+                <fullName>Shell</fullName>
+                <default>false</default>
+                <label>Shell</label>
+            </value>
+            <value>
+                <fullName>Smitty&apos;s</fullName>
+                <default>false</default>
+                <label>Smitty&apos;s</label>
+            </value>
+            <value>
+                <fullName>S-Oil</fullName>
+                <default>false</default>
+                <label>S-Oil</label>
+            </value>
+            <value>
+                <fullName>Summit</fullName>
+                <default>false</default>
+                <label>Summit</label>
+            </value>
+            <value>
+                <fullName>Titan</fullName>
+                <default>false</default>
+                <label>Titan</label>
+            </value>
+            <value>
+                <fullName>Top 1 Oil</fullName>
+                <default>false</default>
+                <label>Top 1 Oil</label>
+            </value>
+            <value>
+                <fullName>Total</fullName>
+                <default>false</default>
+                <label>Total</label>
+            </value>
+            <value>
+                <fullName>US Global Petroleum</fullName>
+                <default>false</default>
+                <label>US Global Petroleum</label>
+            </value>
+            <value>
+                <fullName>Valvoline</fullName>
+                <default>false</default>
+                <label>Valvoline</label>
+            </value>
+            <value>
+                <fullName>Vertex Penthol</fullName>
+                <default>false</default>
+                <label>Vertex Penthol</label>
+            </value>
+            <value>
+                <fullName>Warren Oil</fullName>
+                <default>false</default>
+                <label>Warren Oil</label>
+            </value>
+            <value>
+                <fullName>Whitmore</fullName>
+                <default>false</default>
+                <label>Whitmore</label>
+            </value>
+            <value>
+                <fullName>Wolfs Head</fullName>
+                <default>false</default>
+                <label>Wolfs Head</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SHIPPING_ZIP_LENGTH</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   AND(NOT(ISPICKVAL( Status__c , &apos;Inactive&apos;)),NOT(PRIORVALUE(Inactivate_Reactivate_In_Progress__c)== true),
+NOT(PRIORVALUE(Is_Record_Locked__c)== true), 
+   Inactivate_Reactivate_In_Progress__c==false), 
+   NOT($Setup.Bypass_Account_Validation__c.Bypass_Account_Country_Validation__c),
+   NOT(ISCHANGED(Active_ER_Contract__c)),
+   NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+AND( 
+   NOT(ISBLANK(ShippingPostalCode)), 
+   NOT(OR(REGEX(ShippingPostalCode, &quot;\\d{5}(-\\d{4})?&quot;),
+   REGEX(ShippingPostalCode, &quot;[0-9]{9}&quot;))), 
+   NOT ($Profile.Name = &quot;Integration&quot;),
+   NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),   
+   ShippingCountry = &quot;US&quot;, 
+OR( 
+   $RecordType.Name = &quot;Customer&quot;, 
+   $RecordType.Name = &quot;Customer Location&quot;, 
+   $RecordType.Name = &quot;Distributor&quot;, 
+   $RecordType.Name = &quot;Distributor Location&quot;, 
+   $RecordType.Name = &quot;Broker&quot;,
+   $RecordType.Name = &quot;Corporate&quot;, 
+   $RecordType.Name = &quot;Broker Location&quot;))
+   )</errorConditionFormula>
+    <errorDisplayField>ShippingPostalCode</errorDisplayField>
+    <errorMessage>ZIP code can be only of 5 or 9 digits in the formats &quot;xxxxx&quot;, &quot;xxxxx-yyyy&quot;, or &quot;xxxxxyyyy&quot;</errorMessage>
+</ValidationRule>

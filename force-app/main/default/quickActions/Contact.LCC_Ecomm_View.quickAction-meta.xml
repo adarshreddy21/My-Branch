@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created from Lightning Experience Configuration Converter.</description>
+    <height>250</height>
+    <label>Ecomm View(must have WIN open))</label>
+    <lightningComponent>LCC_Ecomm_View_Contact</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

@@ -1,0 +1,5 @@
+<aura:component controller="AccountWIN" implements="force:lightningQuickAction,force:hasRecordId">
+    
+  <!--ui:button label="Powerpage" press="{!c.openActionWindow}"/-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+</aura:component>

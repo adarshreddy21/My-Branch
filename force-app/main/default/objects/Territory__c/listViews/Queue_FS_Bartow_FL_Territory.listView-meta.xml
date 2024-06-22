@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_FS_Bartow_FL_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : FS - Bartow, FL</label>
+    <queue>Queue_FS_Bartow_FL</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

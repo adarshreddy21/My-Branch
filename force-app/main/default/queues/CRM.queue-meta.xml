@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CRM</name>
+    <queueMembers>
+        <users>
+            <user>pituck.clayton@cleanharbors.com</user>
+            <user>mazzilli.michael@cleanharbors.com</user>
+            <user>susan.robinson@safety-kleen.com.chprod</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Sales_Ops_Requests__c</sobjectType>
+    </queueSobject> 
+    <queueSobject> 
+        <sobjectType>Case</sobjectType>
+    </queueSobject> 
+</Queue>

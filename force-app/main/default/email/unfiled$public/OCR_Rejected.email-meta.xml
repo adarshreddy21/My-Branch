@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template is using for OCR rejection email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Clean_Harbors</letterhead>
+    <name>OCR Rejected</name>
+    <style>freeForm</style>
+    <subject>Ownership change request is rejected.</subject>
+    <textOnly>Hello {!Ownership_Change_Request__c.CreatedBy},
+Your {!Ownership_Change_Request__c.Name} has been rejected by {!ApprovalRequest.Process_Approver}
+Account : {!Ownership_Change_Request__c.Account__c}
+Account Win Id : {!Ownership_Change_Request__c.Account_Win_Id__c}
+Reason For Change :{!Ownership_Change_Request__c.Reason_for_Change__c}
+Justification : {!Ownership_Change_Request__c.Justification__c}
+Effective Date : {!Ownership_Change_Request__c.Effective_Date__c}
+
+
+Comments : {!ApprovalRequest.Comments}
+
+This ownership change will not be made for the upcoming quarter. Please direct questions to either your manager or Sales Operations Business Partner
+
+Please do not reply to this email.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

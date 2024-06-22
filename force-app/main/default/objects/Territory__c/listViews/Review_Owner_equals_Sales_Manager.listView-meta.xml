@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Review_Owner_equals_Sales_Manager</fullName>
+    <columns>NAME</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>Area__c</columns>
+    <columns>Region__c</columns>
+    <columns>Primary_Branch__c</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Manager_Name__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Operations_VP__c</columns>
+    <columns>Sales_EVP__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Territory_Owner_equals_Sales_Manager__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Review - Owner equals Sales Manager</label>
+    <language>en_US</language>
+    <sharedTo></sharedTo>
+</ListView>

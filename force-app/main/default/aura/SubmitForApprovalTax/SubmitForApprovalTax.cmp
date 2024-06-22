@@ -1,0 +1,11 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes" controller="SubmitForApprovalTaxController">
+    
+    <aura:attribute name="recordId" type="string"/>
+    <aura:attribute name="comments" type="string"/>
+    
+    <lightning:input name="input6" required="true" value="{!v.comments}" label="Comments" placeholder="please type here..." />
+    <br/>
+    <br/>
+    <lightning:button label="Submit" onclick="{!c.submitForApproval}" variant="brand"/>
+
+</aura:component>

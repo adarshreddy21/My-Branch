@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_To_Enter_Account_Name</fullName>
+    <active>true</active>
+    <description>Restricts Account name to 255 characters and It  must be more than 2 characters excluding special characters like &apos;&amp;&apos;.</description>
+    <errorConditionFormula>AND (
+NOT($Profile.Name = &quot;Super Recruiter&quot;),
+NOT($Profile.Name = &quot;Recruiter&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+or( CONTAINS(Name ,&apos;|&apos;)
+,IF(len(Name)&lt;3, true, if(len(SUBSTITUTE(Name,&apos; &apos;,&apos;&apos;))=3&amp;&amp; (CONTAINS(Name, &quot;&amp;&quot;)||
+CONTAINS(Name, &quot;(&quot;)||
+CONTAINS(Name, &quot;)&quot;)),
+true,false))))</errorConditionFormula>
+    <errorMessage>Account Name must be at least three characters (excluding &amp; character), it must be less than 256 characters, and it may not contain the | special character.</errorMessage>
+</ValidationRule>

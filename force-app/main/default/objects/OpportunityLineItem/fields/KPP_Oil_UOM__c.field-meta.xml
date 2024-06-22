@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPP_Oil_UOM__c</fullName>
+    <description>UOM</description>
+    <externalId>false</externalId>
+    <label>KPP Oil UOM</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>KPP_Oil_Family__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Lube_UOM</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Refinery Fuel - HGO</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - HTS</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - RGO</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - SIVA</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - V401</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - VFS</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - VGO</controllingFieldValue>
+            <controllingFieldValue>RFO</controllingFieldValue>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>VDB Roofing</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>VTAE Bottoms</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Base Oil</controllingFieldValue>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Heavy</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Light</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Medium</controllingFieldValue>
+            <controllingFieldValue>Blended Fuel - Asphalt Base</controllingFieldValue>
+            <controllingFieldValue>Blended Fuel - Gasoline</controllingFieldValue>
+            <controllingFieldValue>Blended Fuel - High Sulfer</controllingFieldValue>
+            <controllingFieldValue>Blended Fuel - Low Ash</controllingFieldValue>
+            <controllingFieldValue>Blended Fuel - MDO</controllingFieldValue>
+            <controllingFieldValue>CCF</controllingFieldValue>
+            <controllingFieldValue>CFF</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Neutrals &amp; Brightstocks</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <controllingFieldValue>Purchased Base Oil</controllingFieldValue>
+            <controllingFieldValue>Refinery Fuel - Dehy Fuel</controllingFieldValue>
+            <valueName>Bulk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Mineral Spirits</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>Drum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Mineral Spirits</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>Pail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Base Oil</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Heavy</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Light</controllingFieldValue>
+            <controllingFieldValue>Base Oil - Medium</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Neutrals &amp; Brightstocks</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <controllingFieldValue>Purchased Base Oil</controllingFieldValue>
+            <valueName>Packaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>Tote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>4QT/4L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>UTF</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>5QT/L</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transformer Oil</controllingFieldValue>
+            <controllingFieldValue>Fuel Treatments</controllingFieldValue>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <controllingFieldValue>Glycol Caustics</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>HDDEO</controllingFieldValue>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <controllingFieldValue>Marine Diesel</controllingFieldValue>
+            <controllingFieldValue>Non Detergent Engine Oil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>2 Cycle</controllingFieldValue>
+            <controllingFieldValue>Additives</controllingFieldValue>
+            <controllingFieldValue>Antifreeze</controllingFieldValue>
+            <controllingFieldValue>ATF</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Brake Fluid</controllingFieldValue>
+            <controllingFieldValue>Chain Oil</controllingFieldValue>
+            <controllingFieldValue>PCEO</controllingFieldValue>
+            <controllingFieldValue>Power Steering Fluid</controllingFieldValue>
+            <controllingFieldValue>Process Oils</controllingFieldValue>
+            <controllingFieldValue>Racing Oil</controllingFieldValue>
+            <controllingFieldValue>Railroad Oils</controllingFieldValue>
+            <controllingFieldValue>Viscosity Modifier</controllingFieldValue>
+            <controllingFieldValue>Way Oils</controllingFieldValue>
+            <controllingFieldValue>Windshield Washer</controllingFieldValue>
+            <controllingFieldValue>Motorcycle Oil</controllingFieldValue>
+            <controllingFieldValue>Plumbing Antifreeze</controllingFieldValue>
+            <valueName>Quarts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gear Oil</controllingFieldValue>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <controllingFieldValue>Automotive Gear Oil</controllingFieldValue>
+            <valueName>Keg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diesel Exhaust Fluid</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

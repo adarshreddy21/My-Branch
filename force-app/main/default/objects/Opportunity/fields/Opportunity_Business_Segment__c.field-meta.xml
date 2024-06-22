@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">	
+    <fullName>Opportunity_Business_Segment__c</fullName>	
+    <externalId>false</externalId>	
+    <label>Opportunity Business Segment</label>	
+    <required>false</required>	
+    <trackFeedHistory>false</trackFeedHistory>	
+    <trackHistory>false</trackHistory>	
+    <type>Picklist</type>	
+    <valueSet>	
+        <controllingField>Opportunity_Primary_Business__c</controllingField>	
+        <restricted>true</restricted>	
+        <valueSetDefinition>	
+            <sorted>false</sorted>	
+            <value>	
+                <fullName>CP Harbor Quote</fullName>	
+                <default>false</default>	
+                <label>CP Harbor Quote</label>	
+            </value>	
+            <value>	
+                <fullName>Daylighting</fullName>	
+                <default>false</default>	
+                <label>Daylighting</label>	
+            </value>	
+            <value>	
+                <fullName>Field Service</fullName>	
+                <default>false</default>	
+                <label>Field Service</label>	
+            </value>	
+            <value>	
+                <fullName>FS Harbor Quote</fullName>	
+                <default>false</default>	
+                <label>FS Harbor Quote</label>	
+            </value>	
+            <value>	
+                <fullName>Cannot Quote</fullName>	
+                <default>false</default>	
+                <label>Cannot Quote</label>	
+            </value>	
+            <value>	
+                <fullName>Industrial Service</fullName>	
+                <default>false</default>	
+                <label>Industrial Service</label>	
+            </value>	
+            <value>	
+                <fullName>Oil &amp; Gas</fullName>	
+                <default>false</default>	
+                <label>Oil &amp; Gas</label>	
+            </value>	
+            <value>	
+                <fullName>Technical Service</fullName>	
+                <default>false</default>	
+                <label>Technical Service</label>	
+            </value>	
+        </valueSetDefinition>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>CP Harbor Quote</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>Daylighting</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>Field Service</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>FS Harbor Quote</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <controllingFieldValue>Safety Kleen / BPS</controllingFieldValue>	
+            <valueName>Cannot Quote</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>Industrial Service</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>Oil &amp; Gas</valueName>	
+        </valueSettings>	
+        <valueSettings>	
+            <controllingFieldValue>Clean Harbors</controllingFieldValue>	
+            <valueName>Technical Service</valueName>	
+        </valueSettings>	
+    </valueSet>	
+</CustomField>

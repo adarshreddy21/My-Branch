@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_ASA_AMARILLO_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Type_of_Call__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Caller_s_First_Name__c</columns>
+    <columns>Caller_s_Phone_Number__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Resolved,Closed - Completed,Closed - Rejected,Closed - Cancelled</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2020 12:00 AM</value>
+    </filters>
+    <label>Queue: ASA-AMARILLO</label>
+    <language>en_US</language>
+    <queue>Queue_ASA_AMARILLO</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

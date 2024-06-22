@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_MUM_WOBURN_WASTE_OIL_SVC_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: MUM-WOBURN WASTE OIL SVC</label>
+    <queue>Queue_MUM_WOBURN_WASTE_OIL_SVC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

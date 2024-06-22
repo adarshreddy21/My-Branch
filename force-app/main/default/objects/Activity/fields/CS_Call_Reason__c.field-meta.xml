@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Call_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service_or_Schedule_Request</fullName>
+                <default>false</default>
+                <label>Service_or_Schedule_Request</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint</fullName>
+                <default>false</default>
+                <label>Customer Complaint</label>
+            </value>
+            <value>
+                <fullName>Customer Data Change</fullName>
+                <default>false</default>
+                <label>Customer Data Change</label>
+            </value>
+            <value>
+                <fullName>Document_Request_Open</fullName>
+                <default>false</default>
+                <label>Document_Request_Open</label>
+            </value>
+            <value>
+                <fullName>Employee_Complaint</fullName>
+                <default>false</default>
+                <label>Employee_Complaint</label>
+            </value>
+            <value>
+                <fullName>Employee_Compliment</fullName>
+                <default>false</default>
+                <label>Employee_Compliment</label>
+            </value>
+            <value>
+                <fullName>Equipment Repair</fullName>
+                <default>false</default>
+                <label>Equipment Repair</label>
+            </value>
+            <value>
+                <fullName>Invoice or Credit Question</fullName>
+                <default>false</default>
+                <label>Invoice or Credit Question</label>
+            </value>
+            <value>
+                <fullName>Invoice_or_Payment_Dispute</fullName>
+                <default>false</default>
+                <label>Invoice_or_Payment_Dispute</label>
+            </value>
+            <value>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+                <label>New Customer</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Payment Processed</fullName>
+                <default>false</default>
+                <label>Payment Processed</label>
+            </value>
+            <value>
+                <fullName>Price Inquiry</fullName>
+                <default>false</default>
+                <label>Price Inquiry</label>
+            </value>
+            <value>
+                <fullName>Pull_Full</fullName>
+                <default>false</default>
+                <label>Pull_Full</label>
+            </value>
+            <value>
+                <fullName>Pull_Partial</fullName>
+                <default>false</default>
+                <label>Pull_Partial</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>Sales_Escalation_Follow_Up</fullName>
+                <default>false</default>
+                <label>Sales_Escalation_Follow_Up</label>
+            </value>
+            <value>
+                <fullName>Sales Lead</fullName>
+                <default>false</default>
+                <label>Sales Lead</label>
+            </value>
+            <value>
+                <fullName>Sales Purchase</fullName>
+                <default>false</default>
+                <label>Sales Purchase</label>
+            </value>
+            <value>
+                <fullName>Schedule Change</fullName>
+                <default>false</default>
+                <label>Schedule Change</label>
+            </value>
+            <value>
+                <fullName>Service/Schedule Escalation</fullName>
+                <default>false</default>
+                <label>Service/Schedule Escalation</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Account Issue – Resolved</fullName>
+                <default>false</default>
+                <label>Ecommerce Account Issue – Resolved</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Account Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</fullName>
+                <default>false</default>
+                <label>Ecommerce Account Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Log in Issue - Resolved</fullName>
+                <default>false</default>
+                <label>Ecommerce Log in Issue - Resolved</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Log in Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</fullName>
+                <default>false</default>
+                <label>Ecommerce Log in Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</label>
+            </value>
+            <value>
+                <fullName>Product Error (additional case required assigned to Ecommerce Queue)</fullName>
+                <default>false</default>
+                <label>Product Error (additional case required assigned to Ecommerce Queue)</label>
+            </value>
+            <value>
+                <fullName>Order Support</fullName>
+                <default>false</default>
+                <label>Order Support</label>
+            </value>
+            <value>
+                <fullName>Product Return (additional case required assigned to Ecommerce Queue)</fullName>
+                <default>false</default>
+                <label>Product Return (additional case required assigned to Ecommerce Queue)</label>
+            </value>
+            <value>
+                <fullName>CAN Lube Order</fullName>
+                <default>false</default>
+                <label>CAN Lube Order</label>
+            </value>
+			<value>
+                <fullName>Left Voicemail</fullName>
+                <default>false</default>
+                <label>Left Voicemail</label>
+            </value>
+			<value>
+                <fullName>No Contact</fullName>
+                <default>false</default>
+                <label>No Contact</label>
+            </value>
+			<value>
+                <fullName>Bad Number</fullName>
+                <default>false</default>
+                <label>Bad Number</label>
+            </value>
+			<value>
+                <fullName>Assistance not needed</fullName>
+                <default>false</default>
+                <label>Assistance not needed</label>
+            </value>
+			<value>
+                <fullName>AR Issue</fullName>
+                <default>false</default>
+                <label>AR Issue</label>
+            </value>
+            <value>
+                <fullName>Service Request</fullName>
+                <default>false</default>
+                <label>Service Request</label>
+            </value>
+            <value>
+                <fullName>ETA request</fullName>
+                <default>false</default>
+                <label>ETA request</label>
+            </value>
+            <value>
+                <fullName>Rep/Driver complaint</fullName>
+                <default>false</default>
+                <label>Rep/Driver complaint</label>
+            </value>
+            <value>
+                <fullName>Previous Service</fullName>
+                <default>false</default>
+                <label>Previous Service</label>
+            </value>
+            <value>
+                <fullName>Upcoming Service/Scheduling</fullName>
+                <default>false</default>
+                <label>Upcoming Service/Scheduling</label>
+            </value>
+            <value>
+                <fullName>Solicitation/Sales Inquiry</fullName>
+                <default>false</default>
+                <label>Solicitation/Sales Inquiry</label>
+            </value>
+            <value>
+                <fullName>Internal Transfer</fullName>
+                <default>false</default>
+                <label>Internal Transfer</label>
+            </value>
+            <value>
+                <fullName>EPA</fullName>
+                <default>false</default>
+                <label>EPA</label>
+            </value>
+            <value>
+                <fullName>Document Issue</fullName>
+                <default>false</default>
+                <label>Document Issue</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>AR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AR</label>
+            </value>
+            <value>
+                <fullName>Existing Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Existing Customer</label>
+            </value>
+            <value>
+                <fullName>Priority Order</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Priority Order</label>
+            </value>
+            <value>
+                <fullName>Transfer Call to New Department</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transfer Call to New Department</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Ecommerce Account Issue – Resolved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Ecommerce Account Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Ecommerce Log in Issue - Resolved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Ecommerce Log in Issue – Not Resolved (additional case required assigned to Ecommerce Queue)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Product Error (additional case required assigned to Ecommerce Queue)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Order Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecommerce Support</controllingFieldValue>
+            <valueName>Product Return (additional case required assigned to Ecommerce Queue)</valueName>
+        </valueSettings>
+		<valueSettings>
+            <controllingFieldValue>Courtesy Callback</controllingFieldValue>
+            <valueName>Left Voicemail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courtesy Callback</controllingFieldValue>
+            <valueName>No Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courtesy Callback</controllingFieldValue>
+            <valueName>Bad Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Courtesy Callback</controllingFieldValue>
+            <valueName>Assistance not needed</valueName>
+        </valueSettings>
+		<valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Add Svc/Prod to existing order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Update quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Remove svc/prod from existing order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Order voided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Pricing Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Maintenance</controllingFieldValue>
+            <valueName>Reschedule order</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

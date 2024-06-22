@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Big_Opportunity_Email_Alert</fullName>
+        <ccEmails>lauria.timothy@cleanharbors.com</ccEmails>
+        <ccEmails>kermet.john@cleanharbors.com</ccEmails>
+        <description>Big Opportunity Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Big_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Cross_Sell_Quote_Completed</fullName>
+        <description>Cross Sell Quote Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Cross_Sell_Quote_Completed</template>
+    </alerts>
+	<alerts>
+        <fullName>FS_TS_Cross_Sell_Big_Opportunity_Email_Alert</fullName>
+        <description>FS / TS Cross Sell Big Opportunity Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bidwelld@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FS_TS_Cross_Sell_Big_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Field_Service_Big_Opportunity_Email_Alert</fullName>
+        <description>Field Service Big Opportunity Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>dhunt@emeraldrenews.com</recipient>
+            <type>user</type>
+        </recipients>
+		<recipients>
+            <recipient>chad.brownell@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+		<recipients>
+            <recipient>fflanegan11@emeraldrenews.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>geer.charles@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>swan.john@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>bidwelld@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Field_Service_Big_Opportunity_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_SK_Cross_Sell_Notification</fullName>
+        <description>Opportunity SK Cross Sell Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Opportunity_SK_Cross_Sell_Opportunity_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_Assigned_Support_Specialist</fullName>
+        <description>Send email to Assigned Support Specialist</description>
+        <protected>false</protected>
+        <recipients>
+            <field>TPM_Quote_Request_To_Person__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Inventory_Attached_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>TPM_Quote_Escalation_Email_1</fullName>
+        <ccEmails>kermet.john@cleanharbors.com</ccEmails>
+        <description>TPM Quote Escalation Email 1</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <field>TPM_Central_Quoting_Assignment__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>TPM_Quote_Request_To_Person__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>TPM_Quote_Requested_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Opportunity_TPM_Escalation_1</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Increment_Push_Counter_Field</fullName>
+        <description>Increment the Push Counter by 1</description>
+        <field>Push_Counter__c</field>
+        <formula>IF( 
+ISNULL( Push_Counter__c ), 
+1, 
+Push_Counter__c + 1 
+)</formula>
+        <name>Increment Push Counter Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Job_start_Date</fullName>
+        <description>Set job start date to close date</description>
+        <field>Job_Start_Date__c</field>
+        <formula>CloseDate</formula>
+        <name>Update Job start Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lodging_Opportunity_Record_Type</fullName>
+        <description>Update Converted Lodging Opportunity Record Type</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Lodging_Opportunity</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Lodging Opportunity Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Big Opportunity Alert</fullName>
+        <actions>
+            <name>Big_Opportunity_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Send notification of a Big Opportunity</description>
+        <formula>Amount &gt;= 1000000</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity Job Start Date update</fullName>
+        <actions>
+            <name>Update_Job_start_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Job_Start_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Populate Job Start Date with Opportunity Close date if the job start date is blank</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A TPM Quote Escalation 1</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.TPM_Quote_Request__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.TPM_Quote_Completed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Central Quoting (TS)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Central Quoting (FS)</value>
+        </criteriaItems>
+        <description>Send first notification there is a pending TPM quote request</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>TPM_Quote_Escalation_Email_1</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Push Counter</fullName>
+        <actions>
+            <name>Increment_Push_Counter_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Increment the Push Counter field by 1</description>
+        <formula>IF(  CloseDate &gt; PRIORVALUE( CloseDate ),  IF (MONTH(CloseDate) &lt;&gt; MONTH(PRIORVALUE( CloseDate )) ,  TRUE,  FALSE),  FALSE)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Type of Opportunity</fullName>
+        <actions>
+            <name>Update_Lodging_Opportunity_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Master_Record_Type__c</field>
+            <operation>equals</operation>
+            <value>Oil &amp; Gas and Lodging Lead</value>
+        </criteriaItems>
+        <description>Update Record Type of Converted Opportunity for Oil &amp; Gas and Lodging Lead</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

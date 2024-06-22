@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Ride_Report_Status_As_Draft</fullName>
+    <active>true</active>    
+    <errorConditionFormula>AND(
+Not(ISPICKVAL(Status__c, &apos;Draft&apos;)),
+ISNEW()
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>  
+    <errorMessage>Status should be Draft while creating the report</errorMessage>
+</ValidationRule>

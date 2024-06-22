@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Timing__c</fullName>
+    <description>This fields is used for the case routing process.</description>
+    <externalId>false</externalId>
+    <label>PO Timing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>After Service</fullName>
+                <default>false</default>
+                <label>After Service</label>
+            </value>
+            <value>
+                <fullName>Before Service</fullName>
+                <default>false</default>
+                <label>Before Service</label>
+            </value>
+            <value>
+                <fullName>At Time of Service</fullName>
+                <default>false</default>
+                <label>At Time of Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

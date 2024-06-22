@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Segment_Cannot_be_Updated</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(
+NOT(RecordType.DeveloperName = &apos;Broker_Location&apos;),
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Sales Operations&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+AND($Profile.Name = &apos;Master Data Management&apos;, Inactivate_Reactivate_In_Progress__c = True),
+NOT(TEXT(AccountSource)=&quot;Ecommerce&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+ischanged( Primary_Business__c ),
+not(isblank(WIN_ID__c))
+)</errorConditionFormula>
+    <errorDisplayField>Primary_Business__c</errorDisplayField>
+    <errorMessage>The operating segment cannot be updated once a winid is generated.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts_with_Missing_Contact_Types</fullName>
+    <booleanFilter>1 AND 2 AND ((3 AND 4) OR 5)</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Missing_Contact_Type__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>MAIN_PO_AP_Contacts__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Broker,Account.Customer,Account.Customer_Location,Account.Distributor</value>
+    </filters>
+    <filters>
+        <field>WIN_ID__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Corporate</value>
+    </filters>
+    <label>My Accounts with Missing Contact Types</label>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

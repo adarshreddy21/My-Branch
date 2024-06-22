@@ -1,0 +1,17 @@
+(DO NOT RESPOND TO THIS EMAIL) 
+
+Hello,
+
+A really BIG Cross Sell FS / TS Opportunity has been entered! The details of opportunity are as follows:
+
+Opportunity: {!Opportunity.Name}
+Account: {!Opportunity.Account}
+Stage: {!Opportunity.StageName}
+Amount: {!Opportunity.Amount}
+Close Date: {!Opportunity.CloseDate}
+Opportunity: https://cleanharbors.my.salesforce.com/{!Opportunity.Id}
+
+Sincerely,
+
+Salesforce Admin Team
+{!Organization.Name}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Product_Pounds__c</fullName>
+    <description>Rollup to Product Pounds</description>
+    <externalId>false</externalId>
+    <label>Total Product Pounds</label>
+    <summarizedField>OpportunityLineItem.Product_Pounds__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

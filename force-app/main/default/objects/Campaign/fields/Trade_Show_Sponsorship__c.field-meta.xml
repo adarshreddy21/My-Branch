@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_Show_Sponsorship__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates sponsorship was purchased at the trade show making the trade show more expensive.</description>
+    <externalId>false</externalId>
+    <label>Trade Show Sponsorship</label>
+    <type>Checkbox</type>
+</CustomField>

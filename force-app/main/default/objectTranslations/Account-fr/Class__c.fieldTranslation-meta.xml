@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Classe</label>
+    <name>Class__c</name>
+    <picklistValues>
+        <masterLabel>Agricultural Production</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agricultural Svcs</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airlines</masterLabel>
+        <translation>Lignes aériennes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airports &amp; Aviation Svcs</masterLabel>
+        <translation>Aéroports et services d’aviation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asphalt, Terminal</masterLabel>
+        <translation>Asphalte, terminal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Maintenance</masterLabel>
+        <translation>Entretien automobile</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Retail</masterLabel>
+        <translation>Vente d’autos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biotechnology</masterLabel>
+        <translation>Services bancaires, institutions financières, affaires</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brokers - Waste &amp; Environmental Svcs</masterLabel>
+        <translation>Courtiers - Déchets et environnement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building Materials (excl Lumber Mills)</masterLabel>
+        <translation>Matériaux de construction (excl. Lumber Mills)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business and Personal Services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical - Distributor</masterLabel>
+        <translation>Produits chimiques - Distributeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemical Manufacturing</masterLabel>
+        <translation>Fabricant de produits chimiques</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colleges &amp; Universities</masterLabel>
+        <translation>Collèges et universités</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction, Gen Contractors &amp; Builders</masterLabel>
+        <translation>Construction, entrep. gén. et constructeurs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Real Estate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cruise Lines</masterLabel>
+        <translation>Compagnies de croisière</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dealerships - Auto</masterLabel>
+        <translation>Concessionnaires - Automobile</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dealerships - Recreational &amp; Machinery</masterLabel>
+        <translation>Concessionnaires - Prod. récréatifs et machinerie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drill Rig Owners</masterLabel>
+        <translation>Propriétaires - Installations de forage</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry Cleaners</masterLabel>
+        <translation>Nettoyeurs à sec</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ecommerce</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Response Management</masterLabel>
+        <translation>Gestion d’interventions d’urgence</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Civil/Heavy Construction</masterLabel>
+        <translation>Ing et consult - Génie civil/construction lourde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Drilling</masterLabel>
+        <translation>Ing et consult - Forage</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Enviro Remediation</masterLabel>
+        <translation>Ing et consult - Remédiation environnementale</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Oilsands</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Seismic &amp; Production</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eng &amp; Consult - Utilities</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment and Recreation Services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exploration - Drilling</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exploration - Seismic</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fabricated Metals</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet - Rental &amp; Leasing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food &amp; Grocery Stores</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food &amp; Kindred Products</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gasoline, Oil &amp; Petroleum Distributors</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government - Federal - Military</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government - Federal Departments/Agencies</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government - Municipality/Local</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government - State/Provincial</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare Facilities, Clinics &amp; Offices</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Homeowner - Septic</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitals</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individuals &amp; Homeowners</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Companies</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laboratories - Medical</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laboratories - Non-Medical</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lease Operators</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid/Petroleum, Pipeline</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid/Petroleum, Terminal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lube Oil Blender</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lube Oil Distributor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lube Oil Marketer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media, TV, Radio &amp; Newspaper</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Equip. Machine Mfg.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Asphalt</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Electrical Equipment &amp; Computers</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Machine (incl Medical)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Miscellaneous</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Non-Metal (Plastic, Rubber, Glass)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Paper Products &amp; Pckgng Materials</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Textiles, Leather &amp; Apparel</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mfg - Transportation Equip</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining &amp; Minerals</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Natural Gas, Pipeline</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Natural Gas, Processing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Classifiable Establishments</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil &amp; Gas Producers</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil Dealers - Heating Oil</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oilsands Mines/SAGD Facilities</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package Delivery</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharmaceutical</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Metal Manufacturing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quick Lubes</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Railroads</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate &amp; Developers</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recycling - Metal, Paper &amp; Plastic</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refineries</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Trade</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schools - Secondary</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel Mills</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxi, Bus &amp; Other Local Transportation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trucking &amp; Trans Co (excl Pckg Delivery)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility - Electrical distribution</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility - Nat Gas &amp; Propane Distribution</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility - Power Generators</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility - Sanitary Services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utility - Telecommunications/Cable</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehousing &amp; Related Svcs</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesale Trade</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood Products and Mills</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

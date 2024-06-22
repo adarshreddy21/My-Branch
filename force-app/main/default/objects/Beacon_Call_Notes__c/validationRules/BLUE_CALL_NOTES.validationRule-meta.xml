@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BLUE_CALL_NOTES</fullName>
+    <active>true</active>
+    <description>Requires user to input an issue when call note blue is selected</description>
+    <errorConditionFormula>AND(ISPICKVAL(  Color__c ,&apos;Blue&apos;),
+NOT(  $Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+ ISBLANK(TEXT( Issue__c )))</errorConditionFormula>
+    <errorDisplayField>Issue__c</errorDisplayField>
+    <errorMessage>Issue is required when Blue callnote is selected</errorMessage>
+</ValidationRule>

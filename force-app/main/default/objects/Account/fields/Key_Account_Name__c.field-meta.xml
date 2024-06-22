@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(RecordType.Name = &apos;Customer&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Name,
+IF(AND(RecordType.Name = &apos;Chain&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Name,
+IF(AND(RecordType.Name = &apos;Distributor&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Name,
+IF(AND(RecordType.Name = &apos;Broker&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Name,
+IF(AND(RecordType.Name = &apos;Customer Chain&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Name,
+IF(AND(RecordType.Name = &apos;Customer Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Parent.Name,
+IF(AND(RecordType.Name = &apos;Broker Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Parent.Name,
+IF(AND(RecordType.Name = &apos;Distributor Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), Parent.Parent.Name,
+IF(RecordType.Name = &apos;Customer Location&apos;, Parent.Parent.Name, 
+IF(RecordType.Name = &apos;Broker Location&apos;, Parent.Parent.Name, 
+IF(RecordType.Name = &apos;Distributor Location&apos;, Parent.Parent.Name, 
+IF(RecordType.Name = &apos;Chain&apos;, Parent.Name, 
+IF(RecordType.Name = &apos;Distributor&apos;, Parent.Name, 
+IF(RecordType.Name = &apos;Broker&apos;, Parent.Name, 
+IF(RecordType.Name = &apos;Customer&apos;, Parent.Name,
+IF(RecordType.Name = &apos;Customer Chain&apos;, Parent.Name, 
+IF(RecordType.Name = &apos;Prospect&apos;, Parent.Name,Name )))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Corp/Key Account Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

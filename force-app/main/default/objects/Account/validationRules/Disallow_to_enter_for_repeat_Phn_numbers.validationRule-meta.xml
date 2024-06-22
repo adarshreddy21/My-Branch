@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_enter_for_repeat_Phn_numbers</fullName>
+    <active>true</active>
+    <description>Not allowing to save for repeat and sequential phone numbers</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT(ISBLANK( Phone)),
+OR(
+!REGEX(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;, &apos;&apos;),&apos;)&apos;, &apos;&apos;), &quot;^[0-9]{10}&quot;),
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;, &apos;&apos;),&apos;)&apos;, &apos;&apos;) = &quot;1111111111&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;2222222222&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;3333333333&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;4444444444&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;5555555555&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;)= &quot;6666666666&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;7777777777&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;8888888888&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;9999999999&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;1234567890&quot;,
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Phone,&apos;-&apos;, &apos;&apos;),&apos; &apos;, &apos;&apos;),&apos;(&apos;,&apos;&apos; ),&apos;)&apos;, &apos;&apos;) = &quot;0000000000&quot;
+))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Phone number must be valid. You may not submit a number that is repeating digits or 1234567890.</errorMessage>
+</ValidationRule>

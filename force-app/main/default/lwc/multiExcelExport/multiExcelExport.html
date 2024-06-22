@@ -1,0 +1,379 @@
+<!--
+  @description       : 
+  @author            : Suresh Beniwal
+  @group             : 
+  @last modified on  : 10-21-2022
+  @last modified by  : Suresh Beniwal
+  Modifications Log
+  Ver   Date         Author           Modification
+  1.0   06-01-2022   Suresh Beniwal   Initial Version
+-->
+<template>
+    <template if:true={showLoadingSpinner}>
+        <lightning-spinner class="spins" size="medium"></lightning-spinner>
+    </template>
+    <div class="margin-bottom-2rem">
+        <lightning-card title="Multi Excel Report" icon-name="custom:custom14">
+            <!--xlsxMain component calling-->
+            <c-xlsx-main header-list={xlsHeader} filename={filename} worksheet-name-list={workSheetNameList}
+                sheet-data={xlsData}></c-xlsx-main>
+            <div class="slds-grid slds-m-around_medium">
+                <div class={filterClass} if:true={showFilter}>
+                    <lightning-icon title="Report Filters" icon-name="standard:filter"> </lightning-icon>
+
+                    <lightning-button label="Search" class="slds-align_absolute-center slds-float_right"
+                        onclick={handleSearchFilter} variant="brand" title="Search" icon-name="standard:search">
+                    </lightning-button>
+
+                    <lightning-button label="Reset" class="slds-align_absolute-center slds-float_right" style="margin-right: 10px;"
+                        onclick={handleResetFilter} variant="brand-outline" title="Reset" icon-name="action:refresh">
+                    </lightning-button>
+
+                    <lightning-combobox name="createdDate" label="Created Date" value={dateValue}
+                        placeholder="Select Created Date" options={createdDateOptions} onchange={handleChange}
+                        class="slds-var-m-top_small"></lightning-combobox>
+
+                    <lightning-input name="organizaitonName" label="Organization Name" type="search"
+                        onchange={handleChange} class="slds-var-m-top_small"></lightning-input>
+
+                    <lightning-record-edit-form object-api-name="Organization_Owners__c">
+                        <lightning-input-field name="ownerid" onchange={handleChange} field-name="User__c"
+                            class="slds-var-m-top_small userCss">
+                        </lightning-input-field>
+                    </lightning-record-edit-form>
+
+                    <lightning-combobox name="organizationActiveInactive" label="Active / Inactive (Organization)" value={activeInactiveValue}
+                        placeholder="Select Active / Inactive" options={activeInactiveOptions} onchange={handleChange}
+                        class="slds-var-m-top_small"></lightning-combobox>
+
+                    <lightning-combobox name="organizationStatus" label="Organization Status" value={statusValue}
+                        placeholder="Select Organization Status" options={statusOptions} onchange={handleChange}
+                        class="slds-var-m-top_small"></lightning-combobox>
+
+                    <lightning-combobox name="organizationCategory" label="Organization Category" value={categoryValue}
+                        placeholder="Select Organization Category" options={categoryOptions} onchange={handleChange}
+                        class="slds-var-m-top_small">
+                    </lightning-combobox>
+
+                    <div if:true={managerOptions} class="slds-grid">
+                        <c-multi-select-pick-list class="slds-var-m-top_small multiSelectCustomCss" multi-select="true"
+                            onselectoption={handleMgrSelectOptionList} optionsvalue={managerOptions}
+                            selected-value={selectedValue} label="Mgr Lvl 3"></c-multi-select-pick-list>
+                    </div>
+
+                    <div if:true={jobcategoryOptions} class="slds-grid">
+                        <c-multi-select-pick-list class="slds-var-m-top_small multiSelectCustomCss" multi-select="true"
+                            onselectoption={handleJobCategorySelectOptionList} optionsvalue={jobcategoryOptions}
+                            selected-value={selectedValue} label="Job Category"></c-multi-select-pick-list>
+                    </div>
+                </div>
+                <div class={tableClass}>
+                    <div class="slds-grid">
+                        <div class="slds-size_8-of-12"></div>
+                        <template if:false={recordId}>
+                            <div class="slds-size_2-of-12 slds-align_absolute-center downloadBtnCss">
+                                <lightning-button label="Download" onclick={download} variant="brand" title="Download"
+                                    icon-name="utility:download"></lightning-button>
+                            </div>
+                        </template>
+                        <template if:true={recordId}>
+                            <div class="slds-size_2-of-12 slds-align_absolute-center" style="margin-right: 0px;">
+                                <lightning-button label="Refresh" class="slds-align_absolute-center slds-float_right"
+                                    onclick={handleSearchFilter} variant="brand-outline" title="Refresh" icon-name="action:refresh">
+                                </lightning-button>
+                            </div>
+                            <div class="slds-size_2-of-12 slds-align_absolute-center" style="margin-right: 0px;">
+                                <lightning-button label="Download" onclick={download} variant="brand" title="Download"
+                                    icon-name="utility:download"></lightning-button>
+                            </div>
+                        </template>
+                        
+                    </div>
+                    <lightning-tabset>
+                        <lightning-tab label="Organization">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns} for:item="header">
+                                                <th key={header.label} class="slds-col slds-truncate">{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                <th class="slds-col slds-truncate">{item.organizationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                                <th class="slds-col slds-truncate">{item.parentAccount}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationStatus}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCategory}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCategoryDetail}</th>
+                                                <th class="slds-col slds-truncate">{item.diversityOrganizationDetail}</th>
+                                                <th class="slds-col slds-truncate">{item.sizeofCandidatePool}</th>
+                                                <th class="slds-col slds-truncate">{item.numberofHires}</th>
+                                                <th class="slds-col slds-truncate">{item.status}</th>
+                                                <th class="slds-col slds-truncate">{item.street}</th>
+                                                <th class="slds-col slds-truncate">{item.city}</th>
+                                                <th class="slds-col slds-truncate">{item.state}</th>
+                                                <th class="slds-col slds-truncate">{item.country}</th>
+                                                <th class="slds-col slds-truncate">{item.zipcode}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData}
+                                    onupdate={updateOranizationHandler} if:true={multiExcelData}></c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+                        <lightning-tab label="Locations">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData3}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns3} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData3} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                
+                                                <th class="slds-col slds-truncate">{item.locationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.locationName}</th>
+                                                <th class="slds-col slds-truncate">{item.locationPhoneNumber}</th>
+                                                <th class="slds-col slds-truncate">{item.status}</th>
+                                                <th class="slds-col slds-truncate">{item.sizeOfCandidatePool}</th>
+                                                <th class="slds-col slds-truncate">{item.numberOfHires}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                                <th class="slds-col slds-truncate">{item.street}</th>
+                                                <th class="slds-col slds-truncate">{item.city}</th>
+                                                <th class="slds-col slds-truncate">{item.state}</th>
+                                                <th class="slds-col slds-truncate">{item.country}</th>
+                                                <th class="slds-col slds-truncate">{item.zipcode}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData3}
+                                    onupdate={updateOrganizationLocationsHandler} if:true={multiExcelData3}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+
+                        <lightning-tab label="Contacts">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData5}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns5} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData5} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                <th class="slds-col slds-truncate">{item.contactId}</th>
+                                                <th class="slds-col slds-truncate">{item.locationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.name}</th>
+                                                <th class="slds-col slds-truncate">{item.firstName}</th>
+                                                <th class="slds-col slds-truncate">{item.lastName}</th>
+                                                <th class="slds-col slds-truncate">{item.email}</th>
+                                                <th class="slds-col slds-truncate">{item.phone1}</th>
+                                                <th class="slds-col slds-truncate">{item.phone2}</th>
+                                                <th class="slds-col slds-truncate">{item.type1}</th>
+                                                <th class="slds-col slds-truncate">{item.type2}</th>
+                                                <th class="slds-col slds-truncate">{item.contactType}</th>
+                                                <th class="slds-col slds-truncate">{item.contactStatus}</th>
+                                                <th class="slds-col slds-truncate">{item.executiveSponsor}</th>
+                                                <th class="slds-col slds-truncate">{item.contributor}</th>
+                                                <th class="slds-col slds-truncate">{item.partnershipOwner}</th>
+                                                <th class="slds-col slds-truncate">{item.status}</th>
+                                                <th class="slds-col slds-truncate">{item.location}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData5}
+                                    onupdate={updateOrganizationContactHandler} if:true={multiExcelData5}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+                        
+                        <lightning-tab label="Owners">
+                            <div class="slds-scrollable">
+                                <table
+                                    class=" slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData1}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns1} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData1} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                
+                                                <!-- <th class="slds-col slds-truncate">{item.ownershipCode}</th> -->
+                                                <th class="slds-col slds-truncate">{item.organizationId}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                                <th class="slds-col slds-truncate">{item.executiveId}</th>
+                                                <th class="slds-col slds-truncate">{item.executive}</th>
+                                                <th class="slds-col slds-truncate">{item.partnershipId}</th>
+                                                <th class="slds-col slds-truncate">{item.partnership}</th>
+                                                <th class="slds-col slds-truncate">{item.contributerId}</th>
+                                                <th class="slds-col slds-truncate">{item.contributer}</th>
+                                                
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData1}
+                                    onupdate={updateOrganizationOwnersHandler} if:true={multiExcelData1}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+                        
+                        <lightning-tab label="Departments">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData2}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns2} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData2} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                 
+                                                <th class="slds-col slds-truncate">{item.departmentCode}</th>
+                                                <th class="slds-col slds-truncate">{item.locationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.deptId}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_1}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_2}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_3}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_4}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_5}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_6}</th>
+                                                <th class="slds-col slds-truncate">{item.mgr_level_7}</th>
+                                                <th class="slds-col slds-truncate">{item.location}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData2}
+                                    onupdate={updateOrganizationDeparmentsHandler} if:true={multiExcelData2}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+
+                        <lightning-tab label="Job Categories">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData4}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns4} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData4} for:item="item">
+                                            <tr key={item.Id} class="slds-line-height_reset">
+                                                
+                                                <th class="slds-col slds-truncate">{item.jobCategoryCode}</th>
+                                                <th class="slds-col slds-truncate">{item.locationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.jobCategories}</th>
+                                                <th class="slds-col slds-truncate">{item.jobCodeTitles}</th>
+                                                <th class="slds-col slds-truncate">{item.location}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationName}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData4}
+                                    onupdate={updateOrganizationJobCodesHandler} if:true={multiExcelData4}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+
+                        <lightning-tab label="Recent Activity">
+                            <div class="slds-scrollable">
+                                <table
+                                    class="slds-box slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                                    if:true={multiExcelData6}>
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <template for:each={accountColumns6} for:item="header">
+                                                <th class="slds-col slds-truncate" key={header.label}>{header.label}</th>
+                                            </template>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={visibleMultiExcelData6} for:item="item">
+                                            <tr key={item.relatedName} class="slds-line-height_reset">
+                                                <th class="slds-col slds-truncate">{item.locationCode}</th>
+                                                <th class="slds-col slds-truncate">{item.locationName}</th>
+                                                <th class="slds-col slds-truncate">{item.organizationId}</th>
+                                                <th class="slds-col slds-truncate">{item.relatedName}</th>
+                                                <th class="slds-col slds-truncate">{item.contactId}</th>
+                                                <th class="slds-col slds-truncate">{item.relatedContactName}</th>
+                                                <th class="slds-col slds-truncate">{item.subject}</th>
+                                                <th class="slds-col slds-truncate">{item.type}</th>
+                                                <th class="slds-col slds-truncate">{item.subtype}</th>
+                                                <th class="slds-col slds-truncate">{item.status}</th>
+                                                <th class="slds-col slds-truncate">{item.createdDate}</th>
+                                                <th class="slds-col slds-truncate">{item.description}</th>
+											    <th class="slds-col slds-truncate">{item.DepartmentId}</th>
+                                                <th class="slds-col slds-truncate">{item.JobCategory}</th>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="slds-var-m-vertical_medium">
+                                <c-custom-pagination record-size={defaultSize} records={multiExcelData6}
+                                    onupdate={updateRecentActivityHandler} if:true={multiExcelData6}>
+                                </c-custom-pagination>
+                            </div>
+                        </lightning-tab>
+                    </lightning-tabset>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Ride_Report</fullName>
+    <active>true</active>
+    <label>SK Ride Report</label> 
+    <picklistValues>
+        <picklist>Agreement_on_Next_Steps__c</picklist>   
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>   
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commitment_Objective_for_Every_Call__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cust_Appts_Set__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Interactions__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Has_a_CHES_Sales_Planner_been_Created__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hot_Button_Issue_Identified__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Overall_Rating__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prepared_for_Day_CHES__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Prospect_Calls_Scheduled__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Consistent_Utilization_of_Tools__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Ecommerce__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Leads_and_Pipeline__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Negotiation_Skills__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Presentation_Skills__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Use_Of_Closing_Skills__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating_Van_Stocked__c</picklist>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Score_1_CHES__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Score_2_CHES__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Score__c</picklist>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meets Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exceeds Expectations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

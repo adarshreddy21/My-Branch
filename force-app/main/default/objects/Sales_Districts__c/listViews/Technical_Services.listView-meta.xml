@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Services</fullName>
+    <columns>NAME</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>Business_Unit_VP__c</columns>
+    <columns>Business_Unit_VP_Username__c</columns>
+    <columns>District_Manager__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Manager_Username__c</columns>
+    <columns>Sales_VP__c</columns>
+    <columns>Sales_VP_username__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Business_Unit__c</field>
+        <operation>equals</operation>
+        <value>Technical Services</value>
+    </filters>
+    <label>Technical Services</label>
+    <language>en_US</language>
+</ListView>

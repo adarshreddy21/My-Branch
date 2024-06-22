@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Account_Disable_Edit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Not(ISPICKVAL(PRIORVALUE(Status__c),&quot;Active&quot;)),
+ISPICKVAL(Status__c , &quot;Inactive&quot;),
+OR(
+Inactivate_Reactivate_In_Progress__c = false,
+AND(
+Inactivate_Reactivate_In_Progress__c = true,
+NOT(ISCHANGED(Inactivate_Reactivate_In_Progress__c)),
+NOT(ISCHANGED(Is_Record_Locked__c))
+)
+),
+
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Master Data Management&quot;),
+NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)),
+NOT( $Permission.Skip_Validations_for_Super_users_cp ),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+
+AND(
+OR(NOT(ISCHANGED(Account_Headline__c)),
+AND(NOT($Permission.Account_Headline_Field_Edit_PermissionSet),
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT($Profile.Name = &quot;Sales Operations&quot;),
+ISPICKVAL(Status__c, &quot;Inactive&quot;),
+ISCHANGED(Account_Headline__c)
+)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>This Account is inactive. No edits can be processed on this account. Reactivate account before making any updates.</errorMessage>
+</ValidationRule>

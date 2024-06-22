@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_owner_change_request</fullName>
+    <active>true</active>
+    <label>Bulk Owner Change Request</label>
+	<picklistValues>
+        <picklist>Campaign_Business__c</picklist>
+        <values>
+            <fullName>BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Type__c</picklist>
+        <values>
+            <fullName>Flip All Accounts %28New Hire %2F Termination%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Account Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postal Code Re-Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Re-Alignment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaiign_Business_1__c</picklist>
+        <values>
+            <fullName>BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilities%2FBrokers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Corporate_Account_Implementation_Type__c</picklist>
+        <values>
+            <fullName>Mandated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currency__c</picklist>
+        <values>
+            <fullName>CAD - Canadian Dollar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD - U%2ES%2E Dollar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Owner_Primary_Service_Provider__c</picklist>
+        <values>
+            <fullName>BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYN Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYN Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleen Performance Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murphys Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Plus Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety-Kleen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermo Fluids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thompson</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Noble Oil</fullName>
+            <default>false</default>
+        </values>	
+        <values>
+            <fullName>HEPACO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pardot_Campaign_Type__c</picklist>
+        <values>
+            <fullName>Drip Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Blast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+   <picklistValues>
+        <picklist>Reason_for_Request__c</picklist>
+        <values>
+            <fullName>AM%2FSR Cross-Over</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Clean-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back-Fill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Book Rebalance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Re-Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Territory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotion%2FReplacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Alignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Consolidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territory Shuffle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requested_Owner_Primary_Service_Provider__c</picklist>
+        <values>
+            <fullName>BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYN Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYN Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleen Performance Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murphys Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Plus Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety-Kleen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermo Fluids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thompson</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Noble Oil</fullName>
+            <default>false</default>
+        </values>	
+        <values>
+            <fullName>HEPACO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DFW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Objects_to__c</picklist>
+        <values>
+            <fullName>Customer Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect Accounts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Detail__c</picklist>
+        <values>
+            <fullName>Budget App Updates Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Could not complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepared for Maps Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparing Load File</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling Date for Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Now Ticket Created</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

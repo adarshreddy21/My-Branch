@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_status_to_Hold</fullName>
+    <active>true</active>
+    <description>Cannot change status to Hold</description>
+    <errorConditionFormula>AND(
+OR(TEXT(Status__c)=&quot;Hold&quot;,TEXT(Status__c)=&quot;Active&quot;),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Master Data Management&quot;),
+NOT($Permission.Skip_Validations_for_Super_Users_cp),
+NOT($Profile.Name = &quot;Sales Operations&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+ISCHANGED(Status__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Cannot update status to Hold or Active. Please contact system admin to use.</errorMessage>
+</ValidationRule>

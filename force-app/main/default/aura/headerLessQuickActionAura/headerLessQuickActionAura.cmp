@@ -1,0 +1,4 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,lightning:actionOverride,flexipage:availableForRecordHome" controller="HeaderLessQuickActionlwcController"  access="global" >
+<aura:handler name="init" value="{!this}" action="{!c.closeQuickActions}"/>
+    <!--<c:headerLessQuickActionlwc recordId="{!v.recordId}" oncomplete="{!c.closeQuickActions}"></c:headerLessQuickActionlwc> -->
+</aura:component>

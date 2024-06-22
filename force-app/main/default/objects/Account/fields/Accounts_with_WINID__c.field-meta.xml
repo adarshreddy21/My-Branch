@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_with_WINID__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is for handling Cases on Account Create/update. This checkbox will be TRUE for accounts for which WINID is generated in Salesforce. (RFO, Competitor)</description>
+    <externalId>false</externalId>
+    <label>Accounts with WINID</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

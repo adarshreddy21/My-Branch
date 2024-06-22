@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_update_work_note_for_Orange_color</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT( $Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+not(isblank(PRIORVALUE(Work_Note__c))),
+ISCHANGED( Work_Note__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Work_Note__c</errorDisplayField>
+    <errorMessage>Do not change the work note. Please Cancel this update.  Then Edit the Call Note, change the Color to Orange then Save the Call Note, Then on the  same Call Note, please create a new Work Note from the Work Note section</errorMessage>
+</ValidationRule>

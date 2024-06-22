@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Waster_Type</fullName>
+    <active>true</active>
+    <description>Require Parts Washer type for parts washer opportunities</description>
+    <errorConditionFormula>and(
+or(Product2.LOB_Code__c = 16, Product2.LOB_Code__c = 22)
+,NOT(DATEVALUE(CreatedDate) &lt; DATEVALUE(&quot;2017-08-05&quot;))
+,isblank(text( Parts_Washer_Type__c ))
+, or($User.ProfileId = &apos;00e0a000000DnA1AAK&apos;, $User.ProfileId = &apos;00e0a000001AhtJAAS&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Parts_Washer_Type__c</errorDisplayField>
+    <errorMessage>Please enter a Parts Washer Type</errorMessage>
+</ValidationRule>

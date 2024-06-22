@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Type_of_Service__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Type of Service</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UMO</fullName>
+                <default>false</default>
+                <label>UMO</label>
+            </value>
+            <value>
+                <fullName>Parts Washer</fullName>
+                <default>false</default>
+                <label>Parts Washer</label>
+            </value>
+            <value>
+                <fullName>Containerized Waste</fullName>
+                <default>false</default>
+                <label>Containerized Waste</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Drum</fullName>
+                <default>false</default>
+                <label>Oil Filter Drum</label>
+            </value>
+            <value>
+                <fullName>Oil Filter Bin</fullName>
+                <default>false</default>
+                <label>Oil Filter Bin</label>
+            </value>
+            <value>
+                <fullName>WWF/AF Product</fullName>
+                <default>false</default>
+                <label>WWF/AF Product</label>
+            </value>
+            <value>
+                <fullName>Allied Product</fullName>
+                <default>false</default>
+                <label>Allied Product</label>
+            </value>
+            <value>
+                <fullName>Lube Oil Sales</fullName>
+                <default>false</default>
+                <label>Lube Oil Sales</label>
+            </value>
+            <value>
+                <fullName>VAC</fullName>
+                <default>false</default>
+                <label>VAC</label>
+            </value>
+            <value>
+                <fullName>Used Antifreeze</fullName>
+                <default>false</default>
+                <label>Used Antifreeze</label>
+            </value>
+            <value>
+                <fullName>Oily Water</fullName>
+                <default>false</default>
+                <label>Oily Water</label>
+            </value>
+            <value>
+                <fullName>Change Address</fullName>
+                <default>false</default>
+                <label>Change Address</label>
+            </value>
+            <value>
+                <fullName>Name/Ownership Change</fullName>
+                <default>false</default>
+                <label>Name/Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Update Email</fullName>
+                <default>false</default>
+                <label>Update Email</label>
+            </value>
+            <value>
+                <fullName>Service Term</fullName>
+                <default>false</default>
+                <label>Service Term</label>
+            </value>
+            <value>
+                <fullName>EPA ID</fullName>
+                <default>false</default>
+                <label>EPA ID</label>
+            </value>
+			<value>
+                <fullName>Invoice Request</fullName>
+                <default>false</default>
+                <label>Invoice Request</label>
+            </value>
+            <value>
+                <fullName>Balance Inquiry</fullName>
+                <default>false</default>
+                <label>Balance Inquiry</label>
+            </value>
+            <value>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+                <label>Dispute</label>
+            </value>
+            <value>
+                <fullName>Payment Issue</fullName>
+                <default>false</default>
+                <label>Payment Issue</label>
+            </value>
+            <value>
+                <fullName>Manifest issue</fullName>
+                <default>false</default>
+                <label>Manifest issue</label>
+            </value>
+            <value>
+                <fullName>Shipping documents</fullName>
+                <default>false</default>
+                <label>Shipping documents</label>
+            </value>
+            <value>
+                <fullName>AR Issue</fullName>
+                <default>false</default>
+                <label>AR Issue</label>
+            </value>
+			<value>
+                <fullName>LOB List</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LOB List</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>UMO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Parts Washer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Service Request-OFR</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Oil Filter Bin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair-EAC</controllingFieldValue>
+            <controllingFieldValue>Equipment Repair-COMs</controllingFieldValue>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>WWF/AF Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Containerized Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Oil Filter Drum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Allied Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Lube Oil Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>VAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Used Antifreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales-Add Service (Existing Customer) No OPP</controllingFieldValue>
+            <controllingFieldValue>Service-ETA Inquiry</controllingFieldValue>
+            <controllingFieldValue>Service Request</controllingFieldValue>
+            <controllingFieldValue>Add Line Item</controllingFieldValue>
+            <controllingFieldValue>Add Service (New Customer)</controllingFieldValue>
+            <controllingFieldValue>Add Service (Existing Customer)</controllingFieldValue>
+            <controllingFieldValue>Pull/Cancel Service</controllingFieldValue>
+            <valueName>Oily Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Address</controllingFieldValue>
+            <valueName>Change Address</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Address</controllingFieldValue>
+            <valueName>Name/Ownership Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Address</controllingFieldValue>
+            <valueName>Update Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Address</controllingFieldValue>
+            <valueName>Service Term</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change Address</controllingFieldValue>
+            <valueName>EPA ID</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

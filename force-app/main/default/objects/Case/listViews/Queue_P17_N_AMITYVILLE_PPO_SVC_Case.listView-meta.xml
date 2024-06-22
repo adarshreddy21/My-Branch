@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_P17_N_AMITYVILLE_PPO_SVC_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: P17- N AMITYVILLE PPO SVC</label>
+    <queue>Queue_P17_N_AMITYVILLE_PPO_SVC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

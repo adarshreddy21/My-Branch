@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>Update Latest Case Comment on Case</fullName>
+        <actions>
+            <name>Update_Latest_Case_Comment_on_Case</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Invoice Delivery,Customer PO Case,Collector Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>CaseComment.CommentBody</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+		
+    </rules>
+</Workflow>

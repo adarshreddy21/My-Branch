@@ -1,0 +1,15 @@
+.recordLockedMsg{
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.lock-btn{
+    padding-left: 6px;
+    position: relative;
+    top: -5px;
+}
+:host .lock-btn{
+	--slds-c-icon-color-foreground: #F8C33B;
+    fill: #F8C33B;
+}

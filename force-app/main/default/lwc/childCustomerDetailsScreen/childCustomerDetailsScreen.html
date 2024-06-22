@@ -1,0 +1,87 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_2-of-2 slds-text-align_right padding-right">
+            <span class="information-text">* </span>
+            <span>= Required Information</span>
+        </div>         
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="text" label="Account Name" value={accountNameValue} onchange={handleNameChange} maxlength="255"
+                required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-combobox label="Operating Segment" 
+                value={primaryServiceProviderNewValue}
+                placeholder="--None--" 
+                options={osOptions} 
+                onchange={handleOSChange} required>
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-record-picker 
+                label="Parent Account"
+                value={parentId}
+                placeholder="Search Parent Account..."
+                onchange={handleAccountSelection}  
+                object-api-name="Account"
+				display-info = {displayAccountWINAndType}
+				disabled={disableParentAccountLookup}
+                filter={filter}>
+            </lightning-record-picker>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall"> 
+            <lightning-combobox label="Primary Service Provider" 
+                value={primaryBusinessValue}
+                placeholder="--None--" 
+                options={pspOptions} 
+                onchange={handlePSPChange} 
+                disabled={readPSPOnlyBool}
+                required></lightning-combobox>
+        </div>
+		<div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-record-picker 
+                label="Chain Code Name"
+                value={chainAccountValue}
+                placeholder="Search Chain Account..."
+                onchange={handleChainAccountSelection}
+                object-api-name="Account"
+				display-info = {displayAccountWINAndType}
+                filter={chainAccountFilter}>
+            </lightning-record-picker>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="tel" label="Phone" value={accountPhoneValue}
+                onchange={handleAccountPhoneChange} required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall"></div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall samecorppadding">
+             <lightning-input if:false={hasCustomerOrBrokerParentAccount} type="checkbox" label="Remit-to/Billing Address same as Corp"
+                onchange={handleSameAsCorpChange} checked={sameAsCorpAddressValue}></lightning-input>
+        </div>
+    </div>
+   
+    <div class="slds-grid slds-wrap paddingtop">        
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input-address address-label="Corporate Address" street-label="Corporate Street"
+                city-label="Corporate City" country-label="Corporate Country" province-label="Corporate State/Province"
+                postal-code-label="Corporate Zip/Postal Code" street={corporateAddress.shippingStreet} city={corporateAddress.shippingCity}
+                province={corporateAddress.shippingState} country={corporateAddress.shippingCountry} postal-code={corporateAddress.shippingPostalCode}
+                onchange={handleShippingAddressInputChange} show-address-lookup required></lightning-input-address>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input-address if:false={hasCustomerOrBrokerParentAccount} id="myInput" address-label="Billing Address" street-label="Billing Street"
+                city-label="Billing City" country-label="Billing Country" province-label="Billing State/Province"
+                postal-code-label="Billing Zip/Postal Code" street={billingAddress.billingStreet} city={billingAddress.billingCity}
+                province={billingAddress.billingState} country={billingAddress.billingCountry} postal-code={billingAddress.billingPostalCode}
+                onchange={handleBillingAddressInputChange} show-address-lookup disabled={disableAddress}
+                required></lightning-input-address>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input type="text" label="Corporate Address 2" value={corporateAddress.corporateAddress2}
+                onchange={handleCorporateAddress2Change} maxlength="60"></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2 paddingsmall">
+            <lightning-input if:false={hasCustomerOrBrokerParentAccount} type="text" label="Billing Address 2" value={billingAddress.billingAddress2}
+                onchange={handleBillingAddress2Change} maxlength="60"></lightning-input>
+        </div>       
+    </div>
+</template>

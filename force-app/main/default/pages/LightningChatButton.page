@@ -1,0 +1,154 @@
+<apex:page >
+  <style type='text/css'>
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #A5A3A1;
+        font-family: "Arial", sans-serif;
+    }
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #A5A3A1;
+    }
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+  var offlineHeaderTimeout;
+    var isAgentAvailable;
+    var initESW = function(gslbBaseURL) {
+        embedded_svc.settings.displayHelpButton = true; //Or false
+        embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+        //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+        //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+        //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+        // Settings for Chat
+        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+            // Returns a valid button ID.
+        //};
+        //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+        //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+        embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+        embedded_svc.settings.entryFeature = 'LiveAgent';
+
+        embedded_svc.init(
+            'https://cleanharbors.my.salesforce.com',
+            'https://liveagent-sfchat.secure.force.com/liveAgentSetupFlow',
+            gslbBaseURL,
+            '00Dj0000001rk5P',
+            'LiveAgentWebChatGroup',
+            {
+                baseLiveAgentContentURL: 'https://c.la1-c1-ia4.salesforceliveagent.com/content',
+                deploymentId: '5724Q000000H8bq',
+                buttonId: '5734Q0000008kRY',
+                baseLiveAgentURL: 'https://d.la1-c1-ia4.salesforceliveagent.com/chat',
+                eswLiveAgentDevName: 'LiveAgentWebChatGroup',
+                isOfflineSupportEnabled: true
+            }
+        )
+      embedded_svc.addEventHandler("onClickSubmitButton", function(data) {
+            console.log('onClickSubmitButton');
+            var successIconTimeout;
+            successIconTimeout = window.setInterval(function(){
+                let successIcon = document.querySelector('[data-key="completed"]');
+                
+                if(successIcon){
+                    successIcon.firstElementChild.style.fill = 'gray';
+                    clearInterval(successIconTimeout);
+                }
+            }, 100);
+        });
+        
+        embedded_svc.addEventHandler("onHelpButtonClick", function(data) {
+            
+            console.log("onHelpButtonClick event was fired. ", isAgentAvailable);
+            if(!isAgentAvailable){
+                offlineHeaderTimeout = setInterval(function(){
+                    var container = document.getElementsByClassName('fieldList');
+                        if(container && container[0]){
+                            let newDiv = document.createElement("div");
+                            newDiv.style.height = '55px';
+                            newDiv.style.padding = '5px';
+                            newDiv.style.color = 'black';
+                            let greetingText = document.createElement("span");
+                            greetingText.innerHTML = 'Chat Hours: ';
+                            let infoText = document.createElement("span");
+                            infoText.innerHTML = 'Mon-Fri, 7am-8pm ET.';
+                            infoText.style.color = 'red';
+                            greetingText.appendChild(infoText);
+                            const newContent = document.createTextNode(" Please leave a Message and an Expert will get back to you");
+                            greetingText.appendChild(newContent);
+                            newDiv.appendChild(greetingText);
+                            container[0].prepend(newDiv);
+                            clearInterval(offlineHeaderTimeout);
+                        }
+                }, 1000);    
+            }    
+        });
+        
+         embedded_svc.addEventHandler("onAvailability", function(data) {
+            isAgentAvailable = data.isAgentAvailable;
+        });
+        
+        embedded_svc.addEventHandler("onSettingsCallCompleted", function(data) {
+            isAgentAvailable = data.isAgentAvailable;
+        });
+    };
+    if (!window.embedded_svc) {
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://cleanharbors.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function() {
+            initESW(null);
+        };
+        document.body.appendChild(s);
+    } else {
+        initESW('https://service.force.com');
+    }
+     var greetingTimeout
+      window.setTimeout(function(){
+        let helpButton = document.getElementsByClassName('helpButtonEnabled'); 
+        let embeddedServiceHelpButton = document.getElementsByClassName('embeddedServiceHelpButton');
+        if(isAgentAvailable && embeddedServiceHelpButton && embeddedServiceHelpButton[0] && (embeddedServiceHelpButton[0].style.display == 'block' || 
+           embeddedServiceHelpButton[0].style.display == '') && helpButton && helpButton[0]){
+            helpButton[0].click();
+            greetingTimeout = window.setInterval(function(){
+                               var container = document.getElementsByClassName('fieldList');
+            if(container && container[0]){
+                let greetingDiv = document.createElement("div");
+                greetingDiv.style.overflow = 'hidden';
+                greetingDiv.style.alignItems = 'center';
+                greetingDiv.style.justifyContent = 'center';
+                greetingDiv.style.display = 'flex';
+                greetingDiv.style.width = '100%';
+                greetingDiv.style.height = '101%';
+                greetingDiv.style.background = 'white';
+                greetingDiv.style.position = 'absolute';
+                greetingDiv.style.zIndex = '1';
+                greetingDiv.id = 'grettingId';
+                const greetingText = document.createTextNode("Hey, How i can help you?");
+                greetingDiv.appendChild(greetingText);
+                container[0].prepend(greetingDiv);                   
+                let form = document.getElementsByClassName('formContent');
+                form[0].style.height = '100%';
+                form[0].style.overflow = 'hidden';
+                let submitBtn = document.getElementsByClassName('embeddedServiceSidebarButton');
+                submitBtn[0].style.display = 'none';
+                window.setTimeout(function(){
+                    let container = document.getElementsByClassName('fieldList');
+                    container[0].removeChild(container[0].childNodes[0]);
+                    let form = document.getElementsByClassName('formContent');
+                    form[0].style.height = 'calc(100% - 81px);';
+                    let submitBtn = document.getElementsByClassName('embeddedServiceSidebarButton');
+                    submitBtn[0].style.display = 'block';
+                    clearInterval(greetingTimeout);
+                }, 5000);
+            }
+            }, 1000)
+        }    
+    }, 60000);
+</script>
+</apex:page>

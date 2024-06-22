@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_7Z_Houston_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 7Z - Houston</label>
+    <queue>Queue_7Z_Houston</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

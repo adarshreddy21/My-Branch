@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_TBW_Brownfield_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Do not use - TBW-Brownfield</label>
+    <queue>Queue_TBW_Brownfield</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

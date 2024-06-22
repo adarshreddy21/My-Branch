@@ -1,0 +1,2991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility</fullName>
+    <active>true</active> 
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <label>Facility</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values> 
+            <fullName>Avention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buy Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call</fullName> 
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DFW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Definitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EWIMPORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GVT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VESEPTIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Grade__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Business_Type__c</picklist>
+        <values>
+            <fullName>Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locating</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Class__c</picklist>
+        <values>
+            <fullName>Agricultural Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airlines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airports %26 Aviation Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asphalt%2C Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banks%2C Financial Institutions %26 Bus Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers - Waste %26 Environmental Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Materials %28excl Lumber Mills%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical - Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colleges %26 Universities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2C Gen Contractors %26 Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cruise Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealerships - Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealerships - Recreational %26 Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Rig Owners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry Cleaners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Civil%2FHeavy Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Enviro Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Seismic %26 Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricated Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fleet - Rental %26 Leasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Grocery Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Kindred Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasoline%2C Oil %26 Petroleum Distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal - Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal Departments%2FAgencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Municipality%2FLocal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - State%2FProvincial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Facilities%2C Clinics %26 Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotels%2C Camps%2C Parks%2C Clubs %26 Pers Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individuals %26 Homeowners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratories - Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratories - Non-Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquid%2FPetroleum%2C Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquid%2FPetroleum%2C Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Blender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Marketer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumber %26 Wood Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumber Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical %26 Equipment Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media%2C TV%2C Radio %26 Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Electrical Equipment %26 Computers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Furn%2C Millwork%2C Cbnts %26 Fxtrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Machine %28incl Medical%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Non-Metal %28Plastic%2C Rubber%2C Glass%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Paper Products %26 Pckgng Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Shoe%2C Leather%2C Textiles %26 Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Transportation Equip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining %26 Minerals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Gas%2C Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Gas%2C Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Classifiable Establishments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas Producers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Dealers - Heating Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oilsands Mines%2FSAGD Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Metal Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulp %26 Paper Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quick Lubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %26 Developers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling - Metal%2C Paper %26 Plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refineries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schools - Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxi%2C Bus %26 Other Local Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trucking %26 Trans Co %28excl Pckg Delivery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Electrical distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Nat Gas %26 Propane Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Power Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Sanitary Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Telecommunications%2FCable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehousing %26 Related Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Generator_Status__c</picklist>
+        <values>
+            <fullName>Conditionally Exempt Sm Qty Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Quantity Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined</fullName>
+            <default>false</default> 
+        </values> 
+        <values>
+            <fullName>Small Quantity Generator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Lost_Reason__c</picklist>
+        <values>
+            <fullName>Company Bought Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deduped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One time FS Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Payment History</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Rank__c</picklist>
+        <values>
+            <fullName>CH A Large %3E200K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH C Assigned %3E30K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH E Small %3C30K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D %3C30%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK B Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK GE Gold Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK GH Gold High Penetration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK GL Gold Low Penetration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK O Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK PE Platinum Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK PO Platinum Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK PR Platinum Revenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK S Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK U Undefined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Vertical__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil%2C Blender%2C Packager%2C or Marketer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical - Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction - Building Related Trades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corp RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Rig Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Management Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Seismic %26 Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %26 Consulting - Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %26 Consulting - Heavy Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering and Consulting - Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering%2C Consulting - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering%2C Consulting - Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricated Metal Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - State%2FProvincial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Town%2C Municipality %26 County</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Town%2C Municipality and County</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining %26 Primary Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Gas Processing %26 Pipelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Metal Mfg%2E %26 Fabr%2E %28plastic%2Crubber%2Cglass%2Cetc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Dealers - Heating Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil%2C Gas Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oilsands Mines%2FSAGD Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper%2FLumber%26Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical %26 Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refineries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminals %26 Pipelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Equipment Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Electrical distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Natural Gas%2C Propane distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Power Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Sanitary Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Telecommunications%2FCable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Branch_Core_BU__c</picklist>
+        <values>
+            <fullName>CYN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleen Performance Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26G - Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26G - Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26G - Surface Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS Used Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety-Kleen Branch Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Branch_Operating_Business__c</picklist>
+        <values>
+            <fullName>Airborne Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI Oil Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camps %26 Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decoking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directional Boring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JL Filtration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleen Performance Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodge Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mulching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NavTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North American Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Sands Ops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Coating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS Used Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right of Way Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Environmental Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schrader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Techsonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformer Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Projects</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Broker_Group__c</picklist>
+        <values>
+            <fullName>Agent Only Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Owning Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Service Only Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Permit Only Broker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Type__c</picklist>
+        <values>
+            <fullName>Base</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locating</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Buying_Decision__c</picklist>
+        <values>
+            <fullName>Central Buying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locally Managed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chain_SubType__c</picklist>
+        <values>
+            <fullName>Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Class__c</picklist>
+        <values>
+            <fullName>Agricultural Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airlines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airports %26 Aviation Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asphalt%2C Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers - Waste %26 Environmental Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Materials %28excl Lumber Mills%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business and Personal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical - Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colleges %26 Universities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2C Gen Contractors %26 Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cruise Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealerships - Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealerships - Recreational %26 Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Rig Owners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry Cleaners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Civil%2FHeavy Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Enviro Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Seismic %26 Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eng %26 Consult - Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment and Recreation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploration - Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabricated Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fleet - Rental %26 Leasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Grocery Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Kindred Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasoline%2C Oil %26 Petroleum Distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal - Military</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Federal Departments%2FAgencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - Municipality%2FLocal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government - State%2FProvincial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Facilities%2C Clinics %26 Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeowner - Septic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individuals %26 Homeowners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratories - Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratories - Non-Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease Operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquid%2FPetroleum%2C Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquid%2FPetroleum%2C Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Blender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil Marketer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media%2C TV%2C Radio %26 Newspaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Equip%2E Machine Mfg%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Asphalt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Electrical Equipment %26 Computers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Machine %28incl Medical%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Non-Metal %28Plastic%2C Rubber%2C Glass%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Paper Products %26 Pckgng Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Textiles%2C Leather %26 Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mfg - Transportation Equip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining %26 Minerals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Gas%2C Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural Gas%2C Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Classifiable Establishments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas Producers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Dealers - Heating Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oilsands Mines%2FSAGD Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Metal Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quick Lubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %26 Developers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling - Metal%2C Paper %26 Plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refineries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schools - Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel Mills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxi%2C Bus %26 Other Local Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trucking %26 Trans Co %28excl Pckg Delivery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Electrical distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Nat Gas %26 Propane Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Power Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Sanitary Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utility - Telecommunications%2FCable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehousing %26 Related Svcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Corporate_Type__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Corporate-Retired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Credit_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Credit_Terms__c</picklist>
+        <values>
+            <fullName>1%25 10%2C Net 30 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 14 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5% 15, Net 90 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 10%2C Net 45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 10%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 15%2C Net 45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 15%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 15%2C Net 90 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 20%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 20%2C Net 90 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%25 Net 30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%25 10%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%25 15%2C Net 30 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%25 15%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E5%25 15%2C Net 75 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10%2C Net 15 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10%2C Net 30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10%2C Net 45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 10%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 15%2C Net 120 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 15%2C Net 30 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 15%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 20%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30%2C Net 31 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 30%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%25 End Of Accumulation Period%2C 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5%25 10%2C Net 30 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5%25 15%2C Net 45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5%25 15%2C Net 60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E5%25 15%2C Net 75 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%25 15%2C Net 45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 Down%2C 50%25 Net 15 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash in Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash on Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due Upon Receipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End Of Accounting Period Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End of Accumulation Period Net 45 Days</fullName>
+            <default>false</default>
+        </values>     
+        <values>
+            <fullName>Net 10 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 12 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 15 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 20 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 25 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 3 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 35 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 40 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 45 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 5 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 50 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 55 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 63 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 66 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 75 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 80 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 85</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid When Paid%2C Net 90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid when paid%2C Net 40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prox 25 Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Rating__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cycle__c</picklist>
+        <values>
+            <fullName>Committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Diversity_Organization_Detail__c</picklist>
+        <values>
+            <fullName>Minorities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>People with Disabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EC_Tier__c</picklist>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Full_Time_Part_Time__c</picklist>
+        <values>
+            <fullName>DOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P66</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Generator_Status__c</picklist>
+        <values>
+            <fullName>Conditionally Exempt Sm Qty Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Quantity Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Quantity Generator</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Undetermined</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hybrid_Central_LOBs__c</picklist>
+        <values>
+            <fullName>Allied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antifreeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil Sales %E2%80%93 Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CleanPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containerized Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Filter Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oily Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vac Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hybrid_Local_LOBs__c</picklist>
+        <values>
+            <fullName>Allied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antifreeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil Sales %E2%80%93 Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CleanPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containerized Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Filter Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oily Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vac Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry_Segment__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %26 Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance %26 Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper %26 Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical %26 Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refineries %26 Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminals %26 Pipelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insite_Branch_Code__c</picklist>
+        <values>
+            <fullName>296L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>296M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>296N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>463K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>493N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>812H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81KH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81KJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>881Y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8828</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882V</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882X</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882Y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>882Z</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>883S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8850</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98SFH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>ENG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Payment History</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market_Area_Top_25_Type__c</picklist>
+        <values>
+            <fullName>Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Milkrun_Service_Type__c</picklist>
+        <values>
+            <fullName>Broker2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSD Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Truck Load</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G5%2FG6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G6%2FG5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inconsistent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tankers%2FVAC Truck Loads</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Organization_Category__c</picklist>
+        <values>
+            <fullName>College or University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversity Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skilled Trades Technical%2FProfessional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Workforce Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade High School</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Organization_Status__c</picklist>
+        <values>
+            <fullName>Archive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualifying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phone_Type__c</picklist>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Potential__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Previous_Type__c</picklist>
+        <values>
+            <fullName>Brok%2FGen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dist%2FGen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent Reporting Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ShipTo%2FGen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Business__c</picklist>
+        <values>
+            <fullName>DFW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noble Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEPACO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H2O</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murphys Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermo Fluids</fullName>
+            <default>false</default>
+        </values>
+		<values>
+            <fullName>Thompson</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service_Provider_New__c</picklist>
+        <values>
+            <fullName>CHES Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHES Oil and Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean Harbors ENV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK BPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK ENV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK KPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service_Provider__c</picklist>
+        <values>
+            <fullName>CYN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noble Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEPACO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean Harbors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerald Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS Used Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Kleen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermo Fluids</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rank__c</picklist>
+        <values>
+            <fullName>CH A Large %3E200K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH B Medium &gt;100K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH C Assigned %3E30K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH E Small %3C30K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D %3C30%2C000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reporting_Vertical__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil%2C Blender%2C Packager%2C or Marketer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction - Building Related Trades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corp RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Rig Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %26 Consulting - Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering %26 Consulting - Heavy Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering and Consulting %E2%80%93 Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering%2C Consulting - Seismic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining%2C Primary Metals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil%2C Gas Exploration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil%2C Gas Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical %26 Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refineries %26 Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminals %26 Pipelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risk_Category__c</picklist>
+        <values>
+            <fullName>3PC Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Branch Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corp Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensitive Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SKO_Sales_Segment__c</picklist>
+        <values>
+            <fullName>Base Oil Sales Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract PKG %26 Blending - CAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract PKG %26 Blending - US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor Blended Sales Team - CAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor Blended Sales Team - US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government%2FMilitary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Admin %26 Key Accts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Products Sales Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SRP__c</picklist>
+        <values>
+            <fullName>BOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIDT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Exemption_Type__c</picklist>
+        <values>
+            <fullName>Non Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Exempt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Branch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

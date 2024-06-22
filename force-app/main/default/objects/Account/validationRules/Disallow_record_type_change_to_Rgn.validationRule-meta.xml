@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_record_type_change_to_Rgn</fullName>
+    <active>true</active>
+    <description>Disallow record type change from customer to Key Account</description>
+    <errorConditionFormula>AND(
+IsChanged(RecordTypeId),
+Priorvalue(RecordTypeId) = $Label.Customer_Record_Type_Id,
+NOT(ISCHANGED(Active_ER_Contract__c)),
+RecordType.DeveloperName = &quot;Key_Account&quot;)</errorConditionFormula>
+    <errorMessage>Can not change customer to Key account</errorMessage>
+</ValidationRule>

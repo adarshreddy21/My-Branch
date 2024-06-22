@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Assign_Cases_to_ISU</fullName>
+    <active>true</active>
+    <description>Disallowing to assign cases to Inside Sales User</description>
+    <errorConditionFormula>AND(OR(RecordType.DeveloperName=&quot;Customer_Service_Case_New&quot;,
+RecordType.DeveloperName=&quot;Customer_Service_Case&quot;), PRIORVALUE(OwnerId) != OwnerId,
+CASESAFEID(OwnerId)= &apos;0054Q00000FJYDqQAP&apos;
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Cases cannot be assigned to Inside Sales User. Please assign to a valid queue</errorMessage>
+</ValidationRule>

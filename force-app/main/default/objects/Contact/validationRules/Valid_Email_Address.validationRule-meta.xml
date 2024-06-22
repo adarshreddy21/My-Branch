@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Email_Address</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Profile.Name = &quot;Super Recruiter&quot;),
+NOT($Profile.Name = &quot;Recruiter&quot;),
+NOT($Profile.Name = &quot;Integration&quot;), 
+NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;), 
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+NOT($Profile.Name = &quot;Sales Operations&quot;), 
+NOT($Profile.Name = &quot;Master Data Management&quot;), 
+Account.Expired__c = false,
+AND(ISNEW(),
+OR(CONTAINS(Email,&quot;@cleanharbors.com&quot;),
+CONTAINS(Email,&quot;@email.com&quot;),
+CONTAINS(Email,&quot;@safety-kleen.com&quot;),
+CONTAINS(Email,&quot;pending&quot;),
+CONTAINS(Email,&quot;refused&quot;),
+CONTAINS(Email,&quot;noemail&quot;),
+CONTAINS(Email,&quot;unknown&quot;))))</errorConditionFormula>
+<errorDisplayField>Email</errorDisplayField>
+    <errorMessage>Email address must be valid and should not contain @cleanharbors.com, @safety-kleen.com, refused, pending, or unknown.</errorMessage>
+</ValidationRule>

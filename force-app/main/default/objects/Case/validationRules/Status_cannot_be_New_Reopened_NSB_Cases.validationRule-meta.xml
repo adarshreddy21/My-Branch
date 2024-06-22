@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_cannot_be_New_Reopened_NSB_Cases</fullName>
+    <active>true</active>
+    <description>Case cannot be re-opened in new status</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Status ),
+OR(
+RecordType.DeveloperName = &apos;Non_Standard_Billing_Closed_Order&apos;,
+RecordType.DeveloperName = &apos;Non_Standard_Billing_WIN&apos;,
+CONTAINS(TEXT(PRIORVALUE(Status)), &quot;Closed&quot;),
+CONTAINS(TEXT(PRIORVALUE(Status)), &quot;Closed - Not Active&quot;),
+CONTAINS(TEXT(PRIORVALUE(Status)), &quot;Resolved&quot;),
+CONTAINS(TEXT(PRIORVALUE(Status)), &quot;Not Approved&quot;),
+CONTAINS(TEXT(PRIORVALUE(Status)), &quot;In Progress&quot;)
+),
+ISPICKVAL( Status , &quot;New&quot;),
+NOT(ISPICKVAL(Type,&apos;E-Billing Service&apos;)),
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Master Data Management&quot;),
+NOT($Profile.Name = &quot;Sales Operations&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Status of a Re-Opened Case Cannot be changed to New.</errorMessage>
+</ValidationRule>

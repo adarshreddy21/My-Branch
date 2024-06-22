@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Change_Chain_Code_Name</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;IT Super User&apos;,
+$Profile.Name &lt;&gt; &apos;Sales Operations&apos;,
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+NOT( $Permission.Access_To_Update_Chain_Code_Name ),
+ISCHANGED(Chain__c),
+OR(
+ISPICKVAL( Chain__r.Type , &apos;Pricing Chain&apos;),
+AND(NOT(ISBLANK(Chain__c)),PRIORVALUE ( Chain_Type__c ) = &apos;Pricing Chain&apos;)), 
+NOT(ISBLANK(WIN_ID__c))
+)</errorConditionFormula>
+    <errorMessage>Only Pricing Team can add pricing chain code fields once WINID has been generated. Please send email request to pricingchainlinkrequests@cleanharbors.com for assistance.</errorMessage>
+</ValidationRule>

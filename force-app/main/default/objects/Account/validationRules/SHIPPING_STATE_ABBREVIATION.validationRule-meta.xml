@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SHIPPING_STATE_ABBREVIATION</fullName>
+    <active>true</active>
+    <description>Validate the state entered on the address fields for  Manifest, Shipping and Billing can be only 2 chars long.</description>
+    <errorConditionFormula>AND(
+   NOT (RecordType.Name = &quot;HR Recruiting Partners&quot;),
+   AND(NOT(ISPICKVAL( Status__c , &apos;Inactive&apos;)), 
+   NOT(ISCHANGED(Active_ER_Contract__c)),
+   NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+   Inactivate_Reactivate_In_Progress__c==false),
+   !ISBLANK( ShippingState),
+   LEN(ShippingState) != 2
+   )</errorConditionFormula>
+    <errorDisplayField>ShippingState</errorDisplayField>
+    <errorMessage>Please use only 2 chars State abbreviation</errorMessage>
+</ValidationRule>

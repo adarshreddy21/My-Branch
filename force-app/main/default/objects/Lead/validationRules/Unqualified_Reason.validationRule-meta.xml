@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Reason</fullName>
+    <active>true</active>
+    <description>Require reason for biennial and lost customer leads that are disqualified</description>
+    <errorConditionFormula>and(isblank(text(Unqualified_Reason__c)),text(Status) = &quot;Unqualified&quot;, $Profile.Name &lt;&gt; &quot;Integration&quot;,$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Unqualified_Reason__c</errorDisplayField>
+    <errorMessage>Must select reason for being unqualified</errorMessage>
+</ValidationRule>

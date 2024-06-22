@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Sharps_Medical_Mailback_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>IS Sharps &amp; Medical Mailback</label>
+    <queue>IS_Sharps_Medical_Mailback</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

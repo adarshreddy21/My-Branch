@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>New_Record_Email</name>
+        <label>New Record Email</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!$Record.Owner:User.Email},{!$Record.CPG_Owner__r.Email}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>NewRecordSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NewRecordBody</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>URLLink</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_470}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_470}))</expression>
+    </formulas>
+    <interviewLabel>Case CPG New Record Email Notification Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case CPG New Record Email Notification Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_Record_Email</targetReference>
+        </connector>
+        <filterFormula>AND(ISNEW(),{!$Record.RecordType.Name} = &apos;CPG Request&apos;)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>NewRecordBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello, a Central Profile Case, {!$Record.CaseNumber}, has been created with the below comments. Please review and act accordingly. 
+{!URLLink}/{!$Record.Id}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NewRecordSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>CPG Case {!$Record.CaseNumber} has been created</text>
+    </textTemplates>
+</Flow>

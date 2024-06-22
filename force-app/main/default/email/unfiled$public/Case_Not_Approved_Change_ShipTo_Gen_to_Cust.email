@@ -1,0 +1,13 @@
+The following case has been rejected:
+
+Case Link:  {!Case.Link}
+
+Verified for No Duplicates  = {!Case.Verified_for_No_Duplicates_Required__c}
+
+Verified Main Contact = {!Case.Verified_Main_Contact_Checkbox__c}
+
+Rejected By : {!Case.LastModifiedBy}
+
+CMD Group : ValidationRequests@cleanharbors.com
+
+*Please see case comments for details. 

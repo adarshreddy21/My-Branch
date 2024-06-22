@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Attached_Cannot_Be_Checked</fullName>
+    <active>true</active>
+    <description>If the Inventory attached  is true then Assigned support specialist must be there.</description>
+    <errorConditionFormula>AND(Cross_Sell__c = true, Inventory_Attached__c= true, isblank(TPM_Quote_Request_To_Person__c))</errorConditionFormula>
+    <errorMessage>Please update &quot;Assigned Support Specialist&quot; field before &quot;Inventory attached&quot; checkbox checked.</errorMessage>
+</ValidationRule>

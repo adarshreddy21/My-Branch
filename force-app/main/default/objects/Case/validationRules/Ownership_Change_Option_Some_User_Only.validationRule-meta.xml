@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ownership_Change_Option_Some_User_Only</fullName>
+    <active>false</active>
+    <description>when case record type is customer po then case owner can change some users only</description>
+    <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+$RecordType.Name = &quot;Customer PO Case&quot;,
+$User.ProfileId &lt;&gt; &quot;00ej0000000vlsU&quot; &amp;&amp;
+$User.Id &lt;&gt; &quot;0050a00000JEp6M&quot; &amp;&amp;
+$User.Id &lt;&gt; &quot;0050a00000JEp6I&quot; &amp;&amp;
+$User.Id &lt;&gt; &quot;005j000000Ebsfu&quot; &amp;&amp;
+$User.Id &lt;&gt; &quot;005j000000DLBdY&quot;)</errorConditionFormula>
+    <errorMessage>You may not change ownership of Customer PO Case records. Contact the PO Management team for support.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<template>
+<lightning-card>
+    <template lwc:if={reactivate}>
+        <div class="slds-m-around_medium">
+            <p class="bannermsg">
+                Account Inactivation/Reactivation Case In Progress.
+            </p>
+            </div>
+            </template>
+            <template lwc:if={status}>
+                <div class="slds-m-around_medium">
+            <p class="bannermsg">
+                This account is Inactive. No edits will be processed on this account. Reactivate Account before making any updates.
+            </p>
+            
+        </div>
+    </template>
+</lightning-card>
+</template>

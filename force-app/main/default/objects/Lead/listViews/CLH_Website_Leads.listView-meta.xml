@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CLH_Website_Leads</fullName>
+    <columns>Created_Date_with_Time__c</columns>
+    <columns>CLH_Website_Service_Requested__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.STREET</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.ZIP</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CLH_Website_Service_Requested__c</field>
+        <operation>greaterThan</operation>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/25/2021 12:00 AM</value>
+    </filters>
+    <label>CLH Website Leads</label>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

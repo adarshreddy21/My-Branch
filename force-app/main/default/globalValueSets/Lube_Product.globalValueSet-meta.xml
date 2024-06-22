@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil</fullName>
+        <default>false</default>
+        <label>Base Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy Duty</fullName>
+        <default>false</default>
+        <label>Heavy Duty</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Bottoms</fullName>
+        <default>false</default>
+        <label>Bottoms</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuel</fullName>
+        <default>false</default>
+        <label>Fuel</label>
+    </customValue>
+    <customValue>
+        <fullName>Mineral Spirits</fullName>
+        <default>false</default>
+        <label>Mineral Spirits</label>
+    </customValue>
+    <description>Lube Product</description>
+    <masterLabel>Lube Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

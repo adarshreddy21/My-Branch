@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Pipelines</fullName>
+    <availability>online</availability>
+    <description>Listing of Open Pipelines that roll up to the Key Account</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Hierarchy Pipelines</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cleanharbors.lightning.force.com/lightning/r/Report/00O0a000004mSqJ/view?fv0={!Account.Account_ID_18__c}&amp;fv1={!Account.Account_ID_18__c}&amp;fv2={!Account.Account_ID_18__c}</url>
+</WebLink>

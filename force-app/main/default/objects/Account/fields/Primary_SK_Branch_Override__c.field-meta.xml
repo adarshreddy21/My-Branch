@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_SK_Branch_Override__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checks if the Primary SK Branch is aligned with zip</description>
+    <externalId>false</externalId>
+    <label>Primary Aurora Branch Override</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

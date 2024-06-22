@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Classifcation__c</fullName>
+    <description>This field determines if the type of business for the event.  equivalent to account class on the beacon call note.</description>
+    <externalId>false</externalId>
+    <label>Event Classifcation</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Event_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>Cross Selling</fullName>
+                <default>false</default>
+                <label>Cross Selling</label>
+            </value>
+            <value>
+                <fullName>Base business</fullName>
+                <default>false</default>
+                <label>Base business</label>
+            </value>
+            <value>
+                <fullName>Pipeline Review</fullName>
+                <default>false</default>
+                <label>Pipeline Review</label>
+            </value>
+            <value>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+                <label>Coaching</label>
+            </value>
+            <value>
+                <fullName>Strategic Account Planning</fullName>
+                <default>false</default>
+                <label>Strategic Account Planning</label>
+            </value>
+            <value>
+                <fullName>Team Meeting</fullName>
+                <default>false</default>
+                <label>Team Meeting</label>
+            </value>
+            <value>
+                <fullName>Sales Leadership Meeting</fullName>
+                <default>false</default>
+                <label>Sales Leadership Meeting</label>
+            </value>
+            <value>
+                <fullName>Quarterly Business Review</fullName>
+                <default>false</default>
+                <label>Quarterly Business Review</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Face to Face</controllingFieldValue>
+            <controllingFieldValue>Working on Quote</controllingFieldValue>
+            <controllingFieldValue>Virtual (WebEx)</controllingFieldValue>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <valueName>Prospecting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Face to Face</controllingFieldValue>
+            <controllingFieldValue>Working on Quote</controllingFieldValue>
+            <controllingFieldValue>Virtual (WebEx)</controllingFieldValue>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <valueName>Cross Selling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Face to Face</controllingFieldValue>
+            <controllingFieldValue>Working on Quote</controllingFieldValue>
+            <controllingFieldValue>Virtual (WebEx)</controllingFieldValue>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <valueName>Base business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Face to Face</controllingFieldValue>
+            <controllingFieldValue>Working on Quote</controllingFieldValue>
+            <controllingFieldValue>Virtual (WebEx)</controllingFieldValue>
+            <controllingFieldValue>Call</controllingFieldValue>
+            <controllingFieldValue>Quoted</controllingFieldValue>
+            <valueName>Quarterly Business Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Discussion</controllingFieldValue>
+            <valueName>Pipeline Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Discussion</controllingFieldValue>
+            <valueName>Coaching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Discussion</controllingFieldValue>
+            <valueName>Strategic Account Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Discussion</controllingFieldValue>
+            <valueName>Team Meeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Discussion</controllingFieldValue>
+            <valueName>Sales Leadership Meeting</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

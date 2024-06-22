@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Territory_SB</fullName>
+    <columns>Region__c</columns>
+    <columns>Area__c</columns>
+    <columns>NAME</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Primary_Branch__c</columns>
+    <columns>Specialist__c</columns>
+    <columns>Manager_Name__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Sales_EVP__c</columns>
+    <columns>Operations_VP__c</columns>
+    <columns>Primary_Branch_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Business__c</field>
+        <operation>equals</operation>
+        <value>Field Services</value>
+    </filters>
+    <filters>
+        <field>Primary_Branch__c</field>
+        <operation>contains</operation>
+        <value>SB,RI -,WO,CS</value>
+    </filters>
+    <filters>
+        <field>Sales_EVP__c</field>
+        <operation>equals</operation>
+        <value>Gwendolyn T Hill</value>
+    </filters>
+    <label>FS Territory - SB</label>
+    <language>en_US</language>
+</ListView>

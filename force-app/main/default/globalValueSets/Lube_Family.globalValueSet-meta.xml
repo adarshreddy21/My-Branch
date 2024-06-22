@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>2 Cycle</fullName>
+        <default>false</default>
+        <label>2 Cycle</label>
+    </customValue>
+    <customValue>
+        <fullName>Additives</fullName>
+        <default>false</default>
+        <label>Additives</label>
+    </customValue>
+    <customValue>
+        <fullName>Antifreeze</fullName>
+        <default>false</default>
+        <label>Antifreeze</label>
+    </customValue>
+    <customValue>
+        <fullName>ATF</fullName>
+        <default>false</default>
+        <label>ATF</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Gear Oil</fullName>
+        <default>false</default>
+        <label>Automotive Gear Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil</fullName>
+        <default>false</default>
+        <label>Base Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Bottoms</fullName>
+        <default>false</default>
+        <label>Bottoms</label>
+    </customValue>
+    <customValue>
+        <fullName>Brake Fluid</fullName>
+        <default>false</default>
+        <label>Brake Fluid</label>
+    </customValue>
+    <customValue>
+        <fullName>Chain Oil</fullName>
+        <default>false</default>
+        <label>Chain Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuel Treatments</fullName>
+        <default>false</default>
+        <label>Fuel Treatments</label>
+    </customValue>
+    <customValue>
+        <fullName>Gear Oil</fullName>
+        <default>false</default>
+        <label>Gear Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Glycol Caustics</fullName>
+        <default>false</default>
+        <label>Glycol,Caustics</label>
+    </customValue>
+    <customValue>
+        <fullName>Grease</fullName>
+        <default>false</default>
+        <label>Grease</label>
+    </customValue>
+    <customValue>
+        <fullName>HDDEO</fullName>
+        <default>false</default>
+        <label>HDDEO</label>
+    </customValue>
+    <customValue>
+        <fullName>Hydraulic</fullName>
+        <default>false</default>
+        <label>Hydraulic</label>
+    </customValue>
+    <customValue>
+        <fullName>Marine Diesel</fullName>
+        <default>false</default>
+        <label>Marine Diesel</label>
+    </customValue>
+    <customValue>
+        <fullName>Mineral Spirits</fullName>
+        <default>false</default>
+        <label>Mineral Spirits</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Detergent Engine Oil</fullName>
+        <default>false</default>
+        <label>Non Detergent Engine Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PCEO</fullName>
+        <default>false</default>
+        <label>PCEO</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Steering Fluid</fullName>
+        <default>false</default>
+        <label>Power Steering Fluid</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Oils</fullName>
+        <default>false</default>
+        <label>Process Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Racing Oil</fullName>
+        <default>false</default>
+        <label>Racing Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Railroad Oils</fullName>
+        <default>false</default>
+        <label>Railroad Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>UTF</fullName>
+        <default>false</default>
+        <label>UTF</label>
+    </customValue>
+    <customValue>
+        <fullName>Viscosity Modifier</fullName>
+        <default>false</default>
+        <label>Viscosity Modifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Way Oils</fullName>
+        <default>false</default>
+        <label>Way Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Windshield Washer</fullName>
+        <default>false</default>
+        <label>Windshield Washer</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil - Heavy</fullName>
+        <default>false</default>
+        <label>Base Oil - Heavy</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil - Light</fullName>
+        <default>false</default>
+        <label>Base Oil - Light</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil - Medium</fullName>
+        <default>false</default>
+        <label>Base Oil - Medium</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Fuel - Asphalt Base</fullName>
+        <default>false</default>
+        <label>Blended Fuel - Asphalt Base</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Fuel - Gasoline</fullName>
+        <default>false</default>
+        <label>Blended Fuel - Gasoline</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Fuel - High Sulfer</fullName>
+        <default>false</default>
+        <label>Blended Fuel - High Sulfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Fuel - Low Ash</fullName>
+        <default>false</default>
+        <label>Blended Fuel - Low Ash</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Fuel - MDO</fullName>
+        <default>false</default>
+        <label>Blended Fuel - MDO</label>
+    </customValue>
+    <customValue>
+        <fullName>CCF</fullName>
+        <default>false</default>
+        <label>CCF</label>
+    </customValue>
+    <customValue>
+        <fullName>CFF</fullName>
+        <default>false</default>
+        <label>CFF</label>
+    </customValue>
+    <customValue>
+        <fullName>Motorcycle Oil</fullName>
+        <default>false</default>
+        <label>Motorcycle Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Neutrals &amp; Brightstocks</fullName>
+        <default>false</default>
+        <label>Neutrals &amp; Brightstocks</label>
+    </customValue>
+    <customValue>
+        <fullName>Plumbing Antifreeze</fullName>
+        <default>false</default>
+        <label>Plumbing Antifreeze</label>
+    </customValue>
+    <customValue>
+        <fullName>Purchased Base Oil</fullName>
+        <default>false</default>
+        <label>Purchased Base Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - Dehy Fuel</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - Dehy Fuel</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - HGO</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - HGO</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - HTS</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - HTS</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - RGO</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - RGO</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - SIVA</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - SIVA</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - V401</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - V401</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - VFS</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - VFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinery Fuel - VGO</fullName>
+        <default>false</default>
+        <label>Refinery Fuel - VGO</label>
+    </customValue>
+    <customValue>
+        <fullName>RFO</fullName>
+        <default>false</default>
+        <label>RFO</label>
+    </customValue>
+    <customValue>
+        <fullName>Transformer Oil</fullName>
+        <default>false</default>
+        <label>Transformer Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>VDB Roofing</fullName>
+        <default>false</default>
+        <label>VDB Roofing</label>
+    </customValue>
+    <customValue>
+        <fullName>VTAE Bottoms</fullName>
+        <default>false</default>
+        <label>VTAE Bottoms</label>
+    </customValue>
+    <customValue>
+        <fullName>Diesel Exhaust Fluid</fullName>
+        <default>false</default>
+        <label>Diesel Exhaust Fluid</label>
+    </customValue>
+    <description>Lube Family</description>
+    <masterLabel>Lube Family</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Owner_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <description>Case Owner cannot be changed when the status is Closed , Closed-Approved or Closed-Deadfiled.</description>
+    <errorConditionFormula>AND($RecordType.DeveloperName = &quot;CPG_Request&quot;,
+OR(
+ISPICKVAL(Status, &quot;Closed&quot;),
+ISPICKVAL(Status, &quot;Closed - Approved&quot;),
+ISPICKVAL(Status, &quot;Closed - Deadfiled&quot;)
+),
+ISCHANGED(OwnerId)
+)</errorConditionFormula>
+    <errorMessage>You cannot be change the Owner.</errorMessage>
+</ValidationRule>

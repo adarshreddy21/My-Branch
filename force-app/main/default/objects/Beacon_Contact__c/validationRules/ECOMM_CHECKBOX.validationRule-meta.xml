@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECOMM_CHECKBOX</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND( CS_Ecomm__c = TRUE,
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;Master Data Management&quot;),
+OR(
+ISPICKVAL(Account_ID__r.Type, &quot;Pricing Chain&quot;),
+ISPICKVAL(Account_ID__r.Type, &quot;Parent Reporting Chain&quot;),
+ISPICKVAL(Account_ID__r.Type, &quot;Reporting Chain&quot;),
+ISPICKVAL(Account_ID__r.Type, &quot;Brok/Gen&quot;))),
+
+AND( CS_Ecomm__c = TRUE,
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;Master Data Management&quot;),
+ISBLANK( Account_ID__r.WIN_ID__c)),
+
+AND( CS_Ecomm__c = TRUE,
+NOT ($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;Master Data Management&quot;),
+Account_ID__r.Expired__c= TRUE),
+
+AND( CS_Ecomm__c = TRUE,
+OR(Contains(Email__c ,&quot;@email.com&quot;),
+Contains(Email__c ,&quot;pending&quot;))
+)
+)</errorConditionFormula>
+    <errorDisplayField>CS_Ecomm__c</errorDisplayField>
+    <errorMessage>Ecomm rules:
+1.	Account type cannot be Chain or Brok/Gen and cannot be Expired.
+2.	Account must have a WinId.
+3.	Email address must be valid (not ‘Pending’ or ‘Email.com’).</errorMessage>
+</ValidationRule>

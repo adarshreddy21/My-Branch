@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ecomm_View</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Ecomm View(IE only)</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)} 
+
+var connection = sforce.connection; 
+
+
+if({!Contact.CS_Ecomm__c}) 
+{ 
+window.open(&apos;https://winwebtest.cleanharbors.com/chosportal/loginbeacon.aspx?username={!Contact.Email}&apos;) 
+} 
+else {alert(&apos;This customer contact is not setup as an Ecomm/CHOS user. Click the ecomm flag and save to establish the account access to CHOS.&apos;); 
+}</url>
+</WebLink>

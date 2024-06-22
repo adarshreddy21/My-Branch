@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_Talent_Pools</fullName>
+    <fields>Name</fields>
+    <fields>Organization_ID__c</fields>
+    <fields>Organization_Category__c</fields>
+    <fields>Organization_Status__c</fields>
+    <fields>Active_Inactive__c</fields>
+    <label>HR Talent Pools</label>
+</CompactLayout>

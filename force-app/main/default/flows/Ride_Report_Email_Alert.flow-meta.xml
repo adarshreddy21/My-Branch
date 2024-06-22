@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>send_email123</name>
+        <label>send email</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!$Record.Salesperson__r.Email},{!$Record.Salesperson_Sales_SVP_Email__c},{!$Record.Account_Branch_Manager__c},{!$Record.Salesperson_Sales_Director_Email__c},{!$Record.Sales_Person_VP_Email__c}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>subject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>URLLINK</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_470}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_470}))</expression>
+    </formulas>
+    <interviewLabel>Ride Report Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Ride Report Email Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>send_email123</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Submitted</stringValue>
+            </value>
+        </filters>
+        <object>Ride_Report__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello,
+
+The ride report {!$Record.Name} for &quot;{!$Record.Salesperson__r.FirstName} {!$Record.Salesperson__r.LastName}&quot; has been completed and is ready for your review. 
+
+Report Link:  {!$Record.URL__c}/{!$Record.Id}
+
+Record Created by: {!$Record.CreatedBy.FirstName} {!$Record.CreatedBy.LastName}
+
+Sales Rep Being Reviewed: {!$Record.Salesperson__r.FirstName} {!$Record.Salesperson__r.LastName}
+
+Created Date of Record: {!$Record.CreatedDate}
+
+If you have any questions, please contact the Sales Manager responsible for this report.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBody1</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.URL__c}{!$Record.Id}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Ride Report Ready for Review</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_a_call_center_lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(OR(CreatedBy.Profile.Name=&apos;Call Center Agent&apos;,
+CreatedBy.Profile.Name=&apos;Call Center Agent New&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is a call center lead?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

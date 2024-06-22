@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_LAW_Buffalo_NY_Field_Srvc_Cntr_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>TPM_Specialist__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>TPM_Opportunity__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,In Progress</value>
+    </filters>
+    <label>Queue : LAW - Buffalo NY Field Srvc Cntr</label>
+    <language>en_US</language>
+    <queue>Queue_LAW_Buffalo_NY_Field_Srvc_Cntr</queue>
+    <sharedTo>
+        <roleAndSubordinates>CHES_AM_US_LAW</roleAndSubordinates>
+        <roleAndSubordinates>CHES_BM_US_LAW</roleAndSubordinates>
+    </sharedTo>
+</ListView>

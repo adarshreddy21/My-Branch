@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>iSell__Avention</defaultLandingTab>
+    <description>Central master data management team</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Central Master Data</label>
+    <logo>SharedDocuments/MDM.jpg</logo>
+    <tabs>iSell__Avention</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Beacon_Call_Notes__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-DuplicateRecordSet</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-UserProfile</tabs>
+    <tabs>Territory__c</tabs>
+    <tabs>CLH_Website_Lead_Mapping__c</tabs>
+    <tabs>AQMD_District__c</tabs>
+    <tabs>Territory_Budget_SK_Branch_Seasonality__c</tabs>
+    <tabs>Budget_Summary__c</tabs>
+    <tabs>My_Budget</tabs>
+    <tabs>Sales_Olympics</tabs>
+    <tabs>maps__ShapeLayerGeometry__c</tabs>
+</CustomApplication>

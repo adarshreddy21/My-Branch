@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC_EMAILED_INVOICE_CHECKBOX</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT ($Profile.Name = &quot;Integration&quot;), 
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+OR( 
+ISPICKVAL(Account_ID__r.Type, &quot;ShipTo/Gen&quot;),  
+ISPICKVAL(Account_ID__r.Type, &quot;Brok/Gen&quot;) || 
+ISPICKVAL(Department_Code__c, &quot;EXP&quot;) || 
+(LEN( Account_ID__r.WIN_ID__c ) &lt; 1)), 
+
+(CS_Emailed_Invoices__c))</errorConditionFormula>
+    <errorDisplayField>CS_Emailed_Invoices__c</errorDisplayField>
+    <errorMessage>1. Can be selected only if WIN ID is populated on the Account
+2. Can be selected only if Type on Account is NOT ShipTo/Gen, Brok/Gen or Expired</errorMessage>
+</ValidationRule>

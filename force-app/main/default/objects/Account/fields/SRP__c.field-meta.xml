@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SRP__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>SRP category should be entered prior to quoting Lube through product quote.</inlineHelpText>
+    <label>Lube SRP</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOS</fullName>
+                <default>false</default>
+                <label>BOS</label>
+            </value>
+            <value>
+                <fullName>BOWC</fullName>
+                <default>false</default>
+                <label>BOWC</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>Macro</fullName>
+                <default>false</default>
+                <label>Macro</label>
+            </value>
+            <value>
+                <fullName>MIDT</fullName>
+                <default>false</default>
+                <label>MIDT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Quote_Requested_Date</fullName>
+    <active>true</active>
+    <description>When Opportunity Business Segment is Cannot Quote then Quote requested date and Quote turnaround time cannot be changed.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Opportunity_Business_Segment__c , &apos;Cannot Quote&apos;),  ISCHANGED( TPM_Quote_Turnaround_Time__c )  , ISCHANGED( TPM_Quote_Requested_Date__c ) )</errorConditionFormula>
+    <errorMessage>Cannot change Quote Requested Date when Opportunity Business Segment is Cannot Quote.</errorMessage>
+</ValidationRule>

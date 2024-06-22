@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_C49_GOODFIELD_BPS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: C49-GOODFIELD - BPS</label>
+    <queue>Queue_C49_GOODFIELD_BPS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

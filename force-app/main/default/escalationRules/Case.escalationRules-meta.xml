@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>PO Escalations</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHours>Clean Harbors EST</businessHours>
+            <businessHoursSource>Static</businessHoursSource>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Customer PO Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Closed,Resolved,Closed - Completed,Closed - Rejected,Closed - Cancelled</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Modified_in_first_48_hrs__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Number_hours_since_last_modified__c</field>
+                <operation>greaterOrEqual</operation>
+                <value>24</value>
+            </criteriaItems>
+            <escalationAction>
+                <minutesToEscalation>30</minutesToEscalation>
+                <notifyCaseOwner>true</notifyCaseOwner>
+                <notifyToTemplate>unfiled$public/PO_Case_Unresolved_Escalation_1</notifyToTemplate>
+            </escalationAction>
+            <escalationStartTime>CaseLastModified</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

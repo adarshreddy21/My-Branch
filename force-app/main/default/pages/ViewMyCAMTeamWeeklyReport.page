@@ -1,0 +1,191 @@
+<apex:page standardController="Sales_Manager_Summary_Note__c" recordSetVar="SummaryNoteRecords" extensions="CAMWeeklyReportController" sidebar="false" showHeader="true" >
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="My Team's CAM Weekly Report"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+    <style type = "text/css">
+        .colHeadr {text-align:center;}
+    </style>
+    
+    <apex:includeScript value="//code.jquery.com/jquery-2.1.1.min.js"/>
+    <apex:includeScript value="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/js/jquery.tablesorter.js"/>
+    <apex:includeScript value="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/js/jquery.tablesorter.widgets.js"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.5/css/theme.bootstrap.min.css" />
+    <script>
+    $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'AmountSort',
+        is: function(s) { 
+            // return false so this parser is not auto detected 
+            return false; 
+        }, 
+        format: function(s) {
+            // format data for normalization 
+            return s.replace('$','').replace(/,/g,'');
+        }, 
+
+        type: 'Numeric' 
+    }); 
+    
+    $.tablesorter.addParser({ 
+        // set a unique id 
+        id: 'ForecastAmountSort',
+        is: function(s) {  
+            return false; 
+        }, 
+        format: function(s) { 
+            return s.replace('$','').replace(/,/g,'');
+        }, 
+        type: 'Text' 
+    }); 
+    
+   $(document).ready(function(){
+        $("[id$=table1]").tablesorter({
+            theme : 'bootstrap',
+            headerTemplate : '{content} {icon}',
+            widgets : ['zebra', 'uitheme'],
+            sortList: [[1,0]]
+        });
+    });
+    
+    
+     $(document).ready(function(){
+        $("[id$=table2]").tablesorter({
+            theme : 'bootstrap',
+            headerTemplate : '{content} {icon}',
+            widgets : ['zebra', 'uitheme'],
+            sortList: [[1,0]],
+            headers: {
+                4: {//zero-based column index
+                    sorter:'AmountSort'
+                }
+            }
+        });
+    });
+    
+    $(document).ready(function(){
+        $("[id$=table3]").tablesorter({
+            theme : 'bootstrap',
+            headerTemplate : '{content} {icon}',
+            widgets : ['zebra', 'uitheme'],
+            sortList: [[1,0]],
+            headers: {
+                2: {sorter:'ForecastAmountSort'},
+                3: {sorter:'ForecastAmountSort'},
+            	4: {sorter:'ForecastAmountSort'}
+            }
+        });
+    });
+    </script>
+    
+    <apex:form >
+        <script>
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };
+        </script>
+        
+        <apex:pageBlock id="mainblock" rendered="{!$Permission.View_CAM_Weekly_Report}">
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="3" id="DateBlock">
+                <apex:inputField id="from" label="Start Date (Monday) of Week:" value="{!dateFrom.CloseDate}">
+                    <apex:actionSupport event="onchange" action="{!EndDate}" reRender="DateBlock"/>
+                </apex:inputField>
+                <apex:inputField id="to" label="End Date (Sunday) of Week:" value="{!dateTo.CloseDate}"/>
+                <apex:commandButton value="Search Records" action="{!SearchRecords}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Sales Summary Notes" id="SummaryNotesBck">
+                <apex:pageblocktable value="{!SummaryNotes}" var="SN" style="width:100%" cellPadding="1" border="10" id="table1">
+                    <apex:column headerValue="Corp Account" headerClass="colHeadr" style="width:200px">
+                        <apex:outputField value="{!SN.Account__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Corp Account Owner" headerClass="colHeadr" style="width:200px">
+                        <apex:outputField value="{!SN.Account__r.owner.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Note" headerClass="colHeadr" style="width:500px">
+                        <apex:outputField value="{!SN.Note__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Issues & Obstacles" headerClass="colHeadr" style="width:500px">
+                        <apex:outputField value="{!SN.Issues_Obstacles__c}"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>           
+            
+            <apex:pageBlockSection columns="1" title="TOP 10 Wins"> 
+                <apex:pageblocktable value="{!WonOpportunities}" var="WonOpp" style="width:100%" cellPadding="1" border="10" id="table2">
+                    <apex:column headerValue="Account">
+                        <apex:outputField value="{!WonOpp.Account.name}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Account Owner" style="width:200px">
+                        <apex:outputField value="{!WonOpp.Account.owner.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Win Id">
+                        <apex:outputField value="{!WonOpp.Account.WIN_ID__c}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Opportunity Name">
+                        <apex:outputField value="{!WonOpp.Name}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Amount">
+                        <apex:outputField value="{!WonOpp.Amount}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Close Date">
+                        <apex:outputField value="{!WonOpp.CloseDate}" style="width:500px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="TOP 10 Losses"> 
+                <apex:pageblocktable value="{!LostOpportunities}" var="LostOpp" style="width:100%" cellPadding="1" border="10" id="table2">
+                    <apex:column headerValue="Account">
+                        <apex:outputField value="{!LostOpp.Account.name}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Account Owner" style="width:200px">
+                        <apex:outputField value="{!LostOpp.Account.owner.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Win Id">
+                        <apex:outputField value="{!LostOpp.Account.WIN_ID__c}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Opportunity Name">
+                        <apex:outputField value="{!LostOpp.Name}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Amount">
+                        <apex:outputField value="{!LostOpp.Amount}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Close Date">
+                        <apex:outputField value="{!LostOpp.CloseDate}" style="width:500px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Forecast Against Budget" id="FrBgBck">
+                <apex:pageblocktable value="{!SummaryNotes}" var="FrBg" style="width:100%" cellPadding="1" border="10" id="table3">
+                    <apex:column headerValue="Corp Account">
+                        <apex:outputField value="{!FrBg.Account__c}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Corp Account Owner">
+                        <apex:outputField value="{!FrBg.Account__r.owner.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Forecast">
+                        <apex:outputField value="{!FrBg.Forecast__c}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Budget">
+                        <apex:outputField value="{!FrBg.Budget__c}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Variance">
+                        <apex:outputField value="{!FrBg.Variance__c}" style="width:200px"/>
+                    </apex:column>
+                </apex:pageblocktable>   
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:outputText rendered="{!NOT($Permission.View_CAM_Weekly_Report)}" value="Only CAM Supervisors can View Corporate Account Team's Weekly Sales Summary Notes" style="background-color:yellow;font-weight: bold;font-style: italic;font-size:12pt"/>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MGR_LVL_3_DESCR__c</fullName>
+    <externalId>false</externalId>
+    <label>MGR LVL 3 DESCR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset Mgmt &amp; Supply Chain</fullName>
+                <default>false</default>
+                <label>Asset Mgmt &amp; Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Broker Business</fullName>
+                <default>false</default>
+                <label>Broker Business</label>
+            </value>
+            <value>
+                <fullName>Canada Industrial Svcs</fullName>
+                <default>false</default>
+                <label>Canada Industrial Svcs</label>
+            </value>
+            <value>
+                <fullName>CHES Sales and Service</fullName>
+                <default>false</default>
+                <label>CHES Sales and Service</label>
+            </value>
+            <value>
+                <fullName>Corp Dev &amp; Real Estate</fullName>
+                <default>false</default>
+                <label>Corp Dev &amp; Real Estate</label>
+            </value>
+            <value>
+                <fullName>Corp Pricing &amp; Proposals</fullName>
+                <default>false</default>
+                <label>Corp Pricing &amp; Proposals</label>
+            </value>
+            <value>
+                <fullName>Corp Sales &amp; Corp Marketing</fullName>
+                <default>false</default>
+                <label>Corp Sales &amp; Corp Marketing</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services Canada</fullName>
+                <default>false</default>
+                <label>Daylighting Services Canada</label>
+            </value>
+            <value>
+                <fullName>Dene Nation Industrial Service</fullName>
+                <default>false</default>
+                <label>Dene Nation Industrial Service</label>
+            </value>
+            <value>
+                <fullName>Discontinued</fullName>
+                <default>false</default>
+                <label>Discontinued</label>
+            </value>
+            <value>
+                <fullName>Distribution Centers</fullName>
+                <default>false</default>
+                <label>Distribution Centers</label>
+            </value>
+            <value>
+                <fullName>Environmental Svcs Sls and Adm</fullName>
+                <default>false</default>
+                <label>Environmental Svcs Sls and Adm</label>
+            </value>
+            <value>
+                <fullName>Facilities Group</fullName>
+                <default>false</default>
+                <label>Facilities Group</label>
+            </value>
+            <value>
+                <fullName>IS Sales &amp; Svc Sales &amp; Admin</fullName>
+                <default>false</default>
+                <label>IS Sales &amp; Svc Sales &amp; Admin</label>
+            </value>
+            <value>
+                <fullName>Lodging Services</fullName>
+                <default>false</default>
+                <label>Lodging Services</label>
+            </value>
+            <value>
+                <fullName>National Transportation</fullName>
+                <default>false</default>
+                <label>National Transportation</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas Field Services</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas Field Services</label>
+            </value>
+            <value>
+                <fullName>Oil Sands</fullName>
+                <default>false</default>
+                <label>Oil Sands</label>
+            </value>
+            <value>
+                <fullName>Project Services</fullName>
+                <default>false</default>
+                <label>Project Services</label>
+            </value>
+            <value>
+                <fullName>Refined &amp; Blended Product Sale</fullName>
+                <default>false</default>
+                <label>Refined &amp; Blended Product Sale</label>
+            </value>
+            <value>
+                <fullName>Safety-Kleen Supply</fullName>
+                <default>false</default>
+                <label>Safety-Kleen Supply</label>
+            </value>
+            <value>
+                <fullName>SK Bulk Products &amp; Services1</fullName>
+                <default>false</default>
+                <label>SK Bulk Products &amp; Services1</label>
+            </value>
+            <value>
+                <fullName>SK Facility Operations</fullName>
+                <default>false</default>
+                <label>SK Facility Operations</label>
+            </value>
+            <value>
+                <fullName>SK Pricing &amp; Proposals</fullName>
+                <default>false</default>
+                <label>SK Pricing &amp; Proposals</label>
+            </value>
+            <value>
+                <fullName>SK Sales and Service</fullName>
+                <default>false</default>
+                <label>SK Sales and Service</label>
+            </value>
+            <value>
+                <fullName>SKO Customer Service</fullName>
+                <default>false</default>
+                <label>SKO Customer Service</label>
+            </value>
+            <value>
+                <fullName>SKO Packaging &amp; Blending</fullName>
+                <default>false</default>
+                <label>SKO Packaging &amp; Blending</label>
+            </value>
+            <value>
+                <fullName>SKO Supply Chain</fullName>
+                <default>false</default>
+                <label>SKO Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Specialty Services</fullName>
+                <default>false</default>
+                <label>Specialty Services</label>
+            </value>
+            <value>
+                <fullName>Trans Compliance</fullName>
+                <default>false</default>
+                <label>Trans Compliance</label>
+            </value>
+            <value>
+                <fullName>US Industrial Services</fullName>
+                <default>false</default>
+                <label>US Industrial Services</label>
+            </value>
+            <value>
+                <fullName>US Operations Support</fullName>
+                <default>false</default>
+                <label>US Operations Support</label>
+            </value>
+            <value>
+                <fullName>#N/A</fullName>
+                <default>false</default>
+                <label>#N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

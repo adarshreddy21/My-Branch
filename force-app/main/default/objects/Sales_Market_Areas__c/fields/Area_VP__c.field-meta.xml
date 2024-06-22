@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_VP__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Sales Area VP</description>
+    <externalId>false</externalId>
+    <label>Area VP</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Sales_Areas1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

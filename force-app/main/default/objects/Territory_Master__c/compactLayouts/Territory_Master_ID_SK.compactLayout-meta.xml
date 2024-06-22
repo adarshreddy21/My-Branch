@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Master_ID_SK</fullName>
+    <fields>Territory_Name__c</fields>
+    <fields>Territory_ID__c</fields>
+    <fields>ZIP_Master__c</fields>
+    <fields>Sales_Business_Unit__c</fields> 
+    <fields>Branch_Account__c</fields>
+    <fields>Territory_Branch_Code__c</fields>
+    <fields>Territory_Owner_Name__c</fields>
+    <label>Territory Master ID SK</label>
+</CompactLayout>

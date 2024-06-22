@@ -1,0 +1,182 @@
+<apex:page standardController="Strategic_Account_Plan__c" extensions="StrategicAccountPlanController">
+    
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="Strategic Account Plan Summary Notes"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+    <apex:form >
+        <script>
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };
+        </script>
+        
+        <div class = "row">
+            <div class="column" style="float:left; position:absolute;">
+                <apex:inputText label="Account Name" title="Account Name" value="{!SearchbyField}" rendered="{!AccountName.RecordType.name == 'Corporate'}"/> 
+            </div>
+            <div class="column" style="float:left; margin-left: 200px">
+                <apex:commandButton value="Search Account Name" action="{!getSearchByFilter}" rendered="{!AccountName.RecordType.name == 'Corporate'}" reRender="pb">
+                    <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                </apex:commandButton>
+            </div>
+            <div class="column" style="float:right; position:relative">
+                <apex:panelGrid >
+                    <apex:commandLink value="{!alphaAll} | " action="{!getalphaSearch}" style="font-size:15px" rendered="{!AccountName.RecordType.name == 'Corporate'}" reRender="pb">
+                        <apex:param name="alpha" value="{!alphaAll}" assignTo="{!alphaSearch}"/>
+                        <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                    </apex:commandLink>
+                </apex:panelGrid>
+                
+            </div>
+        </div>
+        
+        <apex:actionFunction name="aSelectItem" action="{!doSelectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction>
+        <!-- handle deselected item -->
+        <apex:actionFunction name="aDeselectItem" action="{!doDeselectItem}" rerender="pb">
+            <apex:param name="contextItem" value="" assignTo="{!contextItem}"/>
+        </apex:actionFunction> 
+        <apex:actionFunction name="isSelectAllItem" action="{!isSelectedAll}"  rerender="pb">
+            <apex:param name="isSelectedALL" value="" assignTo="{!selectedAllProperties}"/>
+        </apex:actionFunction>
+        
+        <apex:pageblock id="pb">
+            <apex:pageMessages />
+            <apex:pageBlockSection columns="1" title="Related Sales Manager Summary Notes"> 
+                
+                <!-- Commandbutton -->
+                <apex:outputPanel >
+                    <div style="position:relative;left:400px;">
+                        <apex:commandLink value="Add Summary Notes" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                            <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                        </apex:commandLink>
+                        <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+                    </div>
+                </apex:outputPanel>
+                <!-- End of Commandbutton -->   
+                
+                <apex:pageblocktable value="{!AllObject}" var="SN" style="width:100%" cellPadding="1" border="10">
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox value="{!selectedAllProperties}" onclick="selectAllCheckboxes(this)"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!SN.selected}" styleClass="cbStyleClass" onclick="doCheckboxChange(this,'{!SN.obj.Id}')"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Name{!IF(sortExpression=='name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="name" name="name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Name']}" style="width:250px"/>
+                    </apex:column>   
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Account{!IF(sortExpression=='Account__r.name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Account__r.name" name="Account Name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Account__c']}" style="width:500px"/>
+                    </apex:column> 
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Opportunity{!IF(sortExpression=='Opportunity__r.name',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Opportunity__r.name" name="Opportunity Name" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Opportunity__c']}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Type{!IF(sortExpression=='Type__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Type__c" name="Type__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Type__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Budget{!IF(sortExpression=='Budget__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Budget__c" name="Budget__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Budget__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Forecast{!IF(sortExpression=='Forecast__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Forecast__c" name="Forecast__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Forecast__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!getalphaSearch}" value="Variance{!IF(sortExpression=='Variance__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Variance__c" name="Variance__c" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputField value="{!SN.obj['Variance__c']}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Note">
+                        <apex:outputField value="{!SN.obj['Note__c']}" style="width:100px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <br/> 
+            <!--PAGINATION outputPanel-->
+            <apex:outputPanel styleClass="center">
+                <apex:commandButton status="st" reRender="pb" value="|< First" action="{!first}" disabled="{!!hasPrevious}" title="First Page"/>
+                <apex:commandButton status="st" reRender="pb" value="Previous" action="{!previous}" disabled="{!!hasPrevious}" title="Previous Page"/>
+                <apex:outputText > &nbsp;Page {!pageNumber} of {!totalPageNumber}&nbsp;</apex:outputText>&nbsp;
+                <apex:commandButton status="st" reRender="pb" value="Next" action="{!next}" disabled="{!!hasNext}" title="Next Page"  />
+                <apex:commandButton status="st" reRender="pb" value="Last>|" action="{!last}" disabled="{!!hasNext}" title="Last Page"/>
+                
+                <apex:outputPanel style="color:#008000;font-weight:bold">
+                    <apex:actionStatus id="st" startText="Fetching..." stopText=""/>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <!-- Commandbutton to proceed to next screen -->
+            <div style="position:relative;left:400px;">
+                <apex:commandLink value="Add Summary Notes" action="{!processSelectedRecords}" styleClass="btn" style="text-decoration:none;padding:4px">
+                    <apex:param value="SummaryNotes" assignTo="{!objectType}"/>
+                </apex:commandLink>
+                <apex:commandbutton value="Cancel" action="{!CustomCancel}"/>
+            </div>
+            <!-- End of Commandbutton -->            
+        </apex:pageblock>
+    </apex:form>
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        
+        //function to handle checkbox selection
+        function doCheckboxChange(cb,itemId)
+    {
+        if(cb.checked==true){
+            aSelectItem(itemId);
+        }
+        else{
+            aDeselectItem(itemId);
+        }        
+    }
+    
+    function selectAllCheckboxes(obj){
+        $(".cbStyleClass").each(function(index, item){
+            item.checked = obj.checked;
+        });
+        isSelectAllItem(obj.checked);
+    }    
+    </script>
+</apex:page>

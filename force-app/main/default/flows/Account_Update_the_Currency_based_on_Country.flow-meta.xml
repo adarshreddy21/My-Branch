@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Check_the_Country</name>
+        <label>Check the Country</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_the_country_is_US</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ShippingCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>US</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_Currency_to_US_dollar</targetReference>
+            </connector>
+            <label>If the country is US</label>
+        </rules>
+        <rules>
+            <name>If_the_country_is_CA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ShippingCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_Currency_to_Canadian_dollar</targetReference>
+            </connector>
+            <label>If the country is CA</label>
+        </rules>
+    </decisions>
+    <description>This flow is used to populate the currency code based on Corporate country while creating Customer or Broker Accounts.</description>
+    <environments>Default</environments>
+    <interviewLabel>Account-Update the Currency based on Country {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account-Update the Currency based on Country</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_the_Currency_to_Canadian_dollar</name>
+        <label>Update the Currency to Canadian dollar</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ShippingCountry</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CA</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>CAD</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_the_Currency_to_US_dollar</name>
+        <label>Update the Currency to US dollar</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ShippingCountry</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>US</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>USD</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_the_Country</targetReference>
+        </connector>
+        <filterFormula>OR({!$Record.RecordType.Name}=&apos;Customer&apos;,{!$Record.RecordType.Name}=&apos;Broker&apos;)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Process_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Process Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ownerupdate</fullName>
+                <default>false</default>
+                <label>Ownerupdate</label>
+            </value>
+            <value>
+                <fullName>BrokerRecordTypeUpdate</fullName>
+                <default>false</default>
+                <label>BrokerRecordTypeUpdate</label>
+            </value>
+            <value>
+                <fullName>WinValidateAndCreate</fullName>
+                <default>false</default>
+                <label>WinValidateAndCreate</label>
+            </value>
+            <value>
+                <fullName>OCROwnerUpdateBatchProcess</fullName>
+                <default>false</default>
+                <label>OCROwnerUpdateBatchProcess</label>
+            </value>
+			<value>
+                <fullName>Key Account Update</fullName>
+                <default>false</default>
+                <label>Key Account Update</label>
+            </value>
+			<value>
+                <fullName>Contact Error Update</fullName>
+                <default>false</default>
+                <label>Contact Error Update</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

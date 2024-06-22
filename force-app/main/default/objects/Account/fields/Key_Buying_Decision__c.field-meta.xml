@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Buying_Decision__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(RecordType.Name = &apos;Customer&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Distibutor&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Broker&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Customer Chain&apos;, Parent.RecordType.Name = &apos;Key Account&apos;),  text(Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Chain&apos;, Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Customer Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Distributor Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Parent.Buying_Decision__c),
+IF(AND(RecordType.Name = &apos;Broker Location&apos;, Parent.Parent.RecordType.Name = &apos;Key Account&apos;), text(Parent.Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Customer Location&apos;, IF(ISBLANK(text(Parent.Parent.Buying_Decision__c)), text(Chain__r.Buying_Decision__c), text(Parent.Parent.Buying_Decision__c)),
+IF(RecordType.Name = &apos;Broker Location&apos;, text(Parent.Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Distributor Location&apos;, text(Parent.Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Pricing Chain&apos;, text(Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Distributor&apos;, text(Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Broker&apos;, text(Parent.Buying_Decision__c),
+IF(RecordType.Name = &apos;Customer&apos;, IF(ISBLANK(text(Parent.Buying_Decision__c)), text(Chain__r.Buying_Decision__c), text(Parent.Buying_Decision__c)),
+IF(RecordType.Name = &apos;Chain&apos;, text(Buying_Decision__c),
+IF(RecordType.Name = &apos;Customer Chain&apos;, text(Parent.Buying_Decision__c), text(Buying_Decision__c) )))))))))))))))))</formula>
+    <label>Corp/Key Account Buying Decision</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

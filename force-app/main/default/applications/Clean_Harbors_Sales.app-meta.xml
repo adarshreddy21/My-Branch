@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Clean Harbors Sales</label>
+    <logo>SharedDocuments/Clean_Harbors_Logo.gif</logo>
+    <tabs>Sales_Olympics</tabs>
+    <tabs>iSell__Avention</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Competitor_Capture__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Chatter</tabs>
+    <tabs>Account_Extension__c</tabs>
+    <tabs>Budget_Summary__c</tabs>
+    <tabs>My_Budget</tabs>
+    <tabs>Sales_Contest_Metrics__c</tabs>
+    <tabs>maps__ShapeLayerGeometry__c</tabs>
+</CustomApplication>

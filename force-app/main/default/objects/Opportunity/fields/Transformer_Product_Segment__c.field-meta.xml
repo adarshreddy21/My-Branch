@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transformer_Product_Segment__c</fullName>
+    <description>Transformer Product Segment, requested by Jason Crawford.  Was in Beacon previously.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Transformer Product Segmentation</inlineHelpText>
+    <label>Transformer Product Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Base Oil (Other)</fullName>
+                <default>false</default>
+                <label>Base Oil (Other)</label>
+            </value>
+            <value>
+                <fullName>Cable/PILC (TRFM)</fullName>
+                <default>false</default>
+                <label>Cable/PILC (TRFM)</label>
+            </value>
+            <value>
+                <fullName>Clean up</fullName>
+                <default>false</default>
+                <label>Clean up</label>
+            </value>
+            <value>
+                <fullName>Drums (TRFM)</fullName>
+                <default>false</default>
+                <label>Drums (TRFM)</label>
+            </value>
+            <value>
+                <fullName>Form Oil</fullName>
+                <default>false</default>
+                <label>Form Oil</label>
+            </value>
+            <value>
+                <fullName>Load &amp; Go (TRST)</fullName>
+                <default>false</default>
+                <label>Load &amp; Go (TRST)</label>
+            </value>
+            <value>
+                <fullName>Mix (TRFM)</fullName>
+                <default>false</default>
+                <label>Mix (TRFM)</label>
+            </value>
+            <value>
+                <fullName>Oil (CH60)</fullName>
+                <default>false</default>
+                <label>Oil (CH60)</label>
+            </value>
+            <value>
+                <fullName>Oil (CH60+)</fullName>
+                <default>false</default>
+                <label>Oil (CH60+)</label>
+            </value>
+            <value>
+                <fullName>Oil &lt; 2 ppm (A31S)</fullName>
+                <default>false</default>
+                <label>Oil &lt; 2 ppm (A31S)</label>
+            </value>
+            <value>
+                <fullName>Oil 2 - 49 ppm (A31D)</fullName>
+                <default>false</default>
+                <label>Oil 2 - 49 ppm (A31D)</label>
+            </value>
+            <value>
+                <fullName>Oil 500 ppm - (DH3)</fullName>
+                <default>false</default>
+                <label>Oil 500 ppm - (DH3)</label>
+            </value>
+            <value>
+                <fullName>Oil 50 - 499 ppm (DH1)</fullName>
+                <default>false</default>
+                <label>Oil 50 - 499 ppm (DH1)</label>
+            </value>
+            <value>
+                <fullName>Oil - Direct Ship</fullName>
+                <default>false</default>
+                <label>Oil - Direct Ship</label>
+            </value>
+            <value>
+                <fullName>Oil Refill (drain and fill)</fullName>
+                <default>false</default>
+                <label>Oil Refill (drain and fill)</label>
+            </value>
+            <value>
+                <fullName>Pole &amp; Pads (TRFM)</fullName>
+                <default>false</default>
+                <label>Pole &amp; Pads (TRFM)</label>
+            </value>
+            <value>
+                <fullName>Sampling</fullName>
+                <default>false</default>
+                <label>Sampling</label>
+            </value>
+            <value>
+                <fullName>SF6</fullName>
+                <default>false</default>
+                <label>SF6</label>
+            </value>
+            <value>
+                <fullName>Transformer Teardown (TRST)</fullName>
+                <default>false</default>
+                <label>Transformer Teardown (TRST)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

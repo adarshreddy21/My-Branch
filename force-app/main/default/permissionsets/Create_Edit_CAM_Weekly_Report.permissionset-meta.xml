@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Create_Edit_CAM_Weekly_Report</name>
+    </customPermissions>
+    <description>Permission to create/edit CAM weekly report</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Create / Edit CAM Weekly Report</label>
+    <license>Salesforce</license>
+</PermissionSet>

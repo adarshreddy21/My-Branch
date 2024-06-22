@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_B_Control__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is part of a solution to control the accounts captured by the D&amp;B Connect managed app.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the field is checked then the account will be picked up by the D&amp;B Connect managed app.</inlineHelpText>
+    <label>D&amp;B Control</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type> 
+</CustomField>

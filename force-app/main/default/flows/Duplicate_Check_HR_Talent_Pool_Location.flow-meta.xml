@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Update_Unique_Key_0</name>
+        <label>Update Unique Key</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Unique_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CreateUniqueKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_HR_Record_Type</name>
+        <label>Check HR Record Type</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Recruiting_Source_Record_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Organization__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HR Recruiting Partners</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Unique_Key_0</targetReference>
+            </connector>
+            <label>Check Recruiting Source Record Type</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CreateUniqueKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Organization__c} + &apos;-&apos; + {!$Record.Organization__r.RecordType.Name} + &apos;_&apos;+ {!$Record.Name} + &apos;-&apos; + {!$Record.Address__City__s} + &apos;-&apos; + TEXT({!$Record.Address__StateCode__s})</expression>
+    </formulas>
+    <interviewLabel>Duplicate Check - HR Talent Pool - Location {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Duplicate Check - HR Talent Pool - Location</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_HR_Record_Type</targetReference>
+        </connector>
+        <object>Location</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

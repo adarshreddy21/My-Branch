@@ -1,0 +1,15 @@
+<apex:page standardController="Case" showHeader="False" sidebar="False">
+    <style>
+        a {     
+        font-size:14px
+        }        
+        .textLink {
+        	margin-bottom : 7px;
+        }       
+    </style>
+   
+    <div class="textLink"> <apex:outputLink value="{!$Label.EPA_Website}" target="_blank">EPA Website</apex:outputLink></div>   
+    
+    <apex:outputLink value="{!$Label.EPAComplianceSOP}" target="_blank">EPA Compliance SOP</apex:outputLink>
+
+</apex:page>

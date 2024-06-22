@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Ops_Case_Queue</fullName>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_Id__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Case_Age__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed - Completed,Closed - Rejected,Closed - Cancelled</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notContain</operation>
+        <value>reject</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/1/2021 12:00 AM</value>
+    </filters>
+    <label>Sales Ops Case Queue</label>
+    <language>en_US</language>
+    <queue>Sales_Ops_Case_Review_Queue</queue>
+    <sharedTo>
+        <roleAndSubordinates>SalesOps_SalesSupport_AreaVP</roleAndSubordinates>
+    </sharedTo>
+</ListView>

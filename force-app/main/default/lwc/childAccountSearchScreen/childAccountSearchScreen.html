@@ -1,0 +1,65 @@
+<template>
+    <template lwc:if={recordsToDisplay}>
+        <template lwc:if={showDuplicateAccountOnCase}>
+            <div slot="title" class="headersizemedium slds-p-top_small center slds-p-bottom_small slds-text-title_bold">
+                <lightning-icon class="displayinline" icon-name="standard:account_info" size="medium"></lightning-icon>
+                <p class="slds-p-left_small displayinline"> Matching Records</p>
+            </div>
+        </template>
+        <template lwc:else>            
+            <div class="headersizemedium center">Select an account from the following list of possible duplicate active
+                {displayAccountName} accounts.</div>
+                <article class="slds-card">
+                    <div class="slds-card__body slds-card__body_inner"><b>There are Top Match accounts based on the Corporate Address entered by you:</b></div>
+                    <div class="slds-card__body slds-card__body_inner"><b>Account Name</b>: {accountData.accountName}</div>
+                    <div class="slds-card__body slds-card__body_inner"><b>Corporate Address</b>: {concatenatedCorpAddress}
+                    </div>
+                </article>
+        </template> 
+        <div>          
+            <lightning-datatable key-field="Id" max-row-selection="1" data={recordsToDisplay} columns={hideShowColumns}
+                hide-checkbox-column={hideCheckBoxColumn} onrowselection={getSelectedAccount} column-widths-mode="auto">
+            </lightning-datatable> 
+        </div>
+    </template>
+    <template lwc:if={showDuplicateAccountOnCase}>
+        <div class="slds-p-top_medium"></div>
+    </template>
+    <template lwc:if={isShowAccountReason}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open" style="z-index: 9;">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                   <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate custom-heading">
+                        <span class="bold-text">WARNING: You are attempting to create a duplicate account.</span><br/>
+                        You may either cancel and choose an account listed as Top Match to proceed with an existing <br/>
+                        account OR if you are purposefully creating a duplicate account, you must select a duplicate <br/>
+                        reason and enter justification before you may proceed.
+                      </h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning-combobox name="progress" label="Duplicate Reason" value={duplicateReasonValue}
+                                placeholder="--None--" required data-id="duplicateAccRecId" options={drOptions}
+                                onchange={handleDuplicateAccountSelection}>
+                            </lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning-input type="text" label="Duplicate Justification" required
+                                data-id="duplicateAccRecId" value={duplicateJustificationValue}
+                                onchange={handleReasonChange}>
+                            </lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                        onclick={hanldeCancel}>Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={handleNext}>Save and Continue</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation" style="z-index: 8;"></div>
+    </template>
+</template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Owner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Account.RecordType.Name = &apos;Customer Location&apos;,  Account.Parent.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Broker Location&apos;,  Account.Parent.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Distributor Location&apos;,  Account.Parent.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Customer&apos;, Account.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Customer Chain&apos;, Account.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Broker&apos;, Account.Parent.Owner.Person_Name__c
+,IF(Account.RecordType.Name = &apos;Distributor&apos;, Account.Parent.Owner.Person_Name__c
+,Account.Owner.Person_Name__c
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Corp Account Owner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Service</label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>Cert of Disposal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections Contact</masterLabel>
+        <translation>Contact pour perception</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance</masterLabel>
+        <translation>Conformité</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corp Contact</masterLabel>
+        <translation>Contact d’entreprise</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cust Service</masterLabel>
+        <translation>Service client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Response</masterLabel>
+        <translation>Intervention d’urgence</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering</masterLabel>
+        <translation>Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation>Environnement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expired</masterLabel>
+        <translation>Expiré</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health/Safety</masterLabel>
+        <translation>Santé-sécurité</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Services</masterLabel>
+        <translation>Services industriels</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoicing Contact</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main Contact</masterLabel>
+        <translation>Contact principal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manifest Copy</masterLabel>
+        <translation>Copie du manifeste</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchasing</masterLabel>
+        <translation>Achat</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remediation</masterLabel>
+        <translation>Remédiation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation>Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduling</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping</masterLabel>
+        <translation>Expédition</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical</masterLabel>
+        <translation>Technique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracking</masterLabel>
+        <translation>Traçage</translation>
+    </picklistValues>
+</CustomFieldTranslation>

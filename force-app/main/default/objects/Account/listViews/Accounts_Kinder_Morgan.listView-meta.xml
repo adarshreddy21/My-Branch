@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_Kinder_Morgan</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>State_Zip_Country__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.SIC</columns>
+    <columns>SIC_DESC</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>Industry_Segment__c</columns>
+    <columns>Class__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>startsWith</operation>
+        <value>kinder morgan</value>
+    </filters>
+    <label>Accounts - Kinder Morgan</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>KPP_EVP</roleAndSubordinates>
+        <roleAndSubordinates>KPP_and_PPP_Oversight</roleAndSubordinates>
+    </sharedTo>
+</ListView>

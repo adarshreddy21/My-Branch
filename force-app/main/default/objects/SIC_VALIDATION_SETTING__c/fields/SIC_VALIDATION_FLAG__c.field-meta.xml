@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIC_VALIDATION_FLAG__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag which determines if SIC Validation should be executed in the custom code or not. Should be Checked if SIC Validation is required.</description>
+    <externalId>false</externalId>
+    <label>SIC_VALIDATION_FLAG</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

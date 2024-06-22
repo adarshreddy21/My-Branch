@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_CBS_CLACKAMAS_OR_PORTLAND_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: CBS-CLACKAMAS, OR (PORTLAND)</label>
+    <queue>Queue_CBS_CLACKAMAS_OR_PORTLAND</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

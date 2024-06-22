@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_76_Louisville_KY_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 76 - Louisville KY</label>
+    <queue>Queue_76_Louisville_KY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_State_Country_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$RecordType.Name = &quot;Customer Master - Change ShipTo/Gen To Customer&quot;,
+OR(
+OR(NOT(REGEX(Country__c,&quot;^[a-z A-Z]*$&quot;)),LEN(Country__c) != 2),
+OR(NOT(REGEX(State__c,&quot;^[a-z A-Z]*$&quot;)),LEN(State__c) != 2)
+)
+)</errorConditionFormula>
+    <errorMessage>Please use only 2 characters State/Country abbreviation</errorMessage>
+</ValidationRule>

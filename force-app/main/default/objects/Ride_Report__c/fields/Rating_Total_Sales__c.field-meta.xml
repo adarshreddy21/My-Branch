@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_Total_Sales__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(Total_Sales_Meetings_Completed__c &lt;=3.4 ,&apos;Needs Improvement&apos;,
+If(Total_Sales_Meetings_Completed__c &gt;3.4 &amp;&amp; Total_Sales_Meetings_Completed__c &lt;=4.4 ,&apos;Meets Expectations&apos;,
+If(Total_Sales_Meetings_Completed__c &gt;=4.5,&apos;Exceeds Expectations&apos;, null )))</formula>
+    <label>Rating - Total Sales Meetings Completed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

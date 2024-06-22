@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Origin__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Origin</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Branch</fullName>
+                <default>false</default>
+                <label>Branch</label>
+            </value>
+            <value>
+                <fullName>Customer Portal</fullName>
+                <default>false</default>
+                <label>Customer Portal</label>
+            </value>
+            <value>
+                <fullName>DIY Line</fullName>
+                <default>false</default>
+                <label>DIY Line</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Chat</fullName>
+                <default>false</default>
+                <label>Ecommerce Chat</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Email</fullName>
+                <default>false</default>
+                <label>Ecommerce Email</label>
+            </value>
+            <value>
+                <fullName>Ecommerce</fullName>
+                <default>false</default>
+                <label>Ecommerce Line</label>
+            </value>
+            <value>
+                <fullName>EOC Line</fullName>
+                <default>false</default>
+                <label>EOC Line</label>
+            </value>
+            <value>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+                <label>Outbound</label>
+            </value>
+            <value>
+                <fullName>Public Toll Free</fullName>
+                <default>false</default>
+                <label>Public Toll Free</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_P95_CAMBRIDGE_BULK_LUBE_SVC_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Type_of_Call__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>Queue: P95- CAMBRIDGE BULK LUBE SVC</label>
+    <language>en_US</language>
+    <queue>Queue_P95_CAMBRIDGE_BULK_LUBE_SVC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

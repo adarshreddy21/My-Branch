@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restricted_Account_Record_Type_Edit</fullName>
+    <active>true</active>
+    <description>This validation rule restricts users from editing the Account Record Type unless they belong to specific profiles.</description>
+    <errorConditionFormula>AND(
+	NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)), 
+    ISCHANGED(RecordTypeId),
+    NOT($Profile.Name = &quot;System Administrator&quot; || 
+        $Profile.Name = &quot;Integration&quot; || 
+        $Profile.Name = &quot;IT Super User&quot; || 
+        $Profile.Name = &quot;Master Data Management&quot; || 
+        $Profile.Name = &quot;Sales Operations&quot;)
+)</errorConditionFormula>
+    <errorMessage>You are not allowed to edit record type. Contact your Sales Ops business partner if you require assistance.</errorMessage>
+</ValidationRule>

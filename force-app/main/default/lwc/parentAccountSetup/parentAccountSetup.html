@@ -1,0 +1,106 @@
+<template>
+    <lightning-card>          
+        <div id="header" class="slds-card_header slds-text-title_bold header_text_change">
+            <div class="slds-text-align_center slds-p-around_small slds-text-heading_medium">
+                <template lwc:if={accountRecordTypeScreenVisible}>
+                    <template lwc:if={showSelectAccountRecordTypes}>
+                        <slot name="showAccountRecordTypesheader">Select Account Record Type</slot>
+                    </template>
+                </template>
+                <template lwc:if={customerScreenVisible}>
+                    <slot name="showCustomerheader">Please Specify Details of This {accountData.recordTypeName}</slot>
+                </template>
+                <template lwc:if={customerSearchScreenVisible}>
+                        <slot name="showSearchheader">Search Result</slot>
+                </template>
+                <template lwc:if={customerWasteInfoQueriesScreenVisible}>
+                        <slot name="showWasteInfoQueriesheader">Waste Information Queries</slot>
+                </template> 
+                <template lwc:if={customerWasteInfoScreenVisible}>
+                        <slot name="showWasteInformationheader">Waste Information</slot>
+                </template> 
+                <template lwc:if={customerClassificationScreenVisible}>
+                        <slot name="showCustClassificationheader">{accountData.recordTypeName} Classification</slot>
+                </template>
+                <template lwc:if={customerContactScreenVisible}>
+                        <slot name="showCustomerContactheader">{accountData.recordTypeName} Contacts</slot>
+                </template>
+            </div>  
+        </div>
+        
+        <template lwc:if={accountRecordTypeScreenVisible}>
+            <c-child-select-account-types  account-data={accountData} onaccountsvaluechange={populateDataFromChildAndShowNextScreen} onsinglerecordtypeaccess={handleSingleRecordTypeAccess} onshowmultipleaccounttypesaction={handleShowMultipleAccountRecordTypes}></c-child-select-account-types>
+        </template>
+ 
+        <template lwc:if={customerScreenVisible}>
+            <c-child-customer-details-screen account-data={accountData} onaccountsvaluechange={populateDataFromChildAndShowNextScreen} oncorporatevaluechanged ={corporateValueChangedEvent} ></c-child-customer-details-screen>
+        </template>
+
+        <template lwc:if={customerSearchScreenVisible}>
+            <c-child-account-search-screen account-data={accountData} duplicate-account-data={duplicateAccountData} onaccountsvaluechange={populateDataFromChildAndShowNextScreen} ondontskipsearchscreen={handleDontSkipSearchScreen} onskipsearchscreen={handleSkipSearchScreen} show-duplicate-account-on-case={duplicateAccountRecordsVisible}></c-child-account-search-screen>
+        </template>
+
+        <template lwc:if={customerWasteInfoQueriesScreenVisible}>
+            <c-child-waste-info-queries-screen account-data={accountData} onaccountsvaluechange={populateDataFromChildAndShowNextScreen}></c-child-waste-info-queries-screen>
+        </template>  
+
+        <template lwc:if={customerWasteInfoScreenVisible}>
+            <c-child-waste-information-screen account-data={accountData} onaccountsvaluechange={populateDataFromChildAndShowNextScreen}></c-child-waste-information-screen>
+        </template>  
+
+        <template lwc:if={customerClassificationScreenVisible}>
+            <c-child-cust-classification-screen account-data={accountData} ondocumentuploadevent={handleDoumentUploadEvent} onaccountsvaluechange={populateDataFromChildAndShowNextScreen}></c-child-cust-classification-screen>
+        </template>
+
+        <template lwc:if={customerContactScreenVisible}>
+            <c-child-customer-contact-screen account-data={accountData} oncontactchange={handleContactChange} oncontactvaluechangeonprevious={populateDataFromChildOnPreviousClick} oncontactvaluechange={saveAccountAndContactRecord}></c-child-customer-contact-screen>
+        </template> 
+
+        <div  if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+
+        <div id="footer" class="slds-card_footer slds-text-title_bold footer_text_change">
+            <div class="slds-text-align_center slds-p-around_small slds-text-heading_small">
+                <template lwc:if={accountRecordTypeScreenVisible}>
+                    <template lwc:if={showSelectAccountRecordTypes}>
+                        <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    </template>    
+                </template>
+                <template lwc:if={customerScreenVisible}>
+                    <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Next" title="Next Screen" onclick={handleNextClick} class="slds-m-left_x-small"></lightning-button>
+                </template>
+
+                <template lwc:if={customerSearchScreenVisible}>
+				    <lightning-button variant="brand" label="Previous" title="Previous Screen" onclick={handlePreviousClick} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Continue With Existing Account" title="Existing account" onclick={handleExistingAccount} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Create A Brand New Account" title="New Account" onclick={handleNextClick} class="slds-m-left_x-small"></lightning-button>
+                </template>
+
+                <template lwc:if={customerWasteInfoQueriesScreenVisible}>
+                    <lightning-button variant="brand" label="Previous" title="Previous Screen" onclick={handlePreviousClick} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Next" title="Next Screen" onclick={handleNextClick} class="slds-m-left_x-small"></lightning-button>
+                </template> 
+                <template lwc:if={customerWasteInfoScreenVisible}>
+                    <lightning-button variant="brand" label="Previous" title="Previous Screen" onclick={handlePreviousClick} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Next" title="Next Screen" onclick={handleNextClick} class="slds-m-left_x-small"></lightning-button>
+                </template> 
+                <template lwc:if={customerClassificationScreenVisible}>
+                    <lightning-button variant="brand" label="Previous" title="Previous Screen" onclick={handlePreviousClick} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Next" title="Next Screen" onclick={handleNextClick} class="slds-m-left_x-small"></lightning-button>
+                </template>
+                <template lwc:if={customerContactScreenVisible}>
+                    <lightning-button variant="brand" label="Previous" title="Previous Screen" onclick={handlePreviousClick} class="slds-m-left_x-small"></lightning-button>
+					<lightning-button variant="brand" label="Cancel" type="cancel" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Save Prospect and Close" title="Save Prospect and Close" onclick={handleSaveAndCloseClick} class="slds-m-left_x-small"></lightning-button>
+                    <button class="slds-button slds-button_brand slds-m-left_x-small" title="You must create a MAIN contact before you may submit for WinID" onclick={handleWINIdCreation} disabled={isBtnDisabled}>Create WINID</button>
+                </template>
+            </div>
+        </div>
+</lightning-card>             
+</template>

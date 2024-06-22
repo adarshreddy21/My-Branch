@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Status Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Launch</fullName>
+                <default>false</default>
+                <label>Awaiting Launch</label>
+            </value>
+            <value>
+                <fullName>Awaiting User Info</fullName>
+                <default>false</default>
+                <label>Awaiting User Info</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Preparing Load File</fullName>
+                <default>false</default>
+                <label>Preparing Load File</label>
+            </value>
+            <value>
+                <fullName>Service Now Ticket Created</fullName>
+                <default>false</default>
+                <label>Service Now Ticket Created</label>
+            </value>
+            <value>
+                <fullName>Budget App Updates Required</fullName>
+                <default>false</default>
+                <label>Budget App Updates Required</label>
+            </value>
+            <value>
+                <fullName>Scheduling Date for Review</fullName>
+                <default>false</default>
+                <label>Scheduling Date for Review</label>
+            </value>
+            <value>
+                <fullName>Prepared for Maps Session</fullName>
+                <default>false</default>
+                <label>Prepared for Maps Session</label>
+            </value>
+            <value>
+                <fullName>Rescheduled</fullName>
+                <default>false</default>
+                <label>Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Could not complete</fullName>
+                <default>false</default>
+                <label>Could not complete</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Awaiting Launch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Awaiting User Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>On Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Preparing Load File</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Service Now Ticket Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Budget App Updates Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Scheduling Date for Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Could not complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scheduled</controllingFieldValue>
+            <valueName>Prepared for Maps Session</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scheduled</controllingFieldValue>
+            <valueName>Rescheduled</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

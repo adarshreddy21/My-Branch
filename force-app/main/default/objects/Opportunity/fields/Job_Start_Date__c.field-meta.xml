@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Start_Date__c</fullName>
+    <description>This is the date when the job would start.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date when the job would start.</inlineHelpText>
+    <label>Job Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Date</type>
+</CustomField>

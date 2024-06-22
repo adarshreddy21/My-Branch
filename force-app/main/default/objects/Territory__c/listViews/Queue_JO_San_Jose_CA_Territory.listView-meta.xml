@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_JO_San_Jose_CA_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : JO - San Jose, CA</label>
+    <queue>Queue_JO_San_Jose_CA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

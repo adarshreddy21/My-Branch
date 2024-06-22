@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Note</fullName>
+    <active>true</active>
+    <description>User to log comments against a specific call or collection note.</description>
+    <label>Work Note</label>
+</RecordType>

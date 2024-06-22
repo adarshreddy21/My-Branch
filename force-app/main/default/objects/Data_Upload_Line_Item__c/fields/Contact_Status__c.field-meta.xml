@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Contacted</fullName>
+                <default>false</default>
+                <label>Not Contacted</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Strategic Partner</fullName>
+                <default>false</default>
+                <label>Strategic Partner</label>
+            </value>
+            <value>
+                <fullName>NLWC</fullName>
+                <default>false</default>
+                <label>NLWC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Call Agent Lead</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Clean Harbors Branch Lead</layout>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CLH Website Lead Mapping Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Clean Harbors Lead (admins)</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CLH Website Lead Mapping Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Clean Harbors Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Clean Harbors Marketing Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Healthcare Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Oil and Gas Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Competitor Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lodging Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SK Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Conversion Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CLH Website Lead Mapping Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zold Clean Harbors Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CLH Website Lead Mapping Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Call_Center_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label>Client potentiel Clean Harbors</label>
+        <name>Clean_Harbors_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Clean_Harbors_Marketing_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Healthcare_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Oil_Gas_Lead</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_assign_to_Exec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lead_Conversion_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Owner_cannot_be_EVENT_SALES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_spam_leads_from_website</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Sic_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Unqualified_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Unqualified_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Valid_Email</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>ActOnPro__Act_On_Activity_History</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ActOnPro__Send_Act_On_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ActOn__Acton_Activity_History</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ActOn__Send_Act_On_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ActOn__Send_Act_On_Mass_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label>Liste des succursales</label>
+        <name>Branch_List</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ddm__Add_to_Program</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ddm__Lead_Engagement_Overview</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>standard-MessagesAndAlerts</narrowComponents>
+    <narrowComponents>Quick Access</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <narrowComponents>standard-UsefulLinks</narrowComponents>
+    <narrowComponents>CAM Weekly Sales Summary Notes</narrowComponents>
+    <narrowComponents>standard-CreateNew</narrowComponents>
+    <wideComponents>Open Cases</wideComponents>
+    <wideComponents>standard-ProcessWorkitems</wideComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+    <wideComponents>standard-Tasks</wideComponents>
+    <wideComponents>standard-Dashboard</wideComponents>
+</HomePageLayout>

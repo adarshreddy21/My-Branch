@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Branch_View1</fullName>
+    <columns>branch_descr_amt3__c</columns>
+    <columns>Branch_Code__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Branch_City__c</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Branch_cntry_cd__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Branch</value>
+    </filters>
+    <label>Branch View</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>All_but_CEO</group>
+    </sharedTo>
+</ListView>

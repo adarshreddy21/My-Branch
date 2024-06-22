@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_BCK_ST_AUGUSTIN_BPS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: BCK- ST. AUGUSTIN - BPS</label>
+    <queue>Queue_BCK_ST_AUGUSTIN_BPS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

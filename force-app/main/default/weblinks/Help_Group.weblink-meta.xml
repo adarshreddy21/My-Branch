@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Link to Help Group</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Help Group</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cleanharbors.my.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F9j0000000XZCr</url>
+</CustomPageWebLink>

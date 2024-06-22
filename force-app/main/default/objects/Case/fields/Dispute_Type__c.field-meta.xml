@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispute_Type__c</fullName>
+    <description>Depends on Call Reason</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Depends on Call Reason</inlineHelpText>
+    <label>Dispute Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service not Requested</fullName>
+                <default>false</default>
+                <label>Service not Requested</label>
+            </value>
+            <value>
+                <fullName>Off Spec</fullName>
+                <default>false</default>
+                <label>Off Spec</label>
+            </value>
+            <value>
+                <fullName>Not Satisfied with Service</fullName>
+                <default>false</default>
+                <label>Not Satisfied with Service</label>
+            </value>
+            <value>
+                <fullName>Incorrect Quote</fullName>
+                <default>false</default>
+                <label>Incorrect Quote</label>
+            </value>
+            <value>
+                <fullName>Receipt does not match invoice</fullName>
+                <default>false</default>
+                <label>Receipt does not match invoice</label>
+            </value>
+            <value>
+                <fullName>Tax Exempt</fullName>
+                <default>false</default>
+                <label>Tax Exempt</label>
+            </value>
+            <value>
+                <fullName>PO Required</fullName>
+                <default>false</default>
+                <label>PO Required</label>
+            </value>
+            <value>
+                <fullName>Invalid PO</fullName>
+                <default>false</default>
+                <label>Invalid PO</label>
+            </value>
+            <value>
+                <fullName>Expired PO</fullName>
+                <default>false</default>
+                <label>Expired PO</label>
+            </value>
+            <value>
+                <fullName>Manifest</fullName>
+                <default>false</default>
+                <label>Manifest</label>
+            </value>
+            <value>
+                <fullName>Recovery</fullName>
+                <default>false</default>
+                <label>Recovery</label>
+            </value>
+            <value>
+                <fullName>Late</fullName>
+                <default>false</default>
+                <label>Late</label>
+            </value>
+            <value>
+                <fullName>Broken</fullName>
+                <default>false</default>
+                <label>Broken</label>
+            </value>
+            <value>
+                <fullName>Equipment Pulled</fullName>
+                <default>false</default>
+                <label>Equipment Pulled</label>
+            </value>
+            <value>
+                <fullName>Pull Equipment</fullName>
+                <default>false</default>
+                <label>Pull Equipment</label>
+            </value>
+            <value>
+                <fullName>Did not receive Invoice</fullName>
+                <default>false</default>
+                <label>Did not receive Invoice</label>
+            </value>
+            <value>
+                <fullName>Promised Credit</fullName>
+                <default>false</default>
+                <label>Promised Credit</label>
+            </value>
+            <value>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+                <label>Out of Business</label>
+            </value>
+            <value>
+                <fullName>CO/CH</fullName>
+                <default>false</default>
+                <label>CO/CH</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Invoice Question</fullName>
+                <default>false</default>
+                <label>Invoice Question</label>
+            </value>
+            <value>
+                <fullName>New Owner</fullName>
+                <default>false</default>
+                <label>New Owner</label>
+            </value>
+            <value>
+                <fullName>Payment made</fullName>
+                <default>false</default>
+                <label>Payment made</label>
+            </value>
+            <value>
+                <fullName>Paid at time of service</fullName>
+                <default>false</default>
+                <label>Paid at time of service</label>
+            </value>
+            <value>
+                <fullName>Payment terms</fullName>
+                <default>false</default>
+                <label>Payment terms</label>
+            </value>
+            <value>
+                <fullName>Service not Completed</fullName>
+                <default>false</default>
+                <label>Service not Completed</label>
+            </value>
+            <value>
+                <fullName>No Signed Receipt</fullName>
+                <default>false</default>
+                <label>No Signed Receipt</label>
+            </value>
+            <value>
+                <fullName>CCC PO Review</fullName>
+                <default>false</default>
+                <label>CCC PO Review</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Service Dispute</controllingFieldValue>
+            <valueName>Service not Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Dispute</controllingFieldValue>
+            <valueName>Off Spec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Dispute</controllingFieldValue>
+            <valueName>Not Satisfied with Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Dispute</controllingFieldValue>
+            <valueName>Service not Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Incorrect Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Receipt does not match invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Tax Exempt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Processed</controllingFieldValue>
+            <valueName>Payment made</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Processed</controllingFieldValue>
+            <valueName>Paid at time of service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Processed</controllingFieldValue>
+            <valueName>Payment terms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>PO Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>Invalid PO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>Expired PO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>CCC PO Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fee</controllingFieldValue>
+            <valueName>Manifest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fee</controllingFieldValue>
+            <valueName>Recovery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fee</controllingFieldValue>
+            <valueName>Late</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Equipment Pulled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Pull Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>Did not receive Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>Promised Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>Out of Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>CO/CH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>Bankruptcy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>Invoice Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>New Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <valueName>No Signed Receipt</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

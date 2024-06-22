@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>RecordType</field>
+        <field>Comments__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Current_Owner_Case_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>and(Current_Owner_Case_Approver__c &lt;&gt;  Proposed_Owner_Case_Approver__c
+,RecordType.DeveloperName &lt;&gt; &apos;Specialist_Add_to_Account&apos;
+,RecordType.DeveloperName &lt;&gt; &apos;Specialist_Change&apos;
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Sales Director approved</label>
+        <name>Sales_Director_approved</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Current_Owner_Case_Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>0=1</formula>
+        </entryCriteria>
+        <label>Sales Director approved PB</label>
+        <name>Sales_Director_approved_PB</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Approval needed by Director only, will auto approve</description>
+    <emailTemplate>unfiled$public/Case_Request_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>and(
+  text(Owner:User.Sales_Person_Type__c) = &apos;Sales Director&apos;
+, 
+or(
+text(Owner:User.Primary_Business__c) = &apos;Safety-Kleen&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Emerald Services&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Peformance Plus Products&apos;
+,text(Owner:User.Primary_Business__c) = &apos;Thermo Fluids&apos;
+,text(Owner:User.Primary_Business__c) = &apos;BPS&apos;
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Case_Owner_Sales_Ops_Case_Review_Que</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Case_Status_Manager_approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Case_Not_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Case_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Flag_Is_Submitted_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Request_Approval</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Statues_Awaiting_Current_Owner</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>SK Director approved final</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Case_Approver__c</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>16</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

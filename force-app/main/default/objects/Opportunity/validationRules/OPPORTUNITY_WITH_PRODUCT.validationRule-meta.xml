@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPPORTUNITY_WITH_PRODUCT</fullName>
+    <active>true</active>
+    <description>In order to set an Opportunity Stage to &quot;Closed Won&quot; a product must be associated to the opportunity.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( StageName , &quot;Closed Won&quot;),
+  (HasOpportunityLineItem = FALSE),
+
+
+   NOT(  $Profile.Name = &quot;Integration&quot;),NOT(  $Profile.Name = &quot;Salesforce API Only System Integrations&quot;))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>In order to set an Opportunity Stage to &quot;Closed Won&quot; a product must be associated to the opportunity.</errorMessage>
+</ValidationRule>

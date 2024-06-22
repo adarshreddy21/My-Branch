@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch_ID__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Branch ID on product</description>
+    <externalId>false</externalId>
+    <label>Branch ID</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunity Snapshot: Open (Branch ID)</relationshipLabel>
+    <relationshipName>Opportunity_Snapshot_Open</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

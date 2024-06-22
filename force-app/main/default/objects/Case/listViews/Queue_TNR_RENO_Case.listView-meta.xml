@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_TNR_RENO_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: TNR-RENO</label>
+    <queue>Queue_TNR_RENO</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

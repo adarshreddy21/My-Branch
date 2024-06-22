@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>and(
+Not(CONTAINS(text(Line_of_business__c), &apos;Blended Oil Sales&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Oil Filter&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Oil Revenue&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Oily Water&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Parts Washing&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Base Oil Sales&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;KPP&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Specialty Refinery Products&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Containerized Waste&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Allied&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;Vac Services&apos;))
+,Not(CONTAINS(text(Line_of_business__c), &apos;RFO&apos;))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TPM indicator</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

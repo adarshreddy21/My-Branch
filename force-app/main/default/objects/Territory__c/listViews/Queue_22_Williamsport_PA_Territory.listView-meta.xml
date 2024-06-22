@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_22_Williamsport_PA_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 22 - Williamsport PA</label>
+    <queue>Queue_22_Williamsport_PA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

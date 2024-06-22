@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_LOB_for_Face_to_Face_meetings</fullName>
+    <active>true</active>
+    <description>Enter LOB for face to face meetings</description>
+    <errorConditionFormula>and(
+$Profile.Name = &quot;Clean Harbors Sales (TS)&quot;
+,text(Event_Type__c)=&apos;Face to Face&apos; 
+,isblank( Product__c )
+,NOT($Profile.Name = &quot;Integration&quot;)
+,NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;)
+,NOT($Profile.Name = &quot;System Administrator&quot;)
+,NOT($Profile.Name = &quot;Sales Operations&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>Please enter Line of Business Discussed</errorMessage>
+</ValidationRule>

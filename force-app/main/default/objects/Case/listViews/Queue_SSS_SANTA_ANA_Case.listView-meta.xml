@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_SSS_SANTA_ANA_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: SSS-SANTA ANA</label>
+    <queue>Queue_SSS_SANTA_ANA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

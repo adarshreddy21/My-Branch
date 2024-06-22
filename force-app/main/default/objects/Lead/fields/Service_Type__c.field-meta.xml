@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Service_Area__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ditching and Trenching</fullName>
+                <default>false</default>
+                <label>Ditching and Trenching</label>
+            </value>
+            <value>
+                <fullName>Pier Holing</fullName>
+                <default>false</default>
+                <label>Pier Holing</label>
+            </value>
+            <value>
+                <fullName>Potholing</fullName>
+                <default>false</default>
+                <label>Potholing</label>
+            </value>
+            <value>
+                <fullName>Chemical Cleaning</fullName>
+                <default>false</default>
+                <label>Chemical Cleaning</label>
+            </value>
+            <value>
+                <fullName>Dewatering and Materials Processing</fullName>
+                <default>false</default>
+                <label>Dewatering and Materials Processing</label>
+            </value>
+            <value>
+                <fullName>High Pressure Services</fullName>
+                <default>false</default>
+                <label>High Pressure Services</label>
+            </value>
+            <value>
+                <fullName>Hydro Excavation</fullName>
+                <default>false</default>
+                <label>Hydro Excavation</label>
+            </value>
+            <value>
+                <fullName>Liquid/Dry Vacuum Services</fullName>
+                <default>false</default>
+                <label>Liquid/Dry Vacuum Services</label>
+            </value>
+            <value>
+                <fullName>Outage and Turnaround Services</fullName>
+                <default>false</default>
+                <label>Outage and Turnaround Services</label>
+            </value>
+            <value>
+                <fullName>Pigging and Decoking Services</fullName>
+                <default>false</default>
+                <label>Pigging and Decoking Services</label>
+            </value>
+            <value>
+                <fullName>Pipeline Coatings</fullName>
+                <default>false</default>
+                <label>Pipeline Coatings</label>
+            </value>
+            <value>
+                <fullName>Ultra Sonic Cleaning Technology</fullName>
+                <default>false</default>
+                <label>Ultra Sonic Cleaning Technology</label>
+            </value>
+            <value>
+                <fullName>Bulk Waste Disposal</fullName>
+                <default>false</default>
+                <label>Bulk Waste Disposal</label>
+            </value>
+            <value>
+                <fullName>Catalyst Treatment</fullName>
+                <default>false</default>
+                <label>Catalyst Treatment</label>
+            </value>
+            <value>
+                <fullName>Drum Waste Disposal</fullName>
+                <default>false</default>
+                <label>Drum Waste Disposal</label>
+            </value>
+            <value>
+                <fullName>Explosives Management</fullName>
+                <default>false</default>
+                <label>Explosives Management</label>
+            </value>
+            <value>
+                <fullName>Fuel Blending</fullName>
+                <default>false</default>
+                <label>Fuel Blending</label>
+            </value>
+            <value>
+                <fullName>Incineration</fullName>
+                <default>false</default>
+                <label>Incineration</label>
+            </value>
+            <value>
+                <fullName>Industrial Wastewater Treatment</fullName>
+                <default>false</default>
+                <label>Industrial Wastewater Treatment</label>
+            </value>
+            <value>
+                <fullName>Landfill</fullName>
+                <default>false</default>
+                <label>Landfill</label>
+            </value>
+            <value>
+                <fullName>Medical Waste Management and Destruction</fullName>
+                <default>false</default>
+                <label>Medical Waste Management and Destruction</label>
+            </value>
+            <value>
+                <fullName>Recycling Services</fullName>
+                <default>false</default>
+                <label>Recycling Services</label>
+            </value>
+            <value>
+                <fullName>Daylighting &amp; Hydro Excavation</fullName>
+                <default>false</default>
+                <label>Daylighting &amp; Hydro Excavation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Chemical Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Dewatering and Materials Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>High Pressure Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Hydro Excavation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Liquid/Dry Vacuum Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Outage and Turnaround Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Pigging and Decoking Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Pipeline Coatings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Services</controllingFieldValue>
+            <valueName>Ultra Sonic Cleaning Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Bulk Waste Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Catalyst Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Drum Waste Disposal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Explosives Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Fuel Blending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Incineration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Industrial Wastewater Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Landfill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Medical Waste Management and Destruction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Recycling Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>Ditching and Trenching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>Pier Holing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>Potholing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Daylighting Services</controllingFieldValue>
+            <valueName>Daylighting &amp; Hydro Excavation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modified_in_first_48_hrs__c</fullName>
+    <externalId>false</externalId>
+    <formula>ROUND(
+MOD(
+(LastModifiedDate -  CreatedDate)*24,24),0)  &lt;=  48</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Modified in first 48 hrs</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_spam_leads_from_website</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(
+Owner:User.User_ID_18__c = &apos;005j000000DjQDLAA3&apos;,
+Company = &apos;google&apos;,
+text(LeadSource) = &apos;Web&apos;  
+)</errorConditionFormula>
+    <errorMessage>Spam Lead, Please contact System Administrator</errorMessage>
+</ValidationRule>

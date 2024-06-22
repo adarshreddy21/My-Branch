@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Open__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(CloseDate-Datevalue(CreatedDate)&lt;0,CloseDate-datevalue( Insert_Date__c),IF(and(isblank(Date_Opportunity_Closed__c),CONTAINS(text(StageName), &quot;Close&quot;)),(CloseDate-Datevalue(CreatedDate)), 
+If(and(not(isblank(Date_Opportunity_Closed__c)),CONTAINS(text(StageName), &quot;Close&quot;)), Date_Opportunity_Closed__c - DATEVALUE(CreatedDate), 
+TODAY()- DATEVALUE(CreatedDate))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Open</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

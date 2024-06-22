@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Show Account page with limited information like the call agents</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>zold Call Agent Account view</label>
+    <license>Salesforce</license>
+</PermissionSet>

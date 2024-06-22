@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_Manifest_Delegation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indication that E-Manifest Delegation has been signed. HWP = Hazardous Waste Program</inlineHelpText>
+    <label>E-Manifest Delegation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HWP Partial</fullName>
+                <default>false</default>
+				<isActive>false</isActive>
+                <label>HWP Partial - Signing Authority</label>
+            </value>
+            <value>
+                <fullName>HWP Partial - No Signing Authority</fullName> 
+                <default>false</default>
+				<isActive>false</isActive>
+                <label>HWP Partial - No Signing Authority</label>
+            </value>
+            <value>
+                <fullName>HWP Full</fullName>
+                <default>false</default>
+				<isActive>false</isActive>
+                <label>HWP Full</label>
+            </value>
+			<value>
+                <fullName>HWP – Non-delegate</fullName>
+                <default>false</default>
+                <label>HWP – Non-delegate</label>
+            </value>
+            <value>
+                <fullName>HWP – Partial Delegate</fullName>
+                <default>false</default>
+                <label>HWP – Partial Delegate</label>
+            </value>
+            <value>
+                <fullName>HWP – Full Delegate</fullName> 
+                <default>false</default>
+                <label>HWP – Full Delegate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

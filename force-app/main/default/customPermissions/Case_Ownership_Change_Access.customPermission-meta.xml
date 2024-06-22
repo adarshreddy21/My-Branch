@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission is linked to permission set called &apos;Case_Ownership_Change_Access&apos; .</description>
+    <isLicensed>false</isLicensed>
+    <label>Case_Ownership_Change_Access</label>
+</CustomPermission>

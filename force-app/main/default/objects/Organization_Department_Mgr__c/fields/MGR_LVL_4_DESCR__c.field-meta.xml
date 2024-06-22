@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MGR_LVL_4_DESCR__c</fullName>
+    <externalId>false</externalId>
+    <label>MGR LVL 4 DESCR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset Mgmt &amp; Supply Chain</fullName>
+                <default>false</default>
+                <label>Asset Mgmt &amp; Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Automotive Services</fullName>
+                <default>false</default>
+                <label>Automotive Services</label>
+            </value>
+            <value>
+                <fullName>Base Oil Sales</fullName>
+                <default>false</default>
+                <label>Base Oil Sales</label>
+            </value>
+            <value>
+                <fullName>Blended Sales</fullName>
+                <default>false</default>
+                <label>Blended Sales</label>
+            </value>
+            <value>
+                <fullName>BPS Admin</fullName>
+                <default>false</default>
+                <label>BPS Admin</label>
+            </value>
+            <value>
+                <fullName>BPS Canada Region</fullName>
+                <default>false</default>
+                <label>BPS Canada Region</label>
+            </value>
+            <value>
+                <fullName>BPS Central Region</fullName>
+                <default>false</default>
+                <label>BPS Central Region</label>
+            </value>
+            <value>
+                <fullName>BPS East Region</fullName>
+                <default>false</default>
+                <label>BPS East Region</label>
+            </value>
+            <value>
+                <fullName>BPS Lab</fullName>
+                <default>false</default>
+                <label>BPS Lab</label>
+            </value>
+            <value>
+                <fullName>BPS Oil Filter Recylers</fullName>
+                <default>false</default>
+                <label>BPS Oil Filter Recylers</label>
+            </value>
+            <value>
+                <fullName>BPS West Region</fullName>
+                <default>false</default>
+                <label>BPS West Region</label>
+            </value>
+            <value>
+                <fullName>Broker Business</fullName>
+                <default>false</default>
+                <label>Broker Business</label>
+            </value>
+            <value>
+                <fullName>Canada Industrial Svcs</fullName>
+                <default>false</default>
+                <label>Canada Industrial Svcs</label>
+            </value>
+            <value>
+                <fullName>Canada Region</fullName>
+                <default>false</default>
+                <label>Canada Region</label>
+            </value>
+            <value>
+                <fullName>Central Region IS</fullName>
+                <default>false</default>
+                <label>Central Region IS</label>
+            </value>
+            <value>
+                <fullName>Chemical Region IS</fullName>
+                <default>false</default>
+                <label>Chemical Region IS</label>
+            </value>
+            <value>
+                <fullName>CHESI Sales</fullName>
+                <default>false</default>
+                <label>CHESI Sales</label>
+            </value>
+            <value>
+                <fullName>Corp Dev &amp; Real Estate</fullName>
+                <default>false</default>
+                <label>Corp Dev &amp; Real Estate</label>
+            </value>
+            <value>
+                <fullName>Corp Pricing &amp; Proposals</fullName>
+                <default>false</default>
+                <label>Corp Pricing &amp; Proposals</label>
+            </value>
+            <value>
+                <fullName>Corp Sales &amp; Mktg Admin</fullName>
+                <default>false</default>
+                <label>Corp Sales &amp; Mktg Admin</label>
+            </value>
+            <value>
+                <fullName>Corporate Billing</fullName>
+                <default>false</default>
+                <label>Corporate Billing</label>
+            </value>
+            <value>
+                <fullName>Corporate Executive</fullName>
+                <default>false</default>
+                <label>Corporate Executive</label>
+            </value>
+            <value>
+                <fullName>Corporate Finance</fullName>
+                <default>false</default>
+                <label>Corporate Finance</label>
+            </value>
+            <value>
+                <fullName>Corporate Government Strategy</fullName>
+                <default>false</default>
+                <label>Corporate Government Strategy</label>
+            </value>
+            <value>
+                <fullName>Corporate Marketing</fullName>
+                <default>false</default>
+                <label>Corporate Marketing</label>
+            </value>
+            <value>
+                <fullName>Corporate MIS &amp; TI</fullName>
+                <default>false</default>
+                <label>Corporate MIS &amp; TI</label>
+            </value>
+            <value>
+                <fullName>Customer Care_Central Routing</fullName>
+                <default>false</default>
+                <label>Customer Care_Central Routing</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Daylighting Services Canada</fullName>
+                <default>false</default>
+                <label>Daylighting Services Canada</label>
+            </value>
+            <value>
+                <fullName>Dene Nation Industrial Service</fullName>
+                <default>false</default>
+                <label>Dene Nation Industrial Service</label>
+            </value>
+            <value>
+                <fullName>Discontinued Operations</fullName>
+                <default>false</default>
+                <label>Discontinued Operations</label>
+            </value>
+            <value>
+                <fullName>Distribution Centers</fullName>
+                <default>false</default>
+                <label>Distribution Centers</label>
+            </value>
+            <value>
+                <fullName>Environmental Svcs Sls and Adm</fullName>
+                <default>false</default>
+                <label>Environmental Svcs Sls and Adm</label>
+            </value>
+            <value>
+                <fullName>Facilities Group</fullName>
+                <default>false</default>
+                <label>Facilities Group</label>
+            </value>
+            <value>
+                <fullName>Facility Sales and Admin</fullName>
+                <default>false</default>
+                <label>Facility Sales and Admin</label>
+            </value>
+            <value>
+                <fullName>Gulf Region IS</fullName>
+                <default>false</default>
+                <label>Gulf Region IS</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Safety</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>Human Resources Corporate</fullName>
+                <default>false</default>
+                <label>Human Resources Corporate</label>
+            </value>
+            <value>
+                <fullName>ICSS Labor Pool</fullName>
+                <default>false</default>
+                <label>ICSS Labor Pool</label>
+            </value>
+            <value>
+                <fullName>Industrial US Sales &amp; Admin</fullName>
+                <default>false</default>
+                <label>Industrial US Sales &amp; Admin</label>
+            </value>
+            <value>
+                <fullName>Inside Sales North America</fullName>
+                <default>false</default>
+                <label>Inside Sales North America</label>
+            </value>
+            <value>
+                <fullName>IS Sales &amp; Svc Sales &amp; Admin</fullName>
+                <default>false</default>
+                <label>IS Sales &amp; Svc Sales &amp; Admin</label>
+            </value>
+            <value>
+                <fullName>LDAR Region</fullName>
+                <default>false</default>
+                <label>LDAR Region</label>
+            </value>
+            <value>
+                <fullName>Legal - US_Canada_India</fullName>
+                <default>false</default>
+                <label>Legal - US_Canada_India</label>
+            </value>
+            <value>
+                <fullName>Lodging Services</fullName>
+                <default>false</default>
+                <label>Lodging Services</label>
+            </value>
+            <value>
+                <fullName>National Business Line SKE</fullName>
+                <default>false</default>
+                <label>National Business Line SKE</label>
+            </value>
+            <value>
+                <fullName>National Prod Line Field Svc</fullName>
+                <default>false</default>
+                <label>National Prod Line Field Svc</label>
+            </value>
+            <value>
+                <fullName>National Prod Line Tech Svc</fullName>
+                <default>false</default>
+                <label>National Prod Line Tech Svc</label>
+            </value>
+            <value>
+                <fullName>National Trans CAD</fullName>
+                <default>false</default>
+                <label>National Trans CAD</label>
+            </value>
+            <value>
+                <fullName>National Trans India</fullName>
+                <default>false</default>
+                <label>National Trans India</label>
+            </value>
+            <value>
+                <fullName>National Trans US</fullName>
+                <default>false</default>
+                <label>National Trans US</label>
+            </value>
+            <value>
+                <fullName>National Water Region</fullName>
+                <default>false</default>
+                <label>National Water Region</label>
+            </value>
+            <value>
+                <fullName>North American Remediation</fullName>
+                <default>false</default>
+                <label>North American Remediation</label>
+            </value>
+            <value>
+                <fullName>North Region IS</fullName>
+                <default>false</default>
+                <label>North Region IS</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas Field Services</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas Field Services</label>
+            </value>
+            <value>
+                <fullName>Oil Sands</fullName>
+                <default>false</default>
+                <label>Oil Sands</label>
+            </value>
+            <value>
+                <fullName>Operations &amp; Quality Control</fullName>
+                <default>false</default>
+                <label>Operations &amp; Quality Control</label>
+            </value>
+            <value>
+                <fullName>Operations Support</fullName>
+                <default>false</default>
+                <label>Operations Support</label>
+            </value>
+            <value>
+                <fullName>Packaging &amp; Blending Sales</fullName>
+                <default>false</default>
+                <label>Packaging &amp; Blending Sales</label>
+            </value>
+            <value>
+                <fullName>Refined &amp; Blended Admin</fullName>
+                <default>false</default>
+                <label>Refined &amp; Blended Admin</label>
+            </value>
+            <value>
+                <fullName>Risk Management and Insurance</fullName>
+                <default>false</default>
+                <label>Risk Management and Insurance</label>
+            </value>
+            <value>
+                <fullName>RSS</fullName>
+                <default>false</default>
+                <label>RSS</label>
+            </value>
+            <value>
+                <fullName>Sales Ops_Customer Master Data</fullName>
+                <default>false</default>
+                <label>Sales Ops_Customer Master Data</label>
+            </value>
+            <value>
+                <fullName>SK Antifreeze Recycling</fullName>
+                <default>false</default>
+                <label>SK Antifreeze Recycling</label>
+            </value>
+            <value>
+                <fullName>SK Oil Refineries</fullName>
+                <default>false</default>
+                <label>SK Oil Refineries</label>
+            </value>
+            <value>
+                <fullName>SK Pricing &amp; Proposals</fullName>
+                <default>false</default>
+                <label>SK Pricing &amp; Proposals</label>
+            </value>
+            <value>
+                <fullName>SKO Packaging &amp; Blending</fullName>
+                <default>false</default>
+                <label>SKO Packaging &amp; Blending</label>
+            </value>
+            <value>
+                <fullName>Southeast Region IS</fullName>
+                <default>false</default>
+                <label>Southeast Region IS</label>
+            </value>
+            <value>
+                <fullName>Specialty Mechnical Svc Region</fullName>
+                <default>false</default>
+                <label>Specialty Mechnical Svc Region</label>
+            </value>
+            <value>
+                <fullName>Specialty Product Sales</fullName>
+                <default>false</default>
+                <label>Specialty Product Sales</label>
+            </value>
+            <value>
+                <fullName>Specialty Svs Sales &amp; Admin</fullName>
+                <default>false</default>
+                <label>Specialty Svs Sales &amp; Admin</label>
+            </value>
+            <value>
+                <fullName>Supply Chain SOP &amp; Procurement</fullName>
+                <default>false</default>
+                <label>Supply Chain SOP &amp; Procurement</label>
+            </value>
+            <value>
+                <fullName>Tank and Separations</fullName>
+                <default>false</default>
+                <label>Tank and Separations</label>
+            </value>
+            <value>
+                <fullName>Technology &amp; Automation Area</fullName>
+                <default>false</default>
+                <label>Technology &amp; Automation Area</label>
+            </value>
+            <value>
+                <fullName>Trans Compliance</fullName>
+                <default>false</default>
+                <label>Trans Compliance</label>
+            </value>
+            <value>
+                <fullName>Unmanned aerial systems</fullName>
+                <default>false</default>
+                <label>Unmanned aerial systems</label>
+            </value>
+            <value>
+                <fullName>US &amp; Canadian Planes</fullName>
+                <default>false</default>
+                <label>US &amp; Canadian Planes</label>
+            </value>
+            <value>
+                <fullName>US East Region</fullName>
+                <default>false</default>
+                <label>US East Region</label>
+            </value>
+            <value>
+                <fullName>US Gulf Region</fullName>
+                <default>false</default>
+                <label>US Gulf Region</label>
+            </value>
+            <value>
+                <fullName>US Industrial Support Sls_Adm</fullName>
+                <default>false</default>
+                <label>US Industrial Support Sls_Adm</label>
+            </value>
+            <value>
+                <fullName>US Midwest Region</fullName>
+                <default>false</default>
+                <label>US Midwest Region</label>
+            </value>
+            <value>
+                <fullName>US MP Insite</fullName>
+                <default>false</default>
+                <label>US MP Insite</label>
+            </value>
+            <value>
+                <fullName>US Pigging</fullName>
+                <default>false</default>
+                <label>US Pigging</label>
+            </value>
+            <value>
+                <fullName>US West Region</fullName>
+                <default>false</default>
+                <label>US West Region</label>
+            </value>
+            <value>
+                <fullName>Used Oil Supply Admin</fullName>
+                <default>false</default>
+                <label>Used Oil Supply Admin</label>
+            </value>
+            <value>
+                <fullName>Vapor Control Region</fullName>
+                <default>false</default>
+                <label>Vapor Control Region</label>
+            </value>
+            <value>
+                <fullName>West Coast Region IS</fullName>
+                <default>false</default>
+                <label>West Coast Region IS</label>
+            </value>
+            <value>
+                <fullName>#N/A</fullName>
+                <default>false</default>
+                <label>#N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

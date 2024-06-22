@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Reactivate_For_Inactive_Parent</fullName>
+    <active>true</active>
+    <description>should not allow Reactivating ShipTo/Gen accounts associated with inactive customer parent accounts.</description>
+    <errorConditionFormula>AND      (RecordType.Name = &quot;Customer Location&quot;,
+          ISPICKVAL (Parent.Status__c , &apos;Inactive&apos;), 
+         (ISPICKVAL(PRIORVALUE(Status__c),&quot;Inactive&quot;)),
+		  NOT(ISCHANGED(Active_ER_Contract__c)),
+          NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+          OR( ISCHANGED(Inactivate_Reactivate_In_Progress__c),
+          ISCHANGED(Status__c))   
+)</errorConditionFormula>
+    <errorMessage>&quot;Generator accounts cannot be reactivated if their parent Customer account is inactive&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_NJ_Deptford_NJ_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : NJ - Deptford, NJ</label>
+    <queue>Queue_NJ_Deptford_NJ</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

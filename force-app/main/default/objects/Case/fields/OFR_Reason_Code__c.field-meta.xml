@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFR_Reason_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>OFR Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Type_of_Service__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Already on Route</fullName>
+                <default>false</default>
+                <label>Already on Route</label>
+            </value>
+            <value>
+                <fullName>Business Closing</fullName>
+                <default>false</default>
+                <label>Business Closing</label>
+            </value>
+            <value>
+                <fullName>Cut Off Acct</fullName>
+                <default>false</default>
+                <label>Cut Off Acct</label>
+            </value>
+            <value>
+                <fullName>Leaking Bin</fullName>
+                <default>false</default>
+                <label>Leaking Bin</label>
+            </value>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>Moving to New Location</fullName>
+                <default>false</default>
+                <label>Moving to New Location</label>
+            </value>
+            <value>
+                <fullName>No bin on account</fullName>
+                <default>false</default>
+                <label>No bin on account</label>
+            </value>
+            <value>
+                <fullName>Not a Call in/Called for different service</fullName>
+                <default>false</default>
+                <label>Not a Call in/Called for different service</label>
+            </value>
+            <value>
+                <fullName>Unexpected Volume</fullName>
+                <default>false</default>
+                <label>Unexpected Volume</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Already on Route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Business Closing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Cut Off Acct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Leaking Bin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Lost to Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Moving to New Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>No bin on account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Not a Call in/Called for different service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil Filter Bin</controllingFieldValue>
+            <valueName>Unexpected Volume</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

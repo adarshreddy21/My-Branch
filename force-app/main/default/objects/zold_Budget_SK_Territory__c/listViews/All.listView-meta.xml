@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>TerritoryTerritory_del__c</columns>
+    <columns>Territory_Area__c</columns>
+    <columns>Territory_Owner__c</columns>
+    <columns>Territory_Owner_Manager__c</columns>
+    <columns>Branch_and_LOB__c</columns>
+    <columns>Budget_Amount__c</columns>
+    <columns>Percent_of_Budget__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

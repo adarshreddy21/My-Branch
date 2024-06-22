@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MANIFEST_ADDRESS_REQUIREMENT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT($Setup.Bypass_Account_Validation__c.Bypass_Manifest_Address_Requirement__c),
+NOT ($Profile.Name = &quot;Integration&quot;), 
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;), 
+INCLUDES(Contact_Type__c ,&quot;MANI&quot;), 
+ISBLANK(Account.Manifest_Address1__c )
+)</errorConditionFormula>
+    <errorDisplayField>Contact_Type__c</errorDisplayField>
+    <errorMessage>1. If MANI is selected - Manifest address on related Account is required.</errorMessage>
+</ValidationRule>

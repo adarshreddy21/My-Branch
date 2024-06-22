@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Requests_needs_Customer_Contact</fullName>
+    <active>true</active>
+    <description>Requires Opportunity contact and Quote Owner information to submit a quote for Central Quoting Opportunity</description>
+    <errorConditionFormula>and( $Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;
+,$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+,OR(RecordType.DeveloperName = &apos;Central_Quoting_TS&apos;,RecordType.DeveloperName = &apos;Central_Quoting_FS&apos;)
+,OR(TPM_Quote_Request_To_Business__c = &apos;Technical Services&apos;
+,TPM_Quote_Request_To_Business__c = &apos;Field Services&apos;)
+,isblank( Opportunity_Contact__c )
+, TPM_Quote_Request__c = True
+)</errorConditionFormula>
+    <errorDisplayField>Opportunity_Contact__c</errorDisplayField>
+    <errorMessage>Customer contact for this opportunity cannot be blank. Please look up and select the related customer contact  to submit the quote.</errorMessage>
+</ValidationRule>

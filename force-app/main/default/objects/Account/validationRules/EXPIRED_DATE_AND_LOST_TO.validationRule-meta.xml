@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXPIRED_DATE_AND_LOST_TO</fullName>
+    <active>false</active>
+    <description>Lost To(lookup) can only be populated with the Expired Date(date) is not blank.</description>
+    <errorConditionFormula>AND(
+NOT ISBLANK(Lost_To__c), 
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Profile.Name = &quot;Sales Operations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+OR(
+ISBLANK(Expired_Date__c)))</errorConditionFormula>
+    <errorDisplayField>Lost_To__c</errorDisplayField>
+    <errorMessage>Expired Date is required in order to select Lost To</errorMessage>
+</ValidationRule>

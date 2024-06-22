@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission is to give access for central quoting record type access and submit for approval field access</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.TPM_Quote_Request__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Permission set for Opportunity Record Type Central Quoting</label>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.Central_Quoting_TS</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.Central_Quoting_FS</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

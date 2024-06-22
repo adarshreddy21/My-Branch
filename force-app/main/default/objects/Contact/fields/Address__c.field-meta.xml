@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Locations__c ) , ( Account.ShippingStreet   + &apos; , &apos; +  Account.ShippingCity   + &apos; , &apos; +  Account.ShippingState   + &apos; , &apos; +  Account.ShippingCountry   + &apos; , &apos; + Account.ShippingPostalCode ),
+
+(Locations__r.Address__Street__s  + &apos; , &apos; + Locations__r.Address__City__s +  &apos; , &apos; +   TEXT ( Locations__r.Address__StateCode__s ) + &apos; , &apos; + TEXT( Locations__r.Address__CountryCode__s )  +  &apos; , &apos; +  Locations__r.Address__PostalCode__s) )</formula>
+    <label>Contact Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

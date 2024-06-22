@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Prochaine action</label>
+    <name>Next_Action__c</name>
+    <picklistValues>
+        <masterLabel>Call</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation>Classé</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up on TM</masterLabel>
+        <translation>Suivi sur télémarketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow-up</masterLabel>
+        <translation>Suivi</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost</masterLabel>
+        <translation>Perdu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Profile Waste</masterLabel>
+        <translation>Profil des déchets</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote</masterLabel>
+        <translation>Devis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scope Job</masterLabel>
+        <translation>Envergure des travaux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visit</masterLabel>
+        <translation>Visite</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_BSY_BOYNTON_BEACH_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: BSY-BOYNTON BEACH</label>
+    <queue>Queue_BSY_BOYNTON_BEACH</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

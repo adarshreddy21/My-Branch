@@ -1,0 +1,32 @@
+<apex:page standardController="Technical_Sales_Expert__c" recordSetVar="unused"  sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="L" id="table">
+<apex:column headerValue="WIN ID">
+<apex:inputField value="{!L.WIN_ID__c}"/>
+</apex:column>
+<apex:column headerValue="Account">
+<apex:inputField value="{!L.Account_Name__c}"/>
+</apex:column>
+<apex:column headerValue="Line of Business">
+<apex:inputField value="{!L.Product_Name__c}"/>
+</apex:column>
+<apex:column headerValue="Product Primary Business">
+<apex:inputField value="{!L.Product_Primary_Business__c}"/>
+</apex:column>
+<apex:column headerValue="Specialist">
+<apex:inputField value="{!L.Technical_Sales_Expert_name__c}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

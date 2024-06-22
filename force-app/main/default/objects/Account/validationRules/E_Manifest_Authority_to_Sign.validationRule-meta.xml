@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_Manifest_Authority_to_Sign</fullName>
+    <active>true</active>
+    <description>If we select E - Manifest Delegation, we must set &quot;E-Manifest Authority to Sign&quot; to either yes or no.</description>
+    <errorConditionFormula>AND (NOT(RecordType.Name = &quot;Customer Chain&quot;),(TEXT(E_Manifest_Delegation__c)!= NULL),NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)), NOT(ISCHANGED(Active_ER_Contract__c)), ISBLANK(TEXT(E_Manifest_Authority_to_Sign__c)))</errorConditionFormula>
+    <errorDisplayField>E_Manifest_Delegation__c</errorDisplayField>
+    <errorMessage>If you select any &quot;E-Manifest Delegation&quot; value, then you must set &quot;E-Manifest Authority to Sign&quot; to either yes or no.</errorMessage>
+</ValidationRule>

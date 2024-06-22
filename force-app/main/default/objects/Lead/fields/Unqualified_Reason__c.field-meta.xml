@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Reason__c</fullName>
+    <description>Reason the lead is not qualified</description>
+    <externalId>false</externalId>
+    <label>Unqualified Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cannot contact</fullName>
+                <default>false</default>
+                <label>Cannot contact</label>
+            </value>
+            <value>
+                <fullName>Denied visit</fullName>
+                <default>false</default>
+                <label>Denied visit</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not interested</label>
+            </value>
+            <value>
+                <fullName>Other (requires comment)</fullName>
+                <default>false</default>
+                <label>Other (requires comment)</label>
+            </value>
+            <value>
+                <fullName>Out of business</fullName>
+                <default>false</default>
+                <label>Out of business</label>
+            </value>
+            <value>
+                <fullName>Under competitor contract</fullName>
+                <default>false</default>
+                <label>Under competitor contract</label>
+            </value>
+            <value>
+                <fullName>Spam/Junk</fullName>
+                <default>false</default>
+                <label>Spam/Junk</label>
+            </value>
+            <value>
+                <fullName>Not a CH/SK Service</fullName>
+                <default>false</default>
+                <label>Not a CH/SK Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

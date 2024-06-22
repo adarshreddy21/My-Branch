@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parts_Washer_BDR1_No_Cadence_Activity_90</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>Do_Not_Contact__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Account.Primary_Aurora_Branch_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Account.Class__c</columns>
+    <columns>Account.Industry_Segment__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CONTACT.LAST_ACTIVITY</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>LAST_90_DAYS</value>
+    </filters>
+    <label>Parts Washer BDR1 No Cadence Activity&gt;90</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>SK_INS_SD_Call_Center_Inbound_Sales</roleAndSubordinates>
+    </sharedTo>
+</ListView>

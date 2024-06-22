@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isSalesPerson__c</fullName>
+    <externalId>false</externalId>
+    <formula>or(text(Sales_Person_Type__c)= &apos;Account Manager&apos;
+,text(Sales_Person_Type__c)= &apos;Senior Account Manager&apos;
+,text(Sales_Person_Type__c)= &apos;ISAM&apos;
+,text(Sales_Person_Type__c)= &apos;Key Account Manager&apos;
+,text(Sales_Person_Type__c)= &apos;Key Account Support&apos;
+,text(Sales_Person_Type__c)= &apos;Sales Director&apos;
+,text(Sales_Person_Type__c)= &apos;Sales Manager&apos;
+,text(Sales_Person_Type__c)= &apos;Sales Representative&apos;
+,text(Sales_Person_Type__c)= &apos;Sales Support&apos;
+,text(Sales_Person_Type__c)= &apos;Senior Account Manager&apos;
+,text(Sales_Person_Type__c)= &apos;Technical Sales Expert&apos;
+,text(Sales_Person_Type__c)= &apos;Technical Sales Manager&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>isSalesPerson</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Date_Backend__c</fullName>
+    <description>Time adjustment for non business hours Created Date for EST business start time
+Field used for First Contact Age (Business Hours EST) field calculation</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(TIMEVALUE(&quot;5:00:00.00&quot;) &lt;= TIMEVALUE(CreatedDate),TIMEVALUE(CreatedDate) &lt; TIMEVALUE(&quot;13:00:00.00&quot;)),DATETIMEVALUE( TEXT(DATEVALUE(CreatedDate))+&quot; &quot; + &quot;13:00:00&quot;), CreatedDate)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Created Date Backend</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

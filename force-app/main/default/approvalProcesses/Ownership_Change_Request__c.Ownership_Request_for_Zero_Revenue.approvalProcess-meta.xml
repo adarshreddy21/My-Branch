@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Prior_year_s_revenue__c</field>
+        <field>Status__c</field>
+        <field>Justification__c</field>
+        <field>Effective_Date__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>CurrentStageUpdate</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>New_Owner_s_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
+        </assignedApprover>
+        <label>New Owner Manager Approval</label>
+        <name>New_Owner_Manager_Approval</name>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    RecordType.DeveloperName = &apos;Owner_Change&apos;,
+    OR(
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;SK ENV&apos;),
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;SK BPS&apos;),
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;SK KPP&apos;),
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;Clean Harbors ENV&apos;),
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;CHES Oil and Gas&apos;),
+        ISPICKVAL(Account__r.Primary_Service_Provider_New__c, &apos;CHES Industrial&apos;)
+    ),
+ EligibileForIntraQuarterFlip__c = true,
+ NOT(ISPICKVAL(Status__c, &apos;Rejected&apos;)),
+ ISPICKVAL(Account_Owner_del__r.Sales_Person_Type__c ,&apos;Sales Placeholder&apos;)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Intra_Quarter_Flip</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Status_Approved_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Ownership_Change_Rejected</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_Status_Submitted</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Set_Current_Stage_Zero</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Ownership Request for Zero Revenue</label>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>Update_Status_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

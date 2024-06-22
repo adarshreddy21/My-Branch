@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allied_Product_Type__c</fullName>
+    <description>Categorization of Allied Products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Categorization of Allied Products - should be entered when choosing Allied Product LOB on the opportunity</inlineHelpText>
+    <label>Allied Product Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Allied Product</fullName>
+                <default>false</default>
+                <label>Standard Allied Product</label>
+            </value>
+            <value>
+                <fullName>Bulk WWF</fullName>
+                <default>false</default>
+                <label>Bulk WWF</label>
+            </value>
+            <value>
+                <fullName>Bulk AF</fullName>
+                <default>false</default>
+                <label>Bulk AF</label>
+            </value>
+            <value>
+                <fullName>Drum WWF</fullName>
+                <default>false</default>
+                <label>Drum WWF</label>
+            </value>
+            <value>
+                <fullName>Drum AF</fullName>
+                <default>false</default>
+                <label>Drum AF</label>
+            </value>
+            <value>
+                <fullName>Compliance Sales</fullName>
+                <default>false</default>
+                <label>Compliance Sales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

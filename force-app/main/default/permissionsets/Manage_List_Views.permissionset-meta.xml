@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow users to manager list views</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage List Views</label>
+    <license>Salesforce</license>
+    <pageAccesses>
+        <apexPage>MassEditLead</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>MassUpdateLead</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateCustomizeFilters</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditPublicFilters</name>
+    </userPermissions>
+</PermissionSet>

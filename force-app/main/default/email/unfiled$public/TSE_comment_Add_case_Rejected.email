@@ -1,0 +1,7 @@
+The following TSE Add case has been rejected. 
+
+Case Number: {!Case.CaseNumber} 
+
+Account WinID: {!Case.Current_Account_Win_ID__c} 
+
+Rejected Reason : {!ApprovalRequest.Comments}

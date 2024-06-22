@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_FSE_FRESNO_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: FSE-FRESNO</label>
+    <queue>Queue_FSE_FRESNO</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

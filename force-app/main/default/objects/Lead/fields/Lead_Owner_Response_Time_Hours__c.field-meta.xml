@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Owner_Response_Time_Hours__c</fullName>
+    <description>Shows lead owner response time</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( Lead_Owner_First_Response_Date_Time__c ) , FLOOR((( now()-  Lead_owner_changed_Date_Time__c )*24)), FLOOR((( Lead_Owner_First_Response_Date_Time__c -  Lead_owner_changed_Date_Time__c )*24)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Owner First Response Time (Hours)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

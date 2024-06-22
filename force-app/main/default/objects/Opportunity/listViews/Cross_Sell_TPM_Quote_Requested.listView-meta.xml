@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cross_Sell_TPM_Quote_Requested</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Address__c</columns>
+    <columns>Opportunity_Business_Segment__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Job_Start_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>TPM_Quote_Requested_Date__c</columns>
+    <columns>TPM_Quote_Request_To_Person__c</columns>
+    <columns>Cross_Sell_Quote_Request_Status__c</columns>
+    <columns>Number_of_Day_for_Job_after_Verbal_Award__c</columns>
+    <columns>Stalled_By_Client__c</columns>
+    <columns>TPM_Quote_Completed_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPM_Quote_Request__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Cross_Sell__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>TPM_Quote_Completed_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Cross_Sell_Quote_Request_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Quote Withdrawn</value>
+    </filters>
+    <label>Cross Sell - Quote Requested</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>FS_Quote_Support</group>
+        <group>TPM_Opportunity</group>
+        <group>TS_Quote_Support</group>
+    </sharedTo>
+</ListView>

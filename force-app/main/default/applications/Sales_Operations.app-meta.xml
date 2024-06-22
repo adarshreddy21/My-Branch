@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-report</defaultLandingTab>
+    <description>This view is designed for Sales Operations</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Sales Operations</label>
+    <logo>SharedDocuments/Sales_Ops.jpg</logo>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Sales_Districts__c</tabs>
+    <tabs>Technical_Sales_Expert__c</tabs>
+    <tabs>Sales_Market_Areas__c</tabs>
+    <tabs>Territory__c</tabs>
+    <tabs>CLH_Website_Lead_Mapping__c</tabs>
+    <tabs>AQMD_District__c</tabs>
+    <tabs>Support_TSE_Product_List__c</tabs>
+    <tabs>Territory_Budget_SK_Branch_Seasonality__c</tabs>
+    <tabs>Budget_Summary__c</tabs>
+    <tabs>My_Budget</tabs>
+    <tabs>Sales_Olympics</tabs>
+    <tabs>Sales_Contest_Metrics__c</tabs>
+    <tabs>maps__ShapeLayerGeometry__c</tabs>
+</CustomApplication>

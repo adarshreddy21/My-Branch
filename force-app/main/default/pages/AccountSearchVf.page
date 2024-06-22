@@ -1,0 +1,931 @@
+<apex:page standardController="account" extensions="AccountSearchController" lightningstylesheets="true" showHeader="false">
+    <apex:stylesheet value="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"/>
+    <apex:includeScript value="https://code.jquery.com/jquery-3.5.1.js"/>
+    <apex:includeScript value="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"/>
+    
+    <style>
+        td.details-control{
+        background: url(https://datatables.net/examples/resources/details_open.png) no-repeat center center;
+        cursor: pointer; 
+        }
+        tr.shown td.details-control {
+        background: url(https://datatables.net/examples/resources/details_close.png) no-repeat center center;
+        }
+    </style>
+    
+    
+    <script>
+    function accTab() {
+        
+        var ald =  document.getElementById('accID');
+        ald.classList.add("slds-show");
+        ald.classList.remove("slds-hide");
+        
+        var old =  document.getElementById('oppID');
+        old.classList.remove("slds-show");
+        old.classList.add("slds-hide");
+        
+        var cld =  document.getElementById('caseID');
+        cld.classList.remove("slds-show");
+        cld.classList.add("slds-hide");
+        
+        var actld =  document.getElementById('actID');
+        actld.classList.remove("slds-show");
+        actld.classList.add("slds-hide");
+        
+        var callld =  document.getElementById('callID');
+        callld.classList.remove("slds-show");
+        callld.classList.add("slds-hide");
+    }
+    </script>
+    
+    <script>
+    function oppTab() {
+        
+        var ald =  document.getElementById('accID');
+        ald.classList.remove("slds-show");
+        ald.classList.add("slds-hide");
+        
+        var old =  document.getElementById('oppID');
+        old.classList.add("slds-show");
+        old.classList.remove("slds-hide");
+        
+        var cld =  document.getElementById('caseID');
+        cld.classList.remove("slds-show");
+        cld.classList.add("slds-hide");
+        
+        var actld =  document.getElementById('actID');
+        actld.classList.remove("slds-show");
+        actld.classList.add("slds-hide");
+        
+        var callld =  document.getElementById('callID');
+        callld.classList.remove("slds-show");
+        callld.classList.add("slds-hide");
+    }
+    </script>
+    <script>
+    function caseTab() {
+        
+        var ald =  document.getElementById('accID');
+        ald.classList.remove("slds-show");
+        ald.classList.add("slds-hide");
+        
+        var old =  document.getElementById('oppID');
+        old.classList.remove("slds-show");
+        old.classList.add("slds-hide");
+        
+        var cld =  document.getElementById('caseID');
+        cld.classList.add("slds-show");
+        cld.classList.remove("slds-hide");
+        
+        var actld =  document.getElementById('actID');
+        actld.classList.remove("slds-show");
+        actld.classList.add("slds-hide");
+        
+        var callld =  document.getElementById('callID');
+        callld.classList.remove("slds-show");
+        callld.classList.add("slds-hide");
+    }
+    
+    
+    </script>
+    
+    <script>
+    function actTab() {
+        
+        var ald =  document.getElementById('accID');
+        ald.classList.remove("slds-show");
+        ald.classList.add("slds-hide");
+        
+        var old =  document.getElementById('oppID');
+        old.classList.remove("slds-show");
+        old.classList.add("slds-hide");
+        
+        var cld =  document.getElementById('caseID');
+        cld.classList.remove("slds-show");
+        cld.classList.add("slds-hide");
+        
+        var actld =  document.getElementById('actID');
+        actld.classList.add("slds-show");
+        actld.classList.remove("slds-hide");
+        
+        var callld =  document.getElementById('callID');
+        callld.classList.remove("slds-show");
+        callld.classList.add("slds-hide");
+    }
+    
+    
+    
+    
+    </script>
+    
+    <script>
+    function callTab() {
+        
+        var ald =  document.getElementById('accID');
+        ald.classList.remove("slds-show");
+        ald.classList.add("slds-hide");
+        
+        var old =  document.getElementById('oppID');
+        old.classList.remove("slds-show");
+        old.classList.add("slds-hide");
+        
+        var cld =  document.getElementById('caseID');
+        cld.classList.remove("slds-show");
+        cld.classList.add("slds-hide");
+        
+        var actld =  document.getElementById('actID');
+        actld.classList.remove("slds-show");
+        actld.classList.add("slds-hide");
+        
+        var callld =  document.getElementById('callID');
+        callld.classList.add("slds-show");
+        callld.classList.remove("slds-hide");
+    }
+    
+    
+    
+    
+    </script>
+    
+    <script>
+    var table;             
+    
+    Visualforce.remoting.timeout = 120000; // Set timeout at page level
+    
+    function getChildAccountsJS(accId) {
+        
+        // This remoting call will use the page's timeout value
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.AccountSearchController.getChildAccounts}',
+            accId, 
+            handleResult
+        );
+    }
+    
+    function handleResult(result, event) {
+        if (event.status) {
+            var childAccs = result;
+            var accLen = childAccs.length;
+            if(accLen === 0){
+                return;
+            }
+            var accId = childAccs[0].ParentId;
+            var tr = $("td[rowid="+accId+"]").closest('tr');
+            var row = table.row( tr );
+            var childAccTable =  '<table cellpadding="5" cellspacing="0" border="0" style="width:100%">';
+            
+            for(var i = 0; i < accLen; i++){
+                childAccTable +=  '<tr rowid="'+childAccs[i].Id+'" rowdata="true">';
+                childAccTable +=  '<td></td>';
+                childAccTable +=  '<td><a href="#" onclick="openAccount(\''+childAccs[i].Id+'\')">'+childAccs[i].Name+'</a></td>';
+                childAccTable +=  '<td>'+childAccs[i].WIN_ID__c+'</td>';
+                childAccTable +=  '<td>'+childAccs[i].ShippingCity+'</td>';
+                childAccTable +=  '<td>'+childAccs[i].ShippingState+'</td>';
+                childAccTable +=  '<td>'+childAccs[i].Phone+'</td>';
+                childAccTable +=  '<td>'+childAccs[i].Type+'</td>';
+                childAccTable +=  '<td>'+childAccs[i].Previous_Year_Customer_Revenue__c+'</td>'; 
+                childAccTable +=  '<td>'+childAccs[i].Current_Year_Customer_Revenue__c+'</td>';                
+                childAccTable +=  '</tr>';
+            }
+            childAccTable +=  '</table>';
+            row.child( childAccTable ).show();
+            tr.addClass('shown');
+        } else if (event.type === 'exception') {
+            
+        } else {
+            
+        }
+    }
+    
+    $(document).ready(function() {
+        table = $('#table_id').DataTable({
+            "columns": [
+                {
+                    "orderable":      false,
+                    "data":           null,
+                    "defaultContent": '',
+                },
+                { "data": "name" },
+                { "data": "win_id" },
+                { "data": "city" },
+                { "data": "state" },
+                { "data": "phone" },
+                { "data": "type" },
+                { 
+                    "data": "Previous_Year_Customer_Revenue__c",
+                    render: function (data, type, row, meta) {
+                       if(data){
+                          var symbol = "$";              
+                          var num = $.fn.dataTable.render.number(',', '.', 2, symbol).display(data);              
+                          return num;           
+                       } else {           
+                          return '';
+                       }
+                    }
+                },
+                  { 
+                    "data": "Current_Year_Customer_Revenue__c",
+                    render: function (data, type, row, meta) {
+                       if(data){
+                          var symbol = "$";              
+                          var num = $.fn.dataTable.render.number(',', '.', 2, symbol).display(data);              
+                          return num;           
+                       } else {           
+                          return '';
+                       }
+                    }
+                },
+                { 
+                    "data": "id", 
+                    render: function (data, type, row, meta) {
+                       if(data){
+                          var symbol = "$";              
+                          var num = $.fn.dataTable.render.number(',', '.', 2, symbol).display(data);              
+                          return num;           
+                       } else {           
+                          return '';
+                       }
+                    }
+                },
+                { "data": "recent_Call_Note_Date"},
+                  { "data": "recent_Activity_Date"}
+            ],
+            "columnDefs": [
+                {
+                    "targets": [ 12 ],
+                    "visible": false,
+                    "searchable": false
+                }
+            ],
+            "order": [[1, 'asc']]            
+        });
+       
+        $('#table_id tbody').on('click', 'td.details-control', function () {
+            var rowId = $(this).attr("rowId");
+            var tr = $(this).closest('tr');            
+            var row = table.row( tr );
+            if ( row.child.isShown() ) {
+                row.child.hide();
+                tr.removeClass('shown');
+            }
+            else { 
+                var d = row.data();
+                {
+                    getChildAccountsJS(rowId);
+                }
+            }
+        } );
+    } );
+     
+    
+    function openAccount(accId){
+        $('#table_id_wrapper').hide();
+        
+        var currPageTotalRows = $('tr[rowdata=true]').length;
+        var currPageLastRow = currPageTotalRows - 1;
+        var currPageRows = $('tr[rowdata=true]');
+        var pageInfo = table.page.info();
+        var currPageNum = pageInfo.page;
+        var lastPageNum = pageInfo.pages-1;
+        var isFirstPage = (currPageNum == 0);
+        var isLastPage = (currPageNum == lastPageNum);
+        var hasPrevElm = false;
+        var hasNextElm = false;
+        var nextElmId = '';
+        var prevElmId = '';
+        
+        $('tr[rowdata=true]').each(function( index ) {
+            if($(this).attr('rowid') == accId){
+                if(index < currPageLastRow){
+                    hasNextElm = true;
+                    nextElmId = $('tr[rowdata=true]').eq(index+1).attr('rowid');
+                    
+                }
+                else if(index == currPageLastRow && isLastPage){
+                    hasNextElm = false;
+                    nextElmId = '';                        
+                }
+                    else if(index == currPageLastRow && !isLastPage){
+                        table.page('next').draw('page');
+                        hasNextElm = true;
+                        nextElmId = $('tr[rowdata=true]').eq(0).attr('rowid');
+                    }
+                
+                if(index > 0){
+                    hasPrevElm = true;
+                    prevElmId = $('tr[rowdata=true]').eq(index-1).attr('rowid');
+                }
+                else if(index == 0 && isFirstPage){
+                    hasPrevElm = false;
+                    prevElmId = '';
+                }
+                    else if(index == 0 && !isFirstPage){
+                        table.page('previous').draw('page');
+                        hasPrevElm = true;
+                        prevElmId = $('tr[rowdata=true]').eq($('tr[rowdata=true]').length-1).attr('rowid');
+                    }
+            }
+        }); 
+        
+        
+        jsShowDetail(accId, hasNextElm, nextElmId, hasPrevElm, prevElmId);
+    } 
+    function myFunction(accId) {
+        
+        var val = confirm(" Do you really want to delete these records");
+        if (val == true)
+        {
+            return true;
+        } 
+        else
+        {
+            return false; 
+        }
+        var sd  = accId;
+    } 
+    
+    
+    </script>
+    <apex:form > 
+         <apex:slds /> 
+        <apex:pageBlock title="Search Accounts">
+            <apex:pageBlockSection >
+                <apex:inputField label="Owner" value="{!accRec.OwnerId}"/>
+                <apex:inputField label="City" value="{!accRec.ShippingCity}"/>
+                <apex:inputField label="State" value="{!accRec.ShippingState}"/> 
+                <apex:outputText label="A/R 91-180 Days" value="{0, number, currency}">
+                    <apex:param value="{!aggARover}"/>
+                </apex:outputText>
+                <apex:outputText label="AR Total" value="{0, number, currency}">
+                    <apex:param value="{!aggARtotal}"/>
+                </apex:outputText>          
+                <apex:outputText label="Previous Year Customer Revenue" value="{0, number, currency}">
+                    <apex:param value="{!aggCustRevenuePreviousYear}"/>
+                </apex:outputText> 
+                <apex:outputText label="Current Year Customer Revenue" value="{0, number, currency}">
+                    <apex:param value="{!aggCustRevenueCurrentYear}"/>
+                </apex:outputText>                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Search records" action="{!search}" />  
+                <apex:commandButton value="Clear records" action="{!clear}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:actionFunction name="jsShowDetail" action="{!showDetail}" rerender="accResults,accDetail,accReceivbleList,Revnue">
+            <apex:param name="param1" assignTo="{!currAccId}" value="" />
+            <apex:param name="param2" assignTo="{!hasNextAcc}" value="" />
+            <apex:param name="param3" assignTo="{!nextAccId}" value="" />
+            <apex:param name="param4" assignTo="{!hasPrevAcc}" value="" />
+            <apex:param name="param5" assignTo="{!prevAccId}" value="" />
+        </apex:actionFunction>
+        
+        <apex:actionFunction name="jsdelete" action="{!deletedata}" rerender="accDetail">
+            <apex:param name="param1" assignTo="{!accId}" value="" />            
+        </apex:actionFunction>
+        
+        <br/>       
+        
+        <apex:outputPanel id="accDataTable">
+            <table id="table_id" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>WIN ID</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Phone</th>
+                        <th>Type</th>
+                        <th>Previous Year Customer Revenue </th>
+                        <th>Current Year Customer Revenue  </th>
+                        <th>AR Total</th>
+                        <th>Recent Call Note Date</th>
+                        <th>Id</th>  
+                    </tr>
+                </thead>
+                <tbody>                
+                    <apex:repeat value="{!accWrapLst}" var="a"> 
+                         
+                        <tr rowId="{!a.accountRec.Id}" rowdata="true">
+                            <td rowId="{!a.accountRec.Id}" class="{! IF(childAccountsCount[a.accountRec.Id] > 0,'details-control','')}"></td>
+                            <td id="{!a.accountRec.Id}"><a href="#" onclick="openAccount('{!a.accountRec.Id}')">{!a.accountRec.Name}</a></td> 
+                            <td>{!a.accountRec.WIN_ID__c}</td>
+                            <td>{!a.accountRec.ShippingCity}</td>
+                            <td>{!a.accountRec.ShippingState}</td>
+                            <td>{!a.accountRec.phone}</td>
+                            <td>{!a.accountRec.Type}</td>
+                            <td>{!a.accountRec.Previous_Year_Customer_Revenue__c}</td>
+                            <td>{!a.accountRec.Current_Year_Customer_Revenue__c}</td>
+                            <td>{!a.accountRec.AR_Total_Due__c}</td>
+                            <td>
+                                <apex:outputText value="{0,date,MM/dd/yy}">
+                                    <apex:param value="{! IF(a.callNoteRec.CreatedDate != null, a.callNoteRec.CreatedDate, '')}" />
+                                </apex:outputText>
+                            </td>                          
+                            <td>{!a.accountRec.Id}</td> 
+							<td></td>
+                        </tr>                            
+                    </apex:repeat>   
+                      
+                </tbody>       
+            </table>
+        </apex:outputPanel>
+        <br/>
+        <apex:outputPanel id="accResults">
+            <apex:outputPanel rendered="{!showPrevButton}">                
+                <a href="#" onclick="openAccount('{!prevAccId}')" style="margin-right:20px">Previous Record</a>                
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!showNextButton}">
+                <a href="#" onclick="openAccount('{!nextAccId}')">Next Record</a>
+            </apex:outputPanel> 
+        </apex:outputPanel>
+        
+        
+        <apex:outputPanel id="accDetail">
+            
+            <apex:outputPanel rendered="{!if(acct.Owner.Name!='',true,false)}">                
+                <apex:pageBlock id="pg">
+                    
+                    <div style="text-align: center; ">                        
+                        <apex:commandButton value=" Edit " onclick="window.open('/{!acct.id}/e?retURL={!acct.id}')" reRender="two"/>                     
+                        <apex:commandButton value=" View" onclick="window.open('/{!Acct.Id}','_blank');" reRender="two"/>
+                        <apex:commandButton value="Account Details" onclick="window.open('apex/AccountCustomLinks?id={!Acct.Account_ID_18__c}','{!Acct.Id}','top=50,left=200,width=900,height=720');" reRender="two"/>
+                    </div>
+                    
+                    <apex:pageBlockSection columns="2" title="Account Information">
+                        <apex:outputField value="{!acct.WIN_ID__c}"/>
+                        <apex:outputField value="{!acct.Name}"/>
+                        <apex:outputField value="{!acct.OwnerId}"/>
+                        <apex:outputField value="{!acct.Primary_Business__c}"/>
+                        <apex:outputField value="{!acct.Type}"/>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Parent Name" for="ParentName"></apex:outputLabel>
+                            <apex:outputField value="{!acct.Parent.name}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:outputField value="{!acct.Missing_Contact_Type__c}"/>
+                        <apex:outputField value="{!acct.ShippingCity}"/>
+                        <apex:outputField value="{!acct.ShippingCountry}"/>
+                        <apex:outputField value="{!acct.ShippingPostalCode}"/>
+                        <apex:outputField value="{!acct.ShippingState}"/>
+                        <apex:outputField value="{!acct.ShippingStreet}"/>                       
+                    </apex:pageBlockSection>
+                    
+                </apex:pageBlock>
+                
+                <apex:pageBlock id="accReceivbleList">
+                    <apex:pageBlockSection columns="2" title="Account Receivables">
+                        
+                        <apex:repeat value="{!accRecList}" var="accRec1">
+                            
+                            <apex:outputField value="{!accRec1.AR_Current__c}"/>
+                            <apex:outputField value="{!accRec1.AR_1_30__c}"/>
+                            <apex:outputField value="{!accRec1.AR_31_60__c}"/>
+                            <apex:outputField value="{!accRec1.AR_61_90__c}"/>
+                            <apex:outputField value="{!accRec1.AR_91_180__c}"/>
+                            <apex:outputField value="{!accRec1.AR_181_365__c}"/>
+                            <apex:outputField value="{!accRec1.AR_Over_365__c}"/>      
+                            <apex:outputField value="{!accRec1.AR_Total__c}"/>
+                            
+                            </apex:repeat>
+                        <apex:outputLabel value="No records to display" rendered="{!accRecList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel> 
+                    </apex:pageBlockSection>
+                </apex:pageBlock>   
+            </apex:outputPanel>
+            
+            
+           
+            <apex:outputPanel rendered="{!if(acct.Owner.Name!='',true,false)}">
+                <apex:pageBlock id="Revnue">
+                    
+                    <div class="slds-scope">
+                        
+                        
+                        <apex:pageBlockSection columns="3"  title="Revenue Budget" >             
+                            <apex:commandbutton value="Account Sales Budget"  onclick="window.open('https://winwebtest.cleanharbors.com/salesbudget/salesbudgetcreate/customerdetails?co_cd={!acct.WIN_ID__c}&Year=2021')"/> 
+                            <apex:commandbutton value="YOY Revenue Summary"   onclick="window.open('http://pbireportstestcleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fAccount+summary+and+LOB+detail&rs:Command=Render&genrtr_co_cd={!acct.WIN_ID__c}')"  rendered="{!AND(acct.recordType.Name == 'Customer' || acct.recordType.Name == 'Distributor' || acct.recordType.Name == 'Broker')}"/>                    
+                            <apex:commandbutton value="Account Monthly Detail"  onclick="window.open('http://pbireportstest.cleanharbors.com/ReportServer/Pages/ReportViewer.aspx?%2fSalesForce%2fMonthly+Budget+against+Revenue+by+gen+and+LOB&rs:Command=Render&genrtr_co_cd={!acct.WIN_ID__c}')" rendered="{!AND(acct.recordType.Name == 'Customer' || acct.recordType.Name == 'Distributor' || acct.recordType.Name == 'Broker')}"/>
+                            
+                            
+                        </apex:pageBlockSection>   
+                    </div>
+                    
+                </apex:pageBlock>
+                
+                <apex:slds > 
+                    
+                    <div class="slds-scope">
+                        <div class="slds">
+                            
+                            <div style="margin: 50px 0" />
+                            <div class="slds-tabs--scoped">
+                                <ul class="slds-tabs--scoped__nav" role="tablist">
+                                    <li class="slds-tabs__item slds-text-heading--label slds-active" title="Contact" role="presentation" onclick="accTab();">
+                                        <a  role="tab"  herf="javascript:accTab();">Contact</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label" title="Opportunity" role="presentation" onclick="oppTab();" >
+                                        <a  role="tab" tabindex="-1" aria-selected="false"  herf="javascript:oppTab();">Opportunity</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label" title="Case" role="presentation" onclick="caseTab();" >
+                                        <a  role="tab" tabindex="-1" aria-selected="false"  herf="javascript:caseTab();">Case</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label" title="Activities" role="presentation" onclick="actTab();" >
+                                        <a  role="tab" tabindex="-1" aria-selected="false"  herf="javascript:actTab();">Activities</a>
+                                    </li>
+                                    <li class="slds-tabs__item slds-text-heading--label" title="Call Notes" role="presentation" onclick="callTab();" >
+                                        <a  role="tab" tabindex="-1" aria-selected="false"  herf="javascript:callTab();">Call Notes</a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <div class="slds-tabs__content slds-show" role="tabpanel" Id="accID">
+                                    <h2>Contacts</h2>
+                                    <div style="text-align:center"><apex:commandButton value=" New Contact " onclick="window.open('/setup/ui/recordtypeselect.jsp?ent=Contact&retURL=%2F001j000000eaMwL&save_new_url=%2F003%2Fe%3FretURL%3D%252F001j000000eaMwL%26accid%3D{!acct.Id}')" reRender="two"/> </div>
+                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th>
+                                                    <div class="slds-truncate">Action</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" >Contact Name</div>
+                                                </th>
+                                                
+                                                <th>
+                                                    <div class="slds-truncate" >Contact Type</div>
+                                                </th>
+                                                <th >
+                                                    <div class="slds-truncate" >Title</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" >Email</div>
+                                                </th>
+                                                <th >
+                                                    <div class="slds-truncate" >Phone</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!relContactList}" var="con" id="theRepeat">
+                                                <tr class="slds-hint-parent">
+                                                    <td>
+                                                        <apex:commandButton value=" Edit " onclick="window.open('/{!con.id}/e?retURL={!con.id}')" reRender="two"/> &nbsp; &nbsp; 
+                                                        <apex:commandButton value="Delete" action="{!deletecontact}" onclick="myFunction(('{!con.Id}'));" reRender="accDetail">
+                                                            <apex:param name="eventId" value="{!con.Id}" assignTo="{!accId}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">
+                                                            <apex:outputPanel rendered="{!con != null}">
+                                                                <a href="/{!con.id}" target="_blank">{!con.Name}</a>
+                                                            </apex:outputPanel>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate" >{!con.Contact_Type__c}</div>
+                                                    </td>
+                                                    <td >
+                                                        <div class="slds-truncate" >{!con.title}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!con.Email}</div>
+                                                    </td>
+                                                    <td >
+                                                        <div class="slds-truncate" >{!con.Phone}</div>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </apex:repeat>
+                                            
+                                        </tbody>
+                                    </table>
+                                    <apex:outputLabel value="No records to display" rendered="{!relContactList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel> 
+                                </div>
+                                
+                                <div class="slds-tabs__content slds-hide" Id="oppID" role="tabpanel">
+                                    <h2>Opportunity</h2>
+                                    <div style="text-align:center"><apex:commandButton value=" New Opportunity " onclick="window.open('/setup/ui/recordtypeselect.jsp?ent=Opportunity&retURL=%2F001j000000eZCeB&save_new_url=%2F006%2Fe%3FretURL%3D%252F001j000000eZCeB%26accid%3D{!acct.id}')"  reRender="two"/> </div>
+                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                        <thead>
+                                            <tr class="slds-line-height_reset"> 
+                                                <th>
+                                                    <div class="slds-truncate">Action</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Stage</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Amount</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Owner Full Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="CloseDate">CloseDate</div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!relOpportunityList}" var="opp" id="theRepeat1">
+                                                <tr class="slds-hint-parent">
+                                                    
+                                                    <td data-label="Account Name">
+                                                        <apex:commandButton value=" Edit " onclick="window.open('/{!opp.id}/e?retURL={!opp.id}')" reRender="two"/>  &nbsp; &nbsp;
+                                                        <apex:commandButton value="Delete" action="{!deleteopp}" onclick="myFunction(('{!opp.Id}'));" reRender="accDetail">
+                                                            <apex:param name="eventId" value="{!opp.Id}" assignTo="{!accId}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate" title="Name">
+                                                            <apex:outputPanel rendered="{!opp != null}">
+                                                                <a href="/{!opp.id}" target="_blank">{!opp.Name}</a>
+                                                            </apex:outputPanel>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate">{!opp.StageName}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!opp.Amount}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!opp.Owner.Name}</div>
+                                                    </td>
+                                                    <td>
+                                                         <apex:outputText value="{0,date,MM/dd/yy}">
+                                                        <apex:param value="{!opp.CloseDate}" />
+                                                        </apex:outputText>
+                                                       
+                                                    </td>
+                                                    
+                                                </tr>
+                                                
+                                            </apex:repeat>
+                                            
+                                        </tbody>
+                                    </table>
+                                    <apex:outputLabel value="No records to display" rendered="{!relOpportunityList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel> 
+                                </div>
+                                
+                                <div class="slds-tabs__content slds-hide" Id="caseID" role="tabpanel">
+                                    <h2>Case</h2>
+                                    <div style="text-align:center"><apex:commandButton value=" New Case" onclick="window.open('/setup/ui/recordtypeselect.jsp?ent=Case&retURL=%2F001j000000eZCeB&save_new_url=%2F500%2Fe%3FretURL%3D%252F001j000000eZCeB%26def_account_id%3D{!acct.id}')"  reRender="two"/> </div>
+                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th>
+                                                    <div class="slds-truncate">Action</div>
+                                                </th>
+                                                
+                                                <th>
+                                                    <div class="slds-truncate">Case</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Case Record Type </div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Date/Time Opened</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Owner</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Subject</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Status</div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate">Date/Time Closed</div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!relcaseList}" var="case" id="theRepeat2">
+                                                <tr class="slds-hint-parent">
+                                                    
+                                                    <td data-label="Account Name">
+                                                        <apex:commandButton value=" Edit " onclick="window.open('/{!case.id}/e?retURL={!case.id}')" reRender="two"/> &nbsp; &nbsp;
+                                                        <apex:commandButton value="Delete" action="{!deletecase}" onclick="myFunction(('{!case.Id}'));" reRender="accDetail">
+                                                            <apex:param name="eventId" value="{!case.Id}" assignTo="{!accId}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">
+                                                            
+                                                            <apex:outputPanel rendered="{!case != null}">
+                                                                <a href="/{!case.id}" target="_blank">{!case.CaseNumber}</a>
+                                                            </apex:outputPanel>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate">{!case.Recordtype.Name}</div>
+                                                    </td>
+                                                    <td>
+                                                       <apex:outputText value="{0,date,MM/dd/yy}">
+                                                        <apex:param value="{!case.CreatedDate}" />
+                                                        </apex:outputText> 
+                                                    
+                                                             
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate">{!case.Owner.Name}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!case.Subject}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!case.Status}</div>
+                                                    </td>
+                                                    <td>
+                                                         <apex:outputText value="{0,date,MM/dd/yy}">
+                                                        <apex:param value="{!case.ClosedDate}" />
+                                                        </apex:outputText> 
+                                                      
+                                                    </td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                    <apex:outputLabel value="No records to display" rendered="{!relcaseList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel>
+                                </div>
+                                <div class="slds-tabs__content slds-hide" Id="actID" role="tabpanel">
+                                    <h2>Activities - Document any time you touch the customer</h2>
+                                    <div style="text-align:center"><apex:commandButton value=" New Task" onclick="window.open('/setup/ui/recordtypeselect.jsp?ent=Task&retURL=%2F001j000000eZeQV&save_new_url=%2F00T%2Fe%3Fwhat_id%3D{!acct.id}%26retURL%3D%252F{!acct.id}')"  reRender="two"/> 
+                                        <apex:commandButton value=" New Event" onclick="window.open('/00U/e?what_id={!acct.id}&retURL=%2F{!acct.id}')"  reRender="two"/> </div>
+                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th>
+                                                    <div class="slds-truncate">Action</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Subject</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Event Type</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Call Type</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Related To</div>
+                                                </th>
+                                                
+                                                <th>
+                                                    <div class="slds-truncate">Assigned To</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Create Date</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!taskactivityWrapperList}" var="task" id="theRepeat3">
+                                                <tr class="slds-hint-parent">
+                                                    
+                                                    <td>
+                                                        <apex:commandButton value=" Edit " onclick="window.open('/{!task.Idstring}/e?retURL={!task.Idstring}')" reRender="two"/> &nbsp; &nbsp;  
+                                                        <apex:commandButton value="Delete" action="{!delettask}" onclick="myFunction(('{!task.Idstring}'));" reRender="accDetail">
+                                                            <apex:param name="eventId" value="{!task.Idstring}" assignTo="{!accId}"/>   
+                                                        </apex:commandButton>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate"><a href="/{!task.Idstring}" target="_blank">{!task.SubjectString}</a></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!task.Eventtype}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!task.CallTypes}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!task.teName}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!task.Relatedto}</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate"><a href="/{!task.owners}" target="_blank">{!task.Assignedto}</a></div>
+                                                    </td>
+                                                    <td>
+                                                         <apex:outputText value="{0,date,MM/dd/yy}">
+                                                        <apex:param value="{!task.TEdate}" />
+                                                        </apex:outputText>
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                    <apex:outputLabel value="No records to display" rendered="{!taskactivityWrapperList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel>
+                                </div>
+                                <div class="slds-tabs__content slds-hide" Id="callID" role="tabpanel">
+                                    <h2>Call Notes - Material Update</h2>
+                                    <div style="text-align:center"><apex:commandButton value=" New Call Notes" onclick="window.open('/setup/ui/recordtypeselect.jsp?ent=01Ij0000001UN10&retURL=/0010a00001UrGrX&save_new_url=/a04/e?CF00N0a00000CzIbZ={!acct.Name}&CF00N0a00000CzIbZ_lkid={!acct.Id}&retURL=%2F{!acct.Id}')"  reRender="two"/> </div>
+                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th>
+                                                    <div class="slds-truncate">Action</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Call Note</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Color</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Type</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate">Services Discussed</div>
+                                                </th>
+                                                
+                                                
+                                                <th>
+                                                    <div class="slds-truncate">Last Modified By</div>
+                                                </th>
+                                                 <th>
+                                                    <div class="slds-truncate">Last Modified Date</div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!relcallList}" var="call" id="theRepeat4">
+                                                <tr class="slds-hint-parent">
+                                                    
+                                                    <td>
+                                                        <apex:commandButton value=" Edit " onclick="window.open('/{!call.id}/e?retURL={!call.id}')" reRender="two"/>  &nbsp; &nbsp;
+                                                        
+                                                        <apex:commandButton value="Delete" action="{!deletedata}" onclick="myFunction(('{!call.Id}'));" reRender="accDetail">
+                                                            <apex:param name="eventId" value="{!call.Id}" assignTo="{!accId}"/>
+                                                        </apex:commandButton>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">
+                                                            
+                                                            <apex:outputPanel rendered="{!call != null}">
+                                                                
+                                                                <a href="/{!call.id}" target="_blank">{!call.Description__c }</a>
+                                                            </apex:outputPanel>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate">{!call.Color__c}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!call.Type__c}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate">{!call.Services_Discussed__c}</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="slds-truncate">{!call.LastModifiedBy.Name}</div>
+                                                    </td>
+                                                     <td>
+                                                          <apex:outputText value="{0,date,MM/dd/yy}">
+                                                        <apex:param value="{!call.LastModifiedDate}" />
+                                                        </apex:outputText>
+                                                       
+                                                    </td>
+                                                    
+                                                    
+                                                </tr>
+                                            </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                    <apex:outputLabel value="No records to display"  rendered="{!relcallList.size <= 0}" styleClass="noRowsHeader"></apex:outputLabel>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </apex:slds>
+                
+            </apex:outputPanel>
+            
+        </apex:outputPanel>
+  
+    </apex:form>
+    
+</apex:page>

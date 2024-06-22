@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPP_Oil_Product_Lube_and_Contract</fullName>
+    <active>true</active>
+    <description>KPP -Specialty Products for oil should only on KPP -Specialty Products LOB</description>
+    <errorConditionFormula>and(
+or(text(KPP_Oil_Product__c) = &quot;Automotive&quot;
+,text(KPP_Oil_Product__c) = &quot;Heavy Duty&quot;
+,text(KPP_Oil_Product__c) = &quot;Industrial&quot;
+)
+, Product2.LOB_Code__c&lt;&gt;64
+, Product2.LOB_Code__c&lt;&gt;85
+, Product2.LOB_Code__c&lt;&gt;89
+)</errorConditionFormula>
+    <errorDisplayField>KPP_Oil_Product__c</errorDisplayField>
+    <errorMessage>Automotive, Heavy Duty, and Industrial Products should only be entered on Lube or Contract Blending Lines of Business.  Please check the Line of business you selected</errorMessage>
+</ValidationRule>

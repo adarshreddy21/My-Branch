@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AQMD_Approved</fullName>
+        <description>AQMD Approved</description>
+        <protected>false</protected>
+        <recipients> 
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/AQMD_Case_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Approval_Request</fullName>
+        <description>Case Approval Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Current_Owner_Case_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Request_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>AQMD_Case_Denied</fullName>
+        <description>AQMD Case Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/AQMD_Case_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>AQMD_Request_Approved</fullName>
+        <description>AQMD Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/AQMD_Case_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>AQMD_Submitted</fullName>
+        <description>AQMD Case Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/AQMD_Case_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Approved</fullName>
+        <description>Case Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Escalation_Notification</fullName>
+        <description>Case Escalation Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kenneth.adams@safety-kleen.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Call_Center_Escalation</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Escalation_Notification_DM</fullName>
+        <description>Case Escalation Notification-DM</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>District_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Call_Center_Escalation</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_New_PO_case_notification</fullName>
+        <description>Case: New PO case notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_PO_case_assigned_to_you</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_New_case_notification</fullName>
+        <description>Case: New case notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_case_assigned_to_you</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_New_case_notification_for_Collector_Case_of_Ebiller</fullName>
+        <description>Case: New case notification for Collector Case of Ebiller</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_case_assigned_to_you_for_Ebiller</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Not_Approved</fullName>
+        <description>Case Not Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Not_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Rejected_because_of_missing_verification</fullName>
+        <description>Case Rejected because of missing verification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients> 
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>validationrequests@cleanharbors.com</senderAddress> 
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Not_Approved_missing_verifications</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Rejected_because_of_missing_verification_Change_ShipTo_Gen_to_Cust</fullName>
+        <description>Case Rejected because of missing verification - Change ShipTo/Gen to Cust</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>validationrequests@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Not_Approved_Change_ShipTo_Gen_to_Cust</template>
+    </alerts>
+	<alerts>
+        <fullName>Case_Approved_Change_ShipTo_Gen_to_Cust</fullName>
+        <ccEmails>creditdept@cleanharbors.com</ccEmails>
+        <description>Case Approved - Change ShipTo/Gen to Cust</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Approved_Change_ShipTo_Gen_to_Cust</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Unresolved_Escalation_1</fullName>
+        <description>Case Unresolved Escalation 1</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>gaokar.reeta1@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Unresolved_Escalation_1</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Unresolved_Escalation_2</fullName>
+        <description>Case Unresolved Escalation 2</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>crmsupport@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Case_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Sales_Manager_ID__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Unresolved_Escalation_2</template>
+    </alerts>
+	<alerts>
+        <fullName>Inactivate_Account_Case_Request_Denied</fullName>
+        <description>Inactivate Account Case Request Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>validationrequests@cleanharbors.com</senderAddress> 
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_Account_Request_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Delivery_Rejected</fullName>
+        <description>Invoice Delivery Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_Case_Not_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Customer_Case_Request_Denied</fullName>
+        <description>New Customer Case Request Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_Account_Request_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Case_Owners_when_Case_Ownership_Changes</fullName>
+        <description>Notify Case Owners when Case Ownership Changes</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Notification_will_send_when_case_owner_is_changed</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_PO_Email</fullName>
+        <description>Notify PO Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>donahue@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_New_PO_case_assigned_to_you</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_Case_Comment_Notification</fullName>
+        <description>PO Case Comment Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>donahue@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_Case_Comment_Notifications</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_Case_Rejected</fullName>
+        <description>PO Case Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>donahue@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>fletcher.kevin@cleanharbors.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/PO_Case_Not_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_Case_Reminder_1</fullName>
+        <description>PO Case Reminder 1</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/PO_Case_Unresolved_Escalation_1</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_Case_Reminder_2</fullName>
+        <description>PO Case Reminder 2</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/PO_Case_Unresolved_Escalation_1</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Approval</fullName>
+        <description>Request Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Case_Request_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_CMD_Team_that_EOC_case_is_created</fullName>
+        <description>Send Email to CMD Team that EOC case is created.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>MDM_Case_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/EOC_Case_Created_Action_Needed</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Case_Owner_that_EOC_case_is_apprpved</fullName>
+        <description>Send Email to Case Owner that EOC case is apprpved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/EOC_Case_Approved_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Case_Owner_that_EOC_case_is_rejected</fullName>
+        <description>Send Email to Case Owner that EOC case is rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/EOC_Case_Rejected_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>TSE_Add_Case_Approved</fullName>
+        <description>TSE Add Case Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Proposed_Specialist__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/TSE_Add_Case_Approval_1617212119444</template>
+    </alerts>
+    <alerts>
+        <fullName>TSE_Add_Case_Rejected</fullName>
+        <description>TSE Add Case Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Proposed_Specialist__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/TSE_comment_Add_case_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>TSE_Add_Case_Submitted</fullName>
+        <description>TSE Add Case Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>crmsupport@cleanharbors.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/TSE_Add_Case_Submitted_1617206499905</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AQMD_EHS_Approved</fullName>
+        <description>If approved then change status to Approved</description>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>AQMD EHS Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AQMD_Not_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Not Approved</literalValue>
+        <name>AQMD Not Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Awaiting_Manager_Approval</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Awaiting Manager Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Comment_Update</fullName>
+        <field>Comments__c</field>
+        <formula>&quot;Approved by Sales Ops&quot;</formula>
+        <name>Case Comment Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_Assigned_to_Queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>LiveAgentWebChat</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner Assigned to Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_Sales_Ops_Case_Review_Que</fullName>
+        <description>Send to Sales Operations account management queue</description>
+        <field>OwnerId</field>
+        <lookupValue>Sales_Ops_Case_Review_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner - Sales Ops Case Review Que</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Owner_Sales_Ops_review_queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Sales_Ops_Case_Review_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Case Owner - Sales Ops review queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Awaiting_Director_approval</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Director Approval</literalValue>
+        <name>Case Status - Awaiting Director approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Awaiting_Manager_Approval</fullName>
+        <description>Update Status to Awaiting Manager Approval</description>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Case Status - Awaiting Manager Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Closed_Approved</fullName>
+        <description>Update case to appoved</description>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Case Status - Closed - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Denied</fullName>
+        <field>Status</field>
+        <literalValue>Denied</literalValue>
+        <name>Case Status - Denied</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Manager_approved</fullName>
+        <field>Status</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>Case Status - Manager approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Closed_Archived</fullName>
+        <field>Status</field>
+        <literalValue>Closed Archived</literalValue>
+        <name>Closed Archived</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Closed_Inactivated</fullName>
+        <field>Status</field>
+        <literalValue>Closed Inactivated</literalValue>
+        <name>Closed Inactivated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Pending_Approval</fullName>
+        <description>Update status field to pending approval</description>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Case Status - Pending Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Rejected</fullName>
+        <description>Case Not Approved by sales ops</description>
+        <field>Status</field>
+        <literalValue>Sales Ops Rejected</literalValue>
+        <name>Case Status - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Sales_Ops_Review</fullName>
+        <field>Status</field>
+        <literalValue>Sales Ops Review</literalValue>
+        <name>Case Status - Sales Ops Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Staus_Closed_Rejected</fullName>
+        <description>Customer Master Rejected</description>
+        <field>Status</field>
+        <literalValue>Closed - Rejected</literalValue>
+        <name>Case Staus - Closed - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ClosedRejected</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Rejected</literalValue>
+        <name>ClosedRejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Escalate_case_to_Canada_CC_Manager</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Canada_CC_Manager</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Escalate case to Canada CC Manager</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Escalate_case_to_Emerald_Manager</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Emerald_Care_Center_Manager</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Escalate case to Emerald Manager</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Escalate_to_Customer_Care_Manager_Q</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Care_Center_Mangers_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Escalate to Customer Care Manager Q</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Is_Submitted_for_Approval</fullName>
+        <field>Is_Submitted_for_Approval__c</field>
+        <literalValue>1</literalValue>
+        <name>Flag Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Manager_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>Manager Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Manager_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Manager Rejected</literalValue>
+        <name>Manager Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PO_Case_Reason_update</fullName>
+        <field>PO_Case_Reason__c</field>
+        <formula>Description</formula>
+        <name>PO Case Reason update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PO_Case_Reject_Action</fullName>
+        <field>Status</field>
+        <literalValue>In Progress</literalValue>
+        <name>PO Reject Action - Update Case Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_to_Walmart_and_FexEx_Case_Queue</fullName>
+        <description>Set case owner to Walmart and FexEx Case Queue</description>
+        <field>OwnerId</field>
+        <lookupValue>Walmart_and_FedEx_Case_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Send to Walmart and FexEx Case Queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Updated_to_Manager_approved</fullName>
+        <field>Status</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>Status Updated to Manager approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Status</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Completed</literalValue>
+        <name>Update Case Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Submitted_for_Approval_Flag</fullName>
+        <field>Is_Submitted_for_Approval__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Case Submitted for Approval Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_CommentedDate_CCPO_SK_Intial</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last CommentedDate CCPO_SK Intial</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date</fullName>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_CCPO_FA</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date CCPO FA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_CCPO_FR</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date CCPO FR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_CCPO_Intial</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date CCPO Intial</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_CCPO_SK_FA</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date CCPO_SK FA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_CCPO_SK_FR</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date CCPO_SK FR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_PO_Case_FA</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date PO Case FA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_PO_Case_FR</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date PO Case FR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_Commented_Date_PO_Intial</fullName>
+        <description>Last commented date will be updated.</description>
+        <field>Last_Commented_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Last Commented Date PO Intial</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Sales_Ops_Acct_Mgmt_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Owner</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Statues_Awaiting_Current_Owner</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Current Owner Approval</literalValue>
+        <name>Update Statues - Awaiting Current Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <description>Update Status to Awaiting Manager Approval</description>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_Awaiting_Manager_Approval</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Update Status: Awaiting Manager Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_Closed_Complete</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Completed</literalValue>
+        <name>Update Status: Closed Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Awaiting_Approval</fullName>
+        <field>Status</field>
+        <literalValue>Awaiting Manager Approval</literalValue>
+        <name>Update Status to Awaiting Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Closed</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Completed</literalValue>
+        <name>Update Status to Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Closed_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Rejected</literalValue>
+        <name>Update Status to Closed Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_In_Progeress</fullName>
+        <field>Status</field>
+        <literalValue>In Progress</literalValue>
+        <name>Update Status to In Progeress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Manager_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>Update Status to Manager Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Manager_Approved_Status</fullName>
+        <field>Status</field>
+        <literalValue>Manager Approved</literalValue>
+        <name>Update Status to Manager Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_New</fullName>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+        <name>Update Status to New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Subject</fullName>
+        <description>Update Subject</description>
+        <field>Subject</field>
+        <formula>if(
+or(text(Call_Reason__c)=&quot;Other&quot;
+,isblank(text(Call_Reason__c)))
+, text(Type)
+,text(Call_Reason__c)
+)</formula>
+        <name>Case Subject - Update Subject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+	<fieldUpdates>
+        <fullName>Update_Status_to_Closed_Completed</fullName>
+        <field>Status</field>
+        <literalValue>Closed - Completed</literalValue>
+        <name>Update Status to Closed Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+	<fieldUpdates>
+        <fullName>Update_the_IS_Submitted_for_Approval</fullName>
+        <field>Is_Submitted_for_Approval__c</field>
+        <literalValue>0</literalValue>
+        <name>Update the IS Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Canada Customer Service Case Escalation assignment</fullName>
+        <actions>
+            <name>Escalate_case_to_Canada_CC_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3) and 4 and 5</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer Service Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_3_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_2_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Care_Center_Manager_Reviewed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.ShippingCountry</field>
+            <operation>equals</operation>
+            <value>CA</value>
+        </criteriaItems>
+        <description>Escalate case to customer care manager queue when escalation levels are checked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Chat Assigned To Queue</fullName>
+        <actions>
+            <name>Case_Owner_Assigned_to_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Chat_Subject__c</field>
+            <operation>equals</operation>
+            <value>Product/Pricing,Service/Delivery,Technical Issues,Document Request,Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Comment created notification</fullName>
+        <actions>
+            <name>Update_Last_Commented_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Status_to_In_Progeress</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sends notification to case owner and creator when a case is created</description>
+        <formula>And(
+ RecordType.Name = &apos;Customer PO Case&apos;,
+ ischanged( Latest_Case_Comment__c)
+ )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Creation notification for Collector Case</fullName>
+        <actions>
+            <name>Case_New_case_notification_for_Collector_Case_of_Ebiller</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Collector Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Type</field>
+            <operation>equals</operation>
+            <value>EBILL</value>
+        </criteriaItems>
+        <description>Sends notification to case owner and creator when a case is created with type Ebill</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Escalation</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Resolved,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer Service Case,Customer Service Case(New)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Type_of_Call__c</field>
+            <operation>notEqual</operation>
+            <value>Ecommerce Order</value>
+        </criteriaItems>
+        <description>Sends notification reminders to case owner and manager if its not resolved after 24 hrs and 72 hrs</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Unresolved_Escalation_2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Unresolved_Escalation_1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case Reminders - Customer PO Case</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer PO Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Latest_Case_Comment__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Closed,Closed - Completed,Closed - Rejected,Closed - Cancelled</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>PO_Case_Reminder_1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>48</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>PO_Case_Reminder_2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>72</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>PO_Case_Reminder_1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>4</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case Update Subject if blank</fullName>
+        <actions>
+            <name>Update_Subject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Case Subject when blank</description>
+        <formula>ISBLANK( Subject )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case assign to Walmart FedEx queue</fullName>
+        <actions>
+            <name>Send_to_Walmart_and_FexEx_Case_Queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>assign cases to walmart / fedex queue</description>
+        <formula>and(
+ text(LastModifiedBy.Sales_Person_Type__c) = &apos;Call Center Agent&apos;
+, text(Owner:User.Sales_Person_Type__c) = &apos;Key Account Support&apos;
+,  or
+(Account.Key_Account_Name__c = &apos;Walmart- SK Oil - 87340&apos;
+,Account.Key_Account_Name__c = &apos;FedEx - 99795&apos;)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case created notification</fullName>
+        <actions>
+            <name>Case_New_case_notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Resolved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer Service Case</value>
+        </criteriaItems>
+        <description>Sends notification to case owner and creator when a case is created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case%3A Call Center Escalation</fullName>
+        <actions>
+            <name>Case_Escalation_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or 2 or 3</booleanFilter>
+        <criteriaItems>
+            <field>Case.Level_1_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_2_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_3_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>send email to call center director when an escalation case is created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer Service Case Escalation assignment</fullName>
+        <actions>
+            <name>Escalate_to_Customer_Care_Manager_Q</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3) and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer Service Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_3_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_2_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Care_Center_Manager_Reviewed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Escalate case to customer care manager queue when escalation levels are checked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Emerald Services Customer Service Case Escalation assignment</fullName>
+        <actions>
+            <name>Escalate_case_to_Emerald_Manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3) and 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer Service Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_3_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Level_2_Escalation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Care_Center_Manager_Reviewed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Escalate case to customer care manager queue when escalation levels are checked.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Case Owners when Case Ownership Changes</fullName>
+        <actions>
+            <name>Notify_Case_Owners_when_Case_Ownership_Changes</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify Case Owners when Case Ownership Changes</description>
+        <formula>AND(ISCHANGED( OwnerId ),
+NOT( RecordType.Name = &apos;CPG Request&apos;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PO Case Creation Notifications</fullName>
+        <actions>
+            <name>PO_Case_Reason_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Customer PO Case</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules> 
+    <rules>
+        <fullName>Update Last Comment Date</fullName>
+        <actions>    
+            <name>Update_Last_Commented_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates Status and comment date for Collector case</description>
+        <formula>And(  RecordType.Name = &apos;Collector Case&apos;,  ischanged( Latest_Case_Comment__c)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

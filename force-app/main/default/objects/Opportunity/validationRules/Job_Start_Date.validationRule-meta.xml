@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Start_Date</fullName>
+    <active>true</active>
+    <description>Make sure job start date is greater than the close date</description>
+    <errorConditionFormula>and(Job_Start_Date__c &lt;  CloseDate,
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT($Permission.Skip_Validations_for_Super_Users_cp),
+NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;))</errorConditionFormula>
+    <errorMessage>Job start date must be greater than or equal to the close date</errorMessage>
+</ValidationRule> 

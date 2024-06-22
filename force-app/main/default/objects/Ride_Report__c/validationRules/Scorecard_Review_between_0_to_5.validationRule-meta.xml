@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_Review_between_0_to_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>Scorecard_Performance__c &gt; 5</errorConditionFormula>
+    <errorDisplayField>Scorecard_Performance__c</errorDisplayField>
+    <errorMessage>Scorecard Performance value should be between 0 to 5</errorMessage>
+</ValidationRule>

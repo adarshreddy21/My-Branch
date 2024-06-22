@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_End_PO_Open_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>WIN_Id__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>PO_Amount__c</columns>
+    <columns>PONumber__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Customer_PO_Case</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Completed</value>
+    </filters>
+    <filters>
+        <field>PO_Case_Reason__c</field>
+        <operation>equals</operation>
+        <value>Year End PO Expiration</value>
+    </filters>
+    <label>Year End PO Open Cases</label>
+    <language>en_US</language>
+</ListView>

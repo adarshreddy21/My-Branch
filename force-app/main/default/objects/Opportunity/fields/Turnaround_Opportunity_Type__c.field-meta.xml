@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Turnaround_Opportunity_Type__c</fullName>
+    <description>Type of Turnaround</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Turnaround</inlineHelpText>
+    <label>Turnaround Opportunity Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Refinery</fullName>
+                <default>false</default>
+                <label>Refinery</label>
+            </value>
+            <value>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+                <label>Chemical</label>
+            </value>
+            <value>
+                <fullName>OilSands/SAGD</fullName>
+                <default>false</default>
+                <label>OilSands/SAGD</label>
+            </value>
+            <value>
+                <fullName>Pulp Mill</fullName>
+                <default>false</default>
+                <label>Pulp Mill</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Terminals</fullName>
+                <default>false</default>
+                <label>Terminals</label>
+            </value>
+            <value>
+                <fullName>Utl/Const</fullName>
+                <default>false</default>
+                <label>Utl/Const</label>
+            </value>
+            <value>
+                <fullName>Metals &amp; Minerals</fullName>
+                <default>false</default>
+                <label>Metals &amp; Minerals</label>
+            </value>
+            <value>
+                <fullName>Petroleum Refining</fullName>
+                <default>false</default>
+                <label>Petroleum Refining</label>
+            </value>
+            <value>
+                <fullName>TechSonic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TechSonic</label>
+            </value>
+            <value>
+                <fullName>Vacuum Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vacuum Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

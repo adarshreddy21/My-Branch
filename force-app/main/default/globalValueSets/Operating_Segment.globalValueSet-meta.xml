@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SK ENV</fullName>
+        <default>false</default>
+        <label>SK ENV</label>
+    </customValue>
+    <customValue>
+        <fullName>SK BPS</fullName>
+        <default>false</default>
+        <label>SK BPS</label>
+    </customValue>
+    <customValue>
+        <fullName>SK KPP</fullName>
+        <default>false</default>
+        <label>SK KPP</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Harbors ENV</fullName>
+        <default>false</default>
+        <label>Clean Harbors ENV</label>
+    </customValue>
+    <customValue>
+        <fullName>CHES Oil and Gas</fullName>
+        <default>false</default>
+        <label>CHES Oil and Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>CHES Industrial</fullName>
+        <default>false</default>
+        <label>CHES Industrial</label>
+    </customValue>
+    <masterLabel>Operating Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

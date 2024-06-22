@@ -1,0 +1,125 @@
+<apex:page standardController="Sales_Manager_Summary_Note__c" recordSetVar="SummaryNoteRecords" extensions="CAMWeeklyReportController" sidebar="false" showHeader="true" >
+    <table width="100%">
+        <tr>
+            <td>
+                <apex:sectionHeader title="CAM Weekly Report"/>
+                
+            </td>
+            <td align="right"><img src="{!$Resource.Logo}" width="50%"/></td>
+        </tr>
+        
+    </table>
+    
+    <style type = "text/css">
+        .colHeadr {text-align:center;}
+    </style>
+    <apex:form >
+        <script>
+        window.onload = function(){
+            window.scrollTo(0,0);
+        };
+        </script>
+        
+        <apex:pageBlock id="mainblock" rendered="{!$Permission.Create_Edit_CAM_Weekly_Report}">
+            <apex:pageMessages />
+
+            <apex:pageBlockSection columns="3" id="DateBlock">
+                <apex:inputField id="from" label="Start Date (Monday) of Week:" value="{!dateFrom.CloseDate}">
+                    <apex:actionSupport event="onchange" action="{!EndDate}" reRender="DateBlock"/>
+                </apex:inputField>
+                <apex:inputField id="to" label="End Date (Sunday) of Week:" value="{!dateTo.CloseDate}"/>
+                <apex:commandButton value="Search Records" action="{!SearchRecords}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:outputPanel layout="none">
+                    <div draggable="false" style="position:relative;left:500px;">                            
+                        <apex:commandButton value="Save" action="{!CustomSave}"/>
+                    </div>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Sales Summary Notes" id="SummaryNotesBck">
+                <apex:pageblocktable value="{!SummaryNotes}" var="SN" style="width:100%" cellPadding="1" border="10" >
+                    <apex:column headerValue="Corp Account" headerClass="colHeadr" style="width:200px">
+                        <apex:outputField value="{!SN.Account__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Note" headerClass="colHeadr" style="width:500px">
+                        <apex:inputField value="{!SN.Note__c}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Issues & Obstacles" headerClass="colHeadr" style="width:500px">
+                        <apex:inputField value="{!SN.Issues_Obstacles__c}" style="width:500px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+      
+            <apex:pageBlockSection columns="1" title="TOP 10 Wins"> 
+                <apex:pageblocktable value="{!WonOpportunities}" var="WonOpp" style="width:100%" cellPadding="1" border="10" >
+                    <apex:column headerValue="Account">
+                        <apex:outputField value="{!WonOpp.Account.name}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Win Id">
+                        <apex:outputField value="{!WonOpp.Account.WIN_ID__c}" style="width:500px"/>
+                    </apex:column>
+                     <apex:column headerValue="Opportunity Name">
+                        <apex:outputField value="{!WonOpp.Name}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Amount">
+                        <apex:outputField value="{!WonOpp.Amount}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Close Date">
+                        <apex:outputField value="{!WonOpp.CloseDate}" style="width:500px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="TOP 10 Losses"> 
+                <apex:pageblocktable value="{!LostOpportunities}" var="LostOpp" style="width:100%" cellPadding="1" border="10" >
+                    <apex:column headerValue="Account">
+                        <apex:outputField value="{!LostOpp.Account.name}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Win Id">
+                        <apex:outputField value="{!LostOpp.Account.WIN_ID__c}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Opportunity Name">
+                        <apex:outputField value="{!LostOpp.Name}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Amount">
+                        <apex:outputField value="{!LostOpp.Amount}" style="width:500px"/>
+                    </apex:column>
+                    <apex:column headerValue="Close Date">
+                        <apex:outputField value="{!LostOpp.CloseDate}" style="width:500px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" title="Forecast Against Budget" id="FrBgBck">
+                <apex:pageblocktable value="{!SummaryNotes}" var="FrBg" style="width:100%" cellPadding="1" border="10" >
+                    <apex:column headerValue="Corp Account">
+                        <apex:outputField value="{!FrBg.Account__c}" style="width:100px"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Forecast">
+                        <apex:inputField value="{!FrBg.Forecast__c}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Budget">
+                        <apex:outputField value="{!FrBg.Budget__c}" style="width:200px"/>
+                    </apex:column>
+                    <apex:column headerValue="Current Quarter Variance">
+                        <apex:outputField value="{!FrBg.Variance__c}" style="width:200px"/>
+                    </apex:column>
+                </apex:pageblocktable>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection >
+                <apex:outputPanel layout="none">
+                    <div draggable="false" style="position:relative;left:500px;">                            
+                        <apex:commandButton value="Save" action="{!CustomSave}"/>
+                    </div>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:outputText rendered="{!NOT($Permission.Create_Edit_CAM_Weekly_Report)}" value="Only CAM can Create / Edit Corporate Account Weekly Sales Summary Notes" style="background-color:yellow;font-weight: bold;font-style: italic;font-size:12pt"/>
+    </apex:form>
+</apex:page>

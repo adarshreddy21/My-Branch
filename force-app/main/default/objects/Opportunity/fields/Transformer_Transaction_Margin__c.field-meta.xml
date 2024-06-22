@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transformer_Transaction_Margin__c</fullName>
+    <description>Gross margin associated with transformer type transaction</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Gross margin associated with transformer type transaction</inlineHelpText>
+    <label>Transformer Transaction Margin%</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

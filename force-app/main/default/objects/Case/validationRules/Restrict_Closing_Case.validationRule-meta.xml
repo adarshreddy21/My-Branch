@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Closing_Case</fullName>
+    <active>true</active>
+    <description>Restrict only Po case members can open or close a case and restrict other user for the given record types</description>
+    <errorConditionFormula>AND(
+/*check on this*/
+$Profile.Name &lt;&gt; &apos;Integration&apos;,
+$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+NOT(ISCHANGED(IS_User_PO_Case_Queue_Member__c)),
+OR(RecordType.DeveloperName = &apos;Non_Standard_Billing_Closed_Order&apos;,
+RecordType.DeveloperName = &apos;Non_Standard_Billing_WIN&apos;,
+RecordType.DeveloperName = &apos;Collector_PO_Case&apos;,
+RecordType.DeveloperName = &apos;Customer_PO_Case&apos;),
+NOT(ISPICKVAL(Type,&apos;E-Billing Service&apos;)),
+OR(AND(ISPICKVAL(Status,&apos;Closed - Completed&apos;),
+NOT(TEXT(PRIORVALUE(Status)) = &apos;Closed - Completed&apos;)),
+AND(TEXT(PRIORVALUE(Status)) = &apos;Closed - Completed&apos;,
+NOT(ISPICKVAL(Status,&apos;Closed - Completed&apos;)))
+))</errorConditionFormula>
+    <errorMessage>You are not allowed to Open/Close a Case please Contact Po Case Team.</errorMessage>
+</ValidationRule>

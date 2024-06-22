@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_BT_Baltimore_MD_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>TPM_Specialist__c</columns>
+    <columns>Type_of_Call__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>TPM_Opportunity__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notContain</operation>
+        <value>Closed,Resolved</value>
+    </filters>
+    <label>Queue : BT - Baltimore, MD</label>
+    <language>en_US</language>
+    <queue>Queue_BT_Baltimore_MD</queue>
+    <sharedTo></sharedTo>
+</ListView>

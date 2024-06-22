@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Resolution_if_status_is_Resolved</fullName>
+    <active>true</active>
+    <description>Require Resolution if Resolved</description>
+    <errorConditionFormula>AND (
+ RecordTypeId=&apos;012j00000004WLS&apos;,text(Status)=&apos;Resolved&apos;, ISBLANK(TEXT(Resolution__c)))</errorConditionFormula>
+    <errorDisplayField>Resolution__c</errorDisplayField>
+    <errorMessage>Please enter a resolution. (Resolution Required if Status is Resolved )</errorMessage>
+</ValidationRule>

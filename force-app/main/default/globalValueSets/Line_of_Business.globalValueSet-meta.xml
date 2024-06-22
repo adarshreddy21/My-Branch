@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Airborne Imaging</fullName>
+        <default>false</default>
+        <label>Airborne Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Product Sales</fullName>
+        <default>false</default>
+        <label>Allied Product Sales</label>
+    </customValue>
+	<customValue>
+        <fullName>Antifreeze Sales</fullName>
+        <default>false</default>
+        <label>Antifreeze Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Oil Sales</fullName>
+        <default>false</default>
+        <label>Blended Oil Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Oil Sales - Direct</fullName>
+        <default>false</default>
+        <label>Blended Oil Sales - Direct</label>
+    </customValue>
+    <customValue>
+        <fullName>Bulk Services</fullName>
+        <default>false</default>
+        <label>Bulk Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalysts Treatment</fullName>
+        <default>false</default>
+        <label>Catalysts Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Cleaning</fullName>
+        <default>false</default>
+        <label>Chemical Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>CleanPack</fullName>
+        <default>false</default>
+        <label>CleanPack</label>
+    </customValue>
+    <customValue>
+        <fullName>Containerized Waste Services</fullName>
+        <default>false</default>
+        <label>Containerized Waste Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Daylighting Services</fullName>
+        <default>false</default>
+        <label>Daylighting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Directional Boring</fullName>
+        <default>false</default>
+        <label>Directional Boring</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Ship</fullName>
+        <default>false</default>
+        <label>Direct Ship</label>
+    </customValue>
+    <customValue>
+        <fullName>Downhole Services</fullName>
+        <default>false</default>
+        <label>Downhole Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Drill Camps and Catering</fullName>
+        <default>false</default>
+        <label>Drill Camps and Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Drill Support Services</fullName>
+        <default>false</default>
+        <label>Drill Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Drum Services</fullName>
+        <default>false</default>
+        <label>Drum Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Response Services</fullName>
+        <default>false</default>
+        <label>Emergency Response Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Epic Cleaning</fullName>
+        <default>false</default>
+        <label>Epic Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Services</fullName>
+        <default>false</default>
+        <label>Field Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Filtration &amp;Treatment Services</fullName>
+        <default>false</default>
+        <label>Filtration &amp;Treatment Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Finfoam Cleaning</fullName>
+        <default>false</default>
+        <label>Finfoam Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Mailback</fullName>
+        <default>false</default>
+        <label>Healthcare Mailback</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare - RMW</fullName>
+        <default>false</default>
+        <label>Healthcare - RMW</label>
+    </customValue>
+    <customValue>
+        <fullName>High Hazardous Services</fullName>
+        <default>false</default>
+        <label>High Hazardous Services</label>
+    </customValue>
+    <customValue>
+        <fullName>High Volume Hydroblasting</fullName>
+        <default>false</default>
+        <label>High Volume Hydroblasting</label>
+    </customValue>	
+    <customValue>
+        <fullName>Household Hazardous Waste</fullName>
+        <default>false</default>
+        <label>Household Hazardous Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Cleaning</fullName>
+        <default>false</default>
+        <label>Industrial Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Inplant Container Moves</fullName>
+        <default>false</default>
+        <label>Inplant Container Moves</label>
+    </customValue>
+    <customValue>
+        <fullName>Base Oil Sales</fullName>
+        <default>false</default>
+        <label>Base Oil Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Blending &amp; Packaging</fullName>
+        <default>false</default>
+        <label>Contract Blending &amp; Packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Refinery Products</fullName>
+        <default>false</default>
+        <label>Specialty Refinery Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Line Locating</fullName>
+        <default>false</default>
+        <label>Line Locating</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging</fullName>
+        <default>false</default>
+        <label>Lodging</label>
+    </customValue>
+    <customValue>
+        <fullName>Lodging Manufacturing</fullName>
+        <default>false</default>
+        <label>Lodging Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>InSite Material Processing</fullName>
+        <default>false</default>
+        <label>InSite Material Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Mulching Services</fullName>
+        <default>false</default>
+        <label>Mulching Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Navigation Services</fullName>
+        <default>false</default>
+        <label>Navigation Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Filter Recycling</fullName>
+        <default>false</default>
+        <label>Oil Filter Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>Oily Water and Antifreeze Serv</fullName>
+        <default>false</default>
+        <label>Oily Water and Antifreeze Serv</label>
+    </customValue>
+    <customValue>
+        <fullName>Parts Washing Service Aqueous</fullName>
+        <default>false</default>
+        <label>Parts Washing Service Aqueous</label>
+    </customValue>
+    <customValue>
+        <fullName>Parts Washing Service Solvent</fullName>
+        <default>false</default>
+        <label>Parts Washing Service Solvent</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipeline Coatings</fullName>
+        <default>false</default>
+        <label>Pipeline Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>Production Services</fullName>
+        <default>false</default>
+        <label>Production Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Remediation</fullName>
+        <default>false</default>
+        <label>Remediation</label>
+    </customValue>
+    <customValue>
+        <fullName>Shot Hole Drilling Services</fullName>
+        <default>false</default>
+        <label>Shot Hole Drilling Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Pigging/Decoking</fullName>
+        <default>false</default>
+        <label>Specialty Pigging/Decoking</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Rentals</fullName>
+        <default>false</default>
+        <label>Surface Rentals</label>
+    </customValue>
+    <customValue>
+        <fullName>Surveying</fullName>
+        <default>false</default>
+        <label>Surveying</label>
+    </customValue>
+    <customValue>
+        <fullName>Tank Cleaning and Separations</fullName>
+        <default>false</default>
+        <label>Tank Cleaning and Separations</label>
+    </customValue>
+    <customValue>
+        <fullName>Used Motor Oil</fullName>
+        <default>false</default>
+        <label>Used Motor Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Vac Services - Separators</fullName>
+        <default>false</default>
+        <label>Vac Services - Separators</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Projects</fullName>
+        <default>false</default>
+        <label>Waste Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Windshield Washer Fluid Sales</fullName>
+        <default>false</default>
+        <label>Windshield Washer Fluid Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Water</fullName>
+        <default>false</default>
+        <label>Industrial Water</label>
+    </customValue>
+    <customValue>
+        <fullName>LDAR Services</fullName>
+        <default>false</default>
+        <label>LDAR Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Labor Services</fullName>
+        <default>false</default>
+        <label>Labor Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Mechanical Services</fullName>
+        <default>false</default>
+        <label>Specialty Mechanical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Vacuum Services</fullName>
+        <default>false</default>
+        <label>Vacuum Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Abrasive Blasting</fullName>
+        <default>false</default>
+        <label>Abrasive Blasting</label>
+    </customValue>
+    <customValue>
+        <fullName>Hydroblasting</fullName>
+        <default>false</default>
+        <label>Hydroblasting</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+	<customValue>
+        <fullName>Ultrasonic Cleaning</fullName>
+        <default>false</default>
+        <label>Ultrasonic Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Unmanned Aerial Systems</fullName>
+        <default>false</default>
+        <label>Unmanned Aerial Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Thermo Fluids</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thermo Fluids</label>
+    </customValue>
+	<customValue>
+        <fullName>Vapor Control Services</fullName>
+        <default>false</default>
+        <label>Vapor Control Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Technical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety-Kleen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Safety-Kleen</label>
+    </customValue>
+    <customValue>
+        <fullName>Kleen Performance Products</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Kleen Performance Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Daylighting and Production Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Daylighting and Production Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Performance Plus Products</fullName>
+        <default>false</default>
+        <label>Performance Plus Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Emerald Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Emerald Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+	<customValue>
+        <fullName>Well Site Remediation</fullName>
+        <default>false</default>
+        <label>Well Site Remediation</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Labor Services</fullName>
+        <default>false</default>
+        <label>Automotive Labor Services</label>
+    </customValue>
+    <customValue>
+        <fullName>IS Vacuum Services</fullName>
+        <default>false</default>
+        <label>IS Vacuum Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Field Well Services</fullName>
+        <default>false</default>
+        <label>Oil Field Well Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Turnaround Services</fullName>
+        <default>false</default>
+        <label>Industrial Turnaround Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Material Processing</fullName>
+        <default>false</default>
+        <label>Material Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Pressure Hydrotesting Service</fullName>
+        <default>false</default>
+        <label>Pressure Hydrotesting Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Pigging Services</fullName>
+        <default>false</default>
+        <label>Pigging Services</label>
+    </customValue>
+    <customValue>
+        <fullName>High Vol Hydroblasting >1K HP</fullName>
+        <default>false</default>
+        <label>High Vol Hydroblasting >1K HP</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Hazardous Deepwell</fullName>
+        <default>false</default>
+        <label>Non Hazardous Deepwell</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Field Turnaround/Tank Cl</fullName>
+        <default>false</default>
+        <label>Oil Field Turnaround/Tank Cl</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Field Vac and Fluid Supp</fullName>
+        <default>false</default>
+        <label>Oil Field Vac and Fluid Supp</label>
+    </customValue>
+    <description>All LOBs</description>
+    <masterLabel>Line of Business</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

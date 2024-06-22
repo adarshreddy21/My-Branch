@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_Lost_Competitor</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+OR(
+ISPICKVAL(Lost_Reason__c, "Competitor (Transportation)"),
+ISPICKVAL(Lost_Reason__c, "Competitor (Better Price)")
+),
+NOT($Profile.Name = "Integration"),
+NOT($Profile.Name = "Salesforce API Only System Integrations"),
+ISBLANK(Primary_Competitor__c),
+OR(
+RecordType.Name = "Clean Harbors Opportunity",
+RecordType.Name = "CP Harbor Quote",
+RecordType.Name = "FS Harbor Quote",
+RecordType.Name = "Healthcare Opportunity"
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Primary_Competitor__c</errorDisplayField>
+    <errorMessage>Please enter Competitor</errorMessage>
+</ValidationRule>

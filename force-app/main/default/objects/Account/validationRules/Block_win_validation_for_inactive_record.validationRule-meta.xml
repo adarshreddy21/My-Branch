@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_win_validation_for_inactive_record</fullName>
+    <active>true</active>
+    <description>Block win validation for inactive records via bulk process/or by the UI having null winId</description>
+    <errorConditionFormula>AND(
+    Win_Validate_New__c = True,
+    ISPICKVAL(Status__c, &apos;Inactive&apos;),
+    ISBLANK(WIN_ID__c) 
+    )</errorConditionFormula>
+    <errorMessage>Cannot win validate inactive record with no Win Id</errorMessage>
+</ValidationRule>

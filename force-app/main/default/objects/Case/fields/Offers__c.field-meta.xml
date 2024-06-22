@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offers__c</fullName>
+    <description>It shows the Offers that you have given the Customer in an attempt to retain the Parts Washer.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the Offers that you have given the Customer in an attempt to retain the Parts Washer.</inlineHelpText>
+    <label>Offers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start $25, $50, $75, $100 (up to $100 max)</fullName>
+                <default>false</default>
+                <label>Start $25, $50, $75, $100 (up to $100 max)</label>
+            </value>
+            <value>
+                <fullName>-30% off list today and 10% for long term agreement</fullName>
+                <default>false</default>
+                <label>-30% off list today and 10% for long term agreement</label>
+            </value>
+            <value>
+                <fullName>One time 50% off service</fullName>
+                <default>false</default>
+                <label>One time 50% off service</label>
+            </value>
+            <value>
+                <fullName>One free service</fullName>
+                <default>false</default>
+                <label>One free service</label>
+            </value>
+            <value>
+                <fullName>Discounted rates for service terms &lt;24 weeks</fullName>
+                <default>false</default>
+                <label>Discounted rates for service terms &lt;24 weeks</label>
+            </value>
+            <value>
+                <fullName>Free equipment upgrade with no installation charge</fullName>
+                <default>false</default>
+                <label>Free equipment upgrade with no installation charge</label>
+            </value>
+            <value>
+                <fullName>Free loaner while equipment being repaired</fullName>
+                <default>false</default>
+                <label>Free loaner while equipment being repaired</label>
+            </value>
+            <value>
+                <fullName>Sell Machine for 2 year Coms agreement</fullName>
+                <default>false</default>
+                <label>Sell Machine for 2 year Coms agreement</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

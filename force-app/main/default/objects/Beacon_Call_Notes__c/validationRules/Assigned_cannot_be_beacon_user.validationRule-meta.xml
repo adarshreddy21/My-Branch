@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_cannot_be_beacon_user</fullName>
+    <active>true</active>
+    <description>Assigned_cannot_be_beacon_user</description>
+    <errorConditionFormula>or( 
+Assigned_To__r.Profile.Name = &quot;Integration&quot;, 
+Assigned_To__r.Profile.Name = &quot;Salesforce API Only System Integrations&quot;,
+Assigned_To__r.User_ID_18__c = &quot;005j000000EbTG4AAN&quot;,
+Assigned_To__r.User_ID_18__c = &quot;0054Q00000FJYDqQAP&quot;,
+Assigned_To__r.User_ID_18__c =&quot;0054Q00000FJbmjQAD&quot;)</errorConditionFormula>
+    <errorDisplayField>Assigned_To__c</errorDisplayField>
+    <errorMessage>Cannot assign this Beacon call note to this particular person</errorMessage>
+</ValidationRule>

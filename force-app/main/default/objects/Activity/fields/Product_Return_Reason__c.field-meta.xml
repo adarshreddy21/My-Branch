@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Return_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Return Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CS_Call_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Better price</fullName>
+                <default>false</default>
+                <label>Better price</label>
+            </value>
+            <value>
+                <fullName>Bought by mistake</fullName>
+                <default>false</default>
+                <label>Bought by mistake</label>
+            </value>
+            <value>
+                <fullName>Didn’t approve purchase</fullName>
+                <default>false</default>
+                <label>Didn’t approve purchase</label>
+            </value>
+            <value>
+                <fullName>Inaccurate website description</fullName>
+                <default>false</default>
+                <label>Inaccurate website description</label>
+            </value>
+            <value>
+                <fullName>Item arrived too late</fullName>
+                <default>false</default>
+                <label>Item arrived too late</label>
+            </value>
+            <value>
+                <fullName>Item defective or doesn’t work</fullName>
+                <default>false</default>
+                <label>Item defective or doesn’t work</label>
+            </value>
+            <value>
+                <fullName>Missing or broken parts</fullName>
+                <default>false</default>
+                <label>Missing or broken parts</label>
+            </value>
+            <value>
+                <fullName>Product and shipping box both damaged</fullName>
+                <default>false</default>
+                <label>Product and shipping box both damaged</label>
+            </value>
+            <value>
+                <fullName>Product damaged</fullName>
+                <default>false</default>
+                <label>Product damaged</label>
+            </value>
+            <value>
+                <fullName>Received more than ordered</fullName>
+                <default>false</default>
+                <label>Received more than ordered</label>
+            </value>
+            <value>
+                <fullName>Wrong item sent</fullName>
+                <default>false</default>
+                <label>Wrong item sent</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Better price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Bought by mistake</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Didn’t approve purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Inaccurate website description</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Item arrived too late</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Item defective or doesn’t work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Missing or broken parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Product and shipping box both damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Product damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Received more than ordered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Return (additional case required assigned to Ecommerce Queue)</controllingFieldValue>
+            <valueName>Wrong item sent</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

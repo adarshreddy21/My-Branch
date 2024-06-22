@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>1 - Prospecting</fullName>
+        <default>false</default>
+        <label>1 - Prospecting</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory> 
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>2 - Pursuing</fullName>
+        <default>false</default>
+        <label>2 - Pursuing</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>3 - Quoted</fullName>
+        <default>false</default>
+        <label>3 - Quoted</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>4 - Negotiating</fullName>
+        <default>false</default>
+        <label>4 - Negotiating</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>65</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>5 - Verbal Award</fullName>
+        <default>false</default>
+        <label>5 - Verbal Award</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>6 - Pending Services</fullName>
+        <default>false</default>
+        <label>6 - Pending Services</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>95</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>7 - Closed Won</fullName>
+        <default>false</default>
+        <label>7 - Closed Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>8 - Closed Lost</fullName>
+        <default>false</default>
+        <label>8 - Closed Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>9 - Closed-Existing business</fullName>
+        <default>false</default>
+        <description>The reason is to identify opportunities that are closed due to the fact this is already business we have and are  performing</description>
+        <label>9 - Closed-Existing business</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

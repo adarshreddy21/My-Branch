@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels> 
+        <fullName>RequestedOSandPSPRequired</fullName>
+        <categories>Label</categories>  
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RequestedOSandPSPRequired</shortDescription>
+        <value>Requested Owner is not mapped to an operating segment. Please contact Sales Operations to resolve before you can submit.</value>
+    </labels> 
+    <labels>
+        <fullName>CPG_Custom_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPG Custom Label</shortDescription>
+        <value>Win Profile Status Change Request</value>
+    </labels>
+    <labels>
+        <fullName>CHES_to_SKE_not_eligible</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES to SKE  not eligible</shortDescription>
+        <value>CHES to SKE account ownership where child CHES accounts active is not eligible for account owner change</value>
+    </labels>
+    <labels>
+        <fullName>SVP_Approval_User_Mapping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SVP Approval User Mapping</shortDescription>
+        <value>CHES Oil and Gas:0054Q00000FsZH5QAN,SK ENV:005j000000DLvscAAD,SK BPS:0054Q00000FtAokQAF,SK KPP:0054Q00000DwJDbQAN</value>
+    </labels>
+    <labels>
+        <fullName>Accountownershipchangehasalreadybeensubmitted</fullName>  
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accountownershipchangehasalreadybeensubmitted</shortDescription>
+        <value>Account ownership change has already been submitted or approved for this account. Please contact your manager for questions.</value>
+    </labels> 
+    <labels>
+        <fullName>ACCOUNT_ARCHIVE_ENDPOINT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCOUNT ARCHIVE ENDPOINT</shortDescription>
+        <value>https://ussouthcentral.services.azureml.net/workspaces/35f7c430535f4656890e8dbee81fb5a0/services/0c3e128e31a447759b88eb023c7fbe4e/</value>
+    </labels>
+    <labels>
+        <fullName>ACCOUNT_ARCHIVE_TOKEN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCOUNT_ARCHIVE_AUTHTOKEN</shortDescription>
+        <value>yz34jUYEZkBQYnSsZva5OBG8lx6YvowcGJ4k3HVlmhAONpt7V4SLQIhiRQmCxxHaFW</value>
+    </labels>
+    <labels>
+        <fullName>ACCOUNT_VALIDATION_EXCEPTION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System exception on updating account during validation</shortDescription>
+        <value>There was an error during Account Validation. Please contact your system administrator for details.</value>
+    </labels>
+	 <labels>
+        <fullName>ADDRESS_LENGTH_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ADDRESS LENGTH VALIDATION</shortDescription>
+        <value>Corporate and Billing Street field cannot have more than 60 characters</value>
+    </labels>
+    <labels> 
+        <fullName>AVID_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVID Validation</shortDescription>
+        <value>Please attempt to link the account to Avention. If an Avention company cannot be found please check the Avention company not found checkbox.</value>
+    </labels>
+    <labels>
+        <fullName>ArchiveAccountProfile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ArchiveAccountProfile</shortDescription>
+        <value>Integration;System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>BILLING_ADDRESS_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BILLING ADDRESS VALIDATION</shortDescription>
+        <value>Billing Address is mandatory. Please enter a billing address or if the address is the same as corporate address check the box “Same as corporate address”</value>
+    </labels>
+    <labels>
+        <fullName>CC_ALERT_MAIN_VERIFICATION</fullName>
+        <categories>Customer Contacts, WARNING, MAIN, Verification</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CC_ALERT_MAIN_VERIFICATION</shortDescription>
+        <value>Contacts have not been verified in the last 120 days. Verify the primary contacts and either update the information or click the contact verified button</value>
+    </labels>
+    <labels>
+        <fullName>CORPORATE_ADDRESS_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Validation on corporate address fields to see if they are populated.</shortDescription>
+        <value>Missing Corporate Address information. Corporate Street, City, State, ZIP and Country are mandatory for Win validation</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Type_Sale</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Type Sale</shortDescription>
+        <value>SALE</value>
+    </labels>
+    <labels>
+        <fullName>Cross_Sell_Quote_Request</fullName>
+        <categories>Cross Sell Opportunity Quote Request Alert</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cross Sell Quote Request</shortDescription>
+        <value>Please hit the Submit Quote Request checkbox to request the quote from Central Quoting. Please make sure to include the estimated value and all information such as Services Discussed, Description, Customer Contact, all necessary documentation for Cross Sell Opportunity before requesting a quote.</value>
+    </labels>
+    <labels>
+        <fullName>Cross_Sell_Scheduling_Request</fullName>
+        <categories>Cross Sell Opportunity Job Schedule Request Alert</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cross Sell Scheduling Request</shortDescription>
+        <value>Please hit Ready to Schedule checkbox below when the job is ready to schedule.</value>
+    </labels>
+    <labels>
+        <fullName>EPA_ID_NOT_VALIDATED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EPA not validated by EPA Service</shortDescription>
+        <value>EPA ID could not be validated. Check EPA ID and Generator Status, both are required fields.  Enter PENDING in the EPA ID field if it still needs to be determined.  
+
+For additional help on EPA rules:  Please submit a SN ticket for additional help to WIN Compliance&gt;EPA ID Number Issues&gt;CWT-Compliance</value>
+    </labels>
+	 <labels>
+        <fullName>EPAComplianceSOP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EPAComplianceSOP</shortDescription>
+        <value>https://cleanharbors--chfull.sandbox.my.salesforce.com/sfc/p/3I0000000fWG/a/3I0000004Q2M/iM0x1TXrQWLfeYb3ltcy0DlMrVjz2KQBsNYKzaTl2qI</value>
+    </labels>
+    <labels>
+        <fullName>EPA_VALIDATION_EXCEPTION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception message during EPA Id validation</shortDescription>
+        <value>There was a system exception encountered during EPA validation. Please contact your system administrator for details with the following exception message. Exception message:</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_CREATING_LOCATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error creating location account</shortDescription>
+        <value>Error creating location account. Please contact your system administrator for details with the exception msg:</value>
+    </labels>
+	<labels>
+        <fullName>EPA_Website</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EPAWebsite</shortDescription>
+        <value>https://rcrapublic.epa.gov/rcrainfoweb/action/modules/hd/handlerindex</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_MSG_COUNTRY_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_MSG_COUNTRY_VALIDATION</shortDescription>
+        <value>Please enter country as US or CA.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_MSG_CURRENCY_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_MSG_CURRENCY_VALIDATION</shortDescription>
+        <value>Currency should have the same value as the parent account&apos;s currency.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_MSG_DEP_CODE_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_MSG_DEP_CODE_VALIDATION</shortDescription>
+        <value>Duplicate department code already exists on related Account.</value>
+    </labels>
+    <labels>
+        <fullName>EPA_ID_MANDATORY</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EPA ID MANDATORY</shortDescription>
+        <value>EPA ID is Mandatory. Please Enter EPA ID</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_MSG_SIC_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_MSG_SIC_VALIDATION</shortDescription>
+        <value>SIC Code entered is not valid for Class Id selected.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_MSG_ZIP_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_MSG_ZIP_VALIDATION</shortDescription>
+        <value>ERROR!  One of two possible reasons:
+1. Check your Corporate State/Province and Corporate Country fields.  They must be entered using State/Province and Country codes. E.G. Massachusetts = MA and United States = US.  They cannot be blank!
+2. The State/Province and Country codes are not in the zip code entered. (check state and country codes again please)</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_SK_CROSS_SELL_CONFLICT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR SK CROSS SELL CONFLICT</shortDescription>
+        <value>Territory Owner is different from Support TSE person. Please contact Sales Ops for support.</value>
+    </labels>
+    <labels>
+        <fullName>Ebill_Owner</fullName>
+        <categories>Ebiller is Empty Case Assigned to Bhanu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ebill Owner</shortDescription>
+        <value>0050c00000EcLKJ</value>
+    </labels>
+    <labels>
+        <fullName>Email_Address_API_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Address API URL</shortDescription>
+        <value>https://servicestest.cleanharbors.com/SalesForceIntegrationServices/SalesForceWinInterfaceService.svc/getcompanyprimaryemail?</value>
+    </labels>
+    <labels>
+        <fullName>Hybrid_Buying_Decision_Values</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hybrid Buying Decision Values</shortDescription>
+        <value>Allied,Antifreeze,Blended Oil Sales – Direct,CleanPack,Containerized Waste,Emergency Response,Field Services,Oil Filter Recycling,Oily Water,Parts Washer,UMO,Vac Services</value>
+    </labels>
+    <labels>
+        <fullName>Jonathan_Riley</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jonathan Riley VP and Manager for Inside sales for OCR</shortDescription>
+        <value>0054Q00000FQ5YfQAL</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_SupportForm_HeaderText_04I4Q0000004C9r_9173917</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_SupportForm_HeaderText_04I4Q0000004C9r_9173917</shortDescription>
+        <value>Chat Us</value>
+    </labels>
+    <labels>
+        <fullName>LA_OfflineSupport_SupportForm_SupportFormButton_04I4Q0000004C9r_4781929</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_OfflineSupport_SupportForm_SupportFormButton_04I4Q0000004C9r_4781929</shortDescription>
+        <value>Submit Offline Chat</value>
+    </labels>
+    <labels>
+        <fullName>LA_Waiting_WithoutQueuePos_WaitingDefaultName_04I4Q0000004C9r_5562182</fullName>
+        <categories>Snap-ins</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LA_Waiting_WithoutQueuePos_WaitingDefaultName_04I4Q0000004C9r_5562182</shortDescription>
+        <value>Welcome to Safety-Kleen Online Chat</value>
+    </labels>
+    <labels>
+        <fullName>Record_Deleted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Deleted</shortDescription>
+        <value>0010a00001RwLmuAAF</value>
+    </labels>
+    <labels>
+        <fullName>SK_Active_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SK Active Owner</shortDescription>
+        <value>0050c00000EOyBSAA1</value>
+    </labels>
+    <labels>
+        <fullName>SK_Cross_Sell_Lube_Logic</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SK Cross Sell Lube Logic</shortDescription>
+        <value>Blended Oil (Lube)</value>
+    </labels>
+    <labels>
+        <fullName>SLS30</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SLS30</shortDescription>
+        <value>0050c00000EOyBDAA1</value>
+    </labels>
+    <labels>
+        <fullName>WIN_AUTH_TOKEN</fullName>
+        <categories>Auth Token</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WIN_AUTH_TOKEN</shortDescription>
+        <value>D8AE0B61-72FA-4DF2-B7B9-4CA4D5E28FC9</value>
+    </labels>
+    <labels>
+        <fullName>WIN_BEACON_CONTACT_EMAIL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error displayed when Beacon Contact has No Email</shortDescription>
+        <value>The Customer Contact type MAIN associated with this account does not have a valid email. Please find your Customer Contact type MAIN to update the email address.</value>
+    </labels>
+    <labels>
+        <fullName>WIN_BEACON_CONTACT_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checks if there is a beacon contact associated with account.</shortDescription>
+        <value>No Customer Contact of Type conTypes associated with Account. Go to Customer  Contacts list on the account page, click New and create a contact with type conTypes</value>
+    </labels>
+    <labels>
+        <fullName>WIN_ENDPOINT_URL</fullName>
+        <categories>End Point URL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WIN_ENDPOINT_URL</shortDescription>
+        <value>https://websvctest.cleanharbors.com/SalesForceIntegrationServices/SalesForceWinInterfaceService.svc/updatecasestatus</value>
+    </labels>
+    <labels>
+        <fullName>WIN_ID_ON_PARENT_VALIDATION</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Checks if the WIN ID of the Parent Account is populated.</shortDescription>
+        <value>WIN Id on Parent needs to be available before validating a Location</value>
+    </labels>
+    <labels>
+        <fullName>Win_ID_Initial_Sequence_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Win ID Initial Sequence Number</shortDescription>
+        <value>630</value>
+    </labels>
+    <labels>
+        <fullName>Xera_BE_Server_Down</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BE Server Down</shortDescription>
+        <value>Back-end server is down. Please contact support team.</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Call_Recording</fullName>
+        <categories>label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Xera Call Recording</shortDescription>
+        <value>Call Recording</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Call_Recording_Not_Found</fullName>
+        <categories>error</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Call Recording Not Found</shortDescription>
+        <value>Call Recording Not Found</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Delete</fullName>
+        <categories>label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Edit</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Play_Call_Recording</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Play Call Recording</shortDescription>
+        <value>Play Call Recording</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Please_Wait_While_Loading</fullName>
+        <categories>info</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Wait While Loading</shortDescription>
+        <value>Please wait while loading...</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Task</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Task</shortDescription>
+        <value>Task</value>
+    </labels>
+    <labels>
+        <fullName>Xera_Task_Information</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Task Information</shortDescription>
+        <value>Task  Information</value>
+    </labels>
+    <labels>
+        <fullName>Year_End_PO_Expiration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Year End PO Expiration</shortDescription>
+        <value>Year End PO Expiration</value>
+    </labels>
+    <labels>
+        <fullName>dashboardId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>dashboardId</shortDescription>
+        <value>01Z0c000000Z8vb</value>
+    </labels>
+    <labels>
+        <fullName>dashboardId2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>dashboardId2</shortDescription>
+        <value>01Z0c000000Z90M</value>
+    </labels>
+    <labels>
+        <fullName>Account_HR_TalentRecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account_HR_TalentRecordTypeId</shortDescription>
+        <value>012050000008njLAAQ</value>
+    </labels>
+    <labels>
+        <fullName>CaseStatusCloseProfiles</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseStatusCloseProfiles</shortDescription>
+        <value>System Administrator,Integration</value>
+    </labels>
+    <labels>
+        <fullName>CaseStatusErrorUpdateMessage</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseStatusErrorUpdateMessage</shortDescription>
+        <value>You dont have access to create a closed case,You dont have access to edit status to Re-Open/Close a Case</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Record_Type_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Record Type Id</shortDescription>
+        <value>012j0000001DaVT</value>
+    </labels>
+    <labels>
+        <fullName>HR_Talent_Pool_Org_Status_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HR Talent Pool-Org Status ErrorMsg</shortDescription>
+        <value>Please add all mandatory information(Contact, Partnership Owner &amp; Contributor, Department and Job Category) to change the Organization Status.</value>
+    </labels>
+    <labels>
+        <fullName>HR_Talent_Pool_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HR Talent Pool Record Type</shortDescription>
+        <value>HR Talent Pools</value>
+    </labels>
+    <labels>
+        <fullName>Organization_Owners_Duplicate_Record</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organization Owners Duplicate Record</shortDescription>
+        <value>You cannot add the duplicate related record.</value>
+    </labels>
+    <labels>
+        <fullName>Organization_Owners_Size</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organization Owners Size</shortDescription>
+        <value>You can have only 3 Organization Owner records for same Organization.</value>
+    </labels>
+    <labels>
+        <fullName>PO_Case_Queue</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_Case_Queue</shortDescription>
+        <value>PO_Case_Queue</value>
+    </labels>
+	<labels>
+        <fullName>Active_Accounts_on_Credit_Hold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Accounts on Credit Hold</shortDescription>
+        <value>/lightning/r/Report/00O7X000000WE4HUAW/view?queryScope=userFolders</value>
+    </labels>
+	<labels>
+        <fullName>CHES_ENV_Broker_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES ENV Broker Owner</shortDescription>
+        <value>005j000000DLAjkAAH</value>
+    </labels>
+    <labels>
+        <fullName>CHES_ENV_Health_Care_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES ENV Health Care Owner</shortDescription>
+        <value>005j000000Ebk9yAAB</value>
+    </labels>
+    <labels>
+        <fullName>CHES_ENV_NOT_Health_Care_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES ENV NOT Health Care Owner</shortDescription>
+        <value>005j000000DLN9CAAX</value>
+    </labels>
+    <labels> 
+        <fullName>CHES_Industrial_CA_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES Industrial CA Owner</shortDescription>
+        <value>005j000000DLAa7AAH</value>
+    </labels>
+    <labels>
+        <fullName>CHES_Industrial_US_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHES Industrial US Owner</shortDescription>
+        <value>0054Q00000G8mbCQAR</value>
+    </labels>
+	<labels>
+        <fullName>TAX_Exempt_ERROR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TAX_Exempt_ERROR</shortDescription>
+        <value>Please add Tax attachments under Tax Documents link to proceed further</value>
+    </labels>
+	<labels>
+        <fullName>Prevent_Opportunity_Product_Deletion_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prevent Opportunity Product Deletion for Parts Cleaner</shortDescription>
+        <value>To preserve Q2C sync, this opportunity line item cannot be deleted.</value>
+    </labels>
+</CustomLabels>

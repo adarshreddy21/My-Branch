@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Inside_Sales</fullName>
+    <columns>NAME</columns>
+    <columns>Region__c</columns>
+    <columns>Area__c</columns>
+    <columns>Primary_Business__c</columns>
+    <columns>Territory_Name__c</columns>
+    <columns>Territory_OwnerID__c</columns>
+    <columns>Sales_Manager__c</columns>
+    <columns>Manager_Name__c</columns>
+    <columns>Sales_Director__c</columns>
+    <columns>Open_Territory__c</columns>
+    <columns>Active_Territory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>SKE-IS</value>
+    </filters>
+    <label>INS -SKE Inside Sales</label>
+    <language>en_US</language>
+</ListView>

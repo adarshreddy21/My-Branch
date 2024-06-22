@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Person_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+IsActive=true
+, FirstName &amp; &quot; &quot;&amp; LastName
+, if(isblank(LastName)
+,&quot;&quot;
+,&quot;Inactive-&quot; &amp; FirstName &amp; &quot; &quot;&amp; LastName
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Person Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insert_by_User_lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to the user table who inserted the call note record</description>
+    <externalId>false</externalId>
+    <label>Insert by User lookup</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Beacon_Call_Notes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

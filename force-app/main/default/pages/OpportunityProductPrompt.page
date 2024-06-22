@@ -1,0 +1,26 @@
+<apex:page standardController="Opportunity">
+    
+    <script>
+    window.onload = function(){
+        if (!{!Opportunity.Cross_Sell__c} && {!Opportunity.Number_of_Products_Added__c} < 1 && {!(Now () - Opportunity.CreatedDate)*24*60*60} < 15){
+            if(confirm('Want to Add Product?')){
+                window.top.location.href = "{!$Site.BaseUrl}"+"/lightning/r/Opportunity/"+"{!Opportunity.Id}"+"/related/OpportunityLineItems/view"
+            }
+        }
+        if (({!Opportunity.Cross_Sell__c} || {!Opportunity.recordtype.developername == 'TPM_Opportunity'})
+            && !{!Opportunity.TPM_Quote_Request__c} && 
+            ({!Opportunity.StageName == '1 - Prospecting'} || {!Opportunity.StageName == '2 - Pursuing'})){
+            alert("{!$Label.Cross_Sell_Quote_Request}");
+        }
+        
+        if (({!Opportunity.Cross_Sell__c} || {!Opportunity.recordtype.developername == 'TPM_Opportunity'})
+            && !{!Opportunity.Job_Schedule_Requested__c} && ({!Opportunity.StageName == '3 - Quoted'} ||
+            {!Opportunity.StageName == '4 - Negotiating'} || {!Opportunity.StageName == '5 - Verbal Award'} 
+            || {!Opportunity.StageName == '6 - Pending Services'})){
+            alert("{!$Label.Cross_Sell_Scheduling_Request}");
+        }
+    }
+    
+    </script>
+    
+</apex:page>

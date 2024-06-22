@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Type_Size__c</fullName>
+    <description>Storage Size customer has; not exact just pick closest</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Storage Size customer has; not exact just pick closest</inlineHelpText>
+    <label>Storage Size</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Storage_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tote 102 (Canadian)</fullName>
+                <default>false</default>
+                <label>Tote 102 (Canadian)</label>
+            </value>
+            <value>
+                <fullName>Tote 330 (US)</fullName>
+                <default>false</default>
+                <label>Tote 330 (US)</label>
+            </value>
+            <value>
+                <fullName>275 Gallon Bulk Tank</fullName>
+                <default>false</default>
+                <label>275 Gallon Bulk Tank</label>
+            </value>
+            <value>
+                <fullName>500 Gallon Bulk Tank</fullName>
+                <default>false</default>
+                <label>500 Gallon Bulk Tank</label>
+            </value>
+            <value>
+                <fullName>501 + Gallons</fullName>
+                <default>false</default>
+                <label>501 + Gallons</label>
+            </value>
+            <value>
+                <fullName>55 Gallon Cube</fullName>
+                <default>false</default>
+                <label>55 Gallon Cube</label>
+            </value>
+            <value>
+                <fullName>110 Gallon Cube</fullName>
+                <default>false</default>
+                <label>110 Gallon Cube</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Tote</controllingFieldValue>
+            <controllingFieldValue>Tote &amp; Pump</controllingFieldValue>
+            <valueName>Tote 102 (Canadian)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tote</controllingFieldValue>
+            <controllingFieldValue>Tote &amp; Pump</controllingFieldValue>
+            <valueName>Tote 330 (US)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tank &amp; Pump</controllingFieldValue>
+            <controllingFieldValue>Customer Owned Tanks</controllingFieldValue>
+            <valueName>275 Gallon Bulk Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tank &amp; Pump</controllingFieldValue>
+            <controllingFieldValue>Customer Owned Tanks</controllingFieldValue>
+            <valueName>500 Gallon Bulk Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tank &amp; Pump</controllingFieldValue>
+            <controllingFieldValue>Customer Owned Tanks</controllingFieldValue>
+            <valueName>501 + Gallons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tank &amp; Pump</controllingFieldValue>
+            <controllingFieldValue>Customer Owned Tanks</controllingFieldValue>
+            <valueName>55 Gallon Cube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tank &amp; Pump</controllingFieldValue>
+            <controllingFieldValue>Customer Owned Tanks</controllingFieldValue>
+            <valueName>110 Gallon Cube</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_4B_FS_North_Bay_Area_Benicia_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 4B - FS North Bay Area, Benicia</label>
+    <queue>Queue_4B_FS_North_Bay_Area_Benicia</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

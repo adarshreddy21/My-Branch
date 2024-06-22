@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_DTB_DELTA_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: DTB-DELTA</label>
+    <queue>Queue_DTB_DELTA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>Philo and Safety Add, logo.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>RulesAndPhilos</name>
+        <dataType>String</dataType>
+        <expression>IF( OR( DAY({!Today}) = 1, DAY({!Today}) = 15), {!Safety1},
+IF( OR( DAY({!Today}) = 2, DAY({!Today}) = 16), {!Safety2},
+IF( OR( DAY({!Today}) = 3, DAY({!Today}) = 17), {!Safety3},
+IF( OR( DAY({!Today}) = 4, DAY({!Today}) = 18), {!Rule1},
+IF( OR( DAY({!Today}) = 5, DAY({!Today}) = 19), {!Rule2},
+IF( OR( DAY({!Today}) = 6, DAY({!Today}) = 20), {!Rule3},
+IF( OR( DAY({!Today}) = 7, DAY({!Today}) = 21), {!Rule4},
+IF( OR( DAY({!Today}) = 8, DAY({!Today}) = 22), {!Rule5},
+IF( OR( DAY({!Today}) = 9, DAY({!Today}) = 23), {!Rule6},
+IF( OR( DAY({!Today}) = 10, DAY({!Today}) = 24), {!Safety1},
+IF( OR( DAY({!Today}) = 11, DAY({!Today}) = 25), {!Safety2},
+IF( OR( DAY({!Today}) = 12, DAY({!Today}) = 26), {!Safety3},
+IF( OR( DAY({!Today}) = 13, DAY({!Today}) = 27), {!Rule1},
+IF( OR( DAY({!Today}) = 14, DAY({!Today}) = 28), {!Rule2},
+IF( OR( DAY({!Today}) = 29, DAY({!Today}) = 31), {!Rule3},
+IF( DAY({!Today}) = 30, {!Rule4},
+{!Rule1}))))))))))))))))</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Leadership: Welcome {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Leadership: Welcome</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>LeaderWelcome</name>
+        <label>LeaderWelcome</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>LeaderWelcome_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>LeaderWelcome_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>CHLogo</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors.file.force.com/sfc/servlet.shepherd/version/download/068bV000000Sfuh?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Bird-CH.png&quot;&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>1</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>LeaderWelcome_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Text</name>
+                    <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!UserWelcome}&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>5</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>LeaderWelcome_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Safety</name>
+                    <fieldText>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;{!RulesAndPhilos}&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>5</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>LeaderWelcome_Section1_Column4</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>HardHatLogo</name>
+                    <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors.file.force.com/sfc/servlet.shepherd/version/download/068bV000000Sot8?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Safety-HardHat-CH.png&quot;&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>1</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>LeaderWelcome</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Rule1</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #1:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿I will drive responsibly without distractions or impairments.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Rule2</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #2:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;I will think before I start and know my safety plan every day.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Rule3</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #3:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿I will only undertake the work in which I am trained.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Rule4</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #4:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿I will take responsibility for my safety and those around me at work, home or in-transit.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Rule5</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #5:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿I will intervene in any unsafe act.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Rule6</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Golden Rule of Safety #6:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿I will report all incidents and near misses.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Safety1</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Safety Philosophy #1:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Nothing is worth getting injured over.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Safety2</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Safety Philosophy #2:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿All near misses and accidents are preventable.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Safety3</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Safety Philosophy #3:&lt;/strong&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿Safety must be actively managed.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UserWelcome</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;Welcome back to Salesforce, {!$User.FirstName}.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;﻿Let&apos;s see what the team has been up to.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

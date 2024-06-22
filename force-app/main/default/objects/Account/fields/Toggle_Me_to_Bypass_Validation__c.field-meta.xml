@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toggle_Me_to_Bypass_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is using for Test class Bypass</description>
+    <externalId>false</externalId>
+    <label>Toggle Me to Bypass Validation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField> 

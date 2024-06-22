@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Set_Org_to_prospect</name>
+        <label>Set Org to prospect</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>OrganizationOwnersServiceHandler</actionName>
+        <actionType>apex</actionType>
+        <dataTypeMappings>
+            <typeName>T__relatedList</typeName>
+            <typeValue>Organization_Job_Code__c</typeValue>
+        </dataTypeMappings>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>relatedList</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Check_Job_Code_Record_HR_talent_pool</name>
+        <label>Check Job Code Record HR talent pool</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Set_Org_HR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Organization__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>HRtalentpool</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Org_to_prospect</targetReference>
+            </connector>
+            <label>Set Org HR</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>HR Talent Pool - Job Code {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>HR Talent Pool - Org Job Acct Prospect</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Job_Code_Record_HR_talent_pool</targetReference>
+        </connector>
+        <object>Organization_Job_Code__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>HRtalentpool</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>HR Recruiting Partners</stringValue>
+        </value>
+    </variables>
+</Flow>

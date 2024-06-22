@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Task</fullName>
+    <fields>Call_Type__c</fields>
+    <fields>CallType</fields>
+    <fields>Subject</fields>
+    <fields>WhatId</fields>
+    <fields>OwnerId</fields>
+    <fields>Priority</fields>
+    <label>Call Center Task</label>
+</CompactLayout>

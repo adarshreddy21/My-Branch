@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Request_Quote_for_Non_Cross_Sell</fullName>
+    <active>true</active>
+    <description>Do not allow user to request quote for non cross sell Safety Kleen / BPS Opportunity</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Safety_Kleen_BPS_Opportunity&apos; &amp;&amp; Cross_Sell__c  = False &amp;&amp;  TPM_Quote_Request__c = True</errorConditionFormula>
+    <errorMessage>Quote cannot be requested for Non-Cross Sell opportunity. Please select the appropriate Opportunity Primary Business and then request a Quote.</errorMessage>
+</ValidationRule>

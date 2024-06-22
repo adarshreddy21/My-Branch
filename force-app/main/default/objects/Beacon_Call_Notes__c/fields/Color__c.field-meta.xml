@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Color__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Colors in this field mean:
+1. Green–Call to review normal operations.
+2. Yellow–Change is required (New name, new address, etc.).
+3. Orange–Problem has been resolved.
+4. Blue–Problem on the account that is putting the business in jeopardy. Note will be distributed to DL including SR MGMT.
+5. Red–We have lost business on this account. The call should explain how/why this occurred. Note will be distributed to DL including SR MGMT.
+6. Black–Location or customer has closed.</inlineHelpText>
+    <label>Color</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Green - Status Quo</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Green - Status Quo</label>
+            </value>
+            <value>
+                <fullName>Yellow - Change</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Yellow - Change</label>
+            </value>
+            <value>
+                <fullName>Orange - Resolution</fullName>
+                <color>#FF6600</color>
+                <default>false</default>
+                <label>Orange - Resolution (Change or Problem has been resolved)</label>
+            </value>
+            <value>
+                <fullName>Blue - Problem</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Blue - Problem (Communicated to Sr MGMT DL)</label>
+            </value>
+            <value>
+                <fullName>Red - Lost Business</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Red - Lost Business (Communicated to SR MGMT DL)</label>
+            </value>
+            <value>
+                <fullName>Black - Closed Acct</fullName>
+                <color>#000000</color>
+                <default>false</default>
+                <label>Black - Closed Acct</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

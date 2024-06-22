@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CHESI_Branch__c</fullName>
+    <description>This value populates when Account OS is CHES and PSP  is same as the territory master PSP else it will take the Account owner's Sales branch.</description>
+    <externalId>false</externalId>
+    <label>CHESI Branch</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

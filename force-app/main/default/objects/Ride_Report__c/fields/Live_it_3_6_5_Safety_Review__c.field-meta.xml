@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_it_3_6_5_Safety_Review__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Assess the employee&apos;s safety performance throughout the day.</inlineHelpText>
+    <label>Live it 3-6-5 - Safety Review</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

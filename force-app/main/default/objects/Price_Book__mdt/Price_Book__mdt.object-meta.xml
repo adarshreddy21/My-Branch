@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Price Book Ids for Process Builder</description>
+    <label>Price Book Custom Metadata</label>
+    <pluralLabel>Price Books Custom Metadata</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Account - Update Gen Account Owner With Parent Owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Update Gen Account Owner With Parent Owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Gen_Account_Owner</name>
+        <label>Update Gen Account Owner</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.Parent.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Gen_Account_Owner</targetReference>
+        </connector>
+        <filterFormula>OR(
+AND(
+OR({!$Record.RecordType.Name} = &apos;Customer Location&apos;,{!$Record.RecordType.Name} = &apos;Broker Location&apos;,{!$Record.RecordType.Name} = &apos;Distributor Location&apos;), 
+ISNEW(),
+ISPICKVAL({!$Record.Primary_Service_Provider_New__c}, &apos;Clean Harbors ENV&apos;),
+NOT(ISPICKVAL({!$Record.Primary_Business__c}, &apos;HEPACO&apos;)),
+ISPICKVAL({!$Record.Parent.Primary_Service_Provider_New__c}, &apos;Clean Harbors ENV&apos;),
+NOT(ISPICKVAL({!$Record.Parent.Primary_Business__c}, &apos;HEPACO&apos;))
+),
+AND(
+OR({!$Record.RecordType.Name} = &apos;Customer Location&apos;,{!$Record.RecordType.Name} = &apos;Broker Location&apos;,{!$Record.RecordType.Name} = &apos;Distributor Location&apos;),
+ISCHANGED({!$Record.Primary_Service_Provider_New__c}),
+PRIORVALUE({!$Record.Primary_Service_Provider_New__c}) = NULL,
+ISPICKVAL({!$Record.Primary_Service_Provider_New__c}, &apos;Clean Harbors ENV&apos;),
+NOT(ISPICKVAL({!$Record.Primary_Business__c}, &apos;HEPACO&apos;)),
+ISPICKVAL({!$Record.Parent.Primary_Service_Provider_New__c}, &apos;Clean Harbors ENV&apos;),
+NOT(ISPICKVAL({!$Record.Parent.Primary_Business__c}, &apos;HEPACO&apos;))
+)
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow> 

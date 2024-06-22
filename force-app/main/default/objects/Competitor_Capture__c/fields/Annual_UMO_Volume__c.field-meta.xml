@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_UMO_Volume__c</fullName>
+    <description>Total volume for the year for this customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total volume for the year for this customer</inlineHelpText>
+    <label>Annual UMO Volume</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

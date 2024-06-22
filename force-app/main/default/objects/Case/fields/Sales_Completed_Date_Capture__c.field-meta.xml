@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Completed_Date_Capture__c</fullName>
+    <description>This field is to Capture the date and time when status is changed to &quot;Sales Complete&quot; for CPG Case Record Type</description>
+    <externalId>false</externalId>
+    <label>Sales Completed Date Capture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

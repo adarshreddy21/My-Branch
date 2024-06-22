@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bulk Products and Services</fullName>
+                <default>false</default>
+                <label>Bulk Products and Services</label>
+            </value>
+            <value>
+                <fullName>Chemical Distribution Services</fullName>
+                <default>false</default>
+                <label>Chemical Distribution Services</label>
+            </value>
+            <value>
+                <fullName>Drill Rig Services</fullName>
+                <default>false</default>
+                <label>Drill Rig Services</label>
+            </value>
+            <value>
+                <fullName>Event Services</fullName>
+                <default>false</default>
+                <label>Event Services</label>
+            </value>
+            <value>
+                <fullName>Field Services</fullName>
+                <default>false</default>
+                <label>Field Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare Services</fullName>
+                <default>false</default>
+                <label>Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Services</fullName>
+                <default>false</default>
+                <label>Industrial Services</label>
+            </value>
+            <value>
+                <fullName>Infrastructure &amp; Utility Servs</fullName>
+                <default>false</default>
+                <label>Infrastructure &amp; Utility Servs</label>
+            </value>
+            <value>
+                <fullName>Lodging Services</fullName>
+                <default>false</default>
+                <label>Lodging Services</label>
+            </value>
+            <value>
+                <fullName>Maintenance Repair Order</fullName>
+                <default>false</default>
+                <label>Maintenance Repair Order</label>
+            </value>
+            <value>
+                <fullName>Oil Field Transport/Prod Servs</fullName>
+                <default>false</default>
+                <label>Oil Field Transport/Prod Servs</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pipelines Services</fullName>
+                <default>false</default>
+                <label>Pipelines Services</label>
+            </value>
+            <value>
+                <fullName>Refinery Oil &amp; Waste Procsing</fullName>
+                <default>false</default>
+                <label>Refinery Oil &amp; Waste Procsing</label>
+            </value>
+            <value>
+                <fullName>Remediation Services</fullName>
+                <default>false</default>
+                <label>Remediation Services</label>
+            </value>
+            <value>
+                <fullName>Retail Services</fullName>
+                <default>false</default>
+                <label>Retail Services</label>
+            </value>
+            <value>
+                <fullName>Right of Way Services</fullName>
+                <default>false</default>
+                <label>Right of Way Services</label>
+            </value>
+            <value>
+                <fullName>Sale of Material</fullName>
+                <default>false</default>
+                <label>Sale of Material</label>
+            </value>
+            <value>
+                <fullName>Seismic Services</fullName>
+                <default>false</default>
+                <label>Seismic Services</label>
+            </value>
+            <value>
+                <fullName>SK - Environmental</fullName>
+                <default>false</default>
+                <label>SK - Environmental</label>
+            </value>
+            <value>
+                <fullName>SK - Oil</fullName>
+                <default>false</default>
+                <label>SK - Oil</label>
+            </value>
+            <value>
+                <fullName>T&amp;D Services</fullName>
+                <default>false</default>
+                <label>T&amp;D Services</label>
+            </value>
+            <value>
+                <fullName>Transformer Services</fullName>
+                <default>false</default>
+                <label>Transformer Services</label>
+            </value>
+            <value>
+                <fullName>Turnaround Services</fullName>
+                <default>false</default>
+                <label>Turnaround Services</label>
+            </value>
+            <value>
+                <fullName>Used Oil Services</fullName>
+                <default>false</default>
+                <label>Used Oil Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

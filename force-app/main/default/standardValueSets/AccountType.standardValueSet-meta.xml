@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Branch</fullName>
+        <default>false</default>
+        <label>Branch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brok/Gen</fullName>
+        <default>false</default>
+        <label>Brok/Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Broker</fullName>
+        <default>false</default>
+        <label>Broker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate</fullName>
+        <default>false</default>
+        <label>Corporate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CLH Competitor</fullName>
+        <default>false</default>
+        <label>CLH Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dist/Gen</fullName>
+        <default>false</default>
+        <label>Dist/Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Growth Budget</fullName>
+        <default>false</default>
+        <label>Growth Budget</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Key Account</fullName>
+        <default>false</default>
+        <label>Key Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Parent Reporting Chain</fullName>
+        <default>false</default>
+        <label>Parent Reporting Chain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pricing Chain</fullName>
+        <default>false</default>
+        <label>Pricing Chain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect Cust</fullName>
+        <default>false</default>
+        <label>Prospect Cust</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect Gen</fullName>
+        <default>false</default>
+        <label>Prospect Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RAIL</fullName>
+        <default>false</default>
+        <label>RAIL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporting Chain</fullName>
+        <default>false</default>
+        <label>Reporting Chain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RFO Outlet</fullName>
+        <default>false</default>
+        <label>RFO Outlet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rig</fullName>
+        <default>false</default>
+        <label>Rig</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ShipTo/Gen</fullName>
+        <default>false</default>
+        <label>ShipTo/Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TRAN</fullName>
+        <default>false</default>
+        <label>TRAN</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>UMO Competitor</label>
+    </standardValue>
+</StandardValueSet>

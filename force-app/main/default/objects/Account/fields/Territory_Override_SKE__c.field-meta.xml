@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Override_SKE__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is checked to stop trigger from populating Territory ID SKE</description>
+    <externalId>false</externalId>
+    <label>Territory Override SKE</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPG_Case_Lock</fullName>
+    <active>true</active>
+    <description>This is used for lock the CPG Case record.</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;CPG Request&quot;,
+OR(ISCHANGED(AccountId),ISCHANGED(OwnerId),ISCHANGED(Status),
+ISCHANGED(Profile_Number__c),
+ISCHANGED(Incomplete_Profile_Comments__c),
+ISCHANGED(Profile_Status__c),
+ISCHANGED(CPG_Owner__c),
+ISCHANGED(Waste_Description__c),
+ISCHANGED(Priority),
+ISCHANGED(Origin),
+ISCHANGED(Subject),
+ISCHANGED(Description),
+ISCHANGED(SuppliedEmail)),
+OR(ISPICKVAL(PRIORVALUE(Status), &quot;Closed&quot;),ISPICKVAL(PRIORVALUE(Status), &quot;Closed - Approved&quot;),ISPICKVAL(PRIORVALUE(Status), &quot;Closed - Deadfiled&quot;)))</errorConditionFormula>
+    <errorMessage>This Record Is locked, No edits Permitted</errorMessage>
+</ValidationRule>

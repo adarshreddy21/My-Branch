@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_DSK_DODGE_CITY_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: DSK-DODGE CITY</label>
+    <queue>Queue_DSK_DODGE_CITY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

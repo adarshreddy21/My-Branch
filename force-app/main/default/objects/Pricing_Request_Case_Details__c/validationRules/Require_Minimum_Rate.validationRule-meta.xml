@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Minimum_Rate</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+Pricing_Type_of_Request__c = &apos;Drum Rates&apos;,
+OR(
+Text( Unit_of_Measure__c ) = &apos;GAL&apos;,
+Text( Unit_of_Measure__c ) = &apos;LBS&apos;,
+Text( Unit_of_Measure__c ) = &apos;Ton&apos;,
+Text( Unit_of_Measure__c ) = &apos;LG&apos;,
+Text( Unit_of_Measure__c ) = &apos;L&apos;,
+Text( Unit_of_Measure__c ) = &apos;CY&apos;),
+ISBLANK( Minimum_Drum_Rate__c ))</errorConditionFormula>
+    <errorDisplayField>Minimum_Drum_Rate__c</errorDisplayField>
+    <errorMessage>Please enter the Minimum Rate</errorMessage>
+</ValidationRule>

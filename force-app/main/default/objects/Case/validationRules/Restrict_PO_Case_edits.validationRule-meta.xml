@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_PO_Case_edits</fullName>
+    <active>false</active>
+    <description>Remove edit rights from PO Case</description>
+    <errorConditionFormula>AND(
+ $User.User_ID_18__c &lt;&gt; &apos;0050a00000JEp6MAAT&apos;
+ ,$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+ ,$Profile.Name &lt;&gt; &apos;Integration&apos;
+ ,$Profile.Name &lt;&gt; &apos;Salesforce API Only System Integrations&apos;
+ ,RecordType.DeveloperName = &apos;Customer_PO_Case&apos;
+ ,ischanged(Status)
+ ,Contains(text(Status),&quot;Closed&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only Lisa can close the case. Please reach out to or @mention Lisa from the case feed to close the case.</errorMessage>
+</ValidationRule>

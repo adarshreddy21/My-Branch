@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SKE_Sales_Ops_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <columns>Status_Detail__c</columns>
+    <columns>Campaign_Start_Date__c</columns>
+    <columns>Campaign_Name__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Campaiign_Business_1__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Campaiign_Business_1__c</field>
+        <operation>equals</operation>
+        <value>SKE</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Sales_Ops_Requests__c.New_Campaign_Requests</value>
+    </filters>
+    <label>SKE Sales Ops Requests</label>
+</ListView>

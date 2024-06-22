@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Allow_to_change_Account_Name</fullName>
+    <active>true</active>
+    <description>This is created for do not change the Account if that has a Win id.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(AccountId)),
+ISCHANGED(AccountId),
+OR(
+NOT(ISBLANK(Account.WIN_ID__c)),
+ISBLANK(AccountId),
+AND(ISBLANK(Account.WIN_ID__c),
+NOT(ISBLANK(PRIORVALUE(WIN_ID__c))))) )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>You are not allowed to change this contact to another record because the currently related account has a WinID or the account you are trying to relate has a WinID.</errorMessage>
+</ValidationRule>

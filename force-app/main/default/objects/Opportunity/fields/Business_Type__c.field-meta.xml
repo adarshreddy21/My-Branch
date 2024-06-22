@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EXISTING-One Time</fullName>
+                <default>false</default>
+                <label>EXISTING-One Time</label>
+            </value>
+            <value>
+                <fullName>EXISTING-Recurring</fullName>
+                <default>false</default>
+                <label>EXISTING-Recurring</label>
+            </value>
+            <value>
+                <fullName>NEW-One Time</fullName>
+                <default>false</default>
+                <label>NEW-One Time</label>
+            </value>
+            <value>
+                <fullName>NEW-Recurring</fullName>
+                <default>false</default>
+                <label>NEW-Recurring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

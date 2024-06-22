@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Closed_in_72_hrs__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(
+(First_Contact_Date__c - DB_Created_Date_without_Time__c) &gt; 3, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Closed in 72 hrs</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

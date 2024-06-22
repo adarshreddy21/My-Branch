@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_Organization_Category_Detail_Length</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( RecordType.Name = &quot;HR Recruiting Partners&quot;, OR(LEN( Organization_Category_Detail__c ) &lt; 5 , LEN(Organization_Category_Detail__c)&gt; 100), NOT( ISBLANK(Organization_Category_Detail__c) ))</errorConditionFormula>
+    <errorDisplayField>Organization_Category_Detail__c</errorDisplayField>
+    <errorMessage>organization category detail should be 5 to 100 characters.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VALID_EMAIL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT($Profile.Name = &quot;Integration&quot;), 
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+NOT($Profile.Name = &quot;Sales Operations&quot;),
+NOT($Profile.Name = &quot;Master Data Management&quot;), 
+Account_ID__r.Expired__c = false, 
+NOT(ISBLANK( Email__c )) || 
+NOT(REGEX(Email__c ,&quot;[a-zA-Z0-9._-]+@[a-zA-Z]+.[a-zA-Z]{2,4}&quot;)), 
+OR( 
+CONTAINS(Email__c,&quot;@cleanharbors.com&quot;), 
+CONTAINS(Email__c,&quot;@email.com&quot;),
+CONTAINS(Email__c,&quot;@safety-kleen.com&quot;), 
+CONTAINS(Email__c,&quot;pending&quot;), 
+CONTAINS(Email__c,&quot;refused&quot;),
+CONTAINS(Email__c,&quot;noemail&quot;),
+CONTAINS(Email__c,&quot;unknown&quot;)))</errorConditionFormula>
+    <errorDisplayField>Email__c</errorDisplayField>
+    <errorMessage>Email address must be valid and should not contain @cleanharbors.com, @safety-kleen.com, refused, pending, or unknown.</errorMessage>
+</ValidationRule>

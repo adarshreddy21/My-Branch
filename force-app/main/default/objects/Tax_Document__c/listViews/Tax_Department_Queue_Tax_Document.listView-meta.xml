@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Department_Queue_Tax_Document</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Tax Department Queue</label>
+    <queue>Tax_Department_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

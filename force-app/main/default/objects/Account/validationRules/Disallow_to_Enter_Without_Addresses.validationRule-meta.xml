@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_Enter_Without_Addresses</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND(
+        NOT(ISCHANGED(Active_ER_Contract__c)),
+        NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+        OR( 
+        ISNEW(),
+        OR(ISChanged(ShippingCity),
+        ISChanged(ShippingState),
+        ISChanged(ShippingCountry),
+        ISChanged(ShippingPostalCode),
+        ISChanged(ShippingStreet))),
+        OR(NOT(ISBLANK(ShippingCity)),
+        NOT(ISBLANK(ShippingState )),
+        NOT(ISBLANK(ShippingCountry)),
+        NOT(ISBLANK(ShippingPostalCode )),
+        NOT(ISBLANK(ShippingStreet ))),
+        OR(ISBLANK(ShippingStreet),
+        ISBLANK(ShippingState), 
+        ISBLANK(ShippingCountry),
+        ISBLANK(ShippingPostalCode),
+        ISBLANK(ShippingCity)
+        )),
+        AND(
+        NOT(ISCHANGED(Active_ER_Contract__c)),
+        OR(
+        ISNEW(),
+        OR(ISChanged(BillingCity),
+        ISChanged(BillingState),
+        ISChanged(BillingCountry),
+        ISChanged(BillingPostalCode),
+        ISChanged(BillingStreet))),
+        OR(NOT(ISBLANK(BillingCity)),
+        NOT(ISBLANK(BillingState )),
+        NOT(ISBLANK(BillingCountry)),
+        NOT(ISBLANK(BillingPostalCode )),
+        NOT(ISBLANK(BillingStreet ))),
+        OR(ISBLANK(BillingStreet),
+        ISBLANK(BillingState),
+        ISBLANK(BillingCountry),
+        ISBLANK(BillingPostalCode),
+        ISBLANK(BillingCity)
+        )),
+        AND(
+        NOT(ISCHANGED(Active_ER_Contract__c)),
+        OR(
+        ISNEW(),
+        OR(ISChanged(Manifest_Locality1__c),
+        ISChanged(Manifest_Region_Code__c),
+        ISChanged(Manifest_Country_Code__c),
+        ISChanged(Manifest_Post_Code__c),
+        ISChanged(Manifest_Address1__c))),
+        OR(NOT(ISBLANK(Manifest_Locality1__c)),
+        NOT(ISBLANK(Manifest_Region_Code__c )),
+        NOT(ISBLANK(Manifest_Country_Code__c)),
+        NOT(ISBLANK(Manifest_Post_Code__c )),
+        NOT(ISBLANK(Manifest_Address1__c ))),
+        OR(ISBLANK(Manifest_Address1__c),
+        ISBLANK(Manifest_Region_Code__c),
+        ISBLANK(Manifest_Country_Code__c),
+        ISBLANK(Manifest_Post_Code__c),
+        ISBLANK(Manifest_Locality1__c)
+        )),
+        AND(
+        NOT(ISCHANGED(Active_ER_Contract__c)),
+        OR(
+        ISNEW(),
+        OR(ISChanged(Pay_To_Locality1__c),
+        ISChanged(Pay_To_Region_Code__c),
+        ISChanged(Pay_To_Country_Code__c),
+        ISChanged(Pay_To_Post_Code__c),
+        ISChanged(PayTo_Address2__c),
+        ISChanged(PayTo_Address1__c))),
+        OR(NOT(ISBLANK(Pay_To_Locality1__c)),
+        NOT(ISBLANK(Pay_To_Region_Code__c )),
+        NOT(ISBLANK(Pay_To_Country_Code__c)),
+        NOT(ISBLANK(Pay_To_Post_Code__c )),
+        NOT(ISBLANK(PayTo_Address2__c)),
+        NOT(ISBLANK(PayTo_Address1__c))),
+        OR(
+        ISBLANK(PayTo_Address1__c),
+        ISBLANK(Pay_To_Region_Code__c),
+        ISBLANK(Pay_To_Country_Code__c),
+        ISBLANK(Pay_To_Post_Code__c),
+        ISBLANK(Pay_To_Locality1__c)
+)))</errorConditionFormula>
+    <errorMessage>All the address fields are required for each address type Billing/Shipping/Manifest/PayTo if any of the fields for that address type is populated</errorMessage>
+</ValidationRule>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Reason__c</fullName>
+    <description>This field is used to track the information on a case to see quickly why a duplicate was approved and what account it was.</description>
+    <externalId>false</externalId>
+    <label>Duplicate Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wrong Parent Account</fullName>
+                <default>false</default>
+                <label>Wrong Parent Account</label>
+            </value>
+            <value>
+                <fullName>Different Customer Budgets</fullName>
+                <default>false</default>
+                <label>Different Customer Budgets</label>
+            </value>
+            <value>
+                <fullName>Movement of Related Data</fullName>
+                <default>false</default>
+                <label>Movement of Related Data</label>
+            </value>
+            <value>
+                <fullName>Unique Invoice Delivery Methods</fullName>
+                <default>false</default>
+                <label>Unique Invoice Delivery Methods</label>
+            </value>
+            <value>
+                <fullName>Acquisitions Limitation</fullName>
+                <default>false</default>
+                <label>Acquisitions Limitation</label>
+            </value>
+            <value>
+                <fullName>Unique Customer Part Numbers</fullName>
+                <default>false</default>
+                <label>Unique Customer Part Numbers</label>
+            </value>
+            <value>
+                <fullName>Contractor Relationships</fullName>
+                <default>false</default>
+                <label>Contractor Relationships</label>
+            </value>
+            <value>
+                <fullName>Pricing Contract Limitations</fullName>
+                <default>false</default>
+                <label>Pricing Contract Limitations</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Invoice Delivery Requirements</fullName>
+                <default>false</default>
+                <label>Invoice Delivery Requirements</label>
+            </value>
+            <value>
+                <fullName>Change of Account Ownership</fullName>
+                <default>false</default>
+                <label>Change of Account Ownership</label>
+            </value>
+            <value>
+                <fullName>Same Building Different Company</fullName>
+                <default>false</default>
+                <label>Same Building Different Company</label>
+            </value>
+            <value>
+                <fullName>Separate Account Budgets</fullName>
+                <default>false</default>
+                <label>Separate Account Budgets</label>
+            </value>
+            <value>
+                <fullName>Cannot Demote Cust Account</fullName>
+                <default>false</default>
+                <label>Cannot Demote Cust Account</label>
+            </value>
+            <value>
+                <fullName>Parts Number Restriction</fullName>
+                <default>false</default>
+                <label>Parts Number Restriction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

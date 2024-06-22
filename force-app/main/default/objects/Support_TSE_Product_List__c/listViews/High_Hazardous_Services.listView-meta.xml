@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Hazardous_Services</fullName>
+    <columns>NAME</columns>
+    <columns>Primary_Business__c</columns>
+    <columns>Specialist_Business__c</columns>
+    <columns>Product__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Specialist_Business__c</field>
+        <operation>equals</operation>
+        <value>High Hazardous Services</value>
+    </filters>
+    <label>High Hazardous Services</label>
+    <language>en_US</language>
+</ListView>

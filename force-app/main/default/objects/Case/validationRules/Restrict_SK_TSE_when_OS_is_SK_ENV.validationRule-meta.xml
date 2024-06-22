@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_SK_TSE_when_OS_is_SK_ENV</fullName>
+    <active>true</active>
+    <description>Validation rule to prevent selecting &apos;SKE&apos; in the &apos;Specialist Business&apos; picklist when the account&apos;s operating segment is also &apos;SK ENV.&apos;</description>
+    <errorConditionFormula>AND(
+    RecordType.Name = &apos;TSE - Add Case&apos;, 
+    TEXT(Specialist_Business__c) = &apos;Safety-Kleen Environmental&apos;,
+    TEXT(Account.Primary_Service_Provider_New__c) = &apos;SK ENV&apos; 
+)</errorConditionFormula>
+    <errorDisplayField>Specialist_Business__c</errorDisplayField>
+    <errorMessage>&quot;SKE cannot be selected in the &apos;Specialist Business&apos; dropdown when the account operating segment is also SK ENV&quot;</errorMessage>
+</ValidationRule>

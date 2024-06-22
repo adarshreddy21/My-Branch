@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Activity_Validations_Invoice</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &quot;Integration&quot;,
+$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+ISPICKVAL(Call_Type__c, &quot;Pay Invoice/Balance Inquiry&quot;),
+ISBLANK(Invoice_Number__c),
+ISBLANK(Amount_Paid__c ),
+ISBLANK( Confirm__c ))</errorConditionFormula>
+    <errorMessage>Please enter Invoice Number, Amount paid and Confirmation #.</errorMessage>
+</ValidationRule>

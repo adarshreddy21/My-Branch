@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_LSO_LOUISVILLE_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: LSO-LOUISVILLE</label>
+    <queue>Queue_LSO_LOUISVILLE</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

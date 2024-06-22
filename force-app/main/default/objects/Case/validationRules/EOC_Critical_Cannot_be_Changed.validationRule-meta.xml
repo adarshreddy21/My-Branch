@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EOC_Critical_Cannot_be_Changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Text(PRIORVALUE(Priority) )= &apos;Critical&apos; ,
+ Text(Priority) &lt;&gt; &apos;Critical&apos;,
+EOC_Case__c = True
+)</errorConditionFormula>
+    <errorMessage>An EOC case priority cannot be changed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_or_Proposal_date__c</fullName>
+    <description>Date on the invoice or proposal. Required if invoice or proposal selected in Attachment Type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date on the invoice or proposal. Required if invoice or proposal selected in Attachment Type</inlineHelpText>
+    <label>Invoice or Proposal date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFR_All</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Escalation__c</columns>
+    <columns>Call_Reason__c</columns>
+    <columns>Type_of_Call__c</columns>
+    <columns>Primary_Type_of_Service__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Branch_Account__c</field>
+        <operation>contains</operation>
+        <value>KFS - BR  W Brookfield</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Brookfield</value>
+    </filters>
+    <filters>
+        <field>Primary_Type_of_Service__c</field>
+        <operation>equals</operation>
+        <value>UMO</value>
+    </filters>
+    <label>CCC - CSR III</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>SK_Call_Agent</roleAndSubordinates>
+    </sharedTo>
+</ListView>

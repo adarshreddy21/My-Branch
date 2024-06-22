@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Code__c</fullName>
+    <description>Truncated from Brand Description for ease of filtering ( a controlled list validated by DimBrands)</description>
+    <externalId>false</externalId>
+    <label>Brand Code</label>
+    <length>200</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

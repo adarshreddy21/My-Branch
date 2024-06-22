@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Keyword__c</fullName>
+    <externalId>false</externalId>
+    <label>Keyword</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1st Letter</fullName>
+                <default>false</default>
+                <label>1st Letter</label>
+            </value>
+            <value>
+                <fullName>2nd Letter</fullName>
+                <default>false</default>
+                <label>2nd Letter</label>
+            </value>
+            <value>
+                <fullName>3rd Letter</fullName>
+                <default>false</default>
+                <label>3rd Letter</label>
+            </value>
+            <value>
+                <fullName>Audit</fullName>
+                <default>false</default>
+                <label>Audit</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Bounced Check</fullName>
+                <default>false</default>
+                <label>Bounced Check</label>
+            </value>
+            <value>
+                <fullName>Cash Volume Discount</fullName>
+                <default>false</default>
+                <label>Cash Volume Discount</label>
+            </value>
+            <value>
+                <fullName>CESQG Participant</fullName>
+                <default>false</default>
+                <label>CESQG Participant</label>
+            </value>
+            <value>
+                <fullName>CHES cust to whom we owe $</fullName>
+                <default>false</default>
+                <label>CHES cust to whom we owe $</label>
+            </value>
+            <value>
+                <fullName>COD Payment</fullName>
+                <default>false</default>
+                <label>COD Payment</label>
+            </value>
+            <value>
+                <fullName>Collection</fullName>
+                <default>false</default>
+                <label>Collection</label>
+            </value>
+            <value>
+                <fullName>Contra Account</fullName>
+                <default>false</default>
+                <label>Contra Account</label>
+            </value>
+            <value>
+                <fullName>Credit/Rebill</fullName>
+                <default>false</default>
+                <label>Credit/Rebill</label>
+            </value>
+            <value>
+                <fullName>Cust. Needs Certs.</fullName>
+                <default>false</default>
+                <label>Cust. Needs Certs.</label>
+            </value>
+            <value>
+                <fullName>Demand Letter Sent</fullName>
+                <default>false</default>
+                <label>Demand Letter Sent</label>
+            </value>
+            <value>
+                <fullName>Dispute-PO</fullName>
+                <default>false</default>
+                <label>Dispute-PO</label>
+            </value>
+            <value>
+                <fullName>Duplicate Payment</fullName>
+                <default>false</default>
+                <label>Duplicate Payment</label>
+            </value>
+            <value>
+                <fullName>Exceeds PO</fullName>
+                <default>false</default>
+                <label>Exceeds PO</label>
+            </value>
+            <value>
+                <fullName>GE Discount ShortPay</fullName>
+                <default>false</default>
+                <label>GE Discount ShortPay</label>
+            </value>
+            <value>
+                <fullName>Historical CHES</fullName>
+                <default>false</default>
+                <label>Historical CHES</label>
+            </value>
+            <value>
+                <fullName>Historical CSD</fullName>
+                <default>false</default>
+                <label>Historical CSD</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Insurance Claim</fullName>
+                <default>false</default>
+                <label>Insurance Claim</label>
+            </value>
+            <value>
+                <fullName>Intercont Leasing Fee</fullName>
+                <default>false</default>
+                <label>Intercont Leasing Fee</label>
+            </value>
+            <value>
+                <fullName>Invoice Required</fullName>
+                <default>false</default>
+                <label>Invoice Required</label>
+            </value>
+            <value>
+                <fullName>Late Invoice</fullName>
+                <default>false</default>
+                <label>Late Invoice</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Murphy&apos;s Oil</fullName>
+                <default>false</default>
+                <label>Murphy&apos;s Oil</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>No PO Obtained</fullName>
+                <default>false</default>
+                <label>No PO Obtained</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Not to exceed PO</fullName>
+                <default>false</default>
+                <label>Not to exceed PO</label>
+            </value>
+            <value>
+                <fullName>OPA-90</fullName>
+                <default>false</default>
+                <label>OPA-90</label>
+            </value>
+            <value>
+                <fullName>Open Accounts Receivable</fullName>
+                <default>false</default>
+                <label>Open Accounts Receivable</label>
+            </value>
+            <value>
+                <fullName>OPU-FUND</fullName>
+                <default>false</default>
+                <label>OPU-FUND</label>
+            </value>
+            <value>
+                <fullName>Overpayment</fullName>
+                <default>false</default>
+                <label>Overpayment</label>
+            </value>
+            <value>
+                <fullName>Paid SK,Refund CHES</fullName>
+                <default>false</default>
+                <label>Paid SK,Refund CHES</label>
+            </value>
+            <value>
+                <fullName>Paid to Rhodia</fullName>
+                <default>false</default>
+                <label>Paid to Rhodia</label>
+            </value>
+            <value>
+                <fullName>Paid When Paid</fullName>
+                <default>false</default>
+                <label>Paid When Paid</label>
+            </value>
+            <value>
+                <fullName>Payment Plan</fullName>
+                <default>false</default>
+                <label>Payment Plan</label>
+            </value>
+            <value>
+                <fullName>PO Correct Line</fullName>
+                <default>false</default>
+                <label>PO Correct Line</label>
+            </value>
+            <value>
+                <fullName>PO Expired</fullName>
+                <default>false</default>
+                <label>PO Expired</label>
+            </value>
+            <value>
+                <fullName>PO Line Add</fullName>
+                <default>false</default>
+                <label>PO Line Add</label>
+            </value>
+            <value>
+                <fullName>PO Underfunded</fullName>
+                <default>false</default>
+                <label>PO Underfunded</label>
+            </value>
+            <value>
+                <fullName>Price Dispute</fullName>
+                <default>false</default>
+                <label>Price Dispute</label>
+            </value>
+            <value>
+                <fullName>Resolved Bankruptcy</fullName>
+                <default>false</default>
+                <label>Resolved Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Resolved Cert</fullName>
+                <default>false</default>
+                <label>Resolved Cert</label>
+            </value>
+            <value>
+                <fullName>Resolved COD</fullName>
+                <default>false</default>
+                <label>Resolved COD</label>
+            </value>
+            <value>
+                <fullName>Resolved Collection</fullName>
+                <default>false</default>
+                <label>Resolved Collection</label>
+            </value>
+            <value>
+                <fullName>Resolved Credit/Rebill</fullName>
+                <default>false</default>
+                <label>Resolved Credit/Rebill</label>
+            </value>
+            <value>
+                <fullName>Resolved Cust/Vendor</fullName>
+                <default>false</default>
+                <label>Resolved Cust/Vendor</label>
+            </value>
+            <value>
+                <fullName>Resolved Legal</fullName>
+                <default>false</default>
+                <label>Resolved Legal</label>
+            </value>
+            <value>
+                <fullName>Resolved no PO</fullName>
+                <default>false</default>
+                <label>Resolved no PO</label>
+            </value>
+            <value>
+                <fullName>Resolved NTE</fullName>
+                <default>false</default>
+                <label>Resolved NTE</label>
+            </value>
+            <value>
+                <fullName>Resolved OPA</fullName>
+                <default>false</default>
+                <label>Resolved OPA</label>
+            </value>
+            <value>
+                <fullName>Resolved OPU fund</fullName>
+                <default>false</default>
+                <label>Resolved OPU fund</label>
+            </value>
+            <value>
+                <fullName>Resolved Payplan</fullName>
+                <default>false</default>
+                <label>Resolved Payplan</label>
+            </value>
+            <value>
+                <fullName>Resolved PO add line</fullName>
+                <default>false</default>
+                <label>Resolved PO add line</label>
+            </value>
+            <value>
+                <fullName>Resolved PO exceeds</fullName>
+                <default>false</default>
+                <label>Resolved PO exceeds</label>
+            </value>
+            <value>
+                <fullName>Resolved PO Expired</fullName>
+                <default>false</default>
+                <label>Resolved PO Expired</label>
+            </value>
+            <value>
+                <fullName>Resolved PO Line Correction</fullName>
+                <default>false</default>
+                <label>Resolved PO Line Correction</label>
+            </value>
+            <value>
+                <fullName>Resolved Price Dispute</fullName>
+                <default>false</default>
+                <label>Resolved Price Dispute</label>
+            </value>
+            <value>
+                <fullName>Resolved Retainage</fullName>
+                <default>false</default>
+                <label>Resolved Retainage</label>
+            </value>
+            <value>
+                <fullName>Resolved Service Dispute</fullName>
+                <default>false</default>
+                <label>Resolved Service Dispute</label>
+            </value>
+            <value>
+                <fullName>Resolved Shortpay</fullName>
+                <default>false</default>
+                <label>Resolved Shortpay</label>
+            </value>
+            <value>
+                <fullName>Resolved Underfund</fullName>
+                <default>false</default>
+                <label>Resolved Underfund</label>
+            </value>
+            <value>
+                <fullName>Resolved wrong PO</fullName>
+                <default>false</default>
+                <label>Resolved wrong PO</label>
+            </value>
+            <value>
+                <fullName>Retainage</fullName>
+                <default>false</default>
+                <label>Retainage</label>
+            </value>
+            <value>
+                <fullName>Service Dispute</fullName>
+                <default>false</default>
+                <label>Service Dispute</label>
+            </value>
+            <value>
+                <fullName>Short Paid item</fullName>
+                <default>false</default>
+                <label>Short Paid item</label>
+            </value>
+            <value>
+                <fullName>SK Pd To CHES In Error</fullName>
+                <default>false</default>
+                <label>SK Pd To CHES In Error</label>
+            </value>
+            <value>
+                <fullName>SK yellow</fullName>
+                <default>false</default>
+                <label>SK yellow</label>
+            </value>
+            <value>
+                <fullName>Teris 3rd Party Cert of Destruction</fullName>
+                <default>false</default>
+                <label>Teris 3rd Party Cert of Destruction</label>
+            </value>
+            <value>
+                <fullName>Teris Bankruptcy</fullName>
+                <default>false</default>
+                <label>Teris Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Teris Cert Required</fullName>
+                <default>false</default>
+                <label>Teris Cert Required</label>
+            </value>
+            <value>
+                <fullName>Teris Chargeback/Deduction</fullName>
+                <default>false</default>
+                <label>Teris Chargeback/Deduction</label>
+            </value>
+            <value>
+                <fullName>Teris Credit and Rebill</fullName>
+                <default>false</default>
+                <label>Teris Credit and Rebill</label>
+            </value>
+            <value>
+                <fullName>Teris Cust Vend</fullName>
+                <default>false</default>
+                <label>Teris Cust Vend</label>
+            </value>
+            <value>
+                <fullName>Teris Dispute Combined Invoice</fullName>
+                <default>false</default>
+                <label>Teris Dispute Combined Invoice</label>
+            </value>
+            <value>
+                <fullName>Teris Dispute Lawyer Letter</fullName>
+                <default>false</default>
+                <label>Teris Dispute Lawyer Letter</label>
+            </value>
+            <value>
+                <fullName>Teris Dispute PO</fullName>
+                <default>false</default>
+                <label>Teris Dispute PO</label>
+            </value>
+            <value>
+                <fullName>Teris Dispute Pricing</fullName>
+                <default>false</default>
+                <label>Teris Dispute Pricing</label>
+            </value>
+            <value>
+                <fullName>Teris Dispute Service</fullName>
+                <default>false</default>
+                <label>Teris Dispute Service</label>
+            </value>
+            <value>
+                <fullName>Teris Item Requiring Recon</fullName>
+                <default>false</default>
+                <label>Teris Item Requiring Recon</label>
+            </value>
+            <value>
+                <fullName>Teris Legal</fullName>
+                <default>false</default>
+                <label>Teris Legal</label>
+            </value>
+            <value>
+                <fullName>Teris Shortpay</fullName>
+                <default>false</default>
+                <label>Teris Shortpay</label>
+            </value>
+            <value>
+                <fullName>Unresolved</fullName>
+                <default>false</default>
+                <label>Unresolved</label>
+            </value>
+            <value>
+                <fullName>Working Capital Adj</fullName>
+                <default>false</default>
+                <label>Working Capital Adj</label>
+            </value>
+            <value>
+                <fullName>Worksheet Unsigned/Unapproved</fullName>
+                <default>false</default>
+                <label>Worksheet Unsigned/Unapproved</label>
+            </value>
+            <value>
+                <fullName>Wrong PO Obtained</fullName>
+                <default>false</default>
+                <label>Wrong PO Obtained</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

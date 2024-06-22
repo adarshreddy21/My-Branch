@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallow_to_Enter_Without_Shipping_addrs</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   NOT(ISPICKVAL( Status__c , &apos;Inactive&apos;)), 
+   Win_Validate_New__c=True,
+   NOT(ISCHANGED(Active_ER_Contract__c)),
+   NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+   OR(
+   ISBLANK(ShippingCity),
+   ISBLANK(ShippingState),
+   ISBLANK(ShippingPostalCode),
+   ISBLANK(ShippingCountry),
+   ISBLANK(ShippingStreet)
+   ),
+   Toggle_Me_to_Bypass_Validation__c=false
+   )</errorConditionFormula>
+    <errorDisplayField>ShippingCountry</errorDisplayField>
+    <errorMessage>Missing Corporate Address information. Corporate Street, City, State, ZIP and Country are mandatory for Win validation</errorMessage>
+</ValidationRule>

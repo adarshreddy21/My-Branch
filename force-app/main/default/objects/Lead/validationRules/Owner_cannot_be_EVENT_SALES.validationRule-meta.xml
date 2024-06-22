@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_cannot_be_EVENT_SALES</fullName>
+    <active>true</active>
+    <description>Owner cannot be USEVENT SALES US</description>
+    <errorConditionFormula>CONTAINS(Owner:User.Person_Name__c,&quot;EVENT&quot;)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Cannot change owner to Event Sales since this is not a real person</errorMessage>
+</ValidationRule>

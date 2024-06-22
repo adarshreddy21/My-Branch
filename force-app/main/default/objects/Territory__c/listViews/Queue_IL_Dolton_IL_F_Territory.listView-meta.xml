@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_IL_Dolton_IL_F_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : IL - Dolton, IL F</label>
+    <queue>Queue_IL_Dolton_IL_F</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

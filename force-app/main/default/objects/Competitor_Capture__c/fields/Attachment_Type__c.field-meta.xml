@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Type__c</fullName>
+    <description>Attachment on file</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of attachment you will attach to this entry. If no attachment, select none. Attach on the next screen after Save</inlineHelpText>
+    <label>Attachment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Government Bid Tabulation</fullName>
+                <default>false</default>
+                <label>Government Bid Tabulation</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Invoice &amp; Product Data Sheet</fullName>
+                <default>false</default>
+                <label>Invoice &amp; Product Data Sheet</label>
+            </value>
+            <value>
+                <fullName>Product Data Sheet</fullName>
+                <default>false</default>
+                <label>Product Data Sheet</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>Proposal &amp; Product Data Sheet</fullName>
+                <default>false</default>
+                <label>Proposal &amp; Product Data Sheet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

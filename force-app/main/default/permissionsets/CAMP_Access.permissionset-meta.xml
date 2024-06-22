@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>CAMP</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>This provides access to the CAMP app for CAM/CASR users. This app was created and deployed in March of 2024 as part of the new home page project.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CAMP Access</label>
+</PermissionSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_NLI_Long_Island_Territory</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : NLI - Long Island</label>
+    <queue>Queue_NLI_Long_Island</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Quote_Completed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When the TPM quote is completed in WIN the quote creator checks this box</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the TPM quote is completed in WIN the quote creator checks this box</inlineHelpText>
+    <label>Quote Completed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Primary_Business__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Primary Business</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clean Harbors</fullName>
+                <default>false</default>
+                <label>Clean Harbors</label>
+            </value>
+            <value>
+                <fullName>Safety Kleen / BPS</fullName>
+                <default>false</default>
+                <label>Safety Kleen / BPS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

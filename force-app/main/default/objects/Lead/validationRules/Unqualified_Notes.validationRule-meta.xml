@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Notes</fullName>
+    <active>true</active>
+    <description>Require notes when lead is unqualified and reason is other</description>
+    <errorConditionFormula>and(isblank( Unqualified_Notes__c),  text(Unqualified_Reason__c) = &quot;Other (requires comment)&quot;, $Profile.Name &lt;&gt; &quot;Integration&quot;,$Profile.Name &lt;&gt; &quot;Salesforce API Only System Integrations&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorDisplayField>Unqualified_Notes__c</errorDisplayField>
+    <errorMessage>When you select an Unqualified Reason = Other you must explain under unqualified notes explaining the reason.</errorMessage>
+</ValidationRule>

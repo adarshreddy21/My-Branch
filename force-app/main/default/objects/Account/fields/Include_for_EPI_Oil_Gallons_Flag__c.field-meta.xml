@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Include_for_EPI_Oil_Gallons_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ( isblank(Key_Account_Name__c),true,
+IF(RecordType.Name = &apos;Customer Location&apos;, Parent.Parent.Include_for_EPI_Oil_Gallons__c , 
+IF(RecordType.Name = &apos;Customer&apos;, Parent.Include_for_EPI_Oil_Gallons__c,
+IF(RecordType.Name = &apos;Chain&apos;, Include_for_EPI_Oil_Gallons__c,
+False))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Include for EPI Oil Gallons Flag</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

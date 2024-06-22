@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Type__c</fullName>
+    <description>Storage Type customer is using</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Storage Type customer is using</inlineHelpText>
+    <label>Storage Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Packaging__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tote</fullName>
+                <default>false</default>
+                <label>Tote</label>
+            </value>
+            <value>
+                <fullName>Tote &amp; Pump</fullName>
+                <default>false</default>
+                <label>Tote &amp; Pump</label>
+            </value>
+            <value>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <label>Tank</label>
+            </value>
+            <value>
+                <fullName>Tank &amp; Pump</fullName>
+                <default>false</default>
+                <label>Tank &amp; Pump</label>
+            </value>
+            <value>
+                <fullName>Pump</fullName>
+                <default>false</default>
+                <label>Pump</label>
+            </value>
+            <value>
+                <fullName>4x5 Quart</fullName>
+                <default>false</default>
+                <label>4x5 Quart</label>
+            </value>
+            <value>
+                <fullName>12X1 Quart</fullName>
+                <default>false</default>
+                <label>12X1 Quart</label>
+            </value>
+            <value>
+                <fullName>Customer Owned Tanks</fullName>
+                <default>false</default>
+                <label>Customer Owned Tanks</label>
+            </value>
+            <value>
+                <fullName>55 Gallon Drum</fullName>
+                <default>false</default>
+                <label>55 Gallon Drum</label>
+            </value>
+            <value>
+                <fullName>10x1 Tube</fullName>
+                <default>false</default>
+                <label>10x1 Tube</label>
+            </value>
+            <value>
+                <fullName>5 Gallon</fullName>
+                <default>false</default>
+                <label>5 Gallon</label>
+            </value>
+            <value>
+                <fullName>16 Gallon</fullName>
+                <default>false</default>
+                <label>16 Gallon</label>
+            </value>
+            <value>
+                <fullName>35 Gallon</fullName>
+                <default>false</default>
+                <label>35 Gallon</label>
+            </value>
+            <value>
+                <fullName>4x1G</fullName>
+                <default>false</default>
+                <label>4x1G</label>
+            </value>
+            <value>
+                <fullName>6x1 Quart</fullName>
+                <default>false</default>
+                <label>6x1 Quart</label>
+            </value>
+            <value>
+                <fullName>2X2.5G</fullName>
+                <default>false</default>
+                <label>2X2.5G</label>
+            </value>
+            <value>
+                <fullName>Bag in Box 6G</fullName>
+                <default>false</default>
+                <label>Bag in Box 6G</label>
+            </value>
+            <value>
+                <fullName>Bag in Box 5G</fullName>
+                <default>false</default>
+                <label>Bag in Box 5G</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Tote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Tote &amp; Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Tank &amp; Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bulk</controllingFieldValue>
+            <valueName>Customer Owned Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>4x5 Quart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>12X1 Quart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>10x1 Tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>4x1G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>6x1 Quart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>2X2.5G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>Bag in Box 6G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Case</controllingFieldValue>
+            <valueName>Bag in Box 5G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drum</controllingFieldValue>
+            <valueName>55 Gallon Drum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pail</controllingFieldValue>
+            <valueName>5 Gallon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Keg</controllingFieldValue>
+            <valueName>16 Gallon</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

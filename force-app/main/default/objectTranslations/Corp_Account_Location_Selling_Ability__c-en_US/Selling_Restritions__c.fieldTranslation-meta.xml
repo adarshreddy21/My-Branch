@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Selling_Restritions__c</name>
+    <picklistValues>
+        <masterLabel>Locally Negotiated Pricing with KAM Approval</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locally negotiated. No restrictions. No CAM approval required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Must use MSA, National Price Card, or Zone Pricing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Selling Locally</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No proactive selling but approved to provide if requested by customer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

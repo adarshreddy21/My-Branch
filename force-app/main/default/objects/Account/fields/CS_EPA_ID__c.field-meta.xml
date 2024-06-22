@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_EPA_ID__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The following fields are required in order to validate the EPA Id in addition to the EPA Id field. 
+-Corporate Street 
+-Corporate State 
+-Corporate Country 
+-Generator Status 
+-Primary Service Provider</inlineHelpText>
+    <label>EPA ID</label>
+    <length>15</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

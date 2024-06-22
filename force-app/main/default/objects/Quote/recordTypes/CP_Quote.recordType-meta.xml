@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CP_Quote</fullName>
+    <active>true</active>
+    <label>CP Quote</label>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

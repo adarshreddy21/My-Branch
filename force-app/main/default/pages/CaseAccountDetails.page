@@ -1,0 +1,36 @@
+<apex:page standardController="Account" sidebar="false" showHeader="false">
+    <apex:sectionHeader title="Account" subtitle="{!account.name}"  />
+    <apex:form >
+        <apex:pageBlock mode="maindetail" >
+            <apex:pageBlockSection collapsible="false" columns="1" title="Details" >               
+                <apex:outputField value="{!Account.Name}"/>
+                <apex:outputField value="{!Account.Ownerid}"/>
+                <apex:outputField value="{!Account.Key_Account_Name__c}"/>
+                <apex:outputField value="{!Account.Key_Account_Owner__c}"/>
+                <apex:outputField value="{!Account.Type}"/>
+                <apex:outputField value="{!Account.Business_Type__c}"/>
+                <apex:outputField value="{!Account.Rank__c}"/>
+                <apex:outputField value="{!Account.Industry_Segment__c}"/>
+                <apex:outputField value="{!Account.Class__c}"/>
+                <apex:outputField value="{!Account.Sic}"/>
+                <apex:outputField value="{!Account.Chain__c}"/>
+                <apex:outputField value="{!Account.Division__c}"/>
+                <apex:OutputField value="{!Account.Site_ID__c}"/>
+                <apex:outputField value="{!Account.CS_EPA_ID__c}"/>
+                <apex:outputField value="{!Account.State_EPA_ID__c}"/>
+                <apex:outputField value="{!Account.Generator_Status__c}"/>
+                <apex:outputField value="{!Account.GENREG__c}"/>
+                <apex:outputField value="{!Account.iSell__OSKeyID__c}"/>                
+                <apex:outputField value="{!Account.AVID_Not_found__c}"/>
+                <apex:outputField value="{!Account.Language__c}"/>
+                <apex:outputField label="Account Record Type" value="{!Account.RecordType.Name}"/>
+                <apex:outputField value="{!account.CurrencyIsoCode}"/>
+                <apex:outputField value="{!account.phone}"/>
+                <apex:outputField value="{!Account.Account_Status__c}"/>
+                <apex:outputField value="{!Account.Status__c}"/>                                
+                <apex:outputField value="{!Account.Validation_last_requested_by__c}"/>
+                <apex:outputField value="{!Account.Validation_last_requested_date__c}"/>
+         </apex:pageBlockSection>                
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

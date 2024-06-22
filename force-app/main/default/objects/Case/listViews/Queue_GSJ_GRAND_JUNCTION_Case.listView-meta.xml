@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_GSJ_GRAND_JUNCTION_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: GSJ-GRAND JUNCTION</label>
+    <queue>Queue_GSJ_GRAND_JUNCTION</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

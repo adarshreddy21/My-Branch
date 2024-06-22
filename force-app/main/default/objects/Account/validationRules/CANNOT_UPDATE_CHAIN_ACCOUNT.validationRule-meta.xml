@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CANNOT_UPDATE_CHAIN_ACCOUNT</fullName>
+    <active>true</active>
+    <description>Prevents anyone besides an administrative user from updating a Chain account.</description>
+    <errorConditionFormula>AND(
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT($Permission.Skip_Validations_for_Super_Users_cp),
+NOT($Profile.Name = &quot;SK Key Acct Support Mgmt&quot;),
+NOT($Profile.Name = &quot;Developer&quot;),
+AND(RecordType.Name = &quot;Chain&quot;),
+NOT(ISCHANGED( Main_Contact_Verified_Date__c )),
+NOT(ISCHANGED( AP_Contact_Verified_Date__c )),
+NOT(ISCHANGED( PO_Contact_Verified_Date__c ))
+)</errorConditionFormula>
+    <errorMessage>Validation rules restricts users besides admins from updating chain accounts.</errorMessage>
+</ValidationRule> 

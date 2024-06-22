@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Skip_Validations_for_Super_users_cp</name>
+    </customPermissions>
+    <description>This permission set is used to skip validations for super users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Skip Validations for Super users</label>
+</PermissionSet>

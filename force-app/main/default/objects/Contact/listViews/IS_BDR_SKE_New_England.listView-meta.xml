@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_BDR_SKE_New_England</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>WIN_ID__c</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>Do_Not_Contact__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Account.Primary_Aurora_Branch_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Account.Class__c</columns>
+    <columns>Account.Industry_Segment__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Mine</filterScope>
+    <label>IS - BDR SKE New England</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>Call_Center_Agents</group>
+        <roleAndSubordinates>SK_INS_SD_Call_Center_Inbound_Sales</roleAndSubordinates>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_To_Credit_Status__c</fullName>
+    <description>Displays credit status of co-linked Customer</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Parent.Credit_Status__c) = &quot;Hold&quot;, 
+IMAGE(&quot;https://cleanharbors--c.na54.content.force.com/servlet/servlet.FileDownload?file=0150a000002ebac&quot;, &quot;Hold&quot;), 
+TEXT(Parent.Credit_Status__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays credit status of co-linked Customer Account (Bill To).</inlineHelpText>
+    <label>Bill To Credit Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

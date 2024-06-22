@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Quote_Turnaround_Time__c</fullName>
+    <description>Time it took from requesting a TPM quote until it was completed</description>
+    <externalId>false</externalId>
+    <formula>if(
+AND (isblank(TPM_Quote_Completed_Date__c), NOT (Inventory_Attached__c) ), ROUND(Now() - TPM_Quote_Requested_Date__c,0) ,
+if (
+AND (isblank(TPM_Quote_Completed_Date__c), Inventory_Attached__c, TPM_Quote_Requested_Date__c &lt; Inventory_Date__c), ROUND(Now() - Inventory_Date__c,0) ,
+if (
+AND (isblank(TPM_Quote_Completed_Date__c), Inventory_Attached__c, TPM_Quote_Requested_Date__c  &gt;=  Inventory_Date__c), ROUND(Now() - TPM_Quote_Requested_Date__c,0) ,
+if (
+AND (NOT(isblank(TPM_Quote_Completed_Date__c)), Inventory_Attached__c, TPM_Quote_Requested_Date__c &lt; Inventory_Date__c, TPM_Quote_Completed_Date__c &gt; Inventory_Date__c ), ROUND(TPM_Quote_Completed_Date__c  - Inventory_Date__c,0) ,
+(TPM_Quote_Completed_Date__c - TPM_Quote_Requested_Date__c)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Time it took from requesting a TPM quote until it was completed. Restarts when inventory gets attached</inlineHelpText>
+    <label>Quote Turnaround Time</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

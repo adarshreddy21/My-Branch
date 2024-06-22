@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call A/P</fullName>
+                <default>false</default>
+                <label>Call A/P</label>
+            </value>
+            <value>
+                <fullName>Call Eng.</fullName>
+                <default>false</default>
+                <label>Call Eng.</label>
+            </value>
+            <value>
+                <fullName>Call Other Contact</fullName>
+                <default>false</default>
+                <label>Call Other Contact</label>
+            </value>
+            <value>
+                <fullName>Confirm Inv. Recpt</fullName>
+                <default>false</default>
+                <label>Confirm Inv. Recpt</label>
+            </value>
+            <value>
+                <fullName>Contact CH Employee</fullName>
+                <default>false</default>
+                <label>Contact CH Employee</label>
+            </value>
+            <value>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+                <label>Left Message</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Re-sent Debit Memo</fullName>
+                <default>false</default>
+                <label>Re-sent Debit Memo</label>
+            </value>
+            <value>
+                <fullName>Re-sent Invoice</fullName>
+                <default>false</default>
+                <label>Re-sent Invoice</label>
+            </value>
+            <value>
+                <fullName>Sent Debit Memo</fullName>
+                <default>false</default>
+                <label>Sent Debit Memo</label>
+            </value>
+            <value>
+                <fullName>Sent E-Mail</fullName>
+                <default>false</default>
+                <label>Sent E-Mail</label>
+            </value>
+            <value>
+                <fullName>Sent Fax</fullName>
+                <default>false</default>
+                <label>Sent Fax</label>
+            </value>
+            <value>
+                <fullName>Sent Invoice</fullName>
+                <default>false</default>
+                <label>Sent Invoice</label>
+            </value>
+            <value>
+                <fullName>Verified Payment</fullName>
+                <default>false</default>
+                <label>Verified Payment</label>
+            </value>
+            <value>
+                <fullName>Verify w/ Agency</fullName>
+                <default>false</default>
+                <label>Verify w/ Agency</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

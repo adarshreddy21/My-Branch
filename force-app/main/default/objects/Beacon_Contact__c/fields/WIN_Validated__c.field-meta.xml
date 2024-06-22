@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WIN_Validated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A boolean flag which determines if the record is validated based on WIN Complaint rules. All records with value as TRUE are then extracted by Beacon for downstream processing.</description>
+    <externalId>false</externalId>
+    <label>WIN Validated?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

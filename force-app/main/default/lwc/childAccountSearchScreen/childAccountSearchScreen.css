@@ -1,0 +1,34 @@
+.headersizemedium{
+  font-size: 1.25rem;
+}
+.center {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.paddingtop {
+  padding-top: 19px;
+}
+.shippingaddress
+{
+  border : none !important;
+}
+.accLabel
+{
+  --slds-c-accordion-summary-color-background : rgb(243,243,243);
+  --slds-c-accordion-summary-radius-border : 0.5rem;
+}
+.displayinline
+{
+display: inline-block;
+}
+.fontbold{
+font-weight: bold;
+font-size: large;
+}
+.custom-heading {
+  font-size: 14px;
+}
+
+.bold-text {
+  font-weight: bold;
+}

@@ -1,0 +1,11 @@
+<template>
+    <template if:true={isRecordLocked}>
+        <lightning-card>
+            <p class="slds-p-horizontal_small recordLockedMsg">
+                The record has been locked 
+                <lightning-button-icon size="large" class="lock-btn" icon-name="utility:lock" variant="bare" alternative-text="Lock" title="Lock" >
+                </lightning-button-icon>
+            </p>
+        </lightning-card>
+    </template>
+</template>

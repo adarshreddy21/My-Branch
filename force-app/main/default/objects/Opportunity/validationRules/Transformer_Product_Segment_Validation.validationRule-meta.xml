@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transformer_Product_Segment_Validation</fullName>
+    <active>true</active>
+    <description>Require people with Transformer profiles to update product segment. It cannot be blank.</description>
+    <errorConditionFormula>and($Profile.Name = &apos;Transformer Services&apos;,  isblank(text(Transformer_Product_Segment__c)))</errorConditionFormula>
+    <errorDisplayField>Transformer_Product_Segment__c</errorDisplayField>
+    <errorMessage>Transformer Product Segment cannot be blank.</errorMessage>
+</ValidationRule>

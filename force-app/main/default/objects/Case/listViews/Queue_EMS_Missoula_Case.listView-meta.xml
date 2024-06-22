@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_EMS_Missoula_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: EMS-Missoula</label>
+    <queue>Queue_EMS_Missoula</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

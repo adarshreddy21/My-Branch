@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution__c</fullName>
+    <description>Description of Resolution</description>
+    <externalId>false</externalId>
+    <label>Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Call_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Branch Transfer</fullName>
+                <default>false</default>
+                <label>Branch Transfer</label>
+            </value>
+            <value>
+                <fullName>Cancelled Ecommerce Order</fullName>
+                <default>false</default>
+                <label>Cancelled Ecommerce Order</label>
+            </value>
+            <value>
+                <fullName>Confirmed Schedule</fullName>
+                <default>false</default>
+                <label>Confirmed Schedule – Updated Order Notes</label>
+            </value>
+            <value>
+                <fullName>Contacted Existing Lead Owner</fullName>
+                <default>false</default>
+                <label>Contacted Existing Lead Owner</label>
+            </value>
+            <value>
+                <fullName>Corporate Accounts Transfer</fullName>
+                <default>false</default>
+                <label>Corporate Accounts Transfer</label>
+            </value>
+            <value>
+                <fullName>Created Lead</fullName>
+                <default>false</default>
+                <label>Created Lead</label>
+            </value>
+            <value>
+                <fullName>Created Lead – Internal Price Comparison</fullName>
+                <default>false</default>
+                <label>Created Lead – Internal Price Comparison</label>
+            </value>
+            <value>
+                <fullName>Created Opportunity</fullName>
+                <default>false</default>
+                <label>Created Opportunity</label>
+            </value>
+            <value>
+                <fullName>Created Order</fullName>
+                <default>false</default>
+                <label>Created Order</label>
+            </value>
+            <value>
+                <fullName>Sent Order to HH</fullName>
+                <default>false</default>
+                <label>Created Order – Sent to HH</label>
+            </value>
+            <value>
+                <fullName>Created Repair Service Ticket</fullName>
+                <default>false</default>
+                <label>Created Repair Service Ticket</label>
+            </value>
+            <value>
+                <fullName>Created Service Ticket</fullName>
+                <default>false</default>
+                <label>Created Service Ticket</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Team Transfer</fullName>
+                <default>false</default>
+                <label>Ecommerce Team Transfer</label>
+            </value>
+            <value>
+                <fullName>Existing Order - Rescheduled</fullName>
+                <default>false</default>
+                <label>Existing Order - Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Existing Order - Rescheduled &amp; Sent to HH</fullName>
+                <default>false</default>
+                <label>Existing Order - Rescheduled &amp; Sent to HH</label>
+            </value>
+            <value>
+                <fullName>Rescheduled Order</fullName>
+                <default>false</default>
+                <label>Existing Order - Sent to HH</label>
+            </value>
+            <value>
+                <fullName>Inquiry Processed</fullName>
+                <default>false</default>
+                <label>Inquiry Processed</label>
+            </value>
+            <value>
+                <fullName>Inside Sales Transfer</fullName>
+                <default>false</default>
+                <label>Inside Sales Transfer</label>
+            </value>
+            <value>
+                <fullName>Invalid EPA #</fullName>
+                <default>false</default>
+                <label>Invalid EPA #</label>
+            </value>
+            <value>
+                <fullName>Issued RMA</fullName>
+                <default>false</default>
+                <label>Issued RMA</label>
+            </value>
+            <value>
+                <fullName>Loss</fullName>
+                <default>false</default>
+                <label>Loss</label>
+            </value>
+            <value>
+                <fullName>Loyalty Queue Transfer</fullName>
+                <default>false</default>
+                <label>Loyalty Queue Transfer</label>
+            </value>
+            <value>
+                <fullName>Loyalty Team Transfer</fullName>
+                <default>false</default>
+                <label>Loyalty Team Transfer</label>
+            </value>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>No Order Created-Pending Info</fullName>
+                <default>false</default>
+                <label>No Order Created-Pending Info</label>
+            </value>
+            <value>
+                <fullName>Pending INV Dispute</fullName>
+                <default>false</default>
+                <label>Pending INV Dispute</label>
+            </value>
+            <value>
+                <fullName>Price Check</fullName>
+                <default>false</default>
+                <label>Price Check</label>
+            </value>
+            <value>
+                <fullName>Refused to give PO</fullName>
+                <default>false</default>
+                <label>Refused to give PO</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>Save</fullName>
+                <default>false</default>
+                <label>Save</label>
+            </value>
+            <value>
+                <fullName>Scheduled Service Not Needed – Updated Order Notes</fullName>
+                <default>false</default>
+                <label>Scheduled Service Not Needed – Updated Order Notes</label>
+            </value>
+            <value>
+                <fullName>Svc/Prod added to existing order</fullName>
+                <default>false</default>
+                <label>Svc/Prod added to existing order</label>
+            </value>
+            <value>
+                <fullName>Update PO</fullName>
+                <default>false</default>
+                <label>Update PO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Return - Missing or broken parts</controllingFieldValue>
+            <controllingFieldValue>Return - Bought by mistake</controllingFieldValue>
+            <controllingFieldValue>Return - Wrong item was sent</controllingFieldValue>
+            <controllingFieldValue>Return - Didn&apos;t approve purchase</controllingFieldValue>
+            <controllingFieldValue>Order - Cancel</controllingFieldValue>
+            <controllingFieldValue>Order - Edit</controllingFieldValue>
+            <controllingFieldValue>Order - Missing</controllingFieldValue>
+            <controllingFieldValue>Return - Inaccurate website description</controllingFieldValue>
+            <controllingFieldValue>Return - Product and shipping box both damaged</controllingFieldValue>
+            <controllingFieldValue>Return - Product damaged, but shipping box OK</controllingFieldValue>
+            <controllingFieldValue>Return - Item defective or doesn&apos;t work</controllingFieldValue>
+            <controllingFieldValue>Return - Received extra item I didn&apos;t buy (no refund needed)</controllingFieldValue>
+            <controllingFieldValue>Return - Better price available</controllingFieldValue>
+            <controllingFieldValue>Return - Item arrived too late</controllingFieldValue>
+            <valueName>Cancelled Ecommerce Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return - Missing or broken parts</controllingFieldValue>
+            <controllingFieldValue>Return - Bought by mistake</controllingFieldValue>
+            <controllingFieldValue>Return - Wrong item was sent</controllingFieldValue>
+            <controllingFieldValue>Return - Didn&apos;t approve purchase</controllingFieldValue>
+            <controllingFieldValue>Order - Cancel</controllingFieldValue>
+            <controllingFieldValue>Order - Edit</controllingFieldValue>
+            <controllingFieldValue>Order - Missing</controllingFieldValue>
+            <controllingFieldValue>Return - Inaccurate website description</controllingFieldValue>
+            <controllingFieldValue>Return - Product and shipping box both damaged</controllingFieldValue>
+            <controllingFieldValue>Return - Product damaged, but shipping box OK</controllingFieldValue>
+            <controllingFieldValue>Return - Item defective or doesn&apos;t work</controllingFieldValue>
+            <controllingFieldValue>Return - Received extra item I didn&apos;t buy (no refund needed)</controllingFieldValue>
+            <controllingFieldValue>Return - Better price available</controllingFieldValue>
+            <controllingFieldValue>Return - Item arrived too late</controllingFieldValue>
+            <valueName>Ecommerce Team Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return - Missing or broken parts</controllingFieldValue>
+            <controllingFieldValue>Return - Bought by mistake</controllingFieldValue>
+            <controllingFieldValue>Return - Wrong item was sent</controllingFieldValue>
+            <controllingFieldValue>Return - Didn&apos;t approve purchase</controllingFieldValue>
+            <controllingFieldValue>Order - Cancel</controllingFieldValue>
+            <controllingFieldValue>Order - Edit</controllingFieldValue>
+            <controllingFieldValue>Order - Missing</controllingFieldValue>
+            <controllingFieldValue>Return - Inaccurate website description</controllingFieldValue>
+            <controllingFieldValue>Return - Product and shipping box both damaged</controllingFieldValue>
+            <controllingFieldValue>Return - Product damaged, but shipping box OK</controllingFieldValue>
+            <controllingFieldValue>Return - Item defective or doesn&apos;t work</controllingFieldValue>
+            <controllingFieldValue>Return - Received extra item I didn&apos;t buy (no refund needed)</controllingFieldValue>
+            <controllingFieldValue>Return - Better price available</controllingFieldValue>
+            <controllingFieldValue>Return - Item arrived too late</controllingFieldValue>
+            <valueName>Issued RMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal Dept Transfer</controllingFieldValue>
+            <controllingFieldValue>Order Delivery Status</controllingFieldValue>
+            <controllingFieldValue>Product Inquiry</controllingFieldValue>
+            <controllingFieldValue>Login Issues</controllingFieldValue>
+            <controllingFieldValue>Branch Personnel Transfer</controllingFieldValue>
+            <controllingFieldValue>Ecommerce Account Issue</controllingFieldValue>
+            <controllingFieldValue>Employment Verification</controllingFieldValue>
+            <controllingFieldValue>Service Dispute</controllingFieldValue>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <controllingFieldValue>Payment Processed</controllingFieldValue>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <controllingFieldValue>Account Balance Request</controllingFieldValue>
+            <controllingFieldValue>Fee</controllingFieldValue>
+            <controllingFieldValue>Auto-Recording</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>COI</controllingFieldValue>
+            <controllingFieldValue>Contract Copy</controllingFieldValue>
+            <controllingFieldValue>Labels</controllingFieldValue>
+            <controllingFieldValue>AR</controllingFieldValue>
+            <controllingFieldValue>Invoice Dispute</controllingFieldValue>
+            <controllingFieldValue>Driver Complaint</controllingFieldValue>
+            <controllingFieldValue>No Sound</controllingFieldValue>
+            <controllingFieldValue>Poor Connection</controllingFieldValue>
+            <controllingFieldValue>Profile Copies</controllingFieldValue>
+            <controllingFieldValue>Telemarketer</controllingFieldValue>
+            <controllingFieldValue>Wrong Number</controllingFieldValue>
+            <controllingFieldValue>Call Disconnected</controllingFieldValue>
+            <controllingFieldValue>Ownership Change</controllingFieldValue>
+            <controllingFieldValue>Emerald Cedar Grove</controllingFieldValue>
+            <controllingFieldValue>Existing Service - ETA</controllingFieldValue>
+            <controllingFieldValue>Customer - Address Change</controllingFieldValue>
+            <controllingFieldValue>Credit Hold</controllingFieldValue>
+            <controllingFieldValue>Troubleshooting</controllingFieldValue>
+            <controllingFieldValue>Customer - Provide PO#</controllingFieldValue>
+            <controllingFieldValue>Invoice or Signed Service Receipt</controllingFieldValue>
+            <controllingFieldValue>Manifest Copies</controllingFieldValue>
+            <controllingFieldValue>SDS Safety Data Sheets</controllingFieldValue>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <controllingFieldValue>Credit / Invoice Issue</controllingFieldValue>
+            <controllingFieldValue>ER</controllingFieldValue>
+            <controllingFieldValue>Suspend Service</controllingFieldValue>
+            <controllingFieldValue>Recovery/Manifest Fee</controllingFieldValue>
+            <controllingFieldValue>W9</controllingFieldValue>
+            <controllingFieldValue>Waste Report</controllingFieldValue>
+            <valueName>Inquiry Processed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Delivery Status</controllingFieldValue>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - ETA</controllingFieldValue>
+            <valueName>Branch Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Delivery Status</controllingFieldValue>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - ETA</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Confirmed Schedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Inquiry</controllingFieldValue>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Inside Sales Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Corporate Accounts Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <valueName>Loyalty Queue Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pull / Cancel Service</controllingFieldValue>
+            <valueName>Loyalty Team Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>No Answer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>Pending INV Dispute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>Refused to give PO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PO</controllingFieldValue>
+            <valueName>Update PO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Contacted Existing Lead Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Created Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Price Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Customer</controllingFieldValue>
+            <valueName>Residential</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Created Lead – Internal Price Comparison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <valueName>Created Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Customer</controllingFieldValue>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Invalid EPA #</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment Repair</controllingFieldValue>
+            <valueName>Created Repair Service Ticket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Better Competitor Price</controllingFieldValue>
+            <controllingFieldValue>Change In Ownership</controllingFieldValue>
+            <controllingFieldValue>Customer Cost Reduction</controllingFieldValue>
+            <controllingFieldValue>Delinquent Account</controllingFieldValue>
+            <controllingFieldValue>Out of Business</controllingFieldValue>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <controllingFieldValue>Reduced Cleaning Needs</controllingFieldValue>
+            <controllingFieldValue>Repeat Call</controllingFieldValue>
+            <valueName>Loss</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Better Competitor Price</controllingFieldValue>
+            <controllingFieldValue>Change In Ownership</controllingFieldValue>
+            <controllingFieldValue>Customer Cost Reduction</controllingFieldValue>
+            <controllingFieldValue>Delinquent Account</controllingFieldValue>
+            <controllingFieldValue>Out of Business</controllingFieldValue>
+            <controllingFieldValue>Poor Service</controllingFieldValue>
+            <controllingFieldValue>Reduced Cleaning Needs</controllingFieldValue>
+            <controllingFieldValue>Repeat Call</controllingFieldValue>
+            <valueName>Save</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <controllingFieldValue>Order - Schedule</controllingFieldValue>
+            <valueName>Created Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <valueName>Created Service Ticket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Existing Order - Rescheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>No Order Created-Pending Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Scheduled Service Not Needed – Updated Order Notes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service</controllingFieldValue>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Svc/Prod added to existing order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Sent Order to HH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Existing Order - Rescheduled &amp; Sent to HH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Existing Service - UMO</controllingFieldValue>
+            <valueName>Rescheduled Order</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

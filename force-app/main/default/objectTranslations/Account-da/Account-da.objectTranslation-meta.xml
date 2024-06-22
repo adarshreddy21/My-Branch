@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Satisfaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Satisfaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Customer Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zip Code Coverage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Customer Layout-New</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Customer Location Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zip Code Coverage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Customer Location Layout-New</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Branch Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Branch Assignment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Branch Operations Rollup</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Broker Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insite Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Broker Location Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Audit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Business Development Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Chain Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Misc Account Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corporate Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Alert</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Dashboard</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Chain Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Aurora Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Business Development Market Area</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insite Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SK Customer Satisfaction</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zip Code Coverage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout 021618</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inside Sales Account Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insite Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue &amp; Budget</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste  Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Location Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SK Customer Satisfaction</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zip Code Coverage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Location Layout 021618</layout>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inside Sales Account Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insite Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue &amp; Budget</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Distributor Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PayTo Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Distributor Location Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Growth Budget Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HR Talent Pools</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Organization Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Key Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Receivable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inside Sales Account Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insite Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Revenue &amp; Budget</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Territory Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste  Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SK Broker Location Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Audit Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Account Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Avention</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beacon System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Business Development Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Manifest Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Waste Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Account_Details</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Account_Details_Cmp</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Account_Details_Gen_Links</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Account_Gen_Details</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Convert_To_Cust</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Delete</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Inactivate_Account</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>LCC_New_Location</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Log_Activity</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Payment</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Reactivate_Account</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TestAction</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdateAccount</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>powerpage</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Branch</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Broker</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Broker_Location</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Chain</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Corporate</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Corporate_Retired</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer_Chain</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Customer_Location</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Distributor</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Distributor_Location</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Facility</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Growth_Budget</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>HR_Talent_Pools</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Key_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Prospect</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Prospect_Gen</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>RFOO</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Account_Name_50_Character_Max</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Account_Name_Greater_Than_2_Characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Account_Name_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Alternate_Address_Expired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Avention_ID_not_Found</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BILLING_STATE_ABBREVIATION</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BILLING_ZIP_LENGTH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Branch_Cannot_be_Updated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_ARCHIVED_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_BRANCH_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_CHAIN_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_CORPORATE_ACCOUNT_KAM_MGR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_CORPORATE_ACCOUNT_NAME</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CANNOT_UPDATE_KAM_SUPPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CREDIT_STATUS_UPDATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CREDIT_TERMS_UPDATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CYCLE_AND_WINID_UPDATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_Edit_Account_Source_with_WIN_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_change_status_to_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Cannot_modify_Billing_Adress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Corporate_accounts_are_not_parent_of_Key</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Country_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Disallow_record_type_change_to_Rgn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Disallow_to_enter_for_repeat_Phn_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Disallowing_to_change_Parent_in_child</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>EXPIRED_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>EXPIRED_DATE_AND_LOST_TO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fax_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Fax_Length_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>GENERATOR_STATUS_CANNOT_BE_EDITED</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>GENREG_IS_REQUIRED_FOR_CA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>HR_Organization_Category_Detail_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Hr_Address_Validation_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Inactive_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Lost_Reason_is_Duplicate_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MANIFEST_STATE_ABBREVIATION</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MANIFEST_ZIP_LENGTH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>No_WIN_ID_cannot_Expire</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>OWNER_AND_WINID_UPDATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Operating_Segment_Cannot_be_Updated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PARENT_FOR_BROKER</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PARENT_FOR_CUSTOMER</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PARENT_FOR_DISTRIBUTOR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PAY_TO_POSTAL_ZIP_LENGTH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PAY_TO_POST_STATE_ABBREVIATION</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Phone_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Organization_Status_As_Draft</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SHIPPING_STATE_ABBREVIATION</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SHIPPING_ZIP_LENGTH</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Sic_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Waste_Oil_Flag</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>eBill_Flag_UPDATE</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Bulk_Pickup_Schedule_Requirements</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Drum_Pickup_Schedule_Requirements</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Generator_Profile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Generator_Registration</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Instructions</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Matl_Supplies</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Provincial_Transproter_IDs</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ADDITIONAL_INFO_Restrictions</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Account_Links</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Account_Links_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Beacon_Web</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Chain_Link_Report</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Chained_Children</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Child_Opportunity_Roll_up</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Co_Link_Pipelines</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Co_Link_Report</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Co_Link_Report_button</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Co_Link_Report_link</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Convert_to_Cust</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Convert_to_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Create_Case</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Customer_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Doc_Mgmt_Contract_Bid_Transmittal_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Doc_Mgmt_Legal_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Doc_Mgmt_Retrieve_Doc</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Doc_Mgmt_Upload_Doc</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Drum_Trans_View</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Focal_Point_OM</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Focal_Point_Q2C</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>INFO_Inventory_Management</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>INFO_Milkrun_Zone</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Instructions</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Billing_Requirements</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Billing_Requirements_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Credit</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Credit_Collections_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Credit_Hold_Release_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Custom_Requirements</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Downstream_Fees_and_Trans</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_PO_Requirements</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Profile_Fees</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Profile_Fees_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Recovery_Fees</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Invoice_INFO_Recovery_Fees_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Key_Account_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Key_Account_Customers</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Key_Account_Hierarchy</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Key_Account_Pipelines</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>LOB_Rev_Last_3_Years</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>LOB_Rev_Last_3_Years_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>LOB_Rev_YTD</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>LOB_Revenue_Report_Key</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Launch_Power_Page</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Launch_WIN_Web</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Location_Report</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Log_Activity</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Lookup_CA_Zip</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Lookup_SIC_Codes</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Lookup_US_Zip</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Map_Me</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Margin_IQ_IE_Only</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Location</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Payment</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Power_Page</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Customer_Open_AR_Desktop_Only</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Invoice_History</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Invoice_History_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Open_Sales_Orders_desktop_only</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Sales_Order_History</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Report_Sales_Order_History_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Request_LOBSS_Assignment</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Request_Support_TSE_Assignment</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SIC_Code_List</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Sales_Order_Main</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ServiceNow</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SharePoint_Environmental_Services</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Validate</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Contract_Pricing</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Contract_Pricing_Gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Customer_Purchase_Order</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Find_Payment_on_Account</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Pricing_Calculator</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Profile_Instructions</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Profile_g</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Quotes</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Quotes_gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Sales_Order_Main_cust</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_Web_Sales_Order_Main_gen</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WIN_web_Company_Generator</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Workflow_Request_Credit_Approval_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Workflow_Request_Credit_Hold_Release_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Workflow_Request_Email_Ebill_Request_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Workflow_Request_Price_Action_Form</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

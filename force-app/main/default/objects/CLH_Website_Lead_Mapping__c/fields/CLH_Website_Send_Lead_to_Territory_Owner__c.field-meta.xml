@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CLH_Website_Send_Lead_to_Territory_Owner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates the owner of the territory for this primary business should be assigned the lead.</description>
+    <externalId>false</externalId>
+    <label>CLH Website Send Lead to Territory Owner</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

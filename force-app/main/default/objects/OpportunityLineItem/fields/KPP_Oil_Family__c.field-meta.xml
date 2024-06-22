@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPP_Oil_Family__c</fullName>
+    <description>Oil Family</description>
+    <externalId>false</externalId>
+    <label>KPP Oil Family</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>KPP_Oil_Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Lube_Family</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>2 Cycle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>ATF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Automotive Gear Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Brake Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Non Detergent Engine Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>PCEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Power Steering Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Racing Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Motorcycle Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil</controllingFieldValue>
+            <valueName>Base Oil - Heavy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil</controllingFieldValue>
+            <valueName>Base Oil - Light</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Base Oil</controllingFieldValue>
+            <valueName>Base Oil - Medium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>HDDEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>Marine Diesel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>Railroad Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>UTF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Antifreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Chain Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Gear Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Process Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Way Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Transformer Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Additives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Fuel Treatments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Glycol Caustics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Viscosity Modifier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Windshield Washer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Plumbing Antifreeze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chemicals</controllingFieldValue>
+            <valueName>Diesel Exhaust Fluid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <valueName>VDB Roofing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bottoms</controllingFieldValue>
+            <valueName>VTAE Bottoms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Blended Fuel - Asphalt Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Blended Fuel - Gasoline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Blended Fuel - High Sulfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Blended Fuel - Low Ash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Blended Fuel - MDO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>CCF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>CFF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - Dehy Fuel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - HGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - HTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - RGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - SIVA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - V401</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - VFS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>Refinery Fuel - VGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel</controllingFieldValue>
+            <valueName>RFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mineral Spirits</controllingFieldValue>
+            <valueName>Mineral Spirits</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Address_Mandatory_For_RFOO</fullName>
+    <active>true</active>
+    <description>Shipping address is mandatory for RFOO and UMO Competitor records.</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(Active_ER_Contract__c)),NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),OR(RecordType.Name = &quot;RFOO&quot;,
+ RecordType.Name = &quot;UMO Competitor&quot; ),OR( ISBLANK( ShippingStreet), ISBLANK( ShippingCity ),ISBLANK( ShippingCountry),ISBLANK(ShippingState), ISBLANK( ShippingPostalCode ) ))</errorConditionFormula>
+    <errorMessage>Please enter Corporate Address.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>This is to track Case Events</description>
+    <environments>Default</environments>
+    <interviewLabel>Track Case Events {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Track Case Events</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Case_Notification_Tracker_Record</name>
+        <label>Create Case Notification Tracker Record</label>
+        <locationX>176</locationX>
+        <locationY>194</locationY>
+        <inputAssignments>
+            <field>Case_Comment__c</field>
+            <value>
+                <elementReference>$Record.CommentBody__c</elementReference>
+            </value>
+        </inputAssignments>
+		<inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.Id__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Event_Type__c</field>
+            <value>
+                <stringValue>Case Event</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Oracle_Invoice_number__c</field>
+            <value>
+                <elementReference>$Record.OracleInvoiceNumbers__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Win_Invoice_Number__c</field>
+            <value>
+                <elementReference>$Record.WinInvoiceNumbers__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PublishedEventsTracker__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Case_Notification_Tracker_Record</targetReference>
+        </connector>
+        <object>CaseEvent__e</object>
+        <triggerType>PlatformEvent</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

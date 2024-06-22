@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MobilePhone_Length_Limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+not(isblank(MobilePhone)),
+or((LEN(MobilePhone)&gt;14),
+(LEN(MobilePhone)&lt;10)
+))</errorConditionFormula>
+    <errorDisplayField>MobilePhone</errorDisplayField>
+    <errorMessage>Mobile number too long.</errorMessage>
+</ValidationRule>

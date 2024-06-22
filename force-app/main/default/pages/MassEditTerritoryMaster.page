@@ -1,0 +1,32 @@
+<apex:page standardController="Territory_Master__c" recordSetVar="unused"  sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="L" id="table">
+<apex:column headerValue="ZIP">
+<apex:inputField value="{!L.ZIP_Code__c}"/>
+</apex:column>
+<apex:column headerValue="City">
+<apex:inputField value="{!L.Zip_City__c}"/>
+</apex:column>
+<apex:column headerValue="State">
+<apex:inputField value="{!L.Zip_State__c}"/>
+</apex:column>
+<apex:column headerValue="Territory Code 2017">
+<apex:inputField value="{!L.Territory_code__c}"/>
+</apex:column>
+<apex:column headerValue="Territory Code 2018">
+<apex:inputField value="{!L.Territory_ID_2020__c}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

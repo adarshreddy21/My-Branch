@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Level_1_Escalation__c = True, &quot;Level 1&quot;,
+IF( Level_2_Escalation__c = True, &quot;Level 2&quot;,
+IF( Level_3_Escalation__c = True, &quot;Level 3&quot;, NULL)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Escalation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

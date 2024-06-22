@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Account_Headline_Field_Edit_PermissionSet</name>
+    </customPermissions>
+    <description>This permission is give additional access to edit Account Headline Field.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Account_Headline__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account_Headline_Field_Edit_PermissionSet</label>
+</PermissionSet> 

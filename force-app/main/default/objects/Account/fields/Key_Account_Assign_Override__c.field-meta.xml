@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Account_Assign_Override__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &apos;Customer Location&apos;,(Parent.Parent.Account_Assign_Override__c),
+IF(RecordType.Name = &apos;Customer&apos;,(Parent.Account_Assign_Override__c), NULL ))</formula>
+    <label>Key Account Assign Override</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

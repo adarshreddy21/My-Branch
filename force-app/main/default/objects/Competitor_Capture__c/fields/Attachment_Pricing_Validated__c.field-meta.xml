@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attachment_Pricing_Validated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>After an attachment is entered it needs to be validated by someone that is not an an Account Manager Sales person type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>After an attachment is entered it needs to be validated by someone that is not an an Account Manager Sales person type</inlineHelpText>
+    <label>Attachment Pricing Validated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

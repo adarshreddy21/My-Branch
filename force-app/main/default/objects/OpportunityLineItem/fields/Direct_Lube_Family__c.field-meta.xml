@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lube_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Direct Lube Family</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Direct_Lube_Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATF</fullName>
+                <default>false</default>
+                <label>ATF</label>
+            </value>
+            <value>
+                <fullName>Automotive Gear Oil</fullName>
+                <default>false</default>
+                <label>Automotive Gear Oil</label>
+            </value>
+            <value>
+                <fullName>PCEO</fullName>
+                <default>false</default>
+                <label>PCEO</label>
+            </value>
+            <value>
+                <fullName>HDDEO</fullName>
+                <default>false</default>
+                <label>HDDEO</label>
+            </value>
+            <value>
+                <fullName>Railroad Oils</fullName>
+                <default>false</default>
+                <label>Railroad Oils</label>
+            </value>
+            <value>
+                <fullName>UTF</fullName>
+                <default>false</default>
+                <label>UTF</label>
+            </value>
+            <value>
+                <fullName>Tractor 303</fullName>
+                <default>false</default>
+                <label>Tractor 303</label>
+            </value>
+            <value>
+                <fullName>Chain Oil</fullName>
+                <default>false</default>
+                <label>Chain Oil</label>
+            </value>
+            <value>
+                <fullName>Gear Oil</fullName>
+                <default>false</default>
+                <label>Gear Oil</label>
+            </value>
+            <value>
+                <fullName>Grease</fullName>
+                <default>false</default>
+                <label>Grease</label>
+            </value>
+            <value>
+                <fullName>Hydraulic</fullName>
+                <default>false</default>
+                <label>Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Process Oils</fullName>
+                <default>false</default>
+                <label>Process Oils</label>
+            </value>
+            <value>
+                <fullName>Way Oils</fullName>
+                <default>false</default>
+                <label>Way Oils</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>ATF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Automotive Gear Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>PCEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>HDDEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>Railroad Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>UTF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Heavy Duty</controllingFieldValue>
+            <valueName>Tractor 303</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Chain Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Gear Oil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grease</controllingFieldValue>
+            <valueName>Grease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <valueName>Hydraulic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <valueName>Process Oils</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hydraulic</controllingFieldValue>
+            <valueName>Way Oils</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

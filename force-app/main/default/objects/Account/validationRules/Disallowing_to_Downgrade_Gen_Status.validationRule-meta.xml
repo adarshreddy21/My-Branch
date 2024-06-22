@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Downgrade_Gen_Status</fullName>
+    <active>true</active>
+    <description>An account&apos;s generator status can only be upgraded from Salesforce. Downgrades in this area need to be coordinated by our compliance team. For status downgrades, please submit a Service Now ticket using category/subcategory: WIN-Aurora(FocalPoint), CWT-Co</description>
+    <errorConditionFormula>AND(
+NOT(CONTAINS($User.Username, &apos;integrationuser&apos;)),
+NOT(ISBLANK( WIN_ID__c )),
+ShippingCountry = &quot;US&quot;,
+ISCHANGED(Generator_Status__c),
+OR(AND(
+ISPICKVAL(PRIORVALUE(Generator_Status__c), &quot;Large Quantity Generator&quot;),
+OR(
+ISPICKVAL(Generator_Status__c, &quot;Undetermined&quot;),
+ISPICKVAL(Generator_Status__c, &quot;Conditionally Exempt Sm Qty Generator&quot;),
+ISPICKVAL(Generator_Status__c, &quot;Small Quantity Generator&quot;)
+)),
+AND(ISPICKVAL(PRIORVALUE(Generator_Status__c), &quot;Small Quantity Generator&quot;),
+OR(
+ISPICKVAL(Generator_Status__c, &quot;Undetermined&quot;),
+ISPICKVAL(Generator_Status__c, &quot;Conditionally Exempt Sm Qty Generator&quot;)
+)),
+AND(
+ISPICKVAL(PRIORVALUE(Generator_Status__c), &quot;Conditionally Exempt Sm Qty Generator&quot;),
+ISPICKVAL(Generator_Status__c, &quot;Undetermined&quot;)
+)))</errorConditionFormula>
+    <errorMessage>For status downgrades submit a Service Now ticket using category/subcategory: WIN-Aurora(FocalPoint), CWT-Compliance or WIN-Compliance, EPA ID Number.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Corp Account Logo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Corp Account Logo</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Corp_Account_Logo</name>
+        <label>Corp Account Logo</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Logo_3M</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PCeJ?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;3m.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>3M - 87781</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Amazon</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PMRv?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Amazon-Logo-2000-present-1024x576.jpeg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Amazon - 87503</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_BP</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PMQE?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;bp-logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>BP Corp. - Ref - 92380</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Caliber</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PMHh?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Caliber_Logo.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Caliber Automotive International - 99966</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Carvana</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PG8M?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Carvana.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Carvana LLC - 87329</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Chevron</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PCeO?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Chevron.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>or</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Chevron - PipeTerm - 10215</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Chevron Canada - E&amp;P - 10854</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Chevron Phillips Chemical Co - 87412</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Chevron - Ref - 87377</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Dow</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PCeY?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;DOW.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Dow Chemical/Union Carbide - 75990</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Exelon</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PMS0?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Exelon_logo_new.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Exelon - 87428</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Exxon</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PMSF?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;1280px-Exxon_logo.svg.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Exxon Mobil - Ref - 73210</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_FedEx</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNko?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;FedEx Logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>FedEx - 99795</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Formosa</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNkt?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Formosa Logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Formosa - 87409</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Goodyear</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNky?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Goodyear-Logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Goodyear Intl - 99904</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_HFSinclair</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNl3?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;HF_Sinclair_Logo_RGB.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>HF-Sinclair-Ref - 77603</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Intel</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNl8?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;images.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Intel - 10244</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_LyondellBassell</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNlD?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;LYB Logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Lyondell-Bassell - 87403</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Marathon</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNlI?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Marathon_Oil_Logo.svg.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Marathon Petroleum - Ref - 73211</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_PGE</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PCei?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;PG&amp;amp;E.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Pacific Gas &amp; Electric - 10489</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_PBF</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNlN?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;1200px-PBF_Energy_logo.svg.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>PBF Refinery Consortium - 10463</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Phillips</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNlX?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Phillips_66_logo.svg.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Phillips 66 Company Ref - 87458</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Suncor</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNma?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;suncor_energy_logo-800x430.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Suncor - 77613</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Tesla</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNmR?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Tesla_logo.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Tesla Inc - 87520</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_UnitedRentals</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNmk?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;2560px-United_Rentals_Logo.svg.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>United Rentals Intl - 99730</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Valero</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PCed?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Logo-Valero.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Valero - Ref - 92160</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Vizient</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNmz?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;preview-928x522.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Vizient - 10276</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Walmart</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PNnE?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;download.png&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Walmart - Retail - 87271</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_ATT</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PDCN?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Att.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>AT&amp;T - 87218</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Logo_Xcel</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cleanharbors--chfull.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068D7000002PDCS?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Xcel.jpg&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>VarAccountID.Name</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Xcel Energy - 87711</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Corp_Account_Logo</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>VarAccountID</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>

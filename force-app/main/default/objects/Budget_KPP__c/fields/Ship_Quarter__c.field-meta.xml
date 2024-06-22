@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_Quarter__c</fullName>
+    <description>1Q 2Q 3Q or 4Q</description>
+    <externalId>false</externalId>
+    <label>Ship Quarter</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1Q</fullName>
+                <default>false</default>
+                <label>1Q</label>
+            </value>
+            <value>
+                <fullName>2Q</fullName>
+                <default>false</default>
+                <label>2Q</label>
+            </value>
+            <value>
+                <fullName>3Q</fullName>
+                <default>false</default>
+                <label>3Q</label>
+            </value>
+            <value>
+                <fullName>4Q</fullName>
+                <default>false</default>
+                <label>4Q</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

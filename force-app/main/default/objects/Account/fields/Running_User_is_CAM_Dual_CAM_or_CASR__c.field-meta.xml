@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Running_User_is_CAM_Dual_CAM_or_CASR__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR (
+
+AND ($User.Id = OwnerId, RecordType.Id = &quot;012j0000001DaVS&quot;),
+AND ($User.Id = OwnerId, RecordType.Id = &quot;0124Q000001Fz8G&quot;),
+$User.Id = Dual_Corp_Account_Owner__c,
+$User.Id = KAM_Support__c,
+$User.FirstName+&quot; &quot;+$User.LastName = Key_Account_Support_Person__c,
+$User.FirstName+&quot; &quot;+$User.LastName = Key_Account_Owner__c,
+$User.FirstName+&quot; &quot;+$User.LastName = Key_Dual_Corp_Account_Owner__c
+
+)</formula>
+    <label>Running User is CAM, Dual CAM, or CASR</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

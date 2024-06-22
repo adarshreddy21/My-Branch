@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assign_Unique_Key_0</name>
+        <label>Assign Unique Key</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Unique_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CreateUniqueKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_HR_Record_Type</name>
+        <label>Check HR Record Type</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_Type_Check</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>HR Recruiting Partners</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Unique_Key_0</targetReference>
+            </connector>
+            <label>Record Type Check</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CreateUniqueKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.FirstName} + &apos;_&apos; + {!$Record.LastName}  + &apos;_&apos; + {!$Record.Email} + &apos;_&apos; + {!$Record.RecordType.Id} + &apos;_&apos; + {!$Record.AccountId} + &apos;_&apos; + {!$Record.Account.RecordType.Id}</expression>
+    </formulas>
+    <interviewLabel>Duplicate Check - HR Talent Pool - Contact {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Duplicate Check - HR Talent Pool - Contact</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_HR_Record_Type</targetReference>
+        </connector>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

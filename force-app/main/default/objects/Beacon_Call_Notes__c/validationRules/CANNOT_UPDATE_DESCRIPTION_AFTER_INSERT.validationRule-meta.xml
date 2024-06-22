@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CANNOT_UPDATE_DESCRIPTION_AFTER_INSERT</fullName>
+    <active>true</active>
+    <description>Once a account note is created with a description text, the field cannot be updated by a business user .</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Description__c)), 
+ISCHANGED(Description__c ), 
+AND(NOT($Profile.Name = &quot;Integration&quot; || $Profile.Name = &quot;Salesforce API Only System Integrations&quot; ||
+$Profile.Name = &quot;System Administrator&quot;)))</errorConditionFormula>
+    <errorDisplayField>Description__c</errorDisplayField>
+    <errorMessage>The account notes description cannot be updated.</errorMessage>
+</ValidationRule>

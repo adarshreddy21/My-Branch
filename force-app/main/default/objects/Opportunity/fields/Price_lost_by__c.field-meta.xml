@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_lost_by__c</fullName>
+    <externalId>false</externalId>
+    <label>Price % lost by</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Lost_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0-3%</fullName>
+                <default>false</default>
+                <label>0-3%</label>
+            </value>
+            <value>
+                <fullName>4-7%</fullName>
+                <default>false</default>
+                <label>4-7%</label>
+            </value>
+            <value>
+                <fullName>8-10%</fullName>
+                <default>false</default>
+                <label>8-10%</label>
+            </value>
+            <value>
+                <fullName>11-15%</fullName>
+                <default>false</default>
+                <label>11-15%</label>
+            </value>
+            <value>
+                <fullName>16-20%</fullName>
+                <default>false</default>
+                <label>16-20%</label>
+            </value>
+            <value>
+                <fullName>greater than 20%</fullName>
+                <default>false</default>
+                <label>greater than 20%</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>0-3%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>4-7%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>8-10%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>11-15%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>16-20%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>greater than 20%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor (Better price)</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

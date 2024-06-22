@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPM_Quote_Completed</fullName>
+    <active>true</active>
+    <description>Don&apos;t let user uncheck TPM Quote request if the Quote Request is already completed</description>
+    <errorConditionFormula>and(TPM_Quote_Completed__c = True,  TPM_Quote_Request__c = False)</errorConditionFormula>
+    <errorDisplayField>TPM_Quote_Request__c</errorDisplayField>
+    <errorMessage>This TPM Quote has already been completed.  You cannot take back your Quote request.</errorMessage>
+</ValidationRule>

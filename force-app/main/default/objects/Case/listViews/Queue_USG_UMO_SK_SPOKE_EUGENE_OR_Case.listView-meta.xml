@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_USG_UMO_SK_SPOKE_EUGENE_OR_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: USG-UMO SK SPOKE EUGENE, OR</label>
+    <queue>Queue_USG_UMO_SK_SPOKE_EUGENE_OR</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waste_Oil_Flag</fullName>
+    <active>true</active>
+    <description>no updates to waste oil flag</description>
+    <errorConditionFormula>AND( 
+NOT ($Profile.Name = &quot;Integration&quot;), 
+NOT ($Profile.Name = &quot;Sales Operations&quot;), 
+NOT ($Profile.Name = &quot;Master Data Management&quot;), 
+NOT ($Profile.Name = &quot;System Administrator&quot;), 
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT(ISCHANGED(Active_ER_Contract__c)),
+NOT(ISBLANK( WIN_ID__c )), 
+ISPICKVAL(Cycle__c, &quot;Committed&quot;), 
+OR( 
+ISCHANGED( Waste_Oil__c )))</errorConditionFormula>
+    <errorDisplayField>Waste_Oil__c</errorDisplayField>
+    <errorMessage>Please contact Master Data Management team to updates this field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_COE_COHOES_NY_ALBANY_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: COE-COHOES, NY (ALBANY)</label>
+    <queue>Queue_COE_COHOES_NY_ALBANY</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

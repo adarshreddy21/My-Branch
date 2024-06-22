@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ddm__Add_to_Email_Address_Book</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Link to Email Address Book</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>root = typeof root == &quot;undefined&quot; ? &quot;{!$Setup.ddm__Marketing_Automation_Settings__c.ddm__ConnectorUrl__c}&quot; : root;
+var script = document.createElement(&quot;script&quot;);
+script.type = &quot;text/javascript&quot;;
+script.onload = loadScripts;
+script.src = &quot;{!$Setup.ddm__Marketing_Automation_Settings__c.ddm__ConnectorUrl__c}v2/Scripts/EmailMarketing_237.js&quot;;
+document.getElementsByTagName(&quot;head&quot;)[0].appendChild(script);
+
+function loadScripts() {
+    LoadSalesforceScripts(scriptsLoaded);
+}
+
+function scriptsLoaded() {
+    var model = {
+        SessionId: &quot;{!$Api.Session_ID}&quot;,
+        PartnerUrl: &quot;{!$Api.Partner_Server_URL_140}&quot;,
+        ParentId: &quot;{!Campaign.Id}&quot;,
+        RequiredType: &quot;AddressBook&quot;,
+        EmailAccountId: &quot;{!ddm__dmsfc_EmailAddressBook__c.ddm__Email_AccountId__c}&quot;,
+        ParentObjectName: &quot;{!Campaign.Name}&quot;,
+        ReferringUrl: document.location.href
+    };
+
+    CreateSubscriptionGroup(model);
+
+}</url>
+</WebLink>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_PFAS_Line_Items__c</fullName>
+    <externalId>false</externalId>
+    <formula>PFAS_Count__c &gt;0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Has PFAS Line Items</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategy_Plan_Forecast</fullName>
+    <active>true</active>
+    <label>Strategy Plan Forecast</label>
+    <picklistValues>
+        <picklist>Current_New_LOB__c</picklist>
+        <values>
+            <fullName>Current LOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New LOB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Line_of_Business__c</picklist>
+        <values>
+            <fullName>Airborne Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allied Product Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antifreeze Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Oil Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil Sales %E2%80%93 Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulk Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalyst Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalysts Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charge for Oil Revenue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CleanPack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Container Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containerized Waste Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Blending %26 Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daylighting Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directional Boring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downhole Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Camps and Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drum Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Response Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filtration %26Treatment Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare - RMW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Mailback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Hazardous Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household Hazardous Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InSite Material Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inplant Container Moves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line Locating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance Repair Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mulching Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navigation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Field Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Field Transport %2F Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Filter Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oily Water and Antifreeze Serv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washing Service Aqueous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Washing Service Solvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Coatings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinery Fuel Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinery Oil %26Waste Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Branch Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale of Material and Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shot Hole Drilling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solvent Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Pigging%2FDecoking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialty Refinery Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Rentals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPM - FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPM - TS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank Cleaning and Separations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminal Sales %28RFO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformer Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMO-Used Motor Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vac Services - Separators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Chemical Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windshield Washer Fluid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

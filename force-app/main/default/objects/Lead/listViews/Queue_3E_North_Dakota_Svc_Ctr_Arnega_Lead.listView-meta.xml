@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_3E_North_Dakota_Svc_Ctr_Arnega_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : 3E - North Dakota Svc Ctr Arnega</label>
+    <queue>Queue_3E_North_Dakota_Svc_Ctr_Arnega</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

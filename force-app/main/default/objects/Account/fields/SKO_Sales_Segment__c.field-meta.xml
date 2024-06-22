@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SKO_Sales_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>SKO Sales Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Business__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Base Oil Sales Team</fullName>
+                <default>false</default>
+                <label>Base Oil Sales Team</label>
+            </value>
+            <value>
+                <fullName>Specialty Products Sales Team</fullName>
+                <default>false</default>
+                <label>Specialty Products Sales Team</label>
+            </value>
+            <value>
+                <fullName>Distributor Blended Sales Team - US</fullName>
+                <default>false</default>
+                <label>Distributor Blended Sales Team - US</label>
+            </value>
+            <value>
+                <fullName>Sales Admin &amp; Key Accts</fullName>
+                <default>false</default>
+                <label>Sales Admin &amp; Key Accts</label>
+            </value>
+            <value>
+                <fullName>Contract PKG &amp; Blending - US</fullName>
+                <default>false</default>
+                <label>Contract PKG &amp; Blending - US</label>
+            </value>
+            <value>
+                <fullName>Distributor Blended Sales Team - CAN</fullName>
+                <default>false</default>
+                <label>Distributor Blended Sales Team - CAN</label>
+            </value>
+            <value>
+                <fullName>Contract PKG &amp; Blending - CAN</fullName>
+                <default>false</default>
+                <label>Contract PKG &amp; Blending - CAN</label>
+            </value>
+			<value>	
+                <fullName>Government/Military</fullName>	
+                <default>false</default>	
+                <label>Government/Military</label>	
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Base Oil Sales Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Specialty Products Sales Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Distributor Blended Sales Team - US</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Sales Admin &amp; Key Accts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Contract PKG &amp; Blending - US</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Distributor Blended Sales Team - CAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SK KPP</controllingFieldValue>
+            <valueName>Contract PKG &amp; Blending - CAN</valueName>
+        </valueSettings>
+		<valueSettings>	
+            <controllingFieldValue>SK KPP</controllingFieldValue>	
+            <valueName>Government/Military</valueName>	
+        </valueSettings>
+    </valueSet>
+</CustomField>

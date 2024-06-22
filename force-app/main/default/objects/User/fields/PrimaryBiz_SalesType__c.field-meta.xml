@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryBiz_SalesType__c</fullName>
+    <description>Supports Persona Mapping by combining user primary business and salesperson type</description>
+    <externalId>false</externalId>
+    <formula>IF(
+
+ISBLANK(TEXT(Primary_Business__c)),
+
+NULL,
+
+TEXT(Primary_Business__c) + &quot; - &quot;
+
+) +
+
+IF(
+
+ISBLANK(TEXT(Sales_Person_Type__c)),
+
+NULL,
+
+TEXT(Sales_Person_Type__c)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Supports Persona Mapping by combining user primary business and salesperson type</inlineHelpText>
+    <label>Primary Business - Sales Person Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

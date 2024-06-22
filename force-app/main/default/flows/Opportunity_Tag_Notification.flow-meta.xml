@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Trevor D Franklin</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - E&amp;C Firms Blitz ON/MB 2018!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>Notify Trevor</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - E&amp;C Firms Blitz ON/MB 2018!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLAipAAH</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Annielu DeWitt</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;PFAS Opportunity !!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Notify Annie</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>PFAS Opportunity !!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>0050a00000H2oTDAAZ</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Tony Mazzarella</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - Hurricane Florence 2018!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Notify Tony Mazz</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - Hurricane Florence 2018!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLN9CAAX</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Tony Mazzarella</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE HARVEY!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Notify Tony Mazz</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_5_A2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE HARVEY!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLN9CAAX</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Chad E Coates</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE HARVEY!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A2</name>
+        <label>Notify User</label>
+        <locationX>500</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE HARVEY!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLAbqAAH</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Tony Mazzarella</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE IRMA 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>Notify Tony Mazz</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_7_A2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE IRMA 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLN9CAAX</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Susan M Lins</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE IRMA 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A2</name>
+        <label>Notify Users</label>
+        <locationX>700</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE IRMA 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000Dw1RcAAJ</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Tony Mazzarella</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE Maria 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Notify Tony Mazz</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_9_A2</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE Maria 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLN9CAAX</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Mitch Osborne</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE Maria 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A2</name>
+        <label>Notify Mitch</label>
+        <locationX>900</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_9_A3</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE Maria 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DKNFVAA5</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Eric C Montgomery</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE Maria 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A3</name>
+        <label>Notify Eric</label>
+        <locationX>900</locationX>
+        <locationY>400</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_9_A4</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE Maria 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLvuZAAT</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Maria T Mendez Gonzalez</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Opportunity - HURRICANE Maria 2017!!!\n\n{![Opportunity].CreatedBy.FirstName}  {![Opportunity].CreatedBy.LastName} created an opportunity called {![Opportunity].Name}.\nOpportunity Tag:{![Opportunity].Opportunity_tag__c}\nOpportunity Owner: {![Opportunity].Owner.Person_Name__c}\nAccount:       {![Opportunity].Account.Name}.\nStage:          {![Opportunity].StageName}.\nClose Date:  {![Opportunity].CloseDate}.\nOpportunity: https://cleanharbors.my.salesforce.com/{![Opportunity].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A4</name>
+        <label>Notify Maria</label>
+        <locationX>900</locationX>
+        <locationY>500</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Opportunity - HURRICANE Maria 2017!!!
+
+{!myVariable_current.CreatedBy.FirstName}  {!myVariable_current.CreatedBy.LastName} created an opportunity called {!myVariable_current.Name}.
+Opportunity Tag:{!myVariable_current.Opportunity_tag__c}
+Opportunity Owner: {!myVariable_current.Owner.Person_Name__c}
+Account:       {!myVariable_current.Account.Name}.
+Stage:          {!myVariable_current.StageName}.
+Close Date:  {!myVariable_current.CloseDate}.
+Opportunity: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>005j000000DLAk9AAH</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PFAS Opportunity</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>PFAS Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>E&amp;C Firms Blitz ON/MB 2018</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>Opportunity Tag - E&amp;C Firms Blitz ON/MB 2018</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hurricane Florence 2018</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Opportunity Tag - Hurricane Florence</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Hurricane Harvey 2017</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Opportunity Tag - Hurricane Harvey</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Hurricane Irma 2017</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>Oppotunity Tag - Hurricane Irma 2017</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Opportunity_tag__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Hurricane Maria 2017</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>Opportunity Tag - Hurricane Maria 2017</label>
+        </rules>
+    </decisions>
+    <description>Notify users when a opportunity is created with a opportunity tag value</description>
+    <interviewLabel>Opportunity_Tag_Notification-8_InterviewLabel</interviewLabel>
+    <label>Opportunity Tag Notification</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onCreateOnly</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
+    </variables>
+</Flow>

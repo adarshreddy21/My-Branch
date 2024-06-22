@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Organization_Status_As_Draft</fullName>
+    <active>true</active>
+    <description>Organization status should be draft for HR Recruiting Partners while creation</description>
+    <errorConditionFormula>AND(
+ Not(ISPICKVAL(Organization_Status__c, &apos;Draft&apos;)),
+ ISNEW(),
+  RecordType.DeveloperName == &apos;HR_Talent_Pools&apos;
+)</errorConditionFormula>
+    <errorMessage>Organization Status should be Draft for HR Recruiting Partners</errorMessage>
+</ValidationRule>

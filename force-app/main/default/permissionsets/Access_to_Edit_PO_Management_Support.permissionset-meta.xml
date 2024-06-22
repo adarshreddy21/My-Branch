@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission set is created to give edit access for PO Management Support field.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.PO_Management_Support__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access to Edit PO Management Support</label>
+</PermissionSet>

@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Quoting_FS</fullName>
+    <active>true</active>
+    <businessProcess>All Clean Harbors Sales Process</businessProcess>
+    <description>Field Services opportunity where the Central Quoting group will produce the quote. Similar process used by Techincal Services</description>
+    <label>Central Quoting (FS)</label>
+    <picklistValues>
+        <picklist>Business_Type__c</picklist>
+        <values>
+            <fullName>EXISTING-One Time</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>EXISTING-Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW-One Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW-Recurring</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitor_Contract_Type__c</picklist>
+        <values>
+            <fullName>Day Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Man-Hour%2FHead Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly Rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Method__c</picklist>
+        <values>
+            <fullName>E-Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Face to Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contamination_Source__c</picklist>
+        <values>
+            <fullName>Antifreeze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chlordane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flammable liquid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cross_Sell_Quote_Request_Status__c</picklist>
+        <values>
+            <fullName>Additional Scheduling Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Being Scoped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Schedule Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Support Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote in Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stalled By Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting For More Information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Healthcare_Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Dual Waste %28Pharma and RMW%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pathological Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceutical Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Bag Waste %28disposable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Bag Waste %28reusable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharps Disposal %28disposable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharps Disposal %28reusable%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biennial Waste Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Definitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EWIMPORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GVT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Info Resources %28IIR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodging Inside Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Customers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VESEPTIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lodge_Camp__c</picklist>
+        <values>
+            <fullName>Camp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lodging_Opportunity_Industry__c</picklist>
+        <values>
+            <fullName>Affordable Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apartment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel %2F Motel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long term care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed use residential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lodging_Opportunity_Location__c</picklist>
+        <values>
+            <fullName>*New Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonnyville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleville Lodge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joslyn Creek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Julienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leismer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oilsands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ruth Lake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamarack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lodging_Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Fixed Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Camps</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_Category__c</picklist>
+        <values>
+            <fullName>Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>Client %28CLH Safety Numbers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28CLH location to project too far%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Client did not win work%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Job Cancelled or Deferred%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Lost RFP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28No bid - incumbent awarded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28No opportunity to bid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Price Increase%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Prior CLH Service Failure%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Re-refined Disqualified%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client %28Union Required%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor %28Better price%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor %28Transportation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees %28Mobilization%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees %28Off-Spec or surcharge%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees %28Recovery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal  %28No Bid - not core strength%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal  %28No Bid - not front runner%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Abandoned by Owner%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Chose Alternative SK Service%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Commercial terms failure%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Created in Error%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Declined to Bid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Duplicate Entry%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Inactive %3E90 Days%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Lack of Capacity%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Lack of Equipment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Lack of People%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Legal Review Delays%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Margin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28No Inventory%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Not Approved to Work on client site%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28PFAS Landfill%2FTDU Ban%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Past Due and No Activity%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Poor Paying Customer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Technology Difference%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Work Won but Declined%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFAS Landfill%2FTDU Ban</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System - Abandoned by Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System - Past Due and No Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Error - Created in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Error - Duplicate Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Won but Declined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Next_Action__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up on TM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Profile Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope Job</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opp_Strength__c</picklist>
+        <values>
+            <fullName>Interest level high - Quote needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interest level moderate - Sales follow up needed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Business_Segment__c</picklist>
+        <values>
+            <fullName>Daylighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Primary_Business__c</picklist>
+        <values>
+            <fullName>Clean Harbors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Kleen %2F BPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_tag__c</picklist>
+        <values>
+            <fullName>2022 BPS LOST LUBE - CALIFORNIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2022 LOST UMO - CALIFORNIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACT ENVIRO e-Manifest prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AQ Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AQ Pro Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BCT Sale Blitz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended Oil East Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAM High Value Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada HVT%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEF %28Diesel Exhaust Fluid%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drill Camps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Canada Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earth Day 2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East HVT%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elgin Bridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS Cross Sell 2023</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS Solid Waste Auditing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FluidKleens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GovWin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gulf Cross-Sell Blitz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gulf HVT%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H20 Integration Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP-25 PW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services Growth - BDR Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hurricane Ian 2022</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS Profile Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InSite District Manager Customer Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Sales PW Blitz Day 2023 Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lambton Landfill Opps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lodge Maint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lone Mountain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest HVT%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mississauga Drum Opps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPL Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non - NPL Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oroville Dam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNW Competitor Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW Bounty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Camps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4 IS Callback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK Inbound Sales Opp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SKE PW Equipment Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Canada Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treated Wood Waste California</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turnaround</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wastewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Coast Fuel Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West HVT%E2%80%99s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Region Cross-Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Region New Account Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Vertical Focus Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eManifest Campaign</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Parts_Cleaner_Type__c</picklist>
+        <values>
+            <fullName>Aqueous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solvent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_lost_by__c</picklist>
+        <values>
+            <fullName>0-3%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16-20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-7%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8-10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>greater than 20%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolution_1__c</picklist>
+        <values>
+            <fullName>Fall Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Bid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transformer_Product_Segment__c</picklist>
+        <values>
+            <fullName>Base Oil %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable%2FPILC %28TRFM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clean up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drums %28TRFM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form Oil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Load %26 Go %28TRST%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mix %28TRFM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %28CH60%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %28CH60%2B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %3C 2 ppm %28A31S%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil - Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil 2 - 49 ppm %28A31D%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil 50 - 499 ppm %28DH1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil 500 ppm - %28DH3%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Refill %28drain and fill%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pole %26 Pads %28TRFM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SF6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sampling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformer Teardown %28TRST%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transformer_Transaction_Type__c</picklist>
+        <values>
+            <fullName>Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Turnaround_Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Chemical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metals %26 Minerals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OilSands%2FSAGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petroleum Refining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utl%2FConst</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Agent of Business</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Central Quoting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>mti_pb__PriceBook_To_Use__c</picklist>
+        <values>
+            <fullName>Clean Harbors</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

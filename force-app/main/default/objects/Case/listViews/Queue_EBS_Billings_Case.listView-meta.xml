@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_EBS_Billings_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : EBS-Billings</label>
+    <queue>Queue_EBS_Billings</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

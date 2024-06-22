@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_DMI_Des_Moines_Field_Service_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue : DMI - Des Moines Field Service</label>
+    <queue>Queue_DMI_Des_Moines_Field_Service</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

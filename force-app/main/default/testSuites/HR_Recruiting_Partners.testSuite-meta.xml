@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>AccountDAOTest</testClassName>
+    <testClassName>AccountReceivableListControllerTest</testClassName>
+    <testClassName>AccountServiceTest</testClassName>
+    <testClassName>ContactDAOTest</testClassName>
+    <testClassName>ContactServiceTest</testClassName>
+    <testClassName>DeparmentManagerDAOTest</testClassName>
+    <testClassName>DepartmentsDAOTest</testClassName>
+    <testClassName>DepartmentsServiceTest</testClassName>
+    <testClassName>DepartmentTriggerHandlerTest</testClassName>
+    <testClassName>HeaderLessQuickActionlwcControllerTest</testClassName>
+    <testClassName>JobCodeDAOTest</testClassName>
+    <testClassName>JobCodeMappingDAOTest</testClassName>
+    <testClassName>JobCodeServiceTest</testClassName>
+    <testClassName>JobCodeTriggerHandlerTest</testClassName>
+    <testClassName>LocationDAOTest</testClassName>
+    <testClassName>LocationServiceHandlerTest</testClassName>
+    <testClassName>LocationServiceTest</testClassName>
+    <testClassName>OrganizationControllerTest</testClassName>
+    <testClassName>OrganizationOwnersTriggerHandlerTest</testClassName>
+    <testClassName>OwnershipDAOTest</testClassName>
+    <testClassName>OwnershipServiceTest</testClassName>
+    <testClassName>ProcessOrganizationDataBatchTest</testClassName>
+    <testClassName>TaskServiceTest</testClassName>
+    <testClassName>TestAccountCRUDHandler</testClassName>
+    <testClassName>TestContactCRUDHandler</testClassName>
+</ApexTestSuite>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory> 
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Lost_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Client (CLH location to project too far)</fullName>
+                <default>false</default>
+                <label>Client (CLH location to project too far)</label>
+            </value>
+            <value>
+                <fullName>Client (CLH Safety Numbers)</fullName>
+                <default>false</default>
+                <label>Client (CLH Safety Numbers)</label>
+            </value>
+            <value>
+                <fullName>Client (Client did not win work)</fullName>
+                <default>false</default>
+                <label>Client (Client did not win work)</label>
+            </value>
+            <value>
+                <fullName>Client (Job Cancelled or Deferred)</fullName>
+                <default>false</default>
+                <label>Client (Job Cancelled or Deferred)</label>
+            </value>
+            <value>
+                <fullName>Client (Lost RFP)</fullName>
+                <default>false</default>
+                <label>Client (Lost RFP)</label>
+            </value>
+            <value>
+                <fullName>Client (No bid - incumbent awarded)</fullName>
+                <default>false</default>
+                <label>Client (No bid - incumbent awarded)</label>
+            </value>
+            <value>
+                <fullName>Client (No opportunity to bid)</fullName>
+                <default>false</default>
+                <label>Client (No opportunity to bid)</label>
+            </value>
+            <value>
+                <fullName>Client (Price Increase)</fullName>
+                <default>false</default>
+                <label>Client (Price Increase)</label>
+            </value>
+            <value>
+                <fullName>Client (Prior CLH Service Failure)</fullName>
+                <default>false</default>
+                <label>Client (Prior CLH Service Failure)</label>
+            </value>
+            <value>
+                <fullName>Client (Re-refined Disqualified)</fullName>
+                <default>false</default>
+                <label>Client (Re-refined Disqualified)</label>
+            </value>
+            <value>
+                <fullName>Client (Union Required)</fullName>
+                <default>false</default>
+                <label>Client (Union Required)</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Competitor (Better price)</fullName>
+                <default>false</default>
+                <label>Competitor (Better price)</label>
+            </value>
+            <value>
+                <fullName>Competitor (Transportation)</fullName>
+                <default>false</default>
+                <label>Competitor (Transportation)</label>
+            </value>
+            <value>
+                <fullName>Competitor - Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Competitor - Price</label>
+            </value>
+            <value>
+                <fullName>Due to Capacity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Due to Capacity</label>
+            </value>
+            <value>
+                <fullName>Fallout</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fallout</label>
+            </value>
+            <value>
+                <fullName>Fall Out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fall Out</label>
+            </value>
+            <value>
+                <fullName>Fees (Mobilization)</fullName>
+                <default>false</default>
+                <label>Fees (Mobilization)</label>
+            </value>
+            <value>
+                <fullName>Fees (Off-Spec or surcharge)</fullName>
+                <default>false</default>
+                <label>Fees (Off-Spec or surcharge)</label>
+            </value>
+            <value>
+                <fullName>Fees (Recovery)</fullName>
+                <default>false</default>
+                <label>Fees (Recovery)</label>
+            </value>
+            <value>
+                <fullName>Future Interest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Future Interest</label>
+            </value>
+            <value>
+                <fullName>Internal (Abandoned by Owner)</fullName>
+                <default>false</default>
+                <label>Internal (Abandoned by Owner)</label>
+            </value>
+            <value>
+                <fullName>Internal (Capacity issue or Lack of Resources)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Internal (Capacity issue or Lack of Resources)</label>
+            </value>
+            <value>
+                <fullName>Internal (Chose Alternative SK Service)</fullName>
+                <default>false</default>
+                <label>Internal (Chose Alternative SK Service)</label>
+            </value>
+            <value>
+                <fullName>Internal (Commercial terms failure)</fullName>
+                <default>false</default>
+                <label>Internal (Commercial terms failure)</label>
+            </value>
+            <value>
+                <fullName>Internal (Created in Error)</fullName>
+                <default>false</default>
+                <label>Internal (Created in Error)</label>
+            </value>
+            <value>
+                <fullName>Internal (Declined to Bid)</fullName>
+                <default>false</default>
+                <label>Internal (Declined to Bid)</label>
+            </value>
+            <value>
+                <fullName>Internal (Duplicate Entry)</fullName>
+                <default>false</default>
+                <label>Internal (Duplicate Entry)</label>
+            </value>
+            <value>
+                <fullName>Internal (Inactive &gt;90 Days)</fullName>
+                <default>false</default>
+                <label>Internal (Inactive &gt;90 Days)</label>
+            </value>
+            <value>
+                <fullName>Internal (Lack of Capacity)</fullName>
+                <default>false</default>
+                <label>Internal (Lack of Capacity)</label>
+            </value>
+            <value>
+                <fullName>Internal (Lack of Equipment)</fullName>
+                <default>false</default>
+                <label>Internal (Lack of Equipment)</label>
+            </value>
+            <value>
+                <fullName>Internal (Lack of People)</fullName>
+                <default>false</default>
+                <label>Internal (Lack of People)</label>
+            </value>
+            <value>
+                <fullName>Internal (Legal Review Delays)</fullName>
+                <default>false</default>
+                <label>Internal (Legal Review Delays)</label>
+            </value>
+            <value>
+                <fullName>Internal (Margin)</fullName>
+                <default>false</default>
+                <label>Internal (Margin)</label>
+            </value>
+            <value>
+                <fullName>Internal  (No Bid - not core strength)</fullName>
+                <default>false</default>
+                <label>Internal  (No Bid - not core strength)</label>
+            </value>
+            <value>
+                <fullName>Internal  (No Bid - not front runner)</fullName>
+                <default>false</default>
+                <label>Internal  (No Bid - not front runner)</label>
+            </value>
+            <value>
+                <fullName>Internal (No Inventory)</fullName>
+                <default>false</default>
+                <label>Internal (No Inventory)</label>
+            </value>
+            <value>
+                <fullName>Internal (Not Approved to Work on client site)</fullName>
+                <default>false</default>
+                <label>Internal (Not Approved to Work on client site)</label>
+            </value>
+            <value>
+                <fullName>Internal (Past Due and No Activity)</fullName>
+                <default>false</default>
+                <label>Internal (Past Due and No Activity)</label>
+            </value>
+            <value>
+                <fullName>Internal (PFAS Landfill/TDU Ban)</fullName>
+                <default>false</default>
+                <label>Internal (PFAS Landfill/TDU Ban)</label>
+            </value>
+            <value>
+                <fullName>Internal (Poor Paying Customer)</fullName>
+                <default>false</default>
+                <label>Internal (Poor Paying Customer)</label>
+            </value>
+            <value>
+                <fullName>Internal (Technology Difference)</fullName>
+                <default>false</default>
+                <label>Internal (Technology Difference)</label>
+            </value>
+            <value>
+                <fullName>Internal (Work Won but Declined)</fullName>
+                <default>false</default>
+                <label>Internal (Work Won but Declined)</label>
+            </value>
+            <value>
+                <fullName>Job CANCELED</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Job CANCELED</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>No Activity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No Activity</label>
+            </value>
+            <value>
+                <fullName>PFAS Landfill/TDU Ban</fullName>
+                <default>false</default>
+                <label>PFAS Landfill/TDU Ban</label>
+            </value>
+            <value>
+                <fullName>Restrictions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Restrictions</label>
+            </value>
+            <value>
+                <fullName>System - Abandoned by Owner</fullName>
+                <default>false</default>
+                <label>System - Abandoned by Owner</label>
+            </value>
+            <value>
+                <fullName>System - Past Due</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>System - Past Due</label>
+            </value>
+            <value>
+                <fullName>System - Past Due and No Activity</fullName>
+                <default>false</default>
+                <label>System - Past Due and No Activity</label>
+            </value>
+            <value>
+                <fullName>User Error - Created in Error</fullName>
+                <default>false</default>
+                <label>User Error - Created in Error</label>
+            </value>
+            <value>
+                <fullName>User Error - Duplicate Entry</fullName>
+                <default>false</default>
+                <label>User Error - Duplicate Entry</label>
+            </value>
+            <value>
+                <fullName>Work Won but Declined</fullName>
+                <default>false</default>
+                <label>Work Won but Declined</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (CLH Safety Numbers)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Client did not win work)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Job Cancelled or Deferred)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Lost RFP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (No bid - incumbent awarded)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (No opportunity to bid)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Price Increase)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Prior CLH Service Failure)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Re-refined Disqualified)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Client (Union Required)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Abandoned by Owner)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Chose Alternative SK Service)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Commercial terms failure)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Created in Error)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Declined to Bid)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Duplicate Entry)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Inactive &gt;90 Days)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Lack of Capacity)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Lack of Equipment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Lack of People)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Legal Review Delays)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Margin)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal  (No Bid - not core strength)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal  (No Bid - not front runner)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (No Inventory)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Not Approved to Work on client site)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Past Due and No Activity)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (PFAS Landfill/TDU Ban)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Poor Paying Customer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Technology Difference)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Internal</controllingFieldValue>
+            <valueName>Internal (Work Won but Declined)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fees</controllingFieldValue>
+            <valueName>Fees (Mobilization)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fees</controllingFieldValue>
+            <valueName>Fees (Off-Spec or surcharge)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fees</controllingFieldValue>
+            <valueName>Fees (Recovery)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Competitor (Better price)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Competitor</controllingFieldValue>
+            <valueName>Competitor (Transportation)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System</controllingFieldValue>
+            <valueName>System - Abandoned by Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System</controllingFieldValue>
+            <valueName>System - Past Due and No Activity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System</controllingFieldValue>
+            <valueName>User Error - Created in Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>System</controllingFieldValue>
+            <valueName>User Error - Duplicate Entry</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

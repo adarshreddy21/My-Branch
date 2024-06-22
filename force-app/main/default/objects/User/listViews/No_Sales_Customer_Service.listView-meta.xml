@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Sales_Customer_Service</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 4) or (4 and 5)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USER_ROLE.NAME</columns>
+    <columns>CORE.USERS.TITLE</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>CORE.PROFILE.NAME</columns>
+    <columns>MANAGER</columns>
+    <columns>PeopleSoft_Tree_Code__c</columns>
+    <columns>Sales_Branch__c</columns>
+    <columns>Sales_Person_Type__c</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Person_Type__c</field>
+        <operation>contains</operation>
+        <value>customer,inside</value>
+    </filters>
+    <filters>
+        <field>CORE.USER_ROLE.NAME</field>
+        <operation>notContain</operation>
+        <value>lodg,healthcare,CEO</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>notContain</operation>
+        <value>chatter</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CORE.PROFILE.NAME</field>
+        <operation>contains</operation>
+        <value>agent</value>
+    </filters>
+    <label>Non Sales Customer Service</label>
+    <language>en_US</language>
+</ListView>

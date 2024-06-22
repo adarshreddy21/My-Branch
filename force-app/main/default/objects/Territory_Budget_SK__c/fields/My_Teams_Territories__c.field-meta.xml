@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Teams_Territories__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+or( 
+ Territory__r.Territory_OwnerID__c = $User.Id 
+,Territory__r.Sales_Manager__c = $User.Id 
+,Territory__r.Sales_Director__c = $User.Id 
+,Territory__r.Operations_VP__c = $User.Id 
+,Territory__r.Sales_EVP__c = $User.Id 
+,Territory__r.temp_Territory_Alignment_Oversite__c = $User.Id 
+, $Profile.Name = &apos;Integration&apos;
+, $Profile.Name = &apos;Salesforce API Only System Integrations&apos;
+, $Profile.Name = &apos;Sales Operations&apos;
+) 
+, True, False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>My Teams Territories</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

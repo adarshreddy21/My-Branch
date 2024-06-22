@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="accountRecord" type="Object" />
+
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Is_Record_Locked__c"
+                      targetFields="{!v.accountRecord}" 
+                      />  
+    
+    <aura:if isTrue="{!v.accountRecord.Is_Record_Locked__c}">
+        <lightning:card>
+            <p class="slds-p-horizontal_small recordLockedMsg">
+                The record has been locked <lightning:buttonIcon size="large" class="lock-btn" iconName="utility:lock" variant="bare" alternativeText="Lock" title="Lock" />
+            </p>
+        </lightning:card>
+    </aura:if>
+</aura:component>

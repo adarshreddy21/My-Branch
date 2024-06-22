@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_modify_Billing_Adress</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT ($Profile.Name = &quot;Integration&quot;),
+NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),
+NOT ($Profile.Name = &quot;System Administrator&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+NOT ($Profile.Name = &quot;Master Data Management&quot;), NOT(ISCHANGED(Active_ER_Contract__c)), PRIORVALUE(Same_as_Corp_Address__c), Same_as_Corp_Address__c, ISCHANGED(BillingAddress))</errorConditionFormula>
+    <errorMessage>Billing Address cannot be modified when &apos;Same as Corp Address&apos; is checked</errorMessage>
+</ValidationRule>

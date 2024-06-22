@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waste_Project_Branch</fullName>
+    <active>true</active>
+    <description>Only allow waste project branches on Waste Project LOBs</description>
+    <errorConditionFormula>and(NOT ($Profile.Name = &quot;Integration&quot;),NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;)
+,Branch__r.branch_descr_amt4__c &lt;&gt; &quot;Waste Projects&quot;, 
+Branch__r.branch_descr_amt4__c &lt;&gt; &quot;Treatment Technologies&quot;, Product2.Name = &quot;Waste Projects&quot;,
+Product2.Name = &quot;Filtration &amp;Treatment Services&quot;,
+Product2.Name = &quot;Remediation&quot;)</errorConditionFormula>
+    <errorDisplayField>Branch__c</errorDisplayField>
+    <errorMessage>Waste Projects, Remediation, or Filtration Lines of business must be serviced by a Waste Projects or Treatment Technology branch.  Please correct Line of Business or choose a Waste Projects branch.</errorMessage>
+</ValidationRule>

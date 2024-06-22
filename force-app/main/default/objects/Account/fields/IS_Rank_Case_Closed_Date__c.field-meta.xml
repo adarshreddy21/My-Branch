@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS_Rank_Case_Closed_Date__c</fullName>
+    <description>Holds the latest closed date for case of rank 7</description>
+    <externalId>false</externalId>
+    <label>IS Rank - Case Closed Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

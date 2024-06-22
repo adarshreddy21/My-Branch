@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Family__c</fullName>
+    <description>To store job family as provided and manually loaded from Oracle weekly report.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Job family is sourced from a manual load based on a weekly report from Oracle.</inlineHelpText>
+    <label>Job Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales &amp; Accounts</fullName>
+                <default>false</default>
+                <label>Sales &amp; Accounts</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

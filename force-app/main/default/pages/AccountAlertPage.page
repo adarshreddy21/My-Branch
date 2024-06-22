@@ -1,0 +1,14 @@
+<apex:page standardController="Account">
+<script>
+    window.onload = function(){
+    var alertMessage= "{!JSENCODE(Account.Corp_Account_Alert__c)}";
+    var expired= "{!Account.Alert_Expired__c}";    
+    if(alertMessage){
+    if(expired === 'false'){
+            alert('Alert Message: \n'+ alertMessage);
+        }
+        }
+    }
+    
+</script>
+</apex:page>

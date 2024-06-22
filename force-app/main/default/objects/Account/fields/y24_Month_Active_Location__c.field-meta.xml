@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>y24_Month_Active_Location__c</fullName>
+    <externalId>false</externalId>
+    <formula>or( y24_Location_Oil_Gallons_Collected__c &gt; 0,  y24_Months_Location_Revenue__c &gt; 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>24 Month Active Location</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

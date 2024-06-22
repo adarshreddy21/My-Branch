@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_ASY_N_AMITYVILLE_LONG_ISLAND_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: ASY-N AMITYVILLE (LONG ISLAND)</label>
+    <queue>Queue_ASY_N_AMITYVILLE_LONG_ISLAND</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

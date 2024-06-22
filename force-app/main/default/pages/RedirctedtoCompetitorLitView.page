@@ -1,0 +1,5 @@
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" sidebar="false" standardStylesheets="false" lightningStyleSheets="true">
+<script type="text/javascript">
+   window.location.href = "https://cleanharbors.lightning.force.com/lightning/o/Account/list?filterName=00B4Q00000B0INGUA3"
+</script>
+</apex:page>

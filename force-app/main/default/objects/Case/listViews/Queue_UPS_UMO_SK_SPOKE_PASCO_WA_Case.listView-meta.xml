@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_UPS_UMO_SK_SPOKE_PASCO_WA_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Queue: UPS-UMO SK SPOKE PASCO, WA</label>
+    <queue>Queue_UPS_UMO_SK_SPOKE_PASCO_WA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

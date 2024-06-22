@@ -1,0 +1,2730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues> 
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nCLH Website Request: {![Lead].CLH_Website_Service_Requested__c}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A2</name>
+        <label>Notify Lead Owner</label>
+        <locationX>1100</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+CLH Website Request: {!myVariable_current.CLH_Website_Service_Requested__c}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.CLH_Website_Lead_Recipient_1__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nCLH Website Request: {![Lead].CLH_Website_Service_Requested__c}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_13_A2</name>
+        <label>Notify Lead Owner</label>
+        <locationX>1300</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+CLH Website Request: {!myVariable_current.CLH_Website_Service_Requested__c}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.CLH_Website_Lead_Recipient_2__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nLead Submitted by: {![Lead].Lead_Submitted_by__c}\nBranch: {![Lead].Branch__c}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_19_A2</name>
+        <label>Notify lead owner</label>
+        <locationX>1900</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Lead Submitted by: {!myVariable_current.Lead_Submitted_by__c}
+Branch: {!myVariable_current.Branch__c}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nLead Submitted by: {![Lead].Lead_Submitted_by__c}\nBranch: {![Lead].Branch__c}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A2</name>
+        <label>Notify the lead owner</label>
+        <locationX>2100</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myDecision23</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Lead Submitted by: {!myVariable_current.Lead_Submitted_by__c}
+Branch: {!myVariable_current.Branch__c}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nLead Submitted by: {![Lead].Lead_Submitted_by__c}\nBranch: {![Lead].Branch__c}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_24_A2</name>
+        <label>Notify Territory Sales Manager</label>
+        <locationX>2400</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Lead Submitted by: {!myVariable_current.Lead_Submitted_by__c}
+Branch: {!myVariable_current.Branch__c}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTarget</name>
+            <value>
+                <stringValue>Thermo Fluid Sales Leads</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to your group:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nLead Submitted by: {![Lead].Lead_Submitted_by__c}\nBranch: {![Lead].Branch__c}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nCompany Name: {![Lead].Company}\nWIN ID: {![Lead].WIN_ID_reference__c}\nTerritory: {![Lead].Territory_Master_Territory_code__c}\nTerritory Owner: {![Lead].Territory_Master_Territory_owner__c}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_26_A2</name>
+        <label>Notify the Thermo lead group</label>
+        <locationX>2600</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to your group:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Lead Submitted by: {!myVariable_current.Lead_Submitted_by__c}
+Branch: {!myVariable_current.Branch__c}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+Company Name: {!myVariable_current.Company}
+WIN ID: {!myVariable_current.WIN_ID_reference__c}
+Territory: {!myVariable_current.Territory_Master_Territory_code__c}
+Territory Owner: {!myVariable_current.Territory_Master_Territory_owner__c}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>GROUP</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <stringValue>0F9j000000003u3CAA</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nCLH Website Request: {![Lead].CLH_Website_Service_Requested__c}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A2</name>
+        <label>Notify Lead Owner</label>
+        <locationX>700</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+CLH Website Request: {!myVariable_current.CLH_Website_Service_Requested__c}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;The following lead has been posted to you:\nLead Owner: {![Lead].Owner:User.FirstName} {![Lead].Owner:User.LastName}\nContact Name: {![Lead].FirstName} {![Lead].LastName}\nContact Title: {![Lead].Title}\nContact Phone: {![Lead].Phone}\nContact Email: {![Lead].Email}\nCLH Website Request: {![Lead].CLH_Website_Service_Requested__c}\nServices Discussed: {![Lead].Services_Discussed__c}\nDescription of Need: {![Lead].Description}\nLead: https://cleanharbors.my.salesforce.com/{![Lead].Id}&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A2</name>
+        <label>Notify Lead owner</label>
+        <locationX>900</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The following lead has been posted to you:
+Lead Owner: {!myVariable_current.Owner:User.FirstName} {!myVariable_current.Owner:User.LastName}
+Contact Name: {!myVariable_current.FirstName} {!myVariable_current.LastName}
+Contact Title: {!myVariable_current.Title}
+Contact Phone: {!myVariable_current.Phone}
+Contact Email: {!myVariable_current.Email}
+CLH Website Request: {!myVariable_current.CLH_Website_Service_Requested__c}
+Services Discussed: {!myVariable_current.Services_Discussed__c}
+Description of Need: {!myVariable_current.Description}
+Lead: https://cleanharbors.my.salesforce.com/{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>SK Service issue</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>CLH Website Lead send to Recipient 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>CLH Website Lead send to Recipient 2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision16</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>Assign Call center leads to SK IS queue</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision16</name>
+        <label>myDecision16</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision18</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_17</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_A1</targetReference>
+            </connector>
+            <label>Canada Call center leads to  Canada SK IS Queue</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>8.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision18</name>
+        <label>myDecision18</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_19</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_19_A1</targetReference>
+            </connector>
+            <label>Safety-Kleen territory owner inactive</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>9.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision20</name>
+        <label>myDecision20</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision23</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_A1</targetReference>
+            </connector>
+            <label>Primary Business?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision23</name>
+        <label>myDecision23</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision25</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_24</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_24</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_24_A1</targetReference>
+            </connector>
+            <label>Lead Owner SK01?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>11.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision25</name>
+        <label>myDecision25</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision27</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_26</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_26</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_26_A1</targetReference>
+            </connector>
+            <label>Primary Business equals Thermo Fluids</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>12.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision27</name>
+        <label>myDecision27</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_28</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_28</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_28_A1</targetReference>
+            </connector>
+            <label>Reassign Avention Lead Assignment Rules</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Primary Business equals FS</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>CLH Website Lead Send to Territory(isActive)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>CLH Website Lead Send to Territory(Inactive)</label>
+        </rules>
+    </decisions>
+    <description>Lead Assignment process</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_22_myRule_21_A1_7140926944</name>
+        <dataType>String</dataType>
+        <expression>{!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Lead].Existing_Account_ID_18__c </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_2_myRule_1_A2_6816193822</name>
+        <dataType>String</dataType>
+        <expression>{!myVariable_current.Existing_Account_ID_18__c}</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>if(CONTAINS([Lead].Description ,&quot;Contacting Us For: BillingIssue&quot;), &quot;Billing Issue&quot;,
+if(CONTAINS([Lead].Description,&quot;Contacting Us For: ServiceIssue&quot;), &quot;Service Issue&quot;,
+if(CONTAINS([Lead].Description,&quot;Contacting Us For: ServiceRequest&quot;), &quot;Service Request&quot;,
+&quot;Other&quot;
+)))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_3_myRule_1_A1_6349258805</name>
+        <dataType>String</dataType>
+        <expression>if(CONTAINS({!myVariable_current.Description} ,&quot;Contacting Us For: BillingIssue&quot;), &quot;Billing Issue&quot;,
+if(CONTAINS({!myVariable_current.Description},&quot;Contacting Us For: ServiceIssue&quot;), &quot;Service Issue&quot;,
+if(CONTAINS({!myVariable_current.Description},&quot;Contacting Us For: ServiceRequest&quot;), &quot;Service Request&quot;,
+&quot;Other&quot;
+)))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(
+CONTAINS([Lead].Description,&quot;Reason for Contact: Schedule Service&quot;),
+CONTAINS([Lead].Description,&quot;Reason for Contact: Billing Issue&quot;),
+CONTAINS([Lead].Description,&quot;Reason for Contact: Issue with Current Service&quot;)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>or(
+CONTAINS({!myVariable_current.Description},&quot;Reason for Contact: Schedule Service&quot;),
+CONTAINS({!myVariable_current.Description},&quot;Reason for Contact: Billing Issue&quot;),
+CONTAINS({!myVariable_current.Description},&quot;Reason for Contact: Issue with Current Service&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>and(not(isblank([Lead].CLH_Website_Service_Requested__c))
+, not(isblank([Lead].CLH_Website_Lead_Recipient_1__c))
+,not(isblank(Text([Lead].Primary_Business__c))) 
+,not(ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;))
+,[Lead].Lead_Run_Assignment__c =false
+,[Lead].CLH_Website_Send_Lead_to_Territory_Owner__c =false)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11</name>
+        <dataType>Boolean</dataType>
+        <expression>and(not(isblank({!myVariable_current.CLH_Website_Service_Requested__c}))
+, not(isblank({!myVariable_current.CLH_Website_Lead_Recipient_1__c}))
+,not(isblank(Text({!myVariable_current.Primary_Business__c}))) 
+,not(ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;))
+,{!myVariable_current.Lead_Run_Assignment__c} =false
+,{!myVariable_current.CLH_Website_Send_Lead_to_Territory_Owner__c} =false)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>and(
+  not(isblank([Lead].CLH_Website_Service_Requested__c))
+
+, not(isblank([Lead].CLH_Website_Lead_Recipient_1__c))
+, [Lead].CLH_Website_Lead_Recipient_1__c.IsActive = false
+,[Lead].Lead_Run_Assignment__c =false
+
+ ,not(isblank([Lead].CLH_Website_Lead_Recipient_2__c))
+,[Lead].CLH_Website_Lead_Recipient_2__c.IsActive = true
+
+,not(isblank(Text([Lead].Primary_Business__c))) 
+,not(ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;))
+,[Lead].CLH_Website_Send_Lead_to_Territory_Owner__c =false)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13</name>
+        <dataType>Boolean</dataType>
+        <expression>and(
+  not(isblank({!myVariable_current.CLH_Website_Service_Requested__c}))
+
+, not(isblank({!myVariable_current.CLH_Website_Lead_Recipient_1__c}))
+, {!myVariable_current.CLH_Website_Lead_Recipient_1__r.IsActive} = false
+,{!myVariable_current.Lead_Run_Assignment__c} =false
+
+ ,not(isblank({!myVariable_current.CLH_Website_Lead_Recipient_2__c}))
+,{!myVariable_current.CLH_Website_Lead_Recipient_2__r.IsActive} = true
+
+,not(isblank(Text({!myVariable_current.Primary_Business__c}))) 
+,not(ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;))
+,{!myVariable_current.CLH_Website_Send_Lead_to_Territory_Owner__c} =false)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue> and(  [Lead].Is_a_call_center_lead__c = true,
+           or(  NOT(ISBLANK(TEXT([Lead].Primary_Business__c) ) ) 
+                   ,ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;))
+          ,[Lead].Country &lt;&gt; &apos;Canada&apos;
+         ,[Lead].Country &lt;&gt; &apos;CA&apos;)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression> and(  {!myVariable_current.Is_a_call_center_lead__c} = true,
+           or(  NOT(ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) 
+                   ,ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;))
+          ,{!myVariable_current.Country} &lt;&gt; &apos;Canada&apos;
+         ,{!myVariable_current.Country} &lt;&gt; &apos;CA&apos;)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue> and(  [Lead].Is_a_call_center_lead__c = true,
+
+           or(  NOT(ISBLANK(TEXT([Lead].Primary_Business__c) ) ) 
+                   ,ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;)),
+        or( [Lead].Country = &apos;Canada&apos;
+         ,[Lead].Country = &apos;CA&apos;)
+      
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_17</name>
+        <dataType>Boolean</dataType>
+        <expression> and(  {!myVariable_current.Is_a_call_center_lead__c} = true,
+
+           or(  NOT(ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) 
+                   ,ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;)),
+        or( {!myVariable_current.Country} = &apos;Canada&apos;
+         ,{!myVariable_current.Country} = &apos;CA&apos;)
+      
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND( 
+          NOT(ISBLANK(TEXT([Lead].Primary_Business__c) ) ) 
+         ,ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;)
+         , NOT(ISPICKVAL([Lead].LeadSource , &quot;Web&quot;))
+         ,NOT(ISBLANK([Lead].Territory_Master_Lookup__c)) 
+         ,NOT(ISBLANK([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c))
+         ,not(OR( ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Inside Sales&quot;) 
+         ,ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Call Center Agent&quot;)))
+        , [Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c &lt;&gt; &apos;005j000000DLB4AAAX&apos; 
+        ,[Lead].Territory_Master_Lookup__c.Territory_ID__c.Territory_OwnerID__c.IsActive  =false
+        ,not(isblank([Lead].Territory_Master_Lookup__c.Territory_ID__c.Sales_Manager__c) )
+  )  </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_19</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( 
+          NOT(ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) 
+         ,ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;)
+         , NOT(ISPICKVAL({!myVariable_current.LeadSource} , &quot;Web&quot;))
+         ,NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__c})) 
+         ,NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c}))
+         ,not(OR( ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Inside Sales&quot;) 
+         ,ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Call Center Agent&quot;)))
+        , {!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c} &lt;&gt; &apos;005j000000DLB4AAAX&apos; 
+        ,{!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.IsActive}  =false
+        ,not(isblank({!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__c}) )
+  )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND( 
+NOT( ISBLANK(TEXT([Lead].Primary_Business__c) ) ) ,
+         NOT(ISPICKVAL([Lead].LeadSource , &quot;Web&quot;)),
+          ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;),
+          NOT(ISBLANK([Lead].Territory_Master_Lookup__c)) ,
+
+ not(OR( ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Inside Sales&quot;) ,
+             NOT(ISPICKVAL([Lead].LeadSource , &quot;Web&quot;)),
+          ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Call Center Agent&quot;))),
+          NOT(ISBLANK([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c)),
+
+          [Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c &lt;&gt; &apos;005j000000DLB4AAAX&apos; 
+,[Lead].Territory_Master_Lookup__c.Territory_ID__c.Territory_OwnerID__c.IsActive  =true
+  )  </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( 
+NOT( ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) ,
+         NOT(ISPICKVAL({!myVariable_current.LeadSource} , &quot;Web&quot;)),
+          ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;),
+          NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__c})) ,
+
+ not(OR( ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Inside Sales&quot;) ,
+             NOT(ISPICKVAL({!myVariable_current.LeadSource} , &quot;Web&quot;)),
+          ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Call Center Agent&quot;))),
+          NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c})),
+
+          {!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c} &lt;&gt; &apos;005j000000DLB4AAAX&apos; 
+,{!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.IsActive}  =true
+  )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND( NOT( ISBLANK(TEXT([Lead].Primary_Business__c) ) ) ,
+          ISPICKVAL([Lead].Primary_Business__c, &quot;Safety-Kleen&quot;),
+          NOT(ISPICKVAL([Lead].LeadSource , &quot;Web&quot;)),
+          NOT(ISBLANK([Lead].Territory_Master_Lookup__c)) ,
+          NOT(ISBLANK([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c)),
+          [Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c = &apos;005j000000DLB4AAAX&apos; ,
+         not(OR( ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Inside Sales&quot;) ,
+          ISPICKVAL([Lead].CreatedBy.Sales_Person_Type__c, &quot;Call Center Agent&quot;)))
+  )  </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_24</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( NOT( ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) ,
+          ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Safety-Kleen&quot;),
+          NOT(ISPICKVAL({!myVariable_current.LeadSource} , &quot;Web&quot;)),
+          NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__c})) ,
+          NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c})),
+          {!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c} = &apos;005j000000DLB4AAAX&apos; ,
+         not(OR( ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Inside Sales&quot;) ,
+          ISPICKVAL({!myVariable_current.CreatedBy.Sales_Person_Type__c}, &quot;Call Center Agent&quot;)))
+  )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND( NOT( ISBLANK(TEXT([Lead].Primary_Business__c) ) ) ,
+           ISPICKVAL([Lead].Primary_Business__c, &quot;Thermo Fluids&quot;),
+           NOT(ISBLANK([Lead].Territory_Master_Lookup__c)) ,
+           NOT(ISBLANK([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c))       
+
+  )</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_26</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( NOT( ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) ,
+           ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Thermo Fluids&quot;),
+           NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__c})) ,
+           NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c}))       
+
+  )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>and(text([Lead].LeadSource) = &quot;Avention&quot;,
+ [Lead].OwnerId = &quot;005j000000BTXtcAAH&quot;, 
+[Lead].CreatedById &lt;&gt; &quot;005j000000BTXtcAAH&quot;)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_28</name>
+        <dataType>Boolean</dataType>
+        <expression>and(text({!myVariable_current.LeadSource}) = &quot;Avention&quot;,
+ {!myVariable_current.OwnerId} = &quot;005j000000BTXtcAAH&quot;, 
+{!myVariable_current.CreatedById} &lt;&gt; &quot;005j000000BTXtcAAH&quot;)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND( 
+NOT( ISBLANK(TEXT([Lead].Primary_Business__c) ) ) ,
+          ISPICKVAL([Lead].Primary_Business__c, &quot;Field Services&quot;),
+          NOT(ISBLANK([Lead].Territory_Master_Lookup__c)) 
+ )  </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( 
+NOT( ISBLANK(TEXT({!myVariable_current.Primary_Business__c}) ) ) ,
+          ISPICKVAL({!myVariable_current.Primary_Business__c}, &quot;Field Services&quot;),
+          NOT(ISBLANK({!myVariable_current.Territory_Master_Lookup__c})) 
+ )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>and(not(isblank([Lead].CLH_Website_Service_Requested__c))
+,not(isblank(Text([Lead].Primary_Business__c))) 
+,[Lead].CLH_Website_Send_Lead_to_Territory_Owner__c =true
+,[Lead].Lead_Run_Assignment__c =false
+,not(isblank([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c))
+,not(isblank([Lead].Territory_Master_Lookup__c))
+,[Lead].Territory_Master_Lookup__c.Territory_ID__c.Territory_OwnerID__c.IsActive  =true
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>and(not(isblank({!myVariable_current.CLH_Website_Service_Requested__c}))
+,not(isblank(Text({!myVariable_current.Primary_Business__c}))) 
+,{!myVariable_current.CLH_Website_Send_Lead_to_Territory_Owner__c} =true
+,{!myVariable_current.Lead_Run_Assignment__c} =false
+,not(isblank({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c}))
+,not(isblank({!myVariable_current.Territory_Master_Lookup__c}))
+,{!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.IsActive}  =true
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>and(not(isblank([Lead].CLH_Website_Service_Requested__c))
+,not(isblank(Text([Lead].Primary_Business__c))) 
+,[Lead].CLH_Website_Send_Lead_to_Territory_Owner__c =true
+,[Lead].Lead_Run_Assignment__c =false
+,not(isblank([Lead].Territory_Master_Lookup__c.Territory_Owner_ID__c))
+,not(isblank([Lead].Territory_Master_Lookup__c))
+,[Lead].Territory_Master_Lookup__c.Territory_ID__c.Territory_OwnerID__c.IsActive  =false
+,not(isblank([Lead].Territory_Master_Lookup__c.Territory_ID__c.Sales_Manager__c))
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>and(not(isblank({!myVariable_current.CLH_Website_Service_Requested__c}))
+,not(isblank(Text({!myVariable_current.Primary_Business__c}))) 
+,{!myVariable_current.CLH_Website_Send_Lead_to_Territory_Owner__c} =true
+,{!myVariable_current.Lead_Run_Assignment__c} =false
+,not(isblank({!myVariable_current.Territory_Master_Lookup__r.Territory_Owner_ID__c}))
+,not(isblank({!myVariable_current.Territory_Master_Lookup__c}))
+,{!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__r.IsActive}  =false
+,not(isblank({!myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__c}))
+)</expression>
+    </formulas>
+    <interviewLabel>CLH_Website_Lead_Mapping_and_Owner_Assignment-36_InterviewLabel</interviewLabel>
+    <label>CLH Website Lead Mapping and Owner Assignment</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Lead</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onCreateOnly</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordCreates>
+        <name>myRule_1_A2</name>
+        <label>Create a Case</label>
+        <locationX>100</locationX>
+        <locationY>300</locationY>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Account ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>AccountId</field>
+            <value>
+                <elementReference>formula_2_myRule_1_A2_6816193822</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Caller&apos;s First Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Caller_s_First_Name__c</field>
+            <value>
+                <elementReference>myVariable_current.FirstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Caller&apos;s Last Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Caller_s_Last_Name__c</field>
+            <value>
+                <elementReference>myVariable_current.LastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Caller&apos;s Phone Number</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Caller_s_Phone_Number__c</field>
+            <value>
+                <elementReference>myVariable_current.Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Comments</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Comments__c</field>
+            <value>
+                <elementReference>myVariable_current.Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Case Currency</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>USD</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Description</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Description</field>
+            <value>
+                <elementReference>myVariable_current.Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G0a000002Iz07EAC</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Record Type ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012j00000004WLSAA2</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Company</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SuppliedCompany</field>
+            <value>
+                <elementReference>myVariable_current.Company</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Email Address</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SuppliedEmail</field>
+            <value>
+                <elementReference>myVariable_current.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>SuppliedPhone</field>
+            <value>
+                <elementReference>myVariable_current.Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordCreates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>Update Lead Owner</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_11_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.CLH_Website_Lead_Recipient_1__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>Update lead owner</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_13_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.CLH_Website_Lead_Recipient_2__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>Assign lead to SK IS lead queue</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>Group;User</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideLabel</name>
+                <value>
+                    <stringValue>SK_Inside_Sales_Leads_Queue</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Queue</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G0a000002r1coEAA</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_17_A1</name>
+        <label>Assign Lead to SK IS CA</label>
+        <locationX>1700</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>Group;User</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideLabel</name>
+                <value>
+                    <stringValue>Canada_Inside_Sales_queue</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Queue</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G0a000003B5FEEA0</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_19_A1</name>
+        <label>Update Lead Owner</label>
+        <locationX>1900</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_19_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Update Lead Owner</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_1_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G0a000002Iz0CEAS</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>Unqualified</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Unqualified Notes</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Unqualified_Notes__c</field>
+            <value>
+                <elementReference>formula_3_myRule_1_A1_6349258805</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Unqualified Reason</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Unqualified_Reason__c</field>
+            <value>
+                <stringValue>Other (requires comment)</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_21_A1</name>
+        <label>Update territory owner to lead owner</label>
+        <locationX>2100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_21_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>formula_22_myRule_21_A1_7140926944</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_24_A1</name>
+        <label>Update owner id</label>
+        <locationX>2400</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_24_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_26_A1</name>
+        <label>Update Owner ID</label>
+        <locationX>2600</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_26_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_28_A1</name>
+        <label>Update Lead Owner to Creator</label>
+        <locationX>2800</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.CreatedById</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Update Owner ID</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue>Group;User</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>Update Lead Owner</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_7_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Territory_OwnerID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Lead]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Update lead owner</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_9_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Owner ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>myVariable_current.Territory_Master_Lookup__r.Territory_ID__r.Sales_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

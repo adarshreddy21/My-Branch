@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_CLH_Competitor_Account</fullName>
+    <active>true</active>
+    <description>Validation rules restricts users other than Sys admins, Integration and Sales ops from updating CLH Competitor accounts.</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;CLH Competitor&quot;,
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT($Profile.Name = &quot;Sales Operations&quot;),
+NOT($Profile.Name = &quot;System Administrator&quot;),
+or(
+ISCHANGED(Name),
+ISCHANGED(ParentId),
+ISCHANGED(Competitor_Type__c),
+ISCHANGED(ShippingAddress)
+))</errorConditionFormula>
+    <errorMessage>You do not have sufficient privileges to edit CLH Competitor record</errorMessage> 
+</ValidationRule>

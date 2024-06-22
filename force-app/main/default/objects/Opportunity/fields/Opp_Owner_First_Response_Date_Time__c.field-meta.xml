@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Owner_First_Response_Date_Time__c</fullName>
+    <description>Records the first response time of opportunity owner</description>
+    <externalId>false</externalId>
+    <label>Opp Owner First Response (Date/Time)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

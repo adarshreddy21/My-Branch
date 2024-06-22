@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Negative_Values_For_Oil_Filter</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+NOT($Profile.Name = &quot;Integration&quot;),
+NOT ($Profile.Name = &quot;Salesforce API Only System Integrations&quot;),
+Oil_Filter_Prices__c &lt; 0)</errorConditionFormula>
+    <errorDisplayField>Oil_Filter_Prices__c</errorDisplayField>
+    <errorMessage>No negative values. Enter the price the customer is paying for Oil Filter service if known</errorMessage>
+</ValidationRule>

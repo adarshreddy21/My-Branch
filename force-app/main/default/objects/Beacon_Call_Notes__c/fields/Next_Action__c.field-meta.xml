@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Action__c</fullName>
+    <externalId>false</externalId>
+    <label>Next Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Follow-up</fullName>
+                <default>false</default>
+                <label>Follow-up</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>Visit</fullName>
+                <default>false</default>
+                <label>Visit</label>
+            </value>
+            <value>
+                <fullName>Call Eng.</fullName>
+                <default>false</default>
+                <label>Call Eng.</label>
+            </value>
+            <value>
+                <fullName>Call Other Contact</fullName>
+                <default>false</default>
+                <label>Call Other Contact</label>
+            </value>
+            <value>
+                <fullName>Collection</fullName>
+                <default>false</default>
+                <label>Collection</label>
+            </value>
+            <value>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+                <label>Confirmed</label>
+            </value>
+            <value>
+                <fullName>Contact CH Employee</fullName>
+                <default>false</default>
+                <label>Contact CH Employee</label>
+            </value>
+            <value>
+                <fullName>Re-sent Invoice</fullName>
+                <default>false</default>
+                <label>Re-sent Invoice</label>
+            </value>
+            <value>
+                <fullName>Sent Invoice</fullName>
+                <default>false</default>
+                <label>Sent Invoice</label>
+            </value>
+            <value>
+                <fullName>Verify Payment</fullName>
+                <default>false</default>
+                <label>Verify Payment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

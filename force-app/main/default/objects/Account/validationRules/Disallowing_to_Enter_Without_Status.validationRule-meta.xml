@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disallowing_to_Enter_Without_Status</fullName>
+    <active>true</active>
+    <description>Status will be mandatory</description>
+    <errorConditionFormula>AND(ISBLANK(Text(Status__c)),NOT(ISCHANGED(Toggle_Me_to_Bypass_Validation__c)),NOT(ISCHANGED(Active_ER_Contract__c)))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Please select the Status.</errorMessage> 
+</ValidationRule> 

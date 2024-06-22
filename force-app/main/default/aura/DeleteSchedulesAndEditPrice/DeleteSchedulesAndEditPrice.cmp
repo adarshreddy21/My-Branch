@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId" controller="DeleteSchedulesAndEditPrice">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="oliDetails" type="Object" />
+    <aura:attribute name="showSpinner" type="Boolean"/>
+    
+    <aura:if isTrue="{!v.showSpinner}">
+    	<lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+    
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    
+    <div style="width: 100%; display: block; margin-left: 84%;">
+    	<lightning:button label="Delete Schedules And Edit Price" title="Delete Schedules And Edit Price" onclick="{! c.doInit }"/>
+    </div>
+</aura:component>

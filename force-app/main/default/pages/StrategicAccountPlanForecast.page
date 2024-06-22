@@ -1,0 +1,78 @@
+<apex:page standardController="Strategic_Account_Plan__c" extensions="StrategicAccountPlanController">
+    <apex:form >      
+        <apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection columns="1" title="White Space">                  
+              <apex:pageblocktable value="{!forcastplan}" var="newforcst" cellPadding="1" border="10">
+                    <apex:column headerValue="LOB">
+                        <apex:outputField value="{!newforcst.Line_of_Business__c}"/> 
+                        <apex:facet name="footer">
+                            <apex:outputText label="Total" value="Total"/>
+                        </apex:facet>
+                    </apex:column>  
+                    
+                    <apex:column headerValue="Current / New LOB">
+                        <apex:outputField value="{!newforcst.Current_New_LOB__c}"/> 
+                    </apex:column>
+                    <apex:column headerValue="FY Current Spend">
+                        <apex:outputField value="{!newforcst.FY_Current_Spend__c}"/> 
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_FY_Current_Spend__c}"/>     
+                        </apex:facet>
+                    </apex:column>
+                    
+                    <apex:column headerValue="FY White Space">
+                        <apex:outputField value="{!newforcst.FY_White_Space__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_FY_White_Space__c}"/>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="FY Total Wallet">
+                        <apex:outputField value="{!newforcst.FY_Total_Wallet__c}"/> 
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_of_FY_Total_Wallet__c}"/>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="Forecast: Current Year">
+                        <apex:outputField value="{!newforcst.Current_Year_Forecast__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_Current_Year_Forecast__c}"/>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="% of Wallet">
+                        <apex:outputField value="{!newforcst.Percentage_of_Wallet__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_Percentage_of_Wallet__c}"/>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="Forecast: Current Year + 1">
+                        <apex:outputField value="{!newforcst.Current_Year_plus_1_Forecast__c}"/>
+                        <apex:facet name="footer">
+                            <apex:outputField value="{!Strategic_Account_Plan__c.Total_Current_Year_plus_1_Forecast__c}"/>
+                        </apex:facet>
+                    </apex:column>                
+                    
+                </apex:pageblocktable>
+            </apex:pageBlockSection> 
+            
+            
+        </apex:pageBlock>
+        <apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection columns="1" title="Competitive Pressures">
+                    <apex:pageblocktable value="{!cmptrPlan}" var="comptr" cellPadding="1" border="10">
+                        <apex:column headerValue="LOB">
+                            <apex:outputField value="{!comptr.Line_of_Business__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Competitor">
+                            <apex:outputField value="{!comptr.Competitor__c}"/> 
+                        </apex:column>
+                        <apex:column headerValue="Competitor % of Wallet">
+                          <apex:outputField value="{!comptr.Competitor_percentage_of_Wallet__c}"/>
+                        </apex:column>
+                        <apex:column headerValue="Strength / Weaknesses">
+                            <apex:outputField value="{!comptr.Strength_Weaknesses__c}" style="width:500px"/> 
+                        </apex:column>  
+                    </apex:pageblocktable>    
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
